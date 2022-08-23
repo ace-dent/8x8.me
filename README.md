@@ -5,6 +5,15 @@
 Repeating tile patterns  
 
 ---
+
+## Acknowledgements
+
+Patterns were tested and refined on an Arduboy device using [ASE](https://github.com/pmwasson/ASE). 
+
+Artwork and files created using [ABSpriteEditor](https://github.com/Pharap/ABSpriteEditor). Image conversions by ImageMagick, compressed with `pngslim` and metadata added with ExifTool.
+
+Special thanks to @felipemanga, @Pharap, @pmwasson.
+
 ## Legal
 Produced by Andrew C.E. Dent and dedicated to the Public Domain (CC0 – free to use). Giving attribution is not required, but is greatly appreciated! Please read the separate `LICENSE` file.
 
@@ -21,6 +30,10 @@ All trademarks are the property of their respective owners.
 
 | 08 Woven   |       |
 | :---       | :---: |
+| Gingham | ![](<https://raw.githubusercontent.com/ace-dent/8x8.me/main/previews/Gingham.png>)
+| Plaid [^office]| ![](<https://raw.githubusercontent.com/ace-dent/8x8.me/main/previews/Plaid.png>)
 | Puppytooth | ![](<https://raw.githubusercontent.com/ace-dent/8x8.me/main/previews/Puppytooth.png>)
 
 ---
+
+[^office]: Pattern included in the `Office` collection
