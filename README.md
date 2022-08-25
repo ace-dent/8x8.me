@@ -29,19 +29,25 @@ All trademarks are the property of their respective owners.
 
 ## Gallery
 
+| (01) Dither  ||||||
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| BayerDither00 | ![]() | [png]() | cpp | py | p8.lua
+
+---
+
 | (08) Woven ||||||
-| :---       | :---: | :---: | :---: | :---: | :---: |
-| Gingham | ![](<https://raw.githubusercontent.com/ace-dent/8x8.me/main/previews/Gingham.png>) | [png](https://github.com/ace-dent/8x8.me/blob/main/08-Woven/png/Gingham.png) | cpp | py |
-| Houndstooth | ![](<https://raw.githubusercontent.com/ace-dent/8x8.me/main/previews/Houndstooth.png>) | [png](https://github.com/ace-dent/8x8.me/blob/main/08-Woven/png/Houndstooth.png) | cpp | py |
-| Plaid [^office]| ![](<https://raw.githubusercontent.com/ace-dent/8x8.me/main/previews/Plaid.png>) | [png](https://github.com/ace-dent/8x8.me/blob/main/08-Woven/png/Plaid.png) | cpp | py |
-| Puppytooth | ![](<https://raw.githubusercontent.com/ace-dent/8x8.me/main/previews/Puppytooth.png>) | [png](https://github.com/ace-dent/8x8.me/blob/main/08-Woven/png/Puppytooth.png) | cpp | py | p8.lua
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| Gingham | ![](previews/Gingham.png) | [png](/08-Woven/png/Gingham.png) | cpp | py |
+| Houndstooth | ![](previews/Houndstooth.png) | [png](/08-Woven/png/Houndstooth.png) | cpp | py |
+| Plaid [^office]| ![](/previews/Plaid.png) | [png](/08-Woven/png/Plaid.png) | cpp | py |
+| Puppytooth | ![](/previews/Puppytooth.png) | [png](/08-Woven/png/Puppytooth.png) | cpp | py | p8.lua
 
 ---
 
 | (11) Symbols ||||||
-| :---       | :---: | :---: | :---: | :---: | :---: |
-| Heart | ![](<https://raw.githubusercontent.com/ace-dent/8x8.me/main/previews/Heart.png>) | [png](https://github.com/ace-dent/8x8.me/blob/main/08-Woven/png/Heart.png) | cpp | py |
-| HeartTiny | ![](<https://raw.githubusercontent.com/ace-dent/8x8.me/main/previews/HeartTiny.png>) | [png](https://github.com/ace-dent/8x8.me/blob/main/08-Woven/png/HeartTiny.png) | cpp | py | p8.lua
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| Heart | ![](/previews/Heart.png) | [png](/11-Symbols/png/Heart.png) | cpp | py |
+| HeartTiny | ![](/previews/HeartTiny.png) | [png](/11-Symbols/png/HeartTiny.png) | cpp | py | p8.lua
 
 ---
 
