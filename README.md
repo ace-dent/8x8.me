@@ -22,17 +22,24 @@ All trademarks are the property of their respective owners.
 *GAMBY* was produced by [Logicalzero](http://logicalzero.com/gamby/) (David Stokes).  
 *LibreOffice* is a trademark of [The Document Foundation](https://www.libreoffice.org).  
 *PICO-8*  is a trademark of [Lexaloffle Games LLP](https://www.pico-8.com).  
+*Thumby* is a trademark of AkroSense LLC, USA / [TinyCircuits](https://thumby.us).
 
 <br>
 
 
 ## Gallery
 
-| 08 Woven   |       |
+| (08) Woven ||
 | :---       | :---: |
 | Gingham | ![](<https://raw.githubusercontent.com/ace-dent/8x8.me/main/previews/Gingham.png>)
+| Houndstooth | ![](<https://raw.githubusercontent.com/ace-dent/8x8.me/main/previews/Houndstooth.png>)
 | Plaid [^office]| ![](<https://raw.githubusercontent.com/ace-dent/8x8.me/main/previews/Plaid.png>)
 | Puppytooth | ![](<https://raw.githubusercontent.com/ace-dent/8x8.me/main/previews/Puppytooth.png>)
+
+| (11) Symbols ||
+| :---       | :---: |
+| Heart | ![](<https://raw.githubusercontent.com/ace-dent/8x8.me/main/previews/Heart.png>)
+| HeartTiny | ![](<https://raw.githubusercontent.com/ace-dent/8x8.me/main/previews/HeartTiny.png>)
 
 ---
 
