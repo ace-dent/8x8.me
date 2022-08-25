@@ -29,17 +29,19 @@ All trademarks are the property of their respective owners.
 
 ## Gallery
 
-| (08) Woven ||
-| :---       | :---: |
-| Gingham | ![](<https://raw.githubusercontent.com/ace-dent/8x8.me/main/previews/Gingham.png>)
-| Houndstooth | ![](<https://raw.githubusercontent.com/ace-dent/8x8.me/main/previews/Houndstooth.png>)
-| Plaid [^office]| ![](<https://raw.githubusercontent.com/ace-dent/8x8.me/main/previews/Plaid.png>)
-| Puppytooth | ![](<https://raw.githubusercontent.com/ace-dent/8x8.me/main/previews/Puppytooth.png>)
+| (08) Woven ||||||
+| :---       | :---: | :---: | :---: | :---: | :---: |
+| Gingham | ![](<https://raw.githubusercontent.com/ace-dent/8x8.me/main/previews/Gingham.png>) | [png](https://github.com/ace-dent/8x8.me/blob/main/08-Woven/png/Gingham.png) | cpp | py |
+| Houndstooth | ![](<https://raw.githubusercontent.com/ace-dent/8x8.me/main/previews/Houndstooth.png>) | [png](https://github.com/ace-dent/8x8.me/blob/main/08-Woven/png/Houndstooth.png) | cpp | py |
+| Plaid [^office]| ![](<https://raw.githubusercontent.com/ace-dent/8x8.me/main/previews/Plaid.png>) | [png](https://github.com/ace-dent/8x8.me/blob/main/08-Woven/png/Plaid.png) | cpp | py |
+| Puppytooth | ![](<https://raw.githubusercontent.com/ace-dent/8x8.me/main/previews/Puppytooth.png>) | [png](https://github.com/ace-dent/8x8.me/blob/main/08-Woven/png/Puppytooth.png) | cpp | py | p8.lua
 
-| (11) Symbols ||
-| :---       | :---: |
-| Heart | ![](<https://raw.githubusercontent.com/ace-dent/8x8.me/main/previews/Heart.png>)
-| HeartTiny | ![](<https://raw.githubusercontent.com/ace-dent/8x8.me/main/previews/HeartTiny.png>)
+---
+
+| (11) Symbols ||||||
+| :---       | :---: | :---: | :---: | :---: | :---: |
+| Heart | ![](<https://raw.githubusercontent.com/ace-dent/8x8.me/main/previews/Heart.png>) | [png](https://github.com/ace-dent/8x8.me/blob/main/08-Woven/png/Heart.png) | cpp | py |
+| HeartTiny | ![](<https://raw.githubusercontent.com/ace-dent/8x8.me/main/previews/HeartTiny.png>) | [png](https://github.com/ace-dent/8x8.me/blob/main/08-Woven/png/HeartTiny.png) | cpp | py | p8.lua
 
 ---
 
