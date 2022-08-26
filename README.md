@@ -12,7 +12,7 @@ Patterns were tested and refined on an Arduboy device using [ASE](https://github
 
 Artwork and files created using [ABSpriteEditor](https://github.com/Pharap/ABSpriteEditor). Image conversions by ImageMagick, compressed with `pngslim` and metadata added with ExifTool.
 
-Special thanks to @felipemanga, @Pharap, @pmwasson.
+Special thanks to @felipemanga, @lexaloffle, @Pharap, @pmwasson.
 
 ## Legal
 Produced by Andrew C.E. Dent and dedicated to the Public Domain (CC0 – free to use). Giving attribution is not required, but is greatly appreciated! Please read the separate `LICENSE` file.
@@ -31,14 +31,14 @@ All trademarks are the property of their respective owners.
 
 | (01) Dither  ||||||
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| BayerDither00 | ![]() | [png]() | cpp | py | p8.lua
+| BayerDither01 | ![](/previews/BayerDither01.png) | [png](/01-Dither/png/BayerDither01.png) | cpp | py | [p8.lua](https://github.com/ace-dent/8x8.me/blob/2422c80356c574398278a19a280514db1ad3a875/01-Dither/dither.p8.lua#L5)
 
 ---
 
 | (08) Woven ||||||
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| Gingham | ![](previews/Gingham.png) | [png](/08-Woven/png/Gingham.png) | cpp | py |
-| Houndstooth | ![](previews/Houndstooth.png) | [png](/08-Woven/png/Houndstooth.png) | cpp | py |
+| Gingham | ![](/previews/Gingham.png) | [png](/08-Woven/png/Gingham.png) | cpp | py |
+| Houndstooth | ![](/previews/Houndstooth.png) | [png](/08-Woven/png/Houndstooth.png) | cpp | py |
 | Plaid [^office]| ![](/previews/Plaid.png) | [png](/08-Woven/png/Plaid.png) | cpp | py |
 | Puppytooth | ![](/previews/Puppytooth.png) | [png](/08-Woven/png/Puppytooth.png) | cpp | py | p8.lua
 
