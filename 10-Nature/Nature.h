@@ -5,8 +5,9 @@
 
 
 namespace patterns {
-
-  constexpr uint8_t PROGMEM scales[] {    8, 8,  // 8x8 px image
+  
+  constexpr uint8_t PROGMEM scales[] {
+    8, 8,  // 8x8 px image
     0x42,  // ▓░▓▓▓▓░▓
     0x44,  // ▓░▓▓▓░▓▓
     0x24,  // ▓▓░▓▓░▓▓
@@ -22,7 +23,7 @@ namespace patterns {
 
 
 
-#ifdef 0
+#if 0
 
 namespace patternsHorizontal {
   
