@@ -44,6 +44,12 @@ Repeating tile patterns
 
 ---
 
+| (10) Nature ||||||
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| Scales | ![](/previews/Scales.png) | [png](/10-Nature/png/Scales.png) | cpp | py |
+
+---
+
 | (11) Symbols ||||||
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | Heart | ![](/previews/Heart.png) | [png](/11-Symbols/png/Heart.png) | cpp | py |
@@ -61,7 +67,7 @@ Repeating tile patterns
 
 Patterns were tested and refined on an Arduboy device using [ASE](https://github.com/pmwasson/ASE). 
 
-Artwork and files created using [ABSpriteEditor](https://github.com/Pharap/ABSpriteEditor). Image conversions by ImageMagick, compressed with `pngslim` and metadata added with ExifTool.
+Artwork and files created using [ABSpriteEditor](https://github.com/Pharap/ABSpriteEditor). Data tinkering in LibreOffice, image conversions by ImageMagick, compressed with `pngslim` and metadata added with ExifTool.
 
 Special thanks to @dw817, @felipemanga, @lexaloffle, @Pharap, @pmwasson.
 
