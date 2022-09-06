@@ -73,9 +73,9 @@ Repeating tile patterns
 
 Patterns were tested and refined on an Arduboy device using [ASE](https://github.com/pmwasson/ASE). 
 
-Artwork and files created using [ABSpriteEditor](https://github.com/Pharap/ABSpriteEditor). Data tinkering in LibreOffice, image conversions by ImageMagick, compressed with `pngslim` and metadata added with ExifTool.
+Artwork and files created using [ABSpriteEditor](https://github.com/Pharap/ABSpriteEditor). Additional tinkering with [image2cpp](https://javl.github.io/image2cpp/). Data tweaking in LibreOffice, image conversions by ImageMagick, compressed with `pngslim` and metadata added with ExifTool.
 
-Special thanks to @dw817, @felipemanga, @lexaloffle, @Pharap, @pmwasson.
+Special thanks to @dw817, @felipemanga, @javl, @lexaloffle, @Pharap, @pmwasson.
 
 ## Legal
 Produced by Andrew C.E. Dent and dedicated to the Public Domain (CC0 – free to use). Giving attribution is not required but always appreciated! Please read the separate `LICENSE` file.
