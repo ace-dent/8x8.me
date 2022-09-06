@@ -32,6 +32,12 @@ Repeating tile patterns
 | BayerDither15 | ![](/previews/BayerDither15.png) | [png](/01-Dither/png/BayerDither15.png) | cpp | py |
 | BayerDither16 | ![](/previews/BayerDither16.png) | [png](/01-Dither/png/BayerDither16.png) | cpp | py |
 
+---
+
+| (04) Dots ||||||
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| Confetti <sup>o</sup>| ![](/previews/Confetti.png) | [png](/04-Dots/png/Confetti.png) | cpp | py |
+| ConfettiLarge <sup>o</sup>| ![](/previews/ConfettiLarge.png) | [png](/04-Dots/png/ConfettiLarge.png) | cpp | py |
 
 ---
 
@@ -39,8 +45,8 @@ Repeating tile patterns
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | Gingham | ![](/previews/Gingham.png) | [png](/08-Woven/png/Gingham.png) | cpp | py |
 | Houndstooth | ![](/previews/Houndstooth.png) | [png](/08-Woven/png/Houndstooth.png) | cpp | py |
-| Plaid <sup>O</sup>| ![](/previews/Plaid.png) | [png](/08-Woven/png/Plaid.png) | cpp | py |
-| Puppytooth <sup>P</sup>| ![](/previews/Puppytooth.png) | [png](/08-Woven/png/Puppytooth.png) | cpp | py | p8.lua
+| Plaid <sup>o</sup>| ![](/previews/Plaid.png) | [png](/08-Woven/png/Plaid.png) | cpp | py |
+| Puppytooth <sup>p</sup>| ![](/previews/Puppytooth.png) | [png](/08-Woven/png/Puppytooth.png) | cpp | py | p8.lua
 
 ---
 
@@ -53,12 +59,12 @@ Repeating tile patterns
 | (11) Symbols ||||||
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | Heart | ![](/previews/Heart.png) | [png](/11-Symbols/png/Heart.png) | cpp | py |
-| HeartTiny <sup>P</sup>| ![](/previews/HeartTiny.png) | [png](/11-Symbols/png/HeartTiny.png) | cpp | py | p8.lua
+| HeartTiny <sup>p</sup>| ![](/previews/HeartTiny.png) | [png](/11-Symbols/png/HeartTiny.png) | cpp | py | p8.lua
 
 ---
 
-<sup>O</sup>: Pattern included in the `Office` collection  
-<sup>P</sup>: Pattern included in the `PICO-8` collection
+<sup>o</sup>: Pattern included in the `Office` collection  
+<sup>p</sup>: Pattern included in the `PICO-8` collection
 
 <br>
 
@@ -72,7 +78,7 @@ Artwork and files created using [ABSpriteEditor](https://github.com/Pharap/ABSpr
 Special thanks to @dw817, @felipemanga, @lexaloffle, @Pharap, @pmwasson.
 
 ## Legal
-Produced by Andrew C.E. Dent and dedicated to the Public Domain (CC0 – free to use). Giving attribution is not required, but is greatly appreciated! Please read the separate `LICENSE` file.
+Produced by Andrew C.E. Dent and dedicated to the Public Domain (CC0 – free to use). Giving attribution is not required but always appreciated! Please read the separate `LICENSE` file.
 
 All trademarks are the property of their respective owners.  
 *Arduboy*® is a registered trademark of [Arduboy, Inc., USA](https://www.arduboy.com).  
