@@ -36,8 +36,8 @@ Repeating tile patterns
 
 | (04) Dots ||||||
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| Confetti <sup>o</sup>| ![](/previews/Confetti.png) | [png](/04-Dots/png/Confetti.png) | cpp | py |
-| ConfettiLarge <sup>o</sup>| ![](/previews/ConfettiLarge.png) | [png](/04-Dots/png/ConfettiLarge.png) | cpp | py |
+| Confetti <sup>o</sup>| ![](/previews/Confetti.png) | [png](/04-Dots/png/Confetti.png) | [cpp](https://github.com/ace-dent/8x8.me/blob/87b0ac8f90162ce2c74284c92b725fdee690b0d5/04-Dots/Dots.h#L8) | py |
+| ConfettiLarge <sup>o</sup>| ![](/previews/ConfettiLarge.png) | [png](/04-Dots/png/ConfettiLarge.png) | [cpp](https://github.com/ace-dent/8x8.me/blob/87b0ac8f90162ce2c74284c92b725fdee690b0d5/04-Dots/Dots.h#L21) | py |
 
 ---
 
