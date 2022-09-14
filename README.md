@@ -34,6 +34,41 @@ Repeating tile patterns
 
 ---
 
+| (02) Lines  ||||||
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| HorizontalDense | ![](/previews/HorizontalDense.png) | [png](/02-Lines/png/HorizontalDense.png) | cpp | py | p8.lua
+| Horizontal | ![](/previews/Horizontal.png) | [png](/02-Lines/png/Horizontal.png) | cpp | py | p8.lua
+| HorizontalMedium | ![](/previews/HorizontalMedium.png) | [png](/02-Lines/png/HorizontalMedium.png) | cpp | py | p8.lua
+| HorizontalBold | ![](/previews/HorizontalBold.png) | [png](/02-Lines/png/HorizontalBold.png) | cpp | py | p8.lua
+| HorizontalSparse | ![](/previews/HorizontalSparse.png) | [png](/02-Lines/png/HorizontalSparse.png) | cpp | py | p8.lua
+| HorizontalSparseMedium | ![](/previews/HorizontalSparseMedium.png) | [png](/02-Lines/png/HorizontalSparseMedium.png) | cpp | py | p8.lua
+| HorizontalSparseBold | ![](/previews/HorizontalSparseBold.png) | [png](/02-Lines/png/HorizontalSparseBold.png) | cpp | py | p8.lua
+| HorizontalSparseExtraBold | ![](/previews/HorizontalSparseExtraBold.png) | [png](/02-Lines/png/HorizontalSparseExtraBold.png) | cpp | py | p8.lua
+| VerticalDense | ![](/previews/VerticalDense.png) | [png](/02-Lines/png/VerticalDense.png) | cpp | py | p8.lua
+| Vertical | ![](/previews/Vertical.png) | [png](/02-Lines/png/Vertical.png) | cpp | py | p8.lua
+| VerticalMedium | ![](/previews/VerticalMedium.png) | [png](/02-Lines/png/VerticalMedium.png) | cpp | py | p8.lua
+| VerticalBold | ![](/previews/VerticalBold.png) | [png](/02-Lines/png/VerticalBold.png) | cpp | py | p8.lua
+| VerticalSparse | ![](/previews/VerticalSparse.png) | [png](/02-Lines/png/VerticalSparse.png) | cpp | py | p8.lua
+| VerticalSparseMedium | ![](/previews/VerticalSparseMedium.png) | [png](/02-Lines/png/VerticalSparseMedium.png) | cpp | py | p8.lua
+| VerticalSparseBold | ![](/previews/VerticalSparseBold.png) | [png](/02-Lines/png/VerticalSparseBold.png) | cpp | py | p8.lua
+| VerticalSparseExtraBold | ![](/previews/VerticalSparseExtraBold.png) | [png](/02-Lines/png/VerticalSparseExtraBold.png) | cpp | py | p8.lua
+| Dexter | ![](/previews/Dexter.png) | [png](/02-Lines/png/Dexter.png) | cpp | py | p8.lua
+| DexterMedium | ![](/previews/DexterMedium.png) | [png](/02-Lines/png/DexterMedium.png) | cpp | py | p8.lua
+| DexterBold | ![](/previews/DexterBold.png) | [png](/02-Lines/png/DexterBold.png) | cpp | py | p8.lua
+| DexterSparse | ![](/previews/DexterSparse.png) | [png](/02-Lines/png/DexterSparse.png) | cpp | py | p8.lua
+| DexterSparseMedium | ![](/previews/DexterSparseMedium.png) | [png](/02-Lines/png/DexterSparseMedium.png) | cpp | py | p8.lua
+| DexterSparseBold | ![](/previews/DexterSparseBold.png) | [png](/02-Lines/png/DexterSparseBold.png) | cpp | py | p8.lua
+| DexterSparseExtraBold | ![](/previews/DexterSparseExtraBold.png) | [png](/02-Lines/png/DexterSparseExtraBold.png) | cpp | py | p8.lua
+| Sinister | ![](/previews/Sinister.png) | [png](/02-Lines/png/Sinister.png) | cpp | py | p8.lua
+| SinisterMedium | ![](/previews/SinisterMedium.png) | [png](/02-Lines/png/SinisterMedium.png) | cpp | py | p8.lua
+| SinisterBold | ![](/previews/SinisterBold.png) | [png](/02-Lines/png/SinisterBold.png) | cpp | py | p8.lua
+| SinisterSparse | ![](/previews/SinisterSparse.png) | [png](/02-Lines/png/SinisterSparse.png) | cpp | py | p8.lua
+| SinisterSparseMedium | ![](/previews/SinisterSparseMedium.png) | [png](/02-Lines/png/SinisterSparseMedium.png) | cpp | py | p8.lua
+| SinisterSparseBold | ![](/previews/SinisterSparseBold.png) | [png](/02-Lines/png/SinisterSparseBold.png) | cpp | py | p8.lua
+| SinisterSparseExtraBold | ![](/previews/SinisterSparseExtraBold.png) | [png](/02-Lines/png/SinisterSparseExtraBold.png) | cpp | py | p8.lua
+
+---
+
 | (04) Dots ||||||
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | Confetti <sup>o</sup>| ![](/previews/Confetti.png) | [png](/04-Dots/png/Confetti.png) | [cpp](https://github.com/ace-dent/8x8.me/blob/87b0ac8f90162ce2c74284c92b725fdee690b0d5/04-Dots/Dots.h#L8) | py |
