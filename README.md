@@ -103,7 +103,9 @@ Repeating tile patterns
 
 | (10) Nature ||||||
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| Scales | ![](/previews/Scales.png) | [png](/10-Nature/png/Scales.png) | [cpp](https://github.com/ace-dent/8x8.me/blob/50f1dab5edc1b9d17e2b1e617452acc4c783f4ad/10-Nature/Nature.h#L9) | py |
+| Grass | ![](/previews/Grass.png) | [png](/10-Nature/png/Grass.png) | [cpp]() | py | p8.lua
+| Scales | ![](/previews/Scales.png) | [png](/10-Nature/png/Scales.png) | [cpp]() | py | p8.lua
+| Shrub | ![](/previews/Shrub.png) | [png](/10-Nature/png/Shrub.png) | [cpp]() | py | p8.lua
 
 ---
 
