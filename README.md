@@ -103,9 +103,9 @@ Repeating tile patterns
 
 | (10) Nature ||||||
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| Grass | ![](/previews/Grass.png) | [png](/10-Nature/png/Grass.png) | [cpp]() | py | p8.lua
-| Scales | ![](/previews/Scales.png) | [png](/10-Nature/png/Scales.png) | [cpp]() | py | p8.lua
-| Shrub | ![](/previews/Shrub.png) | [png](/10-Nature/png/Shrub.png) | [cpp]() | py | p8.lua
+| Grass | ![](/previews/Grass.png) | [png](/10-Nature/png/Grass.png) | [cpp](https://github.com/ace-dent/8x8.me/blob/7fe46af5e082b5180f7c6e3469b1df91e677242d/10-Nature/Nature.h#L8) | py | p8.lua
+| Scales | ![](/previews/Scales.png) | [png](/10-Nature/png/Scales.png) | [cpp](https://github.com/ace-dent/8x8.me/blob/7fe46af5e082b5180f7c6e3469b1df91e677242d/10-Nature/Nature.h#L21) | py | p8.lua
+| Shrub | ![](/previews/Shrub.png) | [png](/10-Nature/png/Shrub.png) | [cpp](https://github.com/ace-dent/8x8.me/blob/7fe46af5e082b5180f7c6e3469b1df91e677242d/10-Nature/Nature.h#L34) | py | p8.lua
 
 ---
 
