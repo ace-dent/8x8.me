@@ -112,7 +112,7 @@ Repeating tile patterns
 | (11) Symbols ||||||
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | Heart | ![](/previews/Heart.png) | [png](/11-Symbols/png/Heart.png) | cpp | py |
-| HeartTiny <sup>p</sup>| ![](/previews/HeartTiny.png) | [png](/11-Symbols/png/HeartTiny.png) | cpp | py | p8.lua
+| HeartMini <sup>p</sup>| ![](/previews/HeartMini.png) | [png](/11-Symbols/png/HeartMini.png) | cpp | py | p8.lua
 
 ---
 
