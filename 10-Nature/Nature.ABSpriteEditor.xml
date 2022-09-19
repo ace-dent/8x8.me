@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <SpriteFile FileName="Nature">
-	<LicenceText>CC0</LicenceText>
+	<LicenceText>This work is dedicated to the Public Domain by ACED, licensed under CC0. To view a copy of this license, visit https://creativecommons.org/publicdomain/zero/1.0/</LicenceText>
 	<SpriteGroup Namespace="patterns">
 		<Sprite Name="scales" Width="8" Height="8">
 			<SpriteFrame Text="Scales">89504E470D0A1A0A0000000D4948445200000008000000080806000000C40FBE8B0000000467414D410000B18F0BFC6105000000097048597300000EC300000EC301C76FA864000000374944415428538D8D010A00200803EFFF9FB614072D243A98E036917800A4E68EFC9ADD34093B3F03F15F507897F6EE3F1379A5F6468058F7C6C937934A62D00000000049454E44AE426082</SpriteFrame>
