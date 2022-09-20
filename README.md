@@ -112,16 +112,18 @@ Repeating tile patterns
 
 ---
 
-| (07) Circular ||||||
+| (07) Round ||||||
 | :--- | :---: | :---: | :---: | :---: | :---: |
+| Sphere <sup>o</sup>| ![](/previews/Sphere.png) | [png](/07-Round/png/Sphere.png) | cpp | py | p8.lua
+| SphereMini <sup>p</sup>| ![](/previews/SphereMini.png) | [png](/07-Round/png/SphereMini.png) | cpp | py | p8.lua
 
 ---
 
 | (08) Woven ||||||
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| Gingham | ![](/previews/Gingham.png) | [png](/08-Woven/png/Gingham.png) | cpp | py |
-| Houndstooth | ![](/previews/Houndstooth.png) | [png](/08-Woven/png/Houndstooth.png) | cpp | py |
-| Plaid <sup>o</sup>| ![](/previews/Plaid.png) | [png](/08-Woven/png/Plaid.png) | cpp | py |
+| Gingham | ![](/previews/Gingham.png) | [png](/08-Woven/png/Gingham.png) | cpp | py | p8.lua
+| Houndstooth | ![](/previews/Houndstooth.png) | [png](/08-Woven/png/Houndstooth.png) | cpp | py | p8.lua
+| Plaid <sup>o</sup>| ![](/previews/Plaid.png) | [png](/08-Woven/png/Plaid.png) | cpp | py | p8.lua
 | Puppytooth <sup>p</sup>| ![](/previews/Puppytooth.png) | [png](/08-Woven/png/Puppytooth.png) | cpp | py | p8.lua
 
 ---
