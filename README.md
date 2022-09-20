@@ -55,6 +55,13 @@ Repeating tile patterns
 
 | (02) Dashes ||||||
 | :--- | :---: | :---: | :---: | :---: | :---: |
+| HorizontalDenseTrellis <sup>o</sup>| ![](/previews/HorizontalDenseTrellis.png) | [png](/02-Dashes/png/HorizontalDenseTrellis.png) | cpp | py | p8.lua
+| HorizontalDenseDotDash <sup>p</sup>| ![](/previews/HorizontalDenseDotDash.png) | [png](/02-Dashes/png/HorizontalDenseDotDash.png) | cpp | py | p8.lua
+| HorizontalDash <sup>o</sup>| ![](/previews/HorizontalDash.png) | [png](/02-Dashes/png/HorizontalDash.png) | cpp | py | p8.lua
+| HorizontalDashMini <sup>p</sup>| ![](/previews/HorizontalDashMini.png) | [png](/02-Dashes/png/HorizontalDashMini.png) | cpp | py | p8.lua
+| VerticalDash <sup>o</sup>| ![](/previews/VerticalDash.png) | [png](/02-Dashes/png/VerticalDash.png) | cpp | py | p8.lua
+| DexterDash <sup>o</sup>| ![](/previews/DexterDash.png) | [png](/02-Dashes/png/DexterDash.png) | cpp | py | p8.lua
+| SinisterDash <sup>o</sup>| ![](/previews/SinisterDash.png) | [png](/02-Dashes/png/SinisterDash.png) | cpp | py | p8.lua
 
 ---
 
