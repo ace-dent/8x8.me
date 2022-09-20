@@ -1,8 +1,10 @@
 -- dither patterns from 8x8.me
 -- public domain (CC0) by aced
 
-fp_bayerdither = {
- -- 01 fillp(32768)
+p_bayerdither = {
+ -- 01 fillp(0x8000) 3 tokens, 13 chars, 13 bytes compressed
+ -- 01 fillp(32768) 3 tokens, 12 chars, 12 bytes compressed
+ -- 01 fillp(8^5) 5 tokens, 10 chars, 10 bytes compressed
  0x8<<12|-- █▒▒▒
  0x0<<8 |-- ▒▒▒▒
  0x0<<4 |-- ▒▒▒▒
@@ -92,6 +94,7 @@ fp_bayerdither = {
  0xf<<4 |-- ████
  0xf,    -- ████
 
+ -- 16 fillp(-1)
  -- 16 fillp(65535)
  0xf<<12|-- ████
  0xf<<8 |-- ████
