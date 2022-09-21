@@ -61,7 +61,9 @@ Repeating tile patterns
 | HorizontalDashMini <sup>p</sup>| ![](/previews/HorizontalDashMini.png) | [png](/02-Dashes/png/HorizontalDashMini.png) | cpp | py | p8.lua
 | VerticalDash <sup>o</sup>| ![](/previews/VerticalDash.png) | [png](/02-Dashes/png/VerticalDash.png) | cpp | py | p8.lua
 | DexterDash <sup>o</sup>| ![](/previews/DexterDash.png) | [png](/02-Dashes/png/DexterDash.png) | cpp | py | p8.lua
+| DexterSparseDash | ![](/previews/DexterSparseDash.png) | [png](/02-Dashes/png/DexterSparseDash.png) | cpp | py | p8.lua
 | SinisterDash <sup>o</sup>| ![](/previews/SinisterDash.png) | [png](/02-Dashes/png/SinisterDash.png) | cpp | py | p8.lua
+| SinisterSparseDash | ![](/previews/SinisterSparseDash.png) | [png](/02-Dashes/png/SinisterSparseDash.png) | cpp | py | p8.lua
 
 ---
 
