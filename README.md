@@ -108,6 +108,13 @@ Repeating tile patterns
 
 | (04) Waves ||||||
 | :--- | :---: | :---: | :---: | :---: | :---: |
+| Ripple | ![](/previews/Ripple.png) | [png](/04-Waves/png/Ripple.png) | cpp | py | p8.lua
+| Wave <sup>o</sup>| ![](/previews/Wave.png) | [png](/04-Waves/png/Wave.png) | cpp | py | p8.lua
+| TidalLight | ![](/previews/TidalLight.png) | [png](/04-Waves/png/TidalLight.png) | cpp | py | p8.lua
+| Tidal | ![](/previews/Tidal.png) | [png](/04-Waves/png/Tidal.png) | cpp | py | p8.lua
+| TidalMedium | ![](/previews/TidalMedium.png) | [png](/04-Waves/png/TidalMedium.png) | cpp | py | p8.lua
+| OceanicLight | ![](/previews/OceanicLight.png) | [png](/04-Waves/png/OceanicLight.png) | cpp | py | p8.lua
+| Oceanic | ![](/previews/Oceanic.png) | [png](/04-Waves/png/Oceanic.png) | cpp | py | p8.lua
 
 ---
 
