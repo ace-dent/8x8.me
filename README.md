@@ -166,6 +166,7 @@ Repeating tile patterns
 
 | (12) Other ||||||
 | :--- | :---: | :---: | :---: | :---: | :---: |
+| Divot <sup>o</sup>| ![](/previews/Divot.png) | [png](/12-Other/png/Divot.png) | cpp | py | p8.lua
 
 ---
 
