@@ -54,17 +54,21 @@ Repeating tile patterns
 
 ---
 
-| (02) Dashes ||||||
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| HorizontalDenseTrellis <sup>o</sup>| ![](/previews/HorizontalDenseTrellis.png) | [png](/02-Dashes/png/HorizontalDenseTrellis.png) | cpp | py | p8.lua
-| HorizontalDenseDotDash <sup>p</sup>| ![](/previews/HorizontalDenseDotDash.png) | [png](/02-Dashes/png/HorizontalDenseDotDash.png) | cpp | py | p8.lua
-| HorizontalDash <sup>o</sup>| ![](/previews/HorizontalDash.png) | [png](/02-Dashes/png/HorizontalDash.png) | cpp | py | p8.lua
-| HorizontalDashMini <sup>p</sup>| ![](/previews/HorizontalDashMini.png) | [png](/02-Dashes/png/HorizontalDashMini.png) | cpp | py | p8.lua
-| VerticalDash <sup>o</sup>| ![](/previews/VerticalDash.png) | [png](/02-Dashes/png/VerticalDash.png) | cpp | py | p8.lua
-| DexterDash <sup>o</sup>| ![](/previews/DexterDash.png) | [png](/02-Dashes/png/DexterDash.png) | cpp | py | p8.lua
-| DexterSparseDash | ![](/previews/DexterSparseDash.png) | [png](/02-Dashes/png/DexterSparseDash.png) | cpp | py | p8.lua
-| SinisterDash <sup>o</sup>| ![](/previews/SinisterDash.png) | [png](/02-Dashes/png/SinisterDash.png) | cpp | py | p8.lua
-| SinisterSparseDash | ![](/previews/SinisterSparseDash.png) | [png](/02-Dashes/png/SinisterSparseDash.png) | cpp | py | p8.lua
+### (02) Dashes  
+| Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| HorizontalDenseTrellis <sup>o</sup>| ![](/previews/HorizontalDenseTrellis.png) | [png](/02-Dashes/png/HorizontalDenseTrellis.png) | cpp | txt | p8.lua | py
+| HorizontalDenseDotDash <sup>p</sup>| ![](/previews/HorizontalDenseDotDash.png) | [png](/02-Dashes/png/HorizontalDenseDotDash.png) | cpp | txt | p8.lua | py
+| HorizontalDash <sup>o</sup>| ![](/previews/HorizontalDash.png) | [png](/02-Dashes/png/HorizontalDash.png) | cpp | txt | p8.lua | py
+| HorizontalDashMini <sup>p</sup>| ![](/previews/HorizontalDashMini.png) | [png](/02-Dashes/png/HorizontalDashMini.png) | cpp | txt | p8.lua | py
+| VerticalDash <sup>o</sup>| ![](/previews/VerticalDash.png) | [png](/02-Dashes/png/VerticalDash.png) | cpp | txt | p8.lua | py
+| DexterDash <sup>o</sup>| ![](/previews/DexterDash.png) | [png](/02-Dashes/png/DexterDash.png) | cpp | txt | p8.lua | py
+| DexterSparseDash | ![](/previews/DexterSparseDash.png) | [png](/02-Dashes/png/DexterSparseDash.png) | cpp | txt | p8.lua | py
+| SinisterDash <sup>o</sup>| ![](/previews/SinisterDash.png) | [png](/02-Dashes/png/SinisterDash.png) | cpp | txt | p8.lua | py
+| SinisterSparseDash | ![](/previews/SinisterSparseDash.png) | [png](/02-Dashes/png/SinisterSparseDash.png) | cpp | txt | p8.lua | py
+| AlternatingDash | ![](/previews/AlternatingDash.png) | [png](/02-Dashes/png/AlternatingDash.png) | cpp | txt | p8.lua | py
+| AlternatingDashDouble | ![](/previews/AlternatingDashDouble.png) | [png](/02-Dashes/png/AlternatingDashDouble.png) | cpp | txt | p8.lua | py
+| AlternatingDashMini | ![](/previews/AlternatingDashMini.png) | [png](/02-Dashes/png/AlternatingDashMini.png) | cpp | txt | p8.lua | py
 
 ---
 
