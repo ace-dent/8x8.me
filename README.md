@@ -170,7 +170,7 @@ Repeating tile patterns
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Scales | ![](/previews/Scales.png) | [png](/10-Nature/png/Scales.png) | cpp | txt | p8.lua | py
-| Sand | ![](/previews/Sand.png) | [png](/10-Nature/png/Sand.png) | cpp | txt | p8.lua | py
+| Loam | ![](/previews/Loam.png) | [png](/10-Nature/png/Loam.png) | cpp | txt | p8.lua | py
 | Grass | ![](/previews/Grass.png) | [png](/10-Nature/png/Grass.png) | cpp | txt | p8.lua | py
 | Tuffet | ![](/previews/Tuffet.png) | [png](/10-Nature/png/Tuffet.png) | cpp | txt | p8.lua | py
 | Leaves | ![](/previews/Leaves.png) | [png](/10-Nature/png/Leaves.png) | cpp | txt | p8.lua | py
