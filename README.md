@@ -166,11 +166,17 @@ Repeating tile patterns
 
 ---
 
-| (10) Nature ||||||
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| Grass | ![](/previews/Grass.png) | [png](/10-Nature/png/Grass.png) | [cpp](https://github.com/ace-dent/8x8.me/blob/7fe46af5e082b5180f7c6e3469b1df91e677242d/10-Nature/Nature.h#L8) | py | p8.lua
-| Scales | ![](/previews/Scales.png) | [png](/10-Nature/png/Scales.png) | [cpp](https://github.com/ace-dent/8x8.me/blob/7fe46af5e082b5180f7c6e3469b1df91e677242d/10-Nature/Nature.h#L21) | py | p8.lua
-| Shrub | ![](/previews/Shrub.png) | [png](/10-Nature/png/Shrub.png) | [cpp](https://github.com/ace-dent/8x8.me/blob/7fe46af5e082b5180f7c6e3469b1df91e677242d/10-Nature/Nature.h#L34) | py | p8.lua
+### (10) Nature  
+| Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Scales | ![](/previews/Scales.png) | [png](/10-Nature/png/Scales.png) | cpp | txt | p8.lua | py
+| Sand | ![](/previews/Sand.png) | [png](/10-Nature/png/Sand.png) | cpp | txt | p8.lua | py
+| Grass | ![](/previews/Grass.png) | [png](/10-Nature/png/Grass.png) | cpp | txt | p8.lua | py
+| Tuffet | ![](/previews/Tuffet.png) | [png](/10-Nature/png/Tuffet.png) | cpp | txt | p8.lua | py
+| Leaves | ![](/previews/Leaves.png) | [png](/10-Nature/png/Leaves.png) | cpp | txt | p8.lua | py
+| Daisies | ![](/previews/Daisies.png) | [png](/10-Nature/png/Daisies.png) | cpp | txt | p8.lua | py
+| Tree | ![](/previews/Tree.png) | [png](/10-Nature/png/Tree.png) | cpp | txt | p8.lua | py
+| Shrub | ![](/previews/Shrub.png) | [png](/10-Nature/png/Shrub.png) | cpp | txt | p8.lua | py
 
 ---
 
