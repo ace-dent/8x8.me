@@ -149,8 +149,20 @@ Repeating tile patterns
 
 ---
 
-| (09) Architecture ||||||
-| :--- | :---: | :---: | :---: | :---: | :---: |
+### (09) Architecture  
+| Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Shingle <sup>o</sup>| ![](/previews/Shingle.png) | [png](/09-Architecture/png/Shingle.png) | cpp | txt | p8.lua | py
+| Brick <sup>o</sup>| ![](/previews/Brick.png) | [png](/09-Architecture/png/Brick.png) | cpp | txt | p8.lua | py
+| BrickVertical | ![](/previews/BrickVertical.png) | [png](/09-Architecture/png/BrickVertical.png) | cpp | txt | p8.lua | py
+| BrickDiagonal <sup>o</sup>| ![](/previews/BrickDiagonal.png) | [png](/09-Architecture/png/BrickDiagonal.png) | cpp | txt | p8.lua | py
+| BrickDiagonalRounded| ![](/previews/BrickDiagonalRounded.png) | [png](/09-Architecture/png/BrickDiagonalRounded.png) | cpp | txt | p8.lua | py
+| BrickDiagonalMini | ![](/previews/BrickDiagonalMini.png) | [png](/09-Architecture/png/BrickDiagonalMini.png) | cpp | txt | p8.lua | py
+| BrickMini | ![](/previews/BrickMini.png) | [png](/09-Architecture/png/BrickMini.png) | cpp | txt | p8.lua | py
+| BrickMiniDamage | ![](/previews/BrickMiniDamage.png) | [png](/09-Architecture/png/BrickMiniDamage.png) | cpp | txt | p8.lua | py
+| BrickMiniRuins | ![](/previews/BrickMiniRuins.png) | [png](/09-Architecture/png/BrickMiniRuins.png) | cpp | txt | p8.lua | py
+| SquareBasket | ![](/previews/SquareBasket.png) | [png](/09-Architecture/png/SquareBasket.png) | cpp | txt | p8.lua | py
+| PavingStones | ![](/previews/PavingStones.png) | [png](/09-Architecture/png/PavingStones.png) | cpp | txt | p8.lua | py
 
 ---
 
@@ -194,7 +206,7 @@ Produced by Andrew C.E. Dent and dedicated to the Public Domain (CC0 – free to
 
 All trademarks are the property of their respective owners.  
 *Arduboy*® is a registered trademark of [Arduboy, Inc., USA](https://www.arduboy.com).  
-*Bitsy* is produced by (Adam Le Doux)[https://bitsy.org].
+*Bitsy* is produced by [Adam Le Doux](https://bitsy.org).  
 *GAMBY* was produced by [Logicalzero](http://logicalzero.com/gamby/) (David Stokes).  
 *LibreOffice* is a trademark of [The Document Foundation](https://www.libreoffice.org).  
 *PICO-8*  is a trademark of [Lexaloffle Games LLP](https://www.pico-8.com).  
