@@ -32,18 +32,18 @@ Repeating tile patterns
 | BayerDither14 | ![](/previews/BayerDither14.png) | [png](/00-Dither/png/BayerDither14.png) | cpp | txt | p8.lua | py
 | BayerDither15 | ![](/previews/BayerDither15.png) | [png](/00-Dither/png/BayerDither15.png) | cpp | txt | p8.lua | py
 | BayerDither16 | ![](/previews/BayerDither16.png) | [png](/00-Dither/png/BayerDither16.png) | cpp | txt | p8.lua | py
-| OfficeDither05 | ![](/previews/OfficeDither05.png) | [png](/00-Dither/png/OfficeDither05.png) | cpp | txt | p8.lua | py
-| OfficeDither10 | ![](/previews/OfficeDither10.png) | [png](/00-Dither/png/OfficeDither10.png) | cpp | txt | p8.lua | py
-| OfficeDither20 | ![](/previews/OfficeDither20.png) | [png](/00-Dither/png/OfficeDither20.png) | cpp | txt | p8.lua | py
-| OfficeDither25 | ![](/previews/OfficeDither25.png) | [png](/00-Dither/png/OfficeDither25.png) | cpp | txt | p8.lua | py
-| OfficeDither30 | ![](/previews/OfficeDither30.png) | [png](/00-Dither/png/OfficeDither30.png) | cpp | txt | p8.lua | py
-| OfficeDither40 | ![](/previews/OfficeDither40.png) | [png](/00-Dither/png/OfficeDither40.png) | cpp | txt | p8.lua | py
-| OfficeDither50 | ![](/previews/OfficeDither50.png) | [png](/00-Dither/png/OfficeDither50.png) | cpp | txt | p8.lua | py
-| OfficeDither60 | ![](/previews/OfficeDither60.png) | [png](/00-Dither/png/OfficeDither60.png) | cpp | txt | p8.lua | py
-| OfficeDither70 | ![](/previews/OfficeDither70.png) | [png](/00-Dither/png/OfficeDither70.png) | cpp | txt | p8.lua | py
-| OfficeDither75 | ![](/previews/OfficeDither75.png) | [png](/00-Dither/png/OfficeDither75.png) | cpp | txt | p8.lua | py
-| OfficeDither80 | ![](/previews/OfficeDither80.png) | [png](/00-Dither/png/OfficeDither80.png) | cpp | txt | p8.lua | py
-| OfficeDither90 | ![](/previews/OfficeDither90.png) | [png](/00-Dither/png/OfficeDither90.png) | cpp | txt | p8.lua | py
+| OfficeDither05 <sup>o</sup>| ![](/previews/OfficeDither05.png) | [png](/00-Dither/png/OfficeDither05.png) | cpp | txt | p8.lua | py
+| OfficeDither10 <sup>o</sup>| ![](/previews/OfficeDither10.png) | [png](/00-Dither/png/OfficeDither10.png) | cpp | txt | p8.lua | py
+| OfficeDither20 <sup>o</sup>| ![](/previews/OfficeDither20.png) | [png](/00-Dither/png/OfficeDither20.png) | cpp | txt | p8.lua | py
+| OfficeDither25 <sup>o</sup>| ![](/previews/OfficeDither25.png) | [png](/00-Dither/png/OfficeDither25.png) | cpp | txt | p8.lua | py
+| OfficeDither30 <sup>o</sup>| ![](/previews/OfficeDither30.png) | [png](/00-Dither/png/OfficeDither30.png) | cpp | txt | p8.lua | py
+| OfficeDither40 <sup>o</sup>| ![](/previews/OfficeDither40.png) | [png](/00-Dither/png/OfficeDither40.png) | cpp | txt | p8.lua | py
+| OfficeDither50 <sup>o</sup>| ![](/previews/OfficeDither50.png) | [png](/00-Dither/png/OfficeDither50.png) | cpp | txt | p8.lua | py
+| OfficeDither60 <sup>o</sup>| ![](/previews/OfficeDither60.png) | [png](/00-Dither/png/OfficeDither60.png) | cpp | txt | p8.lua | py
+| OfficeDither70 <sup>o</sup>| ![](/previews/OfficeDither70.png) | [png](/00-Dither/png/OfficeDither70.png) | cpp | txt | p8.lua | py
+| OfficeDither75 <sup>o</sup>| ![](/previews/OfficeDither75.png) | [png](/00-Dither/png/OfficeDither75.png) | cpp | txt | p8.lua | py
+| OfficeDither80 <sup>o</sup>| ![](/previews/OfficeDither80.png) | [png](/00-Dither/png/OfficeDither80.png) | cpp | txt | p8.lua | py
+| OfficeDither90 <sup>o</sup>| ![](/previews/OfficeDither90.png) | [png](/00-Dither/png/OfficeDither90.png) | cpp | txt | p8.lua | py
 
 ---
 
@@ -169,15 +169,15 @@ Repeating tile patterns
 ### (10) Nature  
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Scales | ![](/previews/Scales.png) | [png](/10-Nature/png/Scales.png) | cpp | txt | p8.lua | py
-| Loam | ![](/previews/Loam.png) | [png](/10-Nature/png/Loam.png) | cpp | txt | p8.lua | py
-| Grass | ![](/previews/Grass.png) | [png](/10-Nature/png/Grass.png) | cpp | txt | p8.lua | py
-| Tuffet | ![](/previews/Tuffet.png) | [png](/10-Nature/png/Tuffet.png) | cpp | txt | p8.lua | py
-| Leaves | ![](/previews/Leaves.png) | [png](/10-Nature/png/Leaves.png) | cpp | txt | p8.lua | py
-| Daisies | ![](/previews/Daisies.png) | [png](/10-Nature/png/Daisies.png) | cpp | txt | p8.lua | py
-| Tree | ![](/previews/Tree.png) | [png](/10-Nature/png/Tree.png) | cpp | txt | p8.lua | py
-| Shrub | ![](/previews/Shrub.png) | [png](/10-Nature/png/Shrub.png) | cpp | txt | p8.lua | py
-
+| Scales | ![](/previews/Scales.png) | [png](/10-Nature/png/Scales.png) | cpp | [txt](/10-Nature/Nature.bitsy.txt#L5-L14) | p8.lua | py
+| Loam | ![](/previews/Loam.png) | [png](/10-Nature/png/Loam.png) | cpp | [txt](/10-Nature/Nature.bitsy.txt#L16-L25) | p8.lua | py
+| Grass | ![](/previews/Grass.png) | [png](/10-Nature/png/Grass.png) | cpp | [txt](/10-Nature/Nature.bitsy.txt#L27-L36) | p8.lua | py
+| Tuffet | ![](/previews/Tuffet.png) | [png](/10-Nature/png/Tuffet.png) | cpp | [txt](/10-Nature/Nature.bitsy.txt#L38-L47) | p8.lua | py
+| Leaves | ![](/previews/Leaves.png) | [png](/10-Nature/png/Leaves.png) | cpp | [txt](/10-Nature/Nature.bitsy.txt#L49-L58) | p8.lua | py
+| Daisies | ![](/previews/Daisies.png) | [png](/10-Nature/png/Daisies.png) | cpp | [txt](/10-Nature/Nature.bitsy.txt#L60-L69) | p8.lua | py
+| Tree | ![](/previews/Tree.png) | [png](/10-Nature/png/Tree.png) | cpp | [txt](/10-Nature/Nature.bitsy.txt#L71-L80) | p8.lua | py
+| Shrub | ![](/previews/Shrub.png) | [png](/10-Nature/png/Shrub.png) | cpp | [txt](/10-Nature/Nature.bitsy.txt#L82-L91) | p8.lua | py
+    
 ---
 
 | (11) Symbols ||||||
