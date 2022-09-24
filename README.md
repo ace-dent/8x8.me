@@ -155,9 +155,9 @@ Repeating tile patterns
 | Shingle <sup>o</sup>| ![](/previews/Shingle.png) | [png](/09-Architecture/png/Shingle.png) | cpp | txt | p8.lua | py
 | Brick <sup>o</sup>| ![](/previews/Brick.png) | [png](/09-Architecture/png/Brick.png) | cpp | txt | p8.lua | py
 | BrickVertical | ![](/previews/BrickVertical.png) | [png](/09-Architecture/png/BrickVertical.png) | cpp | txt | p8.lua | py
-| BrickDiagonal <sup>o</sup>| ![](/previews/BrickDiagonal.png) | [png](/09-Architecture/png/BrickDiagonal.png) | cpp | txt | p8.lua | py
-| BrickDiagonalRounded| ![](/previews/BrickDiagonalRounded.png) | [png](/09-Architecture/png/BrickDiagonalRounded.png) | cpp | txt | p8.lua | py
-| BrickDiagonalMini | ![](/previews/BrickDiagonalMini.png) | [png](/09-Architecture/png/BrickDiagonalMini.png) | cpp | txt | p8.lua | py
+| BrickSinister <sup>o</sup>| ![](/previews/BrickSinister.png) | [png](/09-Architecture/png/BrickSinister.png) | cpp | txt | p8.lua | py
+| BrickSinisterRounded| ![](/previews/BrickSinisterRounded.png) | [png](/09-Architecture/png/BrickSinisterRounded.png) | cpp | txt | p8.lua | py
+| BrickSinisterMini | ![](/previews/BrickSinisterMini.png) | [png](/09-Architecture/png/BrickSinisterMini.png) | cpp | txt | p8.lua | py
 | BrickMini | ![](/previews/BrickMini.png) | [png](/09-Architecture/png/BrickMini.png) | cpp | txt | p8.lua | py
 | BrickMiniDamage | ![](/previews/BrickMiniDamage.png) | [png](/09-Architecture/png/BrickMiniDamage.png) | cpp | txt | p8.lua | py
 | BrickMiniRuins | ![](/previews/BrickMiniRuins.png) | [png](/09-Architecture/png/BrickMiniRuins.png) | cpp | txt | p8.lua | py
