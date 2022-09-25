@@ -129,6 +129,27 @@ Repeating tile patterns
 ### (05) Grid
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| GridDots <sup>o</sup>| ![](/previews/GridDots.png) | [png](/05-Grid/png/GridDots.png) | cpp | txt | p8.lua | py |
+| GridDotsCentre | ![](/previews/GridDotsCentre.png) | [png](/05-Grid/png/GridDotsCentre.png) | cpp | txt | p8.lua | py |
+| Grid <sup>o</sup>| ![](/previews/Grid.png) | [png](/05-Grid/png/Grid.png) | cpp | txt | p8.lua | py |
+| GridMedium | ![](/previews/GridMedium.png) | [png](/05-Grid/png/GridMedium.png) | cpp | txt | p8.lua | py |
+| GridBold | ![](/previews/GridBold.png) | [png](/05-Grid/png/GridBold.png) | cpp | txt | p8.lua | py |
+| GridBox | ![](/previews/GridBox.png) | [png](/05-Grid/png/GridBox.png) | cpp | txt | p8.lua | py |
+| GridBoxMedium | ![](/previews/GridBoxMedium.png) | [png](/05-Grid/png/GridBoxMedium.png) | cpp | txt | p8.lua | py |
+| GridWaffle | ![](/previews/GridWaffle.png) | [png](/05-Grid/png/GridWaffle.png) | cpp | txt | p8.lua | py |
+| GridWindow | ![](/previews/GridWindow.png) | [png](/05-Grid/png/GridWindow.png) | cpp | txt | p8.lua | py |
+| GridMiniDots | ![](/previews/GridMiniDots.png) | [png](/05-Grid/png/GridMiniDots.png) | cpp | txt | p8.lua | py |
+| GridMini <sup>o</sup>| ![](/previews/GridMini.png) | [png](/05-Grid/png/GridMini.png) | cpp | txt | p8.lua | py |
+| GridMiniMedium | ![](/previews/GridMiniMedium.png) | [png](/05-Grid/png/GridMiniMedium.png) | cpp | txt | p8.lua | py |
+| GridMiniSquare <sup>p</sup>| ![](/previews/GridMiniSquare.png) | [png](/05-Grid/png/GridMiniSquare.png) | cpp | txt | p8.lua | py |
+| GridMiniOblong <sup>p</sup>| ![](/previews/GridMiniOblong.png) | [png](/05-Grid/png/GridMiniOblong.png) | cpp | txt | p8.lua | py |
+| GridDense | ![](/previews/GridDense.png) | [png](/05-Grid/png/GridDense.png) | cpp | txt | p8.lua | py |
+| GridDiagonalDots <sup>o</sup>| ![](/previews/GridDiagonalDots.png) | [png](/05-Grid/png/GridDiagonalDots.png) | cpp | txt | p8.lua | py |
+| GridDiagonal <sup>o</sup>| ![](/previews/GridDiagonal.png) | [png](/05-Grid/png/GridDiagonal.png) | cpp | txt | p8.lua | py |
+| GridDiagonalMedium | ![](/previews/GridDiagonalMedium.png) | [png](/05-Grid/png/GridDiagonalMedium.png) | cpp | txt | p8.lua | py |
+| GridDiagonalMini | ![](/previews/GridDiagonalMini.png) | [png](/05-Grid/png/GridDiagonalMini.png) | cpp | txt | p8.lua | py |
+| Honeycomb | ![](/previews/Honeycomb.png) | [png](/05-Grid/png/Honeycomb.png) | cpp | txt | p8.lua | py |
+| Trapezoid | ![](/previews/Trapezoid.png) | [png](/05-Grid/png/Trapezoid.png) | cpp | txt | p8.lua | py |
 
 ---
 
@@ -218,11 +239,9 @@ Repeating tile patterns
 
 ## Acknowledgements
 
-Patterns were tested and refined on an Arduboy device using [ASE](https://github.com/pmwasson/ASE). 
+Artwork and files created using [ABSpriteEditor](https://github.com/Pharap/ABSpriteEditor). Patterns tested and refined using [ASE](https://github.com/pmwasson/ASE) and [Bitsy](https://ledoux.itch.io/bitsy).  Additional file wrangling with [image2cpp](https://javl.github.io/image2cpp/). Data tweaking in LibreOffice, image conversions by ImageMagick, compressed with `pngslim` and metadata added with ExifTool.
 
-Artwork and files created using [ABSpriteEditor](https://github.com/Pharap/ABSpriteEditor). Additional tinkering with [image2cpp](https://javl.github.io/image2cpp/). Data tweaking in LibreOffice, image conversions by ImageMagick, compressed with `pngslim` and metadata added with ExifTool.
-
-Special thanks to @dw817, @felipemanga, @javl, @lexaloffle, @Pharap, @pmwasson.
+Special thanks to @dw817, @felipemanga, @javl, @le-doux, @lexaloffle, @Pharap, @pmwasson.
 
 ## Legal
 Produced by Andrew C.E. Dent and dedicated to the Public Domain (CC0 – free to use). Giving attribution is not required but always appreciated! Please read the separate `LICENSE` file.
