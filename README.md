@@ -47,10 +47,11 @@ Repeating tile patterns
 
 ---
 
-| (01) Dots ||||||
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| Confetti <sup>o</sup>| ![](/previews/Confetti.png) | [png](/01-Dots/png/Confetti.png) | cpp | py | p8.lua
-| ConfettiLarge <sup>o</sup>| ![](/previews/ConfettiLarge.png) | [png](/01-Dots/png/ConfettiLarge.png) | cpp | py | p8.lua
+### (01) Dots
+| Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Confetti <sup>o</sup>| ![](/previews/Confetti.png) | [png](/01-Dots/png/Confetti.png) | cpp | txt | p8.lua | py
+| ConfettiLarge <sup>o</sup>| ![](/previews/ConfettiLarge.png) | [png](/01-Dots/png/ConfettiLarge.png) | cpp | txt | p8.lua | py
 
 ---
 
@@ -72,80 +73,86 @@ Repeating tile patterns
 
 ---
 
-| (03) Lines  ||||||
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| HorizontalDense <sup>o,p</sup>| ![](/previews/HorizontalDense.png) | [png](/03-Lines/png/HorizontalDense.png) | cpp | py | p8.lua
-| Horizontal | ![](/previews/Horizontal.png) | [png](/03-Lines/png/Horizontal.png) | cpp | py | p8.lua
-| HorizontalMedium <sup>o</sup>| ![](/previews/HorizontalMedium.png) | [png](/03-Lines/png/HorizontalMedium.png) | cpp | py | p8.lua
-| HorizontalBold | ![](/previews/HorizontalBold.png) | [png](/03-Lines/png/HorizontalBold.png) | cpp | py | p8.lua
-| HorizontalSparse | ![](/previews/HorizontalSparse.png) | [png](/03-Lines/png/HorizontalSparse.png) | cpp | py | p8.lua
-| HorizontalSparseMedium | ![](/previews/HorizontalSparseMedium.png) | [png](/03-Lines/png/HorizontalSparseMedium.png) | cpp | py | p8.lua
-| HorizontalSparseBold | ![](/previews/HorizontalSparseBold.png) | [png](/03-Lines/png/HorizontalSparseBold.png) | cpp | py | p8.lua
-| HorizontalSparseExtraBold | ![](/previews/HorizontalSparseExtraBold.png) | [png](/03-Lines/png/HorizontalSparseExtraBold.png) | cpp | py | p8.lua
-| HorizontalSparseUltraBold | ![](/previews/HorizontalSparseUltraBold.png) | [png](/03-Lines/png/HorizontalSparseUltraBold.png) | cpp | py | p8.lua
-| VerticalDense <sup>o,p</sup>| ![](/previews/VerticalDense.png) | [png](/03-Lines/png/VerticalDense.png) | cpp | py | p8.lua
-| Vertical | ![](/previews/Vertical.png) | [png](/03-Lines/png/Vertical.png) | cpp | py | p8.lua
-| VerticalMedium <sup>o</sup>| ![](/previews/VerticalMedium.png) | [png](/03-Lines/png/VerticalMedium.png) | cpp | py | p8.lua
-| VerticalBold | ![](/previews/VerticalBold.png) | [png](/03-Lines/png/VerticalBold.png) | cpp | py | p8.lua
-| VerticalSparse | ![](/previews/VerticalSparse.png) | [png](/03-Lines/png/VerticalSparse.png) | cpp | py | p8.lua
-| VerticalSparseMedium | ![](/previews/VerticalSparseMedium.png) | [png](/03-Lines/png/VerticalSparseMedium.png) | cpp | py | p8.lua
-| VerticalSparseBold | ![](/previews/VerticalSparseBold.png) | [png](/03-Lines/png/VerticalSparseBold.png) | cpp | py | p8.lua
-| VerticalSparseExtraBold | ![](/previews/VerticalSparseExtraBold.png) | [png](/03-Lines/png/VerticalSparseExtraBold.png) | cpp | py | p8.lua
-| VerticalSparseUltraBold | ![](/previews/VerticalSparseUltraBold.png) | [png](/03-Lines/png/VerticalSparseUltraBold.png) | cpp | py | p8.lua
-| Dexter | ![](/previews/Dexter.png) | [png](/03-Lines/png/Dexter.png) | cpp | py | p8.lua
-| DexterMedium <sup>o</sup>| ![](/previews/DexterMedium.png) | [png](/03-Lines/png/DexterMedium.png) | cpp | py | p8.lua
-| DexterBold <sup>o</sup>| ![](/previews/DexterBold.png) | [png](/03-Lines/png/DexterBold.png) | cpp | py | p8.lua
-| DexterSparse | ![](/previews/DexterSparse.png) | [png](/03-Lines/png/DexterSparse.png) | cpp | py | p8.lua
-| DexterSparseMedium | ![](/previews/DexterSparseMedium.png) | [png](/03-Lines/png/DexterSparseMedium.png) | cpp | py | p8.lua
-| DexterSparseBold | ![](/previews/DexterSparseBold.png) | [png](/03-Lines/png/DexterSparseBold.png) | cpp | py | p8.lua
-| DexterSparseExtraBold | ![](/previews/DexterSparseExtraBold.png) | [png](/03-Lines/png/DexterSparseExtraBold.png) | cpp | py | p8.lua
-| DexterSparseUltraBold <sup>o</sup>| ![](/previews/DexterSparseUltraBold.png) | [png](/03-Lines/png/DexterSparseUltraBold.png) | cpp | py | p8.lua
-| Sinister | ![](/previews/Sinister.png) | [png](/03-Lines/png/Sinister.png) | cpp | py | p8.lua
-| SinisterMedium <sup>o</sup>| ![](/previews/SinisterMedium.png) | [png](/03-Lines/png/SinisterMedium.png) | cpp | py | p8.lua
-| SinisterBold <sup>o</sup>| ![](/previews/SinisterBold.png) | [png](/03-Lines/png/SinisterBold.png) | cpp | py | p8.lua
-| SinisterSparse | ![](/previews/SinisterSparse.png) | [png](/03-Lines/png/SinisterSparse.png) | cpp | py | p8.lua
-| SinisterSparseMedium | ![](/previews/SinisterSparseMedium.png) | [png](/03-Lines/png/SinisterSparseMedium.png) | cpp | py | p8.lua
-| SinisterSparseBold | ![](/previews/SinisterSparseBold.png) | [png](/03-Lines/png/SinisterSparseBold.png) | cpp | py | p8.lua
-| SinisterSparseExtraBold | ![](/previews/SinisterSparseExtraBold.png) | [png](/03-Lines/png/SinisterSparseExtraBold.png) | cpp | py | p8.lua
-| SinisterSparseUltraBold <sup>o</sup>| ![](/previews/SinisterSparseUltraBold.png) | [png](/03-Lines/png/SinisterSparseUltraBold.png) | cpp | py | p8.lua
+### (03) Lines
+| Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| HorizontalDense <sup>o,p</sup>| ![](/previews/HorizontalDense.png) | [png](/03-Lines/png/HorizontalDense.png) | cpp | txt | p8.lua | py
+| Horizontal | ![](/previews/Horizontal.png) | [png](/03-Lines/png/Horizontal.png) | cpp | txt | p8.lua | py
+| HorizontalMedium <sup>o</sup>| ![](/previews/HorizontalMedium.png) | [png](/03-Lines/png/HorizontalMedium.png) | cpp | txt | p8.lua | py
+| HorizontalBold | ![](/previews/HorizontalBold.png) | [png](/03-Lines/png/HorizontalBold.png) | cpp | txt | p8.lua | py
+| HorizontalSparse | ![](/previews/HorizontalSparse.png) | [png](/03-Lines/png/HorizontalSparse.png) | cpp | txt | p8.lua | py
+| HorizontalSparseMedium | ![](/previews/HorizontalSparseMedium.png) | [png](/03-Lines/png/HorizontalSparseMedium.png) | cpp | txt | p8.lua | py
+| HorizontalSparseBold | ![](/previews/HorizontalSparseBold.png) | [png](/03-Lines/png/HorizontalSparseBold.png) | cpp | txt | p8.lua | py
+| HorizontalSparseExtraBold | ![](/previews/HorizontalSparseExtraBold.png) | [png](/03-Lines/png/HorizontalSparseExtraBold.png) | cpp | txt | p8.lua | py
+| HorizontalSparseUltraBold | ![](/previews/HorizontalSparseUltraBold.png) | [png](/03-Lines/png/HorizontalSparseUltraBold.png) | cpp | txt | p8.lua | py
+| VerticalDense <sup>o,p</sup>| ![](/previews/VerticalDense.png) | [png](/03-Lines/png/VerticalDense.png) | cpp | txt | p8.lua | py
+| Vertical | ![](/previews/Vertical.png) | [png](/03-Lines/png/Vertical.png) | cpp | txt | p8.lua | py
+| VerticalMedium <sup>o</sup>| ![](/previews/VerticalMedium.png) | [png](/03-Lines/png/VerticalMedium.png) | cpp | txt | p8.lua | py
+| VerticalBold | ![](/previews/VerticalBold.png) | [png](/03-Lines/png/VerticalBold.png) | cpp | txt | p8.lua | py
+| VerticalSparse | ![](/previews/VerticalSparse.png) | [png](/03-Lines/png/VerticalSparse.png) | cpp | txt | p8.lua | py
+| VerticalSparseMedium | ![](/previews/VerticalSparseMedium.png) | [png](/03-Lines/png/VerticalSparseMedium.png) | cpp | txt | p8.lua | py
+| VerticalSparseBold | ![](/previews/VerticalSparseBold.png) | [png](/03-Lines/png/VerticalSparseBold.png) | cpp | txt | p8.lua | py
+| VerticalSparseExtraBold | ![](/previews/VerticalSparseExtraBold.png) | [png](/03-Lines/png/VerticalSparseExtraBold.png) | cpp | txt | p8.lua | py
+| VerticalSparseUltraBold | ![](/previews/VerticalSparseUltraBold.png) | [png](/03-Lines/png/VerticalSparseUltraBold.png) | cpp | txt | p8.lua | py
+| Dexter | ![](/previews/Dexter.png) | [png](/03-Lines/png/Dexter.png) | cpp | txt | p8.lua | py
+| DexterMedium <sup>o</sup>| ![](/previews/DexterMedium.png) | [png](/03-Lines/png/DexterMedium.png) | cpp | txt | p8.lua | py
+| DexterBold <sup>o</sup>| ![](/previews/DexterBold.png) | [png](/03-Lines/png/DexterBold.png) | cpp | txt | p8.lua | py
+| DexterSparse | ![](/previews/DexterSparse.png) | [png](/03-Lines/png/DexterSparse.png) | cpp | txt | p8.lua | py
+| DexterSparseMedium | ![](/previews/DexterSparseMedium.png) | [png](/03-Lines/png/DexterSparseMedium.png) | cpp | txt | p8.lua | py
+| DexterSparseBold | ![](/previews/DexterSparseBold.png) | [png](/03-Lines/png/DexterSparseBold.png) | cpp | txt | p8.lua | py
+| DexterSparseExtraBold | ![](/previews/DexterSparseExtraBold.png) | [png](/03-Lines/png/DexterSparseExtraBold.png) | cpp | txt | p8.lua | py
+| DexterSparseUltraBold <sup>o</sup>| ![](/previews/DexterSparseUltraBold.png) | [png](/03-Lines/png/DexterSparseUltraBold.png) | cpp | txt | p8.lua | py
+| Sinister | ![](/previews/Sinister.png) | [png](/03-Lines/png/Sinister.png) | cpp | txt | p8.lua | py
+| SinisterMedium <sup>o</sup>| ![](/previews/SinisterMedium.png) | [png](/03-Lines/png/SinisterMedium.png) | cpp | txt | p8.lua | py
+| SinisterBold <sup>o</sup>| ![](/previews/SinisterBold.png) | [png](/03-Lines/png/SinisterBold.png) | cpp | txt | p8.lua | py
+| SinisterSparse | ![](/previews/SinisterSparse.png) | [png](/03-Lines/png/SinisterSparse.png) | cpp | txt | p8.lua | py
+| SinisterSparseMedium | ![](/previews/SinisterSparseMedium.png) | [png](/03-Lines/png/SinisterSparseMedium.png) | cpp | txt | p8.lua | py
+| SinisterSparseBold | ![](/previews/SinisterSparseBold.png) | [png](/03-Lines/png/SinisterSparseBold.png) | cpp | txt | p8.lua | py
+| SinisterSparseExtraBold | ![](/previews/SinisterSparseExtraBold.png) | [png](/03-Lines/png/SinisterSparseExtraBold.png) | cpp | txt | p8.lua | py
+| SinisterSparseUltraBold <sup>o</sup>| ![](/previews/SinisterSparseUltraBold.png) | [png](/03-Lines/png/SinisterSparseUltraBold.png) | cpp | txt | p8.lua | py
 
 ---
 
-| (04) Waves ||||||
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| Ripple | ![](/previews/Ripple.png) | [png](/04-Waves/png/Ripple.png) | cpp | py | p8.lua
-| Wave <sup>o</sup>| ![](/previews/Wave.png) | [png](/04-Waves/png/Wave.png) | cpp | py | p8.lua
-| TidalLight | ![](/previews/TidalLight.png) | [png](/04-Waves/png/TidalLight.png) | cpp | py | p8.lua
-| Tidal | ![](/previews/Tidal.png) | [png](/04-Waves/png/Tidal.png) | cpp | py | p8.lua
-| TidalMedium | ![](/previews/TidalMedium.png) | [png](/04-Waves/png/TidalMedium.png) | cpp | py | p8.lua
-| OceanicLight | ![](/previews/OceanicLight.png) | [png](/04-Waves/png/OceanicLight.png) | cpp | py | p8.lua
-| Oceanic | ![](/previews/Oceanic.png) | [png](/04-Waves/png/Oceanic.png) | cpp | py | p8.lua
+### (04) Waves
+| Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Ripple | ![](/previews/Ripple.png) | [png](/04-Waves/png/Ripple.png) | cpp | txt | p8.lua | py
+| Wave <sup>o</sup>| ![](/previews/Wave.png) | [png](/04-Waves/png/Wave.png) | cpp | txt | p8.lua | py
+| TidalLight | ![](/previews/TidalLight.png) | [png](/04-Waves/png/TidalLight.png) | cpp | txt | p8.lua | py
+| Tidal | ![](/previews/Tidal.png) | [png](/04-Waves/png/Tidal.png) | cpp | txt | p8.lua | py
+| TidalMedium | ![](/previews/TidalMedium.png) | [png](/04-Waves/png/TidalMedium.png) | cpp | txt | p8.lua | py
+| OceanicLight | ![](/previews/OceanicLight.png) | [png](/04-Waves/png/OceanicLight.png) | cpp | txt | p8.lua | py
+| Oceanic | ![](/previews/Oceanic.png) | [png](/04-Waves/png/Oceanic.png) | cpp | txt | p8.lua | py
 
 ---
 
-| (05) Grid ||||||
-| :--- | :---: | :---: | :---: | :---: | :---: |
+### (05) Grid
+| Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 
 ---
 
-| (06) Checked ||||||
-| :--- | :---: | :---: | :---: | :---: | :---: |
+### (06) Checked
+| Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 
 ---
 
-| (07) Round ||||||
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| Sphere <sup>o</sup>| ![](/previews/Sphere.png) | [png](/07-Round/png/Sphere.png) | cpp | py | p8.lua
-| SphereMini <sup>p</sup>| ![](/previews/SphereMini.png) | [png](/07-Round/png/SphereMini.png) | cpp | py | p8.lua
+### (07) Round
+| Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Sphere <sup>o</sup>| ![](/previews/Sphere.png) | [png](/07-Round/png/Sphere.png) | cpp | txt | p8.lua | py
+| SphereMini <sup>p</sup>| ![](/previews/SphereMini.png) | [png](/07-Round/png/SphereMini.png) | cpp | txt | p8.lua | py
 
 ---
 
-| (08) Woven ||||||
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| Gingham | ![](/previews/Gingham.png) | [png](/08-Woven/png/Gingham.png) | cpp | py | p8.lua
-| Houndstooth | ![](/previews/Houndstooth.png) | [png](/08-Woven/png/Houndstooth.png) | cpp | py | p8.lua
-| Plaid <sup>o</sup>| ![](/previews/Plaid.png) | [png](/08-Woven/png/Plaid.png) | cpp | py | p8.lua
-| Puppytooth <sup>p</sup>| ![](/previews/Puppytooth.png) | [png](/08-Woven/png/Puppytooth.png) | cpp | py | p8.lua
+### (08) Woven
+| Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Gingham | ![](/previews/Gingham.png) | [png](/08-Woven/png/Gingham.png) | cpp | txt | p8.lua | py
+| Houndstooth | ![](/previews/Houndstooth.png) | [png](/08-Woven/png/Houndstooth.png) | cpp | txt | p8.lua | py
+| Plaid <sup>o</sup>| ![](/previews/Plaid.png) | [png](/08-Woven/png/Plaid.png) | cpp | txt | p8.lua | py
+| Puppytooth <sup>p</sup>| ![](/previews/Puppytooth.png) | [png](/08-Woven/png/Puppytooth.png) | cpp | txt | p8.lua | py
 
 ---
 
@@ -180,16 +187,18 @@ Repeating tile patterns
     
 ---
 
-| (11) Symbols ||||||
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| Heart | ![](/previews/Heart.png) | [png](/11-Symbols/png/Heart.png) | cpp | py |
-| HeartMini <sup>p</sup>| ![](/previews/HeartMini.png) | [png](/11-Symbols/png/HeartMini.png) | cpp | py | p8.lua
+### (11) Symbols
+| Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Heart | ![](/previews/Heart.png) | [png](/11-Symbols/png/Heart.png) | cpp | txt | p8.lua | py
+| HeartMini <sup>p</sup>| ![](/previews/HeartMini.png) | [png](/11-Symbols/png/HeartMini.png) | cpp | txt | p8.lua | py
 
 ---
 
-| (12) Other ||||||
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| Divot <sup>o</sup>| ![](/previews/Divot.png) | [png](/12-Other/png/Divot.png) | cpp | py | p8.lua
+### (12) Other
+| Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Divot <sup>o</sup>| ![](/previews/Divot.png) | [png](/12-Other/png/Divot.png) | cpp | txt | p8.lua | py
 
 ---
 
