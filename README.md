@@ -135,6 +135,14 @@ Repeating tile patterns
 ### (06) Checked
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| CheckMini | ![](/previews/CheckMini.png) | [png](/06-Checked/png/CheckMini.png) | cpp | txt | p8.lua | py
+| CheckSmall <sup>o</sup>| ![](/previews/CheckSmall.png) | [png](/06-Checked/png/CheckSmall.png) | cpp | txt | p8.lua | py
+| Check <sup>o</sup>| ![](/previews/Check.png) | [png](/06-Checked/png/Check.png) | cpp | txt | p8.lua | py
+| CheckSquare | ![](/previews/CheckSquare.png) | [png](/06-Checked/png/CheckSquare.png) | cpp | txt | p8.lua | py
+| CheckShaded | ![](/previews/CheckShaded.png) | [png](/06-Checked/png/CheckShaded.png) | cpp | txt | p8.lua | py
+| Diamond <sup>o</sup>| ![](/previews/Diamond.png) | [png](/06-Checked/png/Diamond.png) | cpp | txt | p8.lua | py
+| DiamondLined | ![](/previews/DiamondLined.png) | [png](/06-Checked/png/DiamondLined.png) | cpp | txt | p8.lua | py
+| DiamondShaded | ![](/previews/DiamondShaded.png) | [png](/06-Checked/png/DiamondShaded.png) | cpp | txt | p8.lua | py
 
 ---
 
