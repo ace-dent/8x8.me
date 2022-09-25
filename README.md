@@ -12,6 +12,23 @@ Repeating tile patterns
 
 ## Gallery
 
+Contents:  
+&emsp; [00 - Dither](#00-dither)  
+&emsp; [01 - Dots](#01-dots)  
+&emsp; [02 - Dashes](#02-dashes)  
+&emsp; [03 - Lines](#03-lines)  
+&emsp; [04 - Waves](#04-waves)  
+&emsp; [05 - Grid](#05-grid)  
+&emsp; [06 - Checked](#06-checked)  
+&emsp; [07 - Round](#07-round)  
+&emsp; [08 - Woven](#08-woven)  
+&emsp; [09 - Architecture](#09-architecture)  
+&emsp; [10 - Nature](#10-nature)  
+&emsp; [11 - Symbols](#11-symbols)  
+&emsp; [12 - Other](#12-other)
+
+---
+
 ### (00) Dither  
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -45,6 +62,8 @@ Repeating tile patterns
 | OfficeDither80 <sup>o</sup>| ![](/previews/OfficeDither80.png) | [png](/00-Dither/png/OfficeDither80.png) | cpp | txt | p8.lua | py
 | OfficeDither90 <sup>o</sup>| ![](/previews/OfficeDither90.png) | [png](/00-Dither/png/OfficeDither90.png) | cpp | txt | p8.lua | py
 
+[⤴️](#gallery) 
+
 ---
 
 ### (01) Dots
@@ -52,6 +71,8 @@ Repeating tile patterns
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Confetti <sup>o</sup>| ![](/previews/Confetti.png) | [png](/01-Dots/png/Confetti.png) | cpp | txt | p8.lua | py
 | ConfettiLarge <sup>o</sup>| ![](/previews/ConfettiLarge.png) | [png](/01-Dots/png/ConfettiLarge.png) | cpp | txt | p8.lua | py
+
+[⤴️](#gallery) 
 
 ---
 
@@ -70,6 +91,8 @@ Repeating tile patterns
 | AlternatingDash | ![](/previews/AlternatingDash.png) | [png](/02-Dashes/png/AlternatingDash.png) | cpp | txt | p8.lua | py
 | AlternatingDashDouble | ![](/previews/AlternatingDashDouble.png) | [png](/02-Dashes/png/AlternatingDashDouble.png) | cpp | txt | p8.lua | py
 | AlternatingDashMini | ![](/previews/AlternatingDashMini.png) | [png](/02-Dashes/png/AlternatingDashMini.png) | cpp | txt | p8.lua | py
+
+[⤴️](#gallery) 
 
 ---
 
@@ -111,6 +134,8 @@ Repeating tile patterns
 | SinisterSparseExtraBold | ![](/previews/SinisterSparseExtraBold.png) | [png](/03-Lines/png/SinisterSparseExtraBold.png) | cpp | txt | p8.lua | py
 | SinisterSparseUltraBold <sup>o</sup>| ![](/previews/SinisterSparseUltraBold.png) | [png](/03-Lines/png/SinisterSparseUltraBold.png) | cpp | txt | p8.lua | py
 
+[⤴️](#gallery) 
+
 ---
 
 ### (04) Waves
@@ -123,6 +148,8 @@ Repeating tile patterns
 | TidalMedium | ![](/previews/TidalMedium.png) | [png](/04-Waves/png/TidalMedium.png) | cpp | txt | p8.lua | py
 | OceanicLight | ![](/previews/OceanicLight.png) | [png](/04-Waves/png/OceanicLight.png) | cpp | txt | p8.lua | py
 | Oceanic | ![](/previews/Oceanic.png) | [png](/04-Waves/png/Oceanic.png) | cpp | txt | p8.lua | py
+
+[⤴️](#gallery) 
 
 ---
 
@@ -151,6 +178,8 @@ Repeating tile patterns
 | Honeycomb | ![](/previews/Honeycomb.png) | [png](/05-Grid/png/Honeycomb.png) | cpp | txt | p8.lua | py |
 | Trapezoid | ![](/previews/Trapezoid.png) | [png](/05-Grid/png/Trapezoid.png) | cpp | txt | p8.lua | py |
 
+[⤴️](#gallery) 
+
 ---
 
 ### (06) Checked
@@ -165,6 +194,8 @@ Repeating tile patterns
 | DiamondLined | ![](/previews/DiamondLined.png) | [png](/06-Checked/png/DiamondLined.png) | cpp | txt | p8.lua | py
 | DiamondShaded | ![](/previews/DiamondShaded.png) | [png](/06-Checked/png/DiamondShaded.png) | cpp | txt | p8.lua | py
 
+[⤴️](#gallery) 
+
 ---
 
 ### (07) Round
@@ -172,6 +203,8 @@ Repeating tile patterns
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Sphere <sup>o</sup>| ![](/previews/Sphere.png) | [png](/07-Round/png/Sphere.png) | cpp | txt | p8.lua | py
 | SphereMini <sup>p</sup>| ![](/previews/SphereMini.png) | [png](/07-Round/png/SphereMini.png) | cpp | txt | p8.lua | py
+
+[⤴️](#gallery) 
 
 ---
 
@@ -182,6 +215,8 @@ Repeating tile patterns
 | Houndstooth | ![](/previews/Houndstooth.png) | [png](/08-Woven/png/Houndstooth.png) | cpp | txt | p8.lua | py
 | Plaid <sup>o</sup>| ![](/previews/Plaid.png) | [png](/08-Woven/png/Plaid.png) | cpp | txt | p8.lua | py
 | Puppytooth <sup>p</sup>| ![](/previews/Puppytooth.png) | [png](/08-Woven/png/Puppytooth.png) | cpp | txt | p8.lua | py
+
+[⤴️](#gallery) 
 
 ---
 
@@ -200,6 +235,8 @@ Repeating tile patterns
 | SquareBasket | ![](/previews/SquareBasket.png) | [png](/09-Architecture/png/SquareBasket.png) | cpp | txt | p8.lua | py
 | PavingStones | ![](/previews/PavingStones.png) | [png](/09-Architecture/png/PavingStones.png) | cpp | txt | p8.lua | py
 
+[⤴️](#gallery) 
+
 ---
 
 ### (10) Nature  
@@ -213,7 +250,9 @@ Repeating tile patterns
 | Daisies | ![](/previews/Daisies.png) | [png](/10-Nature/png/Daisies.png) | cpp | [txt](/10-Nature/Nature.bitsy.txt#L60-L69) | p8.lua | py
 | Tree | ![](/previews/Tree.png) | [png](/10-Nature/png/Tree.png) | cpp | [txt](/10-Nature/Nature.bitsy.txt#L71-L80) | p8.lua | py
 | Shrub | ![](/previews/Shrub.png) | [png](/10-Nature/png/Shrub.png) | cpp | [txt](/10-Nature/Nature.bitsy.txt#L82-L91) | p8.lua | py
-    
+
+[⤴️](#gallery) 
+
 ---
 
 ### (11) Symbols
@@ -222,12 +261,16 @@ Repeating tile patterns
 | Heart | ![](/previews/Heart.png) | [png](/11-Symbols/png/Heart.png) | cpp | txt | p8.lua | py
 | HeartMini <sup>p</sup>| ![](/previews/HeartMini.png) | [png](/11-Symbols/png/HeartMini.png) | cpp | txt | p8.lua | py
 
+[⤴️](#gallery)
+
 ---
 
 ### (12) Other
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Divot <sup>o</sup>| ![](/previews/Divot.png) | [png](/12-Other/png/Divot.png) | cpp | txt | p8.lua | py
+
+[⤴️](#gallery) 
 
 ---
 
