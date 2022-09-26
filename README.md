@@ -290,9 +290,9 @@ Special thanks to @dw817, @felipemanga, @javl, @le-doux, @lexaloffle, @Pharap, @
 Produced by Andrew C.E. Dent and dedicated to the Public Domain (CC0 – free to use). Giving attribution is not required but always appreciated! Please read the separate `LICENSE` file.
 
 All trademarks are the property of their respective owners.  
-*Arduboy*® is a registered trademark of [Arduboy, Inc., USA](https://www.arduboy.com).  
-*Bitsy* is produced by [Adam Le Doux](https://bitsy.org).  
-*GAMBY* was produced by [Logicalzero](http://logicalzero.com/gamby/) (David Stokes).  
-*LibreOffice* is a trademark of [The Document Foundation](https://www.libreoffice.org).  
-*PICO-8*  is a trademark of [Lexaloffle Games LLP](https://www.pico-8.com).  
-*Thumby* is a trademark of AkroSense LLC, USA / [TinyCircuits](https://thumby.us).
+&emsp; *Arduboy*® is a registered trademark of [Arduboy, Inc., USA](https://www.arduboy.com).  
+&emsp; *Bitsy* is produced by [Adam Le Doux](https://bitsy.org).  
+&emsp; *GAMBY* was produced by [Logicalzero](http://logicalzero.com/gamby/) (David Stokes).  
+&emsp; *LibreOffice* is a trademark of [The Document Foundation](https://www.libreoffice.org).  
+&emsp; *PICO-8*  is a trademark of [Lexaloffle Games LLP](https://www.pico-8.com).  
+&emsp; *Thumby* is a trademark of AkroSense LLC, USA / [TinyCircuits](https://thumby.us).

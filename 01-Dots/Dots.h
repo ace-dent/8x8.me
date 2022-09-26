@@ -1,7 +1,11 @@
-#pragma once
+// Dots - 8x8.me fill patterns
+// This work is dedicated to the Public Domain by ACED, licensed under CC0
+// https://creativecommons.org/publicdomain/zero/1.0/
 
-#include <stdint.h> // For uint8_t
-#include <avr/pgmspace.h> // For PROGMEM
+#pragma once
+#include <stdint.h> // For uint8_t type
+#include <avr/pgmspace.h> // For AVR progmem storage
+
 
 namespace patterns {
 
@@ -36,7 +40,6 @@ namespace patterns {
 
 
 #if 0
-
 namespace patternsHorizontal {
 
     constexpr uint8_t PROGMEM confetti[] {
@@ -63,5 +66,4 @@ namespace patternsHorizontal {
         0x03   // ▓▓▓▓▓▓░░
     };
 }
-
 #endif
