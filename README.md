@@ -49,6 +49,11 @@ Contents:
 | BayerDither14 | ![](/previews/BayerDither14.png) | [png](/00-Dither/png/BayerDither14.png) | cpp | txt | p8.lua | py
 | BayerDither15 | ![](/previews/BayerDither15.png) | [png](/00-Dither/png/BayerDither15.png) | cpp | txt | p8.lua | py
 | BayerDither16 | ![](/previews/BayerDither16.png) | [png](/00-Dither/png/BayerDither16.png) | cpp | txt | p8.lua | py
+
+<br>
+
+| Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | OfficeDither05 <sup>o</sup>| ![](/previews/OfficeDither05.png) | [png](/00-Dither/png/OfficeDither05.png) | cpp | txt | p8.lua | py
 | OfficeDither10 <sup>o</sup>| ![](/previews/OfficeDither10.png) | [png](/00-Dither/png/OfficeDither10.png) | cpp | txt | p8.lua | py
 | OfficeDither20 <sup>o</sup>| ![](/previews/OfficeDither20.png) | [png](/00-Dither/png/OfficeDither20.png) | cpp | txt | p8.lua | py
@@ -99,6 +104,8 @@ Contents:
 ### (03) Lines
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| HorizontalDenseLineDash | ![](/previews/HorizontalDenseLineDash.png) | [png](/03-Lines/png/HorizontalDenseLineDash.png) | cpp | txt | p8.lua | py
+| HorizontalDenseLineDot | ![](/previews/HorizontalDenseLineDot.png) | [png](/03-Lines/png/HorizontalDenseLineDot.png) | cpp | txt | p8.lua | py
 | HorizontalDense <sup>o,p</sup>| ![](/previews/HorizontalDense.png) | [png](/03-Lines/png/HorizontalDense.png) | cpp | txt | p8.lua | py
 | Horizontal | ![](/previews/Horizontal.png) | [png](/03-Lines/png/Horizontal.png) | cpp | txt | p8.lua | py
 | HorizontalMedium <sup>o</sup>| ![](/previews/HorizontalMedium.png) | [png](/03-Lines/png/HorizontalMedium.png) | cpp | txt | p8.lua | py
@@ -108,6 +115,15 @@ Contents:
 | HorizontalSparseBold | ![](/previews/HorizontalSparseBold.png) | [png](/03-Lines/png/HorizontalSparseBold.png) | cpp | txt | p8.lua | py
 | HorizontalSparseExtraBold | ![](/previews/HorizontalSparseExtraBold.png) | [png](/03-Lines/png/HorizontalSparseExtraBold.png) | cpp | txt | p8.lua | py
 | HorizontalSparseUltraBold | ![](/previews/HorizontalSparseUltraBold.png) | [png](/03-Lines/png/HorizontalSparseUltraBold.png) | cpp | txt | p8.lua | py
+| HorizontalPinstripe | ![](/previews/HorizontalPinstripe.png) | [png](/03-Lines/png/HorizontalPinstripe.png) | cpp | txt | p8.lua | py
+| HorizontalPinstripeMedium | ![](/previews/HorizontalPinstripeMedium.png) | [png](/03-Lines/png/HorizontalPinstripeMedium.png) | cpp | txt | p8.lua | py
+
+<br>
+
+| Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| VerticalDenseLineDash | ![](/previews/VerticalDenseLineDash.png) | [png](/03-Lines/png/VerticalDenseLineDash.png) | cpp | txt | p8.lua | py
+| VerticalDenseLineDot | ![](/previews/VerticalDenseLineDot.png) | [png](/03-Lines/png/VerticalDenseLineDot.png) | cpp | txt | p8.lua | py
 | VerticalDense <sup>o,p</sup>| ![](/previews/VerticalDense.png) | [png](/03-Lines/png/VerticalDense.png) | cpp | txt | p8.lua | py
 | Vertical | ![](/previews/Vertical.png) | [png](/03-Lines/png/Vertical.png) | cpp | txt | p8.lua | py
 | VerticalMedium <sup>o</sup>| ![](/previews/VerticalMedium.png) | [png](/03-Lines/png/VerticalMedium.png) | cpp | txt | p8.lua | py
@@ -117,6 +133,13 @@ Contents:
 | VerticalSparseBold | ![](/previews/VerticalSparseBold.png) | [png](/03-Lines/png/VerticalSparseBold.png) | cpp | txt | p8.lua | py
 | VerticalSparseExtraBold | ![](/previews/VerticalSparseExtraBold.png) | [png](/03-Lines/png/VerticalSparseExtraBold.png) | cpp | txt | p8.lua | py
 | VerticalSparseUltraBold | ![](/previews/VerticalSparseUltraBold.png) | [png](/03-Lines/png/VerticalSparseUltraBold.png) | cpp | txt | p8.lua | py
+| VerticalPinstripe | ![](/previews/VerticalPinstripe.png) | [png](/03-Lines/png/VerticalPinstripe.png) | cpp | txt | p8.lua | py
+| VerticalPinstripeMedium | ![](/previews/VerticalPinstripeMedium.png) | [png](/03-Lines/png/VerticalPinstripeMedium.png) | cpp | txt | p8.lua | py
+
+<br>
+
+| Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Dexter | ![](/previews/Dexter.png) | [png](/03-Lines/png/Dexter.png) | cpp | txt | p8.lua | py
 | DexterMedium <sup>o</sup>| ![](/previews/DexterMedium.png) | [png](/03-Lines/png/DexterMedium.png) | cpp | txt | p8.lua | py
 | DexterBold <sup>o</sup>| ![](/previews/DexterBold.png) | [png](/03-Lines/png/DexterBold.png) | cpp | txt | p8.lua | py
@@ -125,6 +148,17 @@ Contents:
 | DexterSparseBold | ![](/previews/DexterSparseBold.png) | [png](/03-Lines/png/DexterSparseBold.png) | cpp | txt | p8.lua | py
 | DexterSparseExtraBold | ![](/previews/DexterSparseExtraBold.png) | [png](/03-Lines/png/DexterSparseExtraBold.png) | cpp | txt | p8.lua | py
 | DexterSparseUltraBold <sup>o</sup>| ![](/previews/DexterSparseUltraBold.png) | [png](/03-Lines/png/DexterSparseUltraBold.png) | cpp | txt | p8.lua | py
+| DexterPinstripe | ![](/previews/DexterPinstripe.png) | [png](/03-Lines/png/DexterPinstripe.png) | cpp | txt | p8.lua | py
+| DexterPinstripeMedium | ![](/previews/DexterPinstripeMedium.png) | [png](/03-Lines/png/DexterPinstripeMedium.png) | cpp | txt | p8.lua | py
+| DexterSteep | ![](/previews/DexterSteep.png) | [png](/03-Lines/png/DexterSteep.png) | cpp | txt | p8.lua | py
+| DexterSteepMedium | ![](/previews/DexterSteepMedium.png) | [png](/03-Lines/png/DexterSteepMedium.png) | cpp | txt | p8.lua | py
+| DexterShallow | ![](/previews/DexterShallow.png) | [png](/03-Lines/png/DexterShallow.png) | cpp | txt | p8.lua | py
+| DexterShallowMedium | ![](/previews/DexterShallowMedium.png) | [png](/03-Lines/png/DexterShallowMedium.png) | cpp | txt | p8.lua | py
+
+<br>
+
+| Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Sinister | ![](/previews/Sinister.png) | [png](/03-Lines/png/Sinister.png) | cpp | txt | p8.lua | py
 | SinisterMedium <sup>o</sup>| ![](/previews/SinisterMedium.png) | [png](/03-Lines/png/SinisterMedium.png) | cpp | txt | p8.lua | py
 | SinisterBold <sup>o</sup>| ![](/previews/SinisterBold.png) | [png](/03-Lines/png/SinisterBold.png) | cpp | txt | p8.lua | py
@@ -133,6 +167,12 @@ Contents:
 | SinisterSparseBold | ![](/previews/SinisterSparseBold.png) | [png](/03-Lines/png/SinisterSparseBold.png) | cpp | txt | p8.lua | py
 | SinisterSparseExtraBold | ![](/previews/SinisterSparseExtraBold.png) | [png](/03-Lines/png/SinisterSparseExtraBold.png) | cpp | txt | p8.lua | py
 | SinisterSparseUltraBold <sup>o</sup>| ![](/previews/SinisterSparseUltraBold.png) | [png](/03-Lines/png/SinisterSparseUltraBold.png) | cpp | txt | p8.lua | py
+| SinisterPinstripe | ![](/previews/SinisterPinstripe.png) | [png](/03-Lines/png/SinisterPinstripe.png) | cpp | txt | p8.lua | py
+| SinisterPinstripeMedium | ![](/previews/SinisterPinstripeMedium.png) | [png](/03-Lines/png/SinisterPinstripeMedium.png) | cpp | txt | p8.lua | py
+| SinisterSteep | ![](/previews/SinisterSteep.png) | [png](/03-Lines/png/SinisterSteep.png) | cpp | txt | p8.lua | py
+| SinisterSteepMedium | ![](/previews/SinisterSteepMedium.png) | [png](/03-Lines/png/SinisterSteepMedium.png) | cpp | txt | p8.lua | py
+| SinisterShallow | ![](/previews/SinisterShallow.png) | [png](/03-Lines/png/SinisterShallow.png) | cpp | txt | p8.lua | py
+| SinisterShallowMedium | ![](/previews/SinisterShallowMedium.png) | [png](/03-Lines/png/SinisterShallowMedium.png) | cpp | txt | p8.lua | py
 
 [`⤴`](#gallery)
 
