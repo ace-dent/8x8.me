@@ -258,8 +258,9 @@ Contents:
 ### (11) Symbols
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Heart | ![](/previews/Heart.png) | [png](/11-Symbols/png/Heart.png) | cpp | txt | p8.lua | py
-| HeartMini <sup>p</sup>| ![](/previews/HeartMini.png) | [png](/11-Symbols/png/HeartMini.png) | cpp | txt | p8.lua | py
+| Anchor | ![](/previews/Anchor.png) | [png](/11-Symbols/png/Anchor.png) | cpp | [txt](/11-Symbols/Symbols.bitsy.txt#L5-L14) | p8.lua | [py](/11-Symbols/Symbols.thumby.py#L5-L16)
+| Heart | ![](/previews/Heart.png) | [png](/11-Symbols/png/Heart.png) | cpp | [txt](/11-Symbols/Symbols.bitsy.txt#L16-L25) | p8.lua | [py](/11-Symbols/Symbols.thumby.py#L18-L29)
+| HeartMini <sup>p</sup>| ![](/previews/HeartMini.png) | [png](/11-Symbols/png/HeartMini.png) | cpp | [txt](/11-Symbols/Symbols.bitsy.txt#L27-L36) | p8.lua | [py](/11-Symbols/Symbols.thumby.py#L31-L42)
 
 [`⤴`](#gallery)
 
