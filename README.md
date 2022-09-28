@@ -273,7 +273,14 @@ Contents:
 | BrickMiniDamage | ![](/previews/BrickMiniDamage.png) | [png](/09-Architecture/png/BrickMiniDamage.png) | cpp | txt | p8.lua | py
 | BrickMiniRuins | ![](/previews/BrickMiniRuins.png) | [png](/09-Architecture/png/BrickMiniRuins.png) | cpp | txt | p8.lua | py
 | SquareBasket | ![](/previews/SquareBasket.png) | [png](/09-Architecture/png/SquareBasket.png) | cpp | txt | p8.lua | py
+| StoneWall | ![](/previews/StoneWall.png) | [png](/09-Architecture/png/StoneWall.png) | cpp | txt | p8.lua | py
+| Flagstone | ![](/previews/Flagstone.png) | [png](/09-Architecture/png/Flagstone.png) | cpp | txt | p8.lua | py
 | PavingStones | ![](/previews/PavingStones.png) | [png](/09-Architecture/png/PavingStones.png) | cpp | txt | p8.lua | py
+| Picket | ![](/previews/Picket.png) | [png](/09-Architecture/png/Picket.png) | cpp | txt | p8.lua | py
+| Tile | ![](/previews/Tile.png) | [png](/09-Architecture/png/Tile.png) | cpp | txt | p8.lua | py
+| TileShaded | ![](/previews/TileShaded.png) | [png](/09-Architecture/png/TileShaded.png) | cpp | txt | p8.lua | py
+| Block | ![](/previews/Block.png) | [png](/09-Architecture/png/Block.png) | cpp | txt | p8.lua | py
+| BlockPyramid | ![](/previews/BlockPyramid.png) | [png](/09-Architecture/png/BlockPyramid.png) | cpp | txt | p8.lua | py
 
 [`⤴`](#gallery)
 
