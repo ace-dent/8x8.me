@@ -24,7 +24,7 @@ while (( "$#" )); do
   NAME=`basename -s .png "$1"`
   GROUP=`basename "${1%/*/*}" | cut -f 2 -d "-"`
   # Format variations for name (lowercase, camelCase)
-  name=`echo "$NAME" | tr "[:upper:]" "[:lower:]"`
+  name=`echo "$NAME" | tr '[A-Z]' '[a-z]'`
   nAME=`echo "${NAME:0:1}" | tr '[A-Z]' '[a-z]'`"${NAME:1}"
 
 
@@ -42,7 +42,7 @@ while (( "$#" )); do
   magick -size 32x16 tile:"$1" -sample 200% "$PREVIEW"
   
   
-  # Create Horizontal and Vertical temporary files, plain text binary and hexadecimal
+  # Create Horizontal and Vertical temporary files, in plain text binary and hexadecimal
   HBIN="${1%/*/*}/$NAME.h-bin.txt"
   VBIN="${1%/*/*}/$NAME.v-bin.txt"
   HHEX="${1%/*/*}/$NAME.h-hex.txt"
@@ -52,7 +52,7 @@ while (( "$#" )); do
   echo -n "" > "$HHEX"
   echo -n "" > "$VHEX"
   LINE=1
-  while [ $LINE -lt 9 ]; do
+  while [ $LINE -le 8 ]; do
     printf '    0x%02X,  # ' "$((2#`sed -n "$LINE"p "$HBIN"`))" >> "$HHEX"
     sed -n "$LINE"p "$HBIN" | tr "0" "▓" | tr "1" "░" >> "$HHEX"
     printf '    0x%02X,  # ' "$((2#`sed -n "$LINE"p "$VBIN"`))" >> "$VHEX"
@@ -74,12 +74,13 @@ while (( "$#" )); do
   fi
   echo "$NAME - Minimum pattern width $PATTERNWIDTH px."
 
-# TODO: camelCase or lower for name?
+
   # Create Bitsy tile data
   WIPFILE="${1%/*/*}/$GROUP.bitsy.WIP.txt"
   printf "\nTIL $IMAGECOUNT\n" >> "$WIPFILE"
   cat "$HBIN" >> "$WIPFILE"
   printf "NAME $name\n" >> "$WIPFILE"
+
 
 # TODO: Generate simple Magic and GAMBY code
   # Create cpp code
@@ -90,28 +91,34 @@ while (( "$#" )); do
   printf ");\n// Magic: -\n" >> "$WIPFILE"
   if [ $PATTERNWIDTH -le 4 ]
   then
-    printf "// GAMBY: –\n" >> "$WIPFILE"
+    printf "// GAMBY: 0x\n" >> "$WIPFILE"
   fi
   printf "\nconstexpr uint8_t PROGMEM $nAME[] {\n    8, 8,  // 8x8 px image\n" >> "$HWIPFILE"
   cat "$HHEX" | sed 's/#/\/\//' >> "$HWIPFILE"
   printf ");\n" >> "$HWIPFILE"
 
+
 # TODO: ...
   # Create PICO-8 code
 
-# TODO: camelCase or lower for array name?
+
   # Create Thumby code
   WIPFILE="${1%/*/*}/$GROUP.thumby.WIP.txt"
   printf "\n# $NAME\n# BITMAP: width: 8, height: 8, [" >> "$WIPFILE"
   LINE=1
-  while [ $LINE -lt 8 ]; do
-    printf '%u,' "$((2#`sed -n "$LINE"p "$VBIN"`))" >> "$WIPFILE"
+  while [ $LINE -le 8 ]; do
+    printf '%u' "$((2#`sed -n "$LINE"p "$VBIN"`))" >> "$WIPFILE"
+    if [ $LINE -le 7 ]
+    then
+      printf "," >> "$WIPFILE"
+    else
+      printf "]\n" >> "$WIPFILE"
+    fi
     ((LINE=LINE+1))
   done
-  printf '%u]\n' "$((2#`sed -n 8p "$VBIN"`))" >> "$WIPFILE"
-  printf "$name = bytearray([\n" >> "$WIPFILE"
+  printf "$nAME = bytearray([\n" >> "$WIPFILE"
   cat "$VHEX" >> "$WIPFILE"
-  printf "])\n# "$name"Sprite = thumby.Sprite(8, 8, "$name")\n" >> "$WIPFILE"
+  printf "])\n# "$nAME"Sprite = thumby.Sprite(8, 8, "$nAME")\n" >> "$WIPFILE"
 
 
   # Remove temporary files
