@@ -10,7 +10,7 @@ Repeating tile patterns
 
 ## Introduction
 
-*Work in progress* ~ a collection of 'retro' fill patterns. Lovingly crafted and translated to convenient code snippets. Powered by the stars: please keep the pixel gnomes fed with a [star](https://github.com/ace-dent/8x8.me/stargazers)! ⭐️
+*Work in progress* ~ a collection of 'retro' fill patterns. Lovingly crafted and translated to convenient code snippets. Please keep the pixel gnomes fed with a [star](https://github.com/ace-dent/8x8.me/stargazers)! ⭐️
 
 
 <br>
@@ -38,40 +38,40 @@ Contents:
 ### (00) Dither  
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| BayerDither00 | ![](/previews/BayerDither00.png) | [png](/00-Dither/png/BayerDither00.png) | cpp | txt | p8.lua | py
-| BayerDither01 | ![](/previews/BayerDither01.png) | [png](/00-Dither/png/BayerDither01.png) | cpp | txt | p8.lua | py
-| BayerDither02 | ![](/previews/BayerDither02.png) | [png](/00-Dither/png/BayerDither02.png) | cpp | txt | p8.lua | py
-| BayerDither03 | ![](/previews/BayerDither03.png) | [png](/00-Dither/png/BayerDither03.png) | cpp | txt | p8.lua | py
-| BayerDither04 | ![](/previews/BayerDither04.png) | [png](/00-Dither/png/BayerDither04.png) | cpp | txt | p8.lua | py
-| BayerDither05 | ![](/previews/BayerDither05.png) | [png](/00-Dither/png/BayerDither05.png) | cpp | txt | p8.lua | py
-| BayerDither06 | ![](/previews/BayerDither06.png) | [png](/00-Dither/png/BayerDither06.png) | cpp | txt | p8.lua | py
-| BayerDither07 | ![](/previews/BayerDither07.png) | [png](/00-Dither/png/BayerDither07.png) | cpp | txt | p8.lua | py
-| BayerDither08 | ![](/previews/BayerDither08.png) | [png](/00-Dither/png/BayerDither08.png) | cpp | txt | p8.lua | py
-| BayerDither09 | ![](/previews/BayerDither09.png) | [png](/00-Dither/png/BayerDither09.png) | cpp | txt | p8.lua | py
-| BayerDither10 | ![](/previews/BayerDither10.png) | [png](/00-Dither/png/BayerDither10.png) | cpp | txt | p8.lua | py
-| BayerDither11 | ![](/previews/BayerDither11.png) | [png](/00-Dither/png/BayerDither11.png) | cpp | txt | p8.lua | py
-| BayerDither12 | ![](/previews/BayerDither12.png) | [png](/00-Dither/png/BayerDither12.png) | cpp | txt | p8.lua | py
-| BayerDither13 | ![](/previews/BayerDither13.png) | [png](/00-Dither/png/BayerDither13.png) | cpp | txt | p8.lua | py
-| BayerDither14 | ![](/previews/BayerDither14.png) | [png](/00-Dither/png/BayerDither14.png) | cpp | txt | p8.lua | py
-| BayerDither15 | ![](/previews/BayerDither15.png) | [png](/00-Dither/png/BayerDither15.png) | cpp | txt | p8.lua | py
-| BayerDither16 | ![](/previews/BayerDither16.png) | [png](/00-Dither/png/BayerDither16.png) | cpp | txt | p8.lua | py
+| BayerDither00 | ![](/previews/BayerDither00.png) | [png](/00-Dither/png/BayerDither00.png) | cpp | [txt](/00-Dither/Dither.bitsy.txt#L5-L14) | p8.lua | py
+| BayerDither01 | ![](/previews/BayerDither01.png) | [png](/00-Dither/png/BayerDither01.png) | cpp | [txt](/00-Dither/Dither.bitsy.txt#L16-L25) | p8.lua | py
+| BayerDither02 | ![](/previews/BayerDither02.png) | [png](/00-Dither/png/BayerDither02.png) | cpp | [txt](/00-Dither/Dither.bitsy.txt#L27-L36) | p8.lua | py
+| BayerDither03 | ![](/previews/BayerDither03.png) | [png](/00-Dither/png/BayerDither03.png) | cpp | [txt](/00-Dither/Dither.bitsy.txt#L38-L47) | p8.lua | py
+| BayerDither04 | ![](/previews/BayerDither04.png) | [png](/00-Dither/png/BayerDither04.png) | cpp | [txt](/00-Dither/Dither.bitsy.txt#L49-L58) | p8.lua | py
+| BayerDither05 | ![](/previews/BayerDither05.png) | [png](/00-Dither/png/BayerDither05.png) | cpp | [txt](/00-Dither/Dither.bitsy.txt#L60-L69) | p8.lua | py
+| BayerDither06 | ![](/previews/BayerDither06.png) | [png](/00-Dither/png/BayerDither06.png) | cpp | [txt](/00-Dither/Dither.bitsy.txt#L71-L80) | p8.lua | py
+| BayerDither07 | ![](/previews/BayerDither07.png) | [png](/00-Dither/png/BayerDither07.png) | cpp | [txt](/00-Dither/Dither.bitsy.txt#L82-L91) | p8.lua | py
+| BayerDither08 | ![](/previews/BayerDither08.png) | [png](/00-Dither/png/BayerDither08.png) | cpp | [txt](/00-Dither/Dither.bitsy.txt#L93-L102) | p8.lua | py
+| BayerDither09 | ![](/previews/BayerDither09.png) | [png](/00-Dither/png/BayerDither09.png) | cpp | [txt](/00-Dither/Dither.bitsy.txt#L104-L113) | p8.lua | py
+| BayerDither10 | ![](/previews/BayerDither10.png) | [png](/00-Dither/png/BayerDither10.png) | cpp | [txt](/00-Dither/Dither.bitsy.txt#L115-L124) | p8.lua | py
+| BayerDither11 | ![](/previews/BayerDither11.png) | [png](/00-Dither/png/BayerDither11.png) | cpp | [txt](/00-Dither/Dither.bitsy.txt#L126-L135) | p8.lua | py
+| BayerDither12 | ![](/previews/BayerDither12.png) | [png](/00-Dither/png/BayerDither12.png) | cpp | [txt](/00-Dither/Dither.bitsy.txt#L137-L146) | p8.lua | py
+| BayerDither13 | ![](/previews/BayerDither13.png) | [png](/00-Dither/png/BayerDither13.png) | cpp | [txt](/00-Dither/Dither.bitsy.txt#L148-L157) | p8.lua | py
+| BayerDither14 | ![](/previews/BayerDither14.png) | [png](/00-Dither/png/BayerDither14.png) | cpp | [txt](/00-Dither/Dither.bitsy.txt#L159-L168) | p8.lua | py
+| BayerDither15 | ![](/previews/BayerDither15.png) | [png](/00-Dither/png/BayerDither15.png) | cpp | [txt](/00-Dither/Dither.bitsy.txt#L170-L179) | p8.lua | py
+| BayerDither16 | ![](/previews/BayerDither16.png) | [png](/00-Dither/png/BayerDither16.png) | cpp | [txt](/00-Dither/Dither.bitsy.txt#L181-L190) | p8.lua | py
 
 <br>
 
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| OfficeDither05 <sup>o</sup>| ![](/previews/OfficeDither05.png) | [png](/00-Dither/png/OfficeDither05.png) | cpp | txt | p8.lua | py
-| OfficeDither10 <sup>o</sup>| ![](/previews/OfficeDither10.png) | [png](/00-Dither/png/OfficeDither10.png) | cpp | txt | p8.lua | py
-| OfficeDither20 <sup>o</sup>| ![](/previews/OfficeDither20.png) | [png](/00-Dither/png/OfficeDither20.png) | cpp | txt | p8.lua | py
-| OfficeDither25 <sup>o</sup>| ![](/previews/OfficeDither25.png) | [png](/00-Dither/png/OfficeDither25.png) | cpp | txt | p8.lua | py
-| OfficeDither30 <sup>o</sup>| ![](/previews/OfficeDither30.png) | [png](/00-Dither/png/OfficeDither30.png) | cpp | txt | p8.lua | py
-| OfficeDither40 <sup>o</sup>| ![](/previews/OfficeDither40.png) | [png](/00-Dither/png/OfficeDither40.png) | cpp | txt | p8.lua | py
-| OfficeDither50 <sup>o</sup>| ![](/previews/OfficeDither50.png) | [png](/00-Dither/png/OfficeDither50.png) | cpp | txt | p8.lua | py
-| OfficeDither60 <sup>o</sup>| ![](/previews/OfficeDither60.png) | [png](/00-Dither/png/OfficeDither60.png) | cpp | txt | p8.lua | py
-| OfficeDither70 <sup>o</sup>| ![](/previews/OfficeDither70.png) | [png](/00-Dither/png/OfficeDither70.png) | cpp | txt | p8.lua | py
-| OfficeDither75 <sup>o</sup>| ![](/previews/OfficeDither75.png) | [png](/00-Dither/png/OfficeDither75.png) | cpp | txt | p8.lua | py
-| OfficeDither80 <sup>o</sup>| ![](/previews/OfficeDither80.png) | [png](/00-Dither/png/OfficeDither80.png) | cpp | txt | p8.lua | py
-| OfficeDither90 <sup>o</sup>| ![](/previews/OfficeDither90.png) | [png](/00-Dither/png/OfficeDither90.png) | cpp | txt | p8.lua | py
+| OfficeDither05 <sup>o</sup>| ![](/previews/OfficeDither05.png) | [png](/00-Dither/png/OfficeDither05.png) | cpp | [txt](/00-Dither/Dither.bitsy.txt#L196-L205) | p8.lua | py
+| OfficeDither10 <sup>o</sup>| ![](/previews/OfficeDither10.png) | [png](/00-Dither/png/OfficeDither10.png) | cpp | [txt](/00-Dither/Dither.bitsy.txt#L207-L216) | p8.lua | py
+| OfficeDither20 <sup>o</sup>| ![](/previews/OfficeDither20.png) | [png](/00-Dither/png/OfficeDither20.png) | cpp | [txt](/00-Dither/Dither.bitsy.txt#L218-L227) | p8.lua | py
+| OfficeDither25 <sup>o</sup>| ![](/previews/OfficeDither25.png) | [png](/00-Dither/png/OfficeDither25.png) | cpp | [txt](/00-Dither/Dither.bitsy.txt#L229-L238) | p8.lua | py
+| OfficeDither30 <sup>o</sup>| ![](/previews/OfficeDither30.png) | [png](/00-Dither/png/OfficeDither30.png) | cpp | [txt](/00-Dither/Dither.bitsy.txt#L240-L249) | p8.lua | py
+| OfficeDither40 <sup>o</sup>| ![](/previews/OfficeDither40.png) | [png](/00-Dither/png/OfficeDither40.png) | cpp | [txt](/00-Dither/Dither.bitsy.txt#L251-L260) | p8.lua | py
+| OfficeDither50 <sup>o</sup>| ![](/previews/OfficeDither50.png) | [png](/00-Dither/png/OfficeDither50.png) | cpp | [txt](/00-Dither/Dither.bitsy.txt#L262-L271) | p8.lua | py
+| OfficeDither60 <sup>o</sup>| ![](/previews/OfficeDither60.png) | [png](/00-Dither/png/OfficeDither60.png) | cpp | [txt](/00-Dither/Dither.bitsy.txt#L273-L282) | p8.lua | py
+| OfficeDither70 <sup>o</sup>| ![](/previews/OfficeDither70.png) | [png](/00-Dither/png/OfficeDither70.png) | cpp | [txt](/00-Dither/Dither.bitsy.txt#L284-L293) | p8.lua | py
+| OfficeDither75 <sup>o</sup>| ![](/previews/OfficeDither75.png) | [png](/00-Dither/png/OfficeDither75.png) | cpp | [txt](/00-Dither/Dither.bitsy.txt#L295-L304) | p8.lua | py
+| OfficeDither80 <sup>o</sup>| ![](/previews/OfficeDither80.png) | [png](/00-Dither/png/OfficeDither80.png) | cpp | [txt](/00-Dither/Dither.bitsy.txt#L306-L315) | p8.lua | py
+| OfficeDither90 <sup>o</sup>| ![](/previews/OfficeDither90.png) | [png](/00-Dither/png/OfficeDither90.png) | cpp | [txt](/00-Dither/Dither.bitsy.txt#L317-L326) | p8.lua | py
 
 [`⤴`](#gallery)
 
