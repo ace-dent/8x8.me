@@ -5,8 +5,7 @@
 
 
 # Minimal check for input parameters
-if [ -z "$1" ]
-then
+if [ -z "$1" ]; then
   echo "Missing filename for png image to process."
   exit
 fi
@@ -60,19 +59,20 @@ while (( "$#" )); do
     ((LINE=LINE+1))
   done
   PATTERNWIDTH=8
-  if [ "`head -n 4 "$VBIN"`" = "`tail -n 4 "$VBIN"`" ]
-  then
+  if [ "`head -n 4 "$VBIN"`" = "`tail -n 4 "$VBIN"`" ]; then
     PATTERNWIDTH=4
-    if [ "`head -n 2 "$VBIN"`" = "`head -n 4 "$VBIN" | tail -n 2`" ]
-    then
+    if [ "`head -n 2 "$VBIN"`" = "`head -n 4 "$VBIN" | tail -n 2`" ]; then
       PATTERNWIDTH=2
-      if [ "`head -n 1 "$VBIN"`" = "`head -n 2 "$VBIN" | tail -n 1`" ]
-      then
+      if [ "`head -n 1 "$VBIN"`" = "`head -n 2 "$VBIN" | tail -n 1`" ]; then
         PATTERNWIDTH=1
       fi
     fi
   fi
-  echo "$NAME - Minimum pattern width $PATTERNWIDTH px."
+  PATTERNHEIGHT=8
+  if [ "`head -n 4 "$HBIN"`" = "`tail -n 4 "$HBIN"`" ]; then
+    PATTERNHEIGHT=4
+  fi
+  echo "$NAME - Pattern width $PATTERNWIDTH px x height $PATTERNHEIGHT px."
 
 
   # Create Bitsy tile data
@@ -82,17 +82,44 @@ while (( "$#" )); do
   printf "NAME $name\n" >> "$WIPFILE"
 
 
-# TODO: Generate simple Magic and GAMBY code
-  # Create cpp code
+  # Create Arduboy cpp code
   WIPFILE="${1%/*/*}/$GROUP.h.WIP.txt"
   HWIPFILE="${1%/*/*}/$GROUP.h.WIP2.txt"
+  # Vertical (standard) format data
   printf "\nconstexpr uint8_t PROGMEM $nAME[] {\n    8, 8,  // 8x8 px image\n" >> "$WIPFILE"
   cat "$VHEX" | sed 's/#/\/\//' >> "$WIPFILE"
-  printf ");\n// Magic: -\n" >> "$WIPFILE"
-  if [ $PATTERNWIDTH -le 4 ]
-  then
-    printf "// GAMBY: 0x\n" >> "$WIPFILE"
+  # Basic 'magic' string (octal values only)
+  printf ");\n// Magic: " >> "$WIPFILE"
+  if [ $PATTERNWIDTH -eq 1 ]; then
+    printf '%i\n' "$((2#`sed -n 1p "$VBIN"`))" >> "$WIPFILE"
+  elif [ $PATTERNWIDTH -eq 2 ]; then
+    printf '"\\%o' "$((2#`sed -n 1p "$VBIN"`))" >> "$WIPFILE"
+    printf '\\%o"[i%%2]\n' "$((2#`sed -n 2p "$VBIN"`))" >> "$WIPFILE"
+  elif [ $PATTERNWIDTH -eq 4 ]; then
+    printf '"\\%o' "$((2#`sed -n 1p "$VBIN"`))" >> "$WIPFILE"
+    printf '\\%o' "$((2#`sed -n 2p "$VBIN"`))" >> "$WIPFILE"
+    printf '\\%o' "$((2#`sed -n 3p "$VBIN"`))" >> "$WIPFILE"
+    printf '\\%o"[i%%4]\n' "$((2#`sed -n 4p "$VBIN"`))" >> "$WIPFILE"
+  else
+    printf "\"" >> "$WIPFILE"
+    LINE=1
+    while [ $LINE -le 8 ]; do
+      printf '\\%o' "$((2#`sed -n "$LINE"p "$VBIN"`))" >> "$WIPFILE"
+      ((LINE=LINE+1))
+    done
+    printf "\"[i%%8]\n" >> "$WIPFILE"
   fi
+  # Bonus 4x4px GAMBY data
+  if [ $PATTERNWIDTH -le 4 ] && [ $PATTERNHEIGHT -le 4 ]; then
+    printf "// GAMBY: 0x" >> "$WIPFILE"
+    LINE=1
+    while [ $LINE -le 4 ]; do
+      sed -n "$LINE"p "$VHEX" | head -c 7 | tail -c 1 >> "$WIPFILE"
+      ((LINE=LINE+1))
+    done
+    printf "\n" >> "$WIPFILE"
+  fi
+  # Additional horizontal format (WIP2 file)
   printf "\nconstexpr uint8_t PROGMEM $nAME[] {\n    8, 8,  // 8x8 px image\n" >> "$HWIPFILE"
   cat "$HHEX" | sed 's/#/\/\//' >> "$HWIPFILE"
   printf ");\n" >> "$HWIPFILE"
@@ -100,16 +127,27 @@ while (( "$#" )); do
 
 # TODO: ...
   # Create PICO-8 code
+  WIPFILE="${1%/*/*}/$GROUP.p8.lua.WIP.txt"
+  printf -- "\n-- $name\n" >> "$WIPFILE"
+  # For 4x4px produce fillp() data
+  if [ $PATTERNWIDTH -le 4 ] && [ $PATTERNHEIGHT -le 4 ]; then
+    printf -- "-- fillp(" >> "$WIPFILE"
+    LINE=1; VALUE="0x"
+    while [ $LINE -le 4 ]; do
+      VALUE="$VALUE`sed -n "$LINE"p "$HHEX" | head -c 7 | tail -c 1`"
+      ((LINE=LINE+1))
+    done
+    printf '%u)\n' "$VALUE" >> "$WIPFILE"
+  fi
 
-
+  
   # Create Thumby code
   WIPFILE="${1%/*/*}/$GROUP.thumby.WIP.txt"
   printf "\n# $NAME\n# BITMAP: width: 8, height: 8, [" >> "$WIPFILE"
   LINE=1
   while [ $LINE -le 8 ]; do
     printf '%u' "$((2#`sed -n "$LINE"p "$VBIN"`))" >> "$WIPFILE"
-    if [ $LINE -le 7 ]
-    then
+    if [ $LINE -le 7 ]; then
       printf "," >> "$WIPFILE"
     else
       printf "]\n" >> "$WIPFILE"
