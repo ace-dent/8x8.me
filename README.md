@@ -80,8 +80,8 @@ Contents:
 ### (01) Dots
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Confetti <sup>o</sup>| ![](/previews/Confetti.png) | [png](/01-Dots/png/Confetti.png) | cpp | txt | p8.lua | py
-| ConfettiLarge <sup>o</sup>| ![](/previews/ConfettiLarge.png) | [png](/01-Dots/png/ConfettiLarge.png) | cpp | txt | p8.lua | py
+| Confetti <sup>o</sup>| ![](/previews/Confetti.png) | [png](/01-Dots/png/Confetti.png) | [cpp](/01-Dots/Dots.h#L12-L23) | [txt](/01-Dots/Dots.bitsy.txt#L5-L14) | p8.lua | [py](/01-Dots/Dots.thumby.py#L5-L16)
+| ConfettiLarge <sup>o</sup>| ![](/previews/ConfettiLarge.png) | [png](/01-Dots/png/ConfettiLarge.png) | [cpp](/01-Dots/Dots.h#L25-L36) | [txt](/01-Dots/Dots.bitsy.txt#L16-L25) | p8.lua | [py](/01-Dots/Dots.thumby.py#L18-L29)
 
 [`⤴`](#gallery)
 
