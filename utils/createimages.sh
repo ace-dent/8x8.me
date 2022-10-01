@@ -88,7 +88,7 @@ while (( "$#" )); do
   printf "\nconstexpr uint8_t PROGMEM $nAME[] {\n    8, 8,  // 8x8 px image\n" >> "$WIPFILE"
   cat "$VHEX" | sed 's/#/\/\//' >> "$WIPFILE"
   # Alternative 'magic' string representation
-  printf ");\n// Magic: " >> "$WIPFILE"
+  printf "};\n// Magic: " >> "$WIPFILE"
   if [ $PATTERNWIDTH -eq 1 ]; then
     printf '%i\n' "$((2#`sed -n 1p "$VBIN"`))" >> "$WIPFILE"
   elif [ $PATTERNWIDTH -eq 2 ]; then
@@ -207,7 +207,7 @@ while (( "$#" )); do
   # Additional horizontal format (WIP2 file)
   printf "\nconstexpr uint8_t PROGMEM $nAME[] {\n    8, 8,  // 8x8 px image\n" >> "$HWIPFILE"
   cat "$HHEX" | sed 's/#/\/\//' >> "$HWIPFILE"
-  printf ");\n" >> "$HWIPFILE"
+  printf "};\n" >> "$HWIPFILE"
 
 
   # TODO: ...
@@ -231,7 +231,8 @@ while (( "$#" )); do
   
   # Create Thumby code
   WIPFILE="${1%/*/*}/$GROUP.thumby.WIP.txt"
-  printf "\n# $NAME\n# BITMAP: width: 8, height: 8, [" >> "$WIPFILE"
+  printf "\n$nAME = bytearray([\n" >> "$WIPFILE"
+  printf "    # BITMAP: width: 8, height: 8, [" >> "$WIPFILE"
   COLUMN=1
   while [ $COLUMN -le 8 ]; do
     printf '%u' "$((2#`sed -n "$COLUMN"p "$VBIN"`))" >> "$WIPFILE"
@@ -240,9 +241,8 @@ while (( "$#" )); do
     else
       printf "]\n" >> "$WIPFILE"
     fi
-    (($COLUMN=$COLUMN+1))
+    ((COLUMN=COLUMN+1))
   done
-  printf "$nAME = bytearray([\n" >> "$WIPFILE"
   cat "$VHEX" >> "$WIPFILE"
   printf "])\n# "$nAME"Sprite = thumby.Sprite(8, 8, "$nAME")\n" >> "$WIPFILE"
 
