@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # WARNING: Hacked together; may do terrible things!
-# ... no highly esteemed deed is commemorated here...
 
 
 # Minimal check for input parameters
@@ -85,37 +84,123 @@ while (( "$#" )); do
   # Create Arduboy cpp code
   WIPFILE="${1%/*/*}/$GROUP.h.WIP.txt"
   HWIPFILE="${1%/*/*}/$GROUP.h.WIP2.txt"
-  # Vertical (standard) format data
+  # Vertical format data (sprite standard)
   printf "\nconstexpr uint8_t PROGMEM $nAME[] {\n    8, 8,  // 8x8 px image\n" >> "$WIPFILE"
   cat "$VHEX" | sed 's/#/\/\//' >> "$WIPFILE"
-  # Basic 'magic' string (octal values only)
+  # Alternative 'magic' string representation
   printf ");\n// Magic: " >> "$WIPFILE"
   if [ $PATTERNWIDTH -eq 1 ]; then
     printf '%i\n' "$((2#`sed -n 1p "$VBIN"`))" >> "$WIPFILE"
   elif [ $PATTERNWIDTH -eq 2 ]; then
-    printf '"\\%o' "$((2#`sed -n 1p "$VBIN"`))" >> "$WIPFILE"
-    printf '\\%o"[i%%2]\n' "$((2#`sed -n 2p "$VBIN"`))" >> "$WIPFILE"
-  elif [ $PATTERNWIDTH -eq 4 ]; then
-    printf '"\\%o' "$((2#`sed -n 1p "$VBIN"`))" >> "$WIPFILE"
-    printf '\\%o' "$((2#`sed -n 2p "$VBIN"`))" >> "$WIPFILE"
-    printf '\\%o' "$((2#`sed -n 3p "$VBIN"`))" >> "$WIPFILE"
-    printf '\\%o"[i%%4]\n' "$((2#`sed -n 4p "$VBIN"`))" >> "$WIPFILE"
+    printf 'i&1?%i' "$((2#`sed -n 1p "$VBIN"`))" >> "$WIPFILE"
+    printf ':%i\n' "$((2#`sed -n 2p "$VBIN"`))" >> "$WIPFILE"
   else
-    printf "\"" >> "$WIPFILE"
-    LINE=1
-    while [ $LINE -le 8 ]; do
-      printf '\\%o' "$((2#`sed -n "$LINE"p "$VBIN"`))" >> "$WIPFILE"
-      ((LINE=LINE+1))
+    # Process the columns (bytes) in reverse order
+    COLUMN=$PATTERNWIDTH; VALUE=""; DIGIT=0
+    # We store the end of the string first
+    STRING="\"[i%$PATTERNWIDTH]"
+    while [ $COLUMN -gt 0 ]; do
+      # Find the octal value for the current column (byte)
+      VALUE=$(printf '%o' "$((2#`sed -n "$COLUMN"p "$VBIN"`))")
+      # Process the octal value, to handle special cases for encoding
+      case $VALUE in
+        [0-6])
+          if [ $VALUE -eq 0 ] && [ $COLUMN = $PATTERNWIDTH ]; then
+            # cpp strings are always null terminated
+            VALUE=""
+          elif [ $DIGIT -eq 1 ]; then
+            # Add leading zeroes to make octal value unambiguous 
+            VALUE="\\00$VALUE"
+          else
+            VALUE="\\$VALUE"
+          fi
+        ;;
+        # Escape codes are more compact
+        7)
+          VALUE="\\a"
+        ;;
+        10)
+          VALUE="\\b"
+        ;;
+        11)
+          VALUE="\\t"
+        ;;
+        12)
+          VALUE="\\n"
+        ;;
+        13)
+          VALUE="\\v"
+        ;;
+        14)
+          VALUE="\\f"
+        ;;
+        15)
+          VALUE="\\r"
+        ;;
+        1[6-7]|2[0-7]|3[0-2])
+          if [ $DIGIT -eq 1 ]; then
+            # Add leading zero to make octal value unambiguous 
+            VALUE="\\0$VALUE"
+          else
+            VALUE="\\$VALUE"
+          fi
+        ;;
+        33)
+          VALUE="\\e"
+        ;;
+        3[4-7])
+          if [ $DIGIT -eq 1 ]; then
+            VALUE="\\0$VALUE"
+          else
+            VALUE="\\$VALUE"
+          fi
+        ;;
+        # 040 Start of printable, 7-bit characters (32 or 0x20)
+        4[0-1])
+          VALUE=$(printf '%b' "\\$VALUE")
+        ;;
+        # Escape for ' " '
+        42)
+          VALUE="\\\""
+        ;;
+        4[3-7]|5[0-7]|6[0-7]|7[0-7]|10[0-7]|11[0-7]|12[0-7]|13[0-3])
+          VALUE=$(printf '%b' "\\$VALUE")
+        ;;
+        # Escape for ' \ '
+        134)
+          VALUE="\\\\"
+        ;;
+        13[5-7]|14[0-7]|15[0-7]|16[0-7]|17[0-6])
+          VALUE=$(printf '%b' "\\$VALUE")
+        ;;
+        # 0176 End of printable, 7-bit characters (127 or 0x7E)
+        *)
+          # Remaining values are encoded as a 3 digit octal
+          VALUE="\\""$VALUE"
+        ;;
+      esac
+      # Check if the character output is a valid octal digit (0–7)
+      # This may affect encoding of the next (preceding) octal value
+      case $VALUE in
+        [0-7])
+          DIGIT=1
+        ;;
+        *)
+          DIGIT=0
+        ;;
+      esac
+      STRING="$VALUE""$STRING"
+      ((COLUMN=COLUMN-1))
     done
-    printf "\"[i%%8]\n" >> "$WIPFILE"
+    echo "\"$STRING" >> "$WIPFILE"
   fi
   # Bonus 4x4px GAMBY data
   if [ $PATTERNWIDTH -le 4 ] && [ $PATTERNHEIGHT -le 4 ]; then
     printf "// GAMBY: 0x" >> "$WIPFILE"
-    LINE=1
-    while [ $LINE -le 4 ]; do
-      sed -n "$LINE"p "$VHEX" | head -c 7 | tail -c 1 >> "$WIPFILE"
-      ((LINE=LINE+1))
+    COLUMN=1
+    while [ $COLUMN -le 4 ]; do
+      sed -n "$COLUMN"p "$VHEX" | head -c 7 | tail -c 1 >> "$WIPFILE"
+      ((COLUMN=COLUMN+1))
     done
     printf "\n" >> "$WIPFILE"
   fi
@@ -125,17 +210,20 @@ while (( "$#" )); do
   printf ");\n" >> "$HWIPFILE"
 
 
-# TODO: ...
+  # TODO: ...
   # Create PICO-8 code
   WIPFILE="${1%/*/*}/$GROUP.p8.lua.WIP.txt"
+  
+  # Produce data as a custom font
+  
   printf -- "\n-- $name\n" >> "$WIPFILE"
-  # For 4x4px produce fillp() data
+  # Bonus: For 4x4px patterns produce fillp() alternative
   if [ $PATTERNWIDTH -le 4 ] && [ $PATTERNHEIGHT -le 4 ]; then
     printf -- "-- fillp(" >> "$WIPFILE"
-    LINE=1; VALUE="0x"
-    while [ $LINE -le 4 ]; do
-      VALUE="$VALUE`sed -n "$LINE"p "$HHEX" | head -c 7 | tail -c 1`"
-      ((LINE=LINE+1))
+    ROW=1; VALUE="0x"
+    while [ $ROW -le 4 ]; do
+      VALUE="$VALUE`sed -n "$ROW"p "$HHEX" | head -c 7 | tail -c 1`"
+      ((ROW=ROW+1))
     done
     printf '%u)\n' "$VALUE" >> "$WIPFILE"
   fi
@@ -144,15 +232,15 @@ while (( "$#" )); do
   # Create Thumby code
   WIPFILE="${1%/*/*}/$GROUP.thumby.WIP.txt"
   printf "\n# $NAME\n# BITMAP: width: 8, height: 8, [" >> "$WIPFILE"
-  LINE=1
-  while [ $LINE -le 8 ]; do
-    printf '%u' "$((2#`sed -n "$LINE"p "$VBIN"`))" >> "$WIPFILE"
-    if [ $LINE -le 7 ]; then
+  COLUMN=1
+  while [ $COLUMN -le 8 ]; do
+    printf '%u' "$((2#`sed -n "$COLUMN"p "$VBIN"`))" >> "$WIPFILE"
+    if [ $COLUMN -le 7 ]; then
       printf "," >> "$WIPFILE"
     else
       printf "]\n" >> "$WIPFILE"
     fi
-    ((LINE=LINE+1))
+    (($COLUMN=$COLUMN+1))
   done
   printf "$nAME = bytearray([\n" >> "$WIPFILE"
   cat "$VHEX" >> "$WIPFILE"
