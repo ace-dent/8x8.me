@@ -154,6 +154,7 @@ Contents:
 | DexterSparseBold | ![](/previews/DexterSparseBold.png) | [png](/03-Lines/png/DexterSparseBold.png) | cpp | txt | p8.lua | py
 | DexterSparseExtraBold | ![](/previews/DexterSparseExtraBold.png) | [png](/03-Lines/png/DexterSparseExtraBold.png) | cpp | txt | p8.lua | py
 | DexterSparseUltraBold <sup>o</sup>| ![](/previews/DexterSparseUltraBold.png) | [png](/03-Lines/png/DexterSparseUltraBold.png) | cpp | txt | p8.lua | py
+| DexterStripes | ![](/previews/DexterStripes.png) | [png](/03-Lines/png/DexterStripes.png) | cpp | txt | p8.lua | py
 | DexterPinstripe | ![](/previews/DexterPinstripe.png) | [png](/03-Lines/png/DexterPinstripe.png) | cpp | txt | p8.lua | py
 | DexterPinstripeMedium | ![](/previews/DexterPinstripeMedium.png) | [png](/03-Lines/png/DexterPinstripeMedium.png) | cpp | txt | p8.lua | py
 | DexterSteep | ![](/previews/DexterSteep.png) | [png](/03-Lines/png/DexterSteep.png) | cpp | txt | p8.lua | py
@@ -173,6 +174,7 @@ Contents:
 | SinisterSparseBold | ![](/previews/SinisterSparseBold.png) | [png](/03-Lines/png/SinisterSparseBold.png) | cpp | txt | p8.lua | py
 | SinisterSparseExtraBold | ![](/previews/SinisterSparseExtraBold.png) | [png](/03-Lines/png/SinisterSparseExtraBold.png) | cpp | txt | p8.lua | py
 | SinisterSparseUltraBold <sup>o</sup>| ![](/previews/SinisterSparseUltraBold.png) | [png](/03-Lines/png/SinisterSparseUltraBold.png) | cpp | txt | p8.lua | py
+| SinisterStripes | ![](/previews/SinisterStripes.png) | [png](/03-Lines/png/SinisterStripes.png) | cpp | txt | p8.lua | py
 | SinisterPinstripe | ![](/previews/SinisterPinstripe.png) | [png](/03-Lines/png/SinisterPinstripe.png) | cpp | txt | p8.lua | py
 | SinisterPinstripeMedium | ![](/previews/SinisterPinstripeMedium.png) | [png](/03-Lines/png/SinisterPinstripeMedium.png) | cpp | txt | p8.lua | py
 | SinisterSteep | ![](/previews/SinisterSteep.png) | [png](/03-Lines/png/SinisterSteep.png) | cpp | txt | p8.lua | py
