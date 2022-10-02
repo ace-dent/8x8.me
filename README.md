@@ -259,9 +259,14 @@ Contents:
 ### (08) Woven
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Interlinked <sup>o</sup>| ![](/previews/Interlinked.png) | [png](/08-Woven/png/Interlinked.png) | cpp | txt | p8.lua | py
+| WeaveDense | ![](/previews/WeaveDense.png) | [png](/08-Woven/png/WeaveDense.png) | cpp | txt | p8.lua | py
+| Weave | ![](/previews/Weave.png) | [png](/08-Woven/png/Weave.png) | cpp | txt | p8.lua | py
+| WeaveMedium | ![](/previews/WeaveMedium.png) | [png](/08-Woven/png/WeaveMedium.png) | cpp | txt | p8.lua | py
+| WeaveBold | ![](/previews/WeaveBold.png) | [png](/08-Woven/png/WeaveBold.png) | cpp | txt | p8.lua | py
 | Gingham | ![](/previews/Gingham.png) | [png](/08-Woven/png/Gingham.png) | cpp | txt | p8.lua | py
-| Houndstooth | ![](/previews/Houndstooth.png) | [png](/08-Woven/png/Houndstooth.png) | cpp | txt | p8.lua | py
 | Plaid <sup>o</sup>| ![](/previews/Plaid.png) | [png](/08-Woven/png/Plaid.png) | cpp | txt | p8.lua | py
+| Houndstooth | ![](/previews/Houndstooth.png) | [png](/08-Woven/png/Houndstooth.png) | cpp | txt | p8.lua | py
 | Puppytooth <sup>p</sup>| ![](/previews/Puppytooth.png) | [png](/08-Woven/png/Puppytooth.png) | cpp | txt | p8.lua | py
 
 [`⤴`](#gallery)
