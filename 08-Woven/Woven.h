@@ -20,7 +20,7 @@ namespace patterns {
         0xAE,  // ░▓░▓░░░▓
         0xDD,  // ░░▓░░░▓░
     };
-    // Magic: "\272w\273\335\352w\256\335"[i%8]
+    // Magic: ~"E\210D\"\25\210Q\""[i%8]
 
     constexpr uint8_t PROGMEM weaveDense[] {
         8, 8,  // 8x8 px image
@@ -33,7 +33,7 @@ namespace patterns {
         0xAE,  // ░▓░▓░░░▓
         0xDD,  // ░░▓░░░▓░
     };
-    // Magic: "\272w\253\335\352w\256\335"[i%8]
+    // Magic: ~"E\210T\"\25\210Q\""[i%8]
 
     constexpr uint8_t PROGMEM weave[] {
         8, 8,  // 8x8 px image
