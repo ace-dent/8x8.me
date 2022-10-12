@@ -248,16 +248,26 @@ while (( "$#" )); do
   printf "};\n" >> "$HWIPFILE"
 
 
-  # TODO: ...
   # Create PICO-8 code
   WIPFILE="${1%/*/*}/$GROUP.p8.lua.WIP.txt"
-  
   # Produce data as a custom font
-  ((OFFSET=96+IMAGECOUNT)) # Start encoding at character 'a'
-  printf -- "\n-- $OFFSET $name\n poke(0x5600+(8* $OFFSET),\n" >> "$WIPFILE"
-
-  
-  
+  ((OFFSET=96+IMAGECOUNT)) # Start encoding at character 'a'=97
+  CHAR=$(printf '\%o' "$OFFSET")
+  printf -- "\n-- $OFFSET '$CHAR' $name\n" >> "$WIPFILE"
+  printf "poke(0x5600+(8* $OFFSET),\n" >> "$WIPFILE"
+  ROW=1
+  while [ $ROW -le 8 ]; do
+    printf ' %3u' "$((2#`sed -n "$ROW"p "$HBIN" | rev`))" >> "$WIPFILE"
+    if [ $ROW -lt 8 ]; then
+      printf -- ", -- " >> "$WIPFILE"
+    else
+      printf -- "  -- " >> "$WIPFILE"
+    fi
+    sed -n "$ROW"p "$HBIN" | tr "0" "▒" | tr "1" "█" >> "$WIPFILE"
+    ((ROW=ROW+1))
+  done
+  printf ")\n" >> "$WIPFILE"
+  printf -- "-- Magic: \n" >> "$WIPFILE"
   # Bonus: For 4x4px patterns produce fillp() alternative
   if [ $PATTERNWIDTH -le 4 ] && [ $PATTERNHEIGHT -le 4 ]; then
     printf -- "-- fillp(" >> "$WIPFILE"
