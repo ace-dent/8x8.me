@@ -307,13 +307,21 @@ Contents:
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Scales | ![](/previews/Scales.png) | [png](/10-Nature/png/Scales.png) | cpp | [txt](/10-Nature/Nature.bitsy.txt#L5-L14) | p8.lua | [py](/10-Nature/Nature.thumby.py#L5-L16)
 | Loam | ![](/previews/Loam.png) | [png](/10-Nature/png/Loam.png) | cpp | [txt](/10-Nature/Nature.bitsy.txt#L16-L25) | p8.lua | [py](/10-Nature/Nature.thumby.py#L18-L29)
+| Sand | ![](/previews/Sand.png) | [png](/10-Nature/png/Sand.png) | cpp | txt | p8.lua | py
 | Grass | ![](/previews/Grass.png) | [png](/10-Nature/png/Grass.png) | cpp | [txt](/10-Nature/Nature.bitsy.txt#L27-L36) | p8.lua | [py](/10-Nature/Nature.thumby.py#L31-L42)
+| Divot <sup>o</sup>| ![](/previews/Divot.png) | [png](/10-Nature/png/Divot.png) | cpp | txt | p8.lua | py
 | Tuffet | ![](/previews/Tuffet.png) | [png](/10-Nature/png/Tuffet.png) | cpp | [txt](/10-Nature/Nature.bitsy.txt#L38-L47) | p8.lua | [py](/10-Nature/Nature.thumby.py#L44-L55)
 | Leaves | ![](/previews/Leaves.png) | [png](/10-Nature/png/Leaves.png) | cpp | [txt](/10-Nature/Nature.bitsy.txt#L49-L58) | p8.lua | [py](/10-Nature/Nature.thumby.py#L57-L68)
+| Crop | ![](/previews/Crop.png) | [png](/10-Nature/png/Crop.png) | cpp | txt | p8.lua | py
 | Daisies | ![](/previews/Daisies.png) | [png](/10-Nature/png/Daisies.png) | cpp | [txt](/10-Nature/Nature.bitsy.txt#L60-L69) | p8.lua | [py](/10-Nature/Nature.thumby.py#L70-L81)
+| Meadow | ![](/previews/Meadow.png) | [png](/10-Nature/png/Meadow.png) | cpp | txt | p8.lua | py
+| Shrub | ![](/previews/Shrub.png) | [png](/10-Nature/png/Shrub.png) | cpp | txt | p8.lua | py
+| Thicket | ![](/previews/Thicket.png) | [png](/10-Nature/png/Thicket.png) | cpp | [txt](/10-Nature/Nature.bitsy.txt#L82-L91) | p8.lua | [py](/10-Nature/Nature.thumby.py#L96-L107)
 | Tree | ![](/previews/Tree.png) | [png](/10-Nature/png/Tree.png) | cpp | [txt](/10-Nature/Nature.bitsy.txt#L71-L80) | p8.lua | [py](/10-Nature/Nature.thumby.py#L83-L94)
-| Shrub | ![](/previews/Shrub.png) | [png](/10-Nature/png/Shrub.png) | cpp | [txt](/10-Nature/Nature.bitsy.txt#L82-L91) | p8.lua | [py](/10-Nature/Nature.thumby.py#L96-L107)
+| Rocks | ![](/previews/Rocks.png) | [png](/10-Nature/png/Rocks.png) | cpp | txt | p8.lua | py
+| Skull | ![](/previews/Skull.png) | [png](/10-Nature/png/Skull.png) | cpp | txt | p8.lua | py
 | CrackedBoulder | ![](/previews/CrackedBoulder.png) | [png](/10-Nature/png/CrackedBoulder.png) | cpp | [txt](/10-Nature/Nature.bitsy.txt#L93-L102) | p8.lua | [py](/10-Nature/Nature.thumby.py#L109-L120)
+| BeanStalk | ![](/previews/BeanStalk.png) | [png](/10-Nature/png/BeanStalk.png) | cpp | txt | p8.lua | py
 
 [`⤴`](#gallery)
 
@@ -333,7 +341,6 @@ Contents:
 ### (12) Other
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Divot <sup>o</sup>| ![](/previews/Divot.png) | [png](/12-Other/png/Divot.png) | cpp | txt | p8.lua | py
 
 [`⤴`](#gallery)
 
