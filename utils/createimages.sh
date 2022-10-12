@@ -3,7 +3,7 @@
 # WARNING: Hacked together; may do terrible things!
 
 
-# Minimal check for input parameters
+# Minimal check for input file(s)
 if [ -z "$1" ]; then
   echo "Missing filename for png image to process."
   exit
@@ -81,20 +81,51 @@ while (( "$#" )); do
   printf "NAME $name\n" >> "$WIPFILE"
 
 
-  # Create Arduboy cpp code
+  # Create cpp (Arduboy) code
   WIPFILE="${1%/*/*}/$GROUP.h.WIP.txt"
   HWIPFILE="${1%/*/*}/$GROUP.h.WIP2.txt"
   # Vertical format data (sprite standard)
   printf "\nconstexpr uint8_t PROGMEM $nAME[] {\n    8, 8,  // 8x8 px image\n" >> "$WIPFILE"
   cat "$VHEX" | sed 's/#/\/\//' >> "$WIPFILE"
-  # Alternative 'magic' string representation
+  # Alternative 'magic' representation
   printf "};\n// Magic: " >> "$WIPFILE"
   if [ $PATTERNWIDTH -eq 1 ]; then
     printf '%i\n' "$((2#`sed -n 1p "$VBIN"`))" >> "$WIPFILE"
   elif [ $PATTERNWIDTH -eq 2 ]; then
+    # TODO: Catch edge cases where string encoding is smaller "Az"[i%2]
     printf 'i&1?%i' "$((2#`sed -n 1p "$VBIN"`))" >> "$WIPFILE"
     printf ':%i\n' "$((2#`sed -n 2p "$VBIN"`))" >> "$WIPFILE"
   else
+    # Encode 'magic' as a string... hold tight...
+    # First pass: scan byte values to estimate if inverted form will be more compact
+    COLUMN=$PATTERNWIDTH; VALUE=""; INVERT=0
+    while [ $COLUMN -gt 0 ]; do
+      # Find the decimal value for the current column (byte)
+      VALUE=$(printf '%u' "$((2#`sed -n "$COLUMN"p "$VBIN"`))")
+      if [ $VALUE -le 13 ]; then
+        if [ $VALUE -eq 0 ] && [ $COLUMN = $PATTERNWIDTH ]; then
+          ((INVERT=INVERT+4)) # cpp strings are null terminated
+        else
+          ((INVERT=INVERT+2))
+        fi
+      elif [ $VALUE -le 31 ]; then
+        ((INVERT=INVERT+1))
+      elif [ $VALUE -le 127 ]; then
+        ((INVERT=INVERT+3))
+      elif [ $VALUE -le 223 ]; then
+        ((INVERT=INVERT-3))
+      elif [ $VALUE -le 241 ]; then
+        ((INVERT=INVERT-1))
+      else
+        if [ $VALUE -eq 255 ] && [ $COLUMN = $PATTERNWIDTH ]; then
+          ((INVERT=INVERT-4)) # cpp strings are null terminated
+        else
+          ((INVERT=INVERT-2))
+        fi
+      fi
+      ((COLUMN=COLUMN-1))
+    done
+    # Second pass: Encode the string
     # Process the columns (bytes) in reverse order
     COLUMN=$PATTERNWIDTH; VALUE=""; DIGIT=0
     # We store the end of the string first
@@ -102,6 +133,9 @@ while (( "$#" )); do
     while [ $COLUMN -gt 0 ]; do
       # Find the octal value for the current column (byte)
       VALUE=$(printf '%o' "$((2#`sed -n "$COLUMN"p "$VBIN"`))")
+      if [ $INVERT -lt -1 ]; then
+        ((VALUE=377-VALUE))
+      fi
       # Process the octal value, to handle special cases for encoding
       case $VALUE in
         [0-6])
@@ -192,7 +226,11 @@ while (( "$#" )); do
       STRING="$VALUE""$STRING"
       ((COLUMN=COLUMN-1))
     done
-    echo "\"$STRING" >> "$WIPFILE"
+    STRING="\"""$STRING"
+    if [ $INVERT -lt -1 ]; then
+      STRING="~""$STRING"
+    fi
+    echo "$STRING" >> "$WIPFILE"
   fi
   # Bonus 4x4px GAMBY data
   if [ $PATTERNWIDTH -le 4 ] && [ $PATTERNHEIGHT -le 4 ]; then
@@ -215,8 +253,11 @@ while (( "$#" )); do
   WIPFILE="${1%/*/*}/$GROUP.p8.lua.WIP.txt"
   
   # Produce data as a custom font
+  ((OFFSET=96+IMAGECOUNT)) # Start encoding at character 'a'
+  printf -- "\n-- $OFFSET $name\n poke(0x5600+(8* $OFFSET),\n" >> "$WIPFILE"
+
   
-  printf -- "\n-- $name\n" >> "$WIPFILE"
+  
   # Bonus: For 4x4px patterns produce fillp() alternative
   if [ $PATTERNWIDTH -le 4 ] && [ $PATTERNHEIGHT -le 4 ]; then
     printf -- "-- fillp(" >> "$WIPFILE"
