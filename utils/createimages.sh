@@ -8,6 +8,8 @@ if [ -z "$1" ]; then
   echo "Missing filename for png image to process."
   exit
 fi
+# Directory for utilities
+UTILDIR="$(dirname "${BASH_SOURCE[0]}")"
 
 
 COPYRIGHT="This work is dedicated to the Public Domain by ACED, licensed under CC0."
@@ -77,6 +79,7 @@ while (( "$#" )); do
   # Create Bitsy tile data
   WIPFILE="${1%/*/*}/$GROUP.bitsy.WIP.txt"
   printf "\nTIL $IMAGECOUNT\n" >> "$WIPFILE"
+  # TODO: Change decimal count to base36?
   cat "$HBIN" >> "$WIPFILE"
   printf "NAME $name\n" >> "$WIPFILE"
 
@@ -252,8 +255,8 @@ while (( "$#" )); do
   WIPFILE="${1%/*/*}/$GROUP.p8.lua.WIP.txt"
   # Produce data as a custom font
   ((OFFSET=96+IMAGECOUNT)) # Start encoding at character 'a'=97
-  CHAR=$(printf '\%o' "$OFFSET")
-  printf -- "\n-- $OFFSET '$CHAR' $name\n" >> "$WIPFILE"
+  CHAR=$(printf "\x$(printf %x $OFFSET)")
+  printf -- "\n\n--$OFFSET '$CHAR' $name\n" >> "$WIPFILE"
   printf "poke(0x5600+(8* $OFFSET),\n" >> "$WIPFILE"
   ROW=1
   while [ $ROW -le 8 ]; do
@@ -267,16 +270,41 @@ while (( "$#" )); do
     ((ROW=ROW+1))
   done
   printf ")\n" >> "$WIPFILE"
-  printf -- "-- Magic: \n" >> "$WIPFILE"
+  # Helper code snippet to copy font character to Sprite 0
+  echo '-->spr0: print"⁶@56000005⁸x⁸\0\0⁶c0ᵉ'$CHAR'"for i=0,7do memcpy(i*64,24576+i*64,4)end cstore()' >> "$WIPFILE"
+  # Bonus: 'magic' one-off character, encoded as a string
+  COLUMN=8; VALUE=""; DIGIT=0
+  # We store the end of the string first
+  STRING="\""
+  while [ $COLUMN -gt 0 ]; do
+    # Find the decimal value for the current column (byte)
+    VALUE=$(printf '%i' "$((2#`sed -n "$COLUMN"p "$HBIN" | rev`))")
+    if [ $VALUE -eq 0 ] && [ $DIGIT -eq 1 ]; then
+      printf "\\\000"
+      DIGIT=0
+    else
+      ((VALUE=VALUE+1)) 
+      STRING=`sed -n "$VALUE"p "$UTILDIR/p8-codepage"`$STRING
+      if [ $VALUE -ge 49 ] && [ $VALUE -le 58 ] ; then
+        DIGIT=1
+      else
+        DIGIT=0
+      fi
+    fi
+    ((COLUMN=COLUMN-1))
+  done
+  echo "--magic: ?\"⁶."$STRING >> "$WIPFILE"
   # Bonus: For 4x4px patterns produce fillp() alternative
   if [ $PATTERNWIDTH -le 4 ] && [ $PATTERNHEIGHT -le 4 ]; then
-    printf -- "-- fillp(" >> "$WIPFILE"
-    ROW=1; VALUE="0x"
+    printf -- "--fillp(" >> "$WIPFILE"
+    ROW=1; VALUE=""; STRING="0x"
     while [ $ROW -le 4 ]; do
-      VALUE="$VALUE`sed -n "$ROW"p "$HHEX" | head -c 7 | tail -c 1`"
+      # Invert binary values 0<>1 to fix fore-/background
+      VALUE=`sed -n "$ROW"p "$HBIN" | head -c 4 | tr "0" "i" | tr "1" "0" | tr "i" "1"`
+      STRING=$STRING`printf '%X' $((2#$VALUE))`
       ((ROW=ROW+1))
     done
-    printf '%u)\n' "$VALUE" >> "$WIPFILE"
+    printf '%u)\n' "$STRING" >> "$WIPFILE"
   fi
 
   
