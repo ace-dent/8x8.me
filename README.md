@@ -314,7 +314,7 @@ Contents:
 | Leaves | ![](/previews/Leaves.png) | [png](/10-Nature/png/Leaves.png) | cpp | [txt](/10-Nature/Nature.bitsy.txt#L49-L58) | p8.lua | [py](/10-Nature/Nature.thumby.py#L57-L68)
 | Crop | ![](/previews/Crop.png) | [png](/10-Nature/png/Crop.png) | cpp | txt | p8.lua | py
 | Daisies | ![](/previews/Daisies.png) | [png](/10-Nature/png/Daisies.png) | cpp | [txt](/10-Nature/Nature.bitsy.txt#L60-L69) | p8.lua | [py](/10-Nature/Nature.thumby.py#L70-L81)
-| Meadow | ![](/previews/Meadow.png) | [png](/10-Nature/png/Meadow.png) | cpp | txt | p8.lua | py
+| Pasture | ![](/previews/Pasture.png) | [png](/10-Nature/png/Pasture.png) | cpp | txt | p8.lua | py
 | Shrub | ![](/previews/Shrub.png) | [png](/10-Nature/png/Shrub.png) | cpp | txt | p8.lua | py
 | Thicket | ![](/previews/Thicket.png) | [png](/10-Nature/png/Thicket.png) | cpp | [txt](/10-Nature/Nature.bitsy.txt#L82-L91) | p8.lua | [py](/10-Nature/Nature.thumby.py#L96-L107)
 | Tree | ![](/previews/Tree.png) | [png](/10-Nature/png/Tree.png) | cpp | [txt](/10-Nature/Nature.bitsy.txt#L71-L80) | p8.lua | [py](/10-Nature/Nature.thumby.py#L83-L94)
