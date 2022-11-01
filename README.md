@@ -330,9 +330,14 @@ Contents:
 ### (11) Symbols
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Anchor | ![](/previews/Anchor.png) | [png](/11-Symbols/png/Anchor.png) | cpp | [txt](/11-Symbols/Symbols.bitsy.txt#L5-L14) | p8.lua | [py](/11-Symbols/Symbols.thumby.py#L5-L16)
-| Heart | ![](/previews/Heart.png) | [png](/11-Symbols/png/Heart.png) | cpp | [txt](/11-Symbols/Symbols.bitsy.txt#L16-L25) | p8.lua | [py](/11-Symbols/Symbols.thumby.py#L18-L29)
-| HeartMini <sup>p</sup>| ![](/previews/HeartMini.png) | [png](/11-Symbols/png/HeartMini.png) | cpp | [txt](/11-Symbols/Symbols.bitsy.txt#L27-L36) | p8.lua | [py](/11-Symbols/Symbols.thumby.py#L31-L42)
+| Love | ![](/previews/Love.png) | [png](/11-Symbols/png/Love.png) | [cpp](/11-Symbols/Symbols.h#L12-L23) | [txt](/11-Symbols/Symbols.bitsy.txt#L5-L14) | [p8.lua](/11-Symbols/symbols.p8.lua#L7-L19) | [py](/11-Symbols/Symbols.thumby.py#L5-L16)
+| Heart | ![](/previews/Heart.png) | [png](/11-Symbols/png/Heart.png) | [cpp](/11-Symbols/Symbols.h#L25-L36) | [txt](/11-Symbols/Symbols.bitsy.txt#L16-L25) | [p8.lua](/11-Symbols/symbols.p8.lua#L21-L33) | [py](/11-Symbols/Symbols.thumby.py#L18-L29)
+| HeartMini <sup>p</sup>| ![](/previews/HeartMini.png) | [png](/11-Symbols/png/HeartMini.png) | [cpp](/11-Symbols/Symbols.h#L38-L50) | [txt](/11-Symbols/Symbols.bitsy.txt#L27-L36) | [p8.lua](/11-Symbols/symbols.p8.lua#L35-L48) | [py](/11-Symbols/Symbols.thumby.py#L31-L42)
+| Anchor | ![](/previews/Anchor.png) | [png](/11-Symbols/png/Anchor.png) | [cpp](/11-Symbols/Symbols.h#L52-L63) | [txt](/11-Symbols/Symbols.bitsy.txt#L38-L47) | [p8.lua](/11-Symbols/symbols.p8.lua#L50-L62) | [py](/11-Symbols/Symbols.thumby.py#L44-L55)
+| Crossbones | ![](/previews/Crossbones.png) | [png](/11-Symbols/png/Crossbones.png) | [cpp](/11-Symbols/Symbols.h#L65-L76) | [txt](/11-Symbols/Symbols.bitsy.txt#L49-L58) | [p8.lua](/11-Symbols/symbols.p8.lua#L64-L76) | [py](/11-Symbols/Symbols.thumby.py#L57-L68)
+| Cross | ![](/previews/Cross.png) | [png](/11-Symbols/png/Cross.png) | [cpp](/11-Symbols/Symbols.h#L78-L89) | [txt](/11-Symbols/Symbols.bitsy.txt#L60-L69) |[p8.lua](/11-Symbols/symbols.p8.lua#L78-L90)  | [py](/11-Symbols/Symbols.thumby.py#L70-L81)
+| CrossMini <sup>p</sup>| ![](/previews/CrossMini.png) | [png](/11-Symbols/png/CrossMini.png) | [cpp](/11-Symbols/Symbols.h#L91-L103) | [txt](/11-Symbols/Symbols.bitsy.txt#L71-L80) | [p8.lua](/11-Symbols/symbols.p8.lua#L92-L105) | [py](/11-Symbols/Symbols.thumby.py#L83-L94)
+| Amongi | ![](/previews/Amongi.png) | [png](/11-Symbols/png/Amongi.png) | [cpp](/11-Symbols/Symbols.h#L105-L116) | [txt](/11-Symbols/Symbols.bitsy.txt#L82-L91) | [p8.lua](/11-Symbols/symbols.p8.lua#L107-L119) | [py](/11-Symbols/Symbols.thumby.py#L96-L107)
 
 [`⤴`](#gallery)
 
