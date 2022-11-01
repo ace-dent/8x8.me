@@ -8,6 +8,10 @@ if [ -z "$1" ]; then
   echo "Missing filename for png image to process."
   exit
 fi
+
+# TODO: Check for executables (ImageMagick and ExifTool)
+
+
 # Directory for utilities
 UTILDIR="$(dirname "${BASH_SOURCE[0]}")"
 
@@ -256,7 +260,7 @@ while (( "$#" )); do
   # Produce data as a custom font
   ((OFFSET=96+IMAGECOUNT)) # Start encoding at character 'a'=97
   CHAR=$(printf "\x$(printf %x $OFFSET)")
-  printf -- "\n\n--$OFFSET '$CHAR' $name\n" >> "$WIPFILE"
+  printf -- "\n--$OFFSET '$CHAR' $name\n" >> "$WIPFILE"
   printf "poke(0x5600+(8* $OFFSET),\n" >> "$WIPFILE"
   ROW=1
   while [ $ROW -le 8 ]; do
@@ -271,7 +275,8 @@ while (( "$#" )); do
   done
   printf ")\n" >> "$WIPFILE"
   # Helper code snippet to copy font character to Sprite 0
-  echo '-->spr0: print"⁶@56000005⁸x⁸\0\0⁶c0ᵉ'$CHAR'"for i=0,7do memcpy(i*64,24576+i*64,4)end cstore()' >> "$WIPFILE"
+  echo '-->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉ'$CHAR'"for i=0,448,64do memcpy(i,24576+i,4)end cstore()' >> "$WIPFILE"
+
   # Bonus: 'magic' one-off character, encoded as a string
   COLUMN=8; VALUE=""; DIGIT=0
   # We store the end of the string first
