@@ -238,6 +238,7 @@ Contents:
 | CheckSmall <sup>o</sup>| ![](/previews/CheckSmall.png) | [png](/06-Checked/png/CheckSmall.png) | cpp | txt | lua | py
 | Check <sup>o</sup>| ![](/previews/Check.png) | [png](/06-Checked/png/Check.png) | cpp | txt | lua | py
 | CheckShaded | ![](/previews/CheckShaded.png) | [png](/06-Checked/png/CheckShaded.png) | cpp | txt | lua | py
+| CheckBox | ![](/previews/CheckBox.png) | [png](/06-Checked/png/CheckBox.png) | cpp | txt | lua | py
 | CheckSquare | ![](/previews/CheckSquare.png) | [png](/06-Checked/png/CheckSquare.png) | cpp | txt | lua | py
 | CheckHorizontalMini | ![](/previews/CheckHorizontalMini.png) | [png](/06-Checked/png/CheckHorizontalMini.png) | cpp | txt | lua | py
 | CheckHorizontal | ![](/previews/CheckHorizontal.png) | [png](/06-Checked/png/CheckHorizontal.png) | cpp | txt | lua | py
@@ -246,6 +247,7 @@ Contents:
 | Diamond <sup>o</sup>| ![](/previews/Diamond.png) | [png](/06-Checked/png/Diamond.png) | cpp | txt | lua | py
 | DiamondShaded | ![](/previews/DiamondShaded.png) | [png](/06-Checked/png/DiamondShaded.png) | cpp | txt | lua | py
 | DiamondLined | ![](/previews/DiamondLined.png) | [png](/06-Checked/png/DiamondLined.png) | cpp | txt | lua | py
+| DiamondBold | ![](/previews/DiamondBold.png) | [png](/06-Checked/png/DiamondBold.png) | cpp | txt | lua | py
 | CheckDiagonalMini | ![](/previews/CheckDiagonalMini.png) | [png](/06-Checked/png/CheckDiagonalMini.png) | cpp | txt | lua | py
 | CheckDiagonal | ![](/previews/CheckDiagonal.png) | [png](/06-Checked/png/CheckDiagonal.png) | cpp | txt | lua | py
 | CheckDiagonalShaded | ![](/previews/CheckDiagonalShaded.png) | [png](/06-Checked/png/CheckDiagonalShaded.png) | cpp | txt | lua | py
