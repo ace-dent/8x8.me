@@ -94,6 +94,19 @@ wicker = bytearray([
 ])
 # wickerSprite = thumby.Sprite(8, 8, wicker)
 
+laced = bytearray([
+    # BITMAP: width: 8, height: 8, [85,64,95,64,85,4,245,4]
+    0x55,  # ▓░▓░▓░▓░
+    0x40,  # ▓░▓▓▓▓▓▓
+    0x5F,  # ▓░▓░░░░░
+    0x40,  # ▓░▓▓▓▓▓▓
+    0x55,  # ▓░▓░▓░▓░
+    0x04,  # ▓▓▓▓▓░▓▓
+    0xF5,  # ░░░░▓░▓░
+    0x04,  # ▓▓▓▓▓░▓▓
+])
+# lacedSprite = thumby.Sprite(8, 8, laced)
+
 puppytooth = bytearray([
     # BITMAP: width: 8, height: 8, [68,119,238,34,68,119,238,34]
     0x44,  # ▓░▓▓▓░▓▓
