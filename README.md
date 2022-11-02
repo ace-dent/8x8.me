@@ -233,14 +233,32 @@ Contents:
 ### (06) Checked
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| CheckMiniBordered | ![](/previews/CheckMiniBordered.png) | [png](/06-Checked/png/CheckMiniBordered.png) | cpp | txt | lua | py
 | CheckMini | ![](/previews/CheckMini.png) | [png](/06-Checked/png/CheckMini.png) | cpp | txt | lua | py
 | CheckSmall <sup>o</sup>| ![](/previews/CheckSmall.png) | [png](/06-Checked/png/CheckSmall.png) | cpp | txt | lua | py
 | Check <sup>o</sup>| ![](/previews/Check.png) | [png](/06-Checked/png/Check.png) | cpp | txt | lua | py
-| CheckSquare | ![](/previews/CheckSquare.png) | [png](/06-Checked/png/CheckSquare.png) | cpp | txt | lua | py
 | CheckShaded | ![](/previews/CheckShaded.png) | [png](/06-Checked/png/CheckShaded.png) | cpp | txt | lua | py
+| CheckSquare | ![](/previews/CheckSquare.png) | [png](/06-Checked/png/CheckSquare.png) | cpp | txt | lua | py
+| CheckHorizontalMini | ![](/previews/CheckHorizontalMini.png) | [png](/06-Checked/png/CheckHorizontalMini.png) | cpp | txt | lua | py
+| CheckHorizontal | ![](/previews/CheckHorizontal.png) | [png](/06-Checked/png/CheckHorizontal.png) | cpp | txt | lua | py
+| CheckVerticalMini | ![](/previews/CheckVerticalMini.png) | [png](/06-Checked/png/CheckVerticalMini.png) | cpp | txt | lua | py
+| CheckVertical | ![](/previews/CheckVertical.png) | [png](/06-Checked/png/CheckVertical.png) | cpp | txt | lua | py
 | Diamond <sup>o</sup>| ![](/previews/Diamond.png) | [png](/06-Checked/png/Diamond.png) | cpp | txt | lua | py
-| DiamondLined | ![](/previews/DiamondLined.png) | [png](/06-Checked/png/DiamondLined.png) | cpp | txt | lua | py
 | DiamondShaded | ![](/previews/DiamondShaded.png) | [png](/06-Checked/png/DiamondShaded.png) | cpp | txt | lua | py
+| DiamondLined | ![](/previews/DiamondLined.png) | [png](/06-Checked/png/DiamondLined.png) | cpp | txt | lua | py
+| CheckDiagonalMini | ![](/previews/CheckDiagonalMini.png) | [png](/06-Checked/png/CheckDiagonalMini.png) | cpp | txt | lua | py
+| CheckDiagonal | ![](/previews/CheckDiagonal.png) | [png](/06-Checked/png/CheckDiagonal.png) | cpp | txt | lua | py
+| CheckDiagonalShaded | ![](/previews/CheckDiagonalShaded.png) | [png](/06-Checked/png/CheckDiagonalShaded.png) | cpp | txt | lua | py
+| TernaryMini | ![](/previews/TernaryMini.png) | [png](/06-Checked/png/TernaryMini.png) | cpp | txt | lua | py
+| Ternary | ![](/previews/Ternary.png) | [png](/06-Checked/png/Ternary.png) | cpp | txt | lua | py
+| TernaryVerticalMini | ![](/previews/TernaryVerticalMini.png) | [png](/06-Checked/png/TernaryVerticalMini.png) | cpp | txt | lua | py
+| TernaryVertical | ![](/previews/TernaryVertical.png) | [png](/06-Checked/png/TernaryVertical.png) | cpp | txt | lua | py
+| Gyron | ![](/previews/Gyron.png) | [png](/06-Checked/png/Gyron.png) | cpp | txt | lua | py
+| TriangleMini | ![](/previews/TriangleMini.png) | [png](/06-Checked/png/TriangleMini.png) | cpp | txt | lua | py
+| Triangle | ![](/previews/Triangle.png) | [png](/06-Checked/png/Triangle.png) | cpp | txt | lua | py
+| TriangleShaded | ![](/previews/TriangleShaded.png) | [png](/06-Checked/png/TriangleShaded.png) | cpp | txt | lua | py
+| HerringBoneSmall | ![](/previews/HerringBoneSmall.png) | [png](/06-Checked/png/HerringBoneSmall.png) | cpp | txt | lua | py
+| HerringBone | ![](/previews/HerringBone.png) | [png](/06-Checked/png/HerringBone.png) | cpp | txt | lua | py
 
 [`⤴`](#gallery) 
 
