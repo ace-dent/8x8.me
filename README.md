@@ -233,9 +233,8 @@ Contents:
 ### (06) Checked
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| CheckMiniBordered | ![](/previews/CheckMiniBordered.png) | [png](/06-Checked/png/CheckMiniBordered.png) | cpp | txt | lua | py
-| CheckMini | ![](/previews/CheckMini.png) | [png](/06-Checked/png/CheckMini.png) | cpp | txt | lua | py
-| CheckSmall <sup>o</sup>| ![](/previews/CheckSmall.png) | [png](/06-Checked/png/CheckSmall.png) | cpp | txt | lua | py
+| CheckMicro <sup>p</sup>| ![](/previews/CheckMicro.png) | [png](/06-Checked/png/CheckMicro.png) | cpp | txt | lua | py
+| CheckMini <sup>o</sup>| ![](/previews/CheckMini.png) | [png](/06-Checked/png/CheckMini.png) | cpp | txt | lua | py
 | Check <sup>o</sup>| ![](/previews/Check.png) | [png](/06-Checked/png/Check.png) | cpp | txt | lua | py
 | CheckShaded | ![](/previews/CheckShaded.png) | [png](/06-Checked/png/CheckShaded.png) | cpp | txt | lua | py
 | CheckBox | ![](/previews/CheckBox.png) | [png](/06-Checked/png/CheckBox.png) | cpp | txt | lua | py
@@ -259,8 +258,9 @@ Contents:
 | TriangleMini | ![](/previews/TriangleMini.png) | [png](/06-Checked/png/TriangleMini.png) | cpp | txt | lua | py
 | Triangle | ![](/previews/Triangle.png) | [png](/06-Checked/png/Triangle.png) | cpp | txt | lua | py
 | TriangleShaded | ![](/previews/TriangleShaded.png) | [png](/06-Checked/png/TriangleShaded.png) | cpp | txt | lua | py
-| HerringBoneSmall | ![](/previews/HerringBoneSmall.png) | [png](/06-Checked/png/HerringBoneSmall.png) | cpp | txt | lua | py
-| HerringBone | ![](/previews/HerringBone.png) | [png](/06-Checked/png/HerringBone.png) | cpp | txt | lua | py
+| ChevronCheckMini | ![](/previews/ChevronCheckMini.png) | [png](/06-Checked/png/ChevronCheckMini.png) | cpp | txt | lua | py
+| ChevronCheckDense | ![](/previews/ChevronCheckDense.png) | [png](/06-Checked/png/ChevronCheckDense.png) | cpp | txt | lua | py
+| ChevronCheck | ![](/previews/ChevronCheck.png) | [png](/06-Checked/png/ChevronCheck.png) | cpp | txt | lua | py
 
 [`⤴`](#gallery) 
 
