@@ -122,6 +122,7 @@ Contents:
 | HorizontalSparseBold | ![](/previews/HorizontalSparseBold.png) | [png](/04-Lines/png/HorizontalSparseBold.png) | cpp | txt | lua | py
 | HorizontalSparseExtraBold | ![](/previews/HorizontalSparseExtraBold.png) | [png](/04-Lines/png/HorizontalSparseExtraBold.png) | cpp | txt | lua | py
 | HorizontalSparseUltraBold | ![](/previews/HorizontalSparseUltraBold.png) | [png](/04-Lines/png/HorizontalSparseUltraBold.png) | cpp | txt | lua | py
+| HorizontalStripes | ![](/previews/HorizontalStripes.png) | [png](/04-Lines/png/HorizontalStripes.png) | cpp | txt | lua | py
 | HorizontalPinstripe | ![](/previews/HorizontalPinstripe.png) | [png](/04-Lines/png/HorizontalPinstripe.png) | cpp | txt | lua | py
 | HorizontalPinstripeMedium | ![](/previews/HorizontalPinstripeMedium.png) | [png](/04-Lines/png/HorizontalPinstripeMedium.png) | cpp | txt | lua | py
 
@@ -140,6 +141,7 @@ Contents:
 | VerticalSparseBold | ![](/previews/VerticalSparseBold.png) | [png](/04-Lines/png/VerticalSparseBold.png) | cpp | txt | lua | py
 | VerticalSparseExtraBold | ![](/previews/VerticalSparseExtraBold.png) | [png](/04-Lines/png/VerticalSparseExtraBold.png) | cpp | txt | lua | py
 | VerticalSparseUltraBold | ![](/previews/VerticalSparseUltraBold.png) | [png](/04-Lines/png/VerticalSparseUltraBold.png) | cpp | txt | lua | py
+| VerticalStripes | ![](/previews/VerticalStripes.png) | [png](/04-Lines/png/VerticalStripes.png) | cpp | txt | lua | py
 | VerticalPinstripe | ![](/previews/VerticalPinstripe.png) | [png](/04-Lines/png/VerticalPinstripe.png) | cpp | txt | lua | py
 | VerticalPinstripeMedium | ![](/previews/VerticalPinstripeMedium.png) | [png](/04-Lines/png/VerticalPinstripeMedium.png) | cpp | txt | lua | py
 
