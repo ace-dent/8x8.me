@@ -100,6 +100,7 @@ while (( "$#" )); do
     printf '%i\n' "$((2#`sed -n 1p "$VBIN"`))" >> "$WIPFILE"
   elif [ $PATTERNWIDTH -eq 2 ]; then
     # TODO: Catch edge cases where string encoding is smaller "Az"[i%2]
+    # e.g. bayerDither04 `"U"[i%2]` vs `i&1?85:0`
     printf 'i&1?%i' "$((2#`sed -n 1p "$VBIN"`))" >> "$WIPFILE"
     printf ':%i\n' "$((2#`sed -n 2p "$VBIN"`))" >> "$WIPFILE"
   else
@@ -276,7 +277,6 @@ while (( "$#" )); do
   printf ")\n" >> "$WIPFILE"
   # Helper code snippet to copy font character to Sprite 0
   echo '-->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉ'$CHAR'"for i=0,448,64do memcpy(i,24576+i,4)end cstore()' >> "$WIPFILE"
-
   # Bonus: 'magic' one-off character, encoded as a string
   COLUMN=8; VALUE=""; DIGIT=0
   # We store the end of the string first
