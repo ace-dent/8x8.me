@@ -272,6 +272,10 @@ Contents:
 ### (08) Rectilinear
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Tile | ![](/previews/Tile.png) | [png](/08-Rectilinear/png/Tile.png) | cpp | txt | lua | py
+| TileShaded | ![](/previews/TileShaded.png) | [png](/08-Rectilinear/png/TileShaded.png) | cpp | txt | lua | py
+| Block | ![](/previews/Block.png) | [png](/08-Rectilinear/png/Block.png) | cpp | txt | lua | py
+| BlockPyramid | ![](/previews/BlockPyramid.png) | [png](/08-Rectilinear/png/BlockPyramid.png) | cpp | txt | lua | py
 
 [`⤴`](#gallery)
 
@@ -325,10 +329,6 @@ Contents:
 | Flagstone | ![](/previews/Flagstone.png) | [png](/11-Architecture/png/Flagstone.png) | cpp | txt | lua | py
 | PavingStones | ![](/previews/PavingStones.png) | [png](/11-Architecture/png/PavingStones.png) | cpp | txt | lua | py
 | Picket | ![](/previews/Picket.png) | [png](/11-Architecture/png/Picket.png) | cpp | txt | lua | py
-| Tile | ![](/previews/Tile.png) | [png](/11-Architecture/png/Tile.png) | cpp | txt | lua | py
-| TileShaded | ![](/previews/TileShaded.png) | [png](/11-Architecture/png/TileShaded.png) | cpp | txt | lua | py
-| Block | ![](/previews/Block.png) | [png](/11-Architecture/png/Block.png) | cpp | txt | lua | py
-| BlockPyramid | ![](/previews/BlockPyramid.png) | [png](/11-Architecture/png/BlockPyramid.png) | cpp | txt | lua | py
 
 [`⤴`](#gallery)
 
