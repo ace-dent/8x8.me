@@ -199,6 +199,8 @@ Contents:
 | TidalMedium | ![](/previews/TidalMedium.png) | [png](/05-Waves/png/TidalMedium.png) | cpp | txt | lua | py
 | OceanicLight | ![](/previews/OceanicLight.png) | [png](/05-Waves/png/OceanicLight.png) | cpp | txt | lua | py
 | Oceanic | ![](/previews/Oceanic.png) | [png](/05-Waves/png/Oceanic.png) | cpp | txt | lua | py
+| VairPoint | ![](/previews/VairPoint.png) | [png](/05-Waves/png/VairPoint.png) | cpp | txt | lua | py
+| DoubleHelix | ![](/previews/DoubleHelix.png) | [png](/05-Waves/png/DoubleHelix.png) | cpp | txt | lua | py
 
 [`⤴`](#gallery)
 
