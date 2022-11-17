@@ -285,7 +285,7 @@ while (( "$#" )); do
     # Find the decimal value for the current column (byte)
     VALUE=$(printf '%i' "$((2#`sed -n "$COLUMN"p "$HBIN" | rev`))")
     if [ $VALUE -eq 0 ] && [ $DIGIT -eq 1 ]; then
-      printf "\\\000"
+      STRING=`echo "\\000"`$STRING
       DIGIT=0
     else
       ((VALUE=VALUE+1)) 
@@ -298,7 +298,7 @@ while (( "$#" )); do
     fi
     ((COLUMN=COLUMN-1))
   done
-  echo "--magic: ?\"⁶."$STRING >> "$WIPFILE"
+  echo "--magic: ?\"⁶rw¹シ\"..\"⁶."$STRING >> "$WIPFILE"
   # Bonus: For 4x4px patterns produce fillp() alternative
   if [ $PATTERNWIDTH -le 4 ] && [ $PATTERNHEIGHT -le 4 ]; then
     printf -- "--fillp(" >> "$WIPFILE"
@@ -332,7 +332,7 @@ while (( "$#" )); do
 
 
   # Remove temporary files
-  rm "$HBIN" ; rm "$VBIN" ; rm "$HHEX" ; rm "$VHEX"  
+  rm "$HBIN" ; rm "$VBIN" ; rm "$HHEX" ; rm "$VHEX"
 
   shift
 done
