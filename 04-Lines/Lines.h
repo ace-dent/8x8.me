@@ -93,6 +93,110 @@ namespace patterns {
     // Magic: 119
     // GAMBY: 0x7777
 
+    constexpr uint8_t PROGMEM horizontalSparse[] {
+        8, 8,  // 8x8 px image
+        0x20,  // ▓▓░▓▓▓▓▓
+        0x20,  // ▓▓░▓▓▓▓▓
+        0x20,  // ▓▓░▓▓▓▓▓
+        0x20,  // ▓▓░▓▓▓▓▓
+        0x20,  // ▓▓░▓▓▓▓▓
+        0x20,  // ▓▓░▓▓▓▓▓
+        0x20,  // ▓▓░▓▓▓▓▓
+        0x20,  // ▓▓░▓▓▓▓▓
+    };
+    // Magic: 32
+
+    constexpr uint8_t PROGMEM horizontalSparseMedium[] {
+        8, 8,  // 8x8 px image
+        0x30,  // ▓▓░░▓▓▓▓
+        0x30,  // ▓▓░░▓▓▓▓
+        0x30,  // ▓▓░░▓▓▓▓
+        0x30,  // ▓▓░░▓▓▓▓
+        0x30,  // ▓▓░░▓▓▓▓
+        0x30,  // ▓▓░░▓▓▓▓
+        0x30,  // ▓▓░░▓▓▓▓
+        0x30,  // ▓▓░░▓▓▓▓
+    };
+    // Magic: 48
+
+    constexpr uint8_t PROGMEM horizontalSparseBold[] {
+        8, 8,  // 8x8 px image
+        0x70,  // ▓░░░▓▓▓▓
+        0x70,  // ▓░░░▓▓▓▓
+        0x70,  // ▓░░░▓▓▓▓
+        0x70,  // ▓░░░▓▓▓▓
+        0x70,  // ▓░░░▓▓▓▓
+        0x70,  // ▓░░░▓▓▓▓
+        0x70,  // ▓░░░▓▓▓▓
+        0x70,  // ▓░░░▓▓▓▓
+    };
+    // Magic: 112
+
+    constexpr uint8_t PROGMEM horizontalSparseExtraBold[] {
+        8, 8,  // 8x8 px image
+        0x78,  // ▓░░░░▓▓▓
+        0x78,  // ▓░░░░▓▓▓
+        0x78,  // ▓░░░░▓▓▓
+        0x78,  // ▓░░░░▓▓▓
+        0x78,  // ▓░░░░▓▓▓
+        0x78,  // ▓░░░░▓▓▓
+        0x78,  // ▓░░░░▓▓▓
+        0x78,  // ▓░░░░▓▓▓
+    };
+    // Magic: 120
+    
+    constexpr uint8_t PROGMEM horizontalSparseUltraBold[] {
+        8, 8,  // 8x8 px image
+        0x7C,  // ▓░░░░░▓▓
+        0x7C,  // ▓░░░░░▓▓
+        0x7C,  // ▓░░░░░▓▓
+        0x7C,  // ▓░░░░░▓▓
+        0x7C,  // ▓░░░░░▓▓
+        0x7C,  // ▓░░░░░▓▓
+        0x7C,  // ▓░░░░░▓▓
+        0x7C,  // ▓░░░░░▓▓
+    };
+    // Magic: 124
+    
+    constexpr uint8_t PROGMEM horizontalStripes[] {
+        8, 8,  // 8x8 px image
+        0x54,  // ▓░▓░▓░▓▓
+        0x54,  // ▓░▓░▓░▓▓
+        0x54,  // ▓░▓░▓░▓▓
+        0x54,  // ▓░▓░▓░▓▓
+        0x54,  // ▓░▓░▓░▓▓
+        0x54,  // ▓░▓░▓░▓▓
+        0x54,  // ▓░▓░▓░▓▓
+        0x54,  // ▓░▓░▓░▓▓
+    };
+    // Magic: 84
+
+    constexpr uint8_t PROGMEM horizontalPinstripe[] {
+        8, 8,  // 8x8 px image
+        0x28,  // ▓▓░▓░▓▓▓
+        0x28,  // ▓▓░▓░▓▓▓
+        0x28,  // ▓▓░▓░▓▓▓
+        0x28,  // ▓▓░▓░▓▓▓
+        0x28,  // ▓▓░▓░▓▓▓
+        0x28,  // ▓▓░▓░▓▓▓
+        0x28,  // ▓▓░▓░▓▓▓
+        0x28,  // ▓▓░▓░▓▓▓
+    };
+    // Magic: 40
+
+    constexpr uint8_t PROGMEM horizontalPinstripeMedium[] {
+        8, 8,  // 8x8 px image
+        0x68,  // ▓░░▓░▓▓▓
+        0x68,  // ▓░░▓░▓▓▓
+        0x68,  // ▓░░▓░▓▓▓
+        0x68,  // ▓░░▓░▓▓▓
+        0x68,  // ▓░░▓░▓▓▓
+        0x68,  // ▓░░▓░▓▓▓
+        0x68,  // ▓░░▓░▓▓▓
+        0x68,  // ▓░░▓░▓▓▓
+    };
+    // Magic: 104
+
 }
 
 
@@ -167,6 +271,102 @@ namespace patternsHorizontal {
         0xFF,  // ░░░░░░░░
         0x00,  // ▓▓▓▓▓▓▓▓
         0xFF,  // ░░░░░░░░
+        0xFF,  // ░░░░░░░░
+        0xFF,  // ░░░░░░░░
+        0x00,  // ▓▓▓▓▓▓▓▓
+    };
+
+    constexpr uint8_t PROGMEM horizontalSparse[] {
+        8, 8,  // 8x8 px image
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0xFF,  // ░░░░░░░░
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+    };
+
+    constexpr uint8_t PROGMEM horizontalSparseMedium[] {
+        8, 8,  // 8x8 px image
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0xFF,  // ░░░░░░░░
+        0xFF,  // ░░░░░░░░
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+    };
+
+    constexpr uint8_t PROGMEM horizontalSparseBold[] {
+        8, 8,  // 8x8 px image
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0xFF,  // ░░░░░░░░
+        0xFF,  // ░░░░░░░░
+        0xFF,  // ░░░░░░░░
+        0x00,  // ▓▓▓▓▓▓▓▓
+    };
+
+    constexpr uint8_t PROGMEM horizontalSparseExtraBold[] {
+        8, 8,  // 8x8 px image
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0xFF,  // ░░░░░░░░
+        0xFF,  // ░░░░░░░░
+        0xFF,  // ░░░░░░░░
+        0xFF,  // ░░░░░░░░
+        0x00,  // ▓▓▓▓▓▓▓▓
+    };
+
+    constexpr uint8_t PROGMEM horizontalSparseUltraBold[] {
+        8, 8,  // 8x8 px image
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0xFF,  // ░░░░░░░░
+        0xFF,  // ░░░░░░░░
+        0xFF,  // ░░░░░░░░
+        0xFF,  // ░░░░░░░░
+        0xFF,  // ░░░░░░░░
+        0x00,  // ▓▓▓▓▓▓▓▓
+    };
+
+    constexpr uint8_t PROGMEM horizontalStripes[] {
+        8, 8,  // 8x8 px image
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0xFF,  // ░░░░░░░░
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0xFF,  // ░░░░░░░░
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0xFF,  // ░░░░░░░░
+        0x00,  // ▓▓▓▓▓▓▓▓
+    };
+
+    constexpr uint8_t PROGMEM horizontalPinstripe[] {
+        8, 8,  // 8x8 px image
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0xFF,  // ░░░░░░░░
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0xFF,  // ░░░░░░░░
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+    };
+
+    constexpr uint8_t PROGMEM horizontalPinstripeMedium[] {
+        8, 8,  // 8x8 px image
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0xFF,  // ░░░░░░░░
+        0x00,  // ▓▓▓▓▓▓▓▓
         0xFF,  // ░░░░░░░░
         0xFF,  // ░░░░░░░░
         0x00,  // ▓▓▓▓▓▓▓▓

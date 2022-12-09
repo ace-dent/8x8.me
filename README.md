@@ -19,24 +19,24 @@ Repeating tile patterns
 ## Gallery
 
 Contents:  
-&emsp; [01 - Dither](#01-dither)  
-&emsp; [02 - Dots](#02-dots)  
-&emsp; [03 - Dashes](#03-dashes)  
-&emsp; [04 - Lines](#04-lines)  
-&emsp; [05- Waves](#05-waves)  
-&emsp; [06 - Grid](#06-grid)  
-&emsp; [07 - Checked](#07-checked)  
-&emsp; [08 - Rectilinear](#08-rectilinear)  
-&emsp; [09 - Round](#09-round)  
-&emsp; [10 - Woven](#10-woven)  
-&emsp; [11 - Architecture](#11-architecture)  
-&emsp; [12 - Nature](#12-nature)  
-&emsp; [13 - Symbols](#13-symbols)  
-&emsp; [14 - Other](#14-other)
+&emsp; [01 – Dither](#01-dither)  
+&emsp; [02 – Dots](#02-dots)  
+&emsp; [03 – Dashes](#03-dashes)  
+&emsp; [04 – Lines](#04-lines)  
+&emsp; [05 – Waves](#05-waves)  
+&emsp; [06 – Grid](#06-grid)  
+&emsp; [07 – Checked](#07-checked)  
+&emsp; [08 – Rectilinear](#08-rectilinear)  
+&emsp; [09 – Round](#09-round)  
+&emsp; [10 – Woven](#10-woven)  
+&emsp; [11 – Architecture](#11-architecture)  
+&emsp; [12 – Nature](#12-nature)  
+&emsp; [13 – Symbols](#13-symbols)  
+&emsp; [14 – Other](#14-other)
 
 ---
 
-### (01) Dither  
+### 01 – Dither  
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | BayerDither00 | ![](/previews/BayerDither00.png) | [png](/01-Dither/png/BayerDither00.png) | cpp | [txt](/01-Dither/Dither.bitsy.txt#L5-L14) | lua | py
@@ -78,7 +78,7 @@ Contents:
 
 ---
 
-### (02) Dots
+### 02 – Dots
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Confetti <sup>o</sup>| ![](/previews/Confetti.png) | [png](/02-Dots/png/Confetti.png) | [cpp](/02-Dots/Dots.h#L12-L23) | [txt](/02-Dots/Dots.bitsy.txt#L5-L14) | lua | [py](/02-Dots/Dots.thumby.py#L5-L16)
@@ -88,7 +88,7 @@ Contents:
 
 ---
 
-### (03) Dashes  
+### 03 – Dashes  
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | HorizontalDenseTrellis <sup>o</sup>| ![](/previews/HorizontalDenseTrellis.png) | [png](/03-Dashes/png/HorizontalDenseTrellis.png) | cpp | txt | lua | py
@@ -108,23 +108,23 @@ Contents:
 
 ---
 
-### (04) Lines
+### 04 – Lines
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| HorizontalDenseLineDash | ![](/previews/HorizontalDenseLineDash.png) | [png](/04-Lines/png/HorizontalDenseLineDash.png) | cpp | txt | lua | py
-| HorizontalDenseLineDot | ![](/previews/HorizontalDenseLineDot.png) | [png](/04-Lines/png/HorizontalDenseLineDot.png) | cpp | txt | lua | py
-| HorizontalDense <sup>o,p</sup>| ![](/previews/HorizontalDense.png) | [png](/04-Lines/png/HorizontalDense.png) | cpp | txt | lua | py
-| Horizontal | ![](/previews/Horizontal.png) | [png](/04-Lines/png/Horizontal.png) | cpp | txt | lua | py
-| HorizontalMedium <sup>o</sup>| ![](/previews/HorizontalMedium.png) | [png](/04-Lines/png/HorizontalMedium.png) | cpp | txt | lua | py
-| HorizontalBold | ![](/previews/HorizontalBold.png) | [png](/04-Lines/png/HorizontalBold.png) | cpp | txt | lua | py
-| HorizontalSparse | ![](/previews/HorizontalSparse.png) | [png](/04-Lines/png/HorizontalSparse.png) | cpp | txt | lua | py
-| HorizontalSparseMedium | ![](/previews/HorizontalSparseMedium.png) | [png](/04-Lines/png/HorizontalSparseMedium.png) | cpp | txt | lua | py
-| HorizontalSparseBold | ![](/previews/HorizontalSparseBold.png) | [png](/04-Lines/png/HorizontalSparseBold.png) | cpp | txt | lua | py
-| HorizontalSparseExtraBold | ![](/previews/HorizontalSparseExtraBold.png) | [png](/04-Lines/png/HorizontalSparseExtraBold.png) | cpp | txt | lua | py
-| HorizontalSparseUltraBold | ![](/previews/HorizontalSparseUltraBold.png) | [png](/04-Lines/png/HorizontalSparseUltraBold.png) | cpp | txt | lua | py
-| HorizontalStripes | ![](/previews/HorizontalStripes.png) | [png](/04-Lines/png/HorizontalStripes.png) | cpp | txt | lua | py
-| HorizontalPinstripe | ![](/previews/HorizontalPinstripe.png) | [png](/04-Lines/png/HorizontalPinstripe.png) | cpp | txt | lua | py
-| HorizontalPinstripeMedium | ![](/previews/HorizontalPinstripeMedium.png) | [png](/04-Lines/png/HorizontalPinstripeMedium.png) | cpp | txt | lua | py
+| HorizontalDenseLineDash | ![](/previews/HorizontalDenseLineDash.png) | [png](/04-Lines/png/HorizontalDenseLineDash.png) | [cpp](/04-Lines/Lines.h#L12-L24) | txt | lua | py
+| HorizontalDenseLineDot | ![](/previews/HorizontalDenseLineDot.png) | [png](/04-Lines/png/HorizontalDenseLineDot.png) | [cpp](/04-Lines/Lines.h#L26-L38) | txt | lua | py
+| HorizontalDense <sup>o,p</sup>| ![](/previews/HorizontalDense.png) | [png](/04-Lines/png/HorizontalDense.png) | [cpp](/04-Lines/Lines.h#L40-L52) | txt | lua | py
+| Horizontal | ![](/previews/Horizontal.png) | [png](/04-Lines/png/Horizontal.png) | [cpp](/04-Lines/Lines.h#L54-L66) | txt | lua | py
+| HorizontalMedium <sup>o</sup>| ![](/previews/HorizontalMedium.png) | [png](/04-Lines/png/HorizontalMedium.png) | [cpp](/04-Lines/Lines.h#L68-L80) | txt | lua | py
+| HorizontalBold | ![](/previews/HorizontalBold.png) | [png](/04-Lines/png/HorizontalBold.png) | [cpp](/04-Lines/Lines.h#L82-L94) | txt | lua | py
+| HorizontalSparse | ![](/previews/HorizontalSparse.png) | [png](/04-Lines/png/HorizontalSparse.png) | [cpp](/04-Lines/Lines.h#L96-L107) | txt | lua | py
+| HorizontalSparseMedium | ![](/previews/HorizontalSparseMedium.png) | [png](/04-Lines/png/HorizontalSparseMedium.png) | [cpp](/04-Lines/Lines.h#L109-L120) | txt | lua | py
+| HorizontalSparseBold | ![](/previews/HorizontalSparseBold.png) | [png](/04-Lines/png/HorizontalSparseBold.png) | [cpp](/04-Lines/Lines.h#L122-L133) | txt | lua | py
+| HorizontalSparseExtraBold | ![](/previews/HorizontalSparseExtraBold.png) | [png](/04-Lines/png/HorizontalSparseExtraBold.png) | [cpp](/04-Lines/Lines.h#L135-L146) | txt | lua | py
+| HorizontalSparseUltraBold | ![](/previews/HorizontalSparseUltraBold.png) | [png](/04-Lines/png/HorizontalSparseUltraBold.png) | [cpp](/04-Lines/Lines.h#L148-L159) | txt | lua | py
+| HorizontalStripes | ![](/previews/HorizontalStripes.png) | [png](/04-Lines/png/HorizontalStripes.png) | [cpp](/04-Lines/Lines.h#L161-L172) | txt | lua | py
+| HorizontalPinstripe | ![](/previews/HorizontalPinstripe.png) | [png](/04-Lines/png/HorizontalPinstripe.png) | [cpp](/04-Lines/Lines.h#L174-L185) | txt | lua | py
+| HorizontalPinstripeMedium | ![](/previews/HorizontalPinstripeMedium.png) | [png](/04-Lines/png/HorizontalPinstripeMedium.png) | [cpp](/04-Lines/Lines.h#L187-L198) | txt | lua | py
 
 <br>
 
@@ -189,7 +189,7 @@ Contents:
 
 ---
 
-### (05) Waves
+### 05 – Waves
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Ripple | ![](/previews/Ripple.png) | [png](/05-Waves/png/Ripple.png) | cpp | txt | lua | py
@@ -206,7 +206,7 @@ Contents:
 
 ---
 
-### (06) Grid
+### 06 – Grid
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | GridDots <sup>o</sup>| ![](/previews/GridDots.png) | [png](/06-Grid/png/GridDots.png) | cpp | txt | lua | py |
@@ -235,7 +235,7 @@ Contents:
 
 ---
 
-### (07) Checked
+### 07 – Checked
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | CheckMicro <sup>p</sup>| ![](/previews/CheckMicro.png) | [png](/07-Checked/png/CheckMicro.png) | cpp | txt | lua | py
@@ -271,7 +271,7 @@ Contents:
 
 ---
 
-### (08) Rectilinear
+### 08 – Rectilinear
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Tile | ![](/previews/Tile.png) | [png](/08-Rectilinear/png/Tile.png) | cpp | txt | lua | py
@@ -283,7 +283,7 @@ Contents:
 
 ---
 
-### (09) Round
+### 09 – Round
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Sphere <sup>o</sup>| ![](/previews/Sphere.png) | [png](/09-Round/png/Sphere.png) | cpp | txt | lua | py
@@ -293,7 +293,7 @@ Contents:
 
 ---
 
-### (10) Woven
+### 10 – Woven
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Interlinked <sup>o</sup>| ![](/previews/Interlinked.png) | [png](/10-Woven/png/Interlinked.png) | [cpp](/10-Woven/Woven.h#L12-L23) | [txt](/10-Woven/Woven.bitsy.txt#L5-L14) | [lua](/10-Woven/woven.p8.lua#L7-L19) | [py](/10-Woven/Woven.thumby.py#L6-L17)
@@ -314,7 +314,7 @@ Contents:
 
 ---
 
-### (11) Architecture  
+### 11 – Architecture  
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Shingle <sup>o</sup>| ![](/previews/Shingle.png) | [png](/11-Architecture/png/Shingle.png) | cpp | txt | lua | py
@@ -336,7 +336,7 @@ Contents:
 
 ---
 
-### (12) Nature  
+### 12 – Nature  
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Scales | ![](/previews/Scales.png) | [png](/12-Nature/png/Scales.png) | cpp | [txt](/12-Nature/Nature.bitsy.txt#L5-L14) | lua | [py](/12-Nature/Nature.thumby.py#L5-L16)
@@ -363,7 +363,7 @@ Contents:
 
 ---
 
-### (13) Symbols
+### 13 – Symbols
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Love | ![](/previews/Love.png) | [png](/13-Symbols/png/Love.png) | [cpp](/13-Symbols/Symbols.h#L12-L23) | [txt](/13-Symbols/Symbols.bitsy.txt#L5-L14) | [lua](/13-Symbols/symbols.p8.lua#L7-L19) | [py](/13-Symbols/Symbols.thumby.py#L5-L16)
@@ -379,7 +379,7 @@ Contents:
 
 ---
 
-### (14) Other
+### 14 – Other
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Chain | ![](/previews/Chain.png) | [png](/14-Other/png/Chain.png) | cpp | txt | lua | py
