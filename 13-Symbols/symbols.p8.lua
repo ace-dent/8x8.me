@@ -16,7 +16,7 @@ poke(0x5600+(8* 97),
   65  -- █▒▒▒▒▒█▒
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉa"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
---magic: ?"⁶rw¹シ".."⁶.\"⁘ちA\"⁘ちA"
+--magic: ?"⁶rw¹シ⁶.".."\"⁘ちA\"⁘ちA"
 
 --98 'b' heart
 poke(0x5600+(8* 98),
@@ -30,7 +30,7 @@ poke(0x5600+(8* 98),
    0  -- ▒▒▒▒▒▒▒▒
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉb"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
---magic: ?"⁶rw¹シ".."⁶.6IA\"⁘⁸\0"
+--magic: ?"⁶rw¹シ⁶.".."6IA\"⁘⁸\0"
 
 --99 'c' heartmini
 poke(0x5600+(8* 99),
@@ -44,7 +44,7 @@ poke(0x5600+(8* 99),
    0  -- ▒▒▒▒▒▒▒▒
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉc"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
---magic: ?"⁶rw¹シ".."⁶.Uw\"\0Uw\"\0"
+--magic: ?"⁶rw¹シ⁶.".."Uw\"\0Uw\"\0"
 --fillp(20927)
 
 --100 'd' anchor
@@ -59,7 +59,7 @@ poke(0x5600+(8* 100),
    8  -- ▒▒▒█▒▒▒▒
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉd"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
---magic: ?"⁶rw¹シ".."⁶.\0⁸⁘⁸⁸I>⁸"
+--magic: ?"⁶rw¹シ⁶.".."\0⁸⁘⁸⁸I>⁸"
 
 --101 'e' crossbones
 poke(0x5600+(8* 101),
@@ -73,7 +73,7 @@ poke(0x5600+(8* 101),
    0  -- ▒▒▒▒▒▒▒▒
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉe"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
---magic: ?"⁶rw¹シ".."⁶.\"c⁘⁸⁘c\"\0"
+--magic: ?"⁶rw¹シ⁶.".."\"c⁘⁸⁘c\"\0"
 
 --102 'f' cross
 poke(0x5600+(8* 102),
@@ -87,7 +87,7 @@ poke(0x5600+(8* 102),
    0  -- ▒▒▒▒▒▒▒▒
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉf"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
---magic: ?"⁶rw¹シ".."⁶.\0「「~~「「\0"
+--magic: ?"⁶rw¹シ⁶.".."\0「「~~「「\0"
 
 --103 'g' crossmini
 poke(0x5600+(8* 103),
@@ -101,7 +101,7 @@ poke(0x5600+(8* 103),
    0  -- ▒▒▒▒▒▒▒▒
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉg"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
---magic: ?"⁶rw¹シ".."⁶.\"w\"\0\"w\"\0"
+--magic: ?"⁶rw¹シ⁶.".."\"w\"\0\"w\"\0"
 --fillp(45503)
 
 --104 'h' amongi
@@ -116,4 +116,4 @@ poke(0x5600+(8* 104),
  160  -- ▒▒▒▒▒█▒█
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉa"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
---magic: ?"⁶rw¹シ".."⁶.ᵉ³ᶠ\nナ0ユき"
+--magic: ?"⁶rw¹シ⁶.".."ᵉ³ᶠ\nナ0ユき"

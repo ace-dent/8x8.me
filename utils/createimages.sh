@@ -298,7 +298,7 @@ while (( "$#" )); do
     fi
     ((COLUMN=COLUMN-1))
   done
-  echo "--magic: ?\"⁶rw¹シ\"..\"⁶."$STRING >> "$WIPFILE"
+  echo "--magic: ?\"⁶rw¹シ⁶.\"..\""$STRING >> "$WIPFILE"
   # Bonus: For 4x4px patterns produce fillp() alternative
   if [ $PATTERNWIDTH -le 4 ] && [ $PATTERNHEIGHT -le 4 ]; then
     printf -- "--fillp(" >> "$WIPFILE"

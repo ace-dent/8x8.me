@@ -16,7 +16,7 @@ poke(0x5600+(8* 97),
  221  -- █▒███▒██
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉa"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
---magic: ?"⁶rw¹シ".."⁶.なwマツにwむツ"
+--magic: ?"⁶rw¹シ⁶.".."なwマツにwむツ"
 
 --98 'b' weavedense
 poke(0x5600+(8* 98),
@@ -30,7 +30,7 @@ poke(0x5600+(8* 98),
  221  -- █▒███▒██
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉb"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
---magic: ?"⁶rw¹シ".."⁶.なwマツつwむツ"
+--magic: ?"⁶rw¹シ⁶.".."なwマツつwむツ"
 
 --99 'c' weave
 poke(0x5600+(8* 99),
@@ -44,7 +44,7 @@ poke(0x5600+(8* 99),
   28  -- ▒▒███▒▒▒
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉc"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
---magic: ?"⁶rw¹シ".."⁶..wヌりこw:、"
+--magic: ?"⁶rw¹シ⁶."..".wヌりこw:、"
 
 --100 'd' weavemedium
 poke(0x5600+(8* 100),
@@ -58,7 +58,7 @@ poke(0x5600+(8* 100),
   60  -- ▒▒████▒▒
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉd"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
---magic: ?"⁶rw¹シ".."⁶.゛oロニれほ{<"
+--magic: ?"⁶rw¹シ⁶.".."゛oロニれほ{<"
 
 --101 'e' weavebold
 poke(0x5600+(8* 101),
@@ -72,7 +72,7 @@ poke(0x5600+(8* 101),
   62  -- ▒█████▒▒
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉe"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
---magic: ?"⁶rw¹シ".."⁶._モレネシめ}>"
+--magic: ?"⁶rw¹シ⁶.".."_モレネシめ}>"
 
 --102 'f' net
 poke(0x5600+(8* 102),
@@ -86,7 +86,7 @@ poke(0x5600+(8* 102),
  131  -- ██▒▒▒▒▒█
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉf"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
---magic: ?"⁶rw¹シ".."⁶.りc6、8lを⬇️"
+--magic: ?"⁶rw¹シ⁶.".."りc6、8lを⬇️"
 
 --103 'g' wicker
 poke(0x5600+(8* 103),
@@ -100,7 +100,7 @@ poke(0x5600+(8* 103),
   36  -- ▒▒█▒▒█▒▒
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉg"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
---magic: ?"⁶rw¹シ".."⁶.$⁴レ⁴ に $"
+--magic: ?"⁶rw¹シ⁶.".."$⁴レ⁴ に $"
 
 --104 'h' laced
 poke(0x5600+(8* 104),
@@ -114,7 +114,7 @@ poke(0x5600+(8* 104),
   64  -- ▒▒▒▒▒▒█▒
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉh"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
---magic: ?"⁶rw¹シ".."⁶.U⁴レ⁴U@_@"
+--magic: ?"⁶rw¹シ⁶.".."U⁴レ⁴U@_@"
 
 --105 'i' puppytooth
 poke(0x5600+(8* 105),
@@ -128,7 +128,7 @@ poke(0x5600+(8* 105),
   68  -- ▒▒█▒▒▒█▒
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉi"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
---magic: ?"⁶rw¹シ".."⁶.\"モwD\"モwD"
+--magic: ?"⁶rw¹シ⁶.".."\"モwD\"モwD"
 --fillp(47133)
 
 --106 'j' houndstooth
@@ -143,7 +143,7 @@ poke(0x5600+(8* 106),
   72  -- ▒▒▒█▒▒█▒
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉj"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
---magic: ?"⁶rw¹シ".."⁶.`0「{ンュ~H"
+--magic: ?"⁶rw¹シ⁶.".."`0「{ンュ~H"
 
 --107 'k' gingham
 poke(0x5600+(8* 107),
@@ -157,7 +157,7 @@ poke(0x5600+(8* 107),
   80  -- ▒▒▒▒█▒█▒
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉk"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
---magic: ?"⁶rw¹シ".."⁶.きPきレッレッP"
+--magic: ?"⁶rw¹シ⁶.".."きPきレッレッP"
 
 --108 'l' plaid
 poke(0x5600+(8* 108),
@@ -171,7 +171,7 @@ poke(0x5600+(8* 108),
   80  -- ▒▒▒▒█▒█▒
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉl"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
---magic: ?"⁶rw¹シ".."⁶.きPき_に_にP"
+--magic: ?"⁶rw¹シ⁶.".."きPき_に_にP"
 
 --109 'm' tartan
 poke(0x5600+(8* 109),
@@ -185,4 +185,4 @@ poke(0x5600+(8* 109),
  176  -- ▒▒▒▒██▒█
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉm"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
---magic: ?"⁶rw¹シ".."⁶.ぬぬぬ◝◝ぬ◝ぬ"
+--magic: ?"⁶rw¹シ⁶.".."ぬぬぬ◝◝ぬ◝ぬ"
