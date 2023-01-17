@@ -19,24 +19,24 @@ Repeating tile patterns
 ## Gallery
 
 Contents:  
-&emsp; [01 – Dither](#01-dither)  
-&emsp; [02 – Dots](#02-dots)  
-&emsp; [03 – Dashes](#03-dashes)  
-&emsp; [04 – Lines](#04-lines)  
-&emsp; [05 – Waves](#05-waves)  
-&emsp; [06 – Grid](#06-grid)  
-&emsp; [07 – Checked](#07-checked)  
-&emsp; [08 – Rectilinear](#08-rectilinear)  
-&emsp; [09 – Round](#09-round)  
-&emsp; [10 – Woven](#10-woven)  
-&emsp; [11 – Architecture](#11-architecture)  
-&emsp; [12 – Nature](#12-nature)  
-&emsp; [13 – Symbols](#13-symbols)  
-&emsp; [14 – Other](#14-other)
+&emsp; [01 – Dither](#01--dither)  
+&emsp; [02 – Dots](#02--dots)  
+&emsp; [03 – Dashes](#03--dashes)  
+&emsp; [04 – Lines](#04--lines)  
+&emsp; [05 – Waves](#05--waves)  
+&emsp; [06 – Grid](#06--grid)  
+&emsp; [07 – Checked](#07--checked)  
+&emsp; [08 – Rectilinear](#08--rectilinear)  
+&emsp; [09 – Round](#09--round)  
+&emsp; [10 – Woven](#10--woven)  
+&emsp; [11 – Architecture](#11--architecture)  
+&emsp; [12 – Nature](#12--nature)  
+&emsp; [13 – Symbols](#13--symbols)  
+&emsp; [14 – Other](#14--other)
 
 ---
 
-### 01 – Dither  
+### 01 – Dither
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | BayerDither00 | ![](/previews/BayerDither00.png) | [png](/01-Dither/png/BayerDither00.png) | cpp | [txt](/01-Dither/Dither.bitsy.txt#L5-L14) | lua | py
@@ -88,7 +88,7 @@ Contents:
 
 ---
 
-### 03 – Dashes  
+### 03 – Dashes
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | HorizontalDenseTrellis <sup>o</sup>| ![](/previews/HorizontalDenseTrellis.png) | [png](/03-Dashes/png/HorizontalDenseTrellis.png) | cpp | txt | lua | py
@@ -314,7 +314,7 @@ Contents:
 
 ---
 
-### 11 – Architecture  
+### 11 – Architecture
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Shingle <sup>o</sup>| ![](/previews/Shingle.png) | [png](/11-Architecture/png/Shingle.png) | cpp | txt | lua | py
@@ -336,7 +336,7 @@ Contents:
 
 ---
 
-### 12 – Nature  
+### 12 – Nature
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Scales | ![](/previews/Scales.png) | [png](/12-Nature/png/Scales.png) | cpp | [txt](/12-Nature/Nature.bitsy.txt#L5-L14) | lua | [py](/12-Nature/Nature.thumby.py#L5-L16)
@@ -411,5 +411,5 @@ All trademarks are the property of their respective owners.
 &emsp; *Bitsy* is produced by [Adam Le Doux](https://bitsy.org).  
 &emsp; *GAMBY* was produced by [Logicalzero](http://logicalzero.com/gamby/) (David Stokes).  
 &emsp; *LibreOffice* is a trademark of [The Document Foundation](https://www.libreoffice.org).  
-&emsp; *PICO-8*  is a trademark of [Lexaloffle Games LLP](https://www.pico-8.com).  
+&emsp; *PICO-8* and *Picotron* are trademarks of [Lexaloffle Games LLP](https://www.lexaloffle.com).  
 &emsp; *Thumby* is a trademark of AkroSense LLC, USA / [TinyCircuits](https://thumby.us).
