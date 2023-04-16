@@ -301,7 +301,7 @@ while (( "$#" )); do
   echo "--magic: ?\"⁶rw¹シ⁶.\"..\""$STRING >> "$WIPFILE"
   # Bonus: For 4x4px patterns produce fillp() alternative
   if [ $PATTERNWIDTH -le 4 ] && [ $PATTERNHEIGHT -le 4 ]; then
-    printf -- "--fillp(" >> "$WIPFILE"
+    printf -- "--fillp\"" >> "$WIPFILE"
     ROW=1; VALUE=""; STRING="0x"
     while [ $ROW -le 4 ]; do
       # Invert binary values 0<>1 to fix fore-/background
@@ -309,7 +309,7 @@ while (( "$#" )); do
       STRING=$STRING`printf '%X' $((2#$VALUE))`
       ((ROW=ROW+1))
     done
-    printf '%u)\n' "$STRING" >> "$WIPFILE"
+    printf '%u\"\n' "$STRING" >> "$WIPFILE"
   fi
 
   

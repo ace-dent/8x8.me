@@ -1,4 +1,4 @@
---rectilinear - 8x8.me fill patterns
+--rectilinear - 8x8.me fill patterns (pico-8)
 --public domain (cc0) by aced
 
 --setup custom font as 8x8px
