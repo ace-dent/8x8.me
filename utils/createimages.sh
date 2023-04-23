@@ -28,8 +28,8 @@ while (( "$#" )); do
   NAME=`basename -s .png "$1"`
   GROUP=`basename "${1%/*/*}" | cut -f 2 -d "-"`
   # Format variations for name (lowercase, camelCase)
-  name=`echo "$NAME" | tr '[A-Z]' '[a-z]'`
-  nAME=`echo "${NAME:0:1}" | tr '[A-Z]' '[a-z]'`"${NAME:1}"
+  name=$( echo "${NAME}" | tr [:upper:] [:lower:] )
+  nAME=$( echo "${NAME:0:1}" | tr [:upper:] [:lower:] )"${NAME:1}"
 
 
   # Add metadata to the original png file
@@ -305,8 +305,8 @@ while (( "$#" )); do
     ROW=1; VALUE=""; STRING="0x"
     while [ $ROW -le 4 ]; do
       # Invert binary values 0<>1 to fix fore-/background
-      VALUE=`sed -n "$ROW"p "$HBIN" | head -c 4 | tr "0" "i" | tr "1" "0" | tr "i" "1"`
-      STRING=$STRING`printf '%X' $((2#$VALUE))`
+      VALUE=$(sed -n "${ROW}"p "${HBIN}" | head -c 4 | tr "01" "10")
+      STRING=${STRING}$(printf '%X' $((2#${VALUE})))
       ((ROW=ROW+1))
     done
     printf '%u\"\n' "$STRING" >> "$WIPFILE"
