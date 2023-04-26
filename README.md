@@ -383,7 +383,7 @@ Contents:
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Chain | ![](/previews/Chain.png) | [png](/14-Other/png/Chain.png) | cpp | txt | lua | py
-| ChainSmall | ![](/previews/ChainSmall.png) | [png](/14-Other/png/ChainSmall.png) | cpp | txt | lua | py
+| ChainLarge | ![](/previews/ChainLarge.png) | [png](/14-Other/png/ChainLarge.png) | cpp | txt | lua | py
 
 [`⤴`](#gallery)
 
