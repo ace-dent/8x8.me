@@ -214,15 +214,9 @@ Contents:
 | Grid <sup>o</sup>| ![](/previews/Grid.png) | [png](/06-Grid/png/Grid.png) | cpp | txt | lua | py |
 | GridMedium | ![](/previews/GridMedium.png) | [png](/06-Grid/png/GridMedium.png) | cpp | txt | lua | py |
 | GridBold | ![](/previews/GridBold.png) | [png](/06-Grid/png/GridBold.png) | cpp | txt | lua | py |
-| GridBox | ![](/previews/GridBox.png) | [png](/06-Grid/png/GridBox.png) | cpp | txt | lua | py |
-| GridBoxMedium | ![](/previews/GridBoxMedium.png) | [png](/06-Grid/png/GridBoxMedium.png) | cpp | txt | lua | py |
-| GridWaffle | ![](/previews/GridWaffle.png) | [png](/06-Grid/png/GridWaffle.png) | cpp | txt | lua | py |
-| GridWindow | ![](/previews/GridWindow.png) | [png](/06-Grid/png/GridWindow.png) | cpp | txt | lua | py |
 | GridMiniDots | ![](/previews/GridMiniDots.png) | [png](/06-Grid/png/GridMiniDots.png) | cpp | txt | lua | py |
 | GridMini <sup>o</sup>| ![](/previews/GridMini.png) | [png](/06-Grid/png/GridMini.png) | cpp | txt | lua | py |
 | GridMiniMedium | ![](/previews/GridMiniMedium.png) | [png](/06-Grid/png/GridMiniMedium.png) | cpp | txt | lua | py |
-| GridMiniSquare <sup>p</sup>| ![](/previews/GridMiniSquare.png) | [png](/06-Grid/png/GridMiniSquare.png) | cpp | txt | lua | py |
-| GridMiniOblong <sup>p</sup>| ![](/previews/GridMiniOblong.png) | [png](/06-Grid/png/GridMiniOblong.png) | cpp | txt | lua | py |
 | GridDense | ![](/previews/GridDense.png) | [png](/06-Grid/png/GridDense.png) | cpp | txt | lua | py |
 | GridDiagonalDots <sup>o</sup>| ![](/previews/GridDiagonalDots.png) | [png](/06-Grid/png/GridDiagonalDots.png) | cpp | txt | lua | py |
 | GridDiagonal <sup>o</sup>| ![](/previews/GridDiagonal.png) | [png](/06-Grid/png/GridDiagonal.png) | cpp | txt | lua | py |
@@ -274,8 +268,14 @@ Contents:
 ### 08 – Rectilinear
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| SquareMini <sup>p</sup>| ![](/previews/SquareMini.png) | [png](/08-Rectilinear/png/SquareMini.png) | cpp | txt | lua | py |
+| BilletMini <sup>p</sup>| ![](/previews/BilletMini.png) | [png](/08-Rectilinear/png/BilletMini.png) | cpp | txt | lua | py |
+| Box | ![](/previews/Box.png) | [png](/08-Rectilinear/png/Box.png) | cpp | txt | lua | py |
+| BoxMedium | ![](/previews/BoxMedium.png) | [png](/08-Rectilinear/png/BoxMedium.png) | cpp | txt | lua | py |
+| Waffle | ![](/previews/Waffle.png) | [png](/08-Rectilinear/png/Waffle.png) | cpp | txt | lua | py |
 | Tile | ![](/previews/Tile.png) | [png](/08-Rectilinear/png/Tile.png) | cpp | txt | lua | py
 | TileShaded | ![](/previews/TileShaded.png) | [png](/08-Rectilinear/png/TileShaded.png) | cpp | txt | lua | py
+| Window | ![](/previews/Window.png) | [png](/08-Rectilinear/png/Window.png) | cpp | txt | lua | py |
 | Block | ![](/previews/Block.png) | [png](/08-Rectilinear/png/Block.png) | cpp | txt | lua | py
 | BlockPyramid | ![](/previews/BlockPyramid.png) | [png](/08-Rectilinear/png/BlockPyramid.png) | cpp | txt | lua | py
 
