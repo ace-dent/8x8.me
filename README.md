@@ -2,7 +2,7 @@
 
 1 bit per pixel (monotone)  
 8×8 pixels (8 bytes)  
-Repeating tile patterns  
+Repeating tile fill patterns  
 
 ---
 <br>
@@ -27,12 +27,13 @@ Contents:
 &emsp; [06 – Grid](#06--grid)  
 &emsp; [07 – Checked](#07--checked)  
 &emsp; [08 – Rectilinear](#08--rectilinear)  
-&emsp; [09 – Round](#09--round)  
-&emsp; [10 – Woven](#10--woven)  
-&emsp; [11 – Architecture](#11--architecture)  
-&emsp; [12 – Nature](#12--nature)  
-&emsp; [13 – Symbols](#13--symbols)  
-&emsp; [14 – Other](#14--other)
+&emsp; [09 – Radial](#09--radial)  
+&emsp; [10 – Round](#10--round)  
+&emsp; [11 – Woven](#11--woven)  
+&emsp; [12 – Architecture](#12--architecture)  
+&emsp; [13 – Nature](#13--nature)  
+&emsp; [14 – Symbols](#14--symbols)  
+&emsp; [15 – Other](#15--other)
 
 ---
 
@@ -81,8 +82,8 @@ Contents:
 ### 02 – Dots
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Confetti <sup>o</sup>| ![](/previews/Confetti.png) | [png](/02-Dots/png/Confetti.png) | [cpp](/02-Dots/Dots.h#L12-L23) | [txt](/02-Dots/Dots.bitsy.txt#L5-L14) | lua | [py](/02-Dots/Dots.thumby.py#L5-L16)
-| ConfettiLarge <sup>o</sup>| ![](/previews/ConfettiLarge.png) | [png](/02-Dots/png/ConfettiLarge.png) | [cpp](/02-Dots/Dots.h#L25-L36) | [txt](/02-Dots/Dots.bitsy.txt#L16-L25) | lua | [py](/02-Dots/Dots.thumby.py#L18-L29)
+| Confetti <sup>o</sup>| ![](/previews/Confetti.png) | [png](/02-Dots/png/Confetti.png) | [cpp](/02-Dots/Dots.h#L12-L23) | [txt](/02-Dots/Dots.bitsy.txt#L5-L14) | lua | [py](/02-Dots/Dots.thumby.py#L5-L16) |
+| ConfettiLarge <sup>o</sup>| ![](/previews/ConfettiLarge.png) | [png](/02-Dots/png/ConfettiLarge.png) | [cpp](/02-Dots/Dots.h#L25-L36) | [txt](/02-Dots/Dots.bitsy.txt#L16-L25) | lua | [py](/02-Dots/Dots.thumby.py#L18-L29) |
 
 [`⤴`](#gallery)
 
@@ -283,107 +284,113 @@ Contents:
 
 ---
 
-### 09 – Round
+### 09 – Radial
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Sphere <sup>o</sup>| ![](/previews/Sphere.png) | [png](/09-Round/png/Sphere.png) | cpp | txt | lua | py
-| SphereMini <sup>p</sup>| ![](/previews/SphereMini.png) | [png](/09-Round/png/SphereMini.png) | cpp | txt | lua | py
+
+---
+
+### 10 – Round
+| Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Sphere <sup>o</sup>| ![](/previews/Sphere.png) | [png](/10-Round/png/Sphere.png) | cpp | txt | lua | py
+| SphereMini <sup>p</sup>| ![](/previews/SphereMini.png) | [png](/10-Round/png/SphereMini.png) | cpp | txt | lua | py
 
 [`⤴`](#gallery)
 
 ---
 
-### 10 – Woven
+### 11 – Woven
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Interlinked <sup>o</sup>| ![](/previews/Interlinked.png) | [png](/10-Woven/png/Interlinked.png) | [cpp](/10-Woven/Woven.h#L12-L23) | [txt](/10-Woven/Woven.bitsy.txt#L5-L14) | [lua](/10-Woven/woven.p8.lua#L7-L19) | [py](/10-Woven/Woven.thumby.py#L6-L17)
-| WeaveDense | ![](/previews/WeaveDense.png) | [png](/10-Woven/png/WeaveDense.png) | [cpp](/10-Woven/Woven.h#L25-L36) | [txt](/10-Woven/Woven.bitsy.txt#L16-L25) | [lua](/10-Woven/woven.p8.lua#L21-L33) | [py](/10-Woven/Woven.thumby.py#L19-L30)
-| Weave | ![](/previews/Weave.png) | [png](/10-Woven/png/Weave.png) | [cpp](/10-Woven/Woven.h#L38-L49)  | [txt](/10-Woven/Woven.bitsy.txt#L27-L36) | [lua](/10-Woven/woven.p8.lua#L35-L47) | [py](/10-Woven/Woven.thumby.py#L32-L43)
-| WeaveMedium | ![](/previews/WeaveMedium.png) | [png](/10-Woven/png/WeaveMedium.png) | [cpp](/10-Woven/Woven.h#L51-L62)  | [txt](/10-Woven/Woven.bitsy.txt#L38-L47) | [lua](/10-Woven/woven.p8.lua#L49-L61) | [py](/10-Woven/Woven.thumby.py#L45-L56)
-| WeaveBold | ![](/previews/WeaveBold.png) | [png](/10-Woven/png/WeaveBold.png) | [cpp](/10-Woven/Woven.h#L64-L75)  | [txt](/10-Woven/Woven.bitsy.txt#L49-L58) | [lua](/10-Woven/woven.p8.lua#L63-L75) | [py](/10-Woven/Woven.thumby.py#L58-L69)
-| Net | ![](/previews/Net.png) | [png](/10-Woven/png/Net.png) | [cpp](/10-Woven/Woven.h#L77-L88)  | [txt](/10-Woven/Woven.bitsy.txt#L60-L69) | [lua](/10-Woven/woven.p8.lua#L77-L89) | [py](/10-Woven/Woven.thumby.py#L71-L82)
-| Wicker | ![](/previews/Wicker.png) | [png](/10-Woven/png/Wicker.png) | [cpp](/10-Woven/Woven.h#L90-L101)  | [txt](/10-Woven/Woven.bitsy.txt#L71-L80) | [lua](/10-Woven/woven.p8.lua#L91-L103) | [py](/10-Woven/Woven.thumby.py#L84-L95)
-| Laced | ![](/previews/Laced.png) | [png](/10-Woven/png/Laced.png) | [cpp](/10-Woven/Woven.h#L103-L114)  | [txt](/10-Woven/Woven.bitsy.txt#L82-L91) | [lua](/10-Woven/woven.p8.lua#L105-L117) | [py](/10-Woven/Woven.thumby.py#L97-L108)
-| Puppytooth <sup>p</sup>| ![](/previews/Puppytooth.png) | [png](/10-Woven/png/Puppytooth.png) | [cpp](/10-Woven/Woven.h#L116-L128)  | [txt](/10-Woven/Woven.bitsy.txt#L93-L102) | [lua](/10-Woven/woven.p8.lua#L119-L132) | [py](/10-Woven/Woven.thumby.py#L110-L121)
-| Houndstooth | ![](/previews/Houndstooth.png) | [png](/10-Woven/png/Houndstooth.png) | [cpp](/10-Woven/Woven.h#L130-L141)  | [txt](/10-Woven/Woven.bitsy.txt#L104-L113) | [lua](/10-Woven/woven.p8.lua#L134-L146) | [py](/10-Woven/Woven.thumby.py#L123-L134)
-| Gingham | ![](/previews/Gingham.png) | [png](/10-Woven/png/Gingham.png) | [cpp](/10-Woven/Woven.h#L143-L154)  | [txt](/10-Woven/Woven.bitsy.txt#L115-L124) | [lua](/10-Woven/woven.p8.lua#L148-L160) | [py](/10-Woven/Woven.thumby.py#L136-L147)
-| Plaid <sup>o</sup>| ![](/previews/Plaid.png) | [png](/10-Woven/png/Plaid.png) | [cpp](/10-Woven/Woven.h#L156-L167)  | [txt](/10-Woven/Woven.bitsy.txt#L126-L135) | [lua](/10-Woven/woven.p8.lua#L162-L174) | [py](/10-Woven/Woven.thumby.py#L149-L160)
-| Tartan | ![](/previews/Tartan.png) | [png](/10-Woven/png/Tartan.png) | [cpp](/10-Woven/Woven.h#L169-L180)  | [txt](/10-Woven/Woven.bitsy.txt#L137-L146) | [lua](/10-Woven/woven.p8.lua#L176-L188) | [py](/10-Woven/Woven.thumby.py#L162-L173)
+| Interlinked <sup>o</sup>| ![](/previews/Interlinked.png) | [png](/11-Woven/png/Interlinked.png) | [cpp](/11-Woven/Woven.h#L12-L23) | [txt](/11-Woven/Woven.bitsy.txt#L5-L14) | [lua](/11-Woven/woven.p8.lua#L7-L19) | [py](/11-Woven/Woven.thumby.py#L6-L17)
+| WeaveDense | ![](/previews/WeaveDense.png) | [png](/11-Woven/png/WeaveDense.png) | [cpp](/11-Woven/Woven.h#L25-L36) | [txt](/11-Woven/Woven.bitsy.txt#L16-L25) | [lua](/11-Woven/woven.p8.lua#L21-L33) | [py](/11-Woven/Woven.thumby.py#L19-L30)
+| Weave | ![](/previews/Weave.png) | [png](/11-Woven/png/Weave.png) | [cpp](/11-Woven/Woven.h#L38-L49)  | [txt](/11-Woven/Woven.bitsy.txt#L27-L36) | [lua](/11-Woven/woven.p8.lua#L35-L47) | [py](/11-Woven/Woven.thumby.py#L32-L43)
+| WeaveMedium | ![](/previews/WeaveMedium.png) | [png](/11-Woven/png/WeaveMedium.png) | [cpp](/11-Woven/Woven.h#L51-L62)  | [txt](/11-Woven/Woven.bitsy.txt#L38-L47) | [lua](/11-Woven/woven.p8.lua#L49-L61) | [py](/11-Woven/Woven.thumby.py#L45-L56)
+| WeaveBold | ![](/previews/WeaveBold.png) | [png](/11-Woven/png/WeaveBold.png) | [cpp](/11-Woven/Woven.h#L64-L75)  | [txt](/11-Woven/Woven.bitsy.txt#L49-L58) | [lua](/11-Woven/woven.p8.lua#L63-L75) | [py](/11-Woven/Woven.thumby.py#L58-L69)
+| Net | ![](/previews/Net.png) | [png](/11-Woven/png/Net.png) | [cpp](/11-Woven/Woven.h#L77-L88)  | [txt](/11-Woven/Woven.bitsy.txt#L60-L69) | [lua](/11-Woven/woven.p8.lua#L77-L89) | [py](/11-Woven/Woven.thumby.py#L71-L82)
+| Wicker | ![](/previews/Wicker.png) | [png](/11-Woven/png/Wicker.png) | [cpp](/11-Woven/Woven.h#L90-L101)  | [txt](/11-Woven/Woven.bitsy.txt#L71-L80) | [lua](/11-Woven/woven.p8.lua#L91-L103) | [py](/11-Woven/Woven.thumby.py#L84-L95)
+| Laced | ![](/previews/Laced.png) | [png](/11-Woven/png/Laced.png) | [cpp](/11-Woven/Woven.h#L103-L114)  | [txt](/11-Woven/Woven.bitsy.txt#L82-L91) | [lua](/11-Woven/woven.p8.lua#L105-L117) | [py](/11-Woven/Woven.thumby.py#L97-L108)
+| Puppytooth <sup>p</sup>| ![](/previews/Puppytooth.png) | [png](/11-Woven/png/Puppytooth.png) | [cpp](/11-Woven/Woven.h#L116-L128)  | [txt](/11-Woven/Woven.bitsy.txt#L93-L102) | [lua](/11-Woven/woven.p8.lua#L119-L132) | [py](/11-Woven/Woven.thumby.py#L110-L121)
+| Houndstooth | ![](/previews/Houndstooth.png) | [png](/11-Woven/png/Houndstooth.png) | [cpp](/11-Woven/Woven.h#L130-L141)  | [txt](/11-Woven/Woven.bitsy.txt#L104-L113) | [lua](/11-Woven/woven.p8.lua#L134-L146) | [py](/11-Woven/Woven.thumby.py#L123-L134)
+| Gingham | ![](/previews/Gingham.png) | [png](/11-Woven/png/Gingham.png) | [cpp](/11-Woven/Woven.h#L143-L154)  | [txt](/11-Woven/Woven.bitsy.txt#L115-L124) | [lua](/11-Woven/woven.p8.lua#L148-L160) | [py](/11-Woven/Woven.thumby.py#L136-L147)
+| Plaid <sup>o</sup>| ![](/previews/Plaid.png) | [png](/11-Woven/png/Plaid.png) | [cpp](/11-Woven/Woven.h#L156-L167)  | [txt](/11-Woven/Woven.bitsy.txt#L126-L135) | [lua](/11-Woven/woven.p8.lua#L162-L174) | [py](/11-Woven/Woven.thumby.py#L149-L160)
+| Tartan | ![](/previews/Tartan.png) | [png](/11-Woven/png/Tartan.png) | [cpp](/11-Woven/Woven.h#L169-L180)  | [txt](/11-Woven/Woven.bitsy.txt#L137-L146) | [lua](/11-Woven/woven.p8.lua#L176-L188) | [py](/11-Woven/Woven.thumby.py#L162-L173)
 
 [`⤴`](#gallery)
 
 ---
 
-### 11 – Architecture
+### 12 – Architecture
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Shingle <sup>o</sup>| ![](/previews/Shingle.png) | [png](/11-Architecture/png/Shingle.png) | cpp | txt | lua | py
-| Brick <sup>o</sup>| ![](/previews/Brick.png) | [png](/11-Architecture/png/Brick.png) | cpp | txt | lua | py
-| BrickVertical | ![](/previews/BrickVertical.png) | [png](/11-Architecture/png/BrickVertical.png) | cpp | txt | lua | py
-| BrickSinister <sup>o</sup>| ![](/previews/BrickSinister.png) | [png](/11-Architecture/png/BrickSinister.png) | cpp | txt | lua | py
-| BrickSinisterRounded| ![](/previews/BrickSinisterRounded.png) | [png](/11-Architecture/png/BrickSinisterRounded.png) | cpp | txt | lua | py
-| BrickSinisterMini | ![](/previews/BrickSinisterMini.png) | [png](/11-Architecture/png/BrickSinisterMini.png) | cpp | txt | lua | py
-| BrickMini | ![](/previews/BrickMini.png) | [png](/11-Architecture/png/BrickMini.png) | cpp | txt | lua | py
-| BrickMiniDamage | ![](/previews/BrickMiniDamage.png) | [png](/11-Architecture/png/BrickMiniDamage.png) | cpp | txt | lua | py
-| BrickMiniRuins | ![](/previews/BrickMiniRuins.png) | [png](/11-Architecture/png/BrickMiniRuins.png) | cpp | txt | lua | py
-| SquareBasket | ![](/previews/SquareBasket.png) | [png](/11-Architecture/png/SquareBasket.png) | cpp | txt | lua | py
-| StoneWall | ![](/previews/StoneWall.png) | [png](/11-Architecture/png/StoneWall.png) | cpp | txt | lua | py
-| Flagstone | ![](/previews/Flagstone.png) | [png](/11-Architecture/png/Flagstone.png) | cpp | txt | lua | py
-| PavingStones | ![](/previews/PavingStones.png) | [png](/11-Architecture/png/PavingStones.png) | cpp | txt | lua | py
-| Picket | ![](/previews/Picket.png) | [png](/11-Architecture/png/Picket.png) | cpp | txt | lua | py
+| Shingle <sup>o</sup>| ![](/previews/Shingle.png) | [png](/12-Architecture/png/Shingle.png) | cpp | txt | lua | py
+| Brick <sup>o</sup>| ![](/previews/Brick.png) | [png](/12-Architecture/png/Brick.png) | cpp | txt | lua | py
+| BrickVertical | ![](/previews/BrickVertical.png) | [png](/12-Architecture/png/BrickVertical.png) | cpp | txt | lua | py
+| BrickSinister <sup>o</sup>| ![](/previews/BrickSinister.png) | [png](/12-Architecture/png/BrickSinister.png) | cpp | txt | lua | py
+| BrickSinisterRounded| ![](/previews/BrickSinisterRounded.png) | [png](/12-Architecture/png/BrickSinisterRounded.png) | cpp | txt | lua | py
+| BrickSinisterMini | ![](/previews/BrickSinisterMini.png) | [png](/12-Architecture/png/BrickSinisterMini.png) | cpp | txt | lua | py
+| BrickMini | ![](/previews/BrickMini.png) | [png](/12-Architecture/png/BrickMini.png) | cpp | txt | lua | py
+| BrickMiniDamage | ![](/previews/BrickMiniDamage.png) | [png](/12-Architecture/png/BrickMiniDamage.png) | cpp | txt | lua | py
+| BrickMiniRuins | ![](/previews/BrickMiniRuins.png) | [png](/12-Architecture/png/BrickMiniRuins.png) | cpp | txt | lua | py
+| SquareBasket | ![](/previews/SquareBasket.png) | [png](/12-Architecture/png/SquareBasket.png) | cpp | txt | lua | py
+| StoneWall | ![](/previews/StoneWall.png) | [png](/12-Architecture/png/StoneWall.png) | cpp | txt | lua | py
+| Flagstone | ![](/previews/Flagstone.png) | [png](/12-Architecture/png/Flagstone.png) | cpp | txt | lua | py
+| PavingStones | ![](/previews/PavingStones.png) | [png](/12-Architecture/png/PavingStones.png) | cpp | txt | lua | py
+| Picket | ![](/previews/Picket.png) | [png](/12-Architecture/png/Picket.png) | cpp | txt | lua | py
 
 [`⤴`](#gallery)
 
 ---
 
-### 12 – Nature
+### 13 – Nature
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Scales | ![](/previews/Scales.png) | [png](/12-Nature/png/Scales.png) | cpp | [txt](/12-Nature/Nature.bitsy.txt#L5-L14) | lua | [py](/12-Nature/Nature.thumby.py#L5-L16)
-| Loam | ![](/previews/Loam.png) | [png](/12-Nature/png/Loam.png) | cpp | [txt](/12-Nature/Nature.bitsy.txt#L16-L25) | lua | [py](/12-Nature/Nature.thumby.py#L18-L29)
-| Sand | ![](/previews/Sand.png) | [png](/12-Nature/png/Sand.png) | cpp | txt | lua | py
-| Grass | ![](/previews/Grass.png) | [png](/12-Nature/png/Grass.png) | cpp | [txt](/12-Nature/Nature.bitsy.txt#L27-L36) | lua | [py](/12-Nature/Nature.thumby.py#L31-L42)
-| Divot <sup>o</sup>| ![](/previews/Divot.png) | [png](/12-Nature/png/Divot.png) | cpp | txt | lua | py
-| Pasture | ![](/previews/Pasture.png) | [png](/12-Nature/png/Pasture.png) | cpp | txt | lua | py
-| Daisies | ![](/previews/Daisies.png) | [png](/12-Nature/png/Daisies.png) | cpp | [txt](/12-Nature/Nature.bitsy.txt#L60-L69) | lua | [py](/12-Nature/Nature.thumby.py#L70-L81)
-| Tuffet | ![](/previews/Tuffet.png) | [png](/12-Nature/png/Tuffet.png) | cpp | [txt](/12-Nature/Nature.bitsy.txt#L38-L47) | lua | [py](/12-Nature/Nature.thumby.py#L44-L55)
-| Shrub | ![](/previews/Shrub.png) | [png](/12-Nature/png/Shrub.png) | cpp | txt | lua | py
-| Leaves | ![](/previews/Leaves.png) | [png](/12-Nature/png/Leaves.png) | cpp | [txt](/12-Nature/Nature.bitsy.txt#L49-L58) | lua | [py](/12-Nature/Nature.thumby.py#L57-L68)
-| Crop | ![](/previews/Crop.png) | [png](/12-Nature/png/Crop.png) | cpp | txt | lua | py
-| Bush | ![](/previews/Bush.png) | [png](/12-Nature/png/Bush.png) | cpp | txt | lua | py
-| Thicket | ![](/previews/Thicket.png) | [png](/12-Nature/png/Thicket.png) | cpp | [txt](/12-Nature/Nature.bitsy.txt#L82-L91) | lua | [py](/12-Nature/Nature.thumby.py#L96-L107)
-| Tree | ![](/previews/Tree.png) | [png](/12-Nature/png/Tree.png) | cpp | [txt](/12-Nature/Nature.bitsy.txt#L71-L80) | lua | [py](/12-Nature/Nature.thumby.py#L83-L94)
-| Rocks | ![](/previews/Rocks.png) | [png](/12-Nature/png/Rocks.png) | cpp | txt | lua | py
-| Mounds | ![](/previews/Mounds.png) | [png](/12-Nature/png/Mounds.png) | cpp | txt | lua | py
-| Skull | ![](/previews/Skull.png) | [png](/12-Nature/png/Skull.png) | cpp | txt | lua | py
-| CrackedBoulder | ![](/previews/CrackedBoulder.png) | [png](/12-Nature/png/CrackedBoulder.png) | cpp | [txt](/12-Nature/Nature.bitsy.txt#L93-L102) | lua | [py](/12-Nature/Nature.thumby.py#L109-L120)
-| BeanStalk | ![](/previews/BeanStalk.png) | [png](/12-Nature/png/BeanStalk.png) | cpp | txt | lua | py
+| Scales | ![](/previews/Scales.png) | [png](/13-Nature/png/Scales.png) | cpp | [txt](/13-Nature/Nature.bitsy.txt#L5-L14) | lua | [py](/13-Nature/Nature.thumby.py#L5-L16)
+| Loam | ![](/previews/Loam.png) | [png](/13-Nature/png/Loam.png) | cpp | [txt](/13-Nature/Nature.bitsy.txt#L16-L25) | lua | [py](/13-Nature/Nature.thumby.py#L18-L29)
+| Sand | ![](/previews/Sand.png) | [png](/13-Nature/png/Sand.png) | cpp | txt | lua | py
+| Grass | ![](/previews/Grass.png) | [png](/13-Nature/png/Grass.png) | cpp | [txt](/13-Nature/Nature.bitsy.txt#L27-L36) | lua | [py](/13-Nature/Nature.thumby.py#L31-L42)
+| Divot <sup>o</sup>| ![](/previews/Divot.png) | [png](/13-Nature/png/Divot.png) | cpp | txt | lua | py
+| Pasture | ![](/previews/Pasture.png) | [png](/13-Nature/png/Pasture.png) | cpp | txt | lua | py
+| Daisies | ![](/previews/Daisies.png) | [png](/13-Nature/png/Daisies.png) | cpp | [txt](/13-Nature/Nature.bitsy.txt#L60-L69) | lua | [py](/13-Nature/Nature.thumby.py#L70-L81)
+| Tuffet | ![](/previews/Tuffet.png) | [png](/13-Nature/png/Tuffet.png) | cpp | [txt](/13-Nature/Nature.bitsy.txt#L38-L47) | lua | [py](/13-Nature/Nature.thumby.py#L44-L55)
+| Shrub | ![](/previews/Shrub.png) | [png](/13-Nature/png/Shrub.png) | cpp | txt | lua | py
+| Leaves | ![](/previews/Leaves.png) | [png](/13-Nature/png/Leaves.png) | cpp | [txt](/13-Nature/Nature.bitsy.txt#L49-L58) | lua | [py](/13-Nature/Nature.thumby.py#L57-L68)
+| Crop | ![](/previews/Crop.png) | [png](/13-Nature/png/Crop.png) | cpp | txt | lua | py
+| Bush | ![](/previews/Bush.png) | [png](/13-Nature/png/Bush.png) | cpp | txt | lua | py
+| Thicket | ![](/previews/Thicket.png) | [png](/13-Nature/png/Thicket.png) | cpp | [txt](/13-Nature/Nature.bitsy.txt#L82-L91) | lua | [py](/13-Nature/Nature.thumby.py#L96-L107)
+| Tree | ![](/previews/Tree.png) | [png](/13-Nature/png/Tree.png) | cpp | [txt](/13-Nature/Nature.bitsy.txt#L71-L80) | lua | [py](/13-Nature/Nature.thumby.py#L83-L94)
+| Rocks | ![](/previews/Rocks.png) | [png](/13-Nature/png/Rocks.png) | cpp | txt | lua | py
+| Mounds | ![](/previews/Mounds.png) | [png](/13-Nature/png/Mounds.png) | cpp | txt | lua | py
+| Skull | ![](/previews/Skull.png) | [png](/13-Nature/png/Skull.png) | cpp | txt | lua | py
+| CrackedBoulder | ![](/previews/CrackedBoulder.png) | [png](/13-Nature/png/CrackedBoulder.png) | cpp | [txt](/13-Nature/Nature.bitsy.txt#L93-L102) | lua | [py](/13-Nature/Nature.thumby.py#L109-L120)
+| BeanStalk | ![](/previews/BeanStalk.png) | [png](/13-Nature/png/BeanStalk.png) | cpp | txt | lua | py
 
 [`⤴`](#gallery)
 
 ---
 
-### 13 – Symbols
+### 14 – Symbols
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Love | ![](/previews/Love.png) | [png](/13-Symbols/png/Love.png) | [cpp](/13-Symbols/Symbols.h#L12-L23) | [txt](/13-Symbols/Symbols.bitsy.txt#L5-L14) | [lua](/13-Symbols/symbols.p8.lua#L7-L19) | [py](/13-Symbols/Symbols.thumby.py#L5-L16)
-| Heart | ![](/previews/Heart.png) | [png](/13-Symbols/png/Heart.png) | [cpp](/13-Symbols/Symbols.h#L25-L36) | [txt](/13-Symbols/Symbols.bitsy.txt#L16-L25) | [lua](/13-Symbols/symbols.p8.lua#L21-L33) | [py](/13-Symbols/Symbols.thumby.py#L18-L29)
-| HeartMini <sup>p</sup>| ![](/previews/HeartMini.png) | [png](/13-Symbols/png/HeartMini.png) | [cpp](/13-Symbols/Symbols.h#L38-L50) | [txt](/13-Symbols/Symbols.bitsy.txt#L27-L36) | [lua](/13-Symbols/symbols.p8.lua#L35-L48) | [py](/13-Symbols/Symbols.thumby.py#L31-L42)
-| Anchor | ![](/previews/Anchor.png) | [png](/13-Symbols/png/Anchor.png) | [cpp](/13-Symbols/Symbols.h#L52-L63) | [txt](/13-Symbols/Symbols.bitsy.txt#L38-L47) | [lua](/13-Symbols/symbols.p8.lua#L50-L62) | [py](/13-Symbols/Symbols.thumby.py#L44-L55)
-| Crossbones | ![](/previews/Crossbones.png) | [png](/13-Symbols/png/Crossbones.png) | [cpp](/13-Symbols/Symbols.h#L65-L76) | [txt](/13-Symbols/Symbols.bitsy.txt#L49-L58) | [lua](/13-Symbols/symbols.p8.lua#L64-L76) | [py](/13-Symbols/Symbols.thumby.py#L57-L68)
-| Cross | ![](/previews/Cross.png) | [png](/13-Symbols/png/Cross.png) | [cpp](/13-Symbols/Symbols.h#L78-L89) | [txt](/13-Symbols/Symbols.bitsy.txt#L60-L69) |[lua](/13-Symbols/symbols.p8.lua#L78-L90)  | [py](/13-Symbols/Symbols.thumby.py#L70-L81)
-| CrossMini <sup>p</sup>| ![](/previews/CrossMini.png) | [png](/13-Symbols/png/CrossMini.png) | [cpp](/13-Symbols/Symbols.h#L91-L103) | [txt](/13-Symbols/Symbols.bitsy.txt#L71-L80) | [lua](/13-Symbols/symbols.p8.lua#L92-L105) | [py](/13-Symbols/Symbols.thumby.py#L83-L94)
-| Amongi | ![](/previews/Amongi.png) | [png](/13-Symbols/png/Amongi.png) | [cpp](/13-Symbols/Symbols.h#L105-L116) | [txt](/13-Symbols/Symbols.bitsy.txt#L82-L91) | [lua](/13-Symbols/symbols.p8.lua#L107-L119) | [py](/13-Symbols/Symbols.thumby.py#L96-L107)
+| Love | ![](/previews/Love.png) | [png](/14-Symbols/png/Love.png) | [cpp](/14-Symbols/Symbols.h#L12-L23) | [txt](/14-Symbols/Symbols.bitsy.txt#L5-L14) | [lua](/14-Symbols/symbols.p8.lua#L7-L19) | [py](/14-Symbols/Symbols.thumby.py#L5-L16)
+| Heart | ![](/previews/Heart.png) | [png](/14-Symbols/png/Heart.png) | [cpp](/14-Symbols/Symbols.h#L25-L36) | [txt](/14-Symbols/Symbols.bitsy.txt#L16-L25) | [lua](/14-Symbols/symbols.p8.lua#L21-L33) | [py](/14-Symbols/Symbols.thumby.py#L18-L29) |
+| HeartMini <sup>p</sup>| ![](/previews/HeartMini.png) | [png](/14-Symbols/png/HeartMini.png) | [cpp](/14-Symbols/Symbols.h#L38-L50) | [txt](/14-Symbols/Symbols.bitsy.txt#L27-L36) | [lua](/14-Symbols/symbols.p8.lua#L35-L48) | [py](/14-Symbols/Symbols.thumby.py#L31-L42) |
+| Anchor | ![](/previews/Anchor.png) | [png](/14-Symbols/png/Anchor.png) | [cpp](/14-Symbols/Symbols.h#L52-L63) | [txt](/14-Symbols/Symbols.bitsy.txt#L38-L47) | [lua](/14-Symbols/symbols.p8.lua#L50-L62) | [py](/14-Symbols/Symbols.thumby.py#L44-L55) |
+| Crossbones | ![](/previews/Crossbones.png) | [png](/14-Symbols/png/Crossbones.png) | [cpp](/14-Symbols/Symbols.h#L65-L76) | [txt](/14-Symbols/Symbols.bitsy.txt#L49-L58) | [lua](/14-Symbols/symbols.p8.lua#L64-L76) | [py](/14-Symbols/Symbols.thumby.py#L57-L68)
+| Cross | ![](/previews/Cross.png) | [png](/14-Symbols/png/Cross.png) | [cpp](/14-Symbols/Symbols.h#L78-L89) | [txt](/14-Symbols/Symbols.bitsy.txt#L60-L69) |[lua](/14-Symbols/symbols.p8.lua#L78-L90)  | [py](/14-Symbols/Symbols.thumby.py#L70-L81)
+| CrossMini <sup>p</sup>| ![](/previews/CrossMini.png) | [png](/14-Symbols/png/CrossMini.png) | [cpp](/14-Symbols/Symbols.h#L91-L103) | [txt](/14-Symbols/Symbols.bitsy.txt#L71-L80) | [lua](/14-Symbols/symbols.p8.lua#L92-L105) | [py](/14-Symbols/Symbols.thumby.py#L83-L94)
+| Amongi | ![](/previews/Amongi.png) | [png](/14-Symbols/png/Amongi.png) | [cpp](/14-Symbols/Symbols.h#L105-L116) | [txt](/14-Symbols/Symbols.bitsy.txt#L82-L91) | [lua](/14-Symbols/symbols.p8.lua#L107-L119) | [py](/14-Symbols/Symbols.thumby.py#L96-L107)
 
 [`⤴`](#gallery)
 
 ---
 
-### 14 – Other
+### 15 – Other
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Chain | ![](/previews/Chain.png) | [png](/14-Other/png/Chain.png) | cpp | txt | lua | py
-| ChainLarge | ![](/previews/ChainLarge.png) | [png](/14-Other/png/ChainLarge.png) | cpp | txt | lua | py
+| Chain | ![](/previews/Chain.png) | [png](/15-Other/png/Chain.png) | cpp | txt | lua | py
+| ChainLarge | ![](/previews/ChainLarge.png) | [png](/15-Other/png/ChainLarge.png) | cpp | txt | lua | py
 
 [`⤴`](#gallery)
 
@@ -397,7 +404,7 @@ Contents:
 
 ## Acknowledgements
 
-Inspired by studying software from the mid 1980's, to video games of the early 1990's. Influenced by the wonderful pixel artists of today. All artwork drawn *tabula rasa*. Please let me know if any designs resemble the work of others.
+Inspired by studying software from the mid 1980's, to video games of the early 1990's. Influenced by the wonderful pixel artists of today. All artwork is drawn *tabula rasa*. Please let me know if any designs resemble the work of others.
 
 Artwork and files created using [ABSpriteEditor](https://github.com/Pharap/ABSpriteEditor). Patterns tested and refined using [ASE](https://github.com/pmwasson/ASE) and [Bitsy](https://ledoux.itch.io/bitsy).  Additional file wrangling with [image2cpp](https://javl.github.io/image2cpp/). Data tweaking in LibreOffice, image conversions by ImageMagick, compressed with `pngslim` and metadata added with ExifTool.
 
