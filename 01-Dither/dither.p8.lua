@@ -17,7 +17,7 @@ poke(0x5600+(8* 97),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉa"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."\0\0\0\0\0\0\0\0"
---fillp"65535"
+--fillp(65535)
 
 --98 'b' bayerdither01
 poke(0x5600+(8* 98),
@@ -32,7 +32,7 @@ poke(0x5600+(8* 98),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉb"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."■\0\0\0■\0\0\0"
---fillp"32767"
+--fillp(32767)
 
 --99 'c' bayerdither02
 poke(0x5600+(8* 99),
@@ -47,7 +47,7 @@ poke(0x5600+(8* 99),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉc"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."■\0D\0■\0D\0"
---fillp"32735"
+--fillp(32735)
 
 --100 'd' bayerdither03
 poke(0x5600+(8* 100),
@@ -62,7 +62,7 @@ poke(0x5600+(8* 100),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉd"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."■\0U\0■\0U\0"
---fillp"32607"
+--fillp(32607)
 
 --101 'e' bayerdither04
 poke(0x5600+(8* 101),
@@ -77,7 +77,7 @@ poke(0x5600+(8* 101),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉe"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."U\0U\0U\0U\0"
---fillp"24415"
+--fillp(24415)
 
 --102 'f' bayerdither05
 poke(0x5600+(8* 102),
@@ -92,7 +92,7 @@ poke(0x5600+(8* 102),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉf"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."U\"U\0U\"U\0"
---fillp"23391"
+--fillp(23391)
 
 --103 'g' bayerdither06
 poke(0x5600+(8* 103),
@@ -107,7 +107,7 @@ poke(0x5600+(8* 103),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉg"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."U\"U☉U\"U☉"
---fillp"23390"
+--fillp(23390)
 
 --104 'h' bayerdither07
 poke(0x5600+(8* 104),
@@ -122,7 +122,7 @@ poke(0x5600+(8* 104),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉh"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."U\"UちU\"Uち"
---fillp"23386"
+--fillp(23386)
 
 --105 'i' bayerdither08
 poke(0x5600+(8* 105),
@@ -137,7 +137,7 @@ poke(0x5600+(8* 105),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉi"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."UちUちUちUち"
---fillp"23130"
+--fillp(23130)
 
 --106 'j' bayerdither09
 poke(0x5600+(8* 106),
@@ -152,7 +152,7 @@ poke(0x5600+(8* 106),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉj"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."UめUちUめUち"
---fillp"21082"
+--fillp(21082)
 
 --107 'k' bayerdither10
 poke(0x5600+(8* 107),
@@ -167,7 +167,7 @@ poke(0x5600+(8* 107),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉk"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."UめUモUめUモ"
---fillp"21080"
+--fillp(21080)
 
 --108 'l' bayerdither11
 poke(0x5600+(8* 108),
@@ -182,7 +182,7 @@ poke(0x5600+(8* 108),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉl"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."UめU◝UめU◝"
---fillp"21072"
+--fillp(21072)
 
 --109 'm' bayerdither12
 poke(0x5600+(8* 109),
@@ -197,7 +197,7 @@ poke(0x5600+(8* 109),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉm"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."U◝U◝U◝U◝"
---fillp"20560"
+--fillp(20560)
 
 --110 'n' bayerdither13
 poke(0x5600+(8* 110),
@@ -212,7 +212,7 @@ poke(0x5600+(8* 110),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉn"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."w◝U◝w◝U◝"
---fillp"4176"
+--fillp(4176)
 
 --111 'o' bayerdither14
 poke(0x5600+(8* 111),
@@ -227,7 +227,7 @@ poke(0x5600+(8* 111),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉo"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."w◝ツ◝w◝ツ◝"
---fillp"4160"
+--fillp(4160)
 
 --112 'p' bayerdither15
 poke(0x5600+(8* 112),
@@ -242,7 +242,7 @@ poke(0x5600+(8* 112),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉp"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."w◝◝◝w◝◝◝"
---fillp"4096"
+--fillp(4096)
 
 --113 'q' bayerdither16
 poke(0x5600+(8* 113),
@@ -257,7 +257,7 @@ poke(0x5600+(8* 113),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉq"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."◝◝◝◝◝◝◝◝"
---fillp"0"
+--fillp(0)
 
 --65 'A' officedither05
 poke(0x5600+(8* 65),
@@ -300,7 +300,7 @@ poke(0x5600+(8* 67),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉC"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."■\0D\0■\0D\0"
---fillp"32735"
+--fillp(32735)
 
 --68 'D' officedither25
 poke(0x5600+(8* 68),
@@ -315,7 +315,7 @@ poke(0x5600+(8* 68),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉD"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."D■D■D■D■"
---fillp"55255"
+--fillp(55255)
 
 --69 'E' officedither30
 poke(0x5600+(8* 69),
@@ -330,7 +330,7 @@ poke(0x5600+(8* 69),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉE"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."U\"U☉U\"U☉"
---fillp"23390"
+--fillp(23390)
 
 --70 'F' officedither40
 poke(0x5600+(8* 70),
@@ -359,7 +359,7 @@ poke(0x5600+(8* 71),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉG"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."UちUちUちUち"
---fillp"23130"
+--fillp(23130)
 
 --72 'H' officedither60
 poke(0x5600+(8* 72),
@@ -374,7 +374,7 @@ poke(0x5600+(8* 72),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉH"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."wちツちwちツち"
---fillp"6730"
+--fillp(6730)
 
 --73 'I' officedither70
 poke(0x5600+(8* 73),
@@ -389,7 +389,7 @@ poke(0x5600+(8* 73),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉI"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."めモめモめモめモ"
---fillp"10280"
+--fillp(10280)
 
 --74 'J' officedither75
 poke(0x5600+(8* 74),
@@ -404,7 +404,7 @@ poke(0x5600+(8* 74),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉJ"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."め◝モ◝め◝モ◝"
---fillp"8320"
+--fillp(8320)
 
 --75 'K' officedither80
 poke(0x5600+(8* 75),

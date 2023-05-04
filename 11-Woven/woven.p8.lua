@@ -129,7 +129,7 @@ poke(0x5600+(8* 105),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉi"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."\"モwD\"モwD"
---fillp"47133"
+--fillp(47133)
 
 --106 'j' houndstooth
 poke(0x5600+(8* 106),

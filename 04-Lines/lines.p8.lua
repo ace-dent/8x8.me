@@ -17,7 +17,7 @@ poke(0x5600+(8* 48),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉ0"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."◝\0003\0◝\0003\0"
---fillp"3903"
+--fillp(3903)
 
 --49 '1' horizontaldenselinedot
 poke(0x5600+(8* 49),
@@ -32,7 +32,7 @@ poke(0x5600+(8* 49),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉ1"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."◝\0U\0◝\0U\0"
---fillp"3935"
+--fillp(3935)
 
 --50 '2' horizontaldense
 poke(0x5600+(8* 50),
@@ -47,7 +47,7 @@ poke(0x5600+(8* 50),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉ2"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."◝\0◝\0◝\0◝\0"
---fillp"3855"
+--fillp(3855)
 
 --51 '3' horizontal
 poke(0x5600+(8* 51),
@@ -62,7 +62,7 @@ poke(0x5600+(8* 51),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉ3"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."\0\0◝\0\0\0◝\0"
---fillp"65295"
+--fillp(65295)
 
 --52 '4' horizontalmedium
 poke(0x5600+(8* 52),
@@ -77,7 +77,7 @@ poke(0x5600+(8* 52),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉ4"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."\0◝◝\0\0◝◝\0"
---fillp"61455"
+--fillp(61455)
 
 --53 '5' horizontalbold
 poke(0x5600+(8* 53),
@@ -92,4 +92,4 @@ poke(0x5600+(8* 53),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉ5"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."◝◝◝\0◝◝◝\0"
---fillp"15"
+--fillp(15)

@@ -45,7 +45,7 @@ poke(0x5600+(8* 99),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉc"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."Uw\"\0Uw\"\0"
---fillp"20927"
+--fillp(20927)
 
 --100 'd' anchor
 poke(0x5600+(8* 100),
@@ -102,7 +102,7 @@ poke(0x5600+(8* 103),
 )
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉg"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."\"w\"\0\"w\"\0"
---fillp"45503"
+--fillp(45503)
 
 --104 'h' amongi
 poke(0x5600+(8* 104),
