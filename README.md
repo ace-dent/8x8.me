@@ -287,6 +287,21 @@ Contents:
 ### 09 – Radial
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Nebula | ![](/previews/Nebula.png) | [png](/09-Radial/png/Nebula.png) | [cpp](/09-Radial/Radial.h#L12-L23) | [txt](/09-Radial/Radial.bitsy.txt#L5-L14) | [lua](/09-Radial/radial.p8.lua#L7-L19) | [py](/09-Radial/Radial.thumby.py#L5-L16) |
+| Pinwheel | ![](/previews/Pinwheel.png) | [png](/09-Radial/png/Pinwheel.png) | [cpp](/09-Radial/Radial.h#L25-L36) | [txt](/09-Radial/Radial.bitsy.txt#L16-L25) | [lua](/09-Radial/radial.p8.lua#L21-L33) | [py](/09-Radial/Radial.thumby.py#L18-L29) |
+| Pivot | ![](/previews/Pivot.png) | [png](/09-Radial/png/Pivot.png) | [cpp](/09-Radial/Radial.h#L38-L49) | [txt](/09-Radial/Radial.bitsy.txt#L27-L36) | [lua](/09-Radial/radial.p8.lua#L35-L47) | [py](/09-Radial/Radial.thumby.py#L31-L42) |
+| Fylfot | ![](/previews/Fylfot.png) | [png](/09-Radial/png/Fylfot.png) | [cpp](/09-Radial/Radial.h#L51-L62) | [txt](/09-Radial/Radial.bitsy.txt#L38-L47) | [lua](/09-Radial/radial.p8.lua#L49-L61) | [py](/09-Radial/Radial.thumby.py#L44-L55) |
+| Rotary | ![](/previews/Rotary.png) | [png](/09-Radial/png/Rotary.png) | [cpp](/09-Radial/Radial.h#L64-L75) | [txt](/09-Radial/Radial.bitsy.txt#L49-L58) | [lua](/09-Radial/radial.p8.lua#L63-L75) | [py](/09-Radial/Radial.thumby.py#L57-L68) |
+| StarBurst | ![](/previews/StarBurst.png) | [png](/09-Radial/png/StarBurst.png) | [cpp](/09-Radial/Radial.h#L77-L88) | [txt](/09-Radial/Radial.bitsy.txt#L60-L69) | [lua](/09-Radial/radial.p8.lua#L77-L89) | [py](/09-Radial/Radial.thumby.py#L70-L81) |
+| Swirl | ![](/previews/Swirl.png) | [png](/09-Radial/png/Swirl.png) | [cpp](/09-Radial/Radial.h#L90-L101) | [txt](/09-Radial/Radial.bitsy.txt#L71-L80) | [lua](/09-Radial/radial.p8.lua#L91-L103) | [py](/09-Radial/Radial.thumby.py#L83-L94) |
+| Swarm | ![](/previews/Swarm.png) | [png](/09-Radial/png/Swarm.png) | [cpp](/09-Radial/Radial.h#L103-L114) | [txt](/09-Radial/Radial.bitsy.txt#L82-L91) | [lua](/09-Radial/radial.p8.lua#L105-L117) | [py](/09-Radial/Radial.thumby.py#L96-L107) |
+| Encircled | ![](/previews/Encircled.png) | [png](/09-Radial/png/Encircled.png) | [cpp](/09-Radial/Radial.h#L116-L127) | [txt](/09-Radial/Radial.bitsy.txt#L93-L102) | [lua](/09-Radial/radial.p8.lua#L119-L131) | [py](/09-Radial/Radial.thumby.py#L109-L120) |
+| Spokes | ![](/previews/Spokes.png) | [png](/09-Radial/png/Spokes.png) | [cpp](/09-Radial/Radial.h#L129-L140) | [txt](/09-Radial/Radial.bitsy.txt#L104-L113) | [lua](/09-Radial/radial.p8.lua#L133-L145) | [py](/09-Radial/Radial.thumby.py#L122-L133) |
+| Cartwheel | ![](/previews/Cartwheel.png) | [png](/09-Radial/png/Cartwheel.png) | [cpp](/09-Radial/Radial.h#L142-L153) | [txt](/09-Radial/Radial.bitsy.txt#L115-L124) | [lua](/09-Radial/radial.p8.lua#L147-L159) | [py](/09-Radial/Radial.thumby.py#L135-L146) |
+| CartwheelBold | ![](/previews/CartwheelBold.png) | [png](/09-Radial/png/CartwheelBold.png) | [cpp](/09-Radial/Radial.h#L155-L166) | [txt](/09-Radial/Radial.bitsy.txt#L126-L135) | [lua](/09-Radial/radial.p8.lua#L161-L173) | [py](/09-Radial/Radial.thumby.py#L148-L159) |
+| CartwheelExtraBold | ![](/previews/CartwheelExtraBold.png) | [png](/09-Radial/png/CartwheelExtraBold.png) | [cpp](/09-Radial/Radial.h#L168-L179) | [txt](/09-Radial/Radial.bitsy.txt#L137-L146) | [lua](/09-Radial/radial.p8.lua#L175-L187) | [py](/09-Radial/Radial.thumby.py#L161-L172) |
+
+[`⤴`](#gallery)
 
 ---
 
