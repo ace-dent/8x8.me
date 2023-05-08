@@ -34,7 +34,7 @@ namespace patterns {
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\21\0\0"[i%4]
+    // Magic: i%4?0:17
     // GAMBY: 0x1000
 
     constexpr uint8_t PROGMEM bayerDither02[] {
@@ -146,7 +146,7 @@ namespace patterns {
         0x55,  // ▓░▓░▓░▓░
         0xAA,  // ░▓░▓░▓░▓
     };
-    // Magic: "w\252U\252"[i%4]
+    // Magic: 53+"Bu u"[i%4]
     // GAMBY: 0x7A5A
 
     constexpr uint8_t PROGMEM bayerDither10[] {
@@ -244,7 +244,7 @@ namespace patterns {
         0xFF,  // ░░░░░░░░
         0xFF,  // ░░░░░░░░
     };
-    // Magic: 255
+    // Magic: ~0
     // GAMBY: 0xFFFF
 
     constexpr uint8_t PROGMEM officeDither05[] {

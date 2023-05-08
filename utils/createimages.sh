@@ -34,9 +34,9 @@ readonly md_thumby_lines=11
 
 img_counter=0
 while (( "$#" )); do
-  
+
   ((img_counter=img_counter+1))
-  
+
   # Get the image name and group from the filename
   img_name="$( basename -s .png "$1" )"
   img_root="${1%/*/*}" # Base directory for the pattern
@@ -45,7 +45,7 @@ while (( "$#" )); do
   # Format variations with different case
   name_lowercase="$( echo "${img_name}" | tr '[:upper:]' '[:lower:]' )"
   name_camelcase="${name_lowercase:0:1}${img_name:1}" # Lower case first letter and append remaining characters
-  name_camelcase="$( echo -n "${name_camelcase}" | tr -cs '[:alnum:]' '_')" # Replace non-alphanumeric characters with `_` for code compatibility
+  name_camelcase="$( echo -n "${name_camelcase}" | tr -cs '[:alnum:]' '_')" # Replace non-alphanumeric characters with '_' for code compatibility
   group_lowercase="$( echo "${img_group}" | tr '[:upper:]' '[:lower:]' )"
 
 
@@ -64,8 +64,8 @@ while (( "$#" )); do
   # Create the preview image
   preview_file="${img_root%/*}/previews/${img_name}.png"
   magick -size 32x16 tile:"$1" -sample 200% "${preview_file}" # Tile the image 4x2 then scale up 2x
-  
-  
+
+
   # Create Horizontal and Vertical temporary files, with plain text binary and hexadecimal
   bin_h="${img_root}/$img_name.bin-h.txt"
   bin_v="${img_root}/$img_name.bin-v.txt"
@@ -85,7 +85,7 @@ while (( "$#" )); do
     binary_str="$( sed -n ${line}p "$bin_h" )" # Horizontal
     {
       printf '    0x%02X,' "$((2#${binary_str}))"
-      printf '  # %s\n' "${binary_str}" | tr '01' '▓░' 
+      printf '  # %s\n' "${binary_str}" | tr '01' '▓░'
     } >> "${hex_h}"
     binary_str="$( sed -n ${line}p "${bin_v}" )" # Vertical
     {
@@ -130,20 +130,38 @@ while (( "$#" )); do
   {
     printf '\nconstexpr uint8_t PROGMEM %s[] {\n' "${name_camelcase}"
     printf '    8, 8,  // 8x8 px image\n'
-    sed 's|#|//|g' "${hex_v}" # Change `#` to `//` for comments
+    sed 's|#|//|g' "${hex_v}" # Change '#' to '//' for comments
   } >> "${cpp_file}"
   # Alternative 'magic' representation
   printf '};\n// Magic: ' >> "${cpp_file}"
   if [ ${pattern_width} -eq 1 ]; then
-    printf '%i\n' "$((2#$(sed -n 1p "${bin_v}")))" >> "${cpp_file}"
+    value=$((2#$(sed -n 1p "${bin_v}"))) # Convert first byte to decimal
+    if [ ${value} -lt 246 ]; then
+      printf '%u\n' ${value} >> "${cpp_file}"
+    else
+      ((value=255-value)) # Invert large values to save 1 char, e.g. '255' to '~0'
+      printf '~%u\n' ${value} >> "${cpp_file}"
+    fi
   elif [ ${pattern_width} -eq 2 ]; then
     # TODO: Catch edge cases where string encoding is smaller "Az"[i%2]
     # e.g. bayerDither04 `"U"[i%2]` vs `i&1?85:0`
     {
-      printf 'i&1?%i' "$((2#$(sed -n 1p "${bin_v}")))" # First column (byte 1)
-      printf ':%i\n' "$((2#$(sed -n 2p "${bin_v}")))" # Second column (byte 2)
+      value=$((2#$(sed -n 1p "${bin_v}"))) # Convert byte 1 (first column) to decimal
+      if [ ${value} -lt 246 ]; then
+        printf 'i&1?%u' ${value}
+      else
+        ((value=255-value)) # Invert large values, e.g. '255' to '~0'
+        printf 'i&1?~%u' ${value}
+      fi
+      value=$((2#$(sed -n 2p "${bin_v}"))) # Convert byte 2 (second column) to decimal
+      if [ ${value} -lt 246 ]; then
+        printf ':%u\n' ${value}
+      else
+        ((value=255-value)) # Invert large values, e.g. '255' to '~0'
+        printf ':~%u\n' ${value}
+      fi
     } >> "${cpp_file}"
-  else
+  else # Pattern width 4 and 8
     # Encode 'magic' as a string... hold tight...
     # First pass: scan byte values to estimate if inverted form will be more compact
     column=$pattern_width; VALUE=""; INVERT=0
@@ -191,7 +209,7 @@ while (( "$#" )); do
             # cpp strings are always null terminated
             VALUE=""
           elif [ ${digit_present} -eq 1 ]; then
-            # Add leading zeroes to make octal value unambiguous 
+            # Add leading zeroes to make octal value unambiguous
             VALUE="\\00$VALUE"
           else
             VALUE="\\$VALUE"
@@ -221,7 +239,7 @@ while (( "$#" )); do
         ;;
         1[6-7]|2[0-7]|3[0-2])
           if [ ${digit_present} -eq 1 ]; then
-            # Add leading zero to make octal value unambiguous 
+            # Add leading zero to make octal value unambiguous
             VALUE="\\0$VALUE"
           else
             VALUE="\\$VALUE"
@@ -296,8 +314,8 @@ while (( "$#" )); do
   {
     printf '\nconstexpr uint8_t PROGMEM %s[] {\n' "${name_camelcase}"
     printf '    8, 8,  // 8x8 px image\n'
-    sed 's|#|//|g' "$hex_h" # Change `#` to `//` for comments
-    printf '};\n' 
+    sed 's|#|//|g' "$hex_h" # Change '#' to '//' for comments
+    printf '};\n'
   } >> "${cpp_hori_file}"
   # Add link to markdown gallery
   ((md_cpp_end=md_cpp_start+md_cpp_lines+md_extra_lines))
@@ -310,7 +328,7 @@ while (( "$#" )); do
   {
     printf '\nTIL %u\n' "${img_counter}" # Decimal TIL number should be base36 for Bitsy
     cat "$bin_h"
-    printf 'NAME %s\n' "${name_lowercase}" 
+    printf 'NAME %s\n' "${name_lowercase}"
   } >> "${bitsy_file}"
   # Add link to markdown gallery
   ((md_bitsy_end=md_bitsy_start+md_bitsy_lines))
@@ -354,7 +372,7 @@ while (( "$#" )); do
       STRING='\000'"${STRING}"
       digit_present=0
     else
-      ((VALUE=VALUE+1)) 
+      ((VALUE=VALUE+1))
       STRING=$(sed -n ${VALUE}p "${util_dir}/p8-codepage")${STRING}
       if [ $VALUE -ge 49 ] && [ $VALUE -le 58 ] ; then
         digit_present=1
@@ -384,7 +402,7 @@ while (( "$#" )); do
   printf '| [lua](/%s/%s.p8.lua#L%u-L%u) ' "${img_numbered_group}" "${group_lowercase}" $md_p8_start $md_p8_end >> "${md_file}"
   ((md_p8_start=md_p8_end+2))
 
-  
+
   # Create Thumby code
   thumby_file="${img_root}/${img_group}.thumby.WIP.txt"
   {
