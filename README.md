@@ -112,79 +112,79 @@ Contents:
 ### 04 – Lines
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| HorizontalDenseLineDash | ![](/previews/HorizontalDenseLineDash.png) | [png](/04-Lines/png/HorizontalDenseLineDash.png) | [cpp](/04-Lines/Lines.h#L12-L24) | txt | lua | py
-| HorizontalDenseLineDot | ![](/previews/HorizontalDenseLineDot.png) | [png](/04-Lines/png/HorizontalDenseLineDot.png) | [cpp](/04-Lines/Lines.h#L26-L38) | txt | lua | py
-| HorizontalDense <sup>o,p</sup>| ![](/previews/HorizontalDense.png) | [png](/04-Lines/png/HorizontalDense.png) | [cpp](/04-Lines/Lines.h#L40-L52) | txt | lua | py
-| Horizontal | ![](/previews/Horizontal.png) | [png](/04-Lines/png/Horizontal.png) | [cpp](/04-Lines/Lines.h#L54-L66) | txt | lua | py
-| HorizontalMedium <sup>o</sup>| ![](/previews/HorizontalMedium.png) | [png](/04-Lines/png/HorizontalMedium.png) | [cpp](/04-Lines/Lines.h#L68-L80) | txt | lua | py
-| HorizontalBold | ![](/previews/HorizontalBold.png) | [png](/04-Lines/png/HorizontalBold.png) | [cpp](/04-Lines/Lines.h#L82-L94) | txt | lua | py
-| HorizontalSparse | ![](/previews/HorizontalSparse.png) | [png](/04-Lines/png/HorizontalSparse.png) | [cpp](/04-Lines/Lines.h#L96-L107) | txt | lua | py
-| HorizontalSparseMedium | ![](/previews/HorizontalSparseMedium.png) | [png](/04-Lines/png/HorizontalSparseMedium.png) | [cpp](/04-Lines/Lines.h#L109-L120) | txt | lua | py
-| HorizontalSparseBold | ![](/previews/HorizontalSparseBold.png) | [png](/04-Lines/png/HorizontalSparseBold.png) | [cpp](/04-Lines/Lines.h#L122-L133) | txt | lua | py
-| HorizontalSparseExtraBold | ![](/previews/HorizontalSparseExtraBold.png) | [png](/04-Lines/png/HorizontalSparseExtraBold.png) | [cpp](/04-Lines/Lines.h#L135-L146) | txt | lua | py
-| HorizontalSparseUltraBold | ![](/previews/HorizontalSparseUltraBold.png) | [png](/04-Lines/png/HorizontalSparseUltraBold.png) | [cpp](/04-Lines/Lines.h#L148-L159) | txt | lua | py
-| HorizontalStripes | ![](/previews/HorizontalStripes.png) | [png](/04-Lines/png/HorizontalStripes.png) | [cpp](/04-Lines/Lines.h#L161-L172) | txt | lua | py
-| HorizontalPinstripe | ![](/previews/HorizontalPinstripe.png) | [png](/04-Lines/png/HorizontalPinstripe.png) | [cpp](/04-Lines/Lines.h#L174-L185) | txt | lua | py
-| HorizontalPinstripeMedium | ![](/previews/HorizontalPinstripeMedium.png) | [png](/04-Lines/png/HorizontalPinstripeMedium.png) | [cpp](/04-Lines/Lines.h#L187-L198) | txt | lua | py
+| HorizontalDenseLineDash | ![](/previews/HorizontalDenseLineDash.png) | [png](/04-Lines/png/HorizontalDenseLineDash.png) | [cpp](/04-Lines/Lines.h#L12-L24) | [txt](/04-Lines/Lines.bitsy.txt#L5-L14) | [lua](/04-Lines/lines.p8.lua#L7-L20) | [py](/04-Lines/Lines.thumby.py#L5-L16) |
+| HorizontalDenseLineDot | ![](/previews/HorizontalDenseLineDot.png) | [png](/04-Lines/png/HorizontalDenseLineDot.png) | [cpp](/04-Lines/Lines.h#L26-L38) | [txt](/04-Lines/Lines.bitsy.txt#L16-L25) | [lua](/04-Lines/lines.p8.lua#L22-L35) | [py](/04-Lines/Lines.thumby.py#L18-L29) |
+| HorizontalDense <sup>o,p</sup>| ![](/previews/HorizontalDense.png) | [png](/04-Lines/png/HorizontalDense.png) | [cpp](/04-Lines/Lines.h#L40-L52) | [txt](/04-Lines/Lines.bitsy.txt#L27-L36) | [lua](/04-Lines/lines.p8.lua#L37-L50) | [py](/04-Lines/Lines.thumby.py#L31-L42) |
+| Horizontal | ![](/previews/Horizontal.png) | [png](/04-Lines/png/Horizontal.png) | [cpp](/04-Lines/Lines.h#L54-L66) | [txt](/04-Lines/Lines.bitsy.txt#L38-L47) | [lua](/04-Lines/lines.p8.lua#L52-L65) | [py](/04-Lines/Lines.thumby.py#L44-L55) |
+| HorizontalMedium <sup>o</sup>| ![](/previews/HorizontalMedium.png) | [png](/04-Lines/png/HorizontalMedium.png) | [cpp](/04-Lines/Lines.h#L68-L80) | [txt](/04-Lines/Lines.bitsy.txt#L49-L58) | [lua](/04-Lines/lines.p8.lua#L67-L80) | [py](/04-Lines/Lines.thumby.py#L57-L68) |
+| HorizontalBold | ![](/previews/HorizontalBold.png) | [png](/04-Lines/png/HorizontalBold.png) | [cpp](/04-Lines/Lines.h#L82-L94) | [txt](/04-Lines/Lines.bitsy.txt#L60-L69) | [lua](/04-Lines/lines.p8.lua#L82-L95) | [py](/04-Lines/Lines.thumby.py#L70-L81) |
+| HorizontalSparse | ![](/previews/HorizontalSparse.png) | [png](/04-Lines/png/HorizontalSparse.png) | [cpp](/04-Lines/Lines.h#L96-L107) | [txt](/04-Lines/Lines.bitsy.txt#L71-L80) | [lua](/04-Lines/lines.p8.lua#L97-L109) | [py](/04-Lines/Lines.thumby.py#L83-L94) |
+| HorizontalSparseMedium | ![](/previews/HorizontalSparseMedium.png) | [png](/04-Lines/png/HorizontalSparseMedium.png) | [cpp](/04-Lines/Lines.h#L109-L120) | [txt](/04-Lines/Lines.bitsy.txt#L82-L91) | [lua](/04-Lines/lines.p8.lua#L111-L123) | [py](/04-Lines/Lines.thumby.py#L96-L107) |
+| HorizontalSparseBold | ![](/previews/HorizontalSparseBold.png) | [png](/04-Lines/png/HorizontalSparseBold.png) | [cpp](/04-Lines/Lines.h#L122-L133) | [txt](/04-Lines/Lines.bitsy.txt#L93-L102) | [lua](/04-Lines/lines.p8.lua#L125-L137) | [py](/04-Lines/Lines.thumby.py#L109-L120) |
+| HorizontalSparseExtraBold | ![](/previews/HorizontalSparseExtraBold.png) | [png](/04-Lines/png/HorizontalSparseExtraBold.png) | [cpp](/04-Lines/Lines.h#L135-L146) | [txt](/04-Lines/Lines.bitsy.txt#L104-L113) | [lua](/04-Lines/lines.p8.lua#L139-L151) | [py](/04-Lines/Lines.thumby.py#L122-L133) |
+| HorizontalSparseUltraBold | ![](/previews/HorizontalSparseUltraBold.png) | [png](/04-Lines/png/HorizontalSparseUltraBold.png) | [cpp](/04-Lines/Lines.h#L148-L159) | [txt](/04-Lines/Lines.bitsy.txt#L115-L124) | [lua](/04-Lines/lines.p8.lua#L153-L165) | [py](/04-Lines/Lines.thumby.py#L135-L146) |
+| HorizontalStripes | ![](/previews/HorizontalStripes.png) | [png](/04-Lines/png/HorizontalStripes.png) | [cpp](/04-Lines/Lines.h#L161-L172) | [txt](/04-Lines/Lines.bitsy.txt#L126-L135) | [lua](/04-Lines/lines.p8.lua#L167-L179) | [py](/04-Lines/Lines.thumby.py#L148-L159) |
+| HorizontalPinstripe | ![](/previews/HorizontalPinstripe.png) | [png](/04-Lines/png/HorizontalPinstripe.png) | [cpp](/04-Lines/Lines.h#L174-L185) | [txt](/04-Lines/Lines.bitsy.txt#L137-L146) | [lua](/04-Lines/lines.p8.lua#L181-L193) | [py](/04-Lines/Lines.thumby.py#L161-L172) |
+| HorizontalPinstripeMedium | ![](/previews/HorizontalPinstripeMedium.png) | [png](/04-Lines/png/HorizontalPinstripeMedium.png) | [cpp](/04-Lines/Lines.h#L187-L198) | [txt](/04-Lines/Lines.bitsy.txt#L148-L157) | [lua](/04-Lines/lines.p8.lua#L195-L207) | [py](/04-Lines/Lines.thumby.py#L174-L185) |
 
 <br>
 
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| VerticalDenseLineDash | ![](/previews/VerticalDenseLineDash.png) | [png](/04-Lines/png/VerticalDenseLineDash.png) | cpp | txt | lua | py
-| VerticalDenseLineDot | ![](/previews/VerticalDenseLineDot.png) | [png](/04-Lines/png/VerticalDenseLineDot.png) | cpp | txt | lua | py
-| VerticalDense <sup>o,p</sup>| ![](/previews/VerticalDense.png) | [png](/04-Lines/png/VerticalDense.png) | cpp | txt | lua | py
-| Vertical | ![](/previews/Vertical.png) | [png](/04-Lines/png/Vertical.png) | cpp | txt | lua | py
-| VerticalMedium <sup>o</sup>| ![](/previews/VerticalMedium.png) | [png](/04-Lines/png/VerticalMedium.png) | cpp | txt | lua | py
-| VerticalBold | ![](/previews/VerticalBold.png) | [png](/04-Lines/png/VerticalBold.png) | cpp | txt | lua | py
-| VerticalSparse | ![](/previews/VerticalSparse.png) | [png](/04-Lines/png/VerticalSparse.png) | cpp | txt | lua | py
-| VerticalSparseMedium | ![](/previews/VerticalSparseMedium.png) | [png](/04-Lines/png/VerticalSparseMedium.png) | cpp | txt | lua | py
-| VerticalSparseBold | ![](/previews/VerticalSparseBold.png) | [png](/04-Lines/png/VerticalSparseBold.png) | cpp | txt | lua | py
-| VerticalSparseExtraBold | ![](/previews/VerticalSparseExtraBold.png) | [png](/04-Lines/png/VerticalSparseExtraBold.png) | cpp | txt | lua | py
-| VerticalSparseUltraBold | ![](/previews/VerticalSparseUltraBold.png) | [png](/04-Lines/png/VerticalSparseUltraBold.png) | cpp | txt | lua | py
-| VerticalStripes | ![](/previews/VerticalStripes.png) | [png](/04-Lines/png/VerticalStripes.png) | cpp | txt | lua | py
-| VerticalPinstripe | ![](/previews/VerticalPinstripe.png) | [png](/04-Lines/png/VerticalPinstripe.png) | cpp | txt | lua | py
-| VerticalPinstripeMedium | ![](/previews/VerticalPinstripeMedium.png) | [png](/04-Lines/png/VerticalPinstripeMedium.png) | cpp | txt | lua | py
+| VerticalDenseLineDash | ![](/previews/VerticalDenseLineDash.png) | [png](/04-Lines/png/VerticalDenseLineDash.png) | [cpp](/04-Lines/Lines.h#L200-L212) | [txt](/04-Lines/Lines.bitsy.txt#L159-L168) | [lua](/04-Lines/lines.p8.lua#L209-L222) | [py](/04-Lines/Lines.thumby.py#L187-L198) |
+| VerticalDenseLineDot | ![](/previews/VerticalDenseLineDot.png) | [png](/04-Lines/png/VerticalDenseLineDot.png) | [cpp](/04-Lines/Lines.h#L214-L226) | [txt](/04-Lines/Lines.bitsy.txt#L170-L179) | [lua](/04-Lines/lines.p8.lua#L224-L237) | [py](/04-Lines/Lines.thumby.py#L200-L211) |
+| VerticalDense <sup>o,p</sup>| ![](/previews/VerticalDense.png) | [png](/04-Lines/png/VerticalDense.png) | [cpp](/04-Lines/Lines.h#L228-L240) | [txt](/04-Lines/Lines.bitsy.txt#L181-L190) | [lua](/04-Lines/lines.p8.lua#L239-L252) | [py](/04-Lines/Lines.thumby.py#L213-L224) |
+| Vertical | ![](/previews/Vertical.png) | [png](/04-Lines/png/Vertical.png) | [cpp](/04-Lines/Lines.h#L242-L254) | [txt](/04-Lines/Lines.bitsy.txt#L192-L201) | [lua](/04-Lines/lines.p8.lua#L254-L267) | [py](/04-Lines/Lines.thumby.py#L226-L237) |
+| VerticalMedium <sup>o</sup>| ![](/previews/VerticalMedium.png) | [png](/04-Lines/png/VerticalMedium.png) | [cpp](/04-Lines/Lines.h#L256-L268) | [txt](/04-Lines/Lines.bitsy.txt#L203-L212) | [lua](/04-Lines/lines.p8.lua#L269-L282) | [py](/04-Lines/Lines.thumby.py#L239-L250) |
+| VerticalBold | ![](/previews/VerticalBold.png) | [png](/04-Lines/png/VerticalBold.png) | [cpp](/04-Lines/Lines.h#L270-L282) | [txt](/04-Lines/Lines.bitsy.txt#L214-L223) | [lua](/04-Lines/lines.p8.lua#L284-L297) | [py](/04-Lines/Lines.thumby.py#L252-L263) |
+| VerticalSparse | ![](/previews/VerticalSparse.png) | [png](/04-Lines/png/VerticalSparse.png) | [cpp](/04-Lines/Lines.h#L284-L295) | [txt](/04-Lines/Lines.bitsy.txt#L225-L234) | [lua](/04-Lines/lines.p8.lua#L299-L311) | [py](/04-Lines/Lines.thumby.py#L265-L276) |
+| VerticalSparseMedium | ![](/previews/VerticalSparseMedium.png) | [png](/04-Lines/png/VerticalSparseMedium.png) | [cpp](/04-Lines/Lines.h#L297-L308) | [txt](/04-Lines/Lines.bitsy.txt#L236-L245) | [lua](/04-Lines/lines.p8.lua#L313-L325) | [py](/04-Lines/Lines.thumby.py#L278-L289) |
+| VerticalSparseBold | ![](/previews/VerticalSparseBold.png) | [png](/04-Lines/png/VerticalSparseBold.png) | [cpp](/04-Lines/Lines.h#L310-L321) | [txt](/04-Lines/Lines.bitsy.txt#L247-L256) | [lua](/04-Lines/lines.p8.lua#L327-L339) | [py](/04-Lines/Lines.thumby.py#L291-L302) |
+| VerticalSparseExtraBold | ![](/previews/VerticalSparseExtraBold.png) | [png](/04-Lines/png/VerticalSparseExtraBold.png) | [cpp](/04-Lines/Lines.h#L323-L334) | [txt](/04-Lines/Lines.bitsy.txt#L258-L267) | [lua](/04-Lines/lines.p8.lua#L341-L353) | [py](/04-Lines/Lines.thumby.py#L304-L315) |
+| VerticalSparseUltraBold | ![](/previews/VerticalSparseUltraBold.png) | [png](/04-Lines/png/VerticalSparseUltraBold.png) | [cpp](/04-Lines/Lines.h#L336-L347) | [txt](/04-Lines/Lines.bitsy.txt#L269-L278) | [lua](/04-Lines/lines.p8.lua#L355-L367) | [py](/04-Lines/Lines.thumby.py#L317-L328) |
+| VerticalStripes | ![](/previews/VerticalStripes.png) | [png](/04-Lines/png/VerticalStripes.png) | [cpp](/04-Lines/Lines.h#L349-L360) | [txt](/04-Lines/Lines.bitsy.txt#L280-L289) | [lua](/04-Lines/lines.p8.lua#L369-L381) | [py](/04-Lines/Lines.thumby.py#L330-L341) |
+| VerticalPinstripe | ![](/previews/VerticalPinstripe.png) | [png](/04-Lines/png/VerticalPinstripe.png) | [cpp](/04-Lines/Lines.h#L362-L373) | [txt](/04-Lines/Lines.bitsy.txt#L291-L300) | [lua](/04-Lines/lines.p8.lua#L383-L395) | [py](/04-Lines/Lines.thumby.py#L343-L354) |
+| VerticalPinstripeMedium | ![](/previews/VerticalPinstripeMedium.png) | [png](/04-Lines/png/VerticalPinstripeMedium.png) | [cpp](/04-Lines/Lines.h#L375-L386) | [txt](/04-Lines/Lines.bitsy.txt#L302-L311) | [lua](/04-Lines/lines.p8.lua#L397-L409) | [py](/04-Lines/Lines.thumby.py#L356-L367) |
 
 <br>
 
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Dexter | ![](/previews/Dexter.png) | [png](/04-Lines/png/Dexter.png) | cpp | txt | lua | py
-| DexterMedium <sup>o</sup>| ![](/previews/DexterMedium.png) | [png](/04-Lines/png/DexterMedium.png) | cpp | txt | lua | py
-| DexterBold <sup>o</sup>| ![](/previews/DexterBold.png) | [png](/04-Lines/png/DexterBold.png) | cpp | txt | lua | py
-| DexterSparse | ![](/previews/DexterSparse.png) | [png](/04-Lines/png/DexterSparse.png) | cpp | txt | lua | py
-| DexterSparseMedium | ![](/previews/DexterSparseMedium.png) | [png](/04-Lines/png/DexterSparseMedium.png) | cpp | txt | lua | py
-| DexterSparseBold | ![](/previews/DexterSparseBold.png) | [png](/04-Lines/png/DexterSparseBold.png) | cpp | txt | lua | py
-| DexterSparseExtraBold | ![](/previews/DexterSparseExtraBold.png) | [png](/04-Lines/png/DexterSparseExtraBold.png) | cpp | txt | lua | py
-| DexterSparseUltraBold <sup>o</sup>| ![](/previews/DexterSparseUltraBold.png) | [png](/04-Lines/png/DexterSparseUltraBold.png) | cpp | txt | lua | py
-| DexterStripes | ![](/previews/DexterStripes.png) | [png](/04-Lines/png/DexterStripes.png) | cpp | txt | lua | py
-| DexterPinstripe | ![](/previews/DexterPinstripe.png) | [png](/04-Lines/png/DexterPinstripe.png) | cpp | txt | lua | py
-| DexterPinstripeMedium | ![](/previews/DexterPinstripeMedium.png) | [png](/04-Lines/png/DexterPinstripeMedium.png) | cpp | txt | lua | py
-| DexterSteep | ![](/previews/DexterSteep.png) | [png](/04-Lines/png/DexterSteep.png) | cpp | txt | lua | py
-| DexterSteepMedium | ![](/previews/DexterSteepMedium.png) | [png](/04-Lines/png/DexterSteepMedium.png) | cpp | txt | lua | py
-| DexterShallow | ![](/previews/DexterShallow.png) | [png](/04-Lines/png/DexterShallow.png) | cpp | txt | lua | py
-| DexterShallowMedium | ![](/previews/DexterShallowMedium.png) | [png](/04-Lines/png/DexterShallowMedium.png) | cpp | txt | lua | py
+| Dexter | ![](/previews/Dexter.png) | [png](/04-Lines/png/Dexter.png) | [cpp](/04-Lines/Lines.h#L388-L400) | [txt](/04-Lines/Lines.bitsy.txt#L313-L322) | [lua](/04-Lines/lines.p8.lua#L411-L424) | [py](/04-Lines/Lines.thumby.py#L369-L380) |
+| DexterMedium <sup>o</sup>| ![](/previews/DexterMedium.png) | [png](/04-Lines/png/DexterMedium.png) | [cpp](/04-Lines/Lines.h#L402-L414) | [txt](/04-Lines/Lines.bitsy.txt#L324-L333) | [lua](/04-Lines/lines.p8.lua#L426-L439) | [py](/04-Lines/Lines.thumby.py#L382-L393) |
+| DexterBold <sup>o</sup>| ![](/previews/DexterBold.png) | [png](/04-Lines/png/DexterBold.png) | [cpp](/04-Lines/Lines.h#L416-L428) | [txt](/04-Lines/Lines.bitsy.txt#L335-L344) | [lua](/04-Lines/lines.p8.lua#L441-L454) | [py](/04-Lines/Lines.thumby.py#L395-L406) |
+| DexterSparse | ![](/previews/DexterSparse.png) | [png](/04-Lines/png/DexterSparse.png) | [cpp](/04-Lines/Lines.h#L430-L441) | [txt](/04-Lines/Lines.bitsy.txt#L346-L355) | [lua](/04-Lines/lines.p8.lua#L456-L468) | [py](/04-Lines/Lines.thumby.py#L408-L419) |
+| DexterSparseMedium | ![](/previews/DexterSparseMedium.png) | [png](/04-Lines/png/DexterSparseMedium.png) | [cpp](/04-Lines/Lines.h#L443-L454) | [txt](/04-Lines/Lines.bitsy.txt#L357-L366) | [lua](/04-Lines/lines.p8.lua#L470-L482) | [py](/04-Lines/Lines.thumby.py#L421-L432) |
+| DexterSparseBold | ![](/previews/DexterSparseBold.png) | [png](/04-Lines/png/DexterSparseBold.png) | [cpp](/04-Lines/Lines.h#L456-L467) | [txt](/04-Lines/Lines.bitsy.txt#L368-L377) | [lua](/04-Lines/lines.p8.lua#L484-L496) | [py](/04-Lines/Lines.thumby.py#L434-L445) |
+| DexterSparseExtraBold | ![](/previews/DexterSparseExtraBold.png) | [png](/04-Lines/png/DexterSparseExtraBold.png) | [cpp](/04-Lines/Lines.h#L469-L480) | [txt](/04-Lines/Lines.bitsy.txt#L379-L388) | [lua](/04-Lines/lines.p8.lua#L498-L510) | [py](/04-Lines/Lines.thumby.py#L447-L458) |
+| DexterSparseUltraBold <sup>o</sup>| ![](/previews/DexterSparseUltraBold.png) | [png](/04-Lines/png/DexterSparseUltraBold.png) | [cpp](/04-Lines/Lines.h#L482-L493) | [txt](/04-Lines/Lines.bitsy.txt#L390-L399) | [lua](/04-Lines/lines.p8.lua#L512-L524) | [py](/04-Lines/Lines.thumby.py#L460-L471) |
+| DexterStripes | ![](/previews/DexterStripes.png) | [png](/04-Lines/png/DexterStripes.png) | [cpp](/04-Lines/Lines.h#L495-L506) | [txt](/04-Lines/Lines.bitsy.txt#L401-L410) | [lua](/04-Lines/lines.p8.lua#L526-L538) | [py](/04-Lines/Lines.thumby.py#L473-L484) |
+| DexterPinstripe | ![](/previews/DexterPinstripe.png) | [png](/04-Lines/png/DexterPinstripe.png) | [cpp](/04-Lines/Lines.h#L508-L519) | [txt](/04-Lines/Lines.bitsy.txt#L412-L421) | [lua](/04-Lines/lines.p8.lua#L540-L552) | [py](/04-Lines/Lines.thumby.py#L486-L497) |
+| DexterPinstripeMedium | ![](/previews/DexterPinstripeMedium.png) | [png](/04-Lines/png/DexterPinstripeMedium.png) | [cpp](/04-Lines/Lines.h#L521-L532) | [txt](/04-Lines/Lines.bitsy.txt#L423-L432) | [lua](/04-Lines/lines.p8.lua#L554-L566) | [py](/04-Lines/Lines.thumby.py#L499-L510) |
+| DexterSteep | ![](/previews/DexterSteep.png) | [png](/04-Lines/png/DexterSteep.png) | [cpp](/04-Lines/Lines.h#L534-L545) | [txt](/04-Lines/Lines.bitsy.txt#L434-L443) | [lua](/04-Lines/lines.p8.lua#L568-L580) | [py](/04-Lines/Lines.thumby.py#L512-L523) |
+| DexterSteepMedium | ![](/previews/DexterSteepMedium.png) | [png](/04-Lines/png/DexterSteepMedium.png) | [cpp](/04-Lines/Lines.h#L547-L558) | [txt](/04-Lines/Lines.bitsy.txt#L445-L454) | [lua](/04-Lines/lines.p8.lua#L582-L594) | [py](/04-Lines/Lines.thumby.py#L525-L536) |
+| DexterShallow | ![](/previews/DexterShallow.png) | [png](/04-Lines/png/DexterShallow.png) | [cpp](/04-Lines/Lines.h#L560-L571) | [txt](/04-Lines/Lines.bitsy.txt#L456-L465) | [lua](/04-Lines/lines.p8.lua#L596-L608) | [py](/04-Lines/Lines.thumby.py#L538-L549) |
+| DexterShallowMedium | ![](/previews/DexterShallowMedium.png) | [png](/04-Lines/png/DexterShallowMedium.png) | [cpp](/04-Lines/Lines.h#L573-L584) | [txt](/04-Lines/Lines.bitsy.txt#L467-L476) | [lua](/04-Lines/lines.p8.lua#L610-L622) | [py](/04-Lines/Lines.thumby.py#L551-L562) |
 
 <br>
 
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Sinister | ![](/previews/Sinister.png) | [png](/04-Lines/png/Sinister.png) | cpp | txt | lua | py
-| SinisterMedium <sup>o</sup>| ![](/previews/SinisterMedium.png) | [png](/04-Lines/png/SinisterMedium.png) | cpp | txt | lua | py
-| SinisterBold <sup>o</sup>| ![](/previews/SinisterBold.png) | [png](/04-Lines/png/SinisterBold.png) | cpp | txt | lua | py
-| SinisterSparse | ![](/previews/SinisterSparse.png) | [png](/04-Lines/png/SinisterSparse.png) | cpp | txt | lua | py
-| SinisterSparseMedium | ![](/previews/SinisterSparseMedium.png) | [png](/04-Lines/png/SinisterSparseMedium.png) | cpp | txt | lua | py
-| SinisterSparseBold | ![](/previews/SinisterSparseBold.png) | [png](/04-Lines/png/SinisterSparseBold.png) | cpp | txt | lua | py
-| SinisterSparseExtraBold | ![](/previews/SinisterSparseExtraBold.png) | [png](/04-Lines/png/SinisterSparseExtraBold.png) | cpp | txt | lua | py
-| SinisterSparseUltraBold <sup>o</sup>| ![](/previews/SinisterSparseUltraBold.png) | [png](/04-Lines/png/SinisterSparseUltraBold.png) | cpp | txt | lua | py
-| SinisterStripes | ![](/previews/SinisterStripes.png) | [png](/04-Lines/png/SinisterStripes.png) | cpp | txt | lua | py
-| SinisterPinstripe | ![](/previews/SinisterPinstripe.png) | [png](/04-Lines/png/SinisterPinstripe.png) | cpp | txt | lua | py
-| SinisterPinstripeMedium | ![](/previews/SinisterPinstripeMedium.png) | [png](/04-Lines/png/SinisterPinstripeMedium.png) | cpp | txt | lua | py
-| SinisterSteep | ![](/previews/SinisterSteep.png) | [png](/04-Lines/png/SinisterSteep.png) | cpp | txt | lua | py
-| SinisterSteepMedium | ![](/previews/SinisterSteepMedium.png) | [png](/04-Lines/png/SinisterSteepMedium.png) | cpp | txt | lua | py
-| SinisterShallow | ![](/previews/SinisterShallow.png) | [png](/04-Lines/png/SinisterShallow.png) | cpp | txt | lua | py
-| SinisterShallowMedium | ![](/previews/SinisterShallowMedium.png) | [png](/04-Lines/png/SinisterShallowMedium.png) | cpp | txt | lua | py
+| Sinister | ![](/previews/Sinister.png) | [png](/04-Lines/png/Sinister.png) | [cpp](/04-Lines/Lines.h#L586-L598) | [txt](/04-Lines/Lines.bitsy.txt#L478-L487) | [lua](/04-Lines/lines.p8.lua#L624-L637) | [py](/04-Lines/Lines.thumby.py#L564-L575) |
+| SinisterMedium <sup>o</sup>| ![](/previews/SinisterMedium.png) | [png](/04-Lines/png/SinisterMedium.png) | [cpp](/04-Lines/Lines.h#L600-L612) | [txt](/04-Lines/Lines.bitsy.txt#L489-L498) | [lua](/04-Lines/lines.p8.lua#L639-L652) | [py](/04-Lines/Lines.thumby.py#L577-L588) |
+| SinisterBold <sup>o</sup>| ![](/previews/SinisterBold.png) | [png](/04-Lines/png/SinisterBold.png) | [cpp](/04-Lines/Lines.h#L614-L626) | [txt](/04-Lines/Lines.bitsy.txt#L500-L509) | [lua](/04-Lines/lines.p8.lua#L654-L667) | [py](/04-Lines/Lines.thumby.py#L590-L601) |
+| SinisterSparse | ![](/previews/SinisterSparse.png) | [png](/04-Lines/png/SinisterSparse.png) | [cpp](/04-Lines/Lines.h#L628-L639) | [txt](/04-Lines/Lines.bitsy.txt#L511-L520) | [lua](/04-Lines/lines.p8.lua#L669-L681) | [py](/04-Lines/Lines.thumby.py#L603-L614) |
+| SinisterSparseMedium | ![](/previews/SinisterSparseMedium.png) | [png](/04-Lines/png/SinisterSparseMedium.png) | [cpp](/04-Lines/Lines.h#L641-L652) | [txt](/04-Lines/Lines.bitsy.txt#L522-L531) | [lua](/04-Lines/lines.p8.lua#L683-L695) | [py](/04-Lines/Lines.thumby.py#L616-L627) |
+| SinisterSparseBold | ![](/previews/SinisterSparseBold.png) | [png](/04-Lines/png/SinisterSparseBold.png) | [cpp](/04-Lines/Lines.h#L654-L665) | [txt](/04-Lines/Lines.bitsy.txt#L533-L542) | [lua](/04-Lines/lines.p8.lua#L697-L709) | [py](/04-Lines/Lines.thumby.py#L629-L640) |
+| SinisterSparseExtraBold | ![](/previews/SinisterSparseExtraBold.png) | [png](/04-Lines/png/SinisterSparseExtraBold.png) | [cpp](/04-Lines/Lines.h#L667-L678) | [txt](/04-Lines/Lines.bitsy.txt#L544-L553) | [lua](/04-Lines/lines.p8.lua#L711-L723) | [py](/04-Lines/Lines.thumby.py#L642-L653) |
+| SinisterSparseUltraBold <sup>o</sup>| ![](/previews/SinisterSparseUltraBold.png) | [png](/04-Lines/png/SinisterSparseUltraBold.png) | [cpp](/04-Lines/Lines.h#L680-L691) | [txt](/04-Lines/Lines.bitsy.txt#L555-L564) | [lua](/04-Lines/lines.p8.lua#L725-L737) | [py](/04-Lines/Lines.thumby.py#L655-L666) |
+| SinisterStripes | ![](/previews/SinisterStripes.png) | [png](/04-Lines/png/SinisterStripes.png) | [cpp](/04-Lines/Lines.h#L693-L704) | [txt](/04-Lines/Lines.bitsy.txt#L566-L575) | [lua](/04-Lines/lines.p8.lua#L739-L751) | [py](/04-Lines/Lines.thumby.py#L668-L679) |
+| SinisterPinstripe | ![](/previews/SinisterPinstripe.png) | [png](/04-Lines/png/SinisterPinstripe.png) | [cpp](/04-Lines/Lines.h#L706-L717) | [txt](/04-Lines/Lines.bitsy.txt#L577-L586) | [lua](/04-Lines/lines.p8.lua#L753-L765) | [py](/04-Lines/Lines.thumby.py#L681-L692) |
+| SinisterPinstripeMedium | ![](/previews/SinisterPinstripeMedium.png) | [png](/04-Lines/png/SinisterPinstripeMedium.png) | [cpp](/04-Lines/Lines.h#L719-L730) | [txt](/04-Lines/Lines.bitsy.txt#L588-L597) | [lua](/04-Lines/lines.p8.lua#L767-L779) | [py](/04-Lines/Lines.thumby.py#L694-L705) |
+| SinisterSteep | ![](/previews/SinisterSteep.png) | [png](/04-Lines/png/SinisterSteep.png) | [cpp](/04-Lines/Lines.h#L732-L743) | [txt](/04-Lines/Lines.bitsy.txt#L599-L608) | [lua](/04-Lines/lines.p8.lua#L781-L793) | [py](/04-Lines/Lines.thumby.py#L707-L718) |
+| SinisterSteepMedium | ![](/previews/SinisterSteepMedium.png) | [png](/04-Lines/png/SinisterSteepMedium.png) | [cpp](/04-Lines/Lines.h#L745-L756) | [txt](/04-Lines/Lines.bitsy.txt#L610-L619) | [lua](/04-Lines/lines.p8.lua#L795-L807) | [py](/04-Lines/Lines.thumby.py#L720-L731) |
+| SinisterShallow | ![](/previews/SinisterShallow.png) | [png](/04-Lines/png/SinisterShallow.png) | [cpp](/04-Lines/Lines.h#L758-L769) | [txt](/04-Lines/Lines.bitsy.txt#L621-L630) | [lua](/04-Lines/lines.p8.lua#L809-L821) | [py](/04-Lines/Lines.thumby.py#L733-L744) |
+| SinisterShallowMedium | ![](/previews/SinisterShallowMedium.png) | [png](/04-Lines/png/SinisterShallowMedium.png) | [cpp](/04-Lines/Lines.h#L771-L782) | [txt](/04-Lines/Lines.bitsy.txt#L632-L641) | [lua](/04-Lines/lines.p8.lua#L823-L835) | [py](/04-Lines/Lines.thumby.py#L746-L757) |
 
 [`⤴`](#gallery)
 
