@@ -1,7 +1,10 @@
 #!/bin/bash
 
 # WARNING: Not safe for public use! Created for the author's benefit.
-# Assumes filenames and directory structure follows the project standard.
+# Assumes:
+# - Filenames and directory structure follows the project standard.
+# - Correct png images are fed in, or the parameter 'reset' followed by another png image.
+# - Exiftool and ImageMagick executables are available
 
 
 # Minimal check for input file(s)
@@ -14,7 +17,8 @@ fi
 
 
 # Directory for utilities
-readonly util_dir="$(dirname "${BASH_SOURCE[0]}")"
+util_dir="$(dirname "${BASH_SOURCE[0]}")"
+readonly util_dir
 
 # Standard metadata for images
 readonly project='8x8.me fill pattern.'
@@ -26,22 +30,46 @@ md_cpp_start=12   # Default 12
 md_bitsy_start=5  # Default 5
 md_p8_start=7     # Default 7
 md_thumby_start=5 # Default 5
-readonly md_cpp_lines=11 # 4x4 patterns have +1 lines (GAMBY)
+readonly md_cpp_lines=11 # 4x4 patterns will have +1 lines (GAMBY)
 readonly md_bitsy_lines=9
-readonly md_p8_lines=12 # 4x4 patterns have +1 lines (fillp)
+readonly md_p8_lines=12 # 4x4 patterns will have +1 lines (fillp)
 readonly md_thumby_lines=11
+
+# Code snippet parameters
+bitsy_map="$( echo {1..9} {A..Z} \
+  | tr -d '[:space:]' )" # Sequence of characters to assign for Bitsy patterns
+readonly bitsy_map
+readonly bitsy_map_length=${#bitsy_map}
+p8_map="$( echo {a..z} {0..9} {A..Z} \
+  | tr -d '[:space:]' )" # Sequence of characters to assign for P8 patterns
+readonly p8_map
+readonly p8_map_length=${#p8_map}
 
 
 img_counter=0
+bitsy_counter=0
+echo ''
+echo 'Crunching images into patterns...'
 while (( "$#" )); do
 
+  # Check for 'reset' parameter to restart Bitsy tile assignment
+  if [ "$1" == 'reset' ]; then
+    bitsy_counter=0
+    echo '--- Bitsy TIL numbering reset ---'
+    shift # Get the next parameter
+    continue
+  fi
+
+  # TODO: Add some checks for input PNG file validity
+
   ((img_counter=img_counter+1))
+  ((bitsy_counter=bitsy_counter+1))
 
   # Get the image name and group from the filename
   img_name="$( basename -s .png "$1" )"
   img_root="${1%/*/*}" # Base directory for the pattern
   img_numbered_group="$( basename "${img_root}" | tr -d ' ' )"
-  img_group="$( echo "${img_numbered_group}" | cut -f 2 -d "-" )"
+  img_group="$( echo "${img_numbered_group}" | cut -f 2 -d '-' )"
   # Format variations with different case
   name_lowercase="$( echo "${img_name}" | tr '[:upper:]' '[:lower:]' )"
   name_camelcase="${name_lowercase:0:1}${img_name:1}" # Lower case first letter and append remaining characters
@@ -77,12 +105,12 @@ while (( "$#" )); do
   magick "$1" -depth 1 +negate -rotate 90 -compress None PBM:- \
     | tail -n +3 \
     | tr -d ' ' > "${bin_v}"
-  echo -n "" > "${hex_h}"
-  echo -n "" > "${hex_v}"
+  echo -n '' > "${hex_h}"
+  echo -n '' > "${hex_v}"
   # Write files with hexadecimal values and comment lines
-  line=1; binary_str=""
+  line=1
   while [ ${line} -le 8 ]; do
-    binary_str="$( sed -n ${line}p "$bin_h" )" # Horizontal
+    binary_str="$( sed -n ${line}p "${bin_h}" )" # Horizontal
     {
       printf '    0x%02X,' "$((2#${binary_str}))"
       printf '  # %s\n' "${binary_str}" | tr '01' '▓░'
@@ -107,7 +135,7 @@ while (( "$#" )); do
   fi
   pattern_height=8
   if [ "$(head -n 4 "${bin_h}")" = "$(tail -n 4 "${bin_h}")" ]; then
-    pattern_height=4
+    pattern_height=4 # Pattern heights below 4 are treated the same
   fi
   echo "$img_name - Pattern width $pattern_width px x height $pattern_height px."
 
@@ -125,8 +153,8 @@ while (( "$#" )); do
 
   # Create cpp (Arduboy) code
   cpp_file="${img_root}/${img_group}.h.WIP.txt" # Vertical data
-  cpp_hori_file="${img_root}/${img_group}.h.WIP2.txt" # Horizontal data
-  # Vertical format data (sprite standard)
+  cpp_horiz_file="${img_root}/${img_group}.h.WIP2.txt" # Horizontal data
+  # Vertical format data (standard sprite)
   {
     printf '\nconstexpr uint8_t PROGMEM %s[] {\n' "${name_camelcase}"
     printf '    8, 8,  // 8x8 px image\n'
@@ -135,55 +163,65 @@ while (( "$#" )); do
   # Alternative 'magic' representation
   printf '};\n// Magic: ' >> "${cpp_file}"
   if [ ${pattern_width} -eq 1 ]; then
-    value=$((2#$(sed -n 1p "${bin_v}"))) # Convert first byte to decimal
-    if [ ${value} -lt 246 ]; then
-      printf '%u\n' ${value} >> "${cpp_file}"
-    else
-      ((value=255-value)) # Invert large values to save 1 char, e.g. '255' to '~0'
-      printf '~%u\n' ${value} >> "${cpp_file}"
-    fi
+    {
+      # Convert only the first byte to decimal
+      binary_str="$( sed -n 1p "${bin_v}" )"
+      value_dec=$((2#${binary_str}))
+      if [ ${value_dec} -lt 246 ]; then
+        printf '%u\n' ${value_dec}
+      else # Invert large values to save 1 char, e.g. '255' to '~0'
+        ((value_dec= 255 - value_dec))
+        printf '~%u\n' ${value_dec}
+      fi
+    } >> "${cpp_file}"
   elif [ ${pattern_width} -eq 2 ]; then
     # TODO: Catch edge cases where string encoding is smaller "Az"[i%2]
     # e.g. bayerDither04 `"U"[i%2]` vs `i&1?85:0`
     {
-      value=$((2#$(sed -n 1p "${bin_v}"))) # Convert byte 1 (first column) to decimal
-      if [ ${value} -lt 246 ]; then
-        printf 'i&1?%u' ${value}
-      else
-        ((value=255-value)) # Invert large values, e.g. '255' to '~0'
-        printf 'i&1?~%u' ${value}
+      # Convert byte 1 (first image column) to decimal
+      binary_str="$( sed -n 1p "${bin_v}" )"
+      value_dec=$((2#${binary_str}))
+      if [ ${value_dec} -lt 246 ]; then
+        printf 'i&1?%u' ${value_dec}
+      else # Invert large values, e.g. '255' to '~0'
+        ((value_dec= 255 - value_dec))
+        printf 'i&1?~%u' ${value_dec}
       fi
-      value=$((2#$(sed -n 2p "${bin_v}"))) # Convert byte 2 (second column) to decimal
-      if [ ${value} -lt 246 ]; then
-        printf ':%u\n' ${value}
-      else
-        ((value=255-value)) # Invert large values, e.g. '255' to '~0'
-        printf ':~%u\n' ${value}
+      # Convert byte 2 (second image column) to decimal
+      binary_str="$( sed -n 2p "${bin_v}" )"
+      value_dec=$((2#${binary_str}))
+      if [ ${value_dec} -lt 246 ]; then
+        printf ':%u\n' ${value_dec}
+      else # Invert large values, e.g. '255' to '~0'
+        ((value_dec= 255 - value_dec))
+        printf ':~%u\n' ${value_dec}
       fi
     } >> "${cpp_file}"
   else # Pattern width 4 and 8
     # Encode 'magic' as a string... hold tight...
     # First pass: scan byte values to estimate if inverted form will be more compact
-    column=$pattern_width; VALUE=""; INVERT=0
-    while [ $column -gt 0 ]; do
+    column=$pattern_width
+    INVERT=0
+    while [ ${column} -gt 0 ]; do
       # Find the decimal value for the current column (byte)
-      VALUE=$(printf '%u' "$((2#$(sed -n ${column}p "${bin_v}")))")
-      if [ $VALUE -le 13 ]; then
-        if [ $VALUE -eq 0 ] && [ $column = $pattern_width ]; then
+      binary_str="$( sed -n ${column}p "${bin_v}" )"
+      value_dec=$(printf '%u' "$((2#${binary_str}))")
+      if [ ${value_dec} -le 13 ]; then
+        if [ ${value_dec} -eq 0 ] && [ $column = $pattern_width ]; then
           ((INVERT=INVERT+4)) # cpp strings are null terminated
         else
           ((INVERT=INVERT+2))
         fi
-      elif [ $VALUE -le 31 ]; then
+      elif [ ${value_dec} -le 31 ]; then
         ((INVERT=INVERT+1))
-      elif [ $VALUE -le 127 ]; then
+      elif [ ${value_dec} -le 127 ]; then
         ((INVERT=INVERT+3))
-      elif [ $VALUE -le 223 ]; then
+      elif [ ${value_dec} -le 223 ]; then
         ((INVERT=INVERT-3))
-      elif [ $VALUE -le 241 ]; then
+      elif [ ${value_dec} -le 241 ]; then
         ((INVERT=INVERT-1))
       else
-        if [ $VALUE -eq 255 ] && [ $column = $pattern_width ]; then
+        if [ ${value_dec} -eq 255 ] && [ $column = $pattern_width ]; then
           ((INVERT=INVERT-4)) # cpp strings are null terminated
         else
           ((INVERT=INVERT-2))
@@ -193,95 +231,68 @@ while (( "$#" )); do
     done
     # Second pass: Encode the string
     # Process the columns (bytes) in reverse order
-    column=$pattern_width; VALUE=""; digit_present=0
+    column=$pattern_width
     # We store the end of the string first
-    STRING="\"[i%$pattern_width]"
+    encoded_string='"[i%'"${pattern_width}"']'
+    digit_present=0
     while [ $column -gt 0 ]; do
       # Find the octal value for the current column (byte)
-      VALUE=$(printf '%o' "$((2#$(sed -n ${column}p "${bin_v}")))")
+      binary_str=$( sed -n ${column}p "${bin_v}" )
+      value_oct=$(printf '%o' "$((2#${binary_str}))")
       if [ $INVERT -lt -1 ]; then
-        ((VALUE=377-VALUE))
+        ((value_oct= 377 - value_oct))
       fi
       # Process the octal value, to handle special cases for encoding
-      case $VALUE in
+      case ${value_oct} in
         [0-6])
-          if [ ${VALUE} -eq 0 ] && [ ${column} = ${pattern_width} ]; then
-            # cpp strings are always null terminated
-            VALUE=""
+          if [ ${value_oct} -eq 0 ] && [ ${column} = ${pattern_width} ]; then
+            # cpp strings are always null terminated, so encoded for free
+            encoded_byte=''
           elif [ ${digit_present} -eq 1 ]; then
             # Add leading zeroes to make octal value unambiguous
-            VALUE="\\00$VALUE"
+            encoded_byte='\00'"${value_oct}"
           else
-            VALUE="\\$VALUE"
+            encoded_byte='\'"${value_oct}"
           fi
         ;;
-        # Escape codes are more compact
-        7)
-          VALUE="\\a"
-        ;;
-        10)
-          VALUE="\\b"
-        ;;
-        11)
-          VALUE="\\t"
-        ;;
-        12)
-          VALUE="\\n"
-        ;;
-        13)
-          VALUE="\\v"
-        ;;
-        14)
-          VALUE="\\f"
-        ;;
-        15)
-          VALUE="\\r"
-        ;;
-        1[6-7]|2[0-7]|3[0-2])
-          if [ ${digit_present} -eq 1 ]; then
-            # Add leading zero to make octal value unambiguous
-            VALUE="\\0$VALUE"
-          else
-            VALUE="\\$VALUE"
-          fi
+        # Escape codes for non-printing characters are more compact, when available
+        7|1[0-5])
+          index=$((8#${value_oct} - 6)) # Convert to decimal and offset
+          encoded_byte='\'"$(echo 'abtnvfr' | cut -c ${index})"
         ;;
         33)
-          VALUE="\\e"
+          encoded_byte='\e'
         ;;
-        3[4-7])
+        1[6-7]|2[0-7]|3[0-2]|3[4-7])
           if [ ${digit_present} -eq 1 ]; then
-            VALUE="\\0$VALUE"
+            # Add leading zero to make octal value unambiguous
+            encoded_byte='\0'"${value_oct}"
           else
-            VALUE="\\$VALUE"
+            encoded_byte='\'"${value_oct}"
           fi
         ;;
         # 040 Start of printable, 7-bit characters (32 or 0x20)
-        4[0-1])
-          VALUE=$(printf '%b' "\\$VALUE")
+        4[0-1]|4[3-7]|5[0-7]|6[0-7]|7[0-7]|10[0-7]|11[0-7]|12[0-7]|13[0-3])
+          encoded_byte=$(printf '%b' '\'"${value_oct}")
         ;;
-        # Escape for ' " '
         42)
-          VALUE="\\\""
+          encoded_byte='\"' # Double quote character must be escaped with `\`
         ;;
-        4[3-7]|5[0-7]|6[0-7]|7[0-7]|10[0-7]|11[0-7]|12[0-7]|13[0-3])
-          VALUE=$(printf '%b' "\\$VALUE")
-        ;;
-        # Escape for ' \ '
         134)
-          VALUE="\\\\"
+          encoded_byte='\\' # Back slash character must be escaped with `\`
         ;;
         13[5-7]|14[0-7]|15[0-7]|16[0-7]|17[0-6])
-          VALUE=$(printf '%b' "\\$VALUE")
+          encoded_byte=$(printf '%b' '\'"${value_oct}")
         ;;
         # 0176 End of printable, 7-bit characters (127 or 0x7E)
         *)
           # Remaining values are encoded as a 3 digit octal
-          VALUE="\\""$VALUE"
+          encoded_byte='\'"${value_oct}"
         ;;
       esac
       # Check if the character output is a valid octal digit (0-7)
       # This may affect encoding of the next (preceding) octal value
-      case "${VALUE}" in
+      case "${encoded_byte}" in
         [0-7])
           digit_present=1
         ;;
@@ -289,14 +300,14 @@ while (( "$#" )); do
           digit_present=0
         ;;
       esac
-      STRING="$VALUE""$STRING"
+      encoded_string="${encoded_byte}${encoded_string}"
       ((column=column-1))
     done
-    STRING="\"""$STRING"
+    encoded_string='"'"${encoded_string}"
     if [ $INVERT -lt -1 ]; then
-      STRING="~""$STRING"
+      encoded_string='~'"${encoded_string}"
     fi
-    printf '%s\n' "$STRING" >> "${cpp_file}"
+    printf '%s\n' "${encoded_string}" >> "${cpp_file}"
   fi
   # Bonus 4x4px GAMBY data
   if [ $pattern_width -le 4 ] && [ $pattern_height -le 4 ]; then
@@ -316,55 +327,62 @@ while (( "$#" )); do
     printf '    8, 8,  // 8x8 px image\n'
     sed 's|#|//|g' "$hex_h" # Change '#' to '//' for comments
     printf '};\n'
-  } >> "${cpp_hori_file}"
+  } >> "${cpp_horiz_file}"
   # Add link to markdown gallery
   ((md_cpp_end=md_cpp_start+md_cpp_lines+md_extra_lines))
-  printf '| [cpp](/%s/%s.h#L%u-L%u) ' "${img_numbered_group}" "${img_group}" $md_cpp_start $md_cpp_end >> "${md_file}"
+  printf '| [cpp](/%s/%s.h#L%u-L%u) ' \
+    "${img_numbered_group}" "${img_group}" "${md_cpp_start}" "${md_cpp_end}" >> "${md_file}"
   ((md_cpp_start=md_cpp_end+2))
 
 
   # Create Bitsy tile data
   bitsy_file="${img_root}/${img_group}.bitsy.WIP.txt"
+  index=$(( (bitsy_counter-1) % bitsy_map_length ))
+  bitsy_mapped_char="${bitsy_map:index:1}"
   {
-    printf '\nTIL %u\n' "${img_counter}" # Decimal TIL number should be base36 for Bitsy
+    printf '\nTIL %c\n' "${bitsy_mapped_char}"
     cat "$bin_h"
     printf 'NAME %s\n' "${name_lowercase}"
   } >> "${bitsy_file}"
   # Add link to markdown gallery
   ((md_bitsy_end=md_bitsy_start+md_bitsy_lines))
-  printf '| [txt](/%s/%s.bitsy.txt#L%u-L%u) ' "${img_numbered_group}" "${img_group}" $md_bitsy_start $md_bitsy_end >> "${md_file}"
+  printf '| [txt](/%s/%s.bitsy.txt#L%u-L%u) ' \
+    "${img_numbered_group}" "${img_group}" "${md_bitsy_start}" "${md_bitsy_end}" >> "${md_file}"
   ((md_bitsy_start=md_bitsy_end+2))
 
 
   # Create PICO-8 code
   p8_file="${img_root}/${img_group}.p8.lua.WIP.txt"
-  # Produce data as a custom font
-  ((ascii_code=96+img_counter)) # Start encoding at character 'a'=97
-  ascii_char=$(printf "\x$(printf '%x' ${ascii_code})")
+  # Store bitmap data as a custom font
+  index=$(( (img_counter-1) % p8_map_length ))
+  p8_mapped_char="${p8_map:index:1}"
+  ascii_code=$( printf '%d' "'${p8_mapped_char}" )
   {
-    printf -- "\n--%u '%s' %s\n" ${ascii_code} "${ascii_char}" "${name_lowercase}"
-    printf 'poke(0x5600+(8* %u),\n' ${ascii_code}
+    printf -- "\n--%u '%c' %s\n" "${ascii_code}" "${p8_mapped_char}" "${name_lowercase}"
+    printf 'poke(0x5600+(8* %u),\n' "${ascii_code}"
   } >> "${p8_file}"
   row=1
   while [ $row -le 8 ]; do
-    # P8 custom fonts are horizontal but LSB first, so bit sequence is reversed before calculating decimal value
-    printf ' %3u' "$((2#$(sed -n ${row}p "${bin_h}" | rev)))"
+    # P8 custom fonts have LSB first, so bit sequence is reversed before calculating decimal value
+    value="$((2#$( sed -n ${row}p "${bin_h}" | rev )))"
+    printf ' %3u' "${value}"
     if [ $row -lt 8 ]; then
       printf -- ', -- '
     else
       printf -- '  -- '
     fi
-    sed -n ${row}p "${bin_h}" | tr '01' '▒█' # Shown as drawn to screen - not as the stored (reversed) bitfield
+    sed -n ${row}p "${bin_h}" | tr '01' '▒█' # Shown as drawn to screen, not as the stored bitfield (reversed)
     ((row=row+1))
   done >> "${p8_file}"
-
   printf ')\n' >> "${p8_file}"
   # Helper code snippet to copy font character to Sprite 0
-  printf -- '-->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉ%s"for i=0,448,64do memcpy(i,24576+i,4)end cstore()\n' "${ascii_char}">> "${p8_file}"
+  printf -- '-->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉ%c"for i=0,448,64do memcpy(i,24576+i,4)end cstore()\n' \
+    "${p8_mapped_char}" >> "${p8_file}"
   # Bonus: 'magic' one-off character, encoded as a string
-  column=8; VALUE=""; digit_present=0
+  column=8
   # We store the end of the string first
-  STRING="\""
+  STRING='"'
+  digit_present=0
   while [ $column -gt 0 ]; do
     # Find the decimal value for the current column (byte)
     VALUE=$(printf '%i' "$((2#$(sed -n ${column}p "$bin_h" | rev)))")
@@ -385,8 +403,8 @@ while (( "$#" )); do
   printf -- '--magic: ?"⁶rw¹シ⁶.".."%s\n' "${STRING}" >> "${p8_file}"
   # Bonus: For 4x4px patterns produce fillp() alternative
   if [ $pattern_width -le 4 ] && [ $pattern_height -le 4 ]; then
-    printf -- '--fillp(' >> "${p8_file}"
-    row=1; VALUE=""; STRING="0x"
+    row=1
+    STRING='0x'
     while [ $row -le 4 ]; do
       # Invert binary values 0<>1 to fix fore-/background
       VALUE=$(sed -n ${row}p "${bin_h}"\
@@ -395,11 +413,12 @@ while (( "$#" )); do
       STRING=${STRING}$(printf '%X' $((2#${VALUE})))
       ((row=row+1))
     done
-    printf '%u)\n' "$STRING" >> "${p8_file}"
+    printf -- '--fillp(%u)\n' "${STRING}" >> "${p8_file}"
   fi
   # Add link to markdown gallery
   ((md_p8_end=md_p8_start+md_p8_lines+md_extra_lines))
-  printf '| [lua](/%s/%s.p8.lua#L%u-L%u) ' "${img_numbered_group}" "${group_lowercase}" $md_p8_start $md_p8_end >> "${md_file}"
+  printf '| [lua](/%s/%s.p8.lua#L%u-L%u) ' \
+    "${img_numbered_group}" "${group_lowercase}" "${md_p8_start}" "${md_p8_end}" >> "${md_file}"
   ((md_p8_start=md_p8_end+2))
 
 
@@ -426,7 +445,8 @@ while (( "$#" )); do
   } >> "${thumby_file}"
   # Add link to markdown gallery
   ((md_thumby_end=md_thumby_start+md_thumby_lines))
-  printf '| [py](/%s/%s.thumby.py#L%u-L%u) |' "${img_numbered_group}" "${img_group}" $md_thumby_start $md_thumby_end >> "${md_file}"
+  printf '| [py](/%s/%s.thumby.py#L%u-L%u) |' \
+    "${img_numbered_group}" "${img_group}" "${md_thumby_start}" "${md_thumby_end}" >> "${md_file}"
   ((md_thumby_start=md_thumby_end+2))
 
   # Remove temporary files
@@ -435,3 +455,7 @@ while (( "$#" )); do
   # Move to next image file provided
   shift
 done
+
+echo '...Finished :)'
+echo ''
+exit
