@@ -113,6 +113,19 @@ namespace patterns {
     };
     // Magic: "U@_@U\4\365\4"[i%8]
 
+    constexpr uint8_t PROGMEM squareBasket[] {
+        8, 8,  // 8x8 px image
+        0x57,  // ▓░▓░▓░░░
+        0x50,  // ▓░▓░▓▓▓▓
+        0x57,  // ▓░▓░▓░░░
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x75,  // ▓░░░▓░▓░
+        0x05,  // ▓▓▓▓▓░▓░
+        0x75,  // ▓░░░▓░▓░
+        0x00,  // ▓▓▓▓▓▓▓▓
+    };
+    // Magic: "WPW\0u\5u"[i%8]
+
     constexpr uint8_t PROGMEM puppytooth[] {
         8, 8,  // 8x8 px image
         0x44,  // ▓░▓▓▓░▓▓
@@ -280,6 +293,18 @@ namespace patternsHorizontal {
         0x02,  // ▓▓▓▓▓▓░▓
         0xFA,  // ░░░░░▓░▓
         0x02,  // ▓▓▓▓▓▓░▓
+    };
+
+    constexpr uint8_t PROGMEM squareBasket[] {
+        8, 8,  // 8x8 px image
+        0xAE,  // ░▓░▓░░░▓
+        0xA0,  // ░▓░▓▓▓▓▓
+        0xAE,  // ░▓░▓░░░▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0xEA,  // ░░░▓░▓░▓
+        0x0A,  // ▓▓▓▓░▓░▓
+        0xEA,  // ░░░▓░▓░▓
+        0x00,  // ▓▓▓▓▓▓▓▓
     };
 
     constexpr uint8_t PROGMEM puppytooth[] {

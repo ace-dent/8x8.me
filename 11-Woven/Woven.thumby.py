@@ -2,7 +2,6 @@
 # This work is dedicated to the Public Domain by ACED, licensed under CC0
 # https://creativecommons.org/publicdomain/zero/1.0/
 
-
 interlinked = bytearray([
     # BITMAP: width: 8, height: 8, [186,119,187,221,234,119,174,221]
     0xBA,  # ░▓░░░▓░▓
@@ -106,6 +105,19 @@ laced = bytearray([
     0x04,  # ▓▓▓▓▓░▓▓
 ])
 # lacedSprite = thumby.Sprite(8, 8, laced)
+
+squareBasket = bytearray([
+    # BITMAP: width: 8, height: 8, [87,80,87,0,117,5,117,0]
+    0x57,  # ▓░▓░▓░░░
+    0x50,  # ▓░▓░▓▓▓▓
+    0x57,  # ▓░▓░▓░░░
+    0x00,  # ▓▓▓▓▓▓▓▓
+    0x75,  # ▓░░░▓░▓░
+    0x05,  # ▓▓▓▓▓░▓░
+    0x75,  # ▓░░░▓░▓░
+    0x00,  # ▓▓▓▓▓▓▓▓
+])
+# squareBasketSprite = thumby.Sprite(8, 8, squareBasket)
 
 puppytooth = bytearray([
     # BITMAP: width: 8, height: 8, [68,119,238,34,68,119,238,34]

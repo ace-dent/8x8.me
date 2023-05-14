@@ -318,19 +318,20 @@ Contents:
 ### 11 – Woven
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Interlinked <sup>o</sup>| ![](/previews/Interlinked.png) | [png](/11-Woven/png/Interlinked.png) | [cpp](/11-Woven/Woven.h#L12-L23) | [txt](/11-Woven/Woven.bitsy.txt#L5-L14) | [lua](/11-Woven/woven.p8.lua#L7-L19) | [py](/11-Woven/Woven.thumby.py#L6-L17)
-| WeaveDense | ![](/previews/WeaveDense.png) | [png](/11-Woven/png/WeaveDense.png) | [cpp](/11-Woven/Woven.h#L25-L36) | [txt](/11-Woven/Woven.bitsy.txt#L16-L25) | [lua](/11-Woven/woven.p8.lua#L21-L33) | [py](/11-Woven/Woven.thumby.py#L19-L30)
-| Weave | ![](/previews/Weave.png) | [png](/11-Woven/png/Weave.png) | [cpp](/11-Woven/Woven.h#L38-L49)  | [txt](/11-Woven/Woven.bitsy.txt#L27-L36) | [lua](/11-Woven/woven.p8.lua#L35-L47) | [py](/11-Woven/Woven.thumby.py#L32-L43)
-| WeaveMedium | ![](/previews/WeaveMedium.png) | [png](/11-Woven/png/WeaveMedium.png) | [cpp](/11-Woven/Woven.h#L51-L62)  | [txt](/11-Woven/Woven.bitsy.txt#L38-L47) | [lua](/11-Woven/woven.p8.lua#L49-L61) | [py](/11-Woven/Woven.thumby.py#L45-L56)
-| WeaveBold | ![](/previews/WeaveBold.png) | [png](/11-Woven/png/WeaveBold.png) | [cpp](/11-Woven/Woven.h#L64-L75)  | [txt](/11-Woven/Woven.bitsy.txt#L49-L58) | [lua](/11-Woven/woven.p8.lua#L63-L75) | [py](/11-Woven/Woven.thumby.py#L58-L69)
-| Net | ![](/previews/Net.png) | [png](/11-Woven/png/Net.png) | [cpp](/11-Woven/Woven.h#L77-L88)  | [txt](/11-Woven/Woven.bitsy.txt#L60-L69) | [lua](/11-Woven/woven.p8.lua#L77-L89) | [py](/11-Woven/Woven.thumby.py#L71-L82)
-| Wicker | ![](/previews/Wicker.png) | [png](/11-Woven/png/Wicker.png) | [cpp](/11-Woven/Woven.h#L90-L101)  | [txt](/11-Woven/Woven.bitsy.txt#L71-L80) | [lua](/11-Woven/woven.p8.lua#L91-L103) | [py](/11-Woven/Woven.thumby.py#L84-L95)
-| Laced | ![](/previews/Laced.png) | [png](/11-Woven/png/Laced.png) | [cpp](/11-Woven/Woven.h#L103-L114)  | [txt](/11-Woven/Woven.bitsy.txt#L82-L91) | [lua](/11-Woven/woven.p8.lua#L105-L117) | [py](/11-Woven/Woven.thumby.py#L97-L108)
-| Puppytooth <sup>p</sup>| ![](/previews/Puppytooth.png) | [png](/11-Woven/png/Puppytooth.png) | [cpp](/11-Woven/Woven.h#L116-L128)  | [txt](/11-Woven/Woven.bitsy.txt#L93-L102) | [lua](/11-Woven/woven.p8.lua#L119-L132) | [py](/11-Woven/Woven.thumby.py#L110-L121)
-| Houndstooth | ![](/previews/Houndstooth.png) | [png](/11-Woven/png/Houndstooth.png) | [cpp](/11-Woven/Woven.h#L130-L141)  | [txt](/11-Woven/Woven.bitsy.txt#L104-L113) | [lua](/11-Woven/woven.p8.lua#L134-L146) | [py](/11-Woven/Woven.thumby.py#L123-L134)
-| Gingham | ![](/previews/Gingham.png) | [png](/11-Woven/png/Gingham.png) | [cpp](/11-Woven/Woven.h#L143-L154)  | [txt](/11-Woven/Woven.bitsy.txt#L115-L124) | [lua](/11-Woven/woven.p8.lua#L148-L160) | [py](/11-Woven/Woven.thumby.py#L136-L147)
-| Plaid <sup>o</sup>| ![](/previews/Plaid.png) | [png](/11-Woven/png/Plaid.png) | [cpp](/11-Woven/Woven.h#L156-L167)  | [txt](/11-Woven/Woven.bitsy.txt#L126-L135) | [lua](/11-Woven/woven.p8.lua#L162-L174) | [py](/11-Woven/Woven.thumby.py#L149-L160)
-| Tartan | ![](/previews/Tartan.png) | [png](/11-Woven/png/Tartan.png) | [cpp](/11-Woven/Woven.h#L169-L180)  | [txt](/11-Woven/Woven.bitsy.txt#L137-L146) | [lua](/11-Woven/woven.p8.lua#L176-L188) | [py](/11-Woven/Woven.thumby.py#L162-L173)
+| Interlinked <sup>o</sup>| ![](/previews/Interlinked.png) | [png](/11-Woven/png/Interlinked.png) | [cpp](/11-Woven/Woven.h#L12-L23) | [txt](/11-Woven/Woven.bitsy.txt#L5-L14) | [lua](/11-Woven/woven.p8.lua#L7-L19) | [py](/11-Woven/Woven.thumby.py#L5-L16) |
+| WeaveDense | ![](/previews/WeaveDense.png) | [png](/11-Woven/png/WeaveDense.png) | [cpp](/11-Woven/Woven.h#L25-L36) | [txt](/11-Woven/Woven.bitsy.txt#L16-L25) | [lua](/11-Woven/woven.p8.lua#L21-L33) | [py](/11-Woven/Woven.thumby.py#L18-L29) |
+| Weave | ![](/previews/Weave.png) | [png](/11-Woven/png/Weave.png) | [cpp](/11-Woven/Woven.h#L38-L49) | [txt](/11-Woven/Woven.bitsy.txt#L27-L36) | [lua](/11-Woven/woven.p8.lua#L35-L47) | [py](/11-Woven/Woven.thumby.py#L31-L42) |
+| WeaveMedium | ![](/previews/WeaveMedium.png) | [png](/11-Woven/png/WeaveMedium.png) | [cpp](/11-Woven/Woven.h#L51-L62) | [txt](/11-Woven/Woven.bitsy.txt#L38-L47) | [lua](/11-Woven/woven.p8.lua#L49-L61) | [py](/11-Woven/Woven.thumby.py#L44-L55) |
+| WeaveBold | ![](/previews/WeaveBold.png) | [png](/11-Woven/png/WeaveBold.png) | [cpp](/11-Woven/Woven.h#L64-L75) | [txt](/11-Woven/Woven.bitsy.txt#L49-L58) | [lua](/11-Woven/woven.p8.lua#L63-L75) | [py](/11-Woven/Woven.thumby.py#L57-L68) |
+| Net | ![](/previews/Net.png) | [png](/11-Woven/png/Net.png) | [cpp](/11-Woven/Woven.h#L77-L88) | [txt](/11-Woven/Woven.bitsy.txt#L60-L69) | [lua](/11-Woven/woven.p8.lua#L77-L89) | [py](/11-Woven/Woven.thumby.py#L70-L81) |
+| Wicker | ![](/previews/Wicker.png) | [png](/11-Woven/png/Wicker.png) | [cpp](/11-Woven/Woven.h#L90-L101) | [txt](/11-Woven/Woven.bitsy.txt#L71-L80) | [lua](/11-Woven/woven.p8.lua#L91-L103) | [py](/11-Woven/Woven.thumby.py#L83-L94) |
+| Laced | ![](/previews/Laced.png) | [png](/11-Woven/png/Laced.png) | [cpp](/11-Woven/Woven.h#L103-L114) | [txt](/11-Woven/Woven.bitsy.txt#L82-L91) | [lua](/11-Woven/woven.p8.lua#L105-L117) | [py](/11-Woven/Woven.thumby.py#L96-L107) |
+| SquareBasket | ![](/previews/SquareBasket.png) | [png](/11-Woven/png/SquareBasket.png) | [cpp](/11-Woven/Woven.h#L116-L127) | [txt](/11-Woven/Woven.bitsy.txt#L93-L102) | [lua](/11-Woven/woven.p8.lua#L119-L131) | [py](/11-Woven/Woven.thumby.py#L109-L120) |
+| Puppytooth <sup>p</sup>| ![](/previews/Puppytooth.png) | [png](/11-Woven/png/Puppytooth.png) | [cpp](/11-Woven/Woven.h#L129-L141) | [txt](/11-Woven/Woven.bitsy.txt#L104-L113) | [lua](/11-Woven/woven.p8.lua#L133-L146) | [py](/11-Woven/Woven.thumby.py#L122-L133) |
+| Houndstooth | ![](/previews/Houndstooth.png) | [png](/11-Woven/png/Houndstooth.png) | [cpp](/11-Woven/Woven.h#L143-L154) | [txt](/11-Woven/Woven.bitsy.txt#L115-L124) | [lua](/11-Woven/woven.p8.lua#L148-L160) | [py](/11-Woven/Woven.thumby.py#L135-L146) |
+| Gingham | ![](/previews/Gingham.png) | [png](/11-Woven/png/Gingham.png) | [cpp](/11-Woven/Woven.h#L156-L167) | [txt](/11-Woven/Woven.bitsy.txt#L126-L135) | [lua](/11-Woven/woven.p8.lua#L162-L174) | [py](/11-Woven/Woven.thumby.py#L148-L159) |
+| Plaid | ![](/previews/Plaid.png) | [png](/11-Woven/png/Plaid.png) | [cpp](/11-Woven/Woven.h#L169-L180) | [txt](/11-Woven/Woven.bitsy.txt#L137-L146) | [lua](/11-Woven/woven.p8.lua#L176-L188) | [py](/11-Woven/Woven.thumby.py#L161-L172) |
+| Tartan | ![](/previews/Tartan.png) | [png](/11-Woven/png/Tartan.png) | [cpp](/11-Woven/Woven.h#L182-L193) | [txt](/11-Woven/Woven.bitsy.txt#L148-L157) | [lua](/11-Woven/woven.p8.lua#L190-L202) | [py](/11-Woven/Woven.thumby.py#L174-L185) |
 
 [`⤴`](#gallery)
 
@@ -348,7 +349,6 @@ Contents:
 | BrickMini | ![](/previews/BrickMini.png) | [png](/12-Architecture/png/BrickMini.png) | cpp | txt | lua | py
 | BrickMiniDamage | ![](/previews/BrickMiniDamage.png) | [png](/12-Architecture/png/BrickMiniDamage.png) | cpp | txt | lua | py
 | BrickMiniRuins | ![](/previews/BrickMiniRuins.png) | [png](/12-Architecture/png/BrickMiniRuins.png) | cpp | txt | lua | py
-| SquareBasket | ![](/previews/SquareBasket.png) | [png](/12-Architecture/png/SquareBasket.png) | cpp | txt | lua | py
 | StoneWall | ![](/previews/StoneWall.png) | [png](/12-Architecture/png/StoneWall.png) | cpp | txt | lua | py
 | Flagstone | ![](/previews/Flagstone.png) | [png](/12-Architecture/png/Flagstone.png) | cpp | txt | lua | py
 | PavingStones | ![](/previews/PavingStones.png) | [png](/12-Architecture/png/PavingStones.png) | cpp | txt | lua | py
