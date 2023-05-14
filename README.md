@@ -350,8 +350,12 @@ Contents:
 | BrickMiniDamage | ![](/previews/BrickMiniDamage.png) | [png](/12-Architecture/png/BrickMiniDamage.png) | cpp | txt | lua | py
 | BrickMiniRuins | ![](/previews/BrickMiniRuins.png) | [png](/12-Architecture/png/BrickMiniRuins.png) | cpp | txt | lua | py
 | StoneWall | ![](/previews/StoneWall.png) | [png](/12-Architecture/png/StoneWall.png) | cpp | txt | lua | py
+| QuarryWall | ![](/previews/QuarryWall.png) | [png](/12-Architecture/png/QuarryWall.png) | cpp | txt | lua | py
+| StoneBlock | ![](/previews/StoneBlock.png) | [png](/12-Architecture/png/StoneBlock.png) | cpp | txt | lua | py
 | Flagstone | ![](/previews/Flagstone.png) | [png](/12-Architecture/png/Flagstone.png) | cpp | txt | lua | py
 | PavingStones | ![](/previews/PavingStones.png) | [png](/12-Architecture/png/PavingStones.png) | cpp | txt | lua | py
+| Archway | ![](/previews/Archway.png) | [png](/12-Architecture/png/Archway.png) | cpp | txt | lua | py
+| Window | ![](/previews/Window.png) | [png](/12-Architecture/png/Window.png) | cpp | txt | lua | py
 | Picket | ![](/previews/Picket.png) | [png](/12-Architecture/png/Picket.png) | cpp | txt | lua | py
 
 [`⤴`](#gallery)
