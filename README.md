@@ -276,7 +276,7 @@ Contents:
 | Waffle | ![](/previews/Waffle.png) | [png](/08-Rectilinear/png/Waffle.png) | cpp | txt | lua | py |
 | Tile | ![](/previews/Tile.png) | [png](/08-Rectilinear/png/Tile.png) | cpp | txt | lua | py
 | TileShaded | ![](/previews/TileShaded.png) | [png](/08-Rectilinear/png/TileShaded.png) | cpp | txt | lua | py
-| Window | ![](/previews/Window.png) | [png](/08-Rectilinear/png/Window.png) | cpp | txt | lua | py |
+| Illuminated | ![](/previews/Illuminated.png) | [png](/08-Rectilinear/png/Illuminated.png) | cpp | txt | lua | py |
 | Block | ![](/previews/Block.png) | [png](/08-Rectilinear/png/Block.png) | cpp | txt | lua | py
 | BlockPyramid | ![](/previews/BlockPyramid.png) | [png](/08-Rectilinear/png/BlockPyramid.png) | cpp | txt | lua | py
 
