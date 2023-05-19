@@ -12,6 +12,7 @@ Repeating tile fill patterns
 
 *Work in progress* ~ a collection of 'retro' fill patterns. Lovingly crafted and translated to convenient code snippets. Please keep the pixel gnomes fed with a [star](https://github.com/ace-dent/8x8.me/stargazers)! ⭐️
 
+**Note**: There's an issue viewing the gallery on GitHub; you may need to refresh the page if some images fail to load.
 
 <br>
 
