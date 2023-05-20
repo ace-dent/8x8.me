@@ -36,7 +36,7 @@ readonly md_p8_lines=12 # 4x4 patterns will have +1 lines (fillp)
 readonly md_thumby_lines=11
 
 # Code snippet parameters
-bitsy_map="$( echo {1..9} {A..Z} \
+bitsy_map="$( echo {1..9} {a..z} \
   | tr -d '[:space:]' )" # Sequence of characters to assign for Bitsy patterns
 readonly bitsy_map
 readonly bitsy_map_length=${#bitsy_map}
@@ -77,21 +77,23 @@ while (( "$#" )); do
   group_lowercase="$( echo "${img_group}" | tr '[:upper:]' '[:lower:]' )"
 
 
-  # Add metadata to the original png file
-  exiftool -q -overwrite_original -fast1 \
-    -Title="${img_name} - ${img_group} - ${project}" \
-    -Copyright="${copyright} ${license}" "$1"
 
   # Create the Portable Bit Map (PBM) file
   pbm_file="${img_root}/pbm/${img_name}.pbm"
   magick "$1" -depth 1 -compress None "${pbm_file}"
-  exiftool -q -overwrite_original -fast5 \
-    -Comment="${img_name} - ${img_group} - ${project}" "${pbm_file}" # Primary metadata (single text line in header)
-  printf '\n# %s' "${copyright}" "${license}" >> "${pbm_file}" # Extra metadata appended to the plain text file
+
+  # Add metadata to the original png and pbm file
+  exiftool -q -overwrite_original -fast1 \
+    -Title="${img_name} - ${img_group} - ${project}" \
+    -Copyright="${copyright} ${license}" "$1" \
+    -execute -q -overwrite_original -fast5 \
+    -Comment="${img_name} - ${img_group} - ${project}" "${pbm_file}" # Primary pbm metadata (single text line in header)
+  printf '\n# %s' "${copyright}" "${license}" >> "${pbm_file}" # Extra pbm metadata appended to the plain text file
 
   # Create the preview image
   preview_file="${img_root%/*}/previews/${img_name}.png"
   magick -size 32x16 tile:"$1" -sample 200% "${preview_file}" # Tile the image 4x2 then scale up 2x
+
 
 
   # Create Horizontal and Vertical temporary files, with plain text binary and hexadecimal
@@ -105,23 +107,17 @@ while (( "$#" )); do
   magick "$1" -depth 1 +negate -rotate 90 -compress None PBM:- \
     | tail -n +3 \
     | tr -d ' ' > "${bin_v}"
-  echo -n '' > "${hex_h}"
-  echo -n '' > "${hex_v}"
-  # Write files with hexadecimal values and comment lines
-  line=1
-  while [ ${line} -le 8 ]; do
+  # Write files with hexadecimal values and ascii art comments
+  for line in {1..8}; do
     binary_str="$( sed -n ${line}p "${bin_h}" )" # Horizontal
-    {
-      printf '    0x%02X,' "$((2#${binary_str}))"
-      printf '  # %s\n' "${binary_str}" | tr '01' '▓░'
-    } >> "${hex_h}"
+    printf '    0x%02X,' "$((2#${binary_str}))"
+    printf '  # %s\n' "${binary_str}" | tr '01' '▓░'
+  done > "${hex_h}"
+  for line in {1..8}; do
     binary_str="$( sed -n ${line}p "${bin_v}" )" # Vertical
-    {
-      printf '    0x%02X,' "$((2#${binary_str}))"
-      printf '  # %s\n' "${binary_str}" | tr '01' '▓░'
-    } >> "${hex_v}"
-    ((line=line+1))
-  done
+    printf '    0x%02X,' "$((2#${binary_str}))"
+    printf '  # %s\n' "${binary_str}" | tr '01' '▓░'
+  done > "${hex_v}"
   # Check the pattern's minimum repeat width and height
   pattern_width=8
   if [ "$(head -n 4 "${bin_v}")" = "$(tail -n 4 "${bin_v}")" ]; then
@@ -137,18 +133,42 @@ while (( "$#" )); do
   if [ "$(head -n 4 "${bin_h}")" = "$(tail -n 4 "${bin_h}")" ]; then
     pattern_height=4 # Pattern heights below 4 are treated the same
   fi
-  echo "$img_name - Pattern width $pattern_width px x height $pattern_height px."
+  echo "$img_name - Pattern width ${pattern_width} px x height ${pattern_height} px."
 
-  # Start markdown gallery entry
+  # Create markdown gallery entry
   md_file="${img_root}/${img_group}.markdown.WIP.txt"
   md_extra_lines=0
-  if [ $pattern_width -le 4 ] && [ $pattern_height -le 4 ]; then
+  if [ ${pattern_width} -le 4 ] && [ ${pattern_height} -le 4 ]; then
     md_extra_lines=1 # cpp and p8 code snippets will output an extra line
   fi
   {
-    printf '\n| %s ' "${img_name}"
+    printf '| %s ' "${img_name}"
     printf '| ![](/previews/%s.png) ' "${img_name}"
     printf '| [png](/%s/png/%s.png) ' "${img_numbered_group}" "${img_name}"
+     # Add cpp link
+    ((md_cpp_end=md_cpp_start+md_cpp_lines+md_extra_lines))
+    printf '| [cpp](/%s/%s.h#L%u-L%u) ' \
+      "${img_numbered_group}" "${img_group}" \
+      "${md_cpp_start}" "${md_cpp_end}"
+    ((md_cpp_start=md_cpp_end+2))
+    # Add Bitsy link
+    ((md_bitsy_end=md_bitsy_start+md_bitsy_lines))
+    printf '| [txt](/%s/%s.bitsy.txt#L%u-L%u) ' \
+      "${img_numbered_group}" "${img_group}" \
+      "${md_bitsy_start}" "${md_bitsy_end}"
+    ((md_bitsy_start=md_bitsy_end+2))
+    # Add P8 link
+    ((md_p8_end=md_p8_start+md_p8_lines+md_extra_lines))
+    printf '| [lua](/%s/%s.p8.lua#L%u-L%u) ' \
+      "${img_numbered_group}" "${group_lowercase}" \
+      "${md_p8_start}" "${md_p8_end}"
+    ((md_p8_start=md_p8_end+2))
+     # Add Thumby link
+    ((md_thumby_end=md_thumby_start+md_thumby_lines))
+    printf '| [py](/%s/%s.thumby.py#L%u-L%u) |\n' \
+      "${img_numbered_group}" "${img_group}" \
+      "${md_thumby_start}" "${md_thumby_end}"
+    ((md_thumby_start=md_thumby_end+2))
   } >> "${md_file}"
 
   # Create cpp (Arduboy) code
@@ -159,9 +179,9 @@ while (( "$#" )); do
     printf '\nconstexpr uint8_t PROGMEM %s[] {\n' "${name_camelcase}"
     printf '    8, 8,  // 8x8 px image\n'
     sed 's|#|//|g' "${hex_v}" # Change '#' to '//' for comments
+    printf '};\n// Magic: '
   } >> "${cpp_file}"
   # Alternative 'magic' representation
-  printf '};\n// Magic: ' >> "${cpp_file}"
   if [ ${pattern_width} -eq 1 ]; then
     {
       # Convert only the first byte to decimal
@@ -169,7 +189,7 @@ while (( "$#" )); do
       value_dec=$((2#${binary_str}))
       if [ ${value_dec} -lt 246 ]; then
         printf '%u\n' ${value_dec}
-      else # Invert large values to save 1 char, e.g. '255' to '~0'
+      else # Invert bits for large values to save 1 char, e.g. '255' to '~0'
         ((value_dec= 255 - value_dec))
         printf '~%u\n' ${value_dec}
       fi
@@ -183,7 +203,7 @@ while (( "$#" )); do
       value_dec=$((2#${binary_str}))
       if [ ${value_dec} -lt 246 ]; then
         printf 'i&1?%u' ${value_dec}
-      else # Invert large values, e.g. '255' to '~0'
+      else # Invert bits for large values, e.g. '255' to '~0'
         ((value_dec= 255 - value_dec))
         printf 'i&1?~%u' ${value_dec}
       fi
@@ -192,7 +212,7 @@ while (( "$#" )); do
       value_dec=$((2#${binary_str}))
       if [ ${value_dec} -lt 246 ]; then
         printf ':%u\n' ${value_dec}
-      else # Invert large values, e.g. '255' to '~0'
+      else # Invert bits for large values, e.g. '255' to '~0'
         ((value_dec= 255 - value_dec))
         printf ':~%u\n' ${value_dec}
       fi
@@ -200,31 +220,31 @@ while (( "$#" )); do
   else # Pattern width 4 and 8
     # Encode 'magic' as a string... hold tight...
     # First pass: scan byte values to estimate if inverted form will be more compact
-    column=$pattern_width
-    INVERT=0
+    column=${pattern_width}
+    invert_bits_merit=0 # Figure of merit (number of characters) when inverting all bits
     while [ ${column} -gt 0 ]; do
       # Find the decimal value for the current column (byte)
       binary_str="$( sed -n ${column}p "${bin_v}" )"
       value_dec=$(printf '%u' "$((2#${binary_str}))")
       if [ ${value_dec} -le 13 ]; then
-        if [ ${value_dec} -eq 0 ] && [ $column = $pattern_width ]; then
-          ((INVERT=INVERT+4)) # cpp strings are null terminated
+        if [ ${value_dec} -eq 0 ] && [ ${column} -eq ${pattern_width} ]; then
+          ((invert_bits_merit=invert_bits_merit+4)) # cpp strings are null terminated
         else
-          ((INVERT=INVERT+2))
+          ((invert_bits_merit=invert_bits_merit+2))
         fi
       elif [ ${value_dec} -le 31 ]; then
-        ((INVERT=INVERT+1))
+        ((invert_bits_merit=invert_bits_merit+1))
       elif [ ${value_dec} -le 127 ]; then
-        ((INVERT=INVERT+3))
+        ((invert_bits_merit=invert_bits_merit+3))
       elif [ ${value_dec} -le 223 ]; then
-        ((INVERT=INVERT-3))
+        ((invert_bits_merit=invert_bits_merit-3))
       elif [ ${value_dec} -le 241 ]; then
-        ((INVERT=INVERT-1))
+        ((invert_bits_merit=invert_bits_merit-1))
       else
         if [ ${value_dec} -eq 255 ] && [ $column = $pattern_width ]; then
-          ((INVERT=INVERT-4)) # cpp strings are null terminated
+          ((invert_bits_merit=invert_bits_merit-4)) # cpp strings are null terminated
         else
-          ((INVERT=INVERT-2))
+          ((invert_bits_merit=invert_bits_merit-2))
         fi
       fi
       ((column=column-1))
@@ -239,7 +259,8 @@ while (( "$#" )); do
       # Find the octal value for the current column (byte)
       binary_str=$( sed -n ${column}p "${bin_v}" )
       value_oct=$(printf '%o' "$((2#${binary_str}))")
-      if [ $INVERT -lt -1 ]; then
+      # Invert all bits in the pattern if we save 1 or more characters
+      if [ ${invert_bits_merit} -lt -1 ]; then
         ((value_oct= 377 - value_oct))
       fi
       # Process the octal value, to handle special cases for encoding
@@ -304,22 +325,22 @@ while (( "$#" )); do
       ((column=column-1))
     done
     encoded_string='"'"${encoded_string}"
-    if [ $INVERT -lt -1 ]; then
+    if [ ${invert_bits_merit} -lt -1 ]; then
       encoded_string='~'"${encoded_string}"
     fi
     printf '%s\n' "${encoded_string}" >> "${cpp_file}"
   fi
   # Bonus 4x4px GAMBY data
   if [ $pattern_width -le 4 ] && [ $pattern_height -le 4 ]; then
-    printf '// GAMBY: 0x' >> "${cpp_file}"
-    column=1
-    while [ $column -le 4 ]; do
-      sed -n ${column}p "${hex_v}" \
-        | head -c 7\
-        | tail -c 1 >> "${cpp_file}"
-      ((column=column+1))
-    done
-    printf '\n' >> "${cpp_file}"
+    {
+      printf '// GAMBY: 0x'
+      for column in {1..4}; do
+        sed -n ${column}p "${hex_v}" \
+          | head -c 7 \
+          | tail -c 1
+      done
+      printf '\n'
+    } >> "${cpp_file}"
   fi
   # Additional horizontal format (seperate file)
   {
@@ -328,11 +349,7 @@ while (( "$#" )); do
     sed 's|#|//|g' "$hex_h" # Change '#' to '//' for comments
     printf '};\n'
   } >> "${cpp_horiz_file}"
-  # Add link to markdown gallery
-  ((md_cpp_end=md_cpp_start+md_cpp_lines+md_extra_lines))
-  printf '| [cpp](/%s/%s.h#L%u-L%u) ' \
-    "${img_numbered_group}" "${img_group}" "${md_cpp_start}" "${md_cpp_end}" >> "${md_file}"
-  ((md_cpp_start=md_cpp_end+2))
+
 
 
   # Create Bitsy tile data
@@ -344,11 +361,7 @@ while (( "$#" )); do
     cat "$bin_h"
     printf 'NAME %s\n' "${name_lowercase}"
   } >> "${bitsy_file}"
-  # Add link to markdown gallery
-  ((md_bitsy_end=md_bitsy_start+md_bitsy_lines))
-  printf '| [txt](/%s/%s.bitsy.txt#L%u-L%u) ' \
-    "${img_numbered_group}" "${img_group}" "${md_bitsy_start}" "${md_bitsy_end}" >> "${md_file}"
-  ((md_bitsy_start=md_bitsy_end+2))
+
 
 
   # Create PICO-8 code
@@ -360,66 +373,61 @@ while (( "$#" )); do
   {
     printf -- "\n--%u '%c' %s\n" "${ascii_code}" "${p8_mapped_char}" "${name_lowercase}"
     printf 'poke(0x5600+(8* %u),\n' "${ascii_code}"
+    for row in {1..8}; do
+      binary_str="$( sed -n ${row}p "${bin_h}" | rev )"
+      value_dec=$((2#${binary_str}))
+      printf ' %3u' "${value_dec}"
+      if [ $row -lt 8 ]; then
+        printf -- ', -- '
+      else
+        printf -- '  -- '
+      fi
+      sed -n ${row}p "${bin_h}" | tr '01' '▒█' # Shown as drawn to screen, not as the stored bitfield (reversed)
+    done
+    printf ')\n'
+    # Helper code snippet to copy font character to Sprite 0
+    printf -- '-->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉ%c"for i=0,448,64do memcpy(i,24576+i,4)end cstore()\n' \
+      "${p8_mapped_char}"
   } >> "${p8_file}"
-  row=1
-  while [ $row -le 8 ]; do
-    # P8 custom fonts have LSB first, so bit sequence is reversed before calculating decimal value
-    value="$((2#$( sed -n ${row}p "${bin_h}" | rev )))"
-    printf ' %3u' "${value}"
-    if [ $row -lt 8 ]; then
-      printf -- ', -- '
-    else
-      printf -- '  -- '
-    fi
-    sed -n ${row}p "${bin_h}" | tr '01' '▒█' # Shown as drawn to screen, not as the stored bitfield (reversed)
-    ((row=row+1))
-  done >> "${p8_file}"
-  printf ')\n' >> "${p8_file}"
-  # Helper code snippet to copy font character to Sprite 0
-  printf -- '-->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉ%c"for i=0,448,64do memcpy(i,24576+i,4)end cstore()\n' \
-    "${p8_mapped_char}" >> "${p8_file}"
   # Bonus: 'magic' one-off character, encoded as a string
-  column=8
   # We store the end of the string first
-  STRING='"'
+  encoded_string='"'
   digit_present=0
-  while [ $column -gt 0 ]; do
+  for column in {8..1}; do
     # Find the decimal value for the current column (byte)
-    VALUE=$(printf '%i' "$((2#$(sed -n ${column}p "$bin_h" | rev)))")
-    if [ $VALUE -eq 0 ] && [ ${digit_present} -eq 1 ]; then
-      STRING='\000'"${STRING}"
+    binary_str="$( sed -n ${column}p "${bin_h}" | rev )"
+    value_dec=$((2#${binary_str}))
+    if [ ${value_dec} -eq 0 ] && [ ${digit_present} -eq 1 ]; then
+      # Handle special case to make octal value unambiguous
+      encoded_byte='\000'
       digit_present=0
     else
-      ((VALUE=VALUE+1))
-      STRING=$(sed -n ${VALUE}p "${util_dir}/p8-codepage")${STRING}
-      if [ $VALUE -ge 49 ] && [ $VALUE -le 58 ] ; then
+      # Use 'P8SCII' codepage to lookup string literal to encode the byte
+      index=$((value_dec+1))
+      encoded_byte="$(sed -n ${index}p "${util_dir}/p8-codepage")"
+      if [ ${value_dec} -ge 48 ] && [ ${value_dec} -le 57 ]; then # Characters '0' - '9'
         digit_present=1
       else
         digit_present=0
       fi
     fi
-    ((column=column-1))
+    encoded_string="${encoded_byte}${encoded_string}"
   done
-  printf -- '--magic: ?"⁶rw¹シ⁶.".."%s\n' "${STRING}" >> "${p8_file}"
+  printf -- '--magic: ?"⁶rw¹シ⁶.".."%s\n' "${encoded_string}" >> "${p8_file}"
   # Bonus: For 4x4px patterns produce fillp() alternative
-  if [ $pattern_width -le 4 ] && [ $pattern_height -le 4 ]; then
-    row=1
-    STRING='0x'
-    while [ $row -le 4 ]; do
-      # Invert binary values 0<>1 to fix fore-/background
-      VALUE=$(sed -n ${row}p "${bin_h}"\
+  if [ ${pattern_width} -le 4 ] && [ ${pattern_height} -le 4 ]; then
+    encoded_string='0x'
+    for row in {1..4}; do
+      # Invert bits 0<>1 to fix fore-/background
+      binary_str=$(sed -n ${row}p "${bin_h}"\
         | head -c 4\
         | tr '01' '10')
-      STRING=${STRING}$(printf '%X' $((2#${VALUE})))
-      ((row=row+1))
+      value_hex=$( printf '%X' $((2#${binary_str})) )
+      encoded_string="${encoded_string}${value_hex}"
     done
-    printf -- '--fillp(%u)\n' "${STRING}" >> "${p8_file}"
+    printf -- '--fillp(%u)\n' "${encoded_string}" >> "${p8_file}"
   fi
-  # Add link to markdown gallery
-  ((md_p8_end=md_p8_start+md_p8_lines+md_extra_lines))
-  printf '| [lua](/%s/%s.p8.lua#L%u-L%u) ' \
-    "${img_numbered_group}" "${group_lowercase}" "${md_p8_start}" "${md_p8_end}" >> "${md_file}"
-  ((md_p8_start=md_p8_end+2))
+
 
 
   # Create Thumby code
@@ -427,27 +435,20 @@ while (( "$#" )); do
   {
     printf '\n%s = bytearray([\n' "${name_camelcase}"
     printf '    # BITMAP: width: 8, height: 8, ['
-  } >> "${thumby_file}"
-  column=1
-  # Produce array with decimal values (uses less characters)
-  while [ ${column} -le 8 ]; do
-    printf '%u' "$((2#$(sed -n ${column}p "${bin_v}")))"
-    if [ ${column} -le 7 ]; then
-      printf ','
-    else
-      printf ']\n'
-    fi
-    ((column=column+1))
-  done >> "${thumby_file}"
-  {
+    # Produce array with decimal values (uses less characters)
+    for column in {1..8}; do
+      printf '%u' "$((2#$(sed -n ${column}p "${bin_v}")))"
+      if [ ${column} -le 7 ]; then
+        printf ','
+      else
+        printf ']\n'
+      fi
+    done
     cat "${hex_v}"
     printf '])\n# %sSprite = thumby.Sprite(8, 8, %s)\n' "${name_camelcase}" "${name_camelcase}"
   } >> "${thumby_file}"
-  # Add link to markdown gallery
-  ((md_thumby_end=md_thumby_start+md_thumby_lines))
-  printf '| [py](/%s/%s.thumby.py#L%u-L%u) |' \
-    "${img_numbered_group}" "${img_group}" "${md_thumby_start}" "${md_thumby_end}" >> "${md_file}"
-  ((md_thumby_start=md_thumby_end+2))
+
+
 
   # Remove temporary files
   rm -f "${bin_h}" ; rm -f "${bin_v}" ; rm -f "${hex_h}" ; rm -f "${hex_v}"
