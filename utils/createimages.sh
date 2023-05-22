@@ -110,12 +110,14 @@ while (( "$#" )); do
   # Write files with hexadecimal values and ascii art comments
   for line in {1..8}; do
     binary_str="$( sed -n ${line}p "${bin_h}" )" # Horizontal
-    printf '    0x%02X,' "$((2#${binary_str}))"
+    value_dec=$((2#${binary_str}))
+    printf '    0x%02X,' "${value_dec}"
     printf '  # %s\n' "${binary_str}" | tr '01' '▓░'
   done > "${hex_h}"
   for line in {1..8}; do
     binary_str="$( sed -n ${line}p "${bin_v}" )" # Vertical
-    printf '    0x%02X,' "$((2#${binary_str}))"
+    value_dec=$((2#${binary_str}))
+    printf '    0x%02X,' "${value_dec}"
     printf '  # %s\n' "${binary_str}" | tr '01' '▓░'
   done > "${hex_v}"
   # Check the pattern's minimum repeat width and height
@@ -134,6 +136,8 @@ while (( "$#" )); do
     pattern_height=4 # Pattern heights below 4 are treated the same
   fi
   echo "$img_name - Pattern width ${pattern_width} px x height ${pattern_height} px."
+
+
 
   # Create markdown gallery entry
   md_file="${img_root}/${img_group}.markdown.WIP.txt"
@@ -171,6 +175,8 @@ while (( "$#" )); do
     ((md_thumby_start=md_thumby_end+2))
   } >> "${md_file}"
 
+
+
   # Create cpp (Arduboy) code
   cpp_file="${img_root}/${img_group}.h.WIP.txt" # Vertical data
   cpp_horiz_file="${img_root}/${img_group}.h.WIP2.txt" # Horizontal data
@@ -184,7 +190,7 @@ while (( "$#" )); do
   # Alternative 'magic' representation
   if [ ${pattern_width} -eq 1 ]; then
     {
-      # Convert only the first byte to decimal
+      # Convert only the first byte (column 1) to decimal
       binary_str="$( sed -n 1p "${bin_v}" )"
       value_dec=$((2#${binary_str}))
       if [ ${value_dec} -lt 246 ]; then
@@ -225,7 +231,7 @@ while (( "$#" )); do
     while [ ${column} -gt 0 ]; do
       # Find the decimal value for the current column (byte)
       binary_str="$( sed -n ${column}p "${bin_v}" )"
-      value_dec=$(printf '%u' "$((2#${binary_str}))")
+      value_dec=$((2#${binary_str}))
       if [ ${value_dec} -le 13 ]; then
         if [ ${value_dec} -eq 0 ] && [ ${column} -eq ${pattern_width} ]; then
           ((invert_bits_merit=invert_bits_merit+4)) # cpp strings are null terminated
@@ -321,7 +327,7 @@ while (( "$#" )); do
           digit_present=0
         ;;
       esac
-      encoded_string="${encoded_byte}${encoded_string}"
+      encoded_string="${encoded_byte}${encoded_string}" # Prepend byte to magic string
       ((column=column-1))
     done
     encoded_string='"'"${encoded_string}"
@@ -342,7 +348,7 @@ while (( "$#" )); do
       printf '\n'
     } >> "${cpp_file}"
   fi
-  # Additional horizontal format (seperate file)
+  # Additional horizontal format (separate file)
   {
     printf '\nconstexpr uint8_t PROGMEM %s[] {\n' "${name_camelcase}"
     printf '    8, 8,  // 8x8 px image\n'
@@ -374,6 +380,9 @@ while (( "$#" )); do
     printf -- "\n--%u '%c' %s\n" "${ascii_code}" "${p8_mapped_char}" "${name_lowercase}"
     printf 'poke(0x5600+(8* %u),\n' "${ascii_code}"
     for row in {1..8}; do
+    # P8 custom font characters are encoded row wise (horizontally).
+    # The LSB of each byte corresponds to the first pixel of a row, (not the MSB),
+    # so the bit sequence is reversed before calculating decimal value
       binary_str="$( sed -n ${row}p "${bin_h}" | rev )"
       value_dec=$((2#${binary_str}))
       printf ' %3u' "${value_dec}"
@@ -393,9 +402,9 @@ while (( "$#" )); do
   # We store the end of the string first
   encoded_string='"'
   digit_present=0
-  for column in {8..1}; do
-    # Find the decimal value for the current column (byte)
-    binary_str="$( sed -n ${column}p "${bin_h}" | rev )"
+  for row in {8..1}; do
+    # Find the decimal value for the current row (byte)
+    binary_str="$( sed -n ${row}p "${bin_h}" | rev )"
     value_dec=$((2#${binary_str}))
     if [ ${value_dec} -eq 0 ] && [ ${digit_present} -eq 1 ]; then
       # Handle special case to make octal value unambiguous
@@ -411,7 +420,7 @@ while (( "$#" )); do
         digit_present=0
       fi
     fi
-    encoded_string="${encoded_byte}${encoded_string}"
+    encoded_string="${encoded_byte}${encoded_string}" # Prepend byte to magic string
   done
   printf -- '--magic: ?"⁶rw¹シ⁶.".."%s\n' "${encoded_string}" >> "${p8_file}"
   # Bonus: For 4x4px patterns produce fillp() alternative
@@ -437,7 +446,9 @@ while (( "$#" )); do
     printf '    # BITMAP: width: 8, height: 8, ['
     # Produce array with decimal values (uses less characters)
     for column in {1..8}; do
-      printf '%u' "$((2#$(sed -n ${column}p "${bin_v}")))"
+      binary_str=$( sed -n ${column}p "${bin_v}" )
+      value_dec=$((2#${binary_str}))
+      printf '%u' "${value_dec}"
       if [ ${column} -le 7 ]; then
         printf ','
       else
