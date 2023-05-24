@@ -83,8 +83,15 @@ Contents:
 ### 02 – Dots
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Confetti <sup>o</sup>| ![](/previews/Confetti.png) | [png](/02-Dots/png/Confetti.png) | [cpp](/02-Dots/Dots.h#L12-L23) | [txt](/02-Dots/Dots.bitsy.txt#L5-L14) | lua | [py](/02-Dots/Dots.thumby.py#L5-L16) |
-| ConfettiLarge <sup>o</sup>| ![](/previews/ConfettiLarge.png) | [png](/02-Dots/png/ConfettiLarge.png) | [cpp](/02-Dots/Dots.h#L25-L36) | [txt](/02-Dots/Dots.bitsy.txt#L16-L25) | lua | [py](/02-Dots/Dots.thumby.py#L18-L29) |
+| Pixel | ![](/previews/Pixel.png) | [png](/02-Dots/png/Pixel.png) | [cpp](/02-Dots/Dots.h#L12-L23) | [txt](/02-Dots/Dots.bitsy.txt#L5-L14) | [lua](/02-Dots/dots.p8.lua#L7-L19) | [py](/02-Dots/Dots.thumby.py#L5-L16) |
+| PixelMini | ![](/previews/PixelMini.png) | [png](/02-Dots/png/PixelMini.png) | [cpp](/02-Dots/Dots.h#L25-L37) | [txt](/02-Dots/Dots.bitsy.txt#L16-L25) | [lua](/02-Dots/dots.p8.lua#L21-L34) | [py](/02-Dots/Dots.thumby.py#L18-L29) |
+| Glisten | ![](/previews/Glisten.png) | [png](/02-Dots/png/Glisten.png) | [cpp](/02-Dots/Dots.h#L39-L50) | [txt](/02-Dots/Dots.bitsy.txt#L27-L36) | [lua](/02-Dots/dots.p8.lua#L36-L48) | [py](/02-Dots/Dots.thumby.py#L31-L42) |
+| FairyRing | ![](/previews/FairyRing.png) | [png](/02-Dots/png/FairyRing.png) | [cpp](/02-Dots/Dots.h#L52-L63) | [txt](/02-Dots/Dots.bitsy.txt#L38-L47) | [lua](/02-Dots/dots.p8.lua#L50-L62) | [py](/02-Dots/Dots.thumby.py#L44-L55) |
+| Noise | ![](/previews/Noise.png) | [png](/02-Dots/png/Noise.png) | [cpp](/02-Dots/Dots.h#L65-L76) | [txt](/02-Dots/Dots.bitsy.txt#L49-L58) | [lua](/02-Dots/dots.p8.lua#L64-L76) | [py](/02-Dots/Dots.thumby.py#L57-L68) |
+| Confetti <sup>o</sup>| ![](/previews/Confetti.png) | [png](/02-Dots/png/Confetti.png) | [cpp](/02-Dots/Dots.h#L78-L89) | [txt](/02-Dots/Dots.bitsy.txt#L60-L69) | [lua](/02-Dots/dots.p8.lua#L78-L90) | [py](/02-Dots/Dots.thumby.py#L70-L81) |
+| Static | ![](/previews/Static.png) | [png](/02-Dots/png/Static.png) | [cpp](/02-Dots/Dots.h#L91-L102) | [txt](/02-Dots/Dots.bitsy.txt#L71-L80) | [lua](/02-Dots/dots.p8.lua#L92-L104) | [py](/02-Dots/Dots.thumby.py#L83-L94) |
+| DiamondSpeckled | ![](/previews/DiamondSpeckled.png) | [png](/02-Dots/png/DiamondSpeckled.png) | [cpp](/02-Dots/Dots.h#L104-L115) | [txt](/02-Dots/Dots.bitsy.txt#L82-L91) | [lua](/02-Dots/dots.p8.lua#L106-L118) | [py](/02-Dots/Dots.thumby.py#L96-L107) |
+| ConfettiLarge <sup>o</sup>| ![](/previews/ConfettiLarge.png) | [png](/02-Dots/png/ConfettiLarge.png) | [cpp](/02-Dots/Dots.h#L117-L128) | [txt](/02-Dots/Dots.bitsy.txt#L93-L102) | [lua](/02-Dots/dots.p8.lua#L120-L132) | [py](/02-Dots/Dots.thumby.py#L109-L120) |
 
 [`⤴`](#gallery)
 
