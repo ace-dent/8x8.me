@@ -1,15 +1,15 @@
 pico-8 cartridge
 
 __lua__
-#include /dither.p8.lua
+#include /radial.p8.lua
 
 cls(0)
 color(7) -- white(ish) foreground
 --spr(0,0,0,1,1) --preserve 'x' spr0
 
 -- write patterns to screen
-?"\14".."abcdefghijklmnop"
-?"\14".."  ABCDEFGHIJKLqq"
+?"\14".." abcdefghijklm"
+?"\14"..""
 ?"\14"..""
 ?"\14"..""
 
