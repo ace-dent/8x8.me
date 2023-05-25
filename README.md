@@ -18,21 +18,21 @@ Repeating tile fill patterns
 
 ## Galleries
   
-&emsp; [01 – Dither](/01-Dither/README.md#gallery)  
-&emsp; [02 – Dots](/02-Dots/README.md#gallery)  
-&emsp; [03 – Dashes](/03-Dashes/README.md#gallery)  
-&emsp; [04 – Lines](/04-Lines/README.md#gallery)  
-&emsp; [05 – Waves](/05-Waves/README.md#gallery)  
-&emsp; [06 – Grid](/06-Grid/README.md#gallery)  
-&emsp; [07 – Checked](/07-Checked/README.md#gallery)  
-&emsp; [08 – Rectilinear](/08-Rectilinear/README.md#gallery)  
-&emsp; [09 – Radial](/09-Radial/README.md#gallery)  
-&emsp; [10 – Round](/10-Round/README.md#gallery)  
-&emsp; [11 – Woven](/11-Woven/README.md#gallery)  
-&emsp; [12 – Architecture](/12-Architecture/README.md#gallery)  
-&emsp; [13 – Nature](/13-Nature/README.md#gallery)  
-&emsp; [14 – Symbols](/14-Symbols/README.md#gallery)  
-&emsp; [15 – Other](/15-Other/README.md#gallery)
+![](/previews/BayerDither05.png) &emsp; [01 – Dither](/01-Dither/README.md#gallery)  
+![](/previews/Confetti.png) &emsp; [02 – Dots](/02-Dots/README.md#gallery)  
+![](previews/HorizontalDash.png) &emsp; [03 – Dashes](/03-Dashes/README.md#gallery)  
+![](previews/DexterPinstripeMedium.png) &emsp; [04 – Lines](/04-Lines/README.md#gallery)  
+![](/previews/Tidal.png) &emsp; [05 – Waves](/05-Waves/README.md#gallery)  
+![](/previews/GridDiagonal.png) &emsp; [06 – Grid](/06-Grid/README.md#gallery)  
+![](/previews/Check.png) &emsp; [07 – Checked](/07-Checked/README.md#gallery)  
+![](/previews/Box.png) &emsp; [08 – Rectilinear](/08-Rectilinear/README.md#gallery)  
+![](previews/Spokes.png) &emsp; [09 – Radial](/09-Radial/README.md#gallery)  
+![](previews/SphereMini.png) &emsp; [10 – Round](/10-Round/README.md#gallery)  
+![](/previews/Weave.png) &emsp; [11 – Woven](/11-Woven/README.md#gallery)  
+![](/previews/Brick.png) &emsp; [12 – Architecture](/12-Architecture/README.md#gallery)  
+![](/previews/Leaves.png) &emsp; [13 – Nature](/13-Nature/README.md#gallery)  
+![](/previews/Heart.png) &emsp; [14 – Symbols](/14-Symbols/README.md#gallery)  
+![](/previews/Chain.png) &emsp; [15 – Other](/15-Other/README.md#gallery)
 
 
 <br>
