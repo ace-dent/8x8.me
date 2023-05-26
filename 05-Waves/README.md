@@ -6,15 +6,15 @@ Wave patterns.
 
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Ripple | <img src="../previews/Ripple.png" width="64" height="32" loading="lazy" alt="" role="none"> | [png](png/Ripple.png) | cpp | txt | lua | py
-| Wave <sup>o</sup>| <img src="../previews/Wave.png" width="64" height="32" loading="lazy" alt="" role="none"> | [png](png/Wave.png) | cpp | txt | lua | py
-| TidalLight | <img src="../previews/TidalLight.png" width="64" height="32" loading="lazy" alt="" role="none"> | [png](png/TidalLight.png) | cpp | txt | lua | py
-| Tidal | <img src="../previews/Tidal.png" width="64" height="32" loading="lazy" alt="" role="none"> | [png](png/Tidal.png) | cpp | txt | lua | py
-| TidalMedium | <img src="../previews/TidalMedium.png" width="64" height="32" loading="lazy" alt="" role="none"> | [png](png/TidalMedium.png) | cpp | txt | lua | py
-| OceanicLight | <img src="../previews/OceanicLight.png" width="64" height="32" loading="lazy" alt="" role="none"> | [png](png/OceanicLight.png) | cpp | txt | lua | py
-| Oceanic | <img src="../previews/Oceanic.png" width="64" height="32" loading="lazy" alt="" role="none"> | [png](png/Oceanic.png) | cpp | txt | lua | py
-| VairPoint | <img src="../previews/VairPoint.png" width="64" height="32" loading="lazy" alt="" role="none"> | [png](png/VairPoint.png) | cpp | txt | lua | py
-| DoubleHelix | <img src="../previews/DoubleHelix.png" width="64" height="32" loading="lazy" alt="" role="none"> | [png](png/DoubleHelix.png) | cpp | txt | lua | py
+| Ripple | <img src="../previews/Ripple.png" width="64" height="32" loading="lazy" alt="" role="none"> | [png](png/Ripple.png) | [cpp](Waves.h#L12-L23) | [txt](Waves.bitsy.txt#L5-L14) | [lua](waves.p8.lua#L7-L19) | [py](Waves.thumby.py#L5-L16) |
+| Wave <sup>o</sup>| <img src="../previews/Wave.png" width="64" height="32" loading="lazy" alt="" role="none"> | [png](png/Wave.png) | [cpp](Waves.h#L25-L36) | [txt](Waves.bitsy.txt#L16-L25) | [lua](waves.p8.lua#L21-L33) | [py](Waves.thumby.py#L18-L29) |
+| TidalLight | <img src="../previews/TidalLight.png" width="64" height="32" loading="lazy" alt="" role="none"> | [png](png/TidalLight.png) | [cpp](Waves.h#L38-L49) | [txt](Waves.bitsy.txt#L27-L36) | [lua](waves.p8.lua#L35-L47) | [py](Waves.thumby.py#L31-L42) |
+| Tidal | <img src="../previews/Tidal.png" width="64" height="32" loading="lazy" alt="" role="none"> | [png](png/Tidal.png) | [cpp](Waves.h#L51-L62) | [txt](Waves.bitsy.txt#L38-L47) | [lua](waves.p8.lua#L49-L61) | [py](Waves.thumby.py#L44-L55) |
+| TidalMedium | <img src="../previews/TidalMedium.png" width="64" height="32" loading="lazy" alt="" role="none"> | [png](png/TidalMedium.png) | [cpp](Waves.h#L64-L75) | [txt](Waves.bitsy.txt#L49-L58) | [lua](waves.p8.lua#L63-L75) | [py](Waves.thumby.py#L57-L68) |
+| OceanicLight | <img src="../previews/OceanicLight.png" width="64" height="32" loading="lazy" alt="" role="none"> | [png](png/OceanicLight.png) | [cpp](Waves.h#L77-L88) | [txt](Waves.bitsy.txt#L60-L69) | [lua](waves.p8.lua#L77-L89) | [py](Waves.thumby.py#L70-L81) |
+| Oceanic | <img src="../previews/Oceanic.png" width="64" height="32" loading="lazy" alt="" role="none"> | [png](png/Oceanic.png) | [cpp](Waves.h#L90-L101) | [txt](Waves.bitsy.txt#L71-L80) | [lua](waves.p8.lua#L91-L103) | [py](Waves.thumby.py#L83-L94) |
+| VairPoint | <img src="../previews/VairPoint.png" width="64" height="32" loading="lazy" alt="" role="none"> | [png](png/VairPoint.png) | [cpp](Waves.h#L103-L114) | [txt](Waves.bitsy.txt#L82-L91) | [lua](waves.p8.lua#L105-L117) | [py](Waves.thumby.py#L96-L107) |
+| DoubleHelix | <img src="../previews/DoubleHelix.png" width="64" height="32" loading="lazy" alt="" role="none"> | [png](png/DoubleHelix.png) | [cpp](Waves.h#L116-L127) | [txt](Waves.bitsy.txt#L93-L102) | [lua](waves.p8.lua#L119-L131) | [py](Waves.thumby.py#L109-L120) |
 
 [`⤴`](#gallery)
 
