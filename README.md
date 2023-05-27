@@ -27,7 +27,7 @@ Repeating tile fill patterns
 ![](/previews/Check.png) &emsp; [07 – Checked](/07-Checked/README.md#gallery)  
 ![](/previews/Box.png) &emsp; [08 – Rectilinear](/08-Rectilinear/README.md#gallery)  
 ![](previews/Spokes.png) &emsp; [09 – Radial](/09-Radial/README.md#gallery)  
-![](previews/SphereMini.png) &emsp; [10 – Round](/10-Round/README.md#gallery)  
+![](previews/AnnuletCoAnnulet.png) &emsp; [10 – Round](/10-Round/README.md#gallery)  
 ![](/previews/Weave.png) &emsp; [11 – Woven](/11-Woven/README.md#gallery)  
 ![](/previews/Brick.png) &emsp; [12 – Architecture](/12-Architecture/README.md#gallery)  
 ![](/previews/Leaves.png) &emsp; [13 – Nature](/13-Nature/README.md#gallery)  
