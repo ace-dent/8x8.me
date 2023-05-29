@@ -60,7 +60,9 @@ while (( "$#" )); do
     continue
   fi
 
-  # TODO: Add some checks for input PNG file validity
+  # TODO: Check ~
+  #   File exists
+  #   Input PNG file validity (file size, file format)
 
   ((img_counter=img_counter+1))
   ((bitsy_counter=bitsy_counter+1))
@@ -147,31 +149,28 @@ while (( "$#" )); do
   fi
   {
     printf '| %s ' "${img_name}"
-    printf '| ![](/previews/%s.png) ' "${img_name}"
-    printf '| [png](/%s/png/%s.png) ' "${img_numbered_group}" "${img_name}"
+    printf '| <img src="../previews/%s.png"' "${img_name}"
+    printf ' width="64" height="32" loading="lazy" alt="" role="none"> '
+    printf '| [png](png/%s.png) ' "${img_name}"
      # Add cpp link
     ((md_cpp_end=md_cpp_start+md_cpp_lines+md_extra_lines))
-    printf '| [cpp](/%s/%s.h#L%u-L%u) ' \
-      "${img_numbered_group}" "${img_group}" \
-      "${md_cpp_start}" "${md_cpp_end}"
+    printf '| [cpp](%s.h#L%u-L%u) ' \
+      "${img_group}" "${md_cpp_start}" "${md_cpp_end}"
     ((md_cpp_start=md_cpp_end+2))
     # Add Bitsy link
     ((md_bitsy_end=md_bitsy_start+md_bitsy_lines))
-    printf '| [txt](/%s/%s.bitsy.txt#L%u-L%u) ' \
-      "${img_numbered_group}" "${img_group}" \
-      "${md_bitsy_start}" "${md_bitsy_end}"
+    printf '| [txt](%s.bitsy.txt#L%u-L%u) ' \
+       "${img_group}" "${md_bitsy_start}" "${md_bitsy_end}"
     ((md_bitsy_start=md_bitsy_end+2))
     # Add P8 link
     ((md_p8_end=md_p8_start+md_p8_lines+md_extra_lines))
-    printf '| [lua](/%s/%s.p8.lua#L%u-L%u) ' \
-      "${img_numbered_group}" "${group_lowercase}" \
-      "${md_p8_start}" "${md_p8_end}"
+    printf '| [lua](%s.p8.lua#L%u-L%u) ' \
+       "${group_lowercase}" "${md_p8_start}" "${md_p8_end}"
     ((md_p8_start=md_p8_end+2))
      # Add Thumby link
     ((md_thumby_end=md_thumby_start+md_thumby_lines))
-    printf '| [py](/%s/%s.thumby.py#L%u-L%u) |\n' \
-      "${img_numbered_group}" "${img_group}" \
-      "${md_thumby_start}" "${md_thumby_end}"
+    printf '| [py](%s.thumby.py#L%u-L%u) |\n' \
+       "${img_group}" "${md_thumby_start}" "${md_thumby_end}"
     ((md_thumby_start=md_thumby_end+2))
   } >> "${md_file}"
 
