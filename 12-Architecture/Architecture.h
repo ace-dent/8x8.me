@@ -20,7 +20,7 @@ namespace patterns {
         0xEE,  // ░░░▓░░░▓
         0xEE,  // ░░░▓░░░▓
     };
-    // Magic: ~"\37\21\21\21\361\21\21\21"[i%8]
+    // Magic: "pwww\7www"[i%8]<<1
 
     constexpr uint8_t PROGMEM brickDense[] {
         8, 8,  // 8x8 px image
@@ -59,7 +59,7 @@ namespace patterns {
         0xF6,  // ░░░░▓░░▓
         0xF6,  // ░░░░▓░░▓
     };
-    // Magic: ~"\17\t\t\t\371\t\t\t"[i%8]
+    // Magic: "x{{{\3{{{"[i%8]<<1
 
     constexpr uint8_t PROGMEM brickAged[] {
         8, 8,  // 8x8 px image
@@ -72,7 +72,7 @@ namespace patterns {
         0xEE,  // ░░░▓░░░▓
         0xEC,  // ░░░▓░░▓▓
     };
-    // Magic: ~"\17\21\21\221\361\21\21\23"[i%8]
+    // Magic: "xww7\7wwv"[i%8]<<1
 
     constexpr uint8_t PROGMEM brickPointed[] {
         8, 8,  // 8x8 px image
@@ -85,7 +85,7 @@ namespace patterns {
         0xEE,  // ░░░▓░░░▓
         0xE4,  // ░░░▓▓░▓▓
     };
-    // Magic: "\340\344\356N\16N\356\344"[i%8]
+    // Magic: "prw'\7'wr"[i%8]<<1
 
     constexpr uint8_t PROGMEM brickSparse[] {
         8, 8,  // 8x8 px image
@@ -98,7 +98,7 @@ namespace patterns {
         0xCC,  // ░░▓▓░░▓▓
         0xC0,  // ░░▓▓▓▓▓▓
     };
-    // Magic: ~"?33\363\36333?"[i%8]
+    // Magic: "`ff\6\6ff`"[i%8]<<1
 
     constexpr uint8_t PROGMEM brickHighlights[] {
         8, 8,  // 8x8 px image

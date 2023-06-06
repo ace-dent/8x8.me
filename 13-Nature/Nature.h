@@ -241,7 +241,7 @@ namespace patterns {
         0x30,  // ▓▓░░▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "h,\220\306\336\2340"[i%8]
+    // Magic: "4\26HcoN\30"[i%8]<<1
 
     constexpr uint8_t PROGMEM beanStalk[] {
         8, 8,  // 8x8 px image
