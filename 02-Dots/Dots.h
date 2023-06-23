@@ -20,7 +20,7 @@ namespace patterns {
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\0\0\0\0\b\0\0"[i%8]
+    // Magic: "@@@@B@@"[i%8]<<2
 
     constexpr uint8_t PROGMEM pixelMini[] {
         8, 8,  // 8x8 px image
@@ -47,7 +47,7 @@ namespace patterns {
         0x10,  // ▓▓▓░▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\4@\0\"\0\1\20"[i%8]
+    // Magic: 99^"g#cAcbsc"[i%8]
 
     constexpr uint8_t PROGMEM fairyRing[] {
         8, 8,  // 8x8 px image
@@ -60,7 +60,7 @@ namespace patterns {
         0x04,  // ▓▓▓▓▓░▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\0\20B\0\0!\4"[i%8]
+    // Magic: 97^"aq#aa@ea"[i%8]
 
     constexpr uint8_t PROGMEM noise[] {
         8, 8,  // 8x8 px image
@@ -73,7 +73,7 @@ namespace patterns {
         0x10,  // ▓▓▓░▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\b\1\0H\0\2\20"[i%8]
+    // Magic: 99^"kbc+casc"[i%8]
 
     constexpr uint8_t PROGMEM confetti[] {
         8, 8,  // 8x8 px image
@@ -86,7 +86,7 @@ namespace patterns {
         0x80,  // ░▓▓▓▓▓▓▓
         0x10,  // ▓▓▓░▓▓▓▓
     };
-    // Magic: "\4@\1\b \2\200\20"[i%8]
+    // Magic: 99^"g#bkCa\343s"[i%8]
 
     constexpr uint8_t PROGMEM static[] {
         8, 8,  // 8x8 px image
@@ -99,7 +99,7 @@ namespace patterns {
         0x40,  // ▓░▓▓▓▓▓▓
         0x09,  // ▓▓▓▓░▓▓░
     };
-    // Magic: "@\24\1\20\242\b@\t"[i%8]
+    // Magic: 96^" tap\302h i"[i%8]
 
     constexpr uint8_t PROGMEM diamondSpeckled[] {
         8, 8,  // 8x8 px image
@@ -112,7 +112,7 @@ namespace patterns {
         0x04,  // ▓▓▓▓▓░▓▓
         0x10,  // ▓▓▓░▓▓▓▓
     };
-    // Magic: "\b \n\240\5P\4\20"[i%8]
+    // Magic: 96^"h@j\300e0dp"[i%8]
 
     constexpr uint8_t PROGMEM confettiLarge[] {
         8, 8,  // 8x8 px image
@@ -125,7 +125,7 @@ namespace patterns {
         0xC6,  // ░░▓▓▓░░▓
         0xC0,  // ░░▓▓▓▓▓▓
     };
-    // Magic: "\flc\00306\306\300"[i%8]
+    // Magic: 66^"N.!Art\204\202"[i%8]
 
 }
 

@@ -188,7 +188,7 @@ namespace patterns {
         0xFF,  // ░░░░░░░░
         0xAA,  // ░▓░▓░▓░▓
     };
-    // Magic: i&1?255:170
+    // Magic: i&1?~0:170
     // GAMBY: 0xFAFA
 
     constexpr uint8_t PROGMEM bayerDither13[] {
@@ -258,7 +258,7 @@ namespace patterns {
         0x40,  // ▓░▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\0\0\4\0\0\0@"[i%8]
+    // Magic: "@@A@@@P"[i%8]<<2
 
     constexpr uint8_t PROGMEM officeDither10[] {
         8, 8,  // 8x8 px image
@@ -271,7 +271,7 @@ namespace patterns {
         0x11,  // ▓▓▓░▓▓▓░
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\0\0D\0\0\0\21"[i%8]
+    // Magic: 98^"bb&bbbsb"[i%8]
 
     constexpr uint8_t PROGMEM officeDither20[] {
         8, 8,  // 8x8 px image
@@ -395,7 +395,7 @@ namespace patterns {
         0xFF,  // ░░░░░░░░
         0xFF,  // ░░░░░░░░
     };
-    // Magic: ~"\0D\0\0\0\21\0"[i%8]
+    // Magic: 144^"o+ooo~oo"[i%8]
 
     constexpr uint8_t PROGMEM officeDither90[] {
         8, 8,  // 8x8 px image
@@ -408,7 +408,7 @@ namespace patterns {
         0xBF,  // ░▓░░░░░░
         0xFF,  // ░░░░░░░░
     };
-    // Magic: ~"\0\0\4\0\0\0@"[i%8]
+    // Magic: 144^"ookooo/o"[i%8]
 
 }
 

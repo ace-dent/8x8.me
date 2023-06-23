@@ -250,7 +250,7 @@ namespace patterns {
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\0\0\0\0\377\0\0"[i%8]
+    // Magic: 64^"@@@@\277@@@"[i%8]
 
     constexpr uint8_t PROGMEM verticalSparseMedium[] {
         8, 8,  // 8x8 px image
@@ -263,7 +263,7 @@ namespace patterns {
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\0\0\0\377\377\0\0"[i%8]
+    // Magic: 64^"@@@\277\277@@@"[i%8]
 
     constexpr uint8_t PROGMEM verticalSparseBold[] {
         8, 8,  // 8x8 px image
@@ -302,7 +302,7 @@ namespace patterns {
         0xFF,  // ░░░░░░░░
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: ~"\377\377\0\0\0\0\0\377"[i%8]
+    // Magic: 131^"\203\203|||||\203"[i%8]
 
     constexpr uint8_t PROGMEM verticalStripes[] {
         8, 8,  // 8x8 px image
@@ -328,7 +328,7 @@ namespace patterns {
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\0\0\0\377\0\377\0"[i%8]
+    // Magic: 97^"aaa\236a\236aa"[i%8]
 
     constexpr uint8_t PROGMEM verticalPinstripeMedium[] {
         8, 8,  // 8x8 px image
@@ -438,7 +438,7 @@ namespace patterns {
         0x02,  // ▓▓▓▓▓▓░▓
         0x04,  // ▓▓▓▓▓░▓▓
     };
-    // Magic: "\b\20 @\200\1\2\4"[i%8]
+    // Magic: 96^"hp@ \340abd"[i%8]
 
     constexpr uint8_t PROGMEM dexterSparseMedium[] {
         8, 8,  // 8x8 px image
@@ -451,7 +451,7 @@ namespace patterns {
         0x06,  // ▓▓▓▓▓░░▓
         0x0C,  // ▓▓▓▓░░▓▓
     };
-    // Magic: "\0300`\300\201\3\6\f"[i%8]
+    // Magic: 72^"Px(\210\311KND"[i%8]
 
     constexpr uint8_t PROGMEM dexterSparseBold[] {
         8, 8,  // 8x8 px image
@@ -464,7 +464,7 @@ namespace patterns {
         0x07,  // ▓▓▓▓▓░░░
         0x0E,  // ▓▓▓▓░░░▓
     };
-    // Magic: "\348p\340\301\203\a\16"[i%8]
+    // Magic: 83^"Ok#\263\222\320T]"[i%8]
 
     constexpr uint8_t PROGMEM dexterSparseExtraBold[] {
         8, 8,  // 8x8 px image
@@ -490,7 +490,7 @@ namespace patterns {
         0x8F,  // ░▓▓▓░░░░
         0x1F,  // ▓▓▓░░░░░
     };
-    // Magic: ~"\301\203\a\16\348p\340"[i%8]
+    // Magic: 176^"\216\314HASw?\257"[i%8]
 
     constexpr uint8_t PROGMEM dexterStripes[] {
         8, 8,  // 8x8 px image
@@ -568,7 +568,7 @@ namespace patterns {
         0x11,  // ▓▓▓░▓▓▓░
         0x11,  // ▓▓▓░▓▓▓░
     };
-    // Magic: "\"\"DD\210\210\21\21"[i%8]
+    // Magic: 98^"@@&&\352\352ss"[i%8]
 
     constexpr uint8_t PROGMEM dexterShallowMedium[] {
         8, 8,  // 8x8 px image
@@ -636,7 +636,7 @@ namespace patterns {
         0x20,  // ▓▓░▓▓▓▓▓
         0x10,  // ▓▓▓░▓▓▓▓
     };
-    // Magic: "\b\4\2\1\200@ \20"[i%8]
+    // Magic: 99^"kgab\343#Cs"[i%8]
 
     constexpr uint8_t PROGMEM sinisterSparseMedium[] {
         8, 8,  // 8x8 px image
@@ -649,7 +649,7 @@ namespace patterns {
         0x60,  // ▓░░▓▓▓▓▓
         0x30,  // ▓▓░░▓▓▓▓
     };
-    // Magic: "\30\f\6\3\201\300`0"[i%8]
+    // Magic: 65^"YMGB\300\201!q"[i%8]
 
     constexpr uint8_t PROGMEM sinisterSparseBold[] {
         8, 8,  // 8x8 px image
@@ -662,7 +662,7 @@ namespace patterns {
         0x70,  // ▓░░░▓▓▓▓
         0x38,  // ▓▓░░░▓▓▓
     };
-    // Magic: "\34\16\a\203\301\340p8"[i%8]
+    // Magic: 93^"ASZ\336\234\275-e"[i%8]
 
     constexpr uint8_t PROGMEM sinisterSparseExtraBold[] {
         8, 8,  // 8x8 px image
@@ -675,7 +675,7 @@ namespace patterns {
         0xF0,  // ░░░░▓▓▓▓
         0x78,  // ▓░░░░▓▓▓
     };
-    // Magic: "<\36\17\207\303\341\360x"[i%8]
+    // Magic: 93^"aCR\332\236\274\255%"[i%8]
 
     constexpr uint8_t PROGMEM sinisterSparseUltraBold[] {
         8, 8,  // 8x8 px image
@@ -688,7 +688,7 @@ namespace patterns {
         0xF8,  // ░░░░░▓▓▓
         0x7C,  // ▓░░░░░▓▓
     };
-    // Magic: ~"\301\340p8\34\16\a\203"[i%8]
+    // Magic: 162^"\234\275-eASZ\336"[i%8]
 
     constexpr uint8_t PROGMEM sinisterStripes[] {
         8, 8,  // 8x8 px image
@@ -766,7 +766,7 @@ namespace patterns {
         0x44,  // ▓░▓▓▓░▓▓
         0x44,  // ▓░▓▓▓░▓▓
     };
-    // Magic: "\"\"\21\21\210\210DD"[i%8]
+    // Magic: 99^"AArr\353\353''"[i%8]
 
     constexpr uint8_t PROGMEM sinisterShallowMedium[] {
         8, 8,  // 8x8 px image

@@ -20,7 +20,7 @@ namespace patterns {
         0x01,  // ▓▓▓▓▓▓▓░
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "U\0\1\0\1\0\1"[i%8]
+    // Magic: 48^"e0101010"[i%8]
 
     constexpr uint8_t PROGMEM gridDotsCentre[] {
         8, 8,  // 8x8 px image
@@ -33,7 +33,7 @@ namespace patterns {
         0x01,  // ▓▓▓▓▓▓▓░
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "U\0\1\0\21\0\1"[i%8]
+    // Magic: 48^"e010!010"[i%8]
 
     constexpr uint8_t PROGMEM grid[] {
         8, 8,  // 8x8 px image
@@ -46,7 +46,7 @@ namespace patterns {
         0x01,  // ▓▓▓▓▓▓▓░
         0x01,  // ▓▓▓▓▓▓▓░
     };
-    // Magic: "\377\1\1\1\1\1\1\1"[i%8]
+    // Magic: 44^"\323-------"[i%8]
 
     constexpr uint8_t PROGMEM gridMedium[] {
         8, 8,  // 8x8 px image
@@ -59,7 +59,7 @@ namespace patterns {
         0x03,  // ▓▓▓▓▓▓░░
         0x03,  // ▓▓▓▓▓▓░░
     };
-    // Magic: "\377\377\3\3\3\3\3\3"[i%8]
+    // Magic: 46^"\321\321------"[i%8]
 
     constexpr uint8_t PROGMEM gridBold[] {
         8, 8,  // 8x8 px image
@@ -99,7 +99,7 @@ namespace patterns {
         0x11,  // ▓▓▓░▓▓▓░
         0x11,  // ▓▓▓░▓▓▓░
     };
-    // Magic: "\377\21\21\21"[i%4]
+    // Magic: 64^"\277QQQ"[i%4]
     // GAMBY: 0xF111
 
     constexpr uint8_t PROGMEM gridMiniMedium[] {
@@ -141,7 +141,7 @@ namespace patterns {
         0x80,  // ░▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\"\0\b\0\"\0\200"[i%8]
+    // Magic: 97^"CaiaCa\341a"[i%8]
 
     constexpr uint8_t PROGMEM gridDiagonal[] {
         8, 8,  // 8x8 px image
@@ -154,7 +154,7 @@ namespace patterns {
         0x80,  // ░▓▓▓▓▓▓▓
         0x41,  // ▓░▓▓▓▓▓░
     };
-    // Magic: "\"\24\b\24\"A\200A"[i%8]
+    // Magic: 96^"BthtB!\340!"[i%8]
 
     constexpr uint8_t PROGMEM gridDiagonalMedium[] {
         8, 8,  // 8x8 px image
@@ -167,7 +167,7 @@ namespace patterns {
         0xC1,  // ░░▓▓▓▓▓░
         0xC1,  // ░░▓▓▓▓▓░
     };
-    // Magic: "c6\34\0346c\301\301"[i%8]
+    // Magic: 66^"!t^^t!\203\203"[i%8]
 
     constexpr uint8_t PROGMEM gridDiagonalMini[] {
         8, 8,  // 8x8 px image
@@ -194,7 +194,7 @@ namespace patterns {
         0xAA,  // ░▓░▓░▓░▓
         0x44,  // ▓░▓▓▓░▓▓
     };
-    // Magic: "DD\252\21\21\21\252D"[i%8]
+    // Magic: 43^"oo\201:::\201o"[i%8]
 
     constexpr uint8_t PROGMEM trapezoid[] {
         8, 8,  // 8x8 px image
