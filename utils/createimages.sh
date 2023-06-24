@@ -37,7 +37,7 @@ readonly md_thumby_lines=11
 
 # Code snippet parameters
 bitsy_map="$( echo {1..9} {a..z} \
-  | tr -d '[:space:]' )" # Sequence of characters to assign for Bitsy patterns
+  | tr -d '[:space:]' )" # Sequence of characters to assign for bitsy patterns
 readonly bitsy_map
 readonly bitsy_map_length=${#bitsy_map}
 p8_map="$( echo {a..z} {0..9} {A..Z} \
@@ -52,7 +52,7 @@ echo ''
 echo 'Crunching images into patterns...'
 while (( "$#" )); do
 
-  # Check for 'reset' parameter to restart Bitsy tile assignment
+  # Check for 'reset' parameter to restart bitsy tile assignment
   if [ "$1" == 'reset' ]; then
     bitsy_counter=0
     echo '--- Bitsy TIL numbering reset ---'
@@ -157,7 +157,7 @@ while (( "$#" )); do
     printf '| [cpp](%s.h#L%u-L%u) ' \
       "${img_group}" "${md_cpp_start}" "${md_cpp_end}"
     ((md_cpp_start=md_cpp_end+2))
-    # Add Bitsy link
+    # Add bitsy link
     ((md_bitsy_end=md_bitsy_start+md_bitsy_lines))
     printf '| [txt](%s.bitsy.txt#L%u-L%u) ' \
        "${img_group}" "${md_bitsy_start}" "${md_bitsy_end}"
@@ -201,7 +201,7 @@ while (( "$#" )); do
     } >> "${cpp_file}"
   elif [ ${pattern_width} -eq 2 ]; then
     # TODO: Catch edge cases where string encoding is smaller "Az"[i%2]
-    # e.g. bayerDither04 `"U"[i%2]` vs `i&1?85:0`
+    # e.g. `"xy"[i%2]` vs `i&1?120:121`
     {
       # Convert byte 1 (first image column) to decimal
       binary_str="$( sed -n 1p "${bin_v}" )"
@@ -357,7 +357,7 @@ while (( "$#" )); do
 
 
 
-  # Create Bitsy tile data
+  # Create bitsy tile data
   bitsy_file="${img_root}/${img_group}.bitsy.WIP.txt"
   index=$(( (bitsy_counter-1) % bitsy_map_length ))
   bitsy_mapped_char="${bitsy_map:index:1}"

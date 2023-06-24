@@ -41,7 +41,7 @@ Repeating tile fill patterns
 
 Inspired by studying software from the mid 1980's, to video games of the early 1990's. Influenced by the wonderful pixel artists of today. All artwork is drawn *tabula rasa*. Please let me know if any designs resemble the work of others.
 
-Artwork and files created using [ABSpriteEditor](https://github.com/Pharap/ABSpriteEditor). Patterns tested and refined using [ASE](https://github.com/pmwasson/ASE) and [Bitsy](https://ledoux.itch.io/bitsy).  Additional file wrangling with [image2cpp](https://javl.github.io/image2cpp/). Data tweaking in LibreOffice, image conversions by ImageMagick, compressed with `pngslim` and metadata added with ExifTool.
+Artwork and files created using [ABSpriteEditor](https://github.com/Pharap/ABSpriteEditor). Patterns tested and refined using [ASE](https://github.com/pmwasson/ASE) and [bitsy](https://ledoux.itch.io/bitsy).  Additional file wrangling with [image2cpp](https://javl.github.io/image2cpp/). Data tweaking in LibreOffice, image conversions by ImageMagick, compressed with `pngslim` and metadata added with ExifTool.
 
 Special thanks to @castpixel, @dw817, @felipemanga, @javl, @le-doux, @lexaloffle, @Pharap, @pmwasson.
 
