@@ -396,7 +396,7 @@ namespace patterns {
         0x88,  // ░▓▓▓░▓▓▓
         0x11,  // ▓▓▓░▓▓▓░
     };
-    // Magic: "\"D\210\21"[i%4]
+    // Magic: 17+"\0213w"[i%4]
     // GAMBY: 0x2481
 
     constexpr uint8_t PROGMEM dexterMedium[] {
@@ -477,7 +477,7 @@ namespace patterns {
         0x0F,  // ▓▓▓▓░░░░
         0x1E,  // ▓▓▓░░░░▓
     };
-    // Magic: "<x\360\341\303\207\17\36"[i%8]
+    // Magic: 9+"3o\347\330\272~\6\25"[i%8]
 
     constexpr uint8_t PROGMEM dexterSparseUltraBold[] {
         8, 8,  // 8x8 px image
@@ -503,7 +503,7 @@ namespace patterns {
         0x8A,  // ░▓▓▓░▓░▓
         0x15,  // ▓▓▓░▓░▓░
     };
-    // Magic: "*T\250Q\242E\212\25"[i%8]
+    // Magic: 21+"\25?\223<\2150u"[i%8]
 
     constexpr uint8_t PROGMEM dexterPinstripe[] {
         8, 8,  // 8x8 px image
@@ -529,7 +529,7 @@ namespace patterns {
         0x19,  // ▓▓▓░░▓▓░
         0x32,  // ▓▓░░▓▓░▓
     };
-    // Magic: "d\310\221#F\214\0312"[i%8]
+    // Magic: 23+"M\261z\f/u\2\e"[i%8]
 
     constexpr uint8_t PROGMEM dexterSteep[] {
         8, 8,  // 8x8 px image
@@ -555,7 +555,7 @@ namespace patterns {
         0x87,  // ░▓▓▓▓░░░
         0x1E,  // ▓▓▓░░░░▓
     };
-    // Magic: "x\341\207\36"[i%4]
+    // Magic: 30+"Z\303i"[i%4]
 
     constexpr uint8_t PROGMEM dexterShallow[] {
         8, 8,  // 8x8 px image
@@ -568,7 +568,7 @@ namespace patterns {
         0x11,  // ▓▓▓░▓▓▓░
         0x11,  // ▓▓▓░▓▓▓░
     };
-    // Magic: 98^"@@&&\352\352ss"[i%8]
+    // Magic: 17+"\21\02133ww\0"[i%8]
 
     constexpr uint8_t PROGMEM dexterShallowMedium[] {
         8, 8,  // 8x8 px image
@@ -581,7 +581,7 @@ namespace patterns {
         0x33,  // ▓▓░░▓▓░░
         0x33,  // ▓▓░░▓▓░░
     };
-    // Magic: "ff\314\314\231\23133"[i%8]
+    // Magic: 51+"33\231\231ff\0"[i%8]
 
     constexpr uint8_t PROGMEM sinister[] {
         8, 8,  // 8x8 px image
@@ -675,7 +675,7 @@ namespace patterns {
         0xF0,  // ░░░░▓▓▓▓
         0x78,  // ▓░░░░▓▓▓
     };
-    // Magic: 93^"aCR\332\236\274\255%"[i%8]
+    // Magic: 9+"3\25\6~\272\330\347o"[i%8]
 
     constexpr uint8_t PROGMEM sinisterSparseUltraBold[] {
         8, 8,  // 8x8 px image
@@ -740,7 +740,7 @@ namespace patterns {
         0x60,  // ▓░░▓▓▓▓▓
         0x18,  // ▓▓▓░░▓▓▓
     };
-    // Magic: "\6\201`\30"[i%4]
+    // Magic: 6+"\0{Z\22"[i%4]
 
     constexpr uint8_t PROGMEM sinisterSteepMedium[] {
         8, 8,  // 8x8 px image
@@ -753,7 +753,7 @@ namespace patterns {
         0xE1,  // ░░░▓▓▓▓░
         0x78,  // ▓░░░░▓▓▓
     };
-    // Magic: "\36\207\341x"[i%4]
+    // Magic: 30+"\0i\303Z"[i%4]
 
     constexpr uint8_t PROGMEM sinisterShallow[] {
         8, 8,  // 8x8 px image
@@ -779,7 +779,7 @@ namespace patterns {
         0xCC,  // ░░▓▓░░▓▓
         0xCC,  // ░░▓▓░░▓▓
     };
-    // Magic: "ff33\231\231\314\314"[i%8]
+    // Magic: 51+"33\0\0ff\231\231"[i%8]
 
 }
 

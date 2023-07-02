@@ -20,7 +20,7 @@ namespace patterns {
         0xAE,  // ░▓░▓░░░▓
         0xDD,  // ░░▓░░░▓░
     };
-    // Magic: ~"E\210D\"\25\210Q\""[i%8]
+    // Magic: 110+"L\tMo|\t@o"[i%8]
 
     constexpr uint8_t PROGMEM weaveDense[] {
         8, 8,  // 8x8 px image
@@ -33,7 +33,7 @@ namespace patterns {
         0xAE,  // ░▓░▓░░░▓
         0xDD,  // ░░▓░░░▓░
     };
-    // Magic: ~"E\210T\"\25\210Q\""[i%8]
+    // Magic: 110+"L\t=o|\t@o"[i%8]
 
     constexpr uint8_t PROGMEM weave[] {
         8, 8,  // 8x8 px image
@@ -72,7 +72,7 @@ namespace patterns {
         0x5F,  // ▓░▓░░░░░
         0x3E,  // ▓▓░░░░░▓
     };
-    // Magic: "}\273\327\343\365\356_>"[i%8]
+    // Magic: 128^"\375;Wcun\337\276"[i%8]
 
     constexpr uint8_t PROGMEM net[] {
         8, 8,  // 8x8 px image
@@ -85,7 +85,7 @@ namespace patterns {
         0x63,  // ▓░░▓▓▓░░
         0xC1,  // ░░▓▓▓▓▓░
     };
-    // Magic: "\203\306l8\0346c\301"[i%8]
+    // Magic: 15+"t\267])\r'T\262"[i%8]
 
     constexpr uint8_t PROGMEM wicker[] {
         8, 8,  // 8x8 px image
@@ -177,7 +177,7 @@ namespace patterns {
         0xAA,  // ░▓░▓░▓░▓
         0x55,  // ▓░▓░▓░▓░
     };
-    // Magic: "xxxx\252U\252U"[i%8]
+    // Magic: 44+"LLLL~)~)"[i%8]
 
     constexpr uint8_t PROGMEM tartan[] {
         8, 8,  // 8x8 px image

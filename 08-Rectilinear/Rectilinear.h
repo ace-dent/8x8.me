@@ -126,7 +126,7 @@ namespace patterns {
         0x01,  // ▓▓▓▓▓▓▓░
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "~=\3\e\e\3\1"[i%8]
+    // Magic: 72^"6uKSSKIH"[i%8]
 
     constexpr uint8_t PROGMEM blockPyramid[] {
         8, 8,  // 8x8 px image
@@ -139,7 +139,7 @@ namespace patterns {
         0x41,  // ▓░▓▓▓▓▓░
         0x80,  // ░▓▓▓▓▓▓▓
     };
-    // Magic: "U+\27\17\27#A\200"[i%8]
+    // Magic: 96^"5KwowC!\340"[i%8]
 
 }
 

@@ -118,7 +118,7 @@ namespace patterns {
         0x55,  // ▓░▓░▓░▓░
         0x88,  // ░▓▓▓░▓▓▓
     };
-    // Magic: "U\252U\210"[i%4]
+    // Magic: 45+"(}(["[i%4]
     // GAMBY: 0x5A58
 
     constexpr uint8_t PROGMEM bayerDither08[] {
@@ -326,7 +326,7 @@ namespace patterns {
         0x55,  // ▓░▓░▓░▓░
         0xA8,  // ░▓░▓░▓▓▓
     };
-    // Magic: "U\252U\212U\252U\250"[i%8]
+    // Magic: 45+"(}(](}({"[i%8]
 
     constexpr uint8_t PROGMEM officeDither50[] {
         8, 8,  // 8x8 px image

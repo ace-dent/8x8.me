@@ -20,7 +20,7 @@ namespace patterns {
         0x88,  // ░▓▓▓░▓▓▓
         0x44,  // ▓░▓▓▓░▓▓
     };
-    // Magic: "\210U\"D\"U\210D"[i%8]
+    // Magic: 21+"s@\r/\r@s/"[i%8]
 
     constexpr uint8_t PROGMEM heart[] {
         8, 8,  // 8x8 px image
@@ -33,7 +33,7 @@ namespace patterns {
         0x0C,  // ▓▓▓▓░░▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\f\22\"D\"\22\f"[i%8]
+    // Magic: 96^"lrB$Brl`"[i%8]
 
     constexpr uint8_t PROGMEM heartMini[] {
         8, 8,  // 8x8 px image
@@ -73,7 +73,7 @@ namespace patterns {
         0x22,  // ▓▓░▓▓▓░▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\"c\24\b\24c\""[i%8]
+    // Magic: 80^"r3DXD3rP"[i%8]
 
     constexpr uint8_t PROGMEM cross[] {
         8, 8,  // 8x8 px image
@@ -86,7 +86,7 @@ namespace patterns {
         0x18,  // ▓▓▓░░▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\0\30\30~~\30\30"[i%8]
+    // Magic: 88^"X@@&&@@X"[i%8]
 
     constexpr uint8_t PROGMEM crossMini[] {
         8, 8,  // 8x8 px image
@@ -113,7 +113,7 @@ namespace patterns {
         0x50,  // ▓░▓░▓▓▓▓
         0xD0,  // ░░▓░▓▓▓▓
     };
-    // Magic: "\6\17\5\r`\360P\320"[i%8]
+    // Magic: 32^"&/%-@\320p\360"[i%8]
 
 }
 

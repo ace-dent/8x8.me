@@ -46,7 +46,7 @@ namespace patterns {
         0xD6,  // ░░▓░▓░░▓
         0xD6,  // ░░▓░▓░░▓
     };
-    // Magic: ~"/)9)\351)))"[i%8]
+    // Magic: "hkck\vkkk"[i%8]<<1
 
     constexpr uint8_t PROGMEM brickWide[] {
         8, 8,  // 8x8 px image
@@ -111,7 +111,7 @@ namespace patterns {
         0x22,  // ▓▓░▓▓▓░▓
         0x22,  // ▓▓░▓▓▓░▓
     };
-    // Magic: " .\"\"\2\342\"\""[i%8]
+    // Magic: 88^"xvzzZ\272zz"[i%8]
 
     constexpr uint8_t PROGMEM mortar[] {
         8, 8,  // 8x8 px image
@@ -124,7 +124,7 @@ namespace patterns {
         0x00,  // ▓▓▓▓▓▓▓▓
         0x11,  // ▓▓▓░▓▓▓░
     };
-    // Magic: "\n\21\0\21\240\21\0\21"[i%8]
+    // Magic: 80^"ZAPA\360APA"[i%8]
 
     constexpr uint8_t PROGMEM mortarAged[] {
         8, 8,  // 8x8 px image
@@ -137,7 +137,7 @@ namespace patterns {
         0x01,  // ▓▓▓▓▓▓▓░
         0x11,  // ▓▓▓░▓▓▓░
     };
-    // Magic: "\n\20\21\0\200\20\1\21"[i%8]
+    // Magic: 80^"Z@AP\320@QA"[i%8]
 
     constexpr uint8_t PROGMEM brickVertical[] {
         8, 8,  // 8x8 px image
@@ -150,7 +150,7 @@ namespace patterns {
         0xEF,  // ░░░▓░░░░
         0xEF,  // ░░░▓░░░░
     };
-    // Magic: ~"\377\1\1\1\377\20\20\20"[i%8]
+    // Magic: 128^"\200~~~\200ooo"[i%8]
 
     constexpr uint8_t PROGMEM brickSinister[] {
         8, 8,  // 8x8 px image
@@ -163,7 +163,7 @@ namespace patterns {
         0xBF,  // ░▓░░░░░░
         0xDF,  // ░░▓░░░░░
     };
-    // Magic: ~"\20\b\24\"A\200@ "[i%8]
+    // Magic: 128^"owk]>\377?_"[i%8]
 
     constexpr uint8_t PROGMEM brickSinisterRounded[] {
         8, 8,  // 8x8 px image
@@ -176,7 +176,7 @@ namespace patterns {
         0xBF,  // ░▓░░░░░░
         0xDF,  // ░░▓░░░░░
     };
-    // Magic: ~"\20\30\24\"A\300@ "[i%8]
+    // Magic: 128^"ogk]>\277?_"[i%8]
 
     constexpr uint8_t PROGMEM brickSinisterMini[] {
         8, 8,  // 8x8 px image
@@ -189,7 +189,7 @@ namespace patterns {
         0xEE,  // ░░░▓░░░▓
         0x77,  // ▓░░░▓░░░
     };
-    // Magic: ~"U\"\21\210"[i%4]
+    // Magic: 119+"3fw"[i%4]
     // GAMBY: 0xADE7
 
     constexpr uint8_t PROGMEM brickMini[] {
@@ -217,7 +217,7 @@ namespace patterns {
         0x54,  // ▓░▓░▓░▓▓
         0x11,  // ▓▓▓░▓▓▓░
     };
-    // Magic: "UDU\21Q@T\21"[i%8]
+    // Magic: 33^"tet0pau0"[i%8]
 
     constexpr uint8_t PROGMEM brickMiniRuins[] {
         8, 8,  // 8x8 px image
@@ -230,7 +230,7 @@ namespace patterns {
         0x50,  // ▓░▓░▓▓▓▓
         0x11,  // ▓▓▓░▓▓▓░
     };
-    // Magic: "\1\4\1\21Q@P\21"[i%8]
+    // Magic: 33^" % 0paq0"[i%8]
 
     constexpr uint8_t PROGMEM stoneWall[] {
         8, 8,  // 8x8 px image
@@ -256,7 +256,7 @@ namespace patterns {
         0xDE,  // ░░▓░░░░▓
         0xCD,  // ░░▓▓░░▓░
     };
-    // Magic: ~"\36\22#a\241!!2"[i%8]
+    // Magic: 160^"AM|>\376~~m"[i%8]
 
     constexpr uint8_t PROGMEM stoneBlock[] {
         8, 8,  // 8x8 px image
@@ -295,7 +295,7 @@ namespace patterns {
         0xB9,  // ░▓░░░▓▓░
         0x76,  // ▓░░░▓░░▓
     };
-    // Magic: ~"\221b&\31\230dF\211"[i%8]
+    // Magic: 60+"2a\235\252+_}:"[i%8]
 
     constexpr uint8_t PROGMEM shingle[] {
         8, 8,  // 8x8 px image
@@ -308,7 +308,7 @@ namespace patterns {
         0xDE,  // ░░▓░░░░▓
         0x3E,  // ▓▓░░░░░▓
     };
-    // Magic: ~"\2\4\b\b\24\22!\301"[i%8]
+    // Magic: 128^"}{wwkm^\276"[i%8]
 
     constexpr uint8_t PROGMEM roofTiles[] {
         8, 8,  // 8x8 px image
@@ -334,7 +334,7 @@ namespace patterns {
         0x06,  // ▓▓▓▓▓░░▓
         0xFE,  // ░░░░░░░▓
     };
-    // Magic: "\376\6\3\1\1\3\6\376"[i%8]
+    // Magic: 64^"\276FCAACF\276"[i%8]
 
     constexpr uint8_t PROGMEM window[] {
         8, 8,  // 8x8 px image

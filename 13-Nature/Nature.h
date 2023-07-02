@@ -33,7 +33,7 @@ namespace patterns {
         0x10,  // ▓▓▓░▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\0\0\4@\0\0\20"[i%8]
+    // Magic: "@@AP@@D"[i%8]<<2
 
     constexpr uint8_t PROGMEM sand[] {
         8, 8,  // 8x8 px image
@@ -46,7 +46,7 @@ namespace patterns {
         0x80,  // ░▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\2$@\0\b\20\200"[i%8]
+    // Magic: 97^"cE!aiq\341a"[i%8]
 
     constexpr uint8_t PROGMEM grass[] {
         8, 8,  // 8x8 px image
@@ -72,7 +72,7 @@ namespace patterns {
         0x50,  // ▓░▓░▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\0\5\2\0\0 P"[i%8]
+    // Magic: 97^"adcaaA1a"[i%8]
 
     constexpr uint8_t PROGMEM pasture[] {
         8, 8,  // 8x8 px image
@@ -85,7 +85,7 @@ namespace patterns {
         0x30,  // ▓▓░░▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "`\6`\0060\0000"[i%8]
+    // Magic: 65^"!G!GqAqA"[i%8]
 
     constexpr uint8_t PROGMEM daisies[] {
         8, 8,  // 8x8 px image
@@ -98,7 +98,7 @@ namespace patterns {
         0x20,  // ▓▓░▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\b\24\b\0 P "[i%8]
+    // Magic: 99^"kwkcC3Cc"[i%8]
 
     constexpr uint8_t PROGMEM tuffet[] {
         8, 8,  // 8x8 px image
@@ -111,7 +111,7 @@ namespace patterns {
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\0 @\0`\20\0"[i%8]
+    // Magic: "@HP@XD@"[i%8]<<2
 
     constexpr uint8_t PROGMEM shrub[] {
         8, 8,  // 8x8 px image
@@ -124,7 +124,7 @@ namespace patterns {
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\0\20 \30 \20\0"[i%8]
+    // Magic: "@DHFHD@"[i%8]<<2
 
     constexpr uint8_t PROGMEM leaves[] {
         8, 8,  // 8x8 px image
@@ -137,7 +137,7 @@ namespace patterns {
         0x0C,  // ▓▓▓▓░░▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\0\0\0300\0\30\f"[i%8]
+    // Magic: "@@FL@FC"[i%8]<<2
 
     constexpr uint8_t PROGMEM crop[] {
         8, 8,  // 8x8 px image
@@ -163,7 +163,7 @@ namespace patterns {
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\0200f\fp\30\0"[i%8]
+    // Magic: 72^"Xx.D8PHH"[i%8]
 
     constexpr uint8_t PROGMEM thicket[] {
         8, 8,  // 8x8 px image
@@ -189,7 +189,7 @@ namespace patterns {
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\0(\24\352\24(\0"[i%8]
+    // Magic: 65^"AiU\253UiAA"[i%8]
 
     constexpr uint8_t PROGMEM rocks[] {
         8, 8,  // 8x8 px image
@@ -215,7 +215,7 @@ namespace patterns {
         0x04,  // ▓▓▓▓▓░▓▓
         0x08,  // ▓▓▓▓░▓▓▓
     };
-    // Magic: "\2A!\"H\4\4\b"[i%8]
+    // Magic: 96^"b!AB(ddh"[i%8]
 
     constexpr uint8_t PROGMEM skull[] {
         8, 8,  // 8x8 px image
@@ -228,7 +228,7 @@ namespace patterns {
         0x40,  // ▓░▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\0000(\30(\200@"[i%8]
+    // Magic: "@LJFJ`P"[i%8]<<2
 
     constexpr uint8_t PROGMEM crackedBoulder[] {
         8, 8,  // 8x8 px image

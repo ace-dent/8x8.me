@@ -141,7 +141,7 @@ namespace patterns {
         0xF0,  // ░░░░▓▓▓▓
         0xF0,  // ░░░░▓▓▓▓
     };
-    // Magic: "\17\17\360\360"[i%4]
+    // Magic: 64^"OO\260\260"[i%4]
 
     constexpr uint8_t PROGMEM diamond[] {
         8, 8,  // 8x8 px image
@@ -367,7 +367,7 @@ namespace patterns {
         0xCC,  // ░░▓▓░░▓▓
         0x99,  // ░▓▓░░▓▓░
     };
-    // Magic: "f3\231\3143f\314\231"[i%8]
+    // Magic: 42+"<\to\242\t<\242o"[i%8]
 
     constexpr uint8_t PROGMEM chevronCheck[] {
         8, 8,  // 8x8 px image
