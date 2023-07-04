@@ -20,7 +20,7 @@ namespace patterns {
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "@@BEB@@"[i%8]<<2
+    // Magic: "@@BEB@@"[i%8]*4
 
     constexpr uint8_t PROGMEM annuletSmallDuo[] {
         8, 8,  // 8x8 px image
@@ -73,7 +73,7 @@ namespace patterns {
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "@@BGB@@"[i%8]<<2
+    // Magic: "@@BGB@@"[i%8]*4
 
     constexpr uint8_t PROGMEM annulet[] {
         8, 8,  // 8x8 px image
@@ -86,7 +86,7 @@ namespace patterns {
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "@@FIIF@"[i%8]<<2
+    // Magic: "@@FIIF@"[i%8]*4
 
     constexpr uint8_t PROGMEM annuletCoAnnulet[] {
         8, 8,  // 8x8 px image
@@ -177,7 +177,7 @@ namespace patterns {
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "@@FOOF@"[i%8]<<2
+    // Magic: "@@FOOF@"[i%8]*4
 
     constexpr uint8_t PROGMEM ball[] {
         8, 8,  // 8x8 px image
@@ -190,7 +190,7 @@ namespace patterns {
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "@@FMOF@"[i%8]<<2
+    // Magic: "@@FMOF@"[i%8]*4
 
     constexpr uint8_t PROGMEM annuletLarge[] {
         8, 8,  // 8x8 px image

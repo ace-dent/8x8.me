@@ -258,7 +258,7 @@ namespace patterns {
         0x40,  // ▓░▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "@@A@@@P"[i%8]<<2
+    // Magic: "@@A@@@P"[i%8]*4
 
     constexpr uint8_t PROGMEM officeDither10[] {
         8, 8,  // 8x8 px image

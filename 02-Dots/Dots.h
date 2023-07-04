@@ -20,7 +20,7 @@ namespace patterns {
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "@@@@B@@"[i%8]<<2
+    // Magic: "@@@@B@@"[i%8]*4
 
     constexpr uint8_t PROGMEM pixelMini[] {
         8, 8,  // 8x8 px image

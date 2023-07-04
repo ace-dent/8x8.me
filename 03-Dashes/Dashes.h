@@ -48,7 +48,7 @@ namespace patterns {
         0x04,  // ▓▓▓▓▓░▓▓
         0x04,  // ▓▓▓▓▓░▓▓
     };
-    // Magic: "PPPPAAA"[i%8]<<2
+    // Magic: "PPPPAAA"[i%8]*4
 
     constexpr uint8_t PROGMEM horizontalDashMini[] {
         8, 8,  // 8x8 px image
@@ -88,7 +88,7 @@ namespace patterns {
         0x04,  // ▓▓▓▓▓░▓▓
         0x08,  // ▓▓▓▓░▓▓▓
     };
-    // Magic: "DHAB"[i%4]<<2
+    // Magic: "DHAB"[i%4]*4
 
     constexpr uint8_t PROGMEM dexterSparseDash[] {
         8, 8,  // 8x8 px image
@@ -114,7 +114,7 @@ namespace patterns {
         0x20,  // ▓▓░▓▓▓▓▓
         0x10,  // ▓▓▓░▓▓▓▓
     };
-    // Magic: "BAHD"[i%4]<<2
+    // Magic: "BAHD"[i%4]*4
 
     constexpr uint8_t PROGMEM sinisterSparseDash[] {
         8, 8,  // 8x8 px image

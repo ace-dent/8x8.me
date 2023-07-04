@@ -33,7 +33,7 @@ namespace patterns {
         0x10,  // ▓▓▓░▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "@@AP@@D"[i%8]<<2
+    // Magic: "@@AP@@D"[i%8]*4
 
     constexpr uint8_t PROGMEM sand[] {
         8, 8,  // 8x8 px image
@@ -111,7 +111,7 @@ namespace patterns {
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "@HP@XD@"[i%8]<<2
+    // Magic: "@HP@XD@"[i%8]*4
 
     constexpr uint8_t PROGMEM shrub[] {
         8, 8,  // 8x8 px image
@@ -124,7 +124,7 @@ namespace patterns {
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "@DHFHD@"[i%8]<<2
+    // Magic: "@DHFHD@"[i%8]*4
 
     constexpr uint8_t PROGMEM leaves[] {
         8, 8,  // 8x8 px image
@@ -137,7 +137,7 @@ namespace patterns {
         0x0C,  // ▓▓▓▓░░▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "@@FL@FC"[i%8]<<2
+    // Magic: "@@FL@FC"[i%8]*4
 
     constexpr uint8_t PROGMEM crop[] {
         8, 8,  // 8x8 px image
@@ -228,7 +228,7 @@ namespace patterns {
         0x40,  // ▓░▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "@LJFJ`P"[i%8]<<2
+    // Magic: "@LJFJ`P"[i%8]*4
 
     constexpr uint8_t PROGMEM crackedBoulder[] {
         8, 8,  // 8x8 px image
@@ -241,7 +241,7 @@ namespace patterns {
         0x30,  // ▓▓░░▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "4\26HcoN\30"[i%8]<<1
+    // Magic: "4\26HcoN\30"[i%8]*2
 
     constexpr uint8_t PROGMEM beanStalk[] {
         8, 8,  // 8x8 px image

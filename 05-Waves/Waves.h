@@ -46,7 +46,7 @@ namespace patterns {
         0x40,  // ▓░▓▓▓▓▓▓
         0x40,  // ▓░▓▓▓▓▓▓
     };
-    // Magic: 99^"#CcscC##"[i%8]
+    // Magic: "PH@D@HPP"[i%8]*4
 
     constexpr uint8_t PROGMEM tidal[] {
         8, 8,  // 8x8 px image
@@ -59,7 +59,7 @@ namespace patterns {
         0x40,  // ▓░▓▓▓▓▓▓
         0x40,  // ▓░▓▓▓▓▓▓
     };
-    // Magic: 99^"#CsssC##"[i%8]
+    // Magic: "PHDDDHPP"[i%8]*4
 
     constexpr uint8_t PROGMEM tidalMedium[] {
         8, 8,  // 8x8 px image
@@ -72,7 +72,7 @@ namespace patterns {
         0x60,  // ▓░░▓▓▓▓▓
         0x60,  // ▓░░▓▓▓▓▓
     };
-    // Magic: 64^" pXXXp  "[i%8]
+    // Magic: "XLFFFLXX"[i%8]*4
 
     constexpr uint8_t PROGMEM oceanicLight[] {
         8, 8,  // 8x8 px image
@@ -85,7 +85,7 @@ namespace patterns {
         0x00,  // ▓▓▓▓▓▓▓▓
         0x40,  // ▓░▓▓▓▓▓▓
     };
-    // Magic: 64^"@\0hP@`@"[i%8]
+    // Magic: "@PJD@H@P"[i%8]*4
 
     constexpr uint8_t PROGMEM oceanic[] {
         8, 8,  // 8x8 px image

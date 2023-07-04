@@ -48,7 +48,7 @@ namespace patterns {
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\0\0<$$<\0"[i%8]
+    // Magic: "@@OIIO@"[i%8]*4
 
     constexpr uint8_t PROGMEM boxMedium[] {
         8, 8,  // 8x8 px image
