@@ -43,7 +43,7 @@ Inspired by studying software from the mid 1980's, to video games of the early 1
 
 Artwork and files created using [ABSpriteEditor](https://github.com/Pharap/ABSpriteEditor). Patterns tested and refined using [ASE](https://github.com/pmwasson/ASE) and [bitsy](https://ledoux.itch.io/bitsy).  Additional file wrangling with [image2cpp](https://javl.github.io/image2cpp/). Data tweaking in LibreOffice, image conversions by ImageMagick, compressed with `pngslim` and metadata added with ExifTool.
 
-Special thanks to @castpixel, @dw817, @felipemanga, @javl, @le-doux, @lexaloffle, @Pharap, @pmwasson.
+Special thanks to @castpixel, @dw817, @felipemanga, @javl, @le-doux, @lexaloffle, @Pharap, @pmwasson, @scotthall92.
 
 
 <br>
@@ -57,4 +57,5 @@ All trademarks are the property of their respective owners.
 &emsp; *GAMBY* was produced by [Logicalzero](http://logicalzero.com/gamby/) (David Stokes).  
 &emsp; *LibreOffice* is a trademark of [The Document Foundation](https://www.libreoffice.org).  
 &emsp; *PICO-8* and *Picotron* are trademarks of [Lexaloffle Games LLP](https://www.lexaloffle.com).  
+&emsp; *Playdate*® and *Pulp* are trademarks of [Panic Inc., USA](https://shop.play.date/en-gb).  
 &emsp; *Thumby* is a trademark of AkroSense LLC, USA / [TinyCircuits](https://thumby.us).
