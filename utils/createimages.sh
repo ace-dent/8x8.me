@@ -84,10 +84,24 @@ while (( "$#" )); do
   pbm_file="${img_root}/pbm/${img_name}.pbm"
   magick "$1" -depth 1 -compress None "${pbm_file}"
 
-  # Add metadata to the original png and pbm file
+  # Create tweaked png image for Playdate Pulp
+  pulp_dir="${img_root%}/${img_group}.playdate-pulp"
+  if ! [ -d "${pulp_dir}" ]; then
+    mkdir "${pulp_dir}" # Temporary directory will be zip archived (manual step)
+    printf '%s - %s' "${img_group}" "${project//pattern/patterns (Pulp)}" > "${pulp_dir}/readme.txt"
+    printf '\n%s' "${copyright}" "${license}" >> "${pulp_dir}/readme.txt"
+  fi
+  pulp_file="${pulp_dir}/$(printf '%02d' "$img_counter")-${img_name}-table-8-8.png" # Pulp required name format
+  magick "$1" \
+    -define png:color-type='3' -define png:bit-depth='1' \
+    -define png:include-chunk=none \
+    +level-colors '#BFBCB6','#001830' "${pulp_file}" # Swap colors to match LCD screen
+  # TODO: When Pulp code is fixed, update black to '#091624' (less blue)
+
+  # Add metadata to png and pbm files
   exiftool -q -overwrite_original -fast1 \
     -Title="${img_name} - ${img_group} - ${project}" \
-    -Copyright="${copyright} ${license}" "$1" \
+    -Copyright="${copyright} ${license}" "$1"  "${pulp_file}" \
     -execute -q -overwrite_original -fast5 \
     -Comment="${img_name} - ${img_group} - ${project}" "${pbm_file}" # Primary pbm metadata (single text line in header)
   printf '\n# %s' "${copyright}" "${license}" >> "${pbm_file}" # Extra pbm metadata appended to the plain text file
