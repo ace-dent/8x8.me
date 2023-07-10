@@ -250,28 +250,28 @@ namespace patterns {
     constexpr uint8_t PROGMEM officeDither05[] {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
-        0x00,  // ▓▓▓▓▓▓▓▓
         0x04,  // ▓▓▓▓▓░▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
         0x40,  // ▓░▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "@@A@@@P"[i%8]*4
+    // Magic: "@A@@@P@"[i%8]*4
 
     constexpr uint8_t PROGMEM officeDither10[] {
         8, 8,  // 8x8 px image
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x11,  // ▓▓▓░▓▓▓░
+        0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
         0x44,  // ▓░▓▓▓░▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
-        0x00,  // ▓▓▓▓▓▓▓▓
-        0x11,  // ▓▓▓░▓▓▓░
-        0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: 98^"bb&bbbsb"[i%8]
+    // Magic: 98^"bsbbb&bb"[i%8]
 
     constexpr uint8_t PROGMEM officeDither20[] {
         8, 8,  // 8x8 px image
@@ -289,17 +289,17 @@ namespace patterns {
 
     constexpr uint8_t PROGMEM officeDither25[] {
         8, 8,  // 8x8 px image
-        0xAA,  // ░▓░▓░▓░▓
-        0x00,  // ▓▓▓▓▓▓▓▓
         0x55,  // ▓░▓░▓░▓░
         0x00,  // ▓▓▓▓▓▓▓▓
         0xAA,  // ░▓░▓░▓░▓
         0x00,  // ▓▓▓▓▓▓▓▓
         0x55,  // ▓░▓░▓░▓░
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0xAA,  // ░▓░▓░▓░▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\252\0U"[i%4]
-    // GAMBY: 0xA050
+    // Magic: "U\0\252"[i%4]
+    // GAMBY: 0x50A0
 
     constexpr uint8_t PROGMEM officeDither30[] {
         8, 8,  // 8x8 px image
@@ -400,15 +400,15 @@ namespace patterns {
     constexpr uint8_t PROGMEM officeDither90[] {
         8, 8,  // 8x8 px image
         0xFF,  // ░░░░░░░░
-        0xFF,  // ░░░░░░░░
-        0xFB,  // ░░░░░▓░░
-        0xFF,  // ░░░░░░░░
+        0xDF,  // ░░▓░░░░░
         0xFF,  // ░░░░░░░░
         0xFF,  // ░░░░░░░░
-        0xBF,  // ░▓░░░░░░
+        0xFF,  // ░░░░░░░░
+        0xFD,  // ░░░░░░▓░
+        0xFF,  // ░░░░░░░░
         0xFF,  // ░░░░░░░░
     };
-    // Magic: 144^"ookooo/o"[i%8]
+    // Magic: 144^"oOooomoo"[i%8]
 
 }
 
@@ -625,23 +625,23 @@ namespace patternsHorizontal {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
-        0x20,  // ▓▓░▓▓▓▓▓
+        0x40,  // ▓░▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
-        0x02,  // ▓▓▓▓▓▓░▓
+        0x04,  // ▓▓▓▓▓░▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
     constexpr uint8_t PROGMEM officeDither10[] {
         8, 8,  // 8x8 px image
-        0x02,  // ▓▓▓▓▓▓░▓
+        0x40,  // ▓░▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
-        0x20,  // ▓▓░▓▓▓▓▓
+        0x04,  // ▓▓▓▓▓░▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
-        0x02,  // ▓▓▓▓▓▓░▓
+        0x40,  // ▓░▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
-        0x20,  // ▓▓░▓▓▓▓▓
+        0x04,  // ▓▓▓▓▓░▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
@@ -659,7 +659,6 @@ namespace patternsHorizontal {
 
     constexpr uint8_t PROGMEM officeDither25[] {
         8, 8,  // 8x8 px image
-        0x22,  // ▓▓░▓▓▓░▓
         0x88,  // ░▓▓▓░▓▓▓
         0x22,  // ▓▓░▓▓▓░▓
         0x88,  // ░▓▓▓░▓▓▓
@@ -667,6 +666,7 @@ namespace patternsHorizontal {
         0x88,  // ░▓▓▓░▓▓▓
         0x22,  // ▓▓░▓▓▓░▓
         0x88,  // ░▓▓▓░▓▓▓
+        0x22,  // ▓▓░▓▓▓░▓
     };
 
     constexpr uint8_t PROGMEM officeDither30[] {
@@ -756,12 +756,12 @@ namespace patternsHorizontal {
     constexpr uint8_t PROGMEM officeDither90[] {
         8, 8,  // 8x8 px image
         0xFF,  // ░░░░░░░░
-        0xFF,  // ░░░░░░░░
-        0xDF,  // ░░▓░░░░░
-        0xFF,  // ░░░░░░░░
+        0xFB,  // ░░░░░▓░░
         0xFF,  // ░░░░░░░░
         0xFF,  // ░░░░░░░░
-        0xFD,  // ░░░░░░▓░
+        0xFF,  // ░░░░░░░░
+        0xBF,  // ░▓░░░░░░
+        0xFF,  // ░░░░░░░░
         0xFF,  // ░░░░░░░░
     };
 

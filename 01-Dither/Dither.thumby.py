@@ -224,8 +224,7 @@ bayerDither16 = bytearray([
 # bayerDither16Sprite = thumby.Sprite(8, 8, bayerDither16)
 
 officeDither05 = bytearray([
-    # BITMAP: width: 8, height: 8, [0,0,4,0,0,0,64,0]
-    0x00,  # ▓▓▓▓▓▓▓▓
+    # BITMAP: width: 8, height: 8, [0,4,0,0,0,64,0,0]
     0x00,  # ▓▓▓▓▓▓▓▓
     0x04,  # ▓▓▓▓▓░▓▓
     0x00,  # ▓▓▓▓▓▓▓▓
@@ -233,18 +232,19 @@ officeDither05 = bytearray([
     0x00,  # ▓▓▓▓▓▓▓▓
     0x40,  # ▓░▓▓▓▓▓▓
     0x00,  # ▓▓▓▓▓▓▓▓
+    0x00,  # ▓▓▓▓▓▓▓▓
 ])
 # officeDither05Sprite = thumby.Sprite(8, 8, officeDither05)
 
 officeDither10 = bytearray([
-    # BITMAP: width: 8, height: 8, [0,0,68,0,0,0,17,0]
+    # BITMAP: width: 8, height: 8, [0,17,0,0,0,68,0,0]
+    0x00,  # ▓▓▓▓▓▓▓▓
+    0x11,  # ▓▓▓░▓▓▓░
+    0x00,  # ▓▓▓▓▓▓▓▓
     0x00,  # ▓▓▓▓▓▓▓▓
     0x00,  # ▓▓▓▓▓▓▓▓
     0x44,  # ▓░▓▓▓░▓▓
     0x00,  # ▓▓▓▓▓▓▓▓
-    0x00,  # ▓▓▓▓▓▓▓▓
-    0x00,  # ▓▓▓▓▓▓▓▓
-    0x11,  # ▓▓▓░▓▓▓░
     0x00,  # ▓▓▓▓▓▓▓▓
 ])
 # officeDither10Sprite = thumby.Sprite(8, 8, officeDither10)
@@ -263,14 +263,14 @@ officeDither20 = bytearray([
 # officeDither20Sprite = thumby.Sprite(8, 8, officeDither20)
 
 officeDither25 = bytearray([
-    # BITMAP: width: 8, height: 8, [170,0,85,0,170,0,85,0]
-    0xAA,  # ░▓░▓░▓░▓
-    0x00,  # ▓▓▓▓▓▓▓▓
+    # BITMAP: width: 8, height: 8, [85,0,170,0,85,0,170,0]
     0x55,  # ▓░▓░▓░▓░
     0x00,  # ▓▓▓▓▓▓▓▓
     0xAA,  # ░▓░▓░▓░▓
     0x00,  # ▓▓▓▓▓▓▓▓
     0x55,  # ▓░▓░▓░▓░
+    0x00,  # ▓▓▓▓▓▓▓▓
+    0xAA,  # ░▓░▓░▓░▓
     0x00,  # ▓▓▓▓▓▓▓▓
 ])
 # officeDither25Sprite = thumby.Sprite(8, 8, officeDither25)
@@ -367,14 +367,14 @@ officeDither80 = bytearray([
 # officeDither80Sprite = thumby.Sprite(8, 8, officeDither80)
 
 officeDither90 = bytearray([
-    # BITMAP: width: 8, height: 8, [255,255,251,255,255,255,191,255]
+    # BITMAP: width: 8, height: 8, [255,223,255,255,255,253,255,255]
+    0xFF,  # ░░░░░░░░
+    0xDF,  # ░░▓░░░░░
     0xFF,  # ░░░░░░░░
     0xFF,  # ░░░░░░░░
-    0xFB,  # ░░░░░▓░░
     0xFF,  # ░░░░░░░░
+    0xFD,  # ░░░░░░▓░
     0xFF,  # ░░░░░░░░
-    0xFF,  # ░░░░░░░░
-    0xBF,  # ░▓░░░░░░
     0xFF,  # ░░░░░░░░
 ])
 # officeDither90Sprite = thumby.Sprite(8, 8, officeDither90)
