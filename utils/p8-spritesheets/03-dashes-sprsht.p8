@@ -18,3 +18,5 @@ for i=0,((8*4)-1) do
  memcpy(i*64,24576+i*64,64)
 end
 cstore()
+
+-- > export dashes.png
