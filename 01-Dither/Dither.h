@@ -160,7 +160,7 @@ namespace patterns {
         0xDD,  // ░░▓░░░▓░
         0xAA,  // ░▓░▓░▓░▓
     };
-    // Magic: ~"\210U\"U"[i%4]
+    // Magic: 106+"\r@s@[i%4]
     // GAMBY: 0x7ADA
 
     constexpr uint8_t PROGMEM bayerDither11[] {
@@ -216,7 +216,7 @@ namespace patterns {
         0xFF,  // ░░░░░░░░
         0xEE,  // ░░░▓░░░▓
     };
-    // Magic: ~"\0D\0\21"[i%4]
+    // Magic: 194^"=y=,"[i%4]
     // GAMBY: 0xFBFE
 
     constexpr uint8_t PROGMEM bayerDither15[] {
@@ -230,7 +230,7 @@ namespace patterns {
         0xFF,  // ░░░░░░░░
         0xEE,  // ░░░▓░░░▓
     };
-    // Magic: ~"\0\0\0\21"[i%4]
+    // Magic: 194^"===,"[i%4]
     // GAMBY: 0xFFFE
 
     constexpr uint8_t PROGMEM bayerDither16[] {
