@@ -4,7 +4,7 @@
 # Assumes:
 # - Filenames and directory structure follows the project standard.
 # - Correct png images are fed in, or the parameter 'reset' followed by another png image.
-# - Exiftool and ImageMagick executables are available
+# - Exiftool, ImageMagick and OptiPNG executables are available
 
 
 # Minimal check for input file(s)
@@ -13,7 +13,7 @@ if [ -z "$1" ]; then
   exit
 fi
 
-# TODO: Check for external executables (ImageMagick and ExifTool)
+# TODO: Check for external binaries (Exiftool, ImageMagick and OptiPNG)
 
 
 # Directory for utilities
@@ -79,38 +79,51 @@ while (( "$#" )); do
   group_lowercase="$( echo "${img_group}" | tr '[:upper:]' '[:lower:]' )"
 
 
+  # Produce images
+  # --------------
 
   # Create the Portable Bit Map (PBM) file
   pbm_file="${img_root}/pbm/${img_name}.pbm"
   magick "$1" -depth 1 -compress None "${pbm_file}"
 
   # Create tweaked png image for Playdate Pulp
-  pulp_dir="${img_root%}/${img_group}.playdate-pulp"
-  if ! [ -d "${pulp_dir}" ]; then
-    mkdir "${pulp_dir}" # Temporary directory will be zip archived (manual step)
-    printf '%s - %s' "${img_group}" "${project//pattern/patterns (Pulp)}" > "${pulp_dir}/readme.txt"
-    printf '\n%s' "${copyright}" "${license}" >> "${pulp_dir}/readme.txt"
-  fi
-  pulp_file="${pulp_dir}/$(printf '%02d' "$img_counter")-${img_name}-table-8-8.png" # Pulp required name format
+  pulp_file="${img_root}/${img_name}-table-8-8.png" # Required name format
   magick "$1" \
-    -define png:color-type='3' -define png:bit-depth='1' \
+    -define png:color-type='2' -define png:bit-depth='8' \
     -define png:include-chunk=none \
     +level-colors '#BFBCB6','#001830' "${pulp_file}" # Swap colors to match LCD screen
   # TODO: When Pulp code is fixed, update black to '#091624' (less blue)
+  optipng -q -nx -o6 "${pulp_file}" # Try to optimize at fixed 8bpp, RGB png first.
+  optipng -q -o6 "${pulp_file}" # Also try reducing to 1bpp indexed png.
 
   # Add metadata to png and pbm files
   exiftool -q -overwrite_original -fast1 \
     -Title="${img_name} - ${img_group} - ${project}" \
-    -Copyright="${copyright} ${license}" "$1"  "${pulp_file}" \
+    -Copyright="${copyright} ${license}" "$1" "${pulp_file}" \
     -execute -q -overwrite_original -fast5 \
     -Comment="${img_name} - ${img_group} - ${project}" "${pbm_file}" # Primary pbm metadata (single text line in header)
   printf '\n# %s' "${copyright}" "${license}" >> "${pbm_file}" # Extra pbm metadata appended to the plain text file
 
   # Create the preview image
   preview_file="${img_root%/*}/previews/${img_name}.png"
-  magick -size 32x16 tile:"$1" -sample 200% "${preview_file}" # Tile the image 4x2 then scale up 2x
+  magick -size 32x16 tile:"$1" \
+    -define png:include-chunk=none \
+    -sample 200% "${preview_file}" # Tile the image 4x2 then scale up 2x
+
+  # Bundle the Pulp image into the group's zip archive
+  pulp_zip="${img_root%}/${img_group}.playdate-pulp.zip"
+  if ! [ -f "${pulp_zip}" ]; then
+    # Add 'readme' when first creating the archive.
+    printf '%s - %s\n%s\n%s' \
+      "${img_group}" "${project//pattern/patterns (Pulp)}" "${copyright}" "${license}" \
+      > "${img_root}/readme.txt"
+      zip -q -9 --no-dir-entries --junk-paths --no-wild --move "${pulp_zip}" "${img_root}/readme.txt"
+  fi
+  zip -q -9 --no-dir-entries --junk-paths --no-wild --move "${pulp_zip}" "${pulp_file}"
 
 
+  # Produce code snippets
+  # ---------------------
 
   # Create Horizontal and Vertical temporary files, with plain text binary and hexadecimal
   bin_h="${img_root}/$img_name.bin-h.txt"
