@@ -168,7 +168,7 @@ while (( "$#" )); do
 
 
 
-  # Create markdown gallery entry
+  # Create markdown gallery entry for the pattern
   md_file="${img_root}/${img_group}.markdown.WIP.txt"
   md_extra_lines=0
   if [ ${pattern_width} -le 4 ] && [ ${pattern_height} -le 4 ]; then
@@ -177,7 +177,7 @@ while (( "$#" )); do
   {
     printf '| %s ' "${img_name}"
     printf '| <img src="../previews/%s.png"' "${img_name}"
-    printf ' width="64" height="32" loading="lazy" alt="" role="none"> '
+    printf ' width="64" height="32" alt=""> '
     printf '| [png](png/%s.png) ' "${img_name}"
      # Add cpp link
     ((md_cpp_end=md_cpp_start+md_cpp_lines+md_extra_lines))

@@ -6,8 +6,8 @@ Other patterns.
 
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Chain | <img src="../previews/Chain.png" width="64" height="32" loading="lazy" alt="" role="none"> | [png](png/Chain.png) | [cpp](Other.h#L12-L23) | [txt](Other.bitsy.txt#L5-L14) | [lua](other.p8.lua#L7-L19) | [py](Other.thumby.py#L5-L16) |
-| ChainLarge | <img src="../previews/ChainLarge.png" width="64" height="32" loading="lazy" alt="" role="none"> | [png](png/ChainLarge.png) | [cpp](Other.h#L25-L36) | [txt](Other.bitsy.txt#L16-L25) | [lua](other.p8.lua#L21-L33) | [py](Other.thumby.py#L18-L29) |
+| Chain | <img src="../previews/Chain.png" width="64" height="32" alt=""> | [png](png/Chain.png) | [cpp](Other.h#L12-L23) | [txt](Other.bitsy.txt#L5-L14) | [lua](other.p8.lua#L7-L19) | [py](Other.thumby.py#L5-L16) |
+| ChainLarge | <img src="../previews/ChainLarge.png" width="64" height="32" alt=""> | [png](png/ChainLarge.png) | [cpp](Other.h#L25-L36) | [txt](Other.bitsy.txt#L16-L25) | [lua](other.p8.lua#L21-L33) | [py](Other.thumby.py#L18-L29) |
 
 [`⤴`](#gallery)
 
