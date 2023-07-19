@@ -230,7 +230,7 @@ namespace patterns {
         0xFF,  // ░░░░░░░░
         0xEE,  // ░░░▓░░░▓
     };
-    // Magic: 194^"===,"[i%4]
+    // Magic: i%4==3?238:~0
     // GAMBY: 0xFFFE
 
     constexpr uint8_t PROGMEM bayerDither16[] {

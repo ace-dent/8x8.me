@@ -46,7 +46,7 @@ namespace patterns {
         0x01,  // ▓▓▓▓▓▓▓░
         0x01,  // ▓▓▓▓▓▓▓░
     };
-    // Magic: 44^"\323-------"[i%8]
+    // Magic: i%8?1:~0
 
     constexpr uint8_t PROGMEM gridMedium[] {
         8, 8,  // 8x8 px image
@@ -59,7 +59,7 @@ namespace patterns {
         0x03,  // ▓▓▓▓▓▓░░
         0x03,  // ▓▓▓▓▓▓░░
     };
-    // Magic: 46^"\321\321------"[i%8]
+    // Magic: i%8<2?~0:3
 
     constexpr uint8_t PROGMEM gridBold[] {
         8, 8,  // 8x8 px image
@@ -72,7 +72,7 @@ namespace patterns {
         0x83,  // ░▓▓▓▓▓░░
         0xFF,  // ░░░░░░░░
     };
-    // Magic: ~"\0\0|||||"[i%8]
+    // Magic: (i+6)%8<5?131:~0
 
     constexpr uint8_t PROGMEM gridMiniDots[] {
         8, 8,  // 8x8 px image
@@ -99,7 +99,7 @@ namespace patterns {
         0x11,  // ▓▓▓░▓▓▓░
         0x11,  // ▓▓▓░▓▓▓░
     };
-    // Magic: 64^"\277QQQ"[i%4]
+    // Magic: i%4?17:~0
     // GAMBY: 0xF111
 
     constexpr uint8_t PROGMEM gridMiniMedium[] {
@@ -113,7 +113,7 @@ namespace patterns {
         0x33,  // ▓▓░░▓▓░░
         0x33,  // ▓▓░░▓▓░░
     };
-    // Magic: "\377\37733"[i%4]
+    // Magic: i%4<2?~0:51
     // GAMBY: 0xFF33
 
     constexpr uint8_t PROGMEM gridDense[] {

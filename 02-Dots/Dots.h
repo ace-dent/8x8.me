@@ -20,7 +20,7 @@ namespace patterns {
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "@@@@B@@"[i%8]*4
+    // Magic: i%8==4?8:0
 
     constexpr uint8_t PROGMEM pixelMini[] {
         8, 8,  // 8x8 px image
@@ -33,7 +33,7 @@ namespace patterns {
         0x22,  // ▓▓░▓▓▓░▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\0\0\""[i%4]
+    // Magic: i%4==2?34:0
     // GAMBY: 0x0020
 
     constexpr uint8_t PROGMEM glisten[] {

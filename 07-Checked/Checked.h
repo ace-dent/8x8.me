@@ -34,7 +34,7 @@ namespace patterns {
         0xCC,  // ░░▓▓░░▓▓
         0xCC,  // ░░▓▓░░▓▓
     };
-    // Magic: "33\314\314"[i%4]
+    // Magic: i%4<2?51:204
     // GAMBY: 0x33CC
 
     constexpr uint8_t PROGMEM check[] {
@@ -48,7 +48,7 @@ namespace patterns {
         0xF0,  // ░░░░▓▓▓▓
         0xF0,  // ░░░░▓▓▓▓
     };
-    // Magic: 64^"OOOO\260\260\260\260"[i%8]
+    // Magic: i%8<4?15:240
 
     constexpr uint8_t PROGMEM checkShaded[] {
         8, 8,  // 8x8 px image
@@ -100,7 +100,7 @@ namespace patterns {
         0xAA,  // ░▓░▓░▓░▓
         0xAA,  // ░▓░▓░▓░▓
     };
-    // Magic: "UU\252\252"[i%4]
+    // Magic: i%4<2?85:170
     // GAMBY: 0x55AA
 
     constexpr uint8_t PROGMEM checkHorizontal[] {
@@ -114,7 +114,7 @@ namespace patterns {
         0xCC,  // ░░▓▓░░▓▓
         0xCC,  // ░░▓▓░░▓▓
     };
-    // Magic: "3333\314\314\314\314"[i%8]
+    // Magic: i%8<4?51:204
 
     constexpr uint8_t PROGMEM checkVerticalMini[] {
         8, 8,  // 8x8 px image
@@ -141,7 +141,7 @@ namespace patterns {
         0xF0,  // ░░░░▓▓▓▓
         0xF0,  // ░░░░▓▓▓▓
     };
-    // Magic: 64^"OO\260\260"[i%4]
+    // Magic: i%4<2?15:240
 
     constexpr uint8_t PROGMEM diamond[] {
         8, 8,  // 8x8 px image
