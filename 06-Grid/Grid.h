@@ -127,7 +127,7 @@ namespace patterns {
         0xFF,  // ░░░░░░░░
         0x55,  // ▓░▓░▓░▓░
     };
-    // Magic: i&1?~0:85
+    // Magic: i&1?85:~0
     // GAMBY: 0xF5F5
 
     constexpr uint8_t PROGMEM gridDiagonalDots[] {

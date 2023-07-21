@@ -20,7 +20,7 @@ namespace patterns {
         0x55,  // ▓░▓░▓░▓░
         0xAA,  // ░▓░▓░▓░▓
     };
-    // Magic: i&1?85:170
+    // Magic: 85<<i%2
     // GAMBY: 0x5A5A
 
     constexpr uint8_t PROGMEM checkMini[] {
@@ -127,7 +127,7 @@ namespace patterns {
         0x33,  // ▓▓░░▓▓░░
         0xCC,  // ░░▓▓░░▓▓
     };
-    // Magic: i&1?51:204
+    // Magic: i&1?204:51
     // GAMBY: 0x3C3C
 
     constexpr uint8_t PROGMEM checkVertical[] {

@@ -180,7 +180,7 @@ namespace patterns {
         0x55,  // ▓░▓░▓░▓░
         0x11,  // ▓▓▓░▓▓▓░
     };
-    // Magic: i&1?85:17
+    // Magic: i&1?17:85
     // GAMBY: 0x5151
 
     constexpr uint8_t PROGMEM horizontalDenseLineDash[] {
@@ -354,7 +354,7 @@ namespace patterns {
         0xFF,  // ░░░░░░░░
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: i&1?~0:0
+    // Magic: i&1?0:~0
     // GAMBY: 0xF0F0
 
     constexpr uint8_t PROGMEM verticalDenseLineDot[] {
