@@ -180,7 +180,7 @@ namespace patterns {
         0x55,  // ▓░▓░▓░▓░
         0x11,  // ▓▓▓░▓▓▓░
     };
-    // Magic: i&1?85:17
+    // Magic: i&1?17:85
     // GAMBY: 0x5151
 
     constexpr uint8_t PROGMEM horizontalDenseLineDash[] {
@@ -194,7 +194,7 @@ namespace patterns {
         0x11,  // ▓▓▓░▓▓▓░
         0x11,  // ▓▓▓░▓▓▓░
     };
-    // Magic: "UU\21\21"[i%4]
+    // Magic: i%4<2?85:17
     // GAMBY: 0x5511
 
     constexpr uint8_t PROGMEM vertical[] {
@@ -208,7 +208,7 @@ namespace patterns {
         0xFF,  // ░░░░░░░░
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\0\0\377"[i%4]
+    // Magic: i%4==2?~0:0
     // GAMBY: 0x00F0
 
     constexpr uint8_t PROGMEM verticalMedium[] {
@@ -222,7 +222,7 @@ namespace patterns {
         0xFF,  // ░░░░░░░░
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\0\377\377"[i%4]
+    // Magic: (i+3)%4<2?~0:0
     // GAMBY: 0x0FF0
 
     constexpr uint8_t PROGMEM verticalBold[] {
@@ -236,7 +236,7 @@ namespace patterns {
         0xFF,  // ░░░░░░░░
         0xFF,  // ░░░░░░░░
     };
-    // Magic: ~"\377\0\0"[i%4]
+    // Magic: i%4?~0:0
     // GAMBY: 0x0FFF
 
     constexpr uint8_t PROGMEM verticalSparse[] {
@@ -250,7 +250,7 @@ namespace patterns {
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: 64^"@@@@\277@@@"[i%8]
+    // Magic: i%8==4?~0:0
 
     constexpr uint8_t PROGMEM verticalSparseMedium[] {
         8, 8,  // 8x8 px image
@@ -263,7 +263,7 @@ namespace patterns {
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: 64^"@@@\277\277@@@"[i%8]
+    // Magic: (i+5)%8<2?~0:0
 
     constexpr uint8_t PROGMEM verticalSparseBold[] {
         8, 8,  // 8x8 px image
@@ -276,7 +276,7 @@ namespace patterns {
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\0\0\0\377\377\377\0"[i%8]
+    // Magic: (i+5)%8<3?~0:0
 
     constexpr uint8_t PROGMEM verticalSparseExtraBold[] {
         8, 8,  // 8x8 px image
@@ -289,7 +289,7 @@ namespace patterns {
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\0\0\377\377\377\377\0"[i%8]
+    // Magic: (i+6)%8<4?~0:0
 
     constexpr uint8_t PROGMEM verticalSparseUltraBold[] {
         8, 8,  // 8x8 px image
@@ -302,7 +302,7 @@ namespace patterns {
         0xFF,  // ░░░░░░░░
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: 131^"\203\203|||||\203"[i%8]
+    // Magic: (i+6)%8<5?~0:0
 
     constexpr uint8_t PROGMEM verticalStripes[] {
         8, 8,  // 8x8 px image
@@ -354,7 +354,7 @@ namespace patterns {
         0xFF,  // ░░░░░░░░
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: i&1?~0:0
+    // Magic: i&1?0:~0
     // GAMBY: 0xF0F0
 
     constexpr uint8_t PROGMEM verticalDenseLineDot[] {

@@ -168,7 +168,7 @@ while (( "$#" )); do
 
 
 
-  # Create markdown gallery entry
+  # Create markdown gallery entry for the pattern
   md_file="${img_root}/${img_group}.markdown.WIP.txt"
   md_extra_lines=0
   if [ ${pattern_width} -le 4 ] && [ ${pattern_height} -le 4 ]; then
@@ -177,7 +177,7 @@ while (( "$#" )); do
   {
     printf '| %s ' "${img_name}"
     printf '| <img src="../previews/%s.png"' "${img_name}"
-    printf ' width="64" height="32" loading="lazy" alt="" role="none"> '
+    printf ' width="64" height="32" alt=""> '
     printf '| [png](png/%s.png) ' "${img_name}"
      # Add cpp link
     ((md_cpp_end=md_cpp_start+md_cpp_lines+md_extra_lines))
@@ -215,6 +215,7 @@ while (( "$#" )); do
   } >> "${cpp_file}"
   # Alternative 'magic' representation
   if [ ${pattern_width} -eq 1 ]; then
+    # Pattern width 1 - byte value encoded as a single decimal
     {
       # Convert only the first byte (column 1) to decimal
       binary_str="$( sed -n 1p "${bin_v}" )"
@@ -227,11 +228,12 @@ while (( "$#" )); do
       fi
     } >> "${cpp_file}"
   elif [ ${pattern_width} -eq 2 ]; then
+    # Pattern width 2 - two byte values encoded with a ternary operator
     # TODO: Catch edge cases where string encoding is smaller "Az"[i%2]
-    # e.g. `"xy"[i%2]` vs `i&1?120:121`
+    # e.g. `"xy"[i%2]` vs `i&1?121:120`
     {
-      # Convert byte 1 (first image column) to decimal
-      binary_str="$( sed -n 1p "${bin_v}" )"
+      # First value (odd columns, i&1=true) is byte 2 as a decimal
+      binary_str="$( sed -n 2p "${bin_v}" )"
       value_dec=$((2#${binary_str}))
       if [ ${value_dec} -lt 246 ]; then
         printf 'i&1?%u' ${value_dec}
@@ -239,8 +241,8 @@ while (( "$#" )); do
         ((value_dec= 255 - value_dec))
         printf 'i&1?~%u' ${value_dec}
       fi
-      # Convert byte 2 (second image column) to decimal
-      binary_str="$( sed -n 2p "${bin_v}" )"
+      # Second value (even columns, i&1=false, inc. zero) is byte 1 as a decimal
+      binary_str="$( sed -n 1p "${bin_v}" )"
       value_dec=$((2#${binary_str}))
       if [ ${value_dec} -lt 246 ]; then
         printf ':%u\n' ${value_dec}

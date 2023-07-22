@@ -76,7 +76,7 @@ namespace patterns {
         0x55,  // ▓░▓░▓░▓░
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: i&1?85:0
+    // Magic: i&1?0:85
     // GAMBY: 0x5050
 
     constexpr uint8_t PROGMEM bayerDither05[] {
@@ -132,7 +132,7 @@ namespace patterns {
         0x55,  // ▓░▓░▓░▓░
         0xAA,  // ░▓░▓░▓░▓
     };
-    // Magic: i&1?85:170
+    // Magic: 85<<i%2
     // GAMBY: 0x5A5A
 
     constexpr uint8_t PROGMEM bayerDither09[] {
@@ -188,7 +188,7 @@ namespace patterns {
         0xFF,  // ░░░░░░░░
         0xAA,  // ░▓░▓░▓░▓
     };
-    // Magic: i&1?~0:170
+    // Magic: i&1?170:~0
     // GAMBY: 0xFAFA
 
     constexpr uint8_t PROGMEM bayerDither13[] {
@@ -230,7 +230,7 @@ namespace patterns {
         0xFF,  // ░░░░░░░░
         0xEE,  // ░░░▓░░░▓
     };
-    // Magic: 194^"===,"[i%4]
+    // Magic: i%4==3?238:~0
     // GAMBY: 0xFFFE
 
     constexpr uint8_t PROGMEM bayerDither16[] {
@@ -339,7 +339,7 @@ namespace patterns {
         0x55,  // ▓░▓░▓░▓░
         0xAA,  // ░▓░▓░▓░▓
     };
-    // Magic: i&1?85:170
+    // Magic: 85<<i%2
     // GAMBY: 0x5A5A
 
     constexpr uint8_t PROGMEM officeDither60[] {

@@ -20,7 +20,7 @@ namespace patterns {
         0x11,  // ▓▓▓░▓▓▓░
         0x11,  // ▓▓▓░▓▓▓░
     };
-    // Magic: "DD\21\21"[i%4]
+    // Magic: i%4<2?68:17
     // GAMBY: 0x4411
 
     constexpr uint8_t PROGMEM horizontalDenseDotDash[] {
@@ -48,7 +48,7 @@ namespace patterns {
         0x04,  // ▓▓▓▓▓░▓▓
         0x04,  // ▓▓▓▓▓░▓▓
     };
-    // Magic: "PPPPAAA"[i%8]*4
+    // Magic: i%8<4?64:4
 
     constexpr uint8_t PROGMEM horizontalDashMini[] {
         8, 8,  // 8x8 px image
@@ -61,7 +61,7 @@ namespace patterns {
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "DD\0"[i%4]
+    // Magic: i%4<2?68:0
     // GAMBY: 0x4400
 
     constexpr uint8_t PROGMEM verticalDash[] {
