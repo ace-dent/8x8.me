@@ -43,7 +43,7 @@ Inspired by studying software from the mid 1980's, to video games of the early 1
 
 Artwork and files created using [ABSpriteEditor](https://github.com/Pharap/ABSpriteEditor). Patterns tested and refined using [ASE](https://github.com/pmwasson/ASE), [bitsy](https://ledoux.itch.io/bitsy) and [Pulp](https://play.date/pulp/about/). Data tweaking in LibreOffice. Image wrangling with ImageMagick, compressed with OptiPNG and `pngslim`, and metadata added with ExifTool.
 
-Special thanks to @castpixel, @dw817, @felipemanga, @javl, @le-doux, @lexaloffle, @MrBlinky, @Pharap, @pmwasson, @scotthall92.
+Special thanks to @castpixel, @dw817, @felipemanga, @javl, @le-doux, @lexaloffle, @MrBlinky, @Pharap, @pmwasson, @scotthall92, @TPS.
 
 
 <br>
