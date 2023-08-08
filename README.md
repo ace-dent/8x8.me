@@ -18,21 +18,21 @@ Repeating tile fill patterns
 
 ## Galleries
   
-![](/previews/BayerDither05.png) &emsp; [01 – Dither](/01-Dither/README.md#gallery)  
-![](/previews/Confetti.png) &emsp; [02 – Dots](/02-Dots/README.md#gallery)  
-![](previews/HorizontalDash.png) &emsp; [03 – Dashes](/03-Dashes/README.md#gallery)  
-![](previews/DexterPinstripeMedium.png) &emsp; [04 – Lines](/04-Lines/README.md#gallery)  
-![](/previews/Tidal.png) &emsp; [05 – Waves](/05-Waves/README.md#gallery)  
-![](/previews/GridDiagonal.png) &emsp; [06 – Grid](/06-Grid/README.md#gallery)  
-![](/previews/Check.png) &emsp; [07 – Checked](/07-Checked/README.md#gallery)  
-![](/previews/Box.png) &emsp; [08 – Rectilinear](/08-Rectilinear/README.md#gallery)  
-![](previews/Spokes.png) &emsp; [09 – Radial](/09-Radial/README.md#gallery)  
-![](previews/AnnuletCoAnnulet.png) &emsp; [10 – Round](/10-Round/README.md#gallery)  
-![](/previews/Weave.png) &emsp; [11 – Woven](/11-Woven/README.md#gallery)  
-![](/previews/Brick.png) &emsp; [12 – Architecture](/12-Architecture/README.md#gallery)  
-![](/previews/Leaves.png) &emsp; [13 – Nature](/13-Nature/README.md#gallery)  
-![](/previews/Heart.png) &emsp; [14 – Symbols](/14-Symbols/README.md#gallery)  
-![](/previews/Chain.png) &emsp; [15 – Other](/15-Other/README.md#gallery)
+<a href="/01-Dither/README.md#gallery"><img width="64" height="32" src="/previews/BayerDither05.png" alt=""></a> &emsp; [01 – Dither](/01-Dither/README.md#gallery)  
+<a href="/02-Dots/README.md#gallery"><img width="64" height="32" src="/previews/Confetti.png" alt=""></a> &emsp; [02 – Dots](/02-Dots/README.md#gallery)  
+<a href="/03-Dashes/README.md#gallery"><img width="64" height="32" src="previews/HorizontalDash.png" alt=""></a> &emsp; [03 – Dashes](/03-Dashes/README.md#gallery)  
+<a href="/04-Lines/README.md#gallery"><img width="64" height="32" src="previews/DexterPinstripeMedium.png" alt=""></a> &emsp; [04 – Lines](/04-Lines/README.md#gallery)  
+<a href="/05-Waves/README.md#gallery"><img width="64" height="32" src="/previews/Tidal.png" alt=""></a> &emsp; [05 – Waves](/05-Waves/README.md#gallery)  
+<a href="/06-Grid/README.md#gallery"><img width="64" height="32" src="/previews/GridDiagonal.png" alt=""></a> &emsp; [06 – Grid](/06-Grid/README.md#gallery)  
+<a href="/07-Checked/README.md#gallery"><img width="64" height="32" src="/previews/Check.png" alt=""></a> &emsp; [07 – Checked](/07-Checked/README.md#gallery)  
+<a href="/08-Rectilinear/README.md#gallery"><img width="64" height="32" src="/previews/Box.png" alt=""></a> &emsp; [08 – Rectilinear](/08-Rectilinear/README.md#gallery)  
+<a href="/09-Radial/README.md#gallery"><img width="64" height="32" src="previews/Spokes.png" alt=""></a> &emsp; [09 – Radial](/09-Radial/README.md#gallery)  
+<a href="/10-Round/README.md#gallery"><img width="64" height="32" src="previews/AnnuletCoAnnulet.png" alt=""></a> &emsp; [10 – Round](/10-Round/README.md#gallery)  
+<a href="/11-Woven/README.md#gallery"><img width="64" height="32" src="/previews/Weave.png" alt=""></a> &emsp; [11 – Woven](/11-Woven/README.md#gallery)  
+<a href="/12-Architecture/README.md#gallery"><img width="64" height="32" src="/previews/Brick.png" alt=""></a> &emsp; [12 – Architecture](/12-Architecture/README.md#gallery)  
+<a href="/13-Nature/README.md#gallery"><img width="64" height="32" src="/previews/Leaves.png" alt=""></a> &emsp; [13 – Nature](/13-Nature/README.md#gallery)  
+<a href="/14-Symbols/README.md#gallery"><img width="64" height="32" src="/previews/Heart.png" alt=""></a> &emsp; [14 – Symbols](/14-Symbols/README.md#gallery)  
+<a href="/15-Other/README.md#gallery"><img width="64" height="32" src="/previews/Chain.png" alt=""></a> &emsp; [15 – Other](/15-Other/README.md#gallery)
 
 
 <br>
