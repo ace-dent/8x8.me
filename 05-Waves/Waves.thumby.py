@@ -93,7 +93,7 @@ oceanic = bytearray([
 ])
 # oceanicSprite = thumby.Sprite(8, 8, oceanic)
 
-vairPoint = bytearray([
+urdy = bytearray([
     # BITMAP: width: 8, height: 8, [60,2,1,2,60,64,128,64]
     0x3C,  # ▓▓░░░░▓▓
     0x02,  # ▓▓▓▓▓▓░▓
@@ -104,7 +104,7 @@ vairPoint = bytearray([
     0x80,  # ░▓▓▓▓▓▓▓
     0x40,  # ▓░▓▓▓▓▓▓
 ])
-# vairPointSprite = thumby.Sprite(8, 8, vairPoint)
+# urdySprite = thumby.Sprite(8, 8, urdy)
 
 doubleHelix = bytearray([
     # BITMAP: width: 8, height: 8, [66,66,36,8,16,36,66,66]

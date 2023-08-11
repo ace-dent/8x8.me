@@ -100,7 +100,7 @@ namespace patterns {
     };
     // Magic: "@h8\20  @@"[i%8]
 
-    constexpr uint8_t PROGMEM vairPoint[] {
+    constexpr uint8_t PROGMEM urdy[] {
         8, 8,  // 8x8 px image
         0x3C,  // ▓▓░░░░▓▓
         0x02,  // ▓▓▓▓▓▓░▓
@@ -217,7 +217,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM vairPoint[] {
+    constexpr uint8_t PROGMEM urdy[] {
         8, 8,  // 8x8 px image
         0x20,  // ▓▓░▓▓▓▓▓
         0x50,  // ▓░▓░▓▓▓▓
