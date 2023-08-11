@@ -18,8 +18,25 @@ Wave patterns.
 
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| DoubleHelix | <img src="../previews/DoubleHelix.png" width="64" height="32" alt=""> | [png](png/DoubleHelix.png) | [cpp](Waves.h#L116-L127) | [txt](Waves.bitsy.txt#L93-L102) | [lua](waves.p8.lua#L119-L131) | [py](Waves.thumby.py#L109-L120) |
 | Urdy | <img src="../previews/Urdy.png" width="64" height="32" alt=""> | [png](png/Urdy.png) | [cpp](Waves.h#L103-L114) | [txt](Waves.bitsy.txt#L82-L91) | [lua](waves.p8.lua#L105-L117) | [py](Waves.thumby.py#L96-L107) |
+| UrdyMini | <img src="../previews/UrdyMini.png" width="64" height="32" alt=""> | [png](png/UrdyMini.png) | | | | |
+| Dentilly | <img src="../previews/Dentilly.png" width="64" height="32" alt=""> | [png](png/Dentilly.png) | | | | |
+| DentillyMini | <img src="../previews/DentillyMini.png" width="64" height="32" alt=""> | [png](png/DentillyMini.png) | | | | |
+| EmbattledGrady | <img src="../previews/EmbattledGrady.png" width="64" height="32" alt=""> | [png](png/EmbattledGrady.png) | | | | |
+| Embattled | <img src="../previews/Embattled.png" width="64" height="32" alt=""> | [png](png/Embattled.png) | | | | |
+| EmbattledMini | <img src="../previews/EmbattledMini.png" width="64" height="32" alt=""> | [png](png/EmbattledMini.png) | | | | |
+| Potenty | <img src="../previews/Potenty.png" width="64" height="32" alt=""> | [png](png/Potenty.png) | | | | |
+| PotentyMini | <img src="../previews/PotentyMini.png" width="64" height="32" alt=""> | [png](png/PotentyMini.png) | | | | |
+
+
+<br>
+
+| Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Serpentine | <img src="../previews/Serpentine.png" width="64" height="32" alt=""> | [png](png/Serpentine.png) | | | | |
+| Rising | <img src="../previews/Rising.png" width="64" height="32" alt=""> | [png](png/Rising.png) | | | | |
+| RiseAndFall | <img src="../previews/RiseAndFall.png" width="64" height="32" alt=""> | [png](png/RiseAndFall.png) | | | | |
+| DoubleHelix | <img src="../previews/DoubleHelix.png" width="64" height="32" alt=""> | [png](png/DoubleHelix.png) | [cpp](Waves.h#L116-L127) | [txt](Waves.bitsy.txt#L93-L102) | [lua](waves.p8.lua#L119-L131) | [py](Waves.thumby.py#L109-L120) |
 
 [`⤴`](#gallery)
 
