@@ -6,7 +6,8 @@ Wave patterns.
 
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Ripple | <img src="../previews/Ripple.png" width="64" height="32" alt=""> | [png](png/Ripple.png) | [cpp](Waves.h#L12-L23) | [txt](Waves.bitsy.txt#L5-L14) | [lua](waves.p8.lua#L7-L19) | [py](Waves.thumby.py#L5-L16) |
+| RippleLight | <img src="../previews/RippleLight.png" width="64" height="32" alt=""> | [png](png/RippleLight.png) | [cpp](Waves.h#L12-L23) | [txt](Waves.bitsy.txt#L5-L14) | [lua](waves.p8.lua#L7-L19) | [py](Waves.thumby.py#L5-L16) |
+| Ripple | <img src="../previews/Ripple.png" width="64" height="32" alt=""> | [png](png/Ripple.png) | | | | |
 | Wave <sup>o</sup>| <img src="../previews/Wave.png" width="64" height="32" alt=""> | [png](png/Wave.png) | [cpp](Waves.h#L25-L36) | [txt](Waves.bitsy.txt#L16-L25) | [lua](waves.p8.lua#L21-L33) | [py](Waves.thumby.py#L18-L29) |
 | TidalLight | <img src="../previews/TidalLight.png" width="64" height="32" alt=""> | [png](png/TidalLight.png) | [cpp](Waves.h#L38-L49) | [txt](Waves.bitsy.txt#L27-L36) | [lua](waves.p8.lua#L35-L47) | [py](Waves.thumby.py#L31-L42) |
 | Tidal | <img src="../previews/Tidal.png" width="64" height="32" alt=""> | [png](png/Tidal.png) | [cpp](Waves.h#L51-L62) | [txt](Waves.bitsy.txt#L38-L47) | [lua](waves.p8.lua#L49-L61) | [py](Waves.thumby.py#L44-L55) |
