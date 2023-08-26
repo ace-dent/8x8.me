@@ -243,7 +243,7 @@ namespace patterns {
     };
     // Magic: "4\26HcoN\30"[i%8]*2
 
-    constexpr uint8_t PROGMEM beanStalk[] {
+    constexpr uint8_t PROGMEM bamboo[] {
         8, 8,  // 8x8 px image
         0x10,  // ▓▓▓░▓▓▓▓
         0x20,  // ▓▓░▓▓▓▓▓
@@ -479,7 +479,7 @@ namespace patternsHorizontal {
         0x3C,  // ▓▓░░░░▓▓
     };
 
-    constexpr uint8_t PROGMEM beanStalk[] {
+    constexpr uint8_t PROGMEM bamboo[] {
         8, 8,  // 8x8 px image
         0x3A,  // ▓▓░░░▓░▓
         0x34,  // ▓▓░░▓░▓▓

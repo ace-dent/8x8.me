@@ -38,7 +38,7 @@ Nature patterns.
 | Mounds | <img src="../previews/Mounds.png" width="64" height="32" alt=""> | [png](png/Mounds.png) | [cpp](Nature.h#L207-L218) | [txt](Nature.bitsy.txt#L170-L179) | [lua](nature.p8.lua#L217-L229) | [py](Nature.thumby.py#L200-L211) |
 | Skull | <img src="../previews/Skull.png" width="64" height="32" alt=""> | [png](png/Skull.png) | [cpp](Nature.h#L220-L231) | [txt](Nature.bitsy.txt#L181-L190) | [lua](nature.p8.lua#L231-L243) | [py](Nature.thumby.py#L213-L224) |
 | CrackedBoulder | <img src="../previews/CrackedBoulder.png" width="64" height="32" alt=""> | [png](png/CrackedBoulder.png) | [cpp](Nature.h#L233-L244) | [txt](Nature.bitsy.txt#L192-L201) | [lua](nature.p8.lua#L245-L257) | [py](Nature.thumby.py#L226-L237) |
-| BeanStalk | <img src="../previews/BeanStalk.png" width="64" height="32" alt=""> | [png](png/BeanStalk.png) | [cpp](Nature.h#L246-L257) | [txt](Nature.bitsy.txt#L203-L212) | [lua](nature.p8.lua#L259-L271) | [py](Nature.thumby.py#L239-L250) |
+| Bamboo | <img src="../previews/Bamboo.png" width="64" height="32" alt=""> | [png](png/Bamboo.png) | [cpp](Nature.h#L246-L257) | [txt](Nature.bitsy.txt#L203-L212) | [lua](nature.p8.lua#L259-L271) | [py](Nature.thumby.py#L239-L250) |
 
 [`⤴`](#gallery)
 

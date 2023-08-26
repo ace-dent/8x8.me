@@ -236,7 +236,7 @@ crackedBoulder = bytearray([
 ])
 # crackedBoulderSprite = thumby.Sprite(8, 8, crackedBoulder)
 
-beanStalk = bytearray([
+bamboo = bytearray([
     # BITMAP: width: 8, height: 8, [16,32,223,119,253,2,1,0]
     0x10,  # ▓▓▓░▓▓▓▓
     0x20,  # ▓▓░▓▓▓▓▓
@@ -247,4 +247,4 @@ beanStalk = bytearray([
     0x01,  # ▓▓▓▓▓▓▓░
     0x00,  # ▓▓▓▓▓▓▓▓
 ])
-# beanStalkSprite = thumby.Sprite(8, 8, beanStalk)
+# bambooSprite = thumby.Sprite(8, 8, bamboo)

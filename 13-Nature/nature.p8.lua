@@ -256,7 +256,7 @@ poke(0x5600+(8* 114),
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉr"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."\0「:3tC」<"
 
---115 's' beanstalk
+--115 's' bamboo
 poke(0x5600+(8* 115),
   92, -- ▒▒███▒█▒
   44, -- ▒▒██▒█▒▒
