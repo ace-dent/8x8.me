@@ -150,7 +150,7 @@ namespace patterns {
         0x20,  // ▓▓░▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: " `L\30@` "[i%8]
+    // Magic: "HXSFPXH"[i%8]*4
 
     constexpr uint8_t PROGMEM bush[] {
         8, 8,  // 8x8 px image
@@ -202,7 +202,7 @@ namespace patterns {
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\0 00\0 \0"[i%8]
+    // Magic: " $&& $ "[i%8]*8
 
     constexpr uint8_t PROGMEM mounds[] {
         8, 8,  // 8x8 px image
