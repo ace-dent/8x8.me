@@ -22,6 +22,32 @@ namespace patterns {
     };
     // Magic: ~"BD$\34$DB\301"[i%8]
 
+    constexpr uint8_t PROGMEM scalesLargeDexter[] {
+        8, 8,  // 8x8 px image
+        0x78,  // ▓░░░░▓▓▓
+        0xA7,  // ░▓░▓▓░░░
+        0xDF,  // ░░▓░░░░░
+        0xBF,  // ░▓░░░░░░
+        0xBF,  // ░▓░░░░░░
+        0x7F,  // ▓░░░░░░░
+        0x7F,  // ▓░░░░░░░
+        0x7F,  // ▓░░░░░░░
+    };
+    // Magic: "x\247\337\277\277\177\177\177"[i%8]
+
+    constexpr uint8_t PROGMEM scalesLargeSinister[] {
+        8, 8,  // 8x8 px image
+        0x7F,  // ▓░░░░░░░
+        0x7F,  // ▓░░░░░░░
+        0x7F,  // ▓░░░░░░░
+        0xBF,  // ░▓░░░░░░
+        0xBF,  // ░▓░░░░░░
+        0xDF,  // ░░▓░░░░░
+        0xA7,  // ░▓░▓▓░░░
+        0x78,  // ▓░░░░▓▓▓
+    };
+    // Magic: "\177\177\177\277\277\337\247x"[i%8]
+
     constexpr uint8_t PROGMEM loam[] {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -48,18 +74,18 @@ namespace patterns {
     };
     // Magic: 97^"cE!aiq\341a"[i%8]
 
-    constexpr uint8_t PROGMEM grass[] {
+    constexpr uint8_t PROGMEM patch[] {
         8, 8,  // 8x8 px image
-        0x20,  // ▓▓░▓▓▓▓▓
-        0x40,  // ▓░▓▓▓▓▓▓
-        0x20,  // ▓▓░▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
-        0x02,  // ▓▓▓▓▓▓░▓
+        0x20,  // ▓▓░▓▓▓▓▓
+        0x42,  // ▓░▓▓▓▓░▓
         0x04,  // ▓▓▓▓▓░▓▓
-        0x02,  // ▓▓▓▓▓▓░▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x20,  // ▓▓░▓▓▓▓▓
+        0x10,  // ▓▓▓░▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: " @ \0\2\4\2"[i%8]
+    // Magic: "\0 B\4\0 \20"[i%8]
 
     constexpr uint8_t PROGMEM divot[] {
         8, 8,  // 8x8 px image
@@ -73,6 +99,59 @@ namespace patterns {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
     // Magic: 97^"adcaaA1a"[i%8]
+
+    constexpr uint8_t PROGMEM grass[] {
+        8, 8,  // 8x8 px image
+        0x20,  // ▓▓░▓▓▓▓▓
+        0x40,  // ▓░▓▓▓▓▓▓
+        0x20,  // ▓▓░▓▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x02,  // ▓▓▓▓▓▓░▓
+        0x04,  // ▓▓▓▓▓░▓▓
+        0x02,  // ▓▓▓▓▓▓░▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+    };
+    // Magic: " @ \0\2\4\2"[i%8]
+
+    constexpr uint8_t PROGMEM grassMini[] {
+        8, 8,  // 8x8 px image
+        0x22,  // ▓▓░▓▓▓░▓
+        0x44,  // ▓░▓▓▓░▓▓
+        0x22,  // ▓▓░▓▓▓░▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x22,  // ▓▓░▓▓▓░▓
+        0x44,  // ▓░▓▓▓░▓▓
+        0x22,  // ▓▓░▓▓▓░▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+    };
+    // Magic: "\"D\""[i%4]
+    // GAMBY: 0x2420
+
+    constexpr uint8_t PROGMEM field[] {
+        8, 8,  // 8x8 px image
+        0x60,  // ▓░░▓▓▓▓▓
+        0x06,  // ▓▓▓▓▓░░▓
+        0x70,  // ▓░░░▓▓▓▓
+        0x07,  // ▓▓▓▓▓░░░
+        0x60,  // ▓░░▓▓▓▓▓
+        0x06,  // ▓▓▓▓▓░░▓
+        0x70,  // ▓░░░▓▓▓▓
+        0x07,  // ▓▓▓▓▓░░░
+    };
+    // Magic: "`\6p\a"[i%4]
+
+    constexpr uint8_t PROGMEM fieldSparse[] {
+        8, 8,  // 8x8 px image
+        0x60,  // ▓░░▓▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x70,  // ▓░░░▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x06,  // ▓▓▓▓▓░░▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x07,  // ▓▓▓▓▓░░░
+    };
+    // Magic: "`\0p\0\0\6\0\a"[i%8]
 
     constexpr uint8_t PROGMEM pasture[] {
         8, 8,  // 8x8 px image
@@ -164,6 +243,32 @@ namespace patterns {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
     // Magic: 72^"Xx.D8PHH"[i%8]
+
+    constexpr uint8_t PROGMEM leaves[] {
+        8, 8,  // 8x8 px image
+        0x20,  // ▓▓░▓▓▓▓▓
+        0x60,  // ▓░░▓▓▓▓▓
+        0x43,  // ▓░▓▓▓▓░░
+        0x06,  // ▓▓▓▓▓░░▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x18,  // ▓▓▓░░▓▓▓
+        0x0C,  // ▓▓▓▓░░▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+    };
+    // Magic: " `C\6\0\30\f"[i%8]
+
+    constexpr uint8_t PROGMEM overgrowth[] {
+        8, 8,  // 8x8 px image
+        0x30,  // ▓▓░░▓▓▓▓
+        0x73,  // ▓░░░▓▓░░
+        0x67,  // ▓░░▓▓░░░
+        0x04,  // ▓▓▓▓▓░▓▓
+        0x80,  // ░▓▓▓▓▓▓▓
+        0xEC,  // ░░░▓░░▓▓
+        0x6E,  // ▓░░▓░░░▓
+        0x06,  // ▓▓▓▓▓░░▓
+    };
+    // Magic: "0sg\4\200\354n\6"[i%8]
 
     constexpr uint8_t PROGMEM thicket[] {
         8, 8,  // 8x8 px image
@@ -275,6 +380,30 @@ namespace patternsHorizontal {
         0xFE,  // ░░░░░░░▓
     };
 
+    constexpr uint8_t PROGMEM scalesLargeDexter[] {
+        8, 8,  // 8x8 px image
+        0x7F,  // ▓░░░░░░░
+        0x7F,  // ▓░░░░░░░
+        0x7F,  // ▓░░░░░░░
+        0xBF,  // ░▓░░░░░░
+        0xBF,  // ░▓░░░░░░
+        0xDF,  // ░░▓░░░░░
+        0xA7,  // ░▓░▓▓░░░
+        0x78,  // ▓░░░░▓▓▓
+    };
+
+    constexpr uint8_t PROGMEM scalesLargeSinister[] {
+        8, 8,  // 8x8 px image
+        0xFE,  // ░░░░░░░▓
+        0xFE,  // ░░░░░░░▓
+        0xFE,  // ░░░░░░░▓
+        0xFD,  // ░░░░░░▓░
+        0xFD,  // ░░░░░░▓░
+        0xFB,  // ░░░░░▓░░
+        0xE5,  // ░░░▓▓░▓░
+        0x1E,  // ▓▓▓░░░░▓
+    };
+
     constexpr uint8_t PROGMEM loam[] {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -299,15 +428,15 @@ namespace patternsHorizontal {
         0x02,  // ▓▓▓▓▓▓░▓
     };
 
-    constexpr uint8_t PROGMEM grass[] {
+    constexpr uint8_t PROGMEM patch[] {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
-        0x0A,  // ▓▓▓▓░▓░▓
-        0x04,  // ▓▓▓▓▓░▓▓
+        0x20,  // ▓▓░▓▓▓▓▓
+        0x10,  // ▓▓▓░▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
-        0x00,  // ▓▓▓▓▓▓▓▓
-        0xA0,  // ░▓░▓▓▓▓▓
-        0x40,  // ▓░▓▓▓▓▓▓
+        0x02,  // ▓▓▓▓▓▓░▓
+        0x44,  // ▓░▓▓▓░▓▓
+        0x20,  // ▓▓░▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
@@ -320,6 +449,54 @@ namespace patternsHorizontal {
         0x02,  // ▓▓▓▓▓▓░▓
         0x04,  // ▓▓▓▓▓░▓▓
         0x02,  // ▓▓▓▓▓▓░▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+    };
+
+    constexpr uint8_t PROGMEM grass[] {
+        8, 8,  // 8x8 px image
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x0A,  // ▓▓▓▓░▓░▓
+        0x04,  // ▓▓▓▓▓░▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0xA0,  // ░▓░▓▓▓▓▓
+        0x40,  // ▓░▓▓▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+    };
+
+    constexpr uint8_t PROGMEM grassMini[] {
+        8, 8,  // 8x8 px image
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0xAA,  // ░▓░▓░▓░▓
+        0x44,  // ▓░▓▓▓░▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0xAA,  // ░▓░▓░▓░▓
+        0x44,  // ▓░▓▓▓░▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+    };
+
+    constexpr uint8_t PROGMEM field[] {
+        8, 8,  // 8x8 px image
+        0x11,  // ▓▓▓░▓▓▓░
+        0x55,  // ▓░▓░▓░▓░
+        0x55,  // ▓░▓░▓░▓░
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x22,  // ▓▓░▓▓▓░▓
+        0xAA,  // ░▓░▓░▓░▓
+        0xAA,  // ░▓░▓░▓░▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+    };
+
+    constexpr uint8_t PROGMEM fieldSparse[] {
+        8, 8,  // 8x8 px image
+        0x01,  // ▓▓▓▓▓▓▓░
+        0x05,  // ▓▓▓▓▓░▓░
+        0x05,  // ▓▓▓▓▓░▓░
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x20,  // ▓▓░▓▓▓▓▓
+        0xA0,  // ░▓░▓▓▓▓▓
+        0xA0,  // ░▓░▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
@@ -405,6 +582,30 @@ namespace patternsHorizontal {
         0x68,  // ▓░░▓░▓▓▓
         0x28,  // ▓▓░▓░▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
+    };
+
+    constexpr uint8_t PROGMEM leaves[] {
+        8, 8,  // 8x8 px image
+        0x20,  // ▓▓░▓▓▓▓▓
+        0x30,  // ▓▓░░▓▓▓▓
+        0x12,  // ▓▓▓░▓▓░▓
+        0x06,  // ▓▓▓▓▓░░▓
+        0x04,  // ▓▓▓▓▓░▓▓
+        0xC0,  // ░░▓▓▓▓▓▓
+        0x60,  // ▓░░▓▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+    };
+
+    constexpr uint8_t PROGMEM overgrowth[] {
+        8, 8,  // 8x8 px image
+        0x60,  // ▓░░▓▓▓▓▓
+        0x63,  // ▓░░▓▓▓░░
+        0x37,  // ▓▓░░▓░░░
+        0x06,  // ▓▓▓▓▓░░▓
+        0xC0,  // ░░▓▓▓▓▓▓
+        0xE6,  // ░░░▓▓░░▓
+        0x66,  // ▓░░▓▓░░▓
+        0x0C,  // ▓▓▓▓░░▓▓
     };
 
     constexpr uint8_t PROGMEM thicket[] {

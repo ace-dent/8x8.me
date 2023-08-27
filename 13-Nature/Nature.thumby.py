@@ -15,6 +15,32 @@ scales = bytearray([
 ])
 # scalesSprite = thumby.Sprite(8, 8, scales)
 
+scalesLargeDexter = bytearray([
+    # BITMAP: width: 8, height: 8, [120,167,223,191,191,127,127,127]
+    0x78,  # ▓░░░░▓▓▓
+    0xA7,  # ░▓░▓▓░░░
+    0xDF,  # ░░▓░░░░░
+    0xBF,  # ░▓░░░░░░
+    0xBF,  # ░▓░░░░░░
+    0x7F,  # ▓░░░░░░░
+    0x7F,  # ▓░░░░░░░
+    0x7F,  # ▓░░░░░░░
+])
+# scalesLargeDexterSprite = thumby.Sprite(8, 8, scalesLargeDexter)
+
+scalesLargeSinister = bytearray([
+    # BITMAP: width: 8, height: 8, [127,127,127,191,191,223,167,120]
+    0x7F,  # ▓░░░░░░░
+    0x7F,  # ▓░░░░░░░
+    0x7F,  # ▓░░░░░░░
+    0xBF,  # ░▓░░░░░░
+    0xBF,  # ░▓░░░░░░
+    0xDF,  # ░░▓░░░░░
+    0xA7,  # ░▓░▓▓░░░
+    0x78,  # ▓░░░░▓▓▓
+])
+# scalesLargeSinisterSprite = thumby.Sprite(8, 8, scalesLargeSinister)
+
 loam = bytearray([
     # BITMAP: width: 8, height: 8, [0,0,4,64,0,0,16,0]
     0x00,  # ▓▓▓▓▓▓▓▓
@@ -41,18 +67,18 @@ sand = bytearray([
 ])
 # sandSprite = thumby.Sprite(8, 8, sand)
 
-grass = bytearray([
-    # BITMAP: width: 8, height: 8, [32,64,32,0,2,4,2,0]
-    0x20,  # ▓▓░▓▓▓▓▓
-    0x40,  # ▓░▓▓▓▓▓▓
-    0x20,  # ▓▓░▓▓▓▓▓
+patch = bytearray([
+    # BITMAP: width: 8, height: 8, [0,32,66,4,0,32,16,0]
     0x00,  # ▓▓▓▓▓▓▓▓
-    0x02,  # ▓▓▓▓▓▓░▓
+    0x20,  # ▓▓░▓▓▓▓▓
+    0x42,  # ▓░▓▓▓▓░▓
     0x04,  # ▓▓▓▓▓░▓▓
-    0x02,  # ▓▓▓▓▓▓░▓
+    0x00,  # ▓▓▓▓▓▓▓▓
+    0x20,  # ▓▓░▓▓▓▓▓
+    0x10,  # ▓▓▓░▓▓▓▓
     0x00,  # ▓▓▓▓▓▓▓▓
 ])
-# grassSprite = thumby.Sprite(8, 8, grass)
+# patchSprite = thumby.Sprite(8, 8, patch)
 
 divot = bytearray([
     # BITMAP: width: 8, height: 8, [0,5,2,0,0,32,80,0]
@@ -66,6 +92,58 @@ divot = bytearray([
     0x00,  # ▓▓▓▓▓▓▓▓
 ])
 # divotSprite = thumby.Sprite(8, 8, divot)
+
+grass = bytearray([
+    # BITMAP: width: 8, height: 8, [32,64,32,0,2,4,2,0]
+    0x20,  # ▓▓░▓▓▓▓▓
+    0x40,  # ▓░▓▓▓▓▓▓
+    0x20,  # ▓▓░▓▓▓▓▓
+    0x00,  # ▓▓▓▓▓▓▓▓
+    0x02,  # ▓▓▓▓▓▓░▓
+    0x04,  # ▓▓▓▓▓░▓▓
+    0x02,  # ▓▓▓▓▓▓░▓
+    0x00,  # ▓▓▓▓▓▓▓▓
+])
+# grassSprite = thumby.Sprite(8, 8, grass)
+
+grassMini = bytearray([
+    # BITMAP: width: 8, height: 8, [34,68,34,0,34,68,34,0]
+    0x22,  # ▓▓░▓▓▓░▓
+    0x44,  # ▓░▓▓▓░▓▓
+    0x22,  # ▓▓░▓▓▓░▓
+    0x00,  # ▓▓▓▓▓▓▓▓
+    0x22,  # ▓▓░▓▓▓░▓
+    0x44,  # ▓░▓▓▓░▓▓
+    0x22,  # ▓▓░▓▓▓░▓
+    0x00,  # ▓▓▓▓▓▓▓▓
+])
+# grassMiniSprite = thumby.Sprite(8, 8, grassMini)
+
+field = bytearray([
+    # BITMAP: width: 8, height: 8, [96,6,112,7,96,6,112,7]
+    0x60,  # ▓░░▓▓▓▓▓
+    0x06,  # ▓▓▓▓▓░░▓
+    0x70,  # ▓░░░▓▓▓▓
+    0x07,  # ▓▓▓▓▓░░░
+    0x60,  # ▓░░▓▓▓▓▓
+    0x06,  # ▓▓▓▓▓░░▓
+    0x70,  # ▓░░░▓▓▓▓
+    0x07,  # ▓▓▓▓▓░░░
+])
+# fieldSprite = thumby.Sprite(8, 8, field)
+
+fieldSparse = bytearray([
+    # BITMAP: width: 8, height: 8, [96,0,112,0,0,6,0,7]
+    0x60,  # ▓░░▓▓▓▓▓
+    0x00,  # ▓▓▓▓▓▓▓▓
+    0x70,  # ▓░░░▓▓▓▓
+    0x00,  # ▓▓▓▓▓▓▓▓
+    0x00,  # ▓▓▓▓▓▓▓▓
+    0x06,  # ▓▓▓▓▓░░▓
+    0x00,  # ▓▓▓▓▓▓▓▓
+    0x07,  # ▓▓▓▓▓░░░
+])
+# fieldSparseSprite = thumby.Sprite(8, 8, fieldSparse)
 
 pasture = bytearray([
     # BITMAP: width: 8, height: 8, [96,6,96,6,48,0,48,0]
@@ -157,6 +235,32 @@ bush = bytearray([
     0x00,  # ▓▓▓▓▓▓▓▓
 ])
 # bushSprite = thumby.Sprite(8, 8, bush)
+
+leaves = bytearray([
+    # BITMAP: width: 8, height: 8, [32,96,67,6,0,24,12,0]
+    0x20,  # ▓▓░▓▓▓▓▓
+    0x60,  # ▓░░▓▓▓▓▓
+    0x43,  # ▓░▓▓▓▓░░
+    0x06,  # ▓▓▓▓▓░░▓
+    0x00,  # ▓▓▓▓▓▓▓▓
+    0x18,  # ▓▓▓░░▓▓▓
+    0x0C,  # ▓▓▓▓░░▓▓
+    0x00,  # ▓▓▓▓▓▓▓▓
+])
+# leavesSprite = thumby.Sprite(8, 8, leaves)
+
+overgrowth = bytearray([
+    # BITMAP: width: 8, height: 8, [48,115,103,4,128,236,110,6]
+    0x30,  # ▓▓░░▓▓▓▓
+    0x73,  # ▓░░░▓▓░░
+    0x67,  # ▓░░▓▓░░░
+    0x04,  # ▓▓▓▓▓░▓▓
+    0x80,  # ░▓▓▓▓▓▓▓
+    0xEC,  # ░░░▓░░▓▓
+    0x6E,  # ▓░░▓░░░▓
+    0x06,  # ▓▓▓▓▓░░▓
+])
+# overgrowthSprite = thumby.Sprite(8, 8, overgrowth)
 
 thicket = bytearray([
     # BITMAP: width: 8, height: 8, [0,36,40,54,40,36,0,0]
