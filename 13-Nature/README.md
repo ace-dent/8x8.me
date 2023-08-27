@@ -16,10 +16,19 @@ Nature patterns.
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Loam | <img src="../previews/Loam.png" width="64" height="32" alt=""> | [png](png/Loam.png) | [cpp](Nature.h#L25-L36) | [txt](Nature.bitsy.txt#L16-L25) | [lua](nature.p8.lua#L21-L33) | [py](Nature.thumby.py#L18-L29) |
 | Sand | <img src="../previews/Sand.png" width="64" height="32" alt=""> | [png](png/Sand.png) | [cpp](Nature.h#L38-L49) | [txt](Nature.bitsy.txt#L27-L36) | [lua](nature.p8.lua#L35-L47) | [py](Nature.thumby.py#L31-L42) |
+| Patch | <img src="../previews/Patch.png" width="64" height="32" alt=""> | [png](png/Patch.png) | | | | |
 | Divot <sup>o</sup>| <img src="../previews/Divot.png" width="64" height="32" alt=""> | [png](png/Divot.png) | [cpp](Nature.h#L64-L75) | [txt](Nature.bitsy.txt#L49-L58) | [lua](nature.p8.lua#L63-L75) | [py](Nature.thumby.py#L57-L68) |
 | Grass | <img src="../previews/Grass.png" width="64" height="32" alt=""> | [png](png/Grass.png) | [cpp](Nature.h#L51-L62) | [txt](Nature.bitsy.txt#L38-L47) | [lua](nature.p8.lua#L49-L61) | [py](Nature.thumby.py#L44-L55) |
 | GrassMini <sup>p</sup>| <img src="../previews/GrassMini.png" width="64" height="32" alt=""> | [png](png/GrassMini.png) | | | | |
+| Field | <img src="../previews/Field.png" width="64" height="32" alt=""> | [png](png/Field.png) | | | | |
+| FieldSparse | <img src="../previews/FieldSparse.png" width="64" height="32" alt=""> | [png](png/FieldSparse.png) | | | | |
 | Pasture | <img src="../previews/Pasture.png" width="64" height="32" alt=""> | [png](png/Pasture.png) | [cpp](Nature.h#L77-L88) | [txt](Nature.bitsy.txt#L60-L69) | [lua](nature.p8.lua#L77-L89) | [py](Nature.thumby.py#L70-L81) |
+
+
+<br>
+
+| Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Daisies | <img src="../previews/Daisies.png" width="64" height="32" alt=""> | [png](png/Daisies.png) | [cpp](Nature.h#L90-L101) | [txt](Nature.bitsy.txt#L71-L80) | [lua](nature.p8.lua#L91-L103) | [py](Nature.thumby.py#L83-L94) |
 | Tuffet | <img src="../previews/Tuffet.png" width="64" height="32" alt=""> | [png](png/Tuffet.png) | [cpp](Nature.h#L103-L114) | [txt](Nature.bitsy.txt#L82-L91) | [lua](nature.p8.lua#L105-L117) | [py](Nature.thumby.py#L96-L107) |
 | Shrub | <img src="../previews/Shrub.png" width="64" height="32" alt=""> | [png](png/Shrub.png) | [cpp](Nature.h#L116-L127) | [txt](Nature.bitsy.txt#L93-L102) | [lua](nature.p8.lua#L119-L131) | [py](Nature.thumby.py#L109-L120) |
