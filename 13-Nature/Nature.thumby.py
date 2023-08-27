@@ -119,9 +119,8 @@ shrub = bytearray([
 ])
 # shrubSprite = thumby.Sprite(8, 8, shrub)
 
-leaves = bytearray([
-    # BITMAP: width: 8, height: 8, [0,0,24,48,0,24,12,0]
-    0x00,  # ▓▓▓▓▓▓▓▓
+sprout = bytearray([
+    # BITMAP: width: 8, height: 8, [0,24,48,0,24,12,0,0]
     0x00,  # ▓▓▓▓▓▓▓▓
     0x18,  # ▓▓▓░░▓▓▓
     0x30,  # ▓▓░░▓▓▓▓
@@ -129,8 +128,9 @@ leaves = bytearray([
     0x18,  # ▓▓▓░░▓▓▓
     0x0C,  # ▓▓▓▓░░▓▓
     0x00,  # ▓▓▓▓▓▓▓▓
+    0x00,  # ▓▓▓▓▓▓▓▓
 ])
-# leavesSprite = thumby.Sprite(8, 8, leaves)
+# sproutSprite = thumby.Sprite(8, 8, sprout)
 
 crop = bytearray([
     # BITMAP: width: 8, height: 8, [32,96,76,24,64,96,32,0]

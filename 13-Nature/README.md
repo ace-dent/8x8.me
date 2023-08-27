@@ -32,9 +32,10 @@ Nature patterns.
 | Daisies | <img src="../previews/Daisies.png" width="64" height="32" alt=""> | [png](png/Daisies.png) | [cpp](Nature.h#L90-L101) | [txt](Nature.bitsy.txt#L71-L80) | [lua](nature.p8.lua#L91-L103) | [py](Nature.thumby.py#L83-L94) |
 | Tuffet | <img src="../previews/Tuffet.png" width="64" height="32" alt=""> | [png](png/Tuffet.png) | [cpp](Nature.h#L103-L114) | [txt](Nature.bitsy.txt#L82-L91) | [lua](nature.p8.lua#L105-L117) | [py](Nature.thumby.py#L96-L107) |
 | Shrub | <img src="../previews/Shrub.png" width="64" height="32" alt=""> | [png](png/Shrub.png) | [cpp](Nature.h#L116-L127) | [txt](Nature.bitsy.txt#L93-L102) | [lua](nature.p8.lua#L119-L131) | [py](Nature.thumby.py#L109-L120) |
-| Leaves | <img src="../previews/Leaves.png" width="64" height="32" alt=""> | [png](png/Leaves.png) | [cpp](Nature.h#L129-L140) | [txt](Nature.bitsy.txt#L104-L113) | [lua](nature.p8.lua#L133-L145) | [py](Nature.thumby.py#L122-L133) |
+| Sprout | <img src="../previews/Sprout.png" width="64" height="32" alt=""> | [png](png/Sprout.png) | [cpp](Nature.h#L129-L140) | [txt](Nature.bitsy.txt#L104-L113) | [lua](nature.p8.lua#L133-L145) | [py](Nature.thumby.py#L122-L133) |
 | Crop | <img src="../previews/Crop.png" width="64" height="32" alt=""> | [png](png/Crop.png) | [cpp](Nature.h#L142-L153) | [txt](Nature.bitsy.txt#L115-L124) | [lua](nature.p8.lua#L147-L159) | [py](Nature.thumby.py#L135-L146) |
 | Bush | <img src="../previews/Bush.png" width="64" height="32" alt=""> | [png](png/Bush.png) | [cpp](Nature.h#L155-L166) | [txt](Nature.bitsy.txt#L126-L135) | [lua](nature.p8.lua#L161-L173) | [py](Nature.thumby.py#L148-L159) |
+| Leaves | <img src="../previews/Leaves.png" width="64" height="32" alt=""> | [png](png/Leaves.png) | | | | |
 | Overgrowth | <img src="../previews/Overgrowth.png" width="64" height="32" alt=""> | [png](png/Overgrowth.png) | | | | |
 
 <br>

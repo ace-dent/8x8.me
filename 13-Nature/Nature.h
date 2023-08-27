@@ -126,9 +126,8 @@ namespace patterns {
     };
     // Magic: "@DHFHD@"[i%8]*4
 
-    constexpr uint8_t PROGMEM leaves[] {
+    constexpr uint8_t PROGMEM sprout[] {
         8, 8,  // 8x8 px image
-        0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
         0x18,  // ▓▓▓░░▓▓▓
         0x30,  // ▓▓░░▓▓▓▓
@@ -136,8 +135,9 @@ namespace patterns {
         0x18,  // ▓▓▓░░▓▓▓
         0x0C,  // ▓▓▓▓░░▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "@@FL@FC"[i%8]*4
+    // Magic: "@FL@FC@"[i%8]*4
 
     constexpr uint8_t PROGMEM crop[] {
         8, 8,  // 8x8 px image
@@ -371,14 +371,14 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM leaves[] {
+    constexpr uint8_t PROGMEM sprout[] {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
-        0x02,  // ▓▓▓▓▓▓░▓
-        0x26,  // ▓▓░▓▓░░▓
-        0x34,  // ▓▓░░▓░▓▓
-        0x10,  // ▓▓▓░▓▓▓▓
+        0x04,  // ▓▓▓▓▓░▓▓
+        0x4C,  // ▓░▓▓░░▓▓
+        0x68,  // ▓░░▓░▓▓▓
+        0x20,  // ▓▓░▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
