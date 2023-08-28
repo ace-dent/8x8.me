@@ -9,7 +9,7 @@
 
 namespace patterns {
 
-    constexpr uint8_t PROGMEM annuletSmall[] {
+    constexpr uint8_t annuletSmall[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -22,7 +22,7 @@ namespace patterns {
     };
     // Magic: "@@BEB@@"[i%8]*4
 
-    constexpr uint8_t PROGMEM annuletSmallDuo[] {
+    constexpr uint8_t annuletSmallDuo[] PROGMEM {
         8, 8,  // 8x8 px image
         0x20,  // ▓▓░▓▓▓▓▓
         0x50,  // ▓░▓░▓▓▓▓
@@ -35,7 +35,7 @@ namespace patterns {
     };
     // Magic: " P \0\2\5\2"[i%8]
 
-    constexpr uint8_t PROGMEM annuletSmallQuad[] {
+    constexpr uint8_t annuletSmallQuad[] PROGMEM {
         8, 8,  // 8x8 px image
         0x22,  // ▓▓░▓▓▓░▓
         0x55,  // ▓░▓░▓░▓░
@@ -49,7 +49,7 @@ namespace patterns {
     // Magic: "\"U\""[i%4]
     // GAMBY: 0x2520
 
-    constexpr uint8_t PROGMEM roundelSmallDuo[] {
+    constexpr uint8_t roundelSmallDuo[] PROGMEM {
         8, 8,  // 8x8 px image
         0x20,  // ▓▓░▓▓▓▓▓
         0x70,  // ▓░░░▓▓▓▓
@@ -62,7 +62,7 @@ namespace patterns {
     };
     // Magic: " p \0\2\a\2"[i%8]
 
-    constexpr uint8_t PROGMEM roundelSmall[] {
+    constexpr uint8_t roundelSmall[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -75,7 +75,7 @@ namespace patterns {
     };
     // Magic: "@@BGB@@"[i%8]*4
 
-    constexpr uint8_t PROGMEM annulet[] {
+    constexpr uint8_t annulet[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -88,7 +88,7 @@ namespace patterns {
     };
     // Magic: "@@FIIF@"[i%8]*4
 
-    constexpr uint8_t PROGMEM annuletCoAnnulet[] {
+    constexpr uint8_t annuletCoAnnulet[] PROGMEM {
         8, 8,  // 8x8 px image
         0x42,  // ▓░▓▓▓▓░▓
         0x81,  // ░▓▓▓▓▓▓░
@@ -101,7 +101,7 @@ namespace patterns {
     };
     // Magic: 3+"?~\25!!\25~?"[i%8]
 
-    constexpr uint8_t PROGMEM annuletCoAnnuletSquare[] {
+    constexpr uint8_t annuletCoAnnuletSquare[] PROGMEM {
         8, 8,  // 8x8 px image
         0x5A,  // ▓░▓░░▓░▓
         0x81,  // ░▓▓▓▓▓▓░
@@ -114,7 +114,7 @@ namespace patterns {
     };
     // Magic: 12+"Nu\f\231\231\fuN"[i%8]
 
-    constexpr uint8_t PROGMEM annuletCoAnnuletXL[] {
+    constexpr uint8_t annuletCoAnnuletXL[] PROGMEM {
         8, 8,  // 8x8 px image
         0x24,  // ▓▓░▓▓░▓▓
         0x42,  // ▓░▓▓▓▓░▓
@@ -127,7 +127,7 @@ namespace patterns {
     };
     // Magic: "$B\231$$\231B$"[i%8]
 
-    constexpr uint8_t PROGMEM roundelCoAnnuletXL[] {
+    constexpr uint8_t roundelCoAnnuletXL[] PROGMEM {
         8, 8,  // 8x8 px image
         0x24,  // ▓▓░▓▓░▓▓
         0x42,  // ▓░▓▓▓▓░▓
@@ -140,7 +140,7 @@ namespace patterns {
     };
     // Magic: 27+"\t'~!!~'\t"[i%8]
 
-    constexpr uint8_t PROGMEM roundelCoAnnulet[] {
+    constexpr uint8_t roundelCoAnnulet[] PROGMEM {
         8, 8,  // 8x8 px image
         0x42,  // ▓░▓▓▓▓░▓
         0x81,  // ░▓▓▓▓▓▓░
@@ -153,7 +153,7 @@ namespace patterns {
     };
     // Magic: 15+"3r\t--\tr3"[i%8]
 
-    constexpr uint8_t PROGMEM roundelCoRoundel[] {
+    constexpr uint8_t roundelCoRoundel[] PROGMEM {
         8, 8,  // 8x8 px image
         0xC3,  // ░░▓▓▓▓░░
         0x81,  // ░▓▓▓▓▓▓░
@@ -166,7 +166,7 @@ namespace patterns {
     };
     // Magic: 11+"\270v\r11\rv\270"[i%8]
 
-    constexpr uint8_t PROGMEM roundel[] {
+    constexpr uint8_t roundel[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -179,7 +179,7 @@ namespace patterns {
     };
     // Magic: "@@FOOF@"[i%8]*4
 
-    constexpr uint8_t PROGMEM ball[] {
+    constexpr uint8_t ball[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -192,7 +192,7 @@ namespace patterns {
     };
     // Magic: "@@FMOF@"[i%8]*4
 
-    constexpr uint8_t PROGMEM annuletLarge[] {
+    constexpr uint8_t annuletLarge[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x1C,  // ▓▓▓░░░▓▓
@@ -205,7 +205,7 @@ namespace patterns {
     };
     // Magic: 88^"XDzzzDXX"[i%8]
 
-    constexpr uint8_t PROGMEM annuletLargeMedium[] {
+    constexpr uint8_t annuletLargeMedium[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x1C,  // ▓▓▓░░░▓▓
@@ -218,7 +218,7 @@ namespace patterns {
     };
     // Magic: 88^"XDnznDXX"[i%8]
 
-    constexpr uint8_t PROGMEM annuletLargeBold[] {
+    constexpr uint8_t annuletLargeBold[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x1C,  // ▓▓▓░░░▓▓
@@ -231,7 +231,7 @@ namespace patterns {
     };
     // Magic: 88^"XDfnfDXX"[i%8]
 
-    constexpr uint8_t PROGMEM roundelLarge[] {
+    constexpr uint8_t roundelLarge[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x1C,  // ▓▓▓░░░▓▓
@@ -244,7 +244,7 @@ namespace patterns {
     };
     // Magic: 88^"XDfffDXX"[i%8]
 
-    constexpr uint8_t PROGMEM ballLarge[] {
+    constexpr uint8_t ballLarge[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x1C,  // ▓▓▓░░░▓▓
@@ -257,7 +257,7 @@ namespace patterns {
     };
     // Magic: 88^"XDnbfDXX"[i%8]
 
-    constexpr uint8_t PROGMEM sphereCoSphere[] {
+    constexpr uint8_t sphereCoSphere[] PROGMEM {
         8, 8,  // 8x8 px image
         0xE3,  // ░░░▓▓▓░░
         0xDD,  // ░░▓░░░▓░
@@ -270,7 +270,7 @@ namespace patterns {
     };
     // Magic: 130^"a_\270\270\274_!!"[i%8]
 
-    constexpr uint8_t PROGMEM annuletXXL[] {
+    constexpr uint8_t annuletXXL[] PROGMEM {
         8, 8,  // 8x8 px image
         0x1C,  // ▓▓▓░░░▓▓
         0x22,  // ▓▓░▓▓▓░▓
@@ -283,7 +283,7 @@ namespace patterns {
     };
     // Magic: 96^"|B!!!B|`"[i%8]
 
-    constexpr uint8_t PROGMEM bubble[] {
+    constexpr uint8_t bubble[] PROGMEM {
         8, 8,  // 8x8 px image
         0x1C,  // ▓▓▓░░░▓▓
         0x22,  // ▓▓░▓▓▓░▓
@@ -296,7 +296,7 @@ namespace patterns {
     };
     // Magic: 96^"|B)%!B|`"[i%8]
 
-    constexpr uint8_t PROGMEM roundelXXL[] {
+    constexpr uint8_t roundelXXL[] PROGMEM {
         8, 8,  // 8x8 px image
         0x1C,  // ▓▓▓░░░▓▓
         0x3E,  // ▓▓░░░░░▓
@@ -309,7 +309,7 @@ namespace patterns {
     };
     // Magic: 66^"^|===|^B"[i%8]
 
-    constexpr uint8_t PROGMEM ballXXL[] {
+    constexpr uint8_t ballXXL[] PROGMEM {
         8, 8,  // 8x8 px image
         0x1C,  // ▓▓▓░░░▓▓
         0x32,  // ▓▓░░▓▓░▓
@@ -322,7 +322,7 @@ namespace patterns {
     };
     // Magic: 72^"Tz157vTH"[i%8]
 
-    constexpr uint8_t PROGMEM annuletUltraLarge[] {
+    constexpr uint8_t annuletUltraLarge[] PROGMEM {
         8, 8,  // 8x8 px image
         0x3C,  // ▓▓░░░░▓▓
         0x42,  // ▓░▓▓▓▓░▓
@@ -335,7 +335,7 @@ namespace patterns {
     };
     // Magic: 60+"\0\6EEEE\6"[i%8]
 
-    constexpr uint8_t PROGMEM annuletUltraLargeMedium[] {
+    constexpr uint8_t annuletUltraLargeMedium[] PROGMEM {
         8, 8,  // 8x8 px image
         0x3C,  // ▓▓░░░░▓▓
         0x66,  // ▓░░▓▓░░▓
@@ -348,7 +348,7 @@ namespace patterns {
     };
     // Magic: 60+"\0*\207EE\207*"[i%8]
 
-    constexpr uint8_t PROGMEM annuletUltraLargeBold[] {
+    constexpr uint8_t annuletUltraLargeBold[] PROGMEM {
         8, 8,  // 8x8 px image
         0x3C,  // ▓▓░░░░▓▓
         0x7E,  // ▓░░░░░░▓
@@ -361,7 +361,7 @@ namespace patterns {
     };
     // Magic: "<~\347\303\303\347~<"[i%8]
 
-    constexpr uint8_t PROGMEM annuletUltraLargeExtraBold[] {
+    constexpr uint8_t annuletUltraLargeExtraBold[] PROGMEM {
         8, 8,  // 8x8 px image
         0x3C,  // ▓▓░░░░▓▓
         0x7E,  // ▓░░░░░░▓
@@ -374,7 +374,7 @@ namespace patterns {
     };
     // Magic: "<~\377\347\347\377~<"[i%8]
 
-    constexpr uint8_t PROGMEM roundelUltraLarge[] {
+    constexpr uint8_t roundelUltraLarge[] PROGMEM {
         8, 8,  // 8x8 px image
         0x3C,  // ▓▓░░░░▓▓
         0x7E,  // ▓░░░░░░▓
@@ -394,7 +394,7 @@ namespace patterns {
 #if 0
 namespace patternsHorizontal {
 
-    constexpr uint8_t PROGMEM annuletSmall[] {
+    constexpr uint8_t annuletSmall[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -406,7 +406,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM annuletSmallDuo[] {
+    constexpr uint8_t annuletSmallDuo[] PROGMEM {
         8, 8,  // 8x8 px image
         0x04,  // ▓▓▓▓▓░▓▓
         0x0A,  // ▓▓▓▓░▓░▓
@@ -418,7 +418,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM annuletSmallQuad[] {
+    constexpr uint8_t annuletSmallQuad[] PROGMEM {
         8, 8,  // 8x8 px image
         0x44,  // ▓░▓▓▓░▓▓
         0xAA,  // ░▓░▓░▓░▓
@@ -430,7 +430,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM roundelSmallDuo[] {
+    constexpr uint8_t roundelSmallDuo[] PROGMEM {
         8, 8,  // 8x8 px image
         0x04,  // ▓▓▓▓▓░▓▓
         0x0E,  // ▓▓▓▓░░░▓
@@ -442,7 +442,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM roundelSmall[] {
+    constexpr uint8_t roundelSmall[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -454,7 +454,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM annulet[] {
+    constexpr uint8_t annulet[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -466,7 +466,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM annuletCoAnnulet[] {
+    constexpr uint8_t annuletCoAnnulet[] PROGMEM {
         8, 8,  // 8x8 px image
         0x42,  // ▓░▓▓▓▓░▓
         0x81,  // ░▓▓▓▓▓▓░
@@ -478,7 +478,7 @@ namespace patternsHorizontal {
         0x42,  // ▓░▓▓▓▓░▓
     };
 
-    constexpr uint8_t PROGMEM annuletCoAnnuletSquare[] {
+    constexpr uint8_t annuletCoAnnuletSquare[] PROGMEM {
         8, 8,  // 8x8 px image
         0x5A,  // ▓░▓░░▓░▓
         0x81,  // ░▓▓▓▓▓▓░
@@ -490,7 +490,7 @@ namespace patternsHorizontal {
         0x5A,  // ▓░▓░░▓░▓
     };
 
-    constexpr uint8_t PROGMEM annuletCoAnnuletXL[] {
+    constexpr uint8_t annuletCoAnnuletXL[] PROGMEM {
         8, 8,  // 8x8 px image
         0x24,  // ▓▓░▓▓░▓▓
         0x42,  // ▓░▓▓▓▓░▓
@@ -502,7 +502,7 @@ namespace patternsHorizontal {
         0x24,  // ▓▓░▓▓░▓▓
     };
 
-    constexpr uint8_t PROGMEM roundelCoAnnuletXL[] {
+    constexpr uint8_t roundelCoAnnuletXL[] PROGMEM {
         8, 8,  // 8x8 px image
         0x24,  // ▓▓░▓▓░▓▓
         0x42,  // ▓░▓▓▓▓░▓
@@ -514,7 +514,7 @@ namespace patternsHorizontal {
         0x24,  // ▓▓░▓▓░▓▓
     };
 
-    constexpr uint8_t PROGMEM roundelCoAnnulet[] {
+    constexpr uint8_t roundelCoAnnulet[] PROGMEM {
         8, 8,  // 8x8 px image
         0x42,  // ▓░▓▓▓▓░▓
         0x81,  // ░▓▓▓▓▓▓░
@@ -526,7 +526,7 @@ namespace patternsHorizontal {
         0x42,  // ▓░▓▓▓▓░▓
     };
 
-    constexpr uint8_t PROGMEM roundelCoRoundel[] {
+    constexpr uint8_t roundelCoRoundel[] PROGMEM {
         8, 8,  // 8x8 px image
         0xC3,  // ░░▓▓▓▓░░
         0x81,  // ░▓▓▓▓▓▓░
@@ -538,7 +538,7 @@ namespace patternsHorizontal {
         0xC3,  // ░░▓▓▓▓░░
     };
 
-    constexpr uint8_t PROGMEM roundel[] {
+    constexpr uint8_t roundel[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -550,7 +550,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM ball[] {
+    constexpr uint8_t ball[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -562,7 +562,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM annuletLarge[] {
+    constexpr uint8_t annuletLarge[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x38,  // ▓▓░░░▓▓▓
@@ -574,7 +574,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM annuletLargeMedium[] {
+    constexpr uint8_t annuletLargeMedium[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x38,  // ▓▓░░░▓▓▓
@@ -586,7 +586,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM annuletLargeBold[] {
+    constexpr uint8_t annuletLargeBold[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x38,  // ▓▓░░░▓▓▓
@@ -598,7 +598,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM roundelLarge[] {
+    constexpr uint8_t roundelLarge[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x38,  // ▓▓░░░▓▓▓
@@ -610,7 +610,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM ballLarge[] {
+    constexpr uint8_t ballLarge[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x38,  // ▓▓░░░▓▓▓
@@ -622,7 +622,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM sphereCoSphere[] {
+    constexpr uint8_t sphereCoSphere[] PROGMEM {
         8, 8,  // 8x8 px image
         0xC7,  // ░░▓▓▓░░░
         0xBB,  // ░▓░░░▓░░
@@ -634,7 +634,7 @@ namespace patternsHorizontal {
         0xC7,  // ░░▓▓▓░░░
     };
 
-    constexpr uint8_t PROGMEM annuletXXL[] {
+    constexpr uint8_t annuletXXL[] PROGMEM {
         8, 8,  // 8x8 px image
         0x38,  // ▓▓░░░▓▓▓
         0x44,  // ▓░▓▓▓░▓▓
@@ -646,7 +646,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM bubble[] {
+    constexpr uint8_t bubble[] PROGMEM {
         8, 8,  // 8x8 px image
         0x38,  // ▓▓░░░▓▓▓
         0x44,  // ▓░▓▓▓░▓▓
@@ -658,7 +658,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM roundelXXL[] {
+    constexpr uint8_t roundelXXL[] PROGMEM {
         8, 8,  // 8x8 px image
         0x38,  // ▓▓░░░▓▓▓
         0x7C,  // ▓░░░░░▓▓
@@ -670,7 +670,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM ballXXL[] {
+    constexpr uint8_t ballXXL[] PROGMEM {
         8, 8,  // 8x8 px image
         0x38,  // ▓▓░░░▓▓▓
         0x4C,  // ▓░▓▓░░▓▓
@@ -682,7 +682,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM annuletUltraLarge[] {
+    constexpr uint8_t annuletUltraLarge[] PROGMEM {
         8, 8,  // 8x8 px image
         0x3C,  // ▓▓░░░░▓▓
         0x42,  // ▓░▓▓▓▓░▓
@@ -694,7 +694,7 @@ namespace patternsHorizontal {
         0x3C,  // ▓▓░░░░▓▓
     };
 
-    constexpr uint8_t PROGMEM annuletUltraLargeMedium[] {
+    constexpr uint8_t annuletUltraLargeMedium[] PROGMEM {
         8, 8,  // 8x8 px image
         0x3C,  // ▓▓░░░░▓▓
         0x66,  // ▓░░▓▓░░▓
@@ -706,7 +706,7 @@ namespace patternsHorizontal {
         0x3C,  // ▓▓░░░░▓▓
     };
 
-    constexpr uint8_t PROGMEM annuletUltraLargeBold[] {
+    constexpr uint8_t annuletUltraLargeBold[] PROGMEM {
         8, 8,  // 8x8 px image
         0x3C,  // ▓▓░░░░▓▓
         0x7E,  // ▓░░░░░░▓
@@ -718,7 +718,7 @@ namespace patternsHorizontal {
         0x3C,  // ▓▓░░░░▓▓
     };
 
-    constexpr uint8_t PROGMEM annuletUltraLargeExtraBold[] {
+    constexpr uint8_t annuletUltraLargeExtraBold[] PROGMEM {
         8, 8,  // 8x8 px image
         0x3C,  // ▓▓░░░░▓▓
         0x7E,  // ▓░░░░░░▓
@@ -730,7 +730,7 @@ namespace patternsHorizontal {
         0x3C,  // ▓▓░░░░▓▓
     };
 
-    constexpr uint8_t PROGMEM roundelUltraLarge[] {
+    constexpr uint8_t roundelUltraLarge[] PROGMEM {
         8, 8,  // 8x8 px image
         0x3C,  // ▓▓░░░░▓▓
         0x7E,  // ▓░░░░░░▓

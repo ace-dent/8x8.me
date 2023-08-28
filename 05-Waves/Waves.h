@@ -9,7 +9,7 @@
 
 namespace patterns {
 
-    constexpr uint8_t PROGMEM ripple[] {
+    constexpr uint8_t ripple[] PROGMEM {
         8, 8,  // 8x8 px image
         0x40,  // ▓░▓▓▓▓▓▓
         0x02,  // ▓▓▓▓▓▓░▓
@@ -22,7 +22,7 @@ namespace patterns {
     };
     // Magic: 97^"!cAcAe!e"[i%8]
 
-    constexpr uint8_t PROGMEM wave[] {
+    constexpr uint8_t wave[] PROGMEM {
         8, 8,  // 8x8 px image
         0x44,  // ▓░▓▓▓░▓▓
         0x22,  // ▓▓░▓▓▓░▓
@@ -35,7 +35,7 @@ namespace patterns {
     };
     // Magic: 99^"'ArrAcA'"[i%8]
 
-    constexpr uint8_t PROGMEM tidalLight[] {
+    constexpr uint8_t tidalLight[] PROGMEM {
         8, 8,  // 8x8 px image
         0x40,  // ▓░▓▓▓▓▓▓
         0x20,  // ▓▓░▓▓▓▓▓
@@ -48,7 +48,7 @@ namespace patterns {
     };
     // Magic: "PH@D@HPP"[i%8]*4
 
-    constexpr uint8_t PROGMEM tidal[] {
+    constexpr uint8_t tidal[] PROGMEM {
         8, 8,  // 8x8 px image
         0x40,  // ▓░▓▓▓▓▓▓
         0x20,  // ▓▓░▓▓▓▓▓
@@ -61,7 +61,7 @@ namespace patterns {
     };
     // Magic: "PHDDDHPP"[i%8]*4
 
-    constexpr uint8_t PROGMEM tidalMedium[] {
+    constexpr uint8_t tidalMedium[] PROGMEM {
         8, 8,  // 8x8 px image
         0x60,  // ▓░░▓▓▓▓▓
         0x30,  // ▓▓░░▓▓▓▓
@@ -74,7 +74,7 @@ namespace patterns {
     };
     // Magic: "XLFFFLXX"[i%8]*4
 
-    constexpr uint8_t PROGMEM oceanicLight[] {
+    constexpr uint8_t oceanicLight[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x40,  // ▓░▓▓▓▓▓▓
@@ -87,7 +87,7 @@ namespace patterns {
     };
     // Magic: "@PJD@H@P"[i%8]*4
 
-    constexpr uint8_t PROGMEM oceanic[] {
+    constexpr uint8_t oceanic[] PROGMEM {
         8, 8,  // 8x8 px image
         0x40,  // ▓░▓▓▓▓▓▓
         0x68,  // ▓░░▓░▓▓▓
@@ -100,7 +100,7 @@ namespace patterns {
     };
     // Magic: "@h8\20  @@"[i%8]
 
-    constexpr uint8_t PROGMEM urdy[] {
+    constexpr uint8_t urdy[] PROGMEM {
         8, 8,  // 8x8 px image
         0x3C,  // ▓▓░░░░▓▓
         0x02,  // ▓▓▓▓▓▓░▓
@@ -113,7 +113,7 @@ namespace patterns {
     };
     // Magic: "<\2\1\2<@\200@"[i%8]
 
-    constexpr uint8_t PROGMEM doubleHelix[] {
+    constexpr uint8_t doubleHelix[] PROGMEM {
         8, 8,  // 8x8 px image
         0x42,  // ▓░▓▓▓▓░▓
         0x42,  // ▓░▓▓▓▓░▓
@@ -133,7 +133,7 @@ namespace patterns {
 #if 0
 namespace patternsHorizontal {
 
-    constexpr uint8_t PROGMEM ripple[] {
+    constexpr uint8_t ripple[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x50,  // ▓░▓░▓▓▓▓
@@ -145,7 +145,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM wave[] {
+    constexpr uint8_t wave[] PROGMEM {
         8, 8,  // 8x8 px image
         0x30,  // ▓▓░░▓▓▓▓
         0x4A,  // ▓░▓▓░▓░▓
@@ -157,7 +157,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM tidalLight[] {
+    constexpr uint8_t tidalLight[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -169,7 +169,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM tidal[] {
+    constexpr uint8_t tidal[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -181,7 +181,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM tidalMedium[] {
+    constexpr uint8_t tidalMedium[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -193,7 +193,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM oceanicLight[] {
+    constexpr uint8_t oceanicLight[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -205,7 +205,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM oceanic[] {
+    constexpr uint8_t oceanic[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -217,7 +217,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM urdy[] {
+    constexpr uint8_t urdy[] PROGMEM {
         8, 8,  // 8x8 px image
         0x20,  // ▓▓░▓▓▓▓▓
         0x50,  // ▓░▓░▓▓▓▓
@@ -229,7 +229,7 @@ namespace patternsHorizontal {
         0x02,  // ▓▓▓▓▓▓░▓
     };
 
-    constexpr uint8_t PROGMEM doubleHelix[] {
+    constexpr uint8_t doubleHelix[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0xC3,  // ░░▓▓▓▓░░

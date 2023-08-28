@@ -9,7 +9,7 @@
 
 namespace patterns {
 
-    constexpr uint8_t PROGMEM chain[] {
+    constexpr uint8_t chain[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -22,7 +22,7 @@ namespace patterns {
     };
     // Magic: "\0\0f\231f\0\0"[i%8]
 
-    constexpr uint8_t PROGMEM chainLarge[] {
+    constexpr uint8_t chainLarge[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x3C,  // ▓▓░░░░▓▓
@@ -42,7 +42,7 @@ namespace patterns {
 #if 0
 namespace patternsHorizontal {
 
-    constexpr uint8_t PROGMEM chain[] {
+    constexpr uint8_t chain[] PROGMEM {
         8, 8,  // 8x8 px image
         0x10,  // ▓▓▓░▓▓▓▓
         0x28,  // ▓▓░▓░▓▓▓
@@ -54,7 +54,7 @@ namespace patternsHorizontal {
         0x10,  // ▓▓▓░▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM chainLarge[] {
+    constexpr uint8_t chainLarge[] PROGMEM {
         8, 8,  // 8x8 px image
         0x10,  // ▓▓▓░▓▓▓▓
         0x38,  // ▓▓░░░▓▓▓

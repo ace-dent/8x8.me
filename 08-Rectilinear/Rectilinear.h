@@ -9,7 +9,7 @@
 
 namespace patterns {
 
-    constexpr uint8_t PROGMEM squareMini[] {
+    constexpr uint8_t squareMini[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x66,  // ▓░░▓▓░░▓
@@ -23,7 +23,7 @@ namespace patterns {
     // Magic: "\0ff"[i%4]
     // GAMBY: 0x0660
 
-    constexpr uint8_t PROGMEM billetMini[] {
+    constexpr uint8_t billetMini[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x77,  // ▓░░░▓░░░
@@ -37,7 +37,7 @@ namespace patterns {
     // Magic: "\0ww"[i%4]
     // GAMBY: 0x0770
 
-    constexpr uint8_t PROGMEM box[] {
+    constexpr uint8_t box[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -50,7 +50,7 @@ namespace patterns {
     };
     // Magic: "@@OIIO@"[i%8]*4
 
-    constexpr uint8_t PROGMEM boxMedium[] {
+    constexpr uint8_t boxMedium[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x7E,  // ▓░░░░░░▓
@@ -63,7 +63,7 @@ namespace patterns {
     };
     // Magic: "\0~~ff~~"[i%8]
 
-    constexpr uint8_t PROGMEM waffle[] {
+    constexpr uint8_t waffle[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFF,  // ░░░░░░░░
         0x01,  // ▓▓▓▓▓▓▓░
@@ -76,7 +76,7 @@ namespace patterns {
     };
     // Magic: "\377\1\1yyyy\1"[i%8]
 
-    constexpr uint8_t PROGMEM tile[] {
+    constexpr uint8_t tile[] PROGMEM {
         8, 8,  // 8x8 px image
         0x7F,  // ▓░░░░░░░
         0x41,  // ▓░▓▓▓▓▓░
@@ -89,7 +89,7 @@ namespace patterns {
     };
     // Magic: "\177A}}}}\177"[i%8]
 
-    constexpr uint8_t PROGMEM tileShaded[] {
+    constexpr uint8_t tileShaded[] PROGMEM {
         8, 8,  // 8x8 px image
         0x7F,  // ▓░░░░░░░
         0x55,  // ▓░▓░▓░▓░
@@ -102,7 +102,7 @@ namespace patterns {
     };
     // Magic: "\177UkUkU\177"[i%8]
 
-    constexpr uint8_t PROGMEM illuminated[] {
+    constexpr uint8_t illuminated[] PROGMEM {
         8, 8,  // 8x8 px image
         0x1F,  // ▓▓▓░░░░░
         0x3F,  // ▓▓░░░░░░
@@ -115,7 +115,7 @@ namespace patterns {
     };
     // Magic: "\37?_?_*T"[i%8]
 
-    constexpr uint8_t PROGMEM block[] {
+    constexpr uint8_t block[] PROGMEM {
         8, 8,  // 8x8 px image
         0x7E,  // ▓░░░░░░▓
         0x3D,  // ▓▓░░░░▓░
@@ -128,7 +128,7 @@ namespace patterns {
     };
     // Magic: 72^"6uKSSKIH"[i%8]
 
-    constexpr uint8_t PROGMEM blockPyramid[] {
+    constexpr uint8_t blockPyramid[] PROGMEM {
         8, 8,  // 8x8 px image
         0x55,  // ▓░▓░▓░▓░
         0x2B,  // ▓▓░▓░▓░░
@@ -148,7 +148,7 @@ namespace patterns {
 #if 0
 namespace patternsHorizontal {
 
-    constexpr uint8_t PROGMEM squareMini[] {
+    constexpr uint8_t squareMini[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x66,  // ▓░░▓▓░░▓
@@ -160,7 +160,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM billetMini[] {
+    constexpr uint8_t billetMini[] PROGMEM {
         8, 8,  // 8x8 px image
         0x66,  // ▓░░▓▓░░▓
         0x66,  // ▓░░▓▓░░▓
@@ -172,7 +172,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM box[] {
+    constexpr uint8_t box[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -184,7 +184,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM boxMedium[] {
+    constexpr uint8_t boxMedium[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x7E,  // ▓░░░░░░▓
@@ -196,7 +196,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM waffle[] {
+    constexpr uint8_t waffle[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFF,  // ░░░░░░░░
         0x80,  // ░▓▓▓▓▓▓▓
@@ -208,7 +208,7 @@ namespace patternsHorizontal {
         0x80,  // ░▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM tile[] {
+    constexpr uint8_t tile[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFE,  // ░░░░░░░▓
         0x82,  // ░▓▓▓▓▓░▓
@@ -220,7 +220,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM tileShaded[] {
+    constexpr uint8_t tileShaded[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFE,  // ░░░░░░░▓
         0xAA,  // ░▓░▓░▓░▓
@@ -232,7 +232,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM illuminated[] {
+    constexpr uint8_t illuminated[] PROGMEM {
         8, 8,  // 8x8 px image
         0xF8,  // ░░░░░▓▓▓
         0xFC,  // ░░░░░░▓▓
@@ -244,7 +244,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM block[] {
+    constexpr uint8_t block[] PROGMEM {
         8, 8,  // 8x8 px image
         0x7E,  // ▓░░░░░░▓
         0xBC,  // ░▓░░░░▓▓
@@ -256,7 +256,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM blockPyramid[] {
+    constexpr uint8_t blockPyramid[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFE,  // ░░░░░░░▓
         0x7C,  // ▓░░░░░▓▓

@@ -9,7 +9,7 @@
 
 namespace patterns {
 
-    constexpr uint8_t PROGMEM love[] {
+    constexpr uint8_t love[] PROGMEM {
         8, 8,  // 8x8 px image
         0x88,  // ░▓▓▓░▓▓▓
         0x55,  // ▓░▓░▓░▓░
@@ -22,7 +22,7 @@ namespace patterns {
     };
     // Magic: 21+"s@\r/\r@s/"[i%8]
 
-    constexpr uint8_t PROGMEM heart[] {
+    constexpr uint8_t heart[] PROGMEM {
         8, 8,  // 8x8 px image
         0x0C,  // ▓▓▓▓░░▓▓
         0x12,  // ▓▓▓░▓▓░▓
@@ -35,7 +35,7 @@ namespace patterns {
     };
     // Magic: 96^"lrB$Brl`"[i%8]
 
-    constexpr uint8_t PROGMEM heartMini[] {
+    constexpr uint8_t heartMini[] PROGMEM {
         8, 8,  // 8x8 px image
         0x33,  // ▓▓░░▓▓░░
         0x66,  // ▓░░▓▓░░▓
@@ -49,7 +49,7 @@ namespace patterns {
     // Magic: "3f3"[i%4]
     // GAMBY: 0x3630
 
-    constexpr uint8_t PROGMEM anchor[] {
+    constexpr uint8_t anchor[] PROGMEM {
         8, 8,  // 8x8 px image
         0x20,  // ▓▓░▓▓▓▓▓
         0x40,  // ▓░▓▓▓▓▓▓
@@ -62,7 +62,7 @@ namespace patterns {
     };
     // Magic: " @D\372D@ "[i%8]
 
-    constexpr uint8_t PROGMEM crossbones[] {
+    constexpr uint8_t crossbones[] PROGMEM {
         8, 8,  // 8x8 px image
         0x22,  // ▓▓░▓▓▓░▓
         0x63,  // ▓░░▓▓▓░░
@@ -75,7 +75,7 @@ namespace patterns {
     };
     // Magic: 80^"r3DXD3rP"[i%8]
 
-    constexpr uint8_t PROGMEM cross[] {
+    constexpr uint8_t cross[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x18,  // ▓▓▓░░▓▓▓
@@ -88,7 +88,7 @@ namespace patterns {
     };
     // Magic: 88^"X@@&&@@X"[i%8]
 
-    constexpr uint8_t PROGMEM crossMini[] {
+    constexpr uint8_t crossMini[] PROGMEM {
         8, 8,  // 8x8 px image
         0x22,  // ▓▓░▓▓▓░▓
         0x77,  // ▓░░░▓░░░
@@ -102,7 +102,7 @@ namespace patterns {
     // Magic: "\"w\""[i%4]
     // GAMBY: 0x2720
 
-    constexpr uint8_t PROGMEM amongi[] {
+    constexpr uint8_t amongi[] PROGMEM {
         8, 8,  // 8x8 px image
         0x06,  // ▓▓▓▓▓░░▓
         0x0F,  // ▓▓▓▓░░░░
@@ -122,7 +122,7 @@ namespace patterns {
 #if 0
 namespace patternsHorizontal {
 
-    constexpr uint8_t PROGMEM love[] {
+    constexpr uint8_t love[] PROGMEM {
         8, 8,  // 8x8 px image
         0x44,  // ▓░▓▓▓░▓▓
         0x28,  // ▓▓░▓░▓▓▓
@@ -134,7 +134,7 @@ namespace patternsHorizontal {
         0x82,  // ░▓▓▓▓▓░▓
     };
 
-    constexpr uint8_t PROGMEM heart[] {
+    constexpr uint8_t heart[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x6C,  // ▓░░▓░░▓▓
@@ -146,7 +146,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM heartMini[] {
+    constexpr uint8_t heartMini[] PROGMEM {
         8, 8,  // 8x8 px image
         0xAA,  // ░▓░▓░▓░▓
         0xEE,  // ░░░▓░░░▓
@@ -158,7 +158,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM anchor[] {
+    constexpr uint8_t anchor[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x10,  // ▓▓▓░▓▓▓▓
@@ -170,7 +170,7 @@ namespace patternsHorizontal {
         0x10,  // ▓▓▓░▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM crossbones[] {
+    constexpr uint8_t crossbones[] PROGMEM {
         8, 8,  // 8x8 px image
         0x44,  // ▓░▓▓▓░▓▓
         0xC6,  // ░░▓▓▓░░▓
@@ -182,7 +182,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM cross[] {
+    constexpr uint8_t cross[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x18,  // ▓▓▓░░▓▓▓
@@ -194,7 +194,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM crossMini[] {
+    constexpr uint8_t crossMini[] PROGMEM {
         8, 8,  // 8x8 px image
         0x44,  // ▓░▓▓▓░▓▓
         0xEE,  // ░░░▓░░░▓
@@ -206,7 +206,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM amongi[] {
+    constexpr uint8_t amongi[] PROGMEM {
         8, 8,  // 8x8 px image
         0x70,  // ▓░░░▓▓▓▓
         0xC0,  // ░░▓▓▓▓▓▓

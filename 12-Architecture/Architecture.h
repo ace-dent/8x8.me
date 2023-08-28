@@ -9,7 +9,7 @@
 
 namespace patterns {
 
-    constexpr uint8_t PROGMEM brick[] {
+    constexpr uint8_t brick[] PROGMEM {
         8, 8,  // 8x8 px image
         0xE0,  // ░░░▓▓▓▓▓
         0xEE,  // ░░░▓░░░▓
@@ -22,7 +22,7 @@ namespace patterns {
     };
     // Magic: "pwww\awww"[i%8]*2
 
-    constexpr uint8_t PROGMEM brickDense[] {
+    constexpr uint8_t brickDense[] PROGMEM {
         8, 8,  // 8x8 px image
         0x88,  // ░▓▓▓░▓▓▓
         0xAA,  // ░▓░▓░▓░▓
@@ -35,7 +35,7 @@ namespace patterns {
     };
     // Magic: "DUUU\21UUU"[i%8]*2
 
-    constexpr uint8_t PROGMEM brickNarrow[] {
+    constexpr uint8_t brickNarrow[] PROGMEM {
         8, 8,  // 8x8 px image
         0xD0,  // ░░▓░▓▓▓▓
         0xD6,  // ░░▓░▓░░▓
@@ -48,7 +48,7 @@ namespace patterns {
     };
     // Magic: "hkck\vkkk"[i%8]*2
 
-    constexpr uint8_t PROGMEM brickWide[] {
+    constexpr uint8_t brickWide[] PROGMEM {
         8, 8,  // 8x8 px image
         0xF0,  // ░░░░▓▓▓▓
         0xF6,  // ░░░░▓░░▓
@@ -61,7 +61,7 @@ namespace patterns {
     };
     // Magic: "x{{{\3{{{"[i%8]*2
 
-    constexpr uint8_t PROGMEM brickAged[] {
+    constexpr uint8_t brickAged[] PROGMEM {
         8, 8,  // 8x8 px image
         0xF0,  // ░░░░▓▓▓▓
         0xEE,  // ░░░▓░░░▓
@@ -74,7 +74,7 @@ namespace patterns {
     };
     // Magic: "xww7\awwv"[i%8]*2
 
-    constexpr uint8_t PROGMEM brickPointed[] {
+    constexpr uint8_t brickPointed[] PROGMEM {
         8, 8,  // 8x8 px image
         0xE0,  // ░░░▓▓▓▓▓
         0xE4,  // ░░░▓▓░▓▓
@@ -87,7 +87,7 @@ namespace patterns {
     };
     // Magic: "prw'\a'wr"[i%8]*2
 
-    constexpr uint8_t PROGMEM brickSparse[] {
+    constexpr uint8_t brickSparse[] PROGMEM {
         8, 8,  // 8x8 px image
         0xC0,  // ░░▓▓▓▓▓▓
         0xCC,  // ░░▓▓░░▓▓
@@ -100,7 +100,7 @@ namespace patterns {
     };
     // Magic: "`ff\6\6ff`"[i%8]*2
 
-    constexpr uint8_t PROGMEM brickHighlights[] {
+    constexpr uint8_t brickHighlights[] PROGMEM {
         8, 8,  // 8x8 px image
         0x20,  // ▓▓░▓▓▓▓▓
         0x2E,  // ▓▓░▓░░░▓
@@ -113,7 +113,7 @@ namespace patterns {
     };
     // Magic: 88^"xvzzZ\272zz"[i%8]
 
-    constexpr uint8_t PROGMEM mortar[] {
+    constexpr uint8_t mortar[] PROGMEM {
         8, 8,  // 8x8 px image
         0x0A,  // ▓▓▓▓░▓░▓
         0x11,  // ▓▓▓░▓▓▓░
@@ -126,7 +126,7 @@ namespace patterns {
     };
     // Magic: 80^"ZAPA\360APA"[i%8]
 
-    constexpr uint8_t PROGMEM mortarAged[] {
+    constexpr uint8_t mortarAged[] PROGMEM {
         8, 8,  // 8x8 px image
         0x0A,  // ▓▓▓▓░▓░▓
         0x10,  // ▓▓▓░▓▓▓▓
@@ -139,7 +139,7 @@ namespace patterns {
     };
     // Magic: 80^"Z@AP\320@QA"[i%8]
 
-    constexpr uint8_t PROGMEM brickVertical[] {
+    constexpr uint8_t brickVertical[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0xFE,  // ░░░░░░░▓
@@ -152,7 +152,7 @@ namespace patterns {
     };
     // Magic: 128^"\200~~~\200ooo"[i%8]
 
-    constexpr uint8_t PROGMEM brickSinister[] {
+    constexpr uint8_t brickSinister[] PROGMEM {
         8, 8,  // 8x8 px image
         0xEF,  // ░░░▓░░░░
         0xF7,  // ░░░░▓░░░
@@ -165,7 +165,7 @@ namespace patterns {
     };
     // Magic: 128^"owk]>\377?_"[i%8]
 
-    constexpr uint8_t PROGMEM brickSinisterRounded[] {
+    constexpr uint8_t brickSinisterRounded[] PROGMEM {
         8, 8,  // 8x8 px image
         0xEF,  // ░░░▓░░░░
         0xE7,  // ░░░▓▓░░░
@@ -178,7 +178,7 @@ namespace patterns {
     };
     // Magic: 128^"ogk]>\277?_"[i%8]
 
-    constexpr uint8_t PROGMEM brickSinisterMini[] {
+    constexpr uint8_t brickSinisterMini[] PROGMEM {
         8, 8,  // 8x8 px image
         0xAA,  // ░▓░▓░▓░▓
         0xDD,  // ░░▓░░░▓░
@@ -192,7 +192,7 @@ namespace patterns {
     // Magic: 119+"3fw"[i%4]
     // GAMBY: 0xADE7
 
-    constexpr uint8_t PROGMEM brickMini[] {
+    constexpr uint8_t brickMini[] PROGMEM {
         8, 8,  // 8x8 px image
         0x55,  // ▓░▓░▓░▓░
         0x44,  // ▓░▓▓▓░▓▓
@@ -206,7 +206,7 @@ namespace patterns {
     // Magic: "UDU\21"[i%4]
     // GAMBY: 0x5451
 
-    constexpr uint8_t PROGMEM brickMiniDamage[] {
+    constexpr uint8_t brickMiniDamage[] PROGMEM {
         8, 8,  // 8x8 px image
         0x55,  // ▓░▓░▓░▓░
         0x44,  // ▓░▓▓▓░▓▓
@@ -219,7 +219,7 @@ namespace patterns {
     };
     // Magic: 33^"tet0pau0"[i%8]
 
-    constexpr uint8_t PROGMEM brickMiniRuins[] {
+    constexpr uint8_t brickMiniRuins[] PROGMEM {
         8, 8,  // 8x8 px image
         0x01,  // ▓▓▓▓▓▓▓░
         0x04,  // ▓▓▓▓▓░▓▓
@@ -232,7 +232,7 @@ namespace patterns {
     };
     // Magic: 33^" % 0paq0"[i%8]
 
-    constexpr uint8_t PROGMEM stoneWall[] {
+    constexpr uint8_t stoneWall[] PROGMEM {
         8, 8,  // 8x8 px image
         0x30,  // ▓▓░░▓▓▓▓
         0x7B,  // ▓░░░░▓░░
@@ -245,7 +245,7 @@ namespace patterns {
     };
     // Magic: "0{{q$\216\356\306"[i%8]
 
-    constexpr uint8_t PROGMEM quarryWall[] {
+    constexpr uint8_t quarryWall[] PROGMEM {
         8, 8,  // 8x8 px image
         0xE1,  // ░░░▓▓▓▓░
         0xED,  // ░░░▓░░▓░
@@ -258,7 +258,7 @@ namespace patterns {
     };
     // Magic: 160^"AM|>\376~~m"[i%8]
 
-    constexpr uint8_t PROGMEM stoneBlock[] {
+    constexpr uint8_t stoneBlock[] PROGMEM {
         8, 8,  // 8x8 px image
         0x02,  // ▓▓▓▓▓▓░▓
         0x7C,  // ▓░░░░░▓▓
@@ -271,7 +271,7 @@ namespace patterns {
     };
     // Magic: "\2|\372|\376~\276]"[i%8]
 
-    constexpr uint8_t PROGMEM flagstone[] {
+    constexpr uint8_t flagstone[] PROGMEM {
         8, 8,  // 8x8 px image
         0x77,  // ▓░░░▓░░░
         0x77,  // ▓░░░▓░░░
@@ -284,7 +284,7 @@ namespace patterns {
     };
     // Magic: "wwp;\203\273\273"[i%8]
 
-    constexpr uint8_t PROGMEM pavingStones[] {
+    constexpr uint8_t pavingStones[] PROGMEM {
         8, 8,  // 8x8 px image
         0x6E,  // ▓░░▓░░░▓
         0x9D,  // ░▓▓░░░▓░
@@ -297,7 +297,7 @@ namespace patterns {
     };
     // Magic: 60+"2a\235\252+_}:"[i%8]
 
-    constexpr uint8_t PROGMEM shingle[] {
+    constexpr uint8_t shingle[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFD,  // ░░░░░░▓░
         0xFB,  // ░░░░░▓░░
@@ -310,7 +310,7 @@ namespace patterns {
     };
     // Magic: 128^"}{wwkm^\276"[i%8]
 
-    constexpr uint8_t PROGMEM roofTiles[] {
+    constexpr uint8_t roofTiles[] PROGMEM {
         8, 8,  // 8x8 px image
         0x73,  // ▓░░░▓▓░░
         0x77,  // ▓░░░▓░░░
@@ -323,7 +323,7 @@ namespace patterns {
     };
     // Magic: "sw7\a7wsp"[i%8]
 
-    constexpr uint8_t PROGMEM archway[] {
+    constexpr uint8_t archway[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFE,  // ░░░░░░░▓
         0x06,  // ▓▓▓▓▓░░▓
@@ -336,7 +336,7 @@ namespace patterns {
     };
     // Magic: 64^"\276FCAACF\276"[i%8]
 
-    constexpr uint8_t PROGMEM window[] {
+    constexpr uint8_t window[] PROGMEM {
         8, 8,  // 8x8 px image
         0x01,  // ▓▓▓▓▓▓▓░
         0x7C,  // ▓░░░░░▓▓
@@ -349,7 +349,7 @@ namespace patterns {
     };
     // Magic: "\1|BBBB|\1"[i%8]
 
-    constexpr uint8_t PROGMEM picket[] {
+    constexpr uint8_t picket[] PROGMEM {
         8, 8,  // 8x8 px image
         0x48,  // ▓░▓▓░▓▓▓
         0xFE,  // ░░░░░░░▓
@@ -369,7 +369,7 @@ namespace patterns {
 #if 0
 namespace patternsHorizontal {
 
-    constexpr uint8_t PROGMEM brick[] {
+    constexpr uint8_t brick[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x7F,  // ▓░░░░░░░
@@ -381,7 +381,7 @@ namespace patternsHorizontal {
         0xF7,  // ░░░░▓░░░
     };
 
-    constexpr uint8_t PROGMEM brickDense[] {
+    constexpr uint8_t brickDense[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x7F,  // ▓░░░░░░░
@@ -393,7 +393,7 @@ namespace patternsHorizontal {
         0xF7,  // ░░░░▓░░░
     };
 
-    constexpr uint8_t PROGMEM brickNarrow[] {
+    constexpr uint8_t brickNarrow[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x7F,  // ▓░░░░░░░
@@ -405,7 +405,7 @@ namespace patternsHorizontal {
         0xF7,  // ░░░░▓░░░
     };
 
-    constexpr uint8_t PROGMEM brickWide[] {
+    constexpr uint8_t brickWide[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x7F,  // ▓░░░░░░░
@@ -417,7 +417,7 @@ namespace patternsHorizontal {
         0xF7,  // ░░░░▓░░░
     };
 
-    constexpr uint8_t PROGMEM brickAged[] {
+    constexpr uint8_t brickAged[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x7E,  // ▓░░░░░░▓
@@ -429,7 +429,7 @@ namespace patternsHorizontal {
         0xE7,  // ░░░▓▓░░░
     };
 
-    constexpr uint8_t PROGMEM brickPointed[] {
+    constexpr uint8_t brickPointed[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x3E,  // ▓▓░░░░░▓
@@ -441,7 +441,7 @@ namespace patternsHorizontal {
         0xE3,  // ░░░▓▓▓░░
     };
 
-    constexpr uint8_t PROGMEM brickSparse[] {
+    constexpr uint8_t brickSparse[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -453,7 +453,7 @@ namespace patternsHorizontal {
         0xE7,  // ░░░▓▓░░░
     };
 
-    constexpr uint8_t PROGMEM brickHighlights[] {
+    constexpr uint8_t brickHighlights[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x7F,  // ▓░░░░░░░
@@ -465,7 +465,7 @@ namespace patternsHorizontal {
         0x04,  // ▓▓▓▓▓░▓▓
     };
 
-    constexpr uint8_t PROGMEM mortar[] {
+    constexpr uint8_t mortar[] PROGMEM {
         8, 8,  // 8x8 px image
         0x55,  // ▓░▓░▓░▓░
         0x80,  // ░▓▓▓▓▓▓▓
@@ -477,7 +477,7 @@ namespace patternsHorizontal {
         0x08,  // ▓▓▓▓░▓▓▓
     };
 
-    constexpr uint8_t PROGMEM mortarAged[] {
+    constexpr uint8_t mortarAged[] PROGMEM {
         8, 8,  // 8x8 px image
         0x23,  // ▓▓░▓▓▓░░
         0x80,  // ░▓▓▓▓▓▓▓
@@ -489,7 +489,7 @@ namespace patternsHorizontal {
         0x08,  // ▓▓▓▓░▓▓▓
     };
 
-    constexpr uint8_t PROGMEM brickVertical[] {
+    constexpr uint8_t brickVertical[] PROGMEM {
         8, 8,  // 8x8 px image
         0x07,  // ▓▓▓▓▓░░░
         0x77,  // ▓░░░▓░░░
@@ -501,7 +501,7 @@ namespace patternsHorizontal {
         0x77,  // ▓░░░▓░░░
     };
 
-    constexpr uint8_t PROGMEM brickSinister[] {
+    constexpr uint8_t brickSinister[] PROGMEM {
         8, 8,  // 8x8 px image
         0xF7,  // ░░░░▓░░░
         0xEF,  // ░░░▓░░░░
@@ -513,7 +513,7 @@ namespace patternsHorizontal {
         0xFB,  // ░░░░░▓░░
     };
 
-    constexpr uint8_t PROGMEM brickSinisterRounded[] {
+    constexpr uint8_t brickSinisterRounded[] PROGMEM {
         8, 8,  // 8x8 px image
         0xF7,  // ░░░░▓░░░
         0xEF,  // ░░░▓░░░░
@@ -525,7 +525,7 @@ namespace patternsHorizontal {
         0xFB,  // ░░░░░▓░░
     };
 
-    constexpr uint8_t PROGMEM brickSinisterMini[] {
+    constexpr uint8_t brickSinisterMini[] PROGMEM {
         8, 8,  // 8x8 px image
         0x55,  // ▓░▓░▓░▓░
         0xBB,  // ░▓░░░▓░░
@@ -537,7 +537,7 @@ namespace patternsHorizontal {
         0xEE,  // ░░░▓░░░▓
     };
 
-    constexpr uint8_t PROGMEM brickMini[] {
+    constexpr uint8_t brickMini[] PROGMEM {
         8, 8,  // 8x8 px image
         0xBB,  // ░▓░░░▓░░
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -549,7 +549,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM brickMiniDamage[] {
+    constexpr uint8_t brickMiniDamage[] PROGMEM {
         8, 8,  // 8x8 px image
         0xB9,  // ░▓░░░▓▓░
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -561,7 +561,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM brickMiniRuins[] {
+    constexpr uint8_t brickMiniRuins[] PROGMEM {
         8, 8,  // 8x8 px image
         0xB9,  // ░▓░░░▓▓░
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -573,7 +573,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM stoneWall[] {
+    constexpr uint8_t stoneWall[] PROGMEM {
         8, 8,  // 8x8 px image
         0x70,  // ▓░░░▓▓▓▓
         0x67,  // ▓░░▓▓░░░
@@ -585,7 +585,7 @@ namespace patternsHorizontal {
         0x07,  // ▓▓▓▓▓░░░
     };
 
-    constexpr uint8_t PROGMEM quarryWall[] {
+    constexpr uint8_t quarryWall[] PROGMEM {
         8, 8,  // 8x8 px image
         0xC1,  // ░░▓▓▓▓▓░
         0x1E,  // ▓▓▓░░░░▓
@@ -597,7 +597,7 @@ namespace patternsHorizontal {
         0xF7,  // ░░░░▓░░░
     };
 
-    constexpr uint8_t PROGMEM stoneBlock[] {
+    constexpr uint8_t stoneBlock[] PROGMEM {
         8, 8,  // 8x8 px image
         0x01,  // ▓▓▓▓▓▓▓░
         0xAE,  // ░▓░▓░░░▓
@@ -609,7 +609,7 @@ namespace patternsHorizontal {
         0x2A,  // ▓▓░▓░▓░▓
     };
 
-    constexpr uint8_t PROGMEM flagstone[] {
+    constexpr uint8_t flagstone[] PROGMEM {
         8, 8,  // 8x8 px image
         0xDE,  // ░░▓░░░░▓
         0xDE,  // ░░▓░░░░▓
@@ -621,7 +621,7 @@ namespace patternsHorizontal {
         0x0E,  // ▓▓▓▓░░░▓
     };
 
-    constexpr uint8_t PROGMEM pavingStones[] {
+    constexpr uint8_t pavingStones[] PROGMEM {
         8, 8,  // 8x8 px image
         0x6E,  // ▓░░▓░░░▓
         0x9D,  // ░▓▓░░░▓░
@@ -633,7 +633,7 @@ namespace patternsHorizontal {
         0x76,  // ▓░░░▓░░▓
     };
 
-    constexpr uint8_t PROGMEM shingle[] {
+    constexpr uint8_t shingle[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFC,  // ░░░░░░▓▓
         0x7B,  // ▓░░░░▓░░
@@ -645,7 +645,7 @@ namespace patternsHorizontal {
         0xFE,  // ░░░░░░░▓
     };
 
-    constexpr uint8_t PROGMEM roofTiles[] {
+    constexpr uint8_t roofTiles[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFE,  // ░░░░░░░▓
         0xFE,  // ░░░░░░░▓
@@ -657,7 +657,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM archway[] {
+    constexpr uint8_t archway[] PROGMEM {
         8, 8,  // 8x8 px image
         0x3C,  // ▓▓░░░░▓▓
         0xE7,  // ░░░▓▓░░░
@@ -669,7 +669,7 @@ namespace patternsHorizontal {
         0x81,  // ░▓▓▓▓▓▓░
     };
 
-    constexpr uint8_t PROGMEM window[] {
+    constexpr uint8_t window[] PROGMEM {
         8, 8,  // 8x8 px image
         0x81,  // ░▓▓▓▓▓▓░
         0x3C,  // ▓▓░░░░▓▓
@@ -681,7 +681,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM picket[] {
+    constexpr uint8_t picket[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x44,  // ▓░▓▓▓░▓▓

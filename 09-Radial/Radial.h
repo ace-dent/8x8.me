@@ -9,7 +9,7 @@
 
 namespace patterns {
 
-    constexpr uint8_t PROGMEM nebula[] {
+    constexpr uint8_t nebula[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x10,  // ▓▓▓░▓▓▓▓
@@ -22,7 +22,7 @@ namespace patterns {
     };
     // Magic: 97^"aqi[=qia"[i%8]
 
-    constexpr uint8_t PROGMEM pinwheel[] {
+    constexpr uint8_t pinwheel[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x08,  // ▓▓▓▓░▓▓▓
@@ -35,7 +35,7 @@ namespace patterns {
     };
     // Magic: 65^"AII9_QQA"[i%8]
 
-    constexpr uint8_t PROGMEM pivot[] {
+    constexpr uint8_t pivot[] PROGMEM {
         8, 8,  // 8x8 px image
         0x08,  // ▓▓▓▓░▓▓▓
         0x08,  // ▓▓▓▓░▓▓▓
@@ -48,7 +48,7 @@ namespace patterns {
     };
     // Magic: 64^"HHX\244gXPP"[i%8]
 
-    constexpr uint8_t PROGMEM fylfot[] {
+    constexpr uint8_t fylfot[] PROGMEM {
         8, 8,  // 8x8 px image
         0x30,  // ▓▓░░▓▓▓▓
         0x10,  // ▓▓▓░▓▓▓▓
@@ -61,7 +61,7 @@ namespace patterns {
     };
     // Magic: 64^"pPYg\244\330HL"[i%8]
 
-    constexpr uint8_t PROGMEM rotary[] {
+    constexpr uint8_t rotary[] PROGMEM {
         8, 8,  // 8x8 px image
         0x08,  // ▓▓▓▓░▓▓▓
         0x08,  // ▓▓▓▓░▓▓▓
@@ -74,7 +74,7 @@ namespace patterns {
     };
     // Magic: 64^"HHt\204clPP"[i%8]
 
-    constexpr uint8_t PROGMEM starBurst[] {
+    constexpr uint8_t starBurst[] PROGMEM {
         8, 8,  // 8x8 px image
         0x04,  // ▓▓▓▓▓░▓▓
         0x0C,  // ▓▓▓▓░░▓▓
@@ -87,7 +87,7 @@ namespace patterns {
     };
     // Magic: "\4\f\364D\"/0 "[i%8]
 
-    constexpr uint8_t PROGMEM swirl[] {
+    constexpr uint8_t swirl[] PROGMEM {
         8, 8,  // 8x8 px image
         0x08,  // ▓▓▓▓░▓▓▓
         0x04,  // ▓▓▓▓▓░▓▓
@@ -100,7 +100,7 @@ namespace patterns {
     };
     // Magic: 67^"KG'\303BecS"[i%8]
 
-    constexpr uint8_t PROGMEM swarm[] {
+    constexpr uint8_t swarm[] PROGMEM {
         8, 8,  // 8x8 px image
         0x04,  // ▓▓▓▓▓░▓▓
         0x08,  // ▓▓▓▓░▓▓▓
@@ -113,7 +113,7 @@ namespace patterns {
     };
     // Magic: 99^"gk\307#aFsC"[i%8]
 
-    constexpr uint8_t PROGMEM encircled[] {
+    constexpr uint8_t encircled[] PROGMEM {
         8, 8,  // 8x8 px image
         0x04,  // ▓▓▓▓▓░▓▓
         0x42,  // ▓░▓▓▓▓░▓
@@ -126,7 +126,7 @@ namespace patterns {
     };
     // Magic: 99^"g!\343{{b!C"[i%8]
 
-    constexpr uint8_t PROGMEM spokes[] {
+    constexpr uint8_t spokes[] PROGMEM {
         8, 8,  // 8x8 px image
         0x08,  // ▓▓▓▓░▓▓▓
         0x0C,  // ▓▓▓▓░░▓▓
@@ -139,7 +139,7 @@ namespace patterns {
     };
     // Magic: 67^"KO'\233XesS"[i%8]
 
-    constexpr uint8_t PROGMEM cartwheel[] {
+    constexpr uint8_t cartwheel[] PROGMEM {
         8, 8,  // 8x8 px image
         0x08,  // ▓▓▓▓░▓▓▓
         0x2C,  // ▓▓░▓░░▓▓
@@ -152,7 +152,7 @@ namespace patterns {
     };
     // Magic: 65^"Im'\231Z'uQ"[i%8]
 
-    constexpr uint8_t PROGMEM cartwheelBold[] {
+    constexpr uint8_t cartwheelBold[] PROGMEM {
         8, 8,  // 8x8 px image
         0x2C,  // ▓▓░▓░░▓▓
         0x6E,  // ▓░░▓░░░▓
@@ -165,7 +165,7 @@ namespace patterns {
     };
     // Magic: ",n\347\330\e\347v4"[i%8]
 
-    constexpr uint8_t PROGMEM cartwheelExtraBold[] {
+    constexpr uint8_t cartwheelExtraBold[] PROGMEM {
         8, 8,  // 8x8 px image
         0x6E,  // ▓░░▓░░░▓
         0xEF,  // ░░░▓░░░░
@@ -185,7 +185,7 @@ namespace patterns {
 #if 0
 namespace patternsHorizontal {
 
-    constexpr uint8_t PROGMEM nebula[] {
+    constexpr uint8_t nebula[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x10,  // ▓▓▓░▓▓▓▓
@@ -197,7 +197,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM pinwheel[] {
+    constexpr uint8_t pinwheel[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x08,  // ▓▓▓▓░▓▓▓
@@ -209,7 +209,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM pivot[] {
+    constexpr uint8_t pivot[] PROGMEM {
         8, 8,  // 8x8 px image
         0x08,  // ▓▓▓▓░▓▓▓
         0x08,  // ▓▓▓▓░▓▓▓
@@ -221,7 +221,7 @@ namespace patternsHorizontal {
         0x10,  // ▓▓▓░▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM fylfot[] {
+    constexpr uint8_t fylfot[] PROGMEM {
         8, 8,  // 8x8 px image
         0x30,  // ▓▓░░▓▓▓▓
         0x10,  // ▓▓▓░▓▓▓▓
@@ -233,7 +233,7 @@ namespace patternsHorizontal {
         0x0C,  // ▓▓▓▓░░▓▓
     };
 
-    constexpr uint8_t PROGMEM rotary[] {
+    constexpr uint8_t rotary[] PROGMEM {
         8, 8,  // 8x8 px image
         0x08,  // ▓▓▓▓░▓▓▓
         0x08,  // ▓▓▓▓░▓▓▓
@@ -245,7 +245,7 @@ namespace patternsHorizontal {
         0x10,  // ▓▓▓░▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM starBurst[] {
+    constexpr uint8_t starBurst[] PROGMEM {
         8, 8,  // 8x8 px image
         0x04,  // ▓▓▓▓▓░▓▓
         0x0C,  // ▓▓▓▓░░▓▓
@@ -257,7 +257,7 @@ namespace patternsHorizontal {
         0x20,  // ▓▓░▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM swirl[] {
+    constexpr uint8_t swirl[] PROGMEM {
         8, 8,  // 8x8 px image
         0x08,  // ▓▓▓▓░▓▓▓
         0x04,  // ▓▓▓▓▓░▓▓
@@ -269,7 +269,7 @@ namespace patternsHorizontal {
         0x10,  // ▓▓▓░▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM swarm[] {
+    constexpr uint8_t swarm[] PROGMEM {
         8, 8,  // 8x8 px image
         0x04,  // ▓▓▓▓▓░▓▓
         0x08,  // ▓▓▓▓░▓▓▓
@@ -281,7 +281,7 @@ namespace patternsHorizontal {
         0x20,  // ▓▓░▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM encircled[] {
+    constexpr uint8_t encircled[] PROGMEM {
         8, 8,  // 8x8 px image
         0x04,  // ▓▓▓▓▓░▓▓
         0x42,  // ▓░▓▓▓▓░▓
@@ -293,7 +293,7 @@ namespace patternsHorizontal {
         0x20,  // ▓▓░▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM spokes[] {
+    constexpr uint8_t spokes[] PROGMEM {
         8, 8,  // 8x8 px image
         0x08,  // ▓▓▓▓░▓▓▓
         0x0C,  // ▓▓▓▓░░▓▓
@@ -305,7 +305,7 @@ namespace patternsHorizontal {
         0x10,  // ▓▓▓░▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM cartwheel[] {
+    constexpr uint8_t cartwheel[] PROGMEM {
         8, 8,  // 8x8 px image
         0x08,  // ▓▓▓▓░▓▓▓
         0x2C,  // ▓▓░▓░░▓▓
@@ -317,7 +317,7 @@ namespace patternsHorizontal {
         0x10,  // ▓▓▓░▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM cartwheelBold[] {
+    constexpr uint8_t cartwheelBold[] PROGMEM {
         8, 8,  // 8x8 px image
         0x2C,  // ▓▓░▓░░▓▓
         0x6E,  // ▓░░▓░░░▓
@@ -329,7 +329,7 @@ namespace patternsHorizontal {
         0x34,  // ▓▓░░▓░▓▓
     };
 
-    constexpr uint8_t PROGMEM cartwheelExtraBold[] {
+    constexpr uint8_t cartwheelExtraBold[] PROGMEM {
         8, 8,  // 8x8 px image
         0x6E,  // ▓░░▓░░░▓
         0xEF,  // ░░░▓░░░░

@@ -9,7 +9,7 @@
 
 namespace patterns {
 
-    constexpr uint8_t PROGMEM bayerDither00[] {
+    constexpr uint8_t bayerDither00[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -23,7 +23,7 @@ namespace patterns {
     // Magic: 0
     // GAMBY: 0x0000
 
-    constexpr uint8_t PROGMEM bayerDither01[] {
+    constexpr uint8_t bayerDither01[] PROGMEM {
         8, 8,  // 8x8 px image
         0x11,  // ▓▓▓░▓▓▓░
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -37,7 +37,7 @@ namespace patterns {
     // Magic: i%4?0:17
     // GAMBY: 0x1000
 
-    constexpr uint8_t PROGMEM bayerDither02[] {
+    constexpr uint8_t bayerDither02[] PROGMEM {
         8, 8,  // 8x8 px image
         0x11,  // ▓▓▓░▓▓▓░
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -51,7 +51,7 @@ namespace patterns {
     // Magic: "\21\0D"[i%4]
     // GAMBY: 0x1040
 
-    constexpr uint8_t PROGMEM bayerDither03[] {
+    constexpr uint8_t bayerDither03[] PROGMEM {
         8, 8,  // 8x8 px image
         0x55,  // ▓░▓░▓░▓░
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -65,7 +65,7 @@ namespace patterns {
     // Magic: "U\0D"[i%4]
     // GAMBY: 0x5040
 
-    constexpr uint8_t PROGMEM bayerDither04[] {
+    constexpr uint8_t bayerDither04[] PROGMEM {
         8, 8,  // 8x8 px image
         0x55,  // ▓░▓░▓░▓░
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -79,7 +79,7 @@ namespace patterns {
     // Magic: i&1?0:85
     // GAMBY: 0x5050
 
-    constexpr uint8_t PROGMEM bayerDither05[] {
+    constexpr uint8_t bayerDither05[] PROGMEM {
         8, 8,  // 8x8 px image
         0x55,  // ▓░▓░▓░▓░
         0x22,  // ▓▓░▓▓▓░▓
@@ -93,7 +93,7 @@ namespace patterns {
     // Magic: "U\"U"[i%4]
     // GAMBY: 0x5250
 
-    constexpr uint8_t PROGMEM bayerDither06[] {
+    constexpr uint8_t bayerDither06[] PROGMEM {
         8, 8,  // 8x8 px image
         0x55,  // ▓░▓░▓░▓░
         0x22,  // ▓▓░▓▓▓░▓
@@ -107,7 +107,7 @@ namespace patterns {
     // Magic: "U\"U\210"[i%4]
     // GAMBY: 0x5258
 
-    constexpr uint8_t PROGMEM bayerDither07[] {
+    constexpr uint8_t bayerDither07[] PROGMEM {
         8, 8,  // 8x8 px image
         0x55,  // ▓░▓░▓░▓░
         0xAA,  // ░▓░▓░▓░▓
@@ -121,7 +121,7 @@ namespace patterns {
     // Magic: 45+"(}(["[i%4]
     // GAMBY: 0x5A58
 
-    constexpr uint8_t PROGMEM bayerDither08[] {
+    constexpr uint8_t bayerDither08[] PROGMEM {
         8, 8,  // 8x8 px image
         0x55,  // ▓░▓░▓░▓░
         0xAA,  // ░▓░▓░▓░▓
@@ -135,7 +135,7 @@ namespace patterns {
     // Magic: 85<<i%2
     // GAMBY: 0x5A5A
 
-    constexpr uint8_t PROGMEM bayerDither09[] {
+    constexpr uint8_t bayerDither09[] PROGMEM {
         8, 8,  // 8x8 px image
         0x77,  // ▓░░░▓░░░
         0xAA,  // ░▓░▓░▓░▓
@@ -149,7 +149,7 @@ namespace patterns {
     // Magic: 53+"Bu u"[i%4]
     // GAMBY: 0x7A5A
 
-    constexpr uint8_t PROGMEM bayerDither10[] {
+    constexpr uint8_t bayerDither10[] PROGMEM {
         8, 8,  // 8x8 px image
         0x77,  // ▓░░░▓░░░
         0xAA,  // ░▓░▓░▓░▓
@@ -163,7 +163,7 @@ namespace patterns {
     // Magic: 106+"\r@s@[i%4]
     // GAMBY: 0x7ADA
 
-    constexpr uint8_t PROGMEM bayerDither11[] {
+    constexpr uint8_t bayerDither11[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFF,  // ░░░░░░░░
         0xAA,  // ░▓░▓░▓░▓
@@ -177,7 +177,7 @@ namespace patterns {
     // Magic: ~"\0U\"U"[i%4]
     // GAMBY: 0xFADA
 
-    constexpr uint8_t PROGMEM bayerDither12[] {
+    constexpr uint8_t bayerDither12[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFF,  // ░░░░░░░░
         0xAA,  // ░▓░▓░▓░▓
@@ -191,7 +191,7 @@ namespace patterns {
     // Magic: i&1?170:~0
     // GAMBY: 0xFAFA
 
-    constexpr uint8_t PROGMEM bayerDither13[] {
+    constexpr uint8_t bayerDither13[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFF,  // ░░░░░░░░
         0xBB,  // ░▓░░░▓░░
@@ -205,7 +205,7 @@ namespace patterns {
     // Magic: ~"\0D\0U"[i%4]
     // GAMBY: 0xFBFA
 
-    constexpr uint8_t PROGMEM bayerDither14[] {
+    constexpr uint8_t bayerDither14[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFF,  // ░░░░░░░░
         0xBB,  // ░▓░░░▓░░
@@ -219,7 +219,7 @@ namespace patterns {
     // Magic: 194^"=y=,"[i%4]
     // GAMBY: 0xFBFE
 
-    constexpr uint8_t PROGMEM bayerDither15[] {
+    constexpr uint8_t bayerDither15[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFF,  // ░░░░░░░░
         0xFF,  // ░░░░░░░░
@@ -233,7 +233,7 @@ namespace patterns {
     // Magic: i%4==3?238:~0
     // GAMBY: 0xFFFE
 
-    constexpr uint8_t PROGMEM bayerDither16[] {
+    constexpr uint8_t bayerDither16[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFF,  // ░░░░░░░░
         0xFF,  // ░░░░░░░░
@@ -247,7 +247,7 @@ namespace patterns {
     // Magic: ~0
     // GAMBY: 0xFFFF
 
-    constexpr uint8_t PROGMEM officeDither05[] {
+    constexpr uint8_t officeDither05[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x04,  // ▓▓▓▓▓░▓▓
@@ -260,7 +260,7 @@ namespace patterns {
     };
     // Magic: "@A@@@P@"[i%8]*4
 
-    constexpr uint8_t PROGMEM officeDither10[] {
+    constexpr uint8_t officeDither10[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x11,  // ▓▓▓░▓▓▓░
@@ -273,7 +273,7 @@ namespace patterns {
     };
     // Magic: 98^"bsbbb&bb"[i%8]
 
-    constexpr uint8_t PROGMEM officeDither20[] {
+    constexpr uint8_t officeDither20[] PROGMEM {
         8, 8,  // 8x8 px image
         0x11,  // ▓▓▓░▓▓▓░
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -287,7 +287,7 @@ namespace patterns {
     // Magic: "\21\0D"[i%4]
     // GAMBY: 0x1040
 
-    constexpr uint8_t PROGMEM officeDither25[] {
+    constexpr uint8_t officeDither25[] PROGMEM {
         8, 8,  // 8x8 px image
         0x55,  // ▓░▓░▓░▓░
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -301,7 +301,7 @@ namespace patterns {
     // Magic: "U\0\252"[i%4]
     // GAMBY: 0x50A0
 
-    constexpr uint8_t PROGMEM officeDither30[] {
+    constexpr uint8_t officeDither30[] PROGMEM {
         8, 8,  // 8x8 px image
         0x55,  // ▓░▓░▓░▓░
         0x22,  // ▓▓░▓▓▓░▓
@@ -315,7 +315,7 @@ namespace patterns {
     // Magic: "U\"U\210"[i%4]
     // GAMBY: 0x5258
 
-    constexpr uint8_t PROGMEM officeDither40[] {
+    constexpr uint8_t officeDither40[] PROGMEM {
         8, 8,  // 8x8 px image
         0x55,  // ▓░▓░▓░▓░
         0xAA,  // ░▓░▓░▓░▓
@@ -328,7 +328,7 @@ namespace patterns {
     };
     // Magic: 45+"(}(](}({"[i%8]
 
-    constexpr uint8_t PROGMEM officeDither50[] {
+    constexpr uint8_t officeDither50[] PROGMEM {
         8, 8,  // 8x8 px image
         0x55,  // ▓░▓░▓░▓░
         0xAA,  // ░▓░▓░▓░▓
@@ -342,7 +342,7 @@ namespace patterns {
     // Magic: 85<<i%2
     // GAMBY: 0x5A5A
 
-    constexpr uint8_t PROGMEM officeDither60[] {
+    constexpr uint8_t officeDither60[] PROGMEM {
         8, 8,  // 8x8 px image
         0x55,  // ▓░▓░▓░▓░
         0xBB,  // ░▓░░░▓░░
@@ -356,7 +356,7 @@ namespace patterns {
     // Magic: "U\273U\356"[i%4]
     // GAMBY: 0x5B5E
 
-    constexpr uint8_t PROGMEM officeDither70[] {
+    constexpr uint8_t officeDither70[] PROGMEM {
         8, 8,  // 8x8 px image
         0x55,  // ▓░▓░▓░▓░
         0xFF,  // ░░░░░░░░
@@ -370,7 +370,7 @@ namespace patterns {
     // Magic: ~"\252\0U"[i%4]
     // GAMBY: 0x5FAF
 
-    constexpr uint8_t PROGMEM officeDither75[] {
+    constexpr uint8_t officeDither75[] PROGMEM {
         8, 8,  // 8x8 px image
         0xBB,  // ░▓░░░▓░░
         0xFF,  // ░░░░░░░░
@@ -384,7 +384,7 @@ namespace patterns {
     // Magic: ~"D\0\21"[i%4]
     // GAMBY: 0xBFEF
 
-    constexpr uint8_t PROGMEM officeDither80[] {
+    constexpr uint8_t officeDither80[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFF,  // ░░░░░░░░
         0xBB,  // ░▓░░░▓░░
@@ -397,7 +397,7 @@ namespace patterns {
     };
     // Magic: 144^"o+ooo~oo"[i%8]
 
-    constexpr uint8_t PROGMEM officeDither90[] {
+    constexpr uint8_t officeDither90[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFF,  // ░░░░░░░░
         0xDF,  // ░░▓░░░░░
@@ -417,7 +417,7 @@ namespace patterns {
 #if 0
 namespace patternsHorizontal {
 
-    constexpr uint8_t PROGMEM bayerDither00[] {
+    constexpr uint8_t bayerDither00[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -429,7 +429,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM bayerDither01[] {
+    constexpr uint8_t bayerDither01[] PROGMEM {
         8, 8,  // 8x8 px image
         0x88,  // ░▓▓▓░▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -441,7 +441,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM bayerDither02[] {
+    constexpr uint8_t bayerDither02[] PROGMEM {
         8, 8,  // 8x8 px image
         0x88,  // ░▓▓▓░▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -453,7 +453,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM bayerDither03[] {
+    constexpr uint8_t bayerDither03[] PROGMEM {
         8, 8,  // 8x8 px image
         0x88,  // ░▓▓▓░▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -465,7 +465,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM bayerDither04[] {
+    constexpr uint8_t bayerDither04[] PROGMEM {
         8, 8,  // 8x8 px image
         0xAA,  // ░▓░▓░▓░▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -477,7 +477,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM bayerDither05[] {
+    constexpr uint8_t bayerDither05[] PROGMEM {
         8, 8,  // 8x8 px image
         0xAA,  // ░▓░▓░▓░▓
         0x44,  // ▓░▓▓▓░▓▓
@@ -489,7 +489,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM bayerDither06[] {
+    constexpr uint8_t bayerDither06[] PROGMEM {
         8, 8,  // 8x8 px image
         0xAA,  // ░▓░▓░▓░▓
         0x44,  // ▓░▓▓▓░▓▓
@@ -501,7 +501,7 @@ namespace patternsHorizontal {
         0x11,  // ▓▓▓░▓▓▓░
     };
 
-    constexpr uint8_t PROGMEM bayerDither07[] {
+    constexpr uint8_t bayerDither07[] PROGMEM {
         8, 8,  // 8x8 px image
         0xAA,  // ░▓░▓░▓░▓
         0x44,  // ▓░▓▓▓░▓▓
@@ -513,7 +513,7 @@ namespace patternsHorizontal {
         0x55,  // ▓░▓░▓░▓░
     };
 
-    constexpr uint8_t PROGMEM bayerDither08[] {
+    constexpr uint8_t bayerDither08[] PROGMEM {
         8, 8,  // 8x8 px image
         0xAA,  // ░▓░▓░▓░▓
         0x55,  // ▓░▓░▓░▓░
@@ -525,7 +525,7 @@ namespace patternsHorizontal {
         0x55,  // ▓░▓░▓░▓░
     };
 
-    constexpr uint8_t PROGMEM bayerDither09[] {
+    constexpr uint8_t bayerDither09[] PROGMEM {
         8, 8,  // 8x8 px image
         0xAA,  // ░▓░▓░▓░▓
         0xDD,  // ░░▓░░░▓░
@@ -537,7 +537,7 @@ namespace patternsHorizontal {
         0x55,  // ▓░▓░▓░▓░
     };
 
-    constexpr uint8_t PROGMEM bayerDither10[] {
+    constexpr uint8_t bayerDither10[] PROGMEM {
         8, 8,  // 8x8 px image
         0xAA,  // ░▓░▓░▓░▓
         0xDD,  // ░░▓░░░▓░
@@ -549,7 +549,7 @@ namespace patternsHorizontal {
         0x77,  // ▓░░░▓░░░
     };
 
-    constexpr uint8_t PROGMEM bayerDither11[] {
+    constexpr uint8_t bayerDither11[] PROGMEM {
         8, 8,  // 8x8 px image
         0xAA,  // ░▓░▓░▓░▓
         0xDD,  // ░░▓░░░▓░
@@ -561,7 +561,7 @@ namespace patternsHorizontal {
         0xFF,  // ░░░░░░░░
     };
 
-    constexpr uint8_t PROGMEM bayerDither12[] {
+    constexpr uint8_t bayerDither12[] PROGMEM {
         8, 8,  // 8x8 px image
         0xAA,  // ░▓░▓░▓░▓
         0xFF,  // ░░░░░░░░
@@ -573,7 +573,7 @@ namespace patternsHorizontal {
         0xFF,  // ░░░░░░░░
     };
 
-    constexpr uint8_t PROGMEM bayerDither13[] {
+    constexpr uint8_t bayerDither13[] PROGMEM {
         8, 8,  // 8x8 px image
         0xEE,  // ░░░▓░░░▓
         0xFF,  // ░░░░░░░░
@@ -585,19 +585,19 @@ namespace patternsHorizontal {
         0xFF,  // ░░░░░░░░
     };
 
-    constexpr uint8_t PROGMEM bayerDither14[] {
+    constexpr uint8_t bayerDither14[] PROGMEM {
         8, 8,  // 8x8 px image
-        0xEE,  // ░░░▓░░░▓
-        0xFF,  // ░░░░░░░░
-        0xBB,  // ░▓░░░▓░░
-        0xFF,  // ░░░░░░░░
         0xEE,  // ░░░▓░░░▓
         0xFF,  // ░░░░░░░░
         0xBB,  // ░▓░░░▓░░
         0xFF,  // ░░░░░░░░
+        0xEE,  // ░░░▓░░░▓
+        0xFF,  // ░░░░░░░░
+        0xBB,  // ░▓░░░▓░░
+        0xFF,  // ░░░░░░░░
     };
 
-    constexpr uint8_t PROGMEM bayerDither15[] {
+    constexpr uint8_t bayerDither15[] PROGMEM {
         8, 8,  // 8x8 px image
         0xEE,  // ░░░▓░░░▓
         0xFF,  // ░░░░░░░░
@@ -609,7 +609,7 @@ namespace patternsHorizontal {
         0xFF,  // ░░░░░░░░
     };
 
-    constexpr uint8_t PROGMEM bayerDither16[] {
+    constexpr uint8_t bayerDither16[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFF,  // ░░░░░░░░
         0xFF,  // ░░░░░░░░
@@ -621,7 +621,7 @@ namespace patternsHorizontal {
         0xFF,  // ░░░░░░░░
     };
 
-    constexpr uint8_t PROGMEM officeDither05[] {
+    constexpr uint8_t officeDither05[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -633,7 +633,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM officeDither10[] {
+    constexpr uint8_t officeDither10[] PROGMEM {
         8, 8,  // 8x8 px image
         0x40,  // ▓░▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -645,7 +645,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM officeDither20[] {
+    constexpr uint8_t officeDither20[] PROGMEM {
         8, 8,  // 8x8 px image
         0x88,  // ░▓▓▓░▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -657,7 +657,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM officeDither25[] {
+    constexpr uint8_t officeDither25[] PROGMEM {
         8, 8,  // 8x8 px image
         0x88,  // ░▓▓▓░▓▓▓
         0x22,  // ▓▓░▓▓▓░▓
@@ -669,7 +669,7 @@ namespace patternsHorizontal {
         0x22,  // ▓▓░▓▓▓░▓
     };
 
-    constexpr uint8_t PROGMEM officeDither30[] {
+    constexpr uint8_t officeDither30[] PROGMEM {
         8, 8,  // 8x8 px image
         0xAA,  // ░▓░▓░▓░▓
         0x44,  // ▓░▓▓▓░▓▓
@@ -681,7 +681,7 @@ namespace patternsHorizontal {
         0x11,  // ▓▓▓░▓▓▓░
     };
 
-    constexpr uint8_t PROGMEM officeDither40[] {
+    constexpr uint8_t officeDither40[] PROGMEM {
         8, 8,  // 8x8 px image
         0xAA,  // ░▓░▓░▓░▓
         0x54,  // ▓░▓░▓░▓▓
@@ -693,7 +693,7 @@ namespace patternsHorizontal {
         0x55,  // ▓░▓░▓░▓░
     };
 
-    constexpr uint8_t PROGMEM officeDither50[] {
+    constexpr uint8_t officeDither50[] PROGMEM {
         8, 8,  // 8x8 px image
         0xAA,  // ░▓░▓░▓░▓
         0x55,  // ▓░▓░▓░▓░
@@ -705,7 +705,7 @@ namespace patternsHorizontal {
         0x55,  // ▓░▓░▓░▓░
     };
 
-    constexpr uint8_t PROGMEM officeDither60[] {
+    constexpr uint8_t officeDither60[] PROGMEM {
         8, 8,  // 8x8 px image
         0xEE,  // ░░░▓░░░▓
         0x55,  // ▓░▓░▓░▓░
@@ -717,7 +717,7 @@ namespace patternsHorizontal {
         0x55,  // ▓░▓░▓░▓░
     };
 
-    constexpr uint8_t PROGMEM officeDither70[] {
+    constexpr uint8_t officeDither70[] PROGMEM {
         8, 8,  // 8x8 px image
         0xDD,  // ░░▓░░░▓░
         0x77,  // ▓░░░▓░░░
@@ -729,7 +729,7 @@ namespace patternsHorizontal {
         0x77,  // ▓░░░▓░░░
     };
 
-    constexpr uint8_t PROGMEM officeDither75[] {
+    constexpr uint8_t officeDither75[] PROGMEM {
         8, 8,  // 8x8 px image
         0xDD,  // ░░▓░░░▓░
         0xFF,  // ░░░░░░░░
@@ -741,7 +741,7 @@ namespace patternsHorizontal {
         0xFF,  // ░░░░░░░░
     };
 
-    constexpr uint8_t PROGMEM officeDither80[] {
+    constexpr uint8_t officeDither80[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFB,  // ░░░░░▓░░
         0xFF,  // ░░░░░░░░
@@ -753,7 +753,7 @@ namespace patternsHorizontal {
         0xFF,  // ░░░░░░░░
     };
 
-    constexpr uint8_t PROGMEM officeDither90[] {
+    constexpr uint8_t officeDither90[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFF,  // ░░░░░░░░
         0xFB,  // ░░░░░▓░░

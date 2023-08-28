@@ -9,7 +9,7 @@
 
 namespace patterns {
 
-    constexpr uint8_t PROGMEM scales[] {
+    constexpr uint8_t scales[] PROGMEM {
         8, 8,  // 8x8 px image
         0xBD,  // ░▓░░░░▓░
         0xBB,  // ░▓░░░▓░░
@@ -22,7 +22,7 @@ namespace patterns {
     };
     // Magic: ~"BD$\34$DB\301"[i%8]
 
-    constexpr uint8_t PROGMEM scalesLargeDexter[] {
+    constexpr uint8_t scalesLargeDexter[] PROGMEM {
         8, 8,  // 8x8 px image
         0x78,  // ▓░░░░▓▓▓
         0xA7,  // ░▓░▓▓░░░
@@ -35,7 +35,7 @@ namespace patterns {
     };
     // Magic: 66+"6e\235}}==="[i%8]
 
-    constexpr uint8_t PROGMEM scalesLargeSinister[] {
+    constexpr uint8_t scalesLargeSinister[] PROGMEM {
         8, 8,  // 8x8 px image
         0x7F,  // ▓░░░░░░░
         0x7F,  // ▓░░░░░░░
@@ -48,7 +48,7 @@ namespace patterns {
     };
     // Magic: 66+"===}}\235e6"[i%8]
 
-    constexpr uint8_t PROGMEM loam[] {
+    constexpr uint8_t loam[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -61,7 +61,7 @@ namespace patterns {
     };
     // Magic: "@@AP@@D"[i%8]*4
 
-    constexpr uint8_t PROGMEM sand[] {
+    constexpr uint8_t sand[] PROGMEM {
         8, 8,  // 8x8 px image
         0x02,  // ▓▓▓▓▓▓░▓
         0x24,  // ▓▓░▓▓░▓▓
@@ -74,7 +74,7 @@ namespace patterns {
     };
     // Magic: 97^"cE!aiq\341a"[i%8]
 
-    constexpr uint8_t PROGMEM patch[] {
+    constexpr uint8_t patch[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x20,  // ▓▓░▓▓▓▓▓
@@ -87,7 +87,7 @@ namespace patterns {
     };
     // Magic: "#Ce'#C3#"[i%8]-35
 
-    constexpr uint8_t PROGMEM divot[] {
+    constexpr uint8_t divot[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x05,  // ▓▓▓▓▓░▓░
@@ -100,7 +100,7 @@ namespace patterns {
     };
     // Magic: 97^"adcaaA1a"[i%8]
 
-    constexpr uint8_t PROGMEM grass[] {
+    constexpr uint8_t grass[] PROGMEM {
         8, 8,  // 8x8 px image
         0x20,  // ▓▓░▓▓▓▓▓
         0x40,  // ▓░▓▓▓▓▓▓
@@ -113,7 +113,7 @@ namespace patterns {
     };
     // Magic: " @ \0\2\4\2"[i%8]
 
-    constexpr uint8_t PROGMEM grassMini[] {
+    constexpr uint8_t grassMini[] PROGMEM {
         8, 8,  // 8x8 px image
         0x22,  // ▓▓░▓▓▓░▓
         0x44,  // ▓░▓▓▓░▓▓
@@ -127,7 +127,7 @@ namespace patterns {
     // Magic: "\"D\""[i%4]
     // GAMBY: 0x2420
 
-    constexpr uint8_t PROGMEM field[] {
+    constexpr uint8_t field[] PROGMEM {
         8, 8,  // 8x8 px image
         0x60,  // ▓░░▓▓▓▓▓
         0x06,  // ▓▓▓▓▓░░▓
@@ -140,7 +140,7 @@ namespace patterns {
     };
     // Magic: "`\6p\a"[i%4]
 
-    constexpr uint8_t PROGMEM fieldSparse[] {
+    constexpr uint8_t fieldSparse[] PROGMEM {
         8, 8,  // 8x8 px image
         0x60,  // ▓░░▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -153,7 +153,7 @@ namespace patterns {
     };
     // Magic: 88^"8X(XX^X_"[i%8]
 
-    constexpr uint8_t PROGMEM pasture[] {
+    constexpr uint8_t pasture[] PROGMEM {
         8, 8,  // 8x8 px image
         0x60,  // ▓░░▓▓▓▓▓
         0x06,  // ▓▓▓▓▓░░▓
@@ -166,7 +166,7 @@ namespace patterns {
     };
     // Magic: 65^"!G!GqAqA"[i%8]
 
-    constexpr uint8_t PROGMEM daisies[] {
+    constexpr uint8_t daisies[] PROGMEM {
         8, 8,  // 8x8 px image
         0x08,  // ▓▓▓▓░▓▓▓
         0x14,  // ▓▓▓░▓░▓▓
@@ -179,7 +179,7 @@ namespace patterns {
     };
     // Magic: 99^"kwkcC3Cc"[i%8]
 
-    constexpr uint8_t PROGMEM tuffet[] {
+    constexpr uint8_t tuffet[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x20,  // ▓▓░▓▓▓▓▓
@@ -192,7 +192,7 @@ namespace patterns {
     };
     // Magic: "@HP@XD@"[i%8]*4
 
-    constexpr uint8_t PROGMEM shrub[] {
+    constexpr uint8_t shrub[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x10,  // ▓▓▓░▓▓▓▓
@@ -205,7 +205,7 @@ namespace patterns {
     };
     // Magic: "@DHFHD@"[i%8]*4
 
-    constexpr uint8_t PROGMEM sprout[] {
+    constexpr uint8_t sprout[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x18,  // ▓▓▓░░▓▓▓
@@ -218,7 +218,7 @@ namespace patterns {
     };
     // Magic: "@FL@FC@"[i%8]*4
 
-    constexpr uint8_t PROGMEM crop[] {
+    constexpr uint8_t crop[] PROGMEM {
         8, 8,  // 8x8 px image
         0x20,  // ▓▓░▓▓▓▓▓
         0x60,  // ▓░░▓▓▓▓▓
@@ -231,7 +231,7 @@ namespace patterns {
     };
     // Magic: "HXSFPXH"[i%8]*4
 
-    constexpr uint8_t PROGMEM bush[] {
+    constexpr uint8_t bush[] PROGMEM {
         8, 8,  // 8x8 px image
         0x10,  // ▓▓▓░▓▓▓▓
         0x30,  // ▓▓░░▓▓▓▓
@@ -244,7 +244,7 @@ namespace patterns {
     };
     // Magic: 72^"Xx.D8PHH"[i%8]
 
-    constexpr uint8_t PROGMEM leaves[] {
+    constexpr uint8_t leaves[] PROGMEM {
         8, 8,  // 8x8 px image
         0x20,  // ▓▓░▓▓▓▓▓
         0x60,  // ▓░░▓▓▓▓▓
@@ -257,7 +257,7 @@ namespace patterns {
     };
     // Magic: " `C\6\0\30\f"[i%8]
 
-    constexpr uint8_t PROGMEM overgrowth[] {
+    constexpr uint8_t overgrowth[] PROGMEM {
         8, 8,  // 8x8 px image
         0x30,  // ▓▓░░▓▓▓▓
         0x73,  // ▓░░░▓▓░░
@@ -270,7 +270,7 @@ namespace patterns {
     };
     // Magic: 4+",oc\0|\350j\2"[i%8]
 
-    constexpr uint8_t PROGMEM thicket[] {
+    constexpr uint8_t thicket[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x48,  // ▓░▓▓░▓▓▓
@@ -283,7 +283,7 @@ namespace patterns {
     };
     // Magic: "\0HPlPH\0"[i%8]
 
-    constexpr uint8_t PROGMEM tree[] {
+    constexpr uint8_t tree[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x28,  // ▓▓░▓░▓▓▓
@@ -296,7 +296,7 @@ namespace patterns {
     };
     // Magic: 65^"AiU\253UiAA"[i%8]
 
-    constexpr uint8_t PROGMEM rocks[] {
+    constexpr uint8_t rocks[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x20,  // ▓▓░▓▓▓▓▓
@@ -309,7 +309,7 @@ namespace patterns {
     };
     // Magic: " $&& $ "[i%8]*8
 
-    constexpr uint8_t PROGMEM mounds[] {
+    constexpr uint8_t mounds[] PROGMEM {
         8, 8,  // 8x8 px image
         0x02,  // ▓▓▓▓▓▓░▓
         0x41,  // ▓░▓▓▓▓▓░
@@ -322,7 +322,7 @@ namespace patterns {
     };
     // Magic: 96^"b!AB(ddh"[i%8]
 
-    constexpr uint8_t PROGMEM skull[] {
+    constexpr uint8_t skull[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x30,  // ▓▓░░▓▓▓▓
@@ -335,7 +335,7 @@ namespace patterns {
     };
     // Magic: "@LJFJ`P"[i%8]*4
 
-    constexpr uint8_t PROGMEM crackedBoulder[] {
+    constexpr uint8_t crackedBoulder[] PROGMEM {
         8, 8,  // 8x8 px image
         0x68,  // ▓░░▓░▓▓▓
         0x2C,  // ▓▓░▓░░▓▓
@@ -348,7 +348,7 @@ namespace patterns {
     };
     // Magic: "4\26HcoN\30"[i%8]*2
 
-    constexpr uint8_t PROGMEM bamboo[] {
+    constexpr uint8_t bamboo[] PROGMEM {
         8, 8,  // 8x8 px image
         0x10,  // ▓▓▓░▓▓▓▓
         0x20,  // ▓▓░▓▓▓▓▓
@@ -368,7 +368,7 @@ namespace patterns {
 #if 0
 namespace patternsHorizontal {
 
-    constexpr uint8_t PROGMEM scales[] {
+    constexpr uint8_t scales[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFE,  // ░░░░░░░▓
         0x7D,  // ▓░░░░░▓░
@@ -380,7 +380,7 @@ namespace patternsHorizontal {
         0xFE,  // ░░░░░░░▓
     };
 
-    constexpr uint8_t PROGMEM scalesLargeDexter[] {
+    constexpr uint8_t scalesLargeDexter[] PROGMEM {
         8, 8,  // 8x8 px image
         0x7F,  // ▓░░░░░░░
         0x7F,  // ▓░░░░░░░
@@ -392,7 +392,7 @@ namespace patternsHorizontal {
         0x78,  // ▓░░░░▓▓▓
     };
 
-    constexpr uint8_t PROGMEM scalesLargeSinister[] {
+    constexpr uint8_t scalesLargeSinister[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFE,  // ░░░░░░░▓
         0xFE,  // ░░░░░░░▓
@@ -404,7 +404,7 @@ namespace patternsHorizontal {
         0x1E,  // ▓▓▓░░░░▓
     };
 
-    constexpr uint8_t PROGMEM loam[] {
+    constexpr uint8_t loam[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -416,7 +416,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM sand[] {
+    constexpr uint8_t sand[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x80,  // ░▓▓▓▓▓▓▓
@@ -428,7 +428,7 @@ namespace patternsHorizontal {
         0x02,  // ▓▓▓▓▓▓░▓
     };
 
-    constexpr uint8_t PROGMEM patch[] {
+    constexpr uint8_t patch[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x20,  // ▓▓░▓▓▓▓▓
@@ -440,7 +440,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM divot[] {
+    constexpr uint8_t divot[] PROGMEM {
         8, 8,  // 8x8 px image
         0x40,  // ▓░▓▓▓▓▓▓
         0x20,  // ▓▓░▓▓▓▓▓
@@ -452,7 +452,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM grass[] {
+    constexpr uint8_t grass[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x0A,  // ▓▓▓▓░▓░▓
@@ -464,7 +464,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM grassMini[] {
+    constexpr uint8_t grassMini[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0xAA,  // ░▓░▓░▓░▓
@@ -476,7 +476,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM field[] {
+    constexpr uint8_t field[] PROGMEM {
         8, 8,  // 8x8 px image
         0x11,  // ▓▓▓░▓▓▓░
         0x55,  // ▓░▓░▓░▓░
@@ -488,7 +488,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM fieldSparse[] {
+    constexpr uint8_t fieldSparse[] PROGMEM {
         8, 8,  // 8x8 px image
         0x01,  // ▓▓▓▓▓▓▓░
         0x05,  // ▓▓▓▓▓░▓░
@@ -500,7 +500,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM pasture[] {
+    constexpr uint8_t pasture[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x50,  // ▓░▓░▓▓▓▓
@@ -512,7 +512,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM daisies[] {
+    constexpr uint8_t daisies[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -524,7 +524,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM tuffet[] {
+    constexpr uint8_t tuffet[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -536,7 +536,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM shrub[] {
+    constexpr uint8_t shrub[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -548,7 +548,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM sprout[] {
+    constexpr uint8_t sprout[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -560,7 +560,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM crop[] {
+    constexpr uint8_t crop[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -572,7 +572,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM bush[] {
+    constexpr uint8_t bush[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x20,  // ▓▓░▓▓▓▓▓
@@ -584,7 +584,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM leaves[] {
+    constexpr uint8_t leaves[] PROGMEM {
         8, 8,  // 8x8 px image
         0x20,  // ▓▓░▓▓▓▓▓
         0x30,  // ▓▓░░▓▓▓▓
@@ -596,7 +596,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM overgrowth[] {
+    constexpr uint8_t overgrowth[] PROGMEM {
         8, 8,  // 8x8 px image
         0x60,  // ▓░░▓▓▓▓▓
         0x63,  // ▓░░▓▓▓░░
@@ -608,7 +608,7 @@ namespace patternsHorizontal {
         0x0C,  // ▓▓▓▓░░▓▓
     };
 
-    constexpr uint8_t PROGMEM thicket[] {
+    constexpr uint8_t thicket[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -620,7 +620,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM tree[] {
+    constexpr uint8_t tree[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x10,  // ▓▓▓░▓▓▓▓
@@ -632,7 +632,7 @@ namespace patternsHorizontal {
         0x10,  // ▓▓▓░▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM rocks[] {
+    constexpr uint8_t rocks[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -644,7 +644,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM mounds[] {
+    constexpr uint8_t mounds[] PROGMEM {
         8, 8,  // 8x8 px image
         0x60,  // ▓░░▓▓▓▓▓
         0x90,  // ░▓▓░▓▓▓▓
@@ -656,7 +656,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM skull[] {
+    constexpr uint8_t skull[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -668,7 +668,7 @@ namespace patternsHorizontal {
         0x04,  // ▓▓▓▓▓░▓▓
     };
 
-    constexpr uint8_t PROGMEM crackedBoulder[] {
+    constexpr uint8_t crackedBoulder[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x18,  // ▓▓▓░░▓▓▓
@@ -680,7 +680,7 @@ namespace patternsHorizontal {
         0x3C,  // ▓▓░░░░▓▓
     };
 
-    constexpr uint8_t PROGMEM bamboo[] {
+    constexpr uint8_t bamboo[] PROGMEM {
         8, 8,  // 8x8 px image
         0x3A,  // ▓▓░░░▓░▓
         0x34,  // ▓▓░░▓░▓▓

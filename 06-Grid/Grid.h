@@ -9,7 +9,7 @@
 
 namespace patterns {
 
-    constexpr uint8_t PROGMEM gridDots[] {
+    constexpr uint8_t gridDots[] PROGMEM {
         8, 8,  // 8x8 px image
         0x55,  // ▓░▓░▓░▓░
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -22,7 +22,7 @@ namespace patterns {
     };
     // Magic: 48^"e0101010"[i%8]
 
-    constexpr uint8_t PROGMEM gridDotsCentre[] {
+    constexpr uint8_t gridDotsCentre[] PROGMEM {
         8, 8,  // 8x8 px image
         0x55,  // ▓░▓░▓░▓░
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -35,7 +35,7 @@ namespace patterns {
     };
     // Magic: 48^"e010!010"[i%8]
 
-    constexpr uint8_t PROGMEM grid[] {
+    constexpr uint8_t grid[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFF,  // ░░░░░░░░
         0x01,  // ▓▓▓▓▓▓▓░
@@ -48,7 +48,7 @@ namespace patterns {
     };
     // Magic: i%8?1:~0
 
-    constexpr uint8_t PROGMEM gridMedium[] {
+    constexpr uint8_t gridMedium[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFF,  // ░░░░░░░░
         0xFF,  // ░░░░░░░░
@@ -61,7 +61,7 @@ namespace patterns {
     };
     // Magic: i%8<2?~0:3
 
-    constexpr uint8_t PROGMEM gridBold[] {
+    constexpr uint8_t gridBold[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFF,  // ░░░░░░░░
         0xFF,  // ░░░░░░░░
@@ -74,7 +74,7 @@ namespace patterns {
     };
     // Magic: (i+6)%8<5?131:~0
 
-    constexpr uint8_t PROGMEM gridMiniDots[] {
+    constexpr uint8_t gridMiniDots[] PROGMEM {
         8, 8,  // 8x8 px image
         0x55,  // ▓░▓░▓░▓░
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -88,7 +88,7 @@ namespace patterns {
     // Magic: "U\0\21"[i%4]
     // GAMBY: 0x5010
 
-    constexpr uint8_t PROGMEM gridMini[] {
+    constexpr uint8_t gridMini[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFF,  // ░░░░░░░░
         0x11,  // ▓▓▓░▓▓▓░
@@ -102,7 +102,7 @@ namespace patterns {
     // Magic: i%4?17:~0
     // GAMBY: 0xF111
 
-    constexpr uint8_t PROGMEM gridMiniMedium[] {
+    constexpr uint8_t gridMiniMedium[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFF,  // ░░░░░░░░
         0xFF,  // ░░░░░░░░
@@ -116,7 +116,7 @@ namespace patterns {
     // Magic: i%4<2?~0:51
     // GAMBY: 0xFF33
 
-    constexpr uint8_t PROGMEM gridDense[] {
+    constexpr uint8_t gridDense[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFF,  // ░░░░░░░░
         0x55,  // ▓░▓░▓░▓░
@@ -130,7 +130,7 @@ namespace patterns {
     // Magic: i&1?85:~0
     // GAMBY: 0xF5F5
 
-    constexpr uint8_t PROGMEM gridDiagonalDots[] {
+    constexpr uint8_t gridDiagonalDots[] PROGMEM {
         8, 8,  // 8x8 px image
         0x22,  // ▓▓░▓▓▓░▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -143,7 +143,7 @@ namespace patterns {
     };
     // Magic: 97^"CaiaCa\341a"[i%8]
 
-    constexpr uint8_t PROGMEM gridDiagonal[] {
+    constexpr uint8_t gridDiagonal[] PROGMEM {
         8, 8,  // 8x8 px image
         0x22,  // ▓▓░▓▓▓░▓
         0x14,  // ▓▓▓░▓░▓▓
@@ -156,7 +156,7 @@ namespace patterns {
     };
     // Magic: 96^"BthtB!\340!"[i%8]
 
-    constexpr uint8_t PROGMEM gridDiagonalMedium[] {
+    constexpr uint8_t gridDiagonalMedium[] PROGMEM {
         8, 8,  // 8x8 px image
         0x63,  // ▓░░▓▓▓░░
         0x36,  // ▓▓░░▓░░▓
@@ -169,7 +169,7 @@ namespace patterns {
     };
     // Magic: 66^"!t^^t!\203\203"[i%8]
 
-    constexpr uint8_t PROGMEM gridDiagonalMini[] {
+    constexpr uint8_t gridDiagonalMini[] PROGMEM {
         8, 8,  // 8x8 px image
         0x55,  // ▓░▓░▓░▓░
         0x22,  // ▓▓░▓▓▓░▓
@@ -183,7 +183,7 @@ namespace patterns {
     // Magic: "U\"U\210"[i%4]
     // GAMBY: 0x5258
 
-    constexpr uint8_t PROGMEM honeycomb[] {
+    constexpr uint8_t honeycomb[] PROGMEM {
         8, 8,  // 8x8 px image
         0x44,  // ▓░▓▓▓░▓▓
         0x44,  // ▓░▓▓▓░▓▓
@@ -196,7 +196,7 @@ namespace patterns {
     };
     // Magic: 43^"oo\201:::\201o"[i%8]
 
-    constexpr uint8_t PROGMEM trapezoid[] {
+    constexpr uint8_t trapezoid[] PROGMEM {
         8, 8,  // 8x8 px image
         0x40,  // ▓░▓▓▓▓▓▓
         0x60,  // ▓░░▓▓▓▓▓
@@ -216,7 +216,7 @@ namespace patterns {
 #if 0
 namespace patternsHorizontal {
 
-    constexpr uint8_t PROGMEM gridDots[] {
+    constexpr uint8_t gridDots[] PROGMEM {
         8, 8,  // 8x8 px image
         0xAA,  // ░▓░▓░▓░▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -228,7 +228,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM gridDotsCentre[] {
+    constexpr uint8_t gridDotsCentre[] PROGMEM {
         8, 8,  // 8x8 px image
         0xAA,  // ░▓░▓░▓░▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -240,7 +240,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM grid[] {
+    constexpr uint8_t grid[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFF,  // ░░░░░░░░
         0x80,  // ░▓▓▓▓▓▓▓
@@ -252,7 +252,7 @@ namespace patternsHorizontal {
         0x80,  // ░▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM gridMedium[] {
+    constexpr uint8_t gridMedium[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFF,  // ░░░░░░░░
         0xFF,  // ░░░░░░░░
@@ -264,7 +264,7 @@ namespace patternsHorizontal {
         0xC0,  // ░░▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM gridBold[] {
+    constexpr uint8_t gridBold[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFF,  // ░░░░░░░░
         0xFF,  // ░░░░░░░░
@@ -276,7 +276,7 @@ namespace patternsHorizontal {
         0xFF,  // ░░░░░░░░
     };
 
-    constexpr uint8_t PROGMEM gridMiniDots[] {
+    constexpr uint8_t gridMiniDots[] PROGMEM {
         8, 8,  // 8x8 px image
         0xAA,  // ░▓░▓░▓░▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -288,7 +288,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM gridMini[] {
+    constexpr uint8_t gridMini[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFF,  // ░░░░░░░░
         0x88,  // ░▓▓▓░▓▓▓
@@ -300,7 +300,7 @@ namespace patternsHorizontal {
         0x88,  // ░▓▓▓░▓▓▓
     };
 
-    constexpr uint8_t PROGMEM gridMiniMedium[] {
+    constexpr uint8_t gridMiniMedium[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFF,  // ░░░░░░░░
         0xFF,  // ░░░░░░░░
@@ -312,7 +312,7 @@ namespace patternsHorizontal {
         0xCC,  // ░░▓▓░░▓▓
     };
 
-    constexpr uint8_t PROGMEM gridDense[] {
+    constexpr uint8_t gridDense[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFF,  // ░░░░░░░░
         0xAA,  // ░▓░▓░▓░▓
@@ -324,7 +324,7 @@ namespace patternsHorizontal {
         0xAA,  // ░▓░▓░▓░▓
     };
 
-    constexpr uint8_t PROGMEM gridDiagonalDots[] {
+    constexpr uint8_t gridDiagonalDots[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x88,  // ░▓▓▓░▓▓▓
@@ -336,7 +336,7 @@ namespace patternsHorizontal {
         0x02,  // ▓▓▓▓▓▓░▓
     };
 
-    constexpr uint8_t PROGMEM gridDiagonal[] {
+    constexpr uint8_t gridDiagonal[] PROGMEM {
         8, 8,  // 8x8 px image
         0x05,  // ▓▓▓▓▓░▓░
         0x88,  // ░▓▓▓░▓▓▓
@@ -348,7 +348,7 @@ namespace patternsHorizontal {
         0x02,  // ▓▓▓▓▓▓░▓
     };
 
-    constexpr uint8_t PROGMEM gridDiagonalMedium[] {
+    constexpr uint8_t gridDiagonalMedium[] PROGMEM {
         8, 8,  // 8x8 px image
         0x87,  // ░▓▓▓▓░░░
         0xCC,  // ░░▓▓░░▓▓
@@ -360,7 +360,7 @@ namespace patternsHorizontal {
         0x03,  // ▓▓▓▓▓▓░░
     };
 
-    constexpr uint8_t PROGMEM gridDiagonalMini[] {
+    constexpr uint8_t gridDiagonalMini[] PROGMEM {
         8, 8,  // 8x8 px image
         0xAA,  // ░▓░▓░▓░▓
         0x44,  // ▓░▓▓▓░▓▓
@@ -372,7 +372,7 @@ namespace patternsHorizontal {
         0x11,  // ▓▓▓░▓▓▓░
     };
 
-    constexpr uint8_t PROGMEM honeycomb[] {
+    constexpr uint8_t honeycomb[] PROGMEM {
         8, 8,  // 8x8 px image
         0x1C,  // ▓▓▓░░░▓▓
         0x22,  // ▓▓░▓▓▓░▓
@@ -384,7 +384,7 @@ namespace patternsHorizontal {
         0x22,  // ▓▓░▓▓▓░▓
     };
 
-    constexpr uint8_t PROGMEM trapezoid[] {
+    constexpr uint8_t trapezoid[] PROGMEM {
         8, 8,  // 8x8 px image
         0x02,  // ▓▓▓▓▓▓░▓
         0x04,  // ▓▓▓▓▓░▓▓

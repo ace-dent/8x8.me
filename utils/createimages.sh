@@ -208,7 +208,7 @@ while (( "$#" )); do
   cpp_horiz_file="${img_root}/${img_group}.h.WIP2.txt" # Horizontal data
   # Vertical format data (standard sprite)
   {
-    printf '\nconstexpr uint8_t PROGMEM %s[] {\n' "${name_camelcase}"
+    printf '\nconstexpr uint8_t %s[] PROGMEM {\n' "${name_camelcase}"
     printf '    8, 8,  // 8x8 px image\n'
     sed 's|#|//|g' "${hex_v}" # Change '#' to '//' for comments
     printf '};\n// Magic: '

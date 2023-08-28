@@ -9,7 +9,7 @@
 
 namespace patterns {
 
-    constexpr uint8_t PROGMEM horizontalDenseTrellis[] {
+    constexpr uint8_t horizontalDenseTrellis[] PROGMEM {
         8, 8,  // 8x8 px image
         0x44,  // ▓░▓▓▓░▓▓
         0x44,  // ▓░▓▓▓░▓▓
@@ -23,7 +23,7 @@ namespace patterns {
     // Magic: i%4<2?68:17
     // GAMBY: 0x4411
 
-    constexpr uint8_t PROGMEM horizontalDenseDotDash[] {
+    constexpr uint8_t horizontalDenseDotDash[] PROGMEM {
         8, 8,  // 8x8 px image
         0x55,  // ▓░▓░▓░▓░
         0x44,  // ▓░▓▓▓░▓▓
@@ -37,7 +37,7 @@ namespace patterns {
     // Magic: "UDU"[i%4]
     // GAMBY: 0x5450
 
-    constexpr uint8_t PROGMEM horizontalDash[] {
+    constexpr uint8_t horizontalDash[] PROGMEM {
         8, 8,  // 8x8 px image
         0x40,  // ▓░▓▓▓▓▓▓
         0x40,  // ▓░▓▓▓▓▓▓
@@ -50,7 +50,7 @@ namespace patterns {
     };
     // Magic: i%8<4?64:4
 
-    constexpr uint8_t PROGMEM horizontalDashMini[] {
+    constexpr uint8_t horizontalDashMini[] PROGMEM {
         8, 8,  // 8x8 px image
         0x44,  // ▓░▓▓▓░▓▓
         0x44,  // ▓░▓▓▓░▓▓
@@ -64,7 +64,7 @@ namespace patterns {
     // Magic: i%4<2?68:0
     // GAMBY: 0x4400
 
-    constexpr uint8_t PROGMEM verticalDash[] {
+    constexpr uint8_t verticalDash[] PROGMEM {
         8, 8,  // 8x8 px image
         0x0F,  // ▓▓▓▓░░░░
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -77,7 +77,7 @@ namespace patterns {
     };
     // Magic: 46^"!...\336..."[i%8]
 
-    constexpr uint8_t PROGMEM dexterDash[] {
+    constexpr uint8_t dexterDash[] PROGMEM {
         8, 8,  // 8x8 px image
         0x10,  // ▓▓▓░▓▓▓▓
         0x20,  // ▓▓░▓▓▓▓▓
@@ -90,7 +90,7 @@ namespace patterns {
     };
     // Magic: "DHAB"[i%4]*4
 
-    constexpr uint8_t PROGMEM dexterSparseDash[] {
+    constexpr uint8_t dexterSparseDash[] PROGMEM {
         8, 8,  // 8x8 px image
         0x01,  // ▓▓▓▓▓▓▓░
         0x02,  // ▓▓▓▓▓▓░▓
@@ -103,7 +103,7 @@ namespace patterns {
     };
     // Magic: 99^"bagccC#\343"[i%8]
 
-    constexpr uint8_t PROGMEM sinisterDash[] {
+    constexpr uint8_t sinisterDash[] PROGMEM {
         8, 8,  // 8x8 px image
         0x08,  // ▓▓▓▓░▓▓▓
         0x04,  // ▓▓▓▓▓░▓▓
@@ -116,7 +116,7 @@ namespace patterns {
     };
     // Magic: "BAHD"[i%4]*4
 
-    constexpr uint8_t PROGMEM sinisterSparseDash[] {
+    constexpr uint8_t sinisterSparseDash[] PROGMEM {
         8, 8,  // 8x8 px image
         0x80,  // ░▓▓▓▓▓▓▓
         0x40,  // ▓░▓▓▓▓▓▓
@@ -129,7 +129,7 @@ namespace patterns {
     };
     // Magic: 99^"\343#Cccgab"[i%8]
 
-    constexpr uint8_t PROGMEM alternatingDash[] {
+    constexpr uint8_t alternatingDash[] PROGMEM {
         8, 8,  // 8x8 px image
         0x01,  // ▓▓▓▓▓▓▓░
         0x02,  // ▓▓▓▓▓▓░▓
@@ -142,7 +142,7 @@ namespace patterns {
     };
     // Magic: 99^"bagc#Csc"[i%8]
 
-    constexpr uint8_t PROGMEM alternatingDashDouble[] {
+    constexpr uint8_t alternatingDashDouble[] PROGMEM {
         8, 8,  // 8x8 px image
         0x19,  // ▓▓▓░░▓▓░
         0x13,  // ▓▓▓░▓▓░░
@@ -155,7 +155,7 @@ namespace patterns {
     };
     // Magic: "+%XvC\243\326^"[i%8]-18
 
-    constexpr uint8_t PROGMEM alternatingDashMini[] {
+    constexpr uint8_t alternatingDashMini[] PROGMEM {
         8, 8,  // 8x8 px image
         0x11,  // ▓▓▓░▓▓▓░
         0x22,  // ▓▓░▓▓▓░▓
@@ -176,7 +176,7 @@ namespace patterns {
 #if 0
 namespace patternsHorizontal {
 
-    constexpr uint8_t PROGMEM horizontalDenseTrellis[] {
+    constexpr uint8_t horizontalDenseTrellis[] PROGMEM {
         8, 8,  // 8x8 px image
         0x33,  // ▓▓░░▓▓░░
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -188,7 +188,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM horizontalDenseDotDash[] {
+    constexpr uint8_t horizontalDenseDotDash[] PROGMEM {
         8, 8,  // 8x8 px image
         0xAA,  // ░▓░▓░▓░▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -200,7 +200,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM horizontalDash[] {
+    constexpr uint8_t horizontalDash[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -212,7 +212,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM horizontalDashMini[] {
+    constexpr uint8_t horizontalDashMini[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -224,7 +224,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM verticalDash[] {
+    constexpr uint8_t verticalDash[] PROGMEM {
         8, 8,  // 8x8 px image
         0x80,  // ░▓▓▓▓▓▓▓
         0x80,  // ░▓▓▓▓▓▓▓
@@ -236,7 +236,7 @@ namespace patternsHorizontal {
         0x08,  // ▓▓▓▓░▓▓▓
     };
 
-    constexpr uint8_t PROGMEM dexterDash[] {
+    constexpr uint8_t dexterDash[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -248,7 +248,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM dexterSparseDash[] {
+    constexpr uint8_t dexterSparseDash[] PROGMEM {
         8, 8,  // 8x8 px image
         0x80,  // ░▓▓▓▓▓▓▓
         0x40,  // ▓░▓▓▓▓▓▓
@@ -260,7 +260,7 @@ namespace patternsHorizontal {
         0x01,  // ▓▓▓▓▓▓▓░
     };
 
-    constexpr uint8_t PROGMEM sinisterDash[] {
+    constexpr uint8_t sinisterDash[] PROGMEM {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
@@ -272,7 +272,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM sinisterSparseDash[] {
+    constexpr uint8_t sinisterSparseDash[] PROGMEM {
         8, 8,  // 8x8 px image
         0x01,  // ▓▓▓▓▓▓▓░
         0x02,  // ▓▓▓▓▓▓░▓
@@ -284,7 +284,7 @@ namespace patternsHorizontal {
         0x80,  // ░▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM alternatingDash[] {
+    constexpr uint8_t alternatingDash[] PROGMEM {
         8, 8,  // 8x8 px image
         0x80,  // ░▓▓▓▓▓▓▓
         0x40,  // ▓░▓▓▓▓▓▓
@@ -296,7 +296,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM alternatingDashDouble[] {
+    constexpr uint8_t alternatingDashDouble[] PROGMEM {
         8, 8,  // 8x8 px image
         0xCC,  // ░░▓▓░░▓▓
         0x60,  // ▓░░▓▓▓▓▓
@@ -308,7 +308,7 @@ namespace patternsHorizontal {
         0x06,  // ▓▓▓▓▓░░▓
     };
 
-    constexpr uint8_t PROGMEM alternatingDashMini[] {
+    constexpr uint8_t alternatingDashMini[] PROGMEM {
         8, 8,  // 8x8 px image
         0x88,  // ░▓▓▓░▓▓▓
         0x44,  // ▓░▓▓▓░▓▓

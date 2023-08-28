@@ -9,7 +9,7 @@
 
 namespace patterns {
 
-    constexpr uint8_t PROGMEM interlinked[] {
+    constexpr uint8_t interlinked[] PROGMEM {
         8, 8,  // 8x8 px image
         0xBA,  // ░▓░░░▓░▓
         0x77,  // ▓░░░▓░░░
@@ -22,7 +22,7 @@ namespace patterns {
     };
     // Magic: 110+"L\tMo|\t@o"[i%8]
 
-    constexpr uint8_t PROGMEM weaveDense[] {
+    constexpr uint8_t weaveDense[] PROGMEM {
         8, 8,  // 8x8 px image
         0xBA,  // ░▓░░░▓░▓
         0x77,  // ▓░░░▓░░░
@@ -35,7 +35,7 @@ namespace patterns {
     };
     // Magic: 110+"L\t=o|\t@o"[i%8]
 
-    constexpr uint8_t PROGMEM weave[] {
+    constexpr uint8_t weave[] PROGMEM {
         8, 8,  // 8x8 px image
         0x3A,  // ▓▓░░░▓░▓
         0x77,  // ▓░░░▓░░░
@@ -48,7 +48,7 @@ namespace patterns {
     };
     // Magic: ":w\243\301\342w.\34"[i%8]
 
-    constexpr uint8_t PROGMEM weaveMedium[] {
+    constexpr uint8_t weaveMedium[] PROGMEM {
         8, 8,  // 8x8 px image
         0x7A,  // ▓░░░░▓░▓
         0x77,  // ▓░░░▓░░░
@@ -61,7 +61,7 @@ namespace patterns {
     };
     // Magic: "zw\247\303\345\356^<"[i%8]
 
-    constexpr uint8_t PROGMEM weaveBold[] {
+    constexpr uint8_t weaveBold[] PROGMEM {
         8, 8,  // 8x8 px image
         0x7D,  // ▓░░░░░▓░
         0xBB,  // ░▓░░░▓░░
@@ -74,7 +74,7 @@ namespace patterns {
     };
     // Magic: 128^"\375;Wcun\337\276"[i%8]
 
-    constexpr uint8_t PROGMEM net[] {
+    constexpr uint8_t net[] PROGMEM {
         8, 8,  // 8x8 px image
         0x83,  // ░▓▓▓▓▓░░
         0xC6,  // ░░▓▓▓░░▓
@@ -87,7 +87,7 @@ namespace patterns {
     };
     // Magic: 15+"t\267])\r'T\262"[i%8]
 
-    constexpr uint8_t PROGMEM wicker[] {
+    constexpr uint8_t wicker[] PROGMEM {
         8, 8,  // 8x8 px image
         0x24,  // ▓▓░▓▓░▓▓
         0x20,  // ▓▓░▓▓▓▓▓
@@ -100,7 +100,7 @@ namespace patterns {
     };
     // Magic: "$ \257 \4\365\4$"[i%8]
 
-    constexpr uint8_t PROGMEM laced[] {
+    constexpr uint8_t laced[] PROGMEM {
         8, 8,  // 8x8 px image
         0x55,  // ▓░▓░▓░▓░
         0x40,  // ▓░▓▓▓▓▓▓
@@ -113,7 +113,7 @@ namespace patterns {
     };
     // Magic: "U@_@U\4\365\4"[i%8]
 
-    constexpr uint8_t PROGMEM squareBasket[] {
+    constexpr uint8_t squareBasket[] PROGMEM {
         8, 8,  // 8x8 px image
         0x57,  // ▓░▓░▓░░░
         0x50,  // ▓░▓░▓▓▓▓
@@ -126,7 +126,7 @@ namespace patterns {
     };
     // Magic: "WPW\0u\5u"[i%8]
 
-    constexpr uint8_t PROGMEM puppytooth[] {
+    constexpr uint8_t puppytooth[] PROGMEM {
         8, 8,  // 8x8 px image
         0x44,  // ▓░▓▓▓░▓▓
         0x77,  // ▓░░░▓░░░
@@ -140,7 +140,7 @@ namespace patterns {
     // Magic: "Dw\356\""[i%4]
     // GAMBY: 0x47E2
 
-    constexpr uint8_t PROGMEM houndstooth[] {
+    constexpr uint8_t houndstooth[] PROGMEM {
         8, 8,  // 8x8 px image
         0x18,  // ▓▓▓░░▓▓▓
         0x48,  // ▓░▓▓░▓▓▓
@@ -153,7 +153,7 @@ namespace patterns {
     };
     // Magic: "\30H`\374~{\3710"[i%8]
 
-    constexpr uint8_t PROGMEM gingham[] {
+    constexpr uint8_t gingham[] PROGMEM {
         8, 8,  // 8x8 px image
         0x28,  // ▓▓░▓░▓▓▓
         0x50,  // ▓░▓░▓▓▓▓
@@ -166,7 +166,7 @@ namespace patterns {
     };
     // Magic: "(P(P\372}\372}"[i%8]
 
-    constexpr uint8_t PROGMEM plaid[] {
+    constexpr uint8_t plaid[] PROGMEM {
         8, 8,  // 8x8 px image
         0x78,  // ▓░░░░▓▓▓
         0x78,  // ▓░░░░▓▓▓
@@ -179,7 +179,7 @@ namespace patterns {
     };
     // Magic: 44+"LLLL~)~)"[i%8]
 
-    constexpr uint8_t PROGMEM tartan[] {
+    constexpr uint8_t tartan[] PROGMEM {
         8, 8,  // 8x8 px image
         0x58,  // ▓░▓░░▓▓▓
         0x58,  // ▓░▓░░▓▓▓
@@ -199,7 +199,7 @@ namespace patterns {
 #if 0
 namespace patternsHorizontal {
 
-    constexpr uint8_t PROGMEM interlinked[] {
+    constexpr uint8_t interlinked[] PROGMEM {
         8, 8,  // 8x8 px image
         0x75,  // ▓░░░▓░▓░
         0xEE,  // ░░░▓░░░▓
@@ -211,7 +211,7 @@ namespace patternsHorizontal {
         0xBB,  // ░▓░░░▓░░
     };
 
-    constexpr uint8_t PROGMEM weaveDense[] {
+    constexpr uint8_t weaveDense[] PROGMEM {
         8, 8,  // 8x8 px image
         0x75,  // ▓░░░▓░▓░
         0xEE,  // ░░░▓░░░▓
@@ -223,7 +223,7 @@ namespace patternsHorizontal {
         0xBB,  // ░▓░░░▓░░
     };
 
-    constexpr uint8_t PROGMEM weave[] {
+    constexpr uint8_t weave[] PROGMEM {
         8, 8,  // 8x8 px image
         0x74,  // ▓░░░▓░▓▓
         0xEE,  // ░░░▓░░░▓
@@ -235,7 +235,7 @@ namespace patternsHorizontal {
         0x38,  // ▓▓░░░▓▓▓
     };
 
-    constexpr uint8_t PROGMEM weaveMedium[] {
+    constexpr uint8_t weaveMedium[] PROGMEM {
         8, 8,  // 8x8 px image
         0x78,  // ▓░░░░▓▓▓
         0xF6,  // ░░░░▓░░▓
@@ -247,7 +247,7 @@ namespace patternsHorizontal {
         0x3C,  // ▓▓░░░░▓▓
     };
 
-    constexpr uint8_t PROGMEM weaveBold[] {
+    constexpr uint8_t weaveBold[] PROGMEM {
         8, 8,  // 8x8 px image
         0xFA,  // ░░░░░▓░▓
         0x77,  // ▓░░░▓░░░
@@ -259,7 +259,7 @@ namespace patternsHorizontal {
         0x7C,  // ▓░░░░░▓▓
     };
 
-    constexpr uint8_t PROGMEM net[] {
+    constexpr uint8_t net[] PROGMEM {
         8, 8,  // 8x8 px image
         0x83,  // ░▓▓▓▓▓░░
         0xC6,  // ░░▓▓▓░░▓
@@ -271,7 +271,7 @@ namespace patternsHorizontal {
         0xC1,  // ░░▓▓▓▓▓░
     };
 
-    constexpr uint8_t PROGMEM wicker[] {
+    constexpr uint8_t wicker[] PROGMEM {
         8, 8,  // 8x8 px image
         0x24,  // ▓▓░▓▓░▓▓
         0x20,  // ▓▓░▓▓▓▓▓
@@ -283,7 +283,7 @@ namespace patternsHorizontal {
         0x24,  // ▓▓░▓▓░▓▓
     };
 
-    constexpr uint8_t PROGMEM laced[] {
+    constexpr uint8_t laced[] PROGMEM {
         8, 8,  // 8x8 px image
         0xAA,  // ░▓░▓░▓░▓
         0x20,  // ▓▓░▓▓▓▓▓
@@ -295,7 +295,7 @@ namespace patternsHorizontal {
         0x02,  // ▓▓▓▓▓▓░▓
     };
 
-    constexpr uint8_t PROGMEM squareBasket[] {
+    constexpr uint8_t squareBasket[] PROGMEM {
         8, 8,  // 8x8 px image
         0xAE,  // ░▓░▓░░░▓
         0xA0,  // ░▓░▓▓▓▓▓
@@ -307,7 +307,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t PROGMEM puppytooth[] {
+    constexpr uint8_t puppytooth[] PROGMEM {
         8, 8,  // 8x8 px image
         0x44,  // ▓░▓▓▓░▓▓
         0x77,  // ▓░░░▓░░░
@@ -319,7 +319,7 @@ namespace patternsHorizontal {
         0x22,  // ▓▓░▓▓▓░▓
     };
 
-    constexpr uint8_t PROGMEM houndstooth[] {
+    constexpr uint8_t houndstooth[] PROGMEM {
         8, 8,  // 8x8 px image
         0x06,  // ▓▓▓▓▓░░▓
         0x0C,  // ▓▓▓▓░░▓▓
@@ -331,7 +331,7 @@ namespace patternsHorizontal {
         0x12,  // ▓▓▓░▓▓░▓
     };
 
-    constexpr uint8_t PROGMEM gingham[] {
+    constexpr uint8_t gingham[] PROGMEM {
         8, 8,  // 8x8 px image
         0x05,  // ▓▓▓▓▓░▓░
         0x0A,  // ▓▓▓▓░▓░▓
@@ -343,7 +343,7 @@ namespace patternsHorizontal {
         0x0A,  // ▓▓▓▓░▓░▓
     };
 
-    constexpr uint8_t PROGMEM plaid[] {
+    constexpr uint8_t plaid[] PROGMEM {
         8, 8,  // 8x8 px image
         0x05,  // ▓▓▓▓▓░▓░
         0x0A,  // ▓▓▓▓░▓░▓
@@ -355,7 +355,7 @@ namespace patternsHorizontal {
         0x0A,  // ▓▓▓▓░▓░▓
     };
 
-    constexpr uint8_t PROGMEM tartan[] {
+    constexpr uint8_t tartan[] PROGMEM {
         8, 8,  // 8x8 px image
         0x0D,  // ▓▓▓▓░░▓░
         0x0D,  // ▓▓▓▓░░▓░
