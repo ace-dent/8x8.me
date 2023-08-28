@@ -273,15 +273,15 @@ namespace patterns {
     constexpr uint8_t PROGMEM thicket[] {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
-        0x24,  // ▓▓░▓▓░▓▓
-        0x28,  // ▓▓░▓░▓▓▓
-        0x36,  // ▓▓░░▓░░▓
-        0x28,  // ▓▓░▓░▓▓▓
-        0x24,  // ▓▓░▓▓░▓▓
+        0x48,  // ▓░▓▓░▓▓▓
+        0x50,  // ▓░▓░▓▓▓▓
+        0x6C,  // ▓░░▓░░▓▓
+        0x50,  // ▓░▓░▓▓▓▓
+        0x48,  // ▓░▓▓░▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\0$(6($\0"[i%8]
+    // Magic: "\0HPlPH\0"[i%8]
 
     constexpr uint8_t PROGMEM tree[] {
         8, 8,  // 8x8 px image
@@ -611,12 +611,12 @@ namespace patternsHorizontal {
     constexpr uint8_t PROGMEM thicket[] {
         8, 8,  // 8x8 px image
         0x00,  // ▓▓▓▓▓▓▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
         0x10,  // ▓▓▓░▓▓▓▓
         0x54,  // ▓░▓░▓░▓▓
         0x28,  // ▓▓░▓░▓▓▓
         0x10,  // ▓▓▓░▓▓▓▓
         0x7C,  // ▓░░░░░▓▓
-        0x00,  // ▓▓▓▓▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 

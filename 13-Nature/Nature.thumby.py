@@ -263,13 +263,13 @@ overgrowth = bytearray([
 # overgrowthSprite = thumby.Sprite(8, 8, overgrowth)
 
 thicket = bytearray([
-    # BITMAP: width: 8, height: 8, [0,36,40,54,40,36,0,0]
+    # BITMAP: width: 8, height: 8, [0,72,80,108,80,72,0,0]
     0x00,  # ▓▓▓▓▓▓▓▓
-    0x24,  # ▓▓░▓▓░▓▓
-    0x28,  # ▓▓░▓░▓▓▓
-    0x36,  # ▓▓░░▓░░▓
-    0x28,  # ▓▓░▓░▓▓▓
-    0x24,  # ▓▓░▓▓░▓▓
+    0x48,  # ▓░▓▓░▓▓▓
+    0x50,  # ▓░▓░▓▓▓▓
+    0x6C,  # ▓░░▓░░▓▓
+    0x50,  # ▓░▓░▓▓▓▓
+    0x48,  # ▓░▓▓░▓▓▓
     0x00,  # ▓▓▓▓▓▓▓▓
     0x00,  # ▓▓▓▓▓▓▓▓
 ])
