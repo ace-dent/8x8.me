@@ -33,7 +33,7 @@ namespace patterns {
         0x7F,  // ▓░░░░░░░
         0x7F,  // ▓░░░░░░░
     };
-    // Magic: "x\247\337\277\277\177\177\177"[i%8]
+    // Magic: 66+"6e\235}}==="[i%8]
 
     constexpr uint8_t PROGMEM scalesLargeSinister[] {
         8, 8,  // 8x8 px image
@@ -46,7 +46,7 @@ namespace patterns {
         0xA7,  // ░▓░▓▓░░░
         0x78,  // ▓░░░░▓▓▓
     };
-    // Magic: "\177\177\177\277\277\337\247x"[i%8]
+    // Magic: 66+"===}}\235e6"[i%8]
 
     constexpr uint8_t PROGMEM loam[] {
         8, 8,  // 8x8 px image
@@ -85,7 +85,7 @@ namespace patterns {
         0x10,  // ▓▓▓░▓▓▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "\0 B\4\0 \20"[i%8]
+    // Magic: "#Ce'#C3#"[i%8]-35
 
     constexpr uint8_t PROGMEM divot[] {
         8, 8,  // 8x8 px image
@@ -151,7 +151,7 @@ namespace patterns {
         0x00,  // ▓▓▓▓▓▓▓▓
         0x07,  // ▓▓▓▓▓░░░
     };
-    // Magic: "`\0p\0\0\6\0\a"[i%8]
+    // Magic: 88^"8X(XX^X_"[i%8]
 
     constexpr uint8_t PROGMEM pasture[] {
         8, 8,  // 8x8 px image
@@ -268,7 +268,7 @@ namespace patterns {
         0x6E,  // ▓░░▓░░░▓
         0x06,  // ▓▓▓▓▓░░▓
     };
-    // Magic: "0sg\4\200\354n\6"[i%8]
+    // Magic: 4+",oc\0|\350j\2"[i%8]
 
     constexpr uint8_t PROGMEM thicket[] {
         8, 8,  // 8x8 px image
