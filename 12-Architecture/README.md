@@ -6,10 +6,10 @@ Architectural patterns.
 
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Brick <sup>o</sup>| <img src="../previews/Brick.png" width="64" height="32" alt=""> | [png](png/Brick.png) | [cpp](Architecture.h#L12-L23) | [txt](Architecture.bitsy.txt#L5-L14) | [lua](architecture.p8.lua#L7-L19) | [py](Architecture.thumby.py#L5-L16) |
 | BrickDense | <img src="../previews/BrickDense.png" width="64" height="32" alt=""> | [png](png/BrickDense.png) | [cpp](Architecture.h#L25-L36) | [txt](Architecture.bitsy.txt#L16-L25) | [lua](architecture.p8.lua#L21-L33) | [py](Architecture.thumby.py#L18-L29) |
 | BrickNarrow | <img src="../previews/BrickNarrow.png" width="64" height="32" alt=""> | [png](png/BrickNarrow.png) | [cpp](Architecture.h#L38-L49) | [txt](Architecture.bitsy.txt#L27-L36) | [lua](architecture.p8.lua#L35-L47) | [py](Architecture.thumby.py#L31-L42) |
 | BrickWide | <img src="../previews/BrickWide.png" width="64" height="32" alt=""> | [png](png/BrickWide.png) | [cpp](Architecture.h#L51-L62) | [txt](Architecture.bitsy.txt#L38-L47) | [lua](architecture.p8.lua#L49-L61) | [py](Architecture.thumby.py#L44-L55) |
+| Brick <sup>o</sup>| <img src="../previews/Brick.png" width="64" height="32" alt=""> | [png](png/Brick.png) | [cpp](Architecture.h#L12-L23) | [txt](Architecture.bitsy.txt#L5-L14) | [lua](architecture.p8.lua#L7-L19) | [py](Architecture.thumby.py#L5-L16) |
 | BrickAged | <img src="../previews/BrickAged.png" width="64" height="32" alt=""> | [png](png/BrickAged.png) | [cpp](Architecture.h#L64-L75) | [txt](Architecture.bitsy.txt#L49-L58) | [lua](architecture.p8.lua#L63-L75) | [py](Architecture.thumby.py#L57-L68) |
 | BrickPointed | <img src="../previews/BrickPointed.png" width="64" height="32" alt=""> | [png](png/BrickPointed.png) | [cpp](Architecture.h#L77-L88) | [txt](Architecture.bitsy.txt#L60-L69) | [lua](architecture.p8.lua#L77-L89) | [py](Architecture.thumby.py#L70-L81) |
 | BrickSparse | <img src="../previews/BrickSparse.png" width="64" height="32" alt=""> | [png](png/BrickSparse.png) | [cpp](Architecture.h#L90-L101) | [txt](Architecture.bitsy.txt#L71-L80) | [lua](architecture.p8.lua#L91-L103) | [py](Architecture.thumby.py#L83-L94) |
