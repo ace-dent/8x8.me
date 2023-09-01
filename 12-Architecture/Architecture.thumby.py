@@ -106,7 +106,7 @@ brickHighlights = bytearray([
 ])
 # brickHighlightsSprite = thumby.Sprite(8, 8, brickHighlights)
 
-mortar = bytearray([
+mortarLight = bytearray([
     # BITMAP: width: 8, height: 8, [10,17,0,17,160,17,0,17]
     0x0A,  # ▓▓▓▓░▓░▓
     0x11,  # ▓▓▓░▓▓▓░
@@ -117,7 +117,7 @@ mortar = bytearray([
     0x00,  # ▓▓▓▓▓▓▓▓
     0x11,  # ▓▓▓░▓▓▓░
 ])
-# mortarSprite = thumby.Sprite(8, 8, mortar)
+# mortarLightSprite = thumby.Sprite(8, 8, mortar)
 
 mortarAged = bytearray([
     # BITMAP: width: 8, height: 8, [10,16,17,0,128,16,1,17]

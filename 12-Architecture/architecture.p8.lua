@@ -116,7 +116,7 @@ poke(0x5600+(8* 104),
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉh"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."\0◜²²\0ヤ  "
 
---105 'i' mortar
+--105 'i' mortarlight
 poke(0x5600+(8* 105),
  170, -- ▒█▒█▒█▒█
    1, -- █▒▒▒▒▒▒▒

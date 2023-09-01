@@ -14,8 +14,15 @@ Architectural patterns.
 | BrickPointed | <img src="../previews/BrickPointed.png" width="64" height="32" alt=""> | [png](png/BrickPointed.png) | [cpp](Architecture.h#L77-L88) | [txt](Architecture.bitsy.txt#L60-L69) | [lua](architecture.p8.lua#L77-L89) | [py](Architecture.thumby.py#L70-L81) |
 | BrickSparse | <img src="../previews/BrickSparse.png" width="64" height="32" alt=""> | [png](png/BrickSparse.png) | [cpp](Architecture.h#L90-L101) | [txt](Architecture.bitsy.txt#L71-L80) | [lua](architecture.p8.lua#L91-L103) | [py](Architecture.thumby.py#L83-L94) |
 | BrickHighlights | <img src="../previews/BrickHighlights.png" width="64" height="32" alt=""> | [png](png/BrickHighlights.png) | [cpp](Architecture.h#L103-L114) | [txt](Architecture.bitsy.txt#L82-L91) | [lua](architecture.p8.lua#L105-L117) | [py](Architecture.thumby.py#L96-L107) |
-| Mortar | <img src="../previews/Mortar.png" width="64" height="32" alt=""> | [png](png/Mortar.png) | [cpp](Architecture.h#L116-L127) | [txt](Architecture.bitsy.txt#L93-L102) | [lua](architecture.p8.lua#L119-L131) | [py](Architecture.thumby.py#L109-L120) |
+| Mortar | <img src="../previews/Mortar.png" width="64" height="32" alt=""> | [png](png/Mortar.png) | 
+| MortarLight | <img src="../previews/MortarLight.png" width="64" height="32" alt=""> | [png](png/MortarLight.png) | [cpp](Architecture.h#L116-L127) | [txt](Architecture.bitsy.txt#L93-L102) | [lua](architecture.p8.lua#L119-L131) | [py](Architecture.thumby.py#L109-L120) |
 | MortarAged | <img src="../previews/MortarAged.png" width="64" height="32" alt=""> | [png](png/MortarAged.png) | [cpp](Architecture.h#L129-L140) | [txt](Architecture.bitsy.txt#L104-L113) | [lua](architecture.p8.lua#L133-L145) | [py](Architecture.thumby.py#L122-L133) |
+
+
+<br>
+
+| Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | BrickVertical | <img src="../previews/BrickVertical.png" width="64" height="32" alt=""> | [png](png/BrickVertical.png) | [cpp](Architecture.h#L142-L153) | [txt](Architecture.bitsy.txt#L115-L124) | [lua](architecture.p8.lua#L147-L159) | [py](Architecture.thumby.py#L135-L146) |
 | BrickSinister <sup>o</sup>| <img src="../previews/BrickSinister.png" width="64" height="32" alt=""> | [png](png/BrickSinister.png) | [cpp](Architecture.h#L155-L166) | [txt](Architecture.bitsy.txt#L126-L135) | [lua](architecture.p8.lua#L161-L173) | [py](Architecture.thumby.py#L148-L159) |
 | BrickSinisterRounded | <img src="../previews/BrickSinisterRounded.png" width="64" height="32" alt=""> | [png](png/BrickSinisterRounded.png) | [cpp](Architecture.h#L168-L179) | [txt](Architecture.bitsy.txt#L137-L146) | [lua](architecture.p8.lua#L175-L187) | [py](Architecture.thumby.py#L161-L172) |
@@ -23,6 +30,7 @@ Architectural patterns.
 | BrickMini | <img src="../previews/BrickMini.png" width="64" height="32" alt=""> | [png](png/BrickMini.png) | [cpp](Architecture.h#L195-L207) | [txt](Architecture.bitsy.txt#L159-L168) | [lua](architecture.p8.lua#L204-L217) | [py](Architecture.thumby.py#L187-L198) |
 | BrickMiniDamage | <img src="../previews/BrickMiniDamage.png" width="64" height="32" alt=""> | [png](png/BrickMiniDamage.png) | [cpp](Architecture.h#L209-L220) | [txt](Architecture.bitsy.txt#L170-L179) | [lua](architecture.p8.lua#L219-L231) | [py](Architecture.thumby.py#L200-L211) |
 | BrickMiniRuins | <img src="../previews/BrickMiniRuins.png" width="64" height="32" alt=""> | [png](png/BrickMiniRuins.png) | [cpp](Architecture.h#L222-L233) | [txt](Architecture.bitsy.txt#L181-L190) | [lua](architecture.p8.lua#L233-L245) | [py](Architecture.thumby.py#L213-L224) |
+
 
 <br>
 

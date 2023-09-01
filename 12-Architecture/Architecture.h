@@ -113,7 +113,7 @@ namespace patterns {
     };
     // Magic: 88^"xvzzZ\272zz"[i%8]
 
-    constexpr uint8_t mortar[] PROGMEM {
+    constexpr uint8_t mortarLight[] PROGMEM {
         8, 8,  // 8x8 px image
         0x0A,  // ▓▓▓▓░▓░▓
         0x11,  // ▓▓▓░▓▓▓░
@@ -465,7 +465,7 @@ namespace patternsHorizontal {
         0x04,  // ▓▓▓▓▓░▓▓
     };
 
-    constexpr uint8_t mortar[] PROGMEM {
+    constexpr uint8_t mortarLight[] PROGMEM {
         8, 8,  // 8x8 px image
         0x55,  // ▓░▓░▓░▓░
         0x80,  // ░▓▓▓▓▓▓▓
