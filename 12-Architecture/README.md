@@ -12,7 +12,10 @@ Architectural patterns.
 | Brick <sup>o</sup>| <img src="../previews/Brick.png" width="64" height="32" alt=""> | [png](png/Brick.png) | [cpp](Architecture.h#L12-L23) | [txt](Architecture.bitsy.txt#L5-L14) | [lua](architecture.p8.lua#L7-L19) | [py](Architecture.thumby.py#L5-L16) |
 | BrickAged | <img src="../previews/BrickAged.png" width="64" height="32" alt=""> | [png](png/BrickAged.png) | [cpp](Architecture.h#L64-L75) | [txt](Architecture.bitsy.txt#L49-L58) | [lua](architecture.p8.lua#L63-L75) | [py](Architecture.thumby.py#L57-L68) |
 | BrickPointed | <img src="../previews/BrickPointed.png" width="64" height="32" alt=""> | [png](png/BrickPointed.png) | [cpp](Architecture.h#L77-L88) | [txt](Architecture.bitsy.txt#L60-L69) | [lua](architecture.p8.lua#L77-L89) | [py](Architecture.thumby.py#L70-L81) |
+| BrickShaded | <img src="../previews/BrickShaded.png" width="64" height="32" alt=""> | [png](png/BrickShaded.png) | 
+| BrickRelief | <img src="../previews/BrickRelief.png" width="64" height="32" alt=""> | [png](png/BrickRelief.png) | 
 | BrickSparse | <img src="../previews/BrickSparse.png" width="64" height="32" alt=""> | [png](png/BrickSparse.png) | [cpp](Architecture.h#L90-L101) | [txt](Architecture.bitsy.txt#L71-L80) | [lua](architecture.p8.lua#L91-L103) | [py](Architecture.thumby.py#L83-L94) |
+| BrickSparseShaded | <img src="../previews/BrickSparseShaded.png" width="64" height="32" alt=""> | [png](png/BrickSparseShaded.png) | 
 | BrickHighlights | <img src="../previews/BrickHighlights.png" width="64" height="32" alt=""> | [png](png/BrickHighlights.png) | [cpp](Architecture.h#L103-L114) | [txt](Architecture.bitsy.txt#L82-L91) | [lua](architecture.p8.lua#L105-L117) | [py](Architecture.thumby.py#L96-L107) |
 | Mortar | <img src="../previews/Mortar.png" width="64" height="32" alt=""> | [png](png/Mortar.png) | 
 | MortarLight | <img src="../previews/MortarLight.png" width="64" height="32" alt=""> | [png](png/MortarLight.png) | [cpp](Architecture.h#L116-L127) | [txt](Architecture.bitsy.txt#L93-L102) | [lua](architecture.p8.lua#L119-L131) | [py](Architecture.thumby.py#L109-L120) |
