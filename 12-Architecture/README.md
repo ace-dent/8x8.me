@@ -48,7 +48,10 @@ Architectural patterns.
 | RoofTiles | <img src="../previews/RoofTiles.png" width="64" height="32" alt=""> | [png](png/RoofTiles.png) | [cpp](Architecture.h#L313-L324) | [txt](Architecture.bitsy.txt#L258-L267) | [lua](architecture.p8.lua#L331-L343) | [py](Architecture.thumby.py#L304-L315) |
 | Archway | <img src="../previews/Archway.png" width="64" height="32" alt=""> | [png](png/Archway.png) | [cpp](Architecture.h#L326-L337) | [txt](Architecture.bitsy.txt#L269-L278) | [lua](architecture.p8.lua#L345-L357) | [py](Architecture.thumby.py#L317-L328) |
 | Window | <img src="../previews/Window.png" width="64" height="32" alt=""> | [png](png/Window.png) | [cpp](Architecture.h#L339-L350) | [txt](Architecture.bitsy.txt#L280-L289) | [lua](architecture.p8.lua#L359-L371) | [py](Architecture.thumby.py#L330-L341) |
+| Planks | <img src="../previews/Planks.png" width="64" height="32" alt=""> | [png](png/Planks.png) | 
 | Picket | <img src="../previews/Picket.png" width="64" height="32" alt=""> | [png](png/Picket.png) | [cpp](Architecture.h#L352-L363) | [txt](Architecture.bitsy.txt#L291-L300) | [lua](architecture.p8.lua#L373-L385) | [py](Architecture.thumby.py#L343-L354) |
+| House | <img src="../previews/House.png" width="64" height="32" alt=""> | [png](png/House.png) | 
+| HouseMini <sup>p</sup>| <img src="../previews/HouseMini.png" width="64" height="32" alt=""> | [png](png/HouseMini.png) | 
 
 [`⤴`](#gallery)
 
