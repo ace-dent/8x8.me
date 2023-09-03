@@ -160,7 +160,7 @@ namespace patterns {
         0xDD,  // ░░▓░░░▓░
         0xAA,  // ░▓░▓░▓░▓
     };
-    // Magic: 106+"\r@s@[i%4]
+    // Magic: 106+"\r@s@"[i%4]
     // GAMBY: 0x7ADA
 
     constexpr uint8_t bayerDither11[] PROGMEM {
