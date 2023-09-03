@@ -2,7 +2,7 @@
 # This work is dedicated to the Public Domain by ACED, licensed under CC0
 # https://creativecommons.org/publicdomain/zero/1.0/
 
-ripple = bytearray([
+rippleLight = bytearray([
     # BITMAP: width: 8, height: 8, [64,2,32,2,32,4,64,4]
     0x40,  # ▓░▓▓▓▓▓▓
     0x02,  # ▓▓▓▓▓▓░▓
@@ -13,7 +13,7 @@ ripple = bytearray([
     0x40,  # ▓░▓▓▓▓▓▓
     0x04,  # ▓▓▓▓▓░▓▓
 ])
-# rippleSprite = thumby.Sprite(8, 8, ripple)
+# rippleLightSprite = thumby.Sprite(8, 8, rippleLight)
 
 wave = bytearray([
     # BITMAP: width: 8, height: 8, [68,34,17,17,34,0,34,68]

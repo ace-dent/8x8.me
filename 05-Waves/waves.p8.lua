@@ -4,7 +4,7 @@
 --setup custom font as 8x8px
 poke(0x5600,8,8,8,0,0)
 
---97 'a' ripple
+--97 'a' ripplelight
 poke(0x5600+(8* 97),
    0, -- ▒▒▒▒▒▒▒▒
   10, -- ▒█▒█▒▒▒▒

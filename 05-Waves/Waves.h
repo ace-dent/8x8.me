@@ -9,7 +9,7 @@
 
 namespace patterns {
 
-    constexpr uint8_t ripple[] PROGMEM {
+    constexpr uint8_t rippleLight[] PROGMEM {
         8, 8,  // 8x8 px image
         0x40,  // ▓░▓▓▓▓▓▓
         0x02,  // ▓▓▓▓▓▓░▓
