@@ -15,14 +15,30 @@ Wave patterns.
 | OceanicLight | <img src="../previews/OceanicLight.png" width="64" height="32" alt=""> | [png](png/OceanicLight.png) | [cpp](Waves.h#L77-L88) | [txt](Waves.bitsy.txt#L60-L69) | [lua](waves.p8.lua#L77-L89) | [py](Waves.thumby.py#L70-L81) |
 | Oceanic | <img src="../previews/Oceanic.png" width="64" height="32" alt=""> | [png](png/Oceanic.png) | [cpp](Waves.h#L90-L101) | [txt](Waves.bitsy.txt#L71-L80) | [lua](waves.p8.lua#L91-L103) | [py](Waves.thumby.py#L83-L94) |
 
+
 <br>
 
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Urdy | <img src="../previews/Urdy.png" width="64" height="32" alt=""> | [png](png/Urdy.png) | [cpp](Waves.h#L103-L114) | [txt](Waves.bitsy.txt#L82-L91) | [lua](waves.p8.lua#L105-L117) | [py](Waves.thumby.py#L96-L107) |
-| UrdyMini | <img src="../previews/UrdyMini.png" width="64" height="32" alt=""> | [png](png/UrdyMini.png) | | | | |
+| ZigzagMini | <img src="../previews/ZigzagMini.png" width="64" height="32" alt=""> | [png](png/ZigzagMini.png) | | | | |
+| ZigzagMiniMedium | <img src="../previews/ZigzagMiniMedium.png" width="64" height="32" alt=""> | [png](png/ZigzagMiniMedium.png) | | | | |
+| Zigzag | <img src="../previews/Zigzag.png" width="64" height="32" alt=""> | [png](png/Zigzag.png) | | | | |
+| ZigzagMedium | <img src="../previews/ZigzagMedium.png" width="64" height="32" alt=""> | [png](png/ZigzagMedium.png) | | | | |
+| ZigzagBold | <img src="../previews/ZigzagBold.png" width="64" height="32" alt=""> | [png](png/ZigzagBold.png) | | | | |
+| ZigzagBoldShaded | <img src="../previews/ZigzagBoldShaded.png" width="64" height="32" alt=""> | [png](png/ZigzagBoldShaded.png) | | | | |
+| ZigzagExtraBold | <img src="../previews/ZigzagExtraBold.png" width="64" height="32" alt=""> | [png](png/ZigzagExtraBold.png) | | | | |
+| ZigzagPinstripe | <img src="../previews/ZigzagPinstripe.png" width="64" height="32" alt=""> | [png](png/ZigzagPinstripe.png) | | | | |
+| ZigzagSteep | <img src="../previews/ZigzagSteep.png" width="64" height="32" alt=""> | [png](png/ZigzagSteep.png) | | | | |
+
+
+<br>
+
+| Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Dentilly | <img src="../previews/Dentilly.png" width="64" height="32" alt=""> | [png](png/Dentilly.png) | | | | |
 | DentillyMini | <img src="../previews/DentillyMini.png" width="64" height="32" alt=""> | [png](png/DentillyMini.png) | | | | |
+| Urdy | <img src="../previews/Urdy.png" width="64" height="32" alt=""> | [png](png/Urdy.png) | [cpp](Waves.h#L103-L114) | [txt](Waves.bitsy.txt#L82-L91) | [lua](waves.p8.lua#L105-L117) | [py](Waves.thumby.py#L96-L107) |
+| UrdyMini | <img src="../previews/UrdyMini.png" width="64" height="32" alt=""> | [png](png/UrdyMini.png) | | | | |
 | EmbattledGrady | <img src="../previews/EmbattledGrady.png" width="64" height="32" alt=""> | [png](png/EmbattledGrady.png) | | | | |
 | Embattled | <img src="../previews/Embattled.png" width="64" height="32" alt=""> | [png](png/Embattled.png) | | | | |
 | EmbattledMini | <img src="../previews/EmbattledMini.png" width="64" height="32" alt=""> | [png](png/EmbattledMini.png) | | | | |
