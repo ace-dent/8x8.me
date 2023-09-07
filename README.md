@@ -21,7 +21,7 @@ Repeating tile fill patterns
 <!-- HTML for prettier formatting on GitHub -->
 <p>
   <a href="/01-Dither/README.md#gallery">
-    <img width="64" height="32" align="left" src="/previews/BayerDither05.png" alt=""> 01 – Dither
+    <img width="64" height="32" align="left" src="/previews/BayerDither03.png" alt=""> 01 – Dither
   </a>
 </p>
 <p>
@@ -62,7 +62,8 @@ Repeating tile fill patterns
 <p>
   <a href="/09-Radial/README.md#gallery">
     <img width="64" height="32" align="left" src="previews/Spokes.png" alt=""> 09 – Radial
-  </a></p>
+  </a>
+</p>
 <p>
   <a href="/10-Round/README.md#gallery">
     <img width="64" height="32" align="left" src="previews/AnnuletCoAnnulet.png" alt=""> 10 – Round
@@ -80,7 +81,7 @@ Repeating tile fill patterns
 </p>
 <p>
   <a href="/13-Nature/README.md#gallery">
-    <img width="64" height="32" align="left" src="/previews/Leaves.png" alt=""> 13 – Nature
+    <img width="64" height="32" align="left" src="/previews/Sprout.png" alt=""> 13 – Nature
   </a>
 </p>
 <p>
@@ -90,7 +91,7 @@ Repeating tile fill patterns
 </p> 
 <p>
   <a href="/15-Other/README.md#gallery">
-    <img width="64" height="32" align="left" src="/previews/Chain.png" alt=""> 15 – Other
+    <img width="64" height="32" align="left" src="/previews/Yuletide.png" alt=""> 15 – Other
   </a>
 </p>
 
