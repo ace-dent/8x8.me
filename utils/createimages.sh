@@ -191,7 +191,7 @@ while (( "$#" )); do
     ((md_bitsy_start=md_bitsy_end+2))
     # Add P8 link
     ((md_p8_end=md_p8_start+md_p8_lines+md_extra_lines))
-    printf '| [lua](%s.p8.lua#L%u-L%u) ' \
+    printf '| [p𝟪](%s.p8.lua#L%u-L%u) ' \
        "${group_lowercase}" "${md_p8_start}" "${md_p8_end}"
     ((md_p8_start=md_p8_end+2))
      # Add Thumby link
@@ -200,6 +200,7 @@ while (( "$#" )); do
        "${img_group}" "${md_thumby_start}" "${md_thumby_end}"
     ((md_thumby_start=md_thumby_end+2))
   } >> "${md_file}"
+  # In future, may add Picotron `p𝟨𝟦` and UDG `bas` links
 
 
 
@@ -453,16 +454,17 @@ while (( "$#" )); do
   printf -- '--magic: ?"⁶rw¹シ⁶.".."%s\n' "${encoded_string}" >> "${p8_file}"
   # Bonus: For 4x4px patterns produce fillp() alternative
   if [ ${pattern_width} -le 4 ] && [ ${pattern_height} -le 4 ]; then
-    encoded_string='0x'
+    # The hex value for PICO-8 can be reused for Picotron
+    pico_fillp_string='0x'
     for row in {1..4}; do
       # Invert bits 0<>1 to fix fore-/background
       binary_str=$(sed -n ${row}p "${bin_h}"\
         | head -c 4\
         | tr '01' '10')
       value_hex=$( printf '%X' $((2#${binary_str})) )
-      encoded_string="${encoded_string}${value_hex}"
+      pico_fillp_string="${pico_fillp_string}${value_hex}"
     done
-    printf -- '--fillp(%u)\n' "${encoded_string}" >> "${p8_file}"
+    printf -- '--fillp(%u)\n' "${pico_fillp_string}" >> "${p8_file}"
   fi
 
 
