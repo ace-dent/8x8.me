@@ -249,7 +249,7 @@ ballLarge = bytearray([
 ])
 # ballLargeSprite = thumby.Sprite(8, 8, ballLarge)
 
-sphereCoSphere = bytearray([
+spheres = bytearray([
     # BITMAP: width: 8, height: 8, [227,221,58,58,62,221,163,163]
     0xE3,  # ░░░▓▓▓░░
     0xDD,  # ░░▓░░░▓░
@@ -260,7 +260,7 @@ sphereCoSphere = bytearray([
     0xA3,  # ░▓░▓▓▓░░
     0xA3,  # ░▓░▓▓▓░░
 ])
-# sphereCoSphereSprite = thumby.Sprite(8, 8, sphereCoSphere)
+# spheresSprite = thumby.Sprite(8, 8, spheres)
 
 annuletXXL = bytearray([
     # BITMAP: width: 8, height: 8, [28,34,65,65,65,34,28,0]

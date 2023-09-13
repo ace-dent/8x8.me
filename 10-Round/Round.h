@@ -257,7 +257,7 @@ namespace patterns {
     };
     // Magic: 88^"XDnbfDXX"[i%8]
 
-    constexpr uint8_t sphereCoSphere[] PROGMEM {
+    constexpr uint8_t spheres[] PROGMEM {
         8, 8,  // 8x8 px image
         0xE3,  // ░░░▓▓▓░░
         0xDD,  // ░░▓░░░▓░
@@ -622,7 +622,7 @@ namespace patternsHorizontal {
         0x00,  // ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t sphereCoSphere[] PROGMEM {
+    constexpr uint8_t spheres[] PROGMEM {
         8, 8,  // 8x8 px image
         0xC7,  // ░░▓▓▓░░░
         0xBB,  // ░▓░░░▓░░

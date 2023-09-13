@@ -271,7 +271,7 @@ poke(0x5600+(8* 115),
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉs"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."\0、6:>、\0\0"
 
---116 't' spherecosphere
+--116 't' spheres
 poke(0x5600+(8* 116),
  227, -- ██▒▒▒███
  221, -- █▒███▒██
