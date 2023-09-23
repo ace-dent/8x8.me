@@ -6,9 +6,11 @@ Nature patterns.
 
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| ScalesSparse |   <img src="../previews/ScalesSparse.png" width="64" height="32" alt=""> | [png](png/ScalesSparse.png) | | | | |
 | Scales | <img src="../previews/Scales.png" width="64" height="32" alt=""> | [png](png/Scales.png) | [cpp](Nature.h#L12-L23) | [txt](Nature.bitsy.txt#L5-L14) | [p𝟪](nature.p8.lua#L7-L19) | [py](Nature.thumby.py#L5-L16) |
 | ScalesLargeDexter | <img src="../previews/ScalesLargeDexter.png" width="64" height="32" alt=""> | [png](png/ScalesLargeDexter.png) | [cpp](Nature.h#L25-L36) | [txt](Nature.bitsy.txt#L16-L25) | [p𝟪](nature.p8.lua#L21-L33) | [py](Nature.thumby.py#L18-L29) |
 | ScalesLargeSinister | <img src="../previews/ScalesLargeSinister.png" width="64" height="32" alt=""> | [png](png/ScalesLargeSinister.png) | [cpp](Nature.h#L38-L49) | [txt](Nature.bitsy.txt#L27-L36) | [p𝟪](nature.p8.lua#L35-L47) | [py](Nature.thumby.py#L31-L42) |
+| Papillon |   <img src="../previews/Papillon.png" width="64" height="32" alt=""> | [png](png/Papillon.png) | | | | |
 
 
 <br>
