@@ -9,7 +9,7 @@
 
 # Minimal check for input file(s)
 if [ -z "$1" ]; then
-  echo "Missing filename. Provide at least one png image to process."
+  echo 'Missing filename. Provide at least one png image to process.'
   exit
 fi
 
@@ -379,7 +379,7 @@ while (( "$#" )); do
   fi
   # Additional horizontal format (separate file)
   {
-    printf '\nconstexpr uint8_t PROGMEM %s[] {\n' "${name_camelcase}"
+    printf '\nconstexpr uint8_t %s[] PROGMEM {\n' "${name_camelcase}"
     printf '    8, 8,  // 8x8 px image\n'
     sed 's|#|//|g' "$hex_h" # Change '#' to '//' for comments
     printf '};\n'
