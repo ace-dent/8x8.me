@@ -51,6 +51,8 @@ Nature patterns.
 | Rocks | <img src="../previews/Rocks.png" width="64" height="32" alt=""> | [png](png/Rocks.png) | [cpp](Nature.h#L299-L310) | [txt](Nature.bitsy.txt#L247-L256) | [p𝟪](nature.p8.lua#L316-L328) | [py](Nature.thumby.py#L291-L302) |
 | Mounds | <img src="../previews/Mounds.png" width="64" height="32" alt=""> | [png](png/Mounds.png) | [cpp](Nature.h#L312-L323) | [txt](Nature.bitsy.txt#L258-L267) | [p𝟪](nature.p8.lua#L330-L342) | [py](Nature.thumby.py#L304-L315) |
 | Skull | <img src="../previews/Skull.png" width="64" height="32" alt=""> | [png](png/Skull.png) | [cpp](Nature.h#L325-L336) | [txt](Nature.bitsy.txt#L269-L278) | [p𝟪](nature.p8.lua#L344-L356) | [py](Nature.thumby.py#L317-L328) |
+| SkullLarge |   <img src="../previews/SkullLarge.png" width="64" height="32" alt=""> | [png](png/SkullLarge.png) | | | | |
+| SkullXL|   <img src="../previews/SkullXL.png" width="64" height="32" alt=""> | [png](png/SkullXL.png) | | | | |
 | CrackedBoulder | <img src="../previews/CrackedBoulder.png" width="64" height="32" alt=""> | [png](png/CrackedBoulder.png) | [cpp](Nature.h#L338-L349) | [txt](Nature.bitsy.txt#L280-L289) | [p𝟪](nature.p8.lua#L358-L370) | [py](Nature.thumby.py#L330-L341) |
 | Bamboo | <img src="../previews/Bamboo.png" width="64" height="32" alt=""> | [png](png/Bamboo.png) | [cpp](Nature.h#L351-L362) | [txt](Nature.bitsy.txt#L291-L300) | [p𝟪](nature.p8.lua#L372-L384) | [py](Nature.thumby.py#L343-L354) |
 
