@@ -385,7 +385,7 @@ namespace patterns {
         0x3C,  // ▓▓░░░░▓▓
         0x00,  // ▓▓▓▓▓▓▓▓
     };
-    // Magic: "<\356n\336n\356<"[i%8]
+    // Magic: "\36w7o7w\36"[i%8]*2
 
     constexpr uint8_t crackedBoulder[] PROGMEM {
         8, 8,  // 8x8 px image
