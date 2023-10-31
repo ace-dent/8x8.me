@@ -9,6 +9,19 @@
 
 namespace patterns {
 
+    constexpr uint8_t scalesSparse[] PROGMEM {
+        8, 8,  // 8x8 px image
+        0x3C,  // ▓▓░░░░▓▓
+        0x99,  // ░▓▓░░▓▓░
+        0xC3,  // ░░▓▓▓▓░░
+        0xE3,  // ░░░▓▓▓░░
+        0xC3,  // ░░▓▓▓▓░░
+        0x99,  // ░▓▓░░▓▓░
+        0x3C,  // ▓▓░░░░▓▓
+        0x3E,  // ▓▓░░░░░▓
+    };
+    // Magic: ~"\303f<\34<f\303\301"[i%8]
+
     constexpr uint8_t scales[] PROGMEM {
         8, 8,  // 8x8 px image
         0xBD,  // ░▓░░░░▓░
@@ -47,6 +60,19 @@ namespace patterns {
         0x78,  // ▓░░░░▓▓▓
     };
     // Magic: 66+"===}}\235e6"[i%8]
+
+    constexpr uint8_t papillon[] PROGMEM {
+        8, 8,  // 8x8 px image
+        0x70,  // ▓░░░▓▓▓▓
+        0xFC,  // ░░░░░░▓▓
+        0xFE,  // ░░░░░░░▓
+        0xBE,  // ░▓░░░░░▓
+        0x6F,  // ▓░░▓░░░░
+        0x5F,  // ▓░▓░░░░░
+        0x37,  // ▓▓░░▓░░░
+        0x0E,  // ▓▓▓▓░░░▓
+    };
+    // Magic: "p\374\376\276o_7\16"[i%8]
 
     constexpr uint8_t loam[] PROGMEM {
         8, 8,  // 8x8 px image
@@ -335,6 +361,32 @@ namespace patterns {
     };
     // Magic: "@LJFJ`P"[i%8]*4
 
+    constexpr uint8_t skullLarge[] PROGMEM {
+        8, 8,  // 8x8 px image
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x4C,  // ▓░▓▓░░▓▓
+        0x96,  // ░▓▓░▓░░▓
+        0x0E,  // ▓▓▓▓░░░▓
+        0x16,  // ▓▓▓░▓░░▓
+        0x0C,  // ▓▓▓▓░░▓▓
+        0x20,  // ▓▓░▓▓▓▓▓
+        0x10,  // ▓▓▓░▓▓▓▓
+    };
+    // Magic: 99^"c/\365muoCs"[i%8]
+
+    constexpr uint8_t skullXL[] PROGMEM {
+        8, 8,  // 8x8 px image
+        0x3C,  // ▓▓░░░░▓▓
+        0xEE,  // ░░░▓░░░▓
+        0x6E,  // ▓░░▓░░░▓
+        0xDE,  // ░░▓░░░░▓
+        0x6E,  // ▓░░▓░░░▓
+        0xEE,  // ░░░▓░░░▓
+        0x3C,  // ▓▓░░░░▓▓
+        0x00,  // ▓▓▓▓▓▓▓▓
+    };
+    // Magic: "<\356n\336n\356<"[i%8]
+
     constexpr uint8_t crackedBoulder[] PROGMEM {
         8, 8,  // 8x8 px image
         0x68,  // ▓░░▓░▓▓▓
@@ -367,6 +419,18 @@ namespace patterns {
 
 #if 0
 namespace patternsHorizontal {
+
+    constexpr uint8_t scalesSparse[] PROGMEM {
+        8, 8,  // 8x8 px image
+        0x7C,  // ▓░░░░░▓▓
+        0x39,  // ▓▓░░░▓▓░
+        0x83,  // ░▓▓▓▓▓░░
+        0xC7,  // ░░▓▓▓░░░
+        0xC7,  // ░░▓▓▓░░░
+        0x93,  // ░▓▓░▓▓░░
+        0x38,  // ▓▓░░░▓▓▓
+        0x7C,  // ▓░░░░░▓▓
+    };
 
     constexpr uint8_t scales[] PROGMEM {
         8, 8,  // 8x8 px image
@@ -402,6 +466,18 @@ namespace patternsHorizontal {
         0xFB,  // ░░░░░▓░░
         0xE5,  // ░░░▓▓░▓░
         0x1E,  // ▓▓▓░░░░▓
+    };
+
+    constexpr uint8_t papillon[] PROGMEM {
+        8, 8,  // 8x8 px image
+        0x0E,  // ▓▓▓▓░░░▓
+        0x3F,  // ▓▓░░░░░░
+        0x7F,  // ▓░░░░░░░
+        0x7D,  // ▓░░░░░▓░
+        0xF6,  // ░░░░▓░░▓
+        0xFA,  // ░░░░░▓░▓
+        0xEC,  // ░░░▓░░▓▓
+        0x70,  // ▓░░░▓▓▓▓
     };
 
     constexpr uint8_t loam[] PROGMEM {
@@ -666,6 +742,30 @@ namespace patternsHorizontal {
         0x68,  // ▓░░▓░▓▓▓
         0x02,  // ▓▓▓▓▓▓░▓
         0x04,  // ▓▓▓▓▓░▓▓
+    };
+
+    constexpr uint8_t skullLarge[] PROGMEM {
+        8, 8,  // 8x8 px image
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x38,  // ▓▓░░░▓▓▓
+        0x7C,  // ▓░░░░░▓▓
+        0x54,  // ▓░▓░▓░▓▓
+        0x29,  // ▓▓░▓░▓▓░
+        0x02,  // ▓▓▓▓▓▓░▓
+        0x40,  // ▓░▓▓▓▓▓▓
+        0x20,  // ▓▓░▓▓▓▓▓
+    };
+
+    constexpr uint8_t skullXL[] PROGMEM {
+        8, 8,  // 8x8 px image
+        0x00,  // ▓▓▓▓▓▓▓▓
+        0x7C,  // ▓░░░░░▓▓
+        0xFE,  // ░░░░░░░▓
+        0xFE,  // ░░░░░░░▓
+        0x92,  // ░▓▓░▓▓░▓
+        0xEE,  // ░░░▓░░░▓
+        0x7C,  // ▓░░░░░▓▓
+        0x54,  // ▓░▓░▓░▓▓
     };
 
     constexpr uint8_t crackedBoulder[] PROGMEM {

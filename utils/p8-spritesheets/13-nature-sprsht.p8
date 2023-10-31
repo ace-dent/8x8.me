@@ -8,9 +8,9 @@ color(7) -- white(ish) foreground
 --spr(0,0,0,1,1) --preserve 'x' spr0
 
 -- write patterns to screen
-?"\14".." abc defghijkl  "
-?"\14".." mnopqrstuvwxyz0"
-?"\14"..""
+?"\14".." abcde fghijklmn"
+?"\14".."opqrstuv wxyz012"
+?"\14".."34"
 ?"\14"..""
 
 -- copy screen to spritesheet

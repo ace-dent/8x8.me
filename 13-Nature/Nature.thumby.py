@@ -2,6 +2,19 @@
 # This work is dedicated to the Public Domain by ACED, licensed under CC0
 # https://creativecommons.org/publicdomain/zero/1.0/
 
+scalesSparse = bytearray([
+    # BITMAP: width: 8, height: 8, [60,153,195,227,195,153,60,62]
+    0x3C,  # ▓▓░░░░▓▓
+    0x99,  # ░▓▓░░▓▓░
+    0xC3,  # ░░▓▓▓▓░░
+    0xE3,  # ░░░▓▓▓░░
+    0xC3,  # ░░▓▓▓▓░░
+    0x99,  # ░▓▓░░▓▓░
+    0x3C,  # ▓▓░░░░▓▓
+    0x3E,  # ▓▓░░░░░▓
+])
+# scalesSparseSprite = thumby.Sprite(8, 8, scalesSparse)
+
 scales = bytearray([
     # BITMAP: width: 8, height: 8, [189,187,219,227,219,187,189,62]
     0xBD,  # ░▓░░░░▓░
@@ -40,6 +53,19 @@ scalesLargeSinister = bytearray([
     0x78,  # ▓░░░░▓▓▓
 ])
 # scalesLargeSinisterSprite = thumby.Sprite(8, 8, scalesLargeSinister)
+
+papillon = bytearray([
+    # BITMAP: width: 8, height: 8, [112,252,254,190,111,95,55,14]
+    0x70,  # ▓░░░▓▓▓▓
+    0xFC,  # ░░░░░░▓▓
+    0xFE,  # ░░░░░░░▓
+    0xBE,  # ░▓░░░░░▓
+    0x6F,  # ▓░░▓░░░░
+    0x5F,  # ▓░▓░░░░░
+    0x37,  # ▓▓░░▓░░░
+    0x0E,  # ▓▓▓▓░░░▓
+])
+# papillonSprite = thumby.Sprite(8, 8, papillon)
 
 loam = bytearray([
     # BITMAP: width: 8, height: 8, [0,0,4,64,0,0,16,0]
@@ -326,6 +352,32 @@ skull = bytearray([
     0x00,  # ▓▓▓▓▓▓▓▓
 ])
 # skullSprite = thumby.Sprite(8, 8, skull)
+
+skullLarge = bytearray([
+    # BITMAP: width: 8, height: 8, [0,76,150,14,22,12,32,16]
+    0x00,  # ▓▓▓▓▓▓▓▓
+    0x4C,  # ▓░▓▓░░▓▓
+    0x96,  # ░▓▓░▓░░▓
+    0x0E,  # ▓▓▓▓░░░▓
+    0x16,  # ▓▓▓░▓░░▓
+    0x0C,  # ▓▓▓▓░░▓▓
+    0x20,  # ▓▓░▓▓▓▓▓
+    0x10,  # ▓▓▓░▓▓▓▓
+])
+# skullLargeSprite = thumby.Sprite(8, 8, skullLarge)
+
+skullXL = bytearray([
+    # BITMAP: width: 8, height: 8, [60,238,110,222,110,238,60,0]
+    0x3C,  # ▓▓░░░░▓▓
+    0xEE,  # ░░░▓░░░▓
+    0x6E,  # ▓░░▓░░░▓
+    0xDE,  # ░░▓░░░░▓
+    0x6E,  # ▓░░▓░░░▓
+    0xEE,  # ░░░▓░░░▓
+    0x3C,  # ▓▓░░░░▓▓
+    0x00,  # ▓▓▓▓▓▓▓▓
+])
+# skullXLSprite = thumby.Sprite(8, 8, skullXL)
 
 crackedBoulder = bytearray([
     # BITMAP: width: 8, height: 8, [104,44,144,198,222,156,48,0]
