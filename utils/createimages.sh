@@ -105,7 +105,7 @@ while (( "$#" )); do
   printf '\n# %s' "${copyright}" "${license}" >> "${pbm_file}" # Extra pbm metadata appended to the plain text file
 
   # Create the preview image
-  preview_file="${img_root%/*}/previews/${img_name}.png"
+  preview_file="${img_root%/*}/docs/art/${img_name}.png"
   magick -size 32x16 tile:"$1" \
     -define png:include-chunk=none \
     -sample 200% "${preview_file}" # Tile the image 4x2 then scale up 2x
@@ -176,8 +176,8 @@ while (( "$#" )); do
   fi
   {
     printf '| %s ' "${img_name}"
-    printf '| <img src="../previews/%s.png"' "${img_name}"
-    printf ' width="64" height="32" alt=""> '
+    printf '| <img width="64" height="32"'
+    printf ' src="../docs/art/%s.png" alt=""> ' "${img_name}"
     printf '| [png](png/%s.png) ' "${img_name}"
      # Add cpp link
     ((md_cpp_end=md_cpp_start+md_cpp_lines+md_extra_lines))

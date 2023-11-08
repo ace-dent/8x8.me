@@ -21,77 +21,77 @@ Repeating tile fill patterns
 <!-- HTML for prettier formatting on GitHub -->
 <p>
   <a href="/01-Dither/README.md#gallery">
-    <img width="64" height="32" align="left" src="/previews/BayerDither03.png" alt=""> 01 – Dither
+    <img width="64" height="32" align="left" src="/docs/art/BayerDither03.png" alt=""> 01 – Dither
   </a>
 </p>
 <p>
   <a href="/02-Dots/README.md#gallery">
-    <img width="64" height="32" align="left" src="/previews/Confetti.png" alt=""> 02 – Dots
+    <img width="64" height="32" align="left" src="/docs/art/Confetti.png" alt=""> 02 – Dots
   </a>
 </p>
 <p>
   <a href="/03-Dashes/README.md#gallery">
-    <img width="64" height="32" align="left" src="previews/HorizontalDash.png" alt=""> 03 – Dashes
+    <img width="64" height="32" align="left" src="/docs/art/HorizontalDash.png" alt=""> 03 – Dashes
   </a>
 </p>
 <p>
   <a href="/04-Lines/README.md#gallery">
-    <img width="64" height="32" align="left" src="previews/DexterPinstripeMedium.png" alt=""> 04 – Lines
+    <img width="64" height="32" align="left" src="/docs/art/DexterPinstripeMedium.png" alt=""> 04 – Lines
   </a>
 </p>
 <p>
   <a href="/05-Waves/README.md#gallery">
-    <img width="64" height="32" align="left" src="/previews/Tidal.png" alt=""> 05 – Waves
+    <img width="64" height="32" align="left" src="/docs/art/Tidal.png" alt=""> 05 – Waves
   </a>
 </p>
 <p>
   <a href="/06-Grid/README.md#gallery">
-    <img width="64" height="32" align="left" src="/previews/GridDiagonal.png" alt=""> 06 – Grid
+    <img width="64" height="32" align="left" src="/docs/art/GridDiagonal.png" alt=""> 06 – Grid
   </a>
 </p>
 <p>
   <a href="/07-Checked/README.md#gallery">
-    <img width="64" height="32" align="left" src="/previews/Check.png" alt=""> 07 – Checked
+    <img width="64" height="32" align="left" src="/docs/art/Check.png" alt=""> 07 – Checked
   </a>
 </p>
 <p>
   <a href="/08-Rectilinear/README.md#gallery">
-    <img width="64" height="32" align="left" src="/previews/Box.png" alt=""> 08 – Rectilinear
+    <img width="64" height="32" align="left" src="/docs/art/Box.png" alt=""> 08 – Rectilinear
   </a>
 </p>
 <p>
   <a href="/09-Radial/README.md#gallery">
-    <img width="64" height="32" align="left" src="previews/Spokes.png" alt=""> 09 – Radial
+    <img width="64" height="32" align="left" src="/docs/art/Spokes.png" alt=""> 09 – Radial
   </a>
 </p>
 <p>
   <a href="/10-Round/README.md#gallery">
-    <img width="64" height="32" align="left" src="previews/AnnuletCoAnnulet.png" alt=""> 10 – Round
+    <img width="64" height="32" align="left" src="/docs/art/AnnuletCoAnnulet.png" alt=""> 10 – Round
   </a>
 </p>
 <p>
   <a href="/11-Woven/README.md#gallery">
-    <img width="64" height="32" align="left" src="/previews/Weave.png" alt=""> 11 – Woven
+    <img width="64" height="32" align="left" src="/docs/art/Weave.png" alt=""> 11 – Woven
   </a>
 </p>
 <p>
   <a href="/12-Architecture/README.md#gallery">
-    <img width="64" height="32" align="left" src="/previews/Brick.png" alt=""> 12 – Architecture
+    <img width="64" height="32" align="left" src="/docs/art/Brick.png" alt=""> 12 – Architecture
   </a>
 </p>
 <p>
   <a href="/13-Nature/README.md#gallery">
-    <img width="64" height="32" align="left" src="/previews/Sprout.png" alt=""> 13 – Nature
+    <img width="64" height="32" align="left" src="/docs/art/Sprout.png" alt=""> 13 – Nature
   </a>
 </p>
 <p>
   <a href="/14-Symbols/README.md#gallery">
-    <img width="64" height="32" align="left" src="/previews/Heart.png" alt=""> 14 – Symbols
+    <img width="64" height="32" align="left" src="/docs/art/Heart.png" alt=""> 14 – Symbols
   </a>
-</p> 
+</p>
 <p>
   <a href="/15-Other/README.md#gallery">
-    <img width="64" height="32" align="left" src="/previews/Yuletide.png" alt=""> 15 – Other
+    <img width="64" height="32" align="left" src="/docs/art/Yuletide.png" alt=""> 15 – Other
   </a>
 </p>
 
