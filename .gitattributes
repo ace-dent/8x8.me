@@ -1,16 +1,21 @@
 # Set the default behavior, in case people don't have core.autocrlf set.
 * text=auto
 
-# Declare files that should be treated as text and explicit line endings
+# Declare files that should be treated as text with explicit line endings
+# https://en.wikipedia.org/wiki/Newline#Representation
+*.bas text eol=lf
+*.csv text eol=crlf
 *.h text eol=lf
 *.lua text eol=lf
 *.md text eol=lf
 *.p8 text eol=lf
+*.p64 text eol=lf
 *.pbm text eol=lf
 *.py text eol=lf
 *.sh text eol=lf
 *.xml text eol=crlf
 
-# Denote all files that are truly binary (binary is a macro for -text -diff)
-*.png binary
+# Denote files that are truly binary (macro for -text -diff)
 *.bmp binary
+*.jxl binary
+*.png binary
