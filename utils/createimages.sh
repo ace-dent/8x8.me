@@ -25,15 +25,26 @@ readonly project='8x8.me fill pattern.'
 readonly copyright='This work is dedicated to the Public Domain by ACED, licensed under CC0.'
 readonly license='https://creativecommons.org/publicdomain/zero/1.0/'
 
-# Markdown gallery parameters
-md_cpp_start=12   # Default 12
-md_bitsy_start=5  # Default 5
-md_p8_start=7     # Default 7
-md_thumby_start=5 # Default 5
-readonly md_cpp_lines=11 # 4x4 patterns will have +1 lines (GAMBY)
+# Markdown gallery parameters for linking to line numbers (offset and stride)
+# Arduboy (cpp)
+md_cpp_start=12           # Default 12 line header offset
+readonly md_cpp_lines=11  # 4x4 patterns will have 1 extra line (GAMBY)
+# Bitsy (text)
+md_bitsy_start=5          # Default 5 line header offset
 readonly md_bitsy_lines=9
-readonly md_p8_lines=12 # 4x4 patterns will have +1 lines (fillp)
+# PICO-8 (p8.lua)
+md_p8_start=7             # Default 7 line header offset
+readonly md_p8_lines=12   # 4x4 patterns will have 1 extra line (fillp)
+# Picotron (p64.lua)
+# --
+# Playdate (lua)
+md_playdate_start=5       # Default 5 line header offset
+readonly md_playdate_lines=12
+# Thumby (thumby.py)
+md_thumby_start=5         # Default 5 line header offset
 readonly md_thumby_lines=11
+# User Defined Graphic (BASIC)
+# --
 
 # Code snippet parameters
 bitsy_map="$( echo {1..9} {a..z} \
@@ -96,7 +107,7 @@ while (( "$#" )); do
   optipng -q -nx -o6 "${pulp_file}" # Try to optimize at fixed 8bpp, RGB png first.
   optipng -q -o6 "${pulp_file}" # Also try reducing to 1bpp indexed png.
 
-  # Add metadata to png and pbm files
+  # Add metadata to png files first and then pbm file
   exiftool -q -overwrite_original -fast1 \
     -Title="${img_name} - ${img_group} - ${project}" \
     -Copyright="${copyright} ${license}" "$1" "${pulp_file}" \
@@ -126,9 +137,9 @@ while (( "$#" )); do
   # ---------------------
 
   # Create Horizontal and Vertical temporary files, with plain text binary and hexadecimal
-  bin_h="${img_root}/$img_name.bin-h.txt"
-  bin_v="${img_root}/$img_name.bin-v.txt"
+  bin_h="${img_root}/$img_name.bin-h.txt" # Horizontal (HMSB)
   hex_h="${img_root}/$img_name.hex-h.txt"
+  bin_v="${img_root}/$img_name.bin-v.txt" # Vertical (VLSB)
   hex_v="${img_root}/$img_name.hex-v.txt"
   magick "$1" -depth 1 +negate -compress None PBM:- \
     | tail -n +3 \
@@ -138,17 +149,18 @@ while (( "$#" )); do
     | tr -d ' ' > "${bin_v}"
   # Write files with hexadecimal values and ascii art comments
   for line in {1..8}; do
-    binary_str="$( sed -n ${line}p "${bin_h}" )" # Horizontal
+    binary_str="$( sed -n ${line}p "${bin_h}" )" # Horizontal (HMSB)
     value_dec=$((2#${binary_str}))
     printf '    0x%02X,' "${value_dec}"
     printf '  # %s\n' "${binary_str}" | tr '01' '▓░'
   done > "${hex_h}"
   for line in {1..8}; do
-    binary_str="$( sed -n ${line}p "${bin_v}" )" # Vertical
+    binary_str="$( sed -n ${line}p "${bin_v}" )" # Vertical (VLSB)
     value_dec=$((2#${binary_str}))
     printf '    0x%02X,' "${value_dec}"
     printf '  # %s\n' "${binary_str}" | tr '01' '▓░'
   done > "${hex_v}"
+
   # Check the pattern's minimum repeat width and height
   pattern_width=8
   if [ "$(head -n 4 "${bin_v}")" = "$(tail -n 4 "${bin_v}")" ]; then
@@ -179,42 +191,51 @@ while (( "$#" )); do
     printf '| <img width="64" height="32"'
     printf ' src="../docs/art/%s.png" alt=""> ' "${img_name}"
     printf '| [png](png/%s.png) ' "${img_name}"
-     # Add cpp link
+     # Add Arduboy (cpp) link
     ((md_cpp_end=md_cpp_start+md_cpp_lines+md_extra_lines))
     printf '| [cpp](%s.h#L%u-L%u) ' \
       "${img_group}" "${md_cpp_start}" "${md_cpp_end}"
     ((md_cpp_start=md_cpp_end+2))
-    # Add bitsy link
+    # Add bitsy (txt) link
     ((md_bitsy_end=md_bitsy_start+md_bitsy_lines))
     printf '| [txt](%s.bitsy.txt#L%u-L%u) ' \
        "${img_group}" "${md_bitsy_start}" "${md_bitsy_end}"
     ((md_bitsy_start=md_bitsy_end+2))
-    # Add P8 link
+    # Add PICO-8 (p8.lua) link
     ((md_p8_end=md_p8_start+md_p8_lines+md_extra_lines))
     printf '| [p𝟪](%s.p8.lua#L%u-L%u) ' \
        "${group_lowercase}" "${md_p8_start}" "${md_p8_end}"
     ((md_p8_start=md_p8_end+2))
-     # Add Thumby link
+    # Add Picotron (p64.lua) link
+    # --
+    # Add Playdate (lua) link
+    ((md_playdate_end=md_playdate_start+md_playdate_lines))
+    printf '| [lua](%s.playdate.lua#L%u-L%u) ' \
+       "${img_group}" "${md_playdate_start}" "${md_playdate_end}"
+    ((md_playdate_start=md_playdate_end+2))
+     # Add Thumby (py) link
     ((md_thumby_end=md_thumby_start+md_thumby_lines))
     printf '| [py](%s.thumby.py#L%u-L%u) |\n' \
        "${img_group}" "${md_thumby_start}" "${md_thumby_end}"
     ((md_thumby_start=md_thumby_end+2))
+    # Add User Defined Graphic (bas) link
+    # --
   } >> "${md_file}"
-  # In future, may add Picotron `p𝟨𝟦` and UDG `bas` links
+  # TODO: add Picotron `p𝟨𝟦` and UDG `bas` links
 
 
 
   # Create cpp (Arduboy) code
-  cpp_file="${img_root}/${img_group}.h.WIP.txt" # Vertical data
-  cpp_horiz_file="${img_root}/${img_group}.h.WIP2.txt" # Horizontal data
-  # Vertical format data (standard sprite)
+  cpp_file="${img_root}/${img_group}.h.WIP.txt" # Vertical file
+  cpp_horiz_file="${img_root}/${img_group}.h.WIP2.txt" # Horizontal file
+  # Vertical VLSB format data (standard Arduboy sprite)
   {
     printf '\nconstexpr uint8_t %s[] PROGMEM {\n' "${name_camelcase}"
     printf '    8, 8,  // 8x8 px image\n'
     sed 's|#|//|g' "${hex_v}" # Change '#' to '//' for comments
     printf '};\n// Magic: '
   } >> "${cpp_file}"
-  # Alternative 'magic' representation
+  # Alternative 'magic' representation (VLSB data)
   if [ ${pattern_width} -eq 1 ]; then
     # Pattern width 1 - byte value encoded as a single decimal
     {
@@ -365,7 +386,7 @@ while (( "$#" )); do
     fi
     printf '%s\n' "${encoded_string}" >> "${cpp_file}"
   fi
-  # Bonus 4x4px GAMBY data
+  # Bonus 4x4px GAMBY data (Vertical VLSB in 4 nybbles)
   if [ $pattern_width -le 4 ] && [ $pattern_height -le 4 ]; then
     {
       printf '// GAMBY: 0x'
@@ -377,7 +398,7 @@ while (( "$#" )); do
       printf '\n'
     } >> "${cpp_file}"
   fi
-  # Additional horizontal format (separate file)
+  # Additional horizontal HMSB format (separate file)
   {
     printf '\nconstexpr uint8_t %s[] PROGMEM {\n' "${name_camelcase}"
     printf '    8, 8,  // 8x8 px image\n'
@@ -391,6 +412,7 @@ while (( "$#" )); do
   bitsy_file="${img_root}/${img_group}.bitsy.WIP.txt"
   index=$(( (bitsy_counter-1) % bitsy_map_length ))
   bitsy_mapped_char="${bitsy_map:index:1}"
+  # Horizontal HMSB format data
   {
     printf '\nTIL %c\n' "${bitsy_mapped_char}"
     cat "$bin_h"
@@ -401,7 +423,7 @@ while (( "$#" )); do
 
   # Create PICO-8 code
   p8_file="${img_root}/${img_group}.p8.lua.WIP.txt"
-  # Store bitmap data as a custom font
+  # Store bitmap data as a custom font (HLSB data)
   index=$(( (img_counter-1) % p8_map_length ))
   p8_mapped_char="${p8_map:index:1}"
   ascii_code=$( printf '%d' "'${p8_mapped_char}" )
@@ -469,8 +491,34 @@ while (( "$#" )); do
 
 
 
+  # Create Playdate SDK code
+  playdate_file="${img_root}/${img_group}.playdate.WIP.txt"
+  # Horizontal (HMSB) format
+  {
+    printf '\nlocal %s <const> = {\n' "${name_camelcase}"
+    sed 's|#|--|g' "$hex_h" # Change '#' to '--' for comments
+    # Generate optional arrays for pixel transparency
+    pd_backgnd_string='    -- '
+    pd_foregnd_string='    -- '
+    # Produce decimal value arrays (less characters for one-liner)
+    for row in {1..8}; do
+      binary_str=$( sed -n ${row}p "${bin_h}" )
+      value_dec=$((2#${binary_str}))
+      pd_backgnd_string="${pd_backgnd_string}${value_dec},"
+      # Invert bits to mask foreground
+      ((value_dec=255-value_dec))
+      pd_foregnd_string="${pd_foregnd_string}${value_dec},"
+    done
+    printf '%s -- transparent background\n' "${pd_backgnd_string%?}"
+    printf '%s -- transparent foreground\n' "${pd_foregnd_string%?}"
+    printf '}\n-- playdate.graphics.setPattern(%s)\n' "${name_camelcase}"
+  } >> "${playdate_file}"
+
+
+
   # Create Thumby code
   thumby_file="${img_root}/${img_group}.thumby.WIP.txt"
+  # Vertical (VLSB) format
   {
     printf '\n%s = bytearray([\n' "${name_camelcase}"
     printf '    # BITMAP: width: 8, height: 8, ['

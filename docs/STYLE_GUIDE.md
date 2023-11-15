@@ -75,6 +75,13 @@ Symbolic of an abstract concept (love) rather than something that exits in the p
 - Normal (unwritten)
 - Sparse
 
+#### Fill variations
+- Highlight - top-left edges in highlight
+- Outline (unwritten)
+- Solid (normally unwritten, unless an Outline variation exists)
+- Relief - bottom-right edges in shadow
+- Shaded - alternate pixels lit to create a dithered tone
+
 #### Line Weight
 - Light <1px - not every pixel may be lit
 - Normal (unwritten) 1px
@@ -88,6 +95,10 @@ Symbolic of an abstract concept (love) rather than something that exits in the p
 ## Code
 ### Overview 
 Automated code generation (setup & dependencies).
+
+We like trailing commas, to allow joining arrays.
+For compiled languages vs  interpreted we prefer verbosity over compactness. 
+
 
 ### Arduboy (cpp)
 
@@ -131,6 +142,11 @@ NOTE - P8 uses LSB first, so sequence of bits in a byte are reversed. However, t
 
 ### Picotron (Lua)
 ### Playdate (Lua & Pulp)
+SDK support based on https://sdk.play.date/inside-playdate/#f-graphics.setPattern
+
+Pulp has no mask (fully opaque).
+SDK default is opaque. Different transparency background / foreground selectable for SDK by selecting comment lines.
+
 ### Thumby (MicroPython)
 
 Indents are 4x space.  
