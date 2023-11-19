@@ -12,6 +12,7 @@ color(7) -- white(ish) foreground
 ?"\14".."  ABCDEFGHIJKLqq"
 ?"\14"..""
 ?"\14"..""
+--      "0123456789abcdef"
 
 -- copy screen to spritesheet
 for i=0,((8*4)-1) do
