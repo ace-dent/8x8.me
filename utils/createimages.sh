@@ -152,13 +152,13 @@ while (( "$#" )); do
     binary_str="$( sed -n ${line}p "${bin_h}" )" # Horizontal (HMSB)
     value_dec=$((2#${binary_str}))
     printf '    0x%02X,' "${value_dec}"
-    printf '  # %s\n' "${binary_str}" | tr '01' '▓░'
+    printf ' #  %s\n' "${binary_str}" | tr '01' '▓░'
   done > "${hex_h}"
   for line in {1..8}; do
     binary_str="$( sed -n ${line}p "${bin_v}" )" # Vertical (VLSB)
     value_dec=$((2#${binary_str}))
     printf '    0x%02X,' "${value_dec}"
-    printf '  # %s\n' "${binary_str}" | tr '01' '▓░'
+    printf ' #  %s\n' "${binary_str}" | tr '01' '▓░'
   done > "${hex_v}"
 
   # Check the pattern's minimum repeat width and height
@@ -225,13 +225,26 @@ while (( "$#" )); do
 
 
 
+  # TODO: Unified html gallery
+  # html_file="${img_root}/${img_group}.html.WIP.txt"
+  # img_inline='data:image/png;base64,'$(base64 -i "$1") # TODO: Convert to JXL
+  # {
+  #   printf '<picture>\n'
+  #   printf '  <source srcset="%s" type="image/jxl">\n' "${img_inline}"
+  #   printf '  <img width="64" height="32" loading="lazy"'
+  #   printf ' src="../docs/art/%s.png" alt="" role="none">\n' "${img_name}"
+  #   printf '</picture>\n'
+  # } >> "${html_file}"
+
+
+
   # Create cpp (Arduboy) code
   cpp_file="${img_root}/${img_group}.h.WIP.txt" # Vertical file
   cpp_horiz_file="${img_root}/${img_group}.h.WIP2.txt" # Horizontal file
   # Vertical VLSB format data (standard Arduboy sprite)
   {
     printf '\nconstexpr uint8_t %s[] PROGMEM {\n' "${name_camelcase}"
-    printf '    8, 8,  // 8x8 px image\n'
+    printf '    8, 8, //  8x8 px image\n'
     sed 's|#|//|g' "${hex_v}" # Change '#' to '//' for comments
     printf '};\n// Magic: '
   } >> "${cpp_file}"
@@ -401,7 +414,7 @@ while (( "$#" )); do
   # Additional horizontal HMSB format (separate file)
   {
     printf '\nconstexpr uint8_t %s[] PROGMEM {\n' "${name_camelcase}"
-    printf '    8, 8,  // 8x8 px image\n'
+    printf '    8, 8, //  8x8 px image\n'
     sed 's|#|//|g' "$hex_h" # Change '#' to '//' for comments
     printf '};\n'
   } >> "${cpp_horiz_file}"
