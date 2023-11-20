@@ -8,8 +8,8 @@ color(7) -- white(ish) foreground
 --spr(0,0,0,1,1) --preserve 'x' spr0
 
 -- write patterns to screen
-?"\14".." abcdefgh"
-?"\14"..""
+?"\14".." abcdefghijklm"
+?"\14".."nop"
 ?"\14"..""
 ?"\14"..""
 --      "0123456789abcdef"

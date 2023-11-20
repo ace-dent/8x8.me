@@ -23,6 +23,9 @@ Light source for 3D is top left.
 Layout (offset / gutters, etc.): Try to leave right column and bottom row empty. Data and helps tiling.  
 Scale - items should be scaled fairly consistently. Exceptions for large objects (Tree, House) that break the general scale to fit the pixel grid.  
 
+Tile offset shouldn't matter for a large repeating pattern, but patterns may be useful for background graphics which are discontinuous. So we should design thinking of what is shown at the edge; how a single tile will look; how breaks in tiling will look.
+
+
 ### File formats
 
 ## Naming
@@ -43,13 +46,15 @@ The substance of the pattern is linear, continuously connected in 2 (or more) di
 Alternating, geometric areas of contrast (light and dark), with areas tiling in 2-dimensions. Ideally with a near equal weighting of contrasting areas. Checked patterns often look like a checker board. There is no substance to represent, so lit and unlit pixels indicate light and dark areas. Some decoration is allowable. Checked patterns do not convey particular intent or semantic meaning; they are purely visual designs.
 
 #### 09 – Radial
-Features arranged radially from a central point. Will have rotational symmetry. Where chiral, prefer left handed.  Designs are weighted left-facing (anti-clockwise) to avoid possibly offensive symbols.May feature linear and round forms.
+Features arranged radially from a central point. Will have rotational symmetry. Where chiral, prefer left handed. Designs are weighted left-facing (anti-clockwise) to avoid possibly offensive symbols.May feature linear and round forms.
 
 #### 12 – Architecture
 The principle material is shown as lit (e.g. typically a brick is lit, the mortar is unlit). Brick is weighted to bottom, so gap for mortar at top- to ensure looks ok with map layouts.
 
 #### 14 – Symbol
-Symbolic of an abstract concept (love) rather than something that exits in the physical world. In general, physical objects should be in Nature, Architecture or Other, unless their form is more significant (block in rectilinear).
+Symbolic of an abstract concept (love) or an iconic representation (anchor) rather than something that exits in the physical world. In general, physical objects should be in Nature, Architecture or Other, unless its form is more significant (tile in rectilinear).
+
+#### 15 – Other
 
 
 ### Terminology
@@ -122,9 +127,12 @@ Start each `.h` file with standard header:
 ```
 Followed by three blank lines.
 
+VLSB sprites data format.
+
 ### Bitsy (text)
 
 Indexes: Lower case 0-9,a-z.
+HMSB data format.
 
 ### PICO-8 (Lua)
 
