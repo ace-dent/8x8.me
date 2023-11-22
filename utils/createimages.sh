@@ -6,6 +6,12 @@
 # - Correct png images are fed in, or the parameter 'reset' followed by another png image.
 # - Exiftool, ImageMagick and OptiPNG executables are available
 
+# - Optional: Enabling this function uses PICO-8 to produce a sprite sheet
+pico8() {
+  '/Applications/PICO-8.app/Contents/MacOS/pico8' "$@"
+}
+
+
 
 # Minimal check for input file(s)
 if [ -z "$1" ]; then
@@ -75,19 +81,22 @@ while (( "$#" )); do
   #   File exists
   #   Input PNG file validity (file size, file format)
 
+  # Ensure the artwork has the correct file permissions set
+  chmod 644 "$1"
+
   ((img_counter=img_counter+1))
   ((bitsy_counter=bitsy_counter+1))
 
   # Get the image name and group from the filename
-  img_name="$( basename -s .png "$1" )"
+  img_name="$( basename -s .png "$1" )" # e.g. "BayerDither00"
   img_root="${1%/*/*}" # Base directory for the pattern
-  img_numbered_group="$( basename "${img_root}" | tr -d ' ' )"
-  img_group="$( echo "${img_numbered_group}" | cut -f 2 -d '-' )"
+  img_numbered_group="$( basename "${img_root}" | tr -d ' ' )" # e.g. "01-Dither"
+  img_group="$( echo "${img_numbered_group}" | cut -f 2 -d '-' )" # e.g. "Dither"
   # Format variations with different case
-  name_lowercase="$( echo "${img_name}" | tr '[:upper:]' '[:lower:]' )"
-  name_camelcase="${name_lowercase:0:1}${img_name:1}" # Lower case first letter and append remaining characters
+  name_lowercase="$( echo "${img_name}" | tr '[:upper:]' '[:lower:]' )" # e.g. "bayerdither00"
+  name_camelcase="${name_lowercase:0:1}${img_name:1}" # Lower case first letter and append remaining characters, e.g. "bayerDither00"
   name_camelcase="$( echo -n "${name_camelcase}" | tr -cs '[:alnum:]' '_')" # Replace non-alphanumeric characters with '_' for code compatibility
-  group_lowercase="$( echo "${img_group}" | tr '[:upper:]' '[:lower:]' )"
+  group_lowercase="$( echo "${img_group}" | tr '[:upper:]' '[:lower:]' )" # e.g. "dither"
 
 
   # Produce images
@@ -96,6 +105,7 @@ while (( "$#" )); do
   # Create the Portable Bit Map (PBM) file
   pbm_file="${img_root}/pbm/${img_name}.pbm"
   magick "$1" -depth 1 -compress None "${pbm_file}"
+  # TODO: Generate unique hash for pattern, to check against preview
 
   # Create tweaked png image for Playdate Pulp
   pulp_file="${img_root}/${img_name}-table-8-8.png" # Required name format
@@ -115,7 +125,8 @@ while (( "$#" )); do
     -Comment="${img_name} - ${img_group} - ${project}" "${pbm_file}" # Primary pbm metadata (single text line in header)
   printf '\n# %s' "${copyright}" "${license}" >> "${pbm_file}" # Extra pbm metadata appended to the plain text file
 
-  # Create the preview image
+  # Create the preview 'art' image
+  # TODO: Check for an exisiting file and only replace if necessary
   preview_file="${img_root%/*}/docs/art/${img_name}.png"
   magick -size 32x16 tile:"$1" \
     -define png:include-chunk=none \
@@ -558,6 +569,37 @@ while (( "$#" )); do
   # Move to next image file provided
   shift
 done
+
+
+
+# If defined, use P8 to create a sprite sheet for the final image's group
+if type pico8 &> /dev/null; then
+    echo '---'
+    p8_script="${util_dir}/p8-spritesheets/${img_numbered_group}-sprsht.p8"
+    p8_sprsht="${group_lowercase}.png" # sprite sheet file path (relative)
+    echo "Generating sprite sheet - ${p8_sprsht}"
+    # First execution updates the embedded sprites (`__gfx__`) for later export
+    # Using P8 `printh()` the script returns the number of 8px rows occupied
+    p8_rows=$(pico8 -x "${p8_script}" | tail -n 1)
+    # P8 can only export into the current directory
+    pushd "${img_root}" > /dev/null || exit
+    pico8 "${p8_script}" -export "${p8_sprsht}" > /dev/null
+    # Crop any unused 8px rows from the bottom of the 128px high image
+    ((p8_chop=128-p8_rows*8))
+    magick "${p8_sprsht}" -gravity South -chop x"${p8_chop}" \
+      -define png:color-type='2' -define png:bit-depth='8' \
+      -define png:include-chunk=none "${p8_sprsht}"
+    optipng -q -nx -o6 "${p8_sprsht}" # Try to optimize 8bpp RGB png first.
+    optipng -q -o6 "${p8_sprsht}" # Also try reducing to 1bpp indexed png.
+    # Add metadata to the png sprite sheet
+    exiftool -q -overwrite_original -fast1 \
+      -Title="${img_group} - ${project//pattern/patterns}" \
+      -Copyright="${copyright} ${license}" "${p8_sprsht}" "${p8_sprsht}"
+    # Restore the working directory
+    popd > /dev/null || exit
+fi
+
+
 
 echo '...Finished :)'
 echo ''
