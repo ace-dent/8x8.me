@@ -35,6 +35,19 @@ namespace patterns {
     };
     // Magic: ~"BD$\34$DB\301"[i%8]
 
+    constexpr uint8_t scallop[] PROGMEM {
+        8, 8, //  8x8 px image
+        0xAD, //  ░▓░▓░░▓░
+        0x33, //  ▓▓░░▓▓░░
+        0xDA, //  ░░▓░░▓░▓
+        0xA2, //  ░▓░▓▓▓░▓
+        0xDA, //  ░░▓░░▓░▓
+        0x33, //  ▓▓░░▓▓░░
+        0xAD, //  ░▓░▓░░▓░
+        0x2A, //  ▓▓░▓░▓░▓
+    };
+    // Magic: ~"R\314%]%\314R\325"[i%8]
+
     constexpr uint8_t scalesLargeDexter[] PROGMEM {
         8, 8, //  8x8 px image
         0x78, //  ▓░░░░▓▓▓
@@ -442,6 +455,18 @@ namespace patternsHorizontal {
         0xD7, //  ░░▓░▓░░░
         0x38, //  ▓▓░░░▓▓▓
         0xFE, //  ░░░░░░░▓
+    };
+
+    constexpr uint8_t scallop[] PROGMEM {
+        8, 8, //  8x8 px image
+        0xC6, //  ░░▓▓▓░░▓
+        0x7D, //  ▓░░░░░▓░
+        0x82, //  ░▓▓▓▓▓░▓
+        0xAB, //  ░▓░▓░▓░░
+        0x6C, //  ▓░░▓░░▓▓
+        0xD7, //  ░░▓░▓░░░
+        0x28, //  ▓▓░▓░▓▓▓
+        0xBA, //  ░▓░░░▓░▓
     };
 
     constexpr uint8_t scalesLargeDexter[] PROGMEM {

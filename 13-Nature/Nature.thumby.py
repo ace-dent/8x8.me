@@ -28,6 +28,19 @@ scales = bytearray([
 ])
 # scalesSprite = thumby.Sprite(8, 8, scales)
 
+scallop = bytearray([
+    # BITMAP: width: 8, height: 8, [173,51,218,162,218,51,173,42]
+    0xAD, #  ░▓░▓░░▓░
+    0x33, #  ▓▓░░▓▓░░
+    0xDA, #  ░░▓░░▓░▓
+    0xA2, #  ░▓░▓▓▓░▓
+    0xDA, #  ░░▓░░▓░▓
+    0x33, #  ▓▓░░▓▓░░
+    0xAD, #  ░▓░▓░░▓░
+    0x2A, #  ▓▓░▓░▓░▓
+])
+# scallopSprite = thumby.Sprite(8, 8, scallop)
+
 scalesLargeDexter = bytearray([
     # BITMAP: width: 8, height: 8, [120,167,223,191,191,127,127,127]
     0x78, #  ▓░░░░▓▓▓
