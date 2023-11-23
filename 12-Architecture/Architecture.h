@@ -9,19 +9,6 @@
 
 namespace patterns {
 
-    constexpr uint8_t brick[] PROGMEM {
-        8, 8, //  8x8 px image
-        0xE0, //  ░░░▓▓▓▓▓
-        0xEE, //  ░░░▓░░░▓
-        0xEE, //  ░░░▓░░░▓
-        0xEE, //  ░░░▓░░░▓
-        0x0E, //  ▓▓▓▓░░░▓
-        0xEE, //  ░░░▓░░░▓
-        0xEE, //  ░░░▓░░░▓
-        0xEE, //  ░░░▓░░░▓
-    };
-    // Magic: "pwww\awww"[i%8]*2
-
     constexpr uint8_t brickDense[] PROGMEM {
         8, 8, //  8x8 px image
         0x88, //  ░▓▓▓░▓▓▓
@@ -61,6 +48,19 @@ namespace patterns {
     };
     // Magic: "x{{{\3{{{"[i%8]*2
 
+    constexpr uint8_t brick[] PROGMEM {
+        8, 8, //  8x8 px image
+        0xE0, //  ░░░▓▓▓▓▓
+        0xEE, //  ░░░▓░░░▓
+        0xEE, //  ░░░▓░░░▓
+        0xEE, //  ░░░▓░░░▓
+        0x0E, //  ▓▓▓▓░░░▓
+        0xEE, //  ░░░▓░░░▓
+        0xEE, //  ░░░▓░░░▓
+        0xEE, //  ░░░▓░░░▓
+    };
+    // Magic: "pwww\awww"[i%8]*2
+
     constexpr uint8_t brickAged[] PROGMEM {
         8, 8, //  8x8 px image
         0xF0, //  ░░░░▓▓▓▓
@@ -87,18 +87,57 @@ namespace patterns {
     };
     // Magic: "prw'\a'wr"[i%8]*2
 
+    constexpr uint8_t brickShaded[] PROGMEM {
+        8, 8, //  8x8 px image
+        0xA0, //  ░▓░▓▓▓▓▓
+        0x6E, //  ▓░░▓░░░▓
+        0xAA, //  ░▓░▓░▓░▓
+        0x66, //  ▓░░▓▓░░▓
+        0x0A, //  ▓▓▓▓░▓░▓
+        0xE6, //  ░░░▓▓░░▓
+        0xAA, //  ░▓░▓░▓░▓
+        0x66, //  ▓░░▓▓░░▓
+    };
+    // Magic: "P7U3\5sU3"[i%8]*2
+
+    constexpr uint8_t brickRelief[] PROGMEM {
+        8, 8, //  8x8 px image
+        0x60, //  ▓░░▓▓▓▓▓
+        0x6E, //  ▓░░▓░░░▓
+        0x66, //  ▓░░▓▓░░▓
+        0x26, //  ▓▓░▓▓░░▓
+        0x06, //  ▓▓▓▓▓░░▓
+        0xE6, //  ░░░▓▓░░▓
+        0x66, //  ▓░░▓▓░░▓
+        0x62, //  ▓░░▓▓▓░▓
+    };
+    // Magic: "`nf&\6\346fb"[i%8]
+
     constexpr uint8_t brickSparse[] PROGMEM {
         8, 8, //  8x8 px image
-        0xC0, //  ░░▓▓▓▓▓▓
-        0xCC, //  ░░▓▓░░▓▓
-        0xCC, //  ░░▓▓░░▓▓
-        0x0C, //  ▓▓▓▓░░▓▓
-        0x0C, //  ▓▓▓▓░░▓▓
-        0xCC, //  ░░▓▓░░▓▓
-        0xCC, //  ░░▓▓░░▓▓
-        0xC0, //  ░░▓▓▓▓▓▓
+        0x60, //  ▓░░▓▓▓▓▓
+        0x66, //  ▓░░▓▓░░▓
+        0x66, //  ▓░░▓▓░░▓
+        0x06, //  ▓▓▓▓▓░░▓
+        0x06, //  ▓▓▓▓▓░░▓
+        0x66, //  ▓░░▓▓░░▓
+        0x66, //  ▓░░▓▓░░▓
+        0x60, //  ▓░░▓▓▓▓▓
     };
-    // Magic: "`ff\6\6ff`"[i%8]*2
+    // Magic: "`ff\6\6ff`"[i%8]
+
+    constexpr uint8_t brickSparseShaded[] PROGMEM {
+        8, 8, //  8x8 px image
+        0x20, //  ▓▓░▓▓▓▓▓
+        0x66, //  ▓░░▓▓░░▓
+        0x22, //  ▓▓░▓▓▓░▓
+        0x06, //  ▓▓▓▓▓░░▓
+        0x02, //  ▓▓▓▓▓▓░▓
+        0x66, //  ▓░░▓▓░░▓
+        0x22, //  ▓▓░▓▓▓░▓
+        0x60, //  ▓░░▓▓▓▓▓
+    };
+    // Magic: 64^"`&bFB&b "[i%8]
 
     constexpr uint8_t brickHighlights[] PROGMEM {
         8, 8, //  8x8 px image
@@ -112,6 +151,19 @@ namespace patterns {
         0x22, //  ▓▓░▓▓▓░▓
     };
     // Magic: 88^"xvzzZ\272zz"[i%8]
+
+    constexpr uint8_t mortar[] PROGMEM {
+        8, 8, //  8x8 px image
+        0x1B, //  ▓▓▓░░▓░░
+        0x11, //  ▓▓▓░▓▓▓░
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0x11, //  ▓▓▓░▓▓▓░
+        0xB1, //  ░▓░░▓▓▓░
+        0x11, //  ▓▓▓░▓▓▓░
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0x11, //  ▓▓▓░▓▓▓░
+    };
+    // Magic: 65^"ZPAP\360PAP"[i%8]
 
     constexpr uint8_t mortarLight[] PROGMEM {
         8, 8, //  8x8 px image
@@ -349,6 +401,19 @@ namespace patterns {
     };
     // Magic: "\1|BBBB|\1"[i%8]
 
+    constexpr uint8_t planks[] PROGMEM {
+        8, 8, //  8x8 px image
+        0xA8, //  ░▓░▓░▓▓▓
+        0xAA, //  ░▓░▓░▓░▓
+        0x2A, //  ▓▓░▓░▓░▓
+        0xAA, //  ░▓░▓░▓░▓
+        0xAA, //  ░▓░▓░▓░▓
+        0xA2, //  ░▓░▓▓▓░▓
+        0xAA, //  ░▓░▓░▓░▓
+        0x8A, //  ░▓▓▓░▓░▓
+    };
+    // Magic: ~"WU\325UU]Uu"[i%8]
+
     constexpr uint8_t picket[] PROGMEM {
         8, 8, //  8x8 px image
         0x48, //  ▓░▓▓░▓▓▓
@@ -362,24 +427,39 @@ namespace patterns {
     };
     // Magic: "H\376\374H"[i%4]
 
+    constexpr uint8_t house[] PROGMEM {
+        8, 8, //  8x8 px image
+        0x08, //  ▓▓▓▓░▓▓▓
+        0x74, //  ▓░░░▓░▓▓
+        0x7A, //  ▓░░░░▓░▓
+        0x1D, //  ▓▓▓░░░▓░
+        0x7A, //  ▓░░░░▓░▓
+        0x74, //  ▓░░░▓░▓▓
+        0x08, //  ▓▓▓▓░▓▓▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+    };
+    // Magic: "\btz\35zt\b"[i%8]
+
+    constexpr uint8_t houseMini[] PROGMEM {
+        8, 8, //  8x8 px image
+        0x66, //  ▓░░▓▓░░▓
+        0x77, //  ▓░░░▓░░░
+        0x66, //  ▓░░▓▓░░▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0x66, //  ▓░░▓▓░░▓
+        0x77, //  ▓░░░▓░░░
+        0x66, //  ▓░░▓▓░░▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+    };
+    // Magic: "fwf"[i%4]
+    // GAMBY: 0x6760
+
 }
 
 
 
 #if 0
 namespace patternsHorizontal {
-
-    constexpr uint8_t brick[] PROGMEM {
-        8, 8, //  8x8 px image
-        0x00, //  ▓▓▓▓▓▓▓▓
-        0x7F, //  ▓░░░░░░░
-        0x7F, //  ▓░░░░░░░
-        0x7F, //  ▓░░░░░░░
-        0x00, //  ▓▓▓▓▓▓▓▓
-        0xF7, //  ░░░░▓░░░
-        0xF7, //  ░░░░▓░░░
-        0xF7, //  ░░░░▓░░░
-    };
 
     constexpr uint8_t brickDense[] PROGMEM {
         8, 8, //  8x8 px image
@@ -417,6 +497,18 @@ namespace patternsHorizontal {
         0xF7, //  ░░░░▓░░░
     };
 
+    constexpr uint8_t brick[] PROGMEM {
+        8, 8, //  8x8 px image
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0x7F, //  ▓░░░░░░░
+        0x7F, //  ▓░░░░░░░
+        0x7F, //  ▓░░░░░░░
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0xF7, //  ░░░░▓░░░
+        0xF7, //  ░░░░▓░░░
+        0xF7, //  ░░░░▓░░░
+    };
+
     constexpr uint8_t brickAged[] PROGMEM {
         8, 8, //  8x8 px image
         0x00, //  ▓▓▓▓▓▓▓▓
@@ -441,16 +533,52 @@ namespace patternsHorizontal {
         0xE3, //  ░░░▓▓▓░░
     };
 
+    constexpr uint8_t brickShaded[] PROGMEM {
+        8, 8, //  8x8 px image
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0x7F, //  ▓░░░░░░░
+        0x55, //  ▓░▓░▓░▓░
+        0x6A, //  ▓░░▓░▓░▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0xF7, //  ░░░░▓░░░
+        0x55, //  ▓░▓░▓░▓░
+        0xA6, //  ░▓░▓▓░░▓
+    };
+
+    constexpr uint8_t brickRelief[] PROGMEM {
+        8, 8, //  8x8 px image
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0x7F, //  ▓░░░░░░░
+        0x7E, //  ▓░░░░░░▓
+        0x40, //  ▓░▓▓▓▓▓▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0xF7, //  ░░░░▓░░░
+        0xE7, //  ░░░▓▓░░░
+        0x04, //  ▓▓▓▓▓░▓▓
+    };
+
     constexpr uint8_t brickSparse[] PROGMEM {
         8, 8, //  8x8 px image
         0x00, //  ▓▓▓▓▓▓▓▓
-        0x00, //  ▓▓▓▓▓▓▓▓
         0x7E, //  ▓░░░░░░▓
         0x7E, //  ▓░░░░░░▓
         0x00, //  ▓▓▓▓▓▓▓▓
         0x00, //  ▓▓▓▓▓▓▓▓
         0xE7, //  ░░░▓▓░░░
         0xE7, //  ░░░▓▓░░░
+        0x00, //  ▓▓▓▓▓▓▓▓
+    };
+
+    constexpr uint8_t brickSparseShaded[] PROGMEM {
+        8, 8, //  8x8 px image
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0x7E, //  ▓░░░░░░▓
+        0x54, //  ▓░▓░▓░▓▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0xE7, //  ░░░▓▓░░░
+        0x45, //  ▓░▓▓▓░▓░
+        0x00, //  ▓▓▓▓▓▓▓▓
     };
 
     constexpr uint8_t brickHighlights[] PROGMEM {
@@ -463,6 +591,18 @@ namespace patternsHorizontal {
         0xF7, //  ░░░░▓░░░
         0x04, //  ▓▓▓▓▓░▓▓
         0x04, //  ▓▓▓▓▓░▓▓
+    };
+
+    constexpr uint8_t mortar[] PROGMEM {
+        8, 8, //  8x8 px image
+        0xDD, //  ░░▓░░░▓░
+        0x80, //  ░▓▓▓▓▓▓▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0x80, //  ░▓▓▓▓▓▓▓
+        0xDD, //  ░░▓░░░▓░
+        0x08, //  ▓▓▓▓░▓▓▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0x08, //  ▓▓▓▓░▓▓▓
     };
 
     constexpr uint8_t mortarLight[] PROGMEM {
@@ -484,7 +624,7 @@ namespace patternsHorizontal {
         0x00, //  ▓▓▓▓▓▓▓▓
         0x80, //  ░▓▓▓▓▓▓▓
         0x65, //  ▓░░▓▓░▓░
-        0x00, //  ▓▓▓▓▓▓▓▓
+        0x08, //  ▓▓▓▓░▓▓▓
         0x00, //  ▓▓▓▓▓▓▓▓
         0x08, //  ▓▓▓▓░▓▓▓
     };
@@ -681,6 +821,18 @@ namespace patternsHorizontal {
         0x00, //  ▓▓▓▓▓▓▓▓
     };
 
+    constexpr uint8_t planks[] PROGMEM {
+        8, 8, //  8x8 px image
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0x7F, //  ▓░░░░░░░
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0xFB, //  ░░░░░▓░░
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0xFE, //  ░░░░░░░▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0xDF, //  ░░▓░░░░░
+    };
+
     constexpr uint8_t picket[] PROGMEM {
         8, 8, //  8x8 px image
         0x00, //  ▓▓▓▓▓▓▓▓
@@ -691,6 +843,30 @@ namespace patternsHorizontal {
         0x66, //  ▓░░▓▓░░▓
         0xFF, //  ░░░░░░░░
         0x66, //  ▓░░▓▓░░▓
+    };
+
+    constexpr uint8_t house[] PROGMEM {
+        8, 8, //  8x8 px image
+        0x10, //  ▓▓▓░▓▓▓▓
+        0x28, //  ▓▓░▓░▓▓▓
+        0x54, //  ▓░▓░▓░▓▓
+        0xBA, //  ░▓░░░▓░▓
+        0x7C, //  ▓░░░░░▓▓
+        0x6C, //  ▓░░▓░░▓▓
+        0x6C, //  ▓░░▓░░▓▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+    };
+
+    constexpr uint8_t houseMini[] PROGMEM {
+        8, 8, //  8x8 px image
+        0x44, //  ▓░▓▓▓░▓▓
+        0xEE, //  ░░░▓░░░▓
+        0xEE, //  ░░░▓░░░▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0x44, //  ▓░▓▓▓░▓▓
+        0xEE, //  ░░░▓░░░▓
+        0xEE, //  ░░░▓░░░▓
+        0x00, //  ▓▓▓▓▓▓▓▓
     };
 
 }
