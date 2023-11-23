@@ -7,9 +7,9 @@
 # - Exiftool, ImageMagick and OptiPNG executables are available
 
 # - Optional: Enabling this function uses PICO-8 to produce a sprite sheet
-pico8() {
-  '/Applications/PICO-8.app/Contents/MacOS/pico8' "$@"
-}
+# pico8() {
+#   '/Applications/PICO-8.app/Contents/MacOS/pico8' "$@"
+# }
 
 
 
@@ -105,7 +105,8 @@ while (( "$#" )); do
   # Create the Portable Bit Map (PBM) file
   pbm_file="${img_root}/pbm/${img_name}.pbm"
   magick "$1" -depth 1 -compress None "${pbm_file}"
-  # TODO: Generate unique hash for pattern, to check against preview
+  # Generate SHA256 hash for the pattern
+  pattern_hash="$(shasum --algorithm 256 --binary "${pbm_file}" | head -c 64)"
 
   # Create tweaked png image for Playdate Pulp
   pulp_file="${img_root}/${img_name}-table-8-8.png" # Required name format
@@ -126,11 +127,24 @@ while (( "$#" )); do
   printf '\n# %s' "${copyright}" "${license}" >> "${pbm_file}" # Extra pbm metadata appended to the plain text file
 
   # Create the preview 'art' image
-  # TODO: Check for an exisiting file and only replace if necessary
   preview_file="${img_root%/*}/docs/art/${img_name}.png"
-  magick -size 32x16 tile:"$1" \
-    -define png:include-chunk=none \
-    -sample 200% "${preview_file}" # Tile the image 4x2 then scale up 2x
+  preview_hash=""
+  # Check for an exisiting preview image and only replace if necessary,
+  # as it may have been optimized with external tools
+  if [ -f "${preview_file}" ]; then
+    # Extract 8x8px pattern and generate SHA256
+    preview_hash="$(magick "${preview_file}" -sample 50% -crop 8x8+0+0 \
+      +repage -depth 1 -compress None PBM:- \
+      | shasum --algorithm 256 --binary \
+      | head -c 64)"
+  fi
+  if [ "${pattern_hash}" != "${preview_hash}" ]; then
+    # Create the image by tiling the pattern 4x2 and then scale up 2x
+    magick -size 32x16 tile:"$1" \
+      -define png:include-chunk=none \
+      -sample 200% "${preview_file}"
+    optipng -q -o6 "${preview_file}"
+  fi
 
   # Bundle the Pulp image into the group's zip archive
   pulp_zip="${img_root%}/${img_group}.playdate-pulp.zip"
