@@ -2,7 +2,7 @@
 # This work is dedicated to the Public Domain by ACED, licensed under CC0
 # https://creativecommons.org/publicdomain/zero/1.0/
 
-squareMini = bytearray([
+squareMicro = bytearray([
     # BITMAP: width: 8, height: 8, [0,102,102,0,0,102,102,0]
     0x00, #  ▓▓▓▓▓▓▓▓
     0x66, #  ▓░░▓▓░░▓
@@ -13,9 +13,9 @@ squareMini = bytearray([
     0x66, #  ▓░░▓▓░░▓
     0x00, #  ▓▓▓▓▓▓▓▓
 ])
-# squareMiniSprite = thumby.Sprite(8, 8, squareMini)
+# squareMicroSprite = thumby.Sprite(8, 8, squareMicro)
 
-billetMini = bytearray([
+billetMiniVertical = bytearray([
     # BITMAP: width: 8, height: 8, [0,119,119,0,0,119,119,0]
     0x00, #  ▓▓▓▓▓▓▓▓
     0x77, #  ▓░░░▓░░░
@@ -26,9 +26,9 @@ billetMini = bytearray([
     0x77, #  ▓░░░▓░░░
     0x00, #  ▓▓▓▓▓▓▓▓
 ])
-# billetMiniSprite = thumby.Sprite(8, 8, billetMini)
+# billetMiniVerticalSprite = thumby.Sprite(8, 8, billetMiniVertical)
 
-box = bytearray([
+square = bytearray([
     # BITMAP: width: 8, height: 8, [0,0,60,36,36,60,0,0]
     0x00, #  ▓▓▓▓▓▓▓▓
     0x00, #  ▓▓▓▓▓▓▓▓
@@ -39,9 +39,9 @@ box = bytearray([
     0x00, #  ▓▓▓▓▓▓▓▓
     0x00, #  ▓▓▓▓▓▓▓▓
 ])
-# boxSprite = thumby.Sprite(8, 8, box)
+# squareSprite = thumby.Sprite(8, 8, square)
 
-boxMedium = bytearray([
+squareLargeMedium = bytearray([
     # BITMAP: width: 8, height: 8, [0,126,126,102,102,126,126,0]
     0x00, #  ▓▓▓▓▓▓▓▓
     0x7E, #  ▓░░░░░░▓
@@ -52,7 +52,7 @@ boxMedium = bytearray([
     0x7E, #  ▓░░░░░░▓
     0x00, #  ▓▓▓▓▓▓▓▓
 ])
-# boxMediumSprite = thumby.Sprite(8, 8, boxMedium)
+# squareLargeMediumSprite = thumby.Sprite(8, 8, squareLargeMedium)
 
 waffle = bytearray([
     # BITMAP: width: 8, height: 8, [255,1,1,121,121,121,121,1]

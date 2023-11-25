@@ -9,7 +9,7 @@
 
 namespace patterns {
 
-    constexpr uint8_t squareMini[] PROGMEM {
+    constexpr uint8_t squareMicro[] PROGMEM {
         8, 8, //  8x8 px image
         0x00, //  ▓▓▓▓▓▓▓▓
         0x66, //  ▓░░▓▓░░▓
@@ -23,7 +23,7 @@ namespace patterns {
     // Magic: "\0ff"[i%4]
     // GAMBY: 0x0660
 
-    constexpr uint8_t billetMini[] PROGMEM {
+    constexpr uint8_t billetMiniVertical[] PROGMEM {
         8, 8, //  8x8 px image
         0x00, //  ▓▓▓▓▓▓▓▓
         0x77, //  ▓░░░▓░░░
@@ -37,7 +37,7 @@ namespace patterns {
     // Magic: "\0ww"[i%4]
     // GAMBY: 0x0770
 
-    constexpr uint8_t box[] PROGMEM {
+    constexpr uint8_t square[] PROGMEM {
         8, 8, //  8x8 px image
         0x00, //  ▓▓▓▓▓▓▓▓
         0x00, //  ▓▓▓▓▓▓▓▓
@@ -50,7 +50,7 @@ namespace patterns {
     };
     // Magic: "@@OIIO@"[i%8]*4
 
-    constexpr uint8_t boxMedium[] PROGMEM {
+    constexpr uint8_t squareLargeMedium[] PROGMEM {
         8, 8, //  8x8 px image
         0x00, //  ▓▓▓▓▓▓▓▓
         0x7E, //  ▓░░░░░░▓
@@ -148,7 +148,7 @@ namespace patterns {
 #if 0
 namespace patternsHorizontal {
 
-    constexpr uint8_t squareMini[] PROGMEM {
+    constexpr uint8_t squareMicro[] PROGMEM {
         8, 8, //  8x8 px image
         0x00, //  ▓▓▓▓▓▓▓▓
         0x66, //  ▓░░▓▓░░▓
@@ -160,7 +160,7 @@ namespace patternsHorizontal {
         0x00, //  ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t billetMini[] PROGMEM {
+    constexpr uint8_t billetMiniVertical[] PROGMEM {
         8, 8, //  8x8 px image
         0x66, //  ▓░░▓▓░░▓
         0x66, //  ▓░░▓▓░░▓
@@ -172,7 +172,7 @@ namespace patternsHorizontal {
         0x00, //  ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t box[] PROGMEM {
+    constexpr uint8_t square[] PROGMEM {
         8, 8, //  8x8 px image
         0x00, //  ▓▓▓▓▓▓▓▓
         0x00, //  ▓▓▓▓▓▓▓▓
@@ -184,7 +184,7 @@ namespace patternsHorizontal {
         0x00, //  ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t boxMedium[] PROGMEM {
+    constexpr uint8_t squareLargeMedium[] PROGMEM {
         8, 8, //  8x8 px image
         0x00, //  ▓▓▓▓▓▓▓▓
         0x7E, //  ▓░░░░░░▓

@@ -4,7 +4,7 @@
 --setup custom font as 8x8px
 poke(0x5600,8,8,8,0,0)
 
---97 'a' squaremini
+--97 'a' squaremicro
 poke(0x5600+(8* 97),
    0, -- ▒▒▒▒▒▒▒▒
  102, -- ▒██▒▒██▒
@@ -19,7 +19,7 @@ poke(0x5600+(8* 97),
 --magic: ?"⁶rw¹シ⁶.".."\0ff\0\0ff\0"
 --fillp(63903)
 
---98 'b' billetmini
+--98 'b' billetminivertical
 poke(0x5600+(8* 98),
  102, -- ▒██▒▒██▒
  102, -- ▒██▒▒██▒
@@ -34,7 +34,7 @@ poke(0x5600+(8* 98),
 --magic: ?"⁶rw¹シ⁶.".."fff\0fff\0"
 --fillp(39327)
 
---99 'c' box
+--99 'c' square
 poke(0x5600+(8* 99),
    0, -- ▒▒▒▒▒▒▒▒
    0, -- ▒▒▒▒▒▒▒▒
@@ -48,7 +48,7 @@ poke(0x5600+(8* 99),
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉc"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."\0\0<$$<\0\0"
 
---100 'd' boxmedium
+--100 'd' squarelargemedium
 poke(0x5600+(8* 100),
    0, -- ▒▒▒▒▒▒▒▒
  126, -- ▒██████▒

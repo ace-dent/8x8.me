@@ -11,7 +11,7 @@ TIL 1
 01100110
 01100110
 00000000
-NAME squaremini
+NAME squaremicro
 
 TIL 2
 01100110
@@ -22,7 +22,7 @@ TIL 2
 01100110
 01100110
 00000000
-NAME billetmini
+NAME billetminivertical
 
 TIL 3
 00000000
@@ -33,7 +33,7 @@ TIL 3
 00111100
 00000000
 00000000
-NAME box
+NAME square
 
 TIL 4
 00000000
@@ -44,7 +44,7 @@ TIL 4
 01111110
 01111110
 00000000
-NAME boxmedium
+NAME squarelargemedium
 
 TIL 5
 11111111

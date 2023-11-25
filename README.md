@@ -56,7 +56,7 @@ Repeating tile fill patterns
 </p>
 <p>
   <a href="/08-Rectilinear/README.md#gallery">
-    <img width="64" height="32" align="left" src="/docs/art/Box.png" alt=""> 08 – Rectilinear
+    <img width="64" height="32" align="left" src="/docs/art/Square.png" alt=""> 08 – Rectilinear
   </a>
 </p>
 <p>

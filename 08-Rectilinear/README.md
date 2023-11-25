@@ -4,12 +4,24 @@ Rectilinear patterns.
 
 ## Gallery
 
-| Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
-| :------ | :-----: | :----: | :-----: | :---: | :----: | :----: |
-| SquareMini <sup>p</sup>| <img width="64" height="32" src="../docs/art/SquareMini.png" alt=""> | [png](png/SquareMini.png) | [cpp](Rectilinear.h#L12-L24) | [txt](Rectilinear.bitsy.txt#L5-L14) | [p𝟪](rectilinear.p8.lua#L7-L20) | [py](Rectilinear.thumby.py#L5-L16) |
-| BilletMini <sup>p</sup>| <img width="64" height="32" src="../docs/art/BilletMini.png" alt=""> | [png](png/BilletMini.png) | [cpp](Rectilinear.h#L26-L38) | [txt](Rectilinear.bitsy.txt#L16-L25) | [p𝟪](rectilinear.p8.lua#L22-L35) | [py](Rectilinear.thumby.py#L18-L29) |
-| Box | <img width="64" height="32" src="../docs/art/Box.png" alt=""> | [png](png/Box.png) | [cpp](Rectilinear.h#L40-L51) | [txt](Rectilinear.bitsy.txt#L27-L36) | [p𝟪](rectilinear.p8.lua#L37-L49) | [py](Rectilinear.thumby.py#L31-L42) |
-| BoxMedium | <img width="64" height="32" src="../docs/art/BoxMedium.png" alt=""> | [png](png/BoxMedium.png) | [cpp](Rectilinear.h#L53-L64) | [txt](Rectilinear.bitsy.txt#L38-L47) | [p𝟪](rectilinear.p8.lua#L51-L63) | [py](Rectilinear.thumby.py#L44-L55) |
+| Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby | UDG |
+| :------ | :-----: | :----: | :-----: | :---: | :----: | :----: | :-: |
+| SquareMicro <sup>p</sup>| <img width="64" height="32" src="../docs/art/SquareMicro.png" alt=""> | [png](png/SquareMicro.png) | [cpp](Rectilinear.h#L12-L24) | [txt](Rectilinear.bitsy.txt#L5-L14) | [p𝟪](rectilinear.p8.lua#L7-L20) | [py](Rectilinear.thumby.py#L5-L16) |
+| BilletMiniVertical <sup>p</sup>| <img width="64" height="32" src="../docs/art/BilletMiniVertical.png" alt=""> | [png](png/BilletMiniVertical.png) | [cpp](Rectilinear.h#L26-L38) | [txt](Rectilinear.bitsy.txt#L16-L25) | [p𝟪](rectilinear.p8.lua#L22-L35) | [py](Rectilinear.thumby.py#L18-L29) |
+
+<br>
+
+
+| Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby | UDG |
+| :------ | :-----: | :----: | :-----: | :---: | :----: | :----: | :-: |
+| Square | <img width="64" height="32" src="../docs/art/Square.png" alt=""> | [png](png/Square.png) | [cpp](Rectilinear.h#L40-L51) | [txt](Rectilinear.bitsy.txt#L27-L36) | [p𝟪](rectilinear.p8.lua#L37-L49) | [py](Rectilinear.thumby.py#L31-L42) |
+| SquareLargeMedium | <img width="64" height="32" src="../docs/art/SquareLargeMedium.png" alt=""> | [png](png/SquareLargeMedium.png) | [cpp](Rectilinear.h#L53-L64) | [txt](Rectilinear.bitsy.txt#L38-L47) | [p𝟪](rectilinear.p8.lua#L51-L63) | [py](Rectilinear.thumby.py#L44-L55) |
+
+<br>
+
+
+| Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby | UDG |
+| :------ | :-----: | :----: | :-----: | :---: | :----: | :----: | :-: |
 | Waffle | <img width="64" height="32" src="../docs/art/Waffle.png" alt=""> | [png](png/Waffle.png) | [cpp](Rectilinear.h#L66-L77) | [txt](Rectilinear.bitsy.txt#L49-L58) | [p𝟪](rectilinear.p8.lua#L65-L77) | [py](Rectilinear.thumby.py#L57-L68) |
 | Tile | <img width="64" height="32" src="../docs/art/Tile.png" alt=""> | [png](png/Tile.png) | [cpp](Rectilinear.h#L79-L90) | [txt](Rectilinear.bitsy.txt#L60-L69) | [p𝟪](rectilinear.p8.lua#L79-L91) | [py](Rectilinear.thumby.py#L70-L81) |
 | TileShaded | <img width="64" height="32" src="../docs/art/TileShaded.png" alt=""> | [png](png/TileShaded.png) | [cpp](Rectilinear.h#L92-L103) | [txt](Rectilinear.bitsy.txt#L71-L80) | [p𝟪](rectilinear.p8.lua#L93-L105) | [py](Rectilinear.thumby.py#L83-L94) |
