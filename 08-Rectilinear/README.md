@@ -7,6 +7,14 @@ Rectilinear patterns.
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby | UDG |
 | :------ | :-----: | :----: | :-----: | :---: | :----: | :----: | :-: |
 | SquareMicro <sup>p</sup>| <img width="64" height="32" src="../docs/art/SquareMicro.png" alt=""> | [png](png/SquareMicro.png) | [cpp](Rectilinear.h#L12-L24) | [txt](Rectilinear.bitsy.txt#L5-L14) | [p𝟪](rectilinear.p8.lua#L7-L20) | [py](Rectilinear.thumby.py#L5-L16) |
+| SquareMicroOffset | <img width="64" height="32" src="../docs/art/SquareMicroOffset.png" alt=""> | [png](png/SquareMicroOffset.png) | | | | | |
+| SquareMiniHighlight | <img width="64" height="32" src="../docs/art/SquareMiniHighlight.png" alt=""> | [png](png/SquareMiniHighlight.png) | | | | | |
+| SquareMini | <img width="64" height="32" src="../docs/art/SquareMini.png" alt=""> | [png](png/SquareMini.png) | | | | | |
+| SquareMiniOffset | <img width="64" height="32" src="../docs/art/SquareMiniOffset.png" alt=""> | [png](png/SquareMiniOffset.png) | | | | | |
+| SquareMiniSolid | <img width="64" height="32" src="../docs/art/SquareMiniSolid.png" alt=""> | [png](png/SquareMiniSolid.png) | | | | | |
+| SquareMiniOffsetSolid | <img width="64" height="32" src="../docs/art/SquareMiniOffsetSolid.png" alt=""> | [png](png/SquareMiniOffsetSolid.png) | | | | | |
+| BilletMiniHighlight | <img width="64" height="32" src="../docs/art/BilletMiniHighlight.png" alt=""> | [png](png/BilletMiniHighlight.png) | | | | | |
+| BilletMini | <img width="64" height="32" src="../docs/art/BilletMini.png" alt=""> | [png](png/BilletMini.png) | | | | | |
 | BilletMiniVertical <sup>p</sup>| <img width="64" height="32" src="../docs/art/BilletMiniVertical.png" alt=""> | [png](png/BilletMiniVertical.png) | [cpp](Rectilinear.h#L26-L38) | [txt](Rectilinear.bitsy.txt#L16-L25) | [p𝟪](rectilinear.p8.lua#L22-L35) | [py](Rectilinear.thumby.py#L18-L29) |
 
 <br>
@@ -15,7 +23,16 @@ Rectilinear patterns.
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby | UDG |
 | :------ | :-----: | :----: | :-----: | :---: | :----: | :----: | :-: |
 | Square | <img width="64" height="32" src="../docs/art/Square.png" alt=""> | [png](png/Square.png) | [cpp](Rectilinear.h#L40-L51) | [txt](Rectilinear.bitsy.txt#L27-L36) | [p𝟪](rectilinear.p8.lua#L37-L49) | [py](Rectilinear.thumby.py#L31-L42) |
+| SquareSolid | <img width="64" height="32" src="../docs/art/SquareSolid.png" alt=""> | [png](png/SquareSolid.png) | | | | | |
+| SquareShaded | <img width="64" height="32" src="../docs/art/SquareShaded.png" alt=""> | [png](png/SquareShaded.png) | | | | | |
+| SquareLarge| <img width="64" height="32" src="../docs/art/SquareLarge.png" alt=""> | [png](png/SquareLarge.png) | | | | | |
 | SquareLargeMedium | <img width="64" height="32" src="../docs/art/SquareLargeMedium.png" alt=""> | [png](png/SquareLargeMedium.png) | [cpp](Rectilinear.h#L53-L64) | [txt](Rectilinear.bitsy.txt#L38-L47) | [p𝟪](rectilinear.p8.lua#L51-L63) | [py](Rectilinear.thumby.py#L44-L55) |
+| SquareLargeSolid | <img width="64" height="32" src="../docs/art/SquareLargeSolid.png" alt=""> | [png](png/SquareLargeSolid.png) | | | | | |
+| SquareLargeShaded| <img width="64" height="32" src="../docs/art/SquareLargeShaded.png" alt=""> | [png](png/SquareLargeShaded.png) | | | | | |
+| SquareXL| <img width="64" height="32" src="../docs/art/SquareXL.png" alt=""> | [png](png/SquareXL.png) | | | | | |
+| SquareXLMedium| <img width="64" height="32" src="../docs/art/SquareXLMedium.png" alt=""> | [png](png/SquareXLMedium.png) | | | | | |
+| SquareXLSolid| <img width="64" height="32" src="../docs/art/SquareXLSolid.png" alt=""> | [png](png/SquareXLSolid.png) | | | | | |
+| SquareXLShaded| <img width="64" height="32" src="../docs/art/SquareXLShaded.png" alt=""> | [png](png/SquareXLShaded.png) | | | | | |
 
 <br>
 
