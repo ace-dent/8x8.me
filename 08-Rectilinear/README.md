@@ -39,6 +39,23 @@ Rectilinear patterns.
 
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby | UDG |
 | :------ | :-----: | :----: | :-----: | :---: | :----: | :----: | :-: |
+| Rectangle | <img width="64" height="32" src="../docs/art/Rectangle.png" alt=""> | [png](png/Rectangle.png) | | | | | |
+| RectangleSolid | <img width="64" height="32" src="../docs/art/RectangleSolid.png" alt=""> | [png](png/RectangleSolid.png) | | | | | |
+| RectangleLarge | <img width="64" height="32" src="../docs/art/RectangleLarge.png" alt=""> | [png](png/RectangleLarge.png) | | | | | |
+| RectangleLargeMedium | <img width="64" height="32" src="../docs/art/RectangleLargeMedium.png" alt=""> | [png](png/RectangleLargeMedium.png) | | | | | |
+| RectangleLargeSolid | <img width="64" height="32" src="../docs/art/RectangleLargeSolid.png" alt=""> | [png](png/RectangleLargeSolid.png) | | | | | |
+| Billet | <img width="64" height="32" src="../docs/art/Billet.png" alt=""> | [png](png/Billet.png) | | | | | |
+| BilletSolid | <img width="64" height="32" src="../docs/art/BilletSolid.png" alt=""> | [png](png/BilletSolid.png) | | | | | |
+| BilletShaded | <img width="64" height="32" src="../docs/art/BilletShaded.png" alt=""> | [png](png/BilletShaded.png) | | | | | |
+| BilletVertical | <img width="64" height="32" src="../docs/art/BilletVertical.png" alt=""> | [png](png/BilletVertical.png) | | | | | |
+| BilletVerticalSolid | <img width="64" height="32" src="../docs/art/BilletVerticalSolid.png" alt=""> | [png](png/BilletVerticalSolid.png) | | | | | |
+| BilletVerticalShaded | <img width="64" height="32" src="../docs/art/BilletVerticalShaded.png" alt=""> | [png](png/BilletVerticalShaded.png) | | | | | |
+
+<br>
+
+
+| Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby | UDG |
+| :------ | :-----: | :----: | :-----: | :---: | :----: | :----: | :-: |
 | Waffle | <img width="64" height="32" src="../docs/art/Waffle.png" alt=""> | [png](png/Waffle.png) | [cpp](Rectilinear.h#L66-L77) | [txt](Rectilinear.bitsy.txt#L49-L58) | [p𝟪](rectilinear.p8.lua#L65-L77) | [py](Rectilinear.thumby.py#L57-L68) |
 | Tile | <img width="64" height="32" src="../docs/art/Tile.png" alt=""> | [png](png/Tile.png) | [cpp](Rectilinear.h#L79-L90) | [txt](Rectilinear.bitsy.txt#L60-L69) | [p𝟪](rectilinear.p8.lua#L79-L91) | [py](Rectilinear.thumby.py#L70-L81) |
 | TileShaded | <img width="64" height="32" src="../docs/art/TileShaded.png" alt=""> | [png](png/TileShaded.png) | [cpp](Rectilinear.h#L92-L103) | [txt](Rectilinear.bitsy.txt#L71-L80) | [p𝟪](rectilinear.p8.lua#L93-L105) | [py](Rectilinear.thumby.py#L83-L94) |
