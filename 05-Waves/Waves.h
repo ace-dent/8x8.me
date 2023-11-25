@@ -152,7 +152,7 @@ namespace patterns {
         0x40, //  ▓░▓▓▓▓▓▓
         0x20, //  ▓▓░▓▓▓▓▓
     };
-    // Magic: "\20\b\4\b\20 @ "[i%8]
+    // Magic: "DBABDHPH"[i%8]*4
 
     constexpr uint8_t zigzagMedium[] PROGMEM {
         8, 8, //  8x8 px image
@@ -165,7 +165,7 @@ namespace patterns {
         0xC0, //  ░░▓▓▓▓▓▓
         0x60, //  ▓░░▓▓▓▓▓
     };
-    // Magic: "0\30\f\0300`\300`"[i%8]
+    // Magic: "LFCFLXpX"[i%8]*4
 
     constexpr uint8_t zigzagBold[] PROGMEM {
         8, 8, //  8x8 px image
@@ -178,7 +178,7 @@ namespace patterns {
         0xE0, //  ░░░▓▓▓▓▓
         0x70, //  ▓░░░▓▓▓▓
     };
-    // Magic: "8\34\16\348p\340p"[i%8]
+    // Magic: 81^"iM_Mi!\261!"[i%8]
 
     constexpr uint8_t zigzagBoldShaded[] PROGMEM {
         8, 8, //  8x8 px image
@@ -191,7 +191,7 @@ namespace patterns {
         0xA0, //  ░▓░▓▓▓▓▓
         0x50, //  ▓░▓░▓▓▓▓
     };
-    // Magic: "(\24\n\24(P\240P"[i%8]
+    // Magic: 99^"KwiwK3\3033"[i%8]
 
     constexpr uint8_t zigzagExtraBold[] PROGMEM {
         8, 8, //  8x8 px image
@@ -204,7 +204,7 @@ namespace patterns {
         0xF0, //  ░░░░▓▓▓▓
         0x78, //  ▓░░░░▓▓▓
     };
-    // Magic: "<\36\17\36<x\360x"[i%8]
+    // Magic: 81^"mO^Om)\241)"[i%8]
 
     constexpr uint8_t zigzagPinstripe[] PROGMEM {
         8, 8, //  8x8 px image
@@ -217,7 +217,7 @@ namespace patterns {
         0x90, //  ░▓▓░▓▓▓▓
         0x48, //  ▓░▓▓░▓▓▓
     };
-    // Magic: "$\22\t\22$H\220H"[i%8]
+    // Magic: 96^"DrirD(\360("[i%8]
 
     constexpr uint8_t zigzagSteep[] PROGMEM {
         8, 8, //  8x8 px image
@@ -230,7 +230,7 @@ namespace patterns {
         0x03, //  ▓▓▓▓▓▓░░
         0xC0, //  ░░▓▓▓▓▓▓
     };
-    // Magic: "0\f\3\f0\300\3\300"[i%8]
+    // Magic: 98^"RnanR\242a\242"[i%8]
 
     constexpr uint8_t dentilly[] PROGMEM {
         8, 8, //  8x8 px image
@@ -243,7 +243,7 @@ namespace patterns {
         0x40, //  ▓░▓▓▓▓▓▓
         0x40, //  ▓░▓▓▓▓▓▓
     };
-    // Magic: "@@|\b\20 @@"[i%8]
+    // Magic: "PP_BDHPP"[i%8]*4
 
     constexpr uint8_t dentillyMini[] PROGMEM {
         8, 8, //  8x8 px image
@@ -283,7 +283,7 @@ namespace patterns {
         0x66, //  ▓░░▓▓░░▓
         0x88, //  ░▓▓▓░▓▓▓
     };
-    // Magic: "f\21f\210"[i%4]
+    // Magic: 17+"U\0Uw"[i%4]
     // GAMBY: 0x6168
 
     constexpr uint8_t embattledGrady[] PROGMEM {
@@ -297,7 +297,7 @@ namespace patterns {
         0x70, //  ▓░░░▓▓▓▓
         0x40, //  ▓░▓▓▓▓▓▓
     };
-    // Magic: "p\20\34\4\34\20p@"[i%8]
+    // Magic: 41^"Y95-59Yi"[i%8]
 
     constexpr uint8_t embattled[] PROGMEM {
         8, 8, //  8x8 px image
@@ -377,7 +377,7 @@ namespace patterns {
         0x88, //  ░▓▓▓░▓▓▓
         0x44, //  ▓░▓▓▓░▓▓
     };
-    // Magic: "\"\21\"\21\210D\210D"[i%8]
+    // Magic: 99^"ArAr\353'\353'"[i%8]
 
     constexpr uint8_t riseAndFall[] PROGMEM {
         8, 8, //  8x8 px image
@@ -390,7 +390,7 @@ namespace patterns {
         0x84, //  ░▓▓▓▓░▓▓
         0x40, //  ▓░▓▓▓▓▓▓
     };
-    // Magic: " \22!\2\4H\204@"[i%8]
+    // Magic: 96^"@rAbd(\344 "[i%8]
 
     constexpr uint8_t doubleHelix[] PROGMEM {
         8, 8, //  8x8 px image
