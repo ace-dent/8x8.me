@@ -74,6 +74,14 @@ Round patterns.
 | AnnuletXXXLExtraBold | <img width="64" height="32" src="../docs/art/AnnuletXXXLExtraBold.png" alt=""> | [png](png/AnnuletXXXLExtraBold.png) | [cpp](Round.h#L364-L375) | [txt](Round.bitsy.txt#L302-L311) | [p𝟪](round.p8.lua#L386-L398) | [py](Round.thumby.py#L356-L367) |
 | RoundelXXXL| <img width="64" height="32" src="../docs/art/RoundelXXXL.png" alt=""> | [png](png/RoundelXXXL.png) | [cpp](Round.h#L377-L388) | [txt](Round.bitsy.txt#L313-L322) | [p𝟪](round.p8.lua#L400-L412) | [py](Round.thumby.py#L369-L380) |
 
+<br>
+
+
+| Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
+| :------ | :-----: | :----: | :-----: | :---: | :----: | :----: |
+| TruchetDexter | <img width="64" height="32" src="../docs/art/TruchetDexter.png" alt=""> | [png](png/TruchetDexter.png) | | | | |
+| TruchetSinister | <img width="64" height="32" src="../docs/art/TruchetSinister.png" alt=""> | [png](png/TruchetSinister.png) | | | | |
+
 
 [`⤴`](#gallery)
 
