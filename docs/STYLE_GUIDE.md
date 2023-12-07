@@ -58,42 +58,54 @@ Symbolic of an abstract concept (love) or an iconic representation (anchor) rath
 
 
 ### Terminology
-#### Feature direction or angle
-- Horizontal (often unwritten)
-- Vertical
-- Sinister
-- Dexter
-- Diagonal.
-- Steep
-- Shallow
 
-#### Feature size
-- Small
-- Normal (unwritten)
-- Large
-- XL
-- XXL
-- XXXL
+Naming taxonomy is important for maintaining consistency and ensuring uniqueness of patterns. Terms, including unique labels, may be added in order of precedence. Terms are only included when necessary, as short names are preferred.
 
-#### Feature spacing
-- Dense
-- Normal (unwritten)
-- Sparse
+#### 1. Feature direction or angle
+- `Horizontal` (Normally unwritten)
+- `Vertical`
+- `Sinister`
+- `Dexter`
+- `Diagonal`
+May be further qualified with:
+- `Steep`
+- `Shallow`
 
-#### Fill variations
-- Highlight - top-left edges in highlight
-- Outline (unwritten)
-- Solid (normally unwritten, unless an Outline variation exists)
-- Relief - bottom-right edges in shadow
-- Shaded - alternate pixels lit to create a dithered tone
+#### 2. Feature spacing / distribution
+- `Dense`
+- `Normal` – (Unwritten)
+- `Sparse`
+- `Co` – Feature is corner coordinated, at an interstitial position.
 
-#### Line Weight
-- Light <1px - not every pixel may be lit
-- Normal (unwritten) 1px
-- Medium 2px
-- Bold 3px
-- ExtraBold 4px
-- UltraBold 5px
+#### 3. Feature size / scale
+- `Micro` – Smallest possible representation of a design.
+- `Mini` – Suggests the complete design fits within 4x4px.
+- `Small`
+- `Normal` – (Unwritten)
+- `Large`
+- `XL`
+- `XXL`
+- `XXXL`
+
+#### 4. Line / feature weight
+- `Light` – <1px alternating pixels lit.
+- `Normal`  – 1px (unwritten).
+- `Medium` – 2px
+- `Bold` – 3px
+- `ExtraBold` – 4px
+- `UltraBold` – 5px
+
+#### 5. Fill style
+- `Highlight` – Unfilled, top-left edges highlighted.
+- `Outline` – (Unwritten)
+- `Solid` – (Normally unwritten, unless an Outline variation exists).
+- `Relief` – Bottom-right edges in shadow.
+- `Shaded` – Alternating pixels lit to create a dithered tone.
+
+#### 6. Variations
+- `Alt` – alternative version.
+- `Offset` – Repeating features are offset within the design.
+
 
 <hr>
 

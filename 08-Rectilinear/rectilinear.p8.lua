@@ -19,7 +19,7 @@ poke(0x5600+(8* 97),
 --magic: ?"⁶rw¹シ⁶.".."\0ff\0\0ff\0"
 --fillp(63903)
 
---98 'b' billetminivertical
+--98 'b' billetverticalmini
 poke(0x5600+(8* 98),
  102, -- ▒██▒▒██▒
  102, -- ▒██▒▒██▒

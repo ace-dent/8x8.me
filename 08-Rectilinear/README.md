@@ -12,10 +12,10 @@ Rectilinear patterns.
 | SquareMini | <img width="64" height="32" src="../docs/art/SquareMini.png" alt=""> | [png](png/SquareMini.png) | | | | | |
 | SquareMiniOffset | <img width="64" height="32" src="../docs/art/SquareMiniOffset.png" alt=""> | [png](png/SquareMiniOffset.png) | | | | | |
 | SquareMiniSolid | <img width="64" height="32" src="../docs/art/SquareMiniSolid.png" alt=""> | [png](png/SquareMiniSolid.png) | | | | | |
-| SquareMiniOffsetSolid | <img width="64" height="32" src="../docs/art/SquareMiniOffsetSolid.png" alt=""> | [png](png/SquareMiniOffsetSolid.png) | | | | | |
+| SquareMiniSolidOffset | <img width="64" height="32" src="../docs/art/SquareMiniSolidOffset.png" alt=""> | [png](png/SquareMiniSolidOffset.png) | | | | | |
 | BilletMiniHighlight | <img width="64" height="32" src="../docs/art/BilletMiniHighlight.png" alt=""> | [png](png/BilletMiniHighlight.png) | | | | | |
 | BilletMini | <img width="64" height="32" src="../docs/art/BilletMini.png" alt=""> | [png](png/BilletMini.png) | | | | | |
-| BilletMiniVertical <sup>p</sup>| <img width="64" height="32" src="../docs/art/BilletMiniVertical.png" alt=""> | [png](png/BilletMiniVertical.png) | [cpp](Rectilinear.h#L26-L38) | [txt](Rectilinear.bitsy.txt#L16-L25) | [p𝟪](rectilinear.p8.lua#L22-L35) | [py](Rectilinear.thumby.py#L18-L29) |
+| BilletVerticalMini <sup>p</sup>| <img width="64" height="32" src="../docs/art/BilletVerticalMini.png" alt=""> | [png](png/BilletVerticalMini.png) | [cpp](Rectilinear.h#L26-L38) | [txt](Rectilinear.bitsy.txt#L16-L25) | [p𝟪](rectilinear.p8.lua#L22-L35) | [py](Rectilinear.thumby.py#L18-L29) |
 
 <br>
 

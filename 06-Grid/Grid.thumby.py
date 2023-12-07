@@ -2,7 +2,7 @@
 # This work is dedicated to the Public Domain by ACED, licensed under CC0
 # https://creativecommons.org/publicdomain/zero/1.0/
 
-gridDots = bytearray([
+gridLight = bytearray([
     # BITMAP: width: 8, height: 8, [85,0,1,0,1,0,1,0]
     0x55, #  ▓░▓░▓░▓░
     0x00, #  ▓▓▓▓▓▓▓▓
@@ -13,9 +13,9 @@ gridDots = bytearray([
     0x01, #  ▓▓▓▓▓▓▓░
     0x00, #  ▓▓▓▓▓▓▓▓
 ])
-# gridDotsSprite = thumby.Sprite(8, 8, gridDots)
+# gridLightSprite = thumby.Sprite(8, 8, gridLight)
 
-gridDotsCentre = bytearray([
+gridLightDot = bytearray([
     # BITMAP: width: 8, height: 8, [85,0,1,0,17,0,1,0]
     0x55, #  ▓░▓░▓░▓░
     0x00, #  ▓▓▓▓▓▓▓▓
@@ -26,7 +26,7 @@ gridDotsCentre = bytearray([
     0x01, #  ▓▓▓▓▓▓▓░
     0x00, #  ▓▓▓▓▓▓▓▓
 ])
-# gridDotsCentreSprite = thumby.Sprite(8, 8, gridDotsCentre)
+# gridLightDotSprite = thumby.Sprite(8, 8, gridLightDot)
 
 grid = bytearray([
     # BITMAP: width: 8, height: 8, [255,1,1,1,1,1,1,1]
@@ -67,7 +67,7 @@ gridBold = bytearray([
 ])
 # gridBoldSprite = thumby.Sprite(8, 8, gridBold)
 
-gridMiniDots = bytearray([
+gridMiniLight = bytearray([
     # BITMAP: width: 8, height: 8, [85,0,17,0,85,0,17,0]
     0x55, #  ▓░▓░▓░▓░
     0x00, #  ▓▓▓▓▓▓▓▓
@@ -78,7 +78,7 @@ gridMiniDots = bytearray([
     0x11, #  ▓▓▓░▓▓▓░
     0x00, #  ▓▓▓▓▓▓▓▓
 ])
-# gridMiniDotsSprite = thumby.Sprite(8, 8, gridMiniDots)
+# gridMiniLightSprite = thumby.Sprite(8, 8, gridMiniLight)
 
 gridMini = bytearray([
     # BITMAP: width: 8, height: 8, [255,17,17,17,255,17,17,17]
@@ -119,7 +119,7 @@ gridDense = bytearray([
 ])
 # gridDenseSprite = thumby.Sprite(8, 8, gridDense)
 
-gridDiagonalDots = bytearray([
+gridDiagonalLight = bytearray([
     # BITMAP: width: 8, height: 8, [34,0,8,0,34,0,128,0]
     0x22, #  ▓▓░▓▓▓░▓
     0x00, #  ▓▓▓▓▓▓▓▓
@@ -130,7 +130,7 @@ gridDiagonalDots = bytearray([
     0x80, #  ░▓▓▓▓▓▓▓
     0x00, #  ▓▓▓▓▓▓▓▓
 ])
-# gridDiagonalDotsSprite = thumby.Sprite(8, 8, gridDiagonalDots)
+# gridDiagonalLightSprite = thumby.Sprite(8, 8, gridDiagonalLight)
 
 gridDiagonal = bytearray([
     # BITMAP: width: 8, height: 8, [34,20,8,20,34,65,128,65]

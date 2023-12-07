@@ -11,7 +11,7 @@ TIL 1
 00000000
 10000000
 00000000
-NAME griddots
+NAME gridlight
 
 TIL 2
 10101010
@@ -22,7 +22,7 @@ TIL 2
 00000000
 10000000
 00000000
-NAME griddotscentre
+NAME gridlightdot
 
 TIL 3
 11111111
@@ -66,7 +66,7 @@ TIL 6
 00000000
 10001000
 00000000
-NAME gridminidots
+NAME gridminilight
 
 TIL 7
 11111111
@@ -110,7 +110,7 @@ TIL 1
 10001000
 00000000
 00000010
-NAME griddiagonaldots
+NAME griddiagonallight
 
 TIL 2
 00000101

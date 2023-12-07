@@ -23,7 +23,7 @@ namespace patterns {
     // Magic: "\0ff"[i%4]
     // GAMBY: 0x0660
 
-    constexpr uint8_t billetMiniVertical[] PROGMEM {
+    constexpr uint8_t billetVerticalMini[] PROGMEM {
         8, 8, //  8x8 px image
         0x00, //  ▓▓▓▓▓▓▓▓
         0x77, //  ▓░░░▓░░░
@@ -160,7 +160,7 @@ namespace patternsHorizontal {
         0x00, //  ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t billetMiniVertical[] PROGMEM {
+    constexpr uint8_t billetVerticalMini[] PROGMEM {
         8, 8, //  8x8 px image
         0x66, //  ▓░░▓▓░░▓
         0x66, //  ▓░░▓▓░░▓

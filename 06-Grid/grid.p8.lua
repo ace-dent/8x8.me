@@ -4,7 +4,7 @@
 --setup custom font as 8x8px
 poke(0x5600,8,8,8,0,0)
 
---97 'a' griddots
+--97 'a' gridlight
 poke(0x5600+(8* 97),
   85, -- █▒█▒█▒█▒
    0, -- ▒▒▒▒▒▒▒▒
@@ -18,7 +18,7 @@ poke(0x5600+(8* 97),
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉa"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."U\0¹\0¹\0¹\0"
 
---98 'b' griddotscentre
+--98 'b' gridlightdot
 poke(0x5600+(8* 98),
   85, -- █▒█▒█▒█▒
    0, -- ▒▒▒▒▒▒▒▒
@@ -74,7 +74,7 @@ poke(0x5600+(8* 101),
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉe"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."◝◝⬇️⬇️⬇️⬇️⬇️◝"
 
---102 'f' gridminidots
+--102 'f' gridminilight
 poke(0x5600+(8* 102),
   85, -- █▒█▒█▒█▒
    0, -- ▒▒▒▒▒▒▒▒
@@ -134,7 +134,7 @@ poke(0x5600+(8* 105),
 --magic: ?"⁶rw¹シ⁶.".."◝U◝U◝U◝U"
 --fillp(1285)
 
---106 'j' griddiagonaldots
+--106 'j' griddiagonallight
 poke(0x5600+(8* 106),
    0, -- ▒▒▒▒▒▒▒▒
   17, -- █▒▒▒█▒▒▒

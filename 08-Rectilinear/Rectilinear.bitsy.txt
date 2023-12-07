@@ -22,7 +22,7 @@ TIL 2
 01100110
 01100110
 00000000
-NAME billetminivertical
+NAME billetverticalmini
 
 TIL 3
 00000000

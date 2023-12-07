@@ -9,7 +9,7 @@
 
 namespace patterns {
 
-    constexpr uint8_t gridDots[] PROGMEM {
+    constexpr uint8_t gridLight[] PROGMEM {
         8, 8, //  8x8 px image
         0x55, //  ▓░▓░▓░▓░
         0x00, //  ▓▓▓▓▓▓▓▓
@@ -22,7 +22,7 @@ namespace patterns {
     };
     // Magic: 48^"e0101010"[i%8]
 
-    constexpr uint8_t gridDotsCentre[] PROGMEM {
+    constexpr uint8_t gridLightDot[] PROGMEM {
         8, 8, //  8x8 px image
         0x55, //  ▓░▓░▓░▓░
         0x00, //  ▓▓▓▓▓▓▓▓
@@ -74,7 +74,7 @@ namespace patterns {
     };
     // Magic: (i+6)%8<5?131:~0
 
-    constexpr uint8_t gridMiniDots[] PROGMEM {
+    constexpr uint8_t gridMiniLight[] PROGMEM {
         8, 8, //  8x8 px image
         0x55, //  ▓░▓░▓░▓░
         0x00, //  ▓▓▓▓▓▓▓▓
@@ -130,7 +130,7 @@ namespace patterns {
     // Magic: i&1?85:~0
     // GAMBY: 0xF5F5
 
-    constexpr uint8_t gridDiagonalDots[] PROGMEM {
+    constexpr uint8_t gridDiagonalLight[] PROGMEM {
         8, 8, //  8x8 px image
         0x22, //  ▓▓░▓▓▓░▓
         0x00, //  ▓▓▓▓▓▓▓▓
@@ -216,7 +216,7 @@ namespace patterns {
 #if 0
 namespace patternsHorizontal {
 
-    constexpr uint8_t gridDots[] PROGMEM {
+    constexpr uint8_t gridLight[] PROGMEM {
         8, 8, //  8x8 px image
         0xAA, //  ░▓░▓░▓░▓
         0x00, //  ▓▓▓▓▓▓▓▓
@@ -228,7 +228,7 @@ namespace patternsHorizontal {
         0x00, //  ▓▓▓▓▓▓▓▓
     };
 
-    constexpr uint8_t gridDotsCentre[] PROGMEM {
+    constexpr uint8_t gridLightDot[] PROGMEM {
         8, 8, //  8x8 px image
         0xAA, //  ░▓░▓░▓░▓
         0x00, //  ▓▓▓▓▓▓▓▓
@@ -276,7 +276,7 @@ namespace patternsHorizontal {
         0xFF, //  ░░░░░░░░
     };
 
-    constexpr uint8_t gridMiniDots[] PROGMEM {
+    constexpr uint8_t gridMiniLight[] PROGMEM {
         8, 8, //  8x8 px image
         0xAA, //  ░▓░▓░▓░▓
         0x00, //  ▓▓▓▓▓▓▓▓
@@ -324,7 +324,7 @@ namespace patternsHorizontal {
         0xAA, //  ░▓░▓░▓░▓
     };
 
-    constexpr uint8_t gridDiagonalDots[] PROGMEM {
+    constexpr uint8_t gridDiagonalLight[] PROGMEM {
         8, 8, //  8x8 px image
         0x00, //  ▓▓▓▓▓▓▓▓
         0x88, //  ░▓▓▓░▓▓▓

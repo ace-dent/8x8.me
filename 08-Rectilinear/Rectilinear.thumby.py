@@ -15,7 +15,7 @@ squareMicro = bytearray([
 ])
 # squareMicroSprite = thumby.Sprite(8, 8, squareMicro)
 
-billetMiniVertical = bytearray([
+billetVerticalMini = bytearray([
     # BITMAP: width: 8, height: 8, [0,119,119,0,0,119,119,0]
     0x00, #  ▓▓▓▓▓▓▓▓
     0x77, #  ▓░░░▓░░░
@@ -26,7 +26,7 @@ billetMiniVertical = bytearray([
     0x77, #  ▓░░░▓░░░
     0x00, #  ▓▓▓▓▓▓▓▓
 ])
-# billetMiniVerticalSprite = thumby.Sprite(8, 8, billetMiniVertical)
+# billetVerticalMiniSprite = thumby.Sprite(8, 8, billetVerticalMini)
 
 square = bytearray([
     # BITMAP: width: 8, height: 8, [0,0,60,36,36,60,0,0]
