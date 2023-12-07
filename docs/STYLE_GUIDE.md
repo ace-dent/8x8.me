@@ -67,6 +67,7 @@ Naming taxonomy is important for maintaining consistency and ensuring uniqueness
 - `Sinister`
 - `Dexter`
 - `Diagonal`
+
 May be further qualified with:
 - `Steep`
 - `Shallow`

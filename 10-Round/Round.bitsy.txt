@@ -275,7 +275,7 @@ TIL 1
 10000001
 01000010
 00111100
-NAME annuletultralarge
+NAME annuletxxxl
 
 TIL 2
 00111100
@@ -286,7 +286,7 @@ TIL 2
 11000011
 01100110
 00111100
-NAME annuletultralargemedium
+NAME annuletxxxlmedium
 
 TIL 3
 00111100
@@ -297,7 +297,7 @@ TIL 3
 11100111
 01111110
 00111100
-NAME annuletultralargebold
+NAME annuletxxxlbold
 
 TIL 4
 00111100
@@ -308,7 +308,7 @@ TIL 4
 11111111
 01111110
 00111100
-NAME annuletultralargeextrabold
+NAME annuletxxxlextrabold
 
 TIL 5
 00111100
@@ -319,4 +319,4 @@ TIL 5
 11111111
 01111110
 00111100
-NAME roundelultralarge
+NAME roundelxxxl

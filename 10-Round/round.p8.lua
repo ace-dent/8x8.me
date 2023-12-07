@@ -341,7 +341,7 @@ poke(0x5600+(8* 120),
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉx"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."、2y}○>、\0"
 
---121 'y' annuletultralarge
+--121 'y' annuletxxxl
 poke(0x5600+(8* 121),
   60, -- ▒▒████▒▒
   66, -- ▒█▒▒▒▒█▒
@@ -355,7 +355,7 @@ poke(0x5600+(8* 121),
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉy"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."<B▒▒▒▒B<"
 
---122 'z' annuletultralargemedium
+--122 'z' annuletxxxlmedium
 poke(0x5600+(8* 122),
   60, -- ▒▒████▒▒
  102, -- ▒██▒▒██▒
@@ -369,7 +369,7 @@ poke(0x5600+(8* 122),
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉz"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."<fれ▒▒れf<"
 
---48 '0' annuletultralargebold
+--48 '0' annuletxxxlbold
 poke(0x5600+(8* 48),
   60, -- ▒▒████▒▒
  126, -- ▒██████▒
@@ -383,7 +383,7 @@ poke(0x5600+(8* 48),
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉ0"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."<~フれれフ~<"
 
---49 '1' annuletultralargeextrabold
+--49 '1' annuletxxxlextrabold
 poke(0x5600+(8* 49),
   60, -- ▒▒████▒▒
  126, -- ▒██████▒
@@ -397,7 +397,7 @@ poke(0x5600+(8* 49),
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉ1"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."<~◝フフ◝~<"
 
---50 '2' roundelultralarge
+--50 '2' roundelxxxl
 poke(0x5600+(8* 50),
   60, -- ▒▒████▒▒
  126, -- ▒██████▒

@@ -68,11 +68,11 @@ Round patterns.
 
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Thumby |
 | :------ | :-----: | :----: | :-----: | :---: | :----: | :----: |
-| AnnuletUltraLarge | <img width="64" height="32" src="../docs/art/AnnuletUltraLarge.png" alt=""> | [png](png/AnnuletUltraLarge.png) | [cpp](Round.h#L325-L336) | [txt](Round.bitsy.txt#L269-L278) | [p𝟪](round.p8.lua#L344-L356) | [py](Round.thumby.py#L317-L328) |
-| AnnuletUltraLargeMedium | <img width="64" height="32" src="../docs/art/AnnuletUltraLargeMedium.png" alt=""> | [png](png/AnnuletUltraLargeMedium.png) | [cpp](Round.h#L338-L349) | [txt](Round.bitsy.txt#L280-L289) | [p𝟪](round.p8.lua#L358-L370) | [py](Round.thumby.py#L330-L341) |
-| AnnuletUltraLargeBold | <img width="64" height="32" src="../docs/art/AnnuletUltraLargeBold.png" alt=""> | [png](png/AnnuletUltraLargeBold.png) | [cpp](Round.h#L351-L362) | [txt](Round.bitsy.txt#L291-L300) | [p𝟪](round.p8.lua#L372-L384) | [py](Round.thumby.py#L343-L354) |
-| AnnuletUltraLargeExtraBold | <img width="64" height="32" src="../docs/art/AnnuletUltraLargeExtraBold.png" alt=""> | [png](png/AnnuletUltraLargeExtraBold.png) | [cpp](Round.h#L364-L375) | [txt](Round.bitsy.txt#L302-L311) | [p𝟪](round.p8.lua#L386-L398) | [py](Round.thumby.py#L356-L367) |
-| RoundelUltraLarge | <img width="64" height="32" src="../docs/art/RoundelUltraLarge.png" alt=""> | [png](png/RoundelUltraLarge.png) | [cpp](Round.h#L377-L388) | [txt](Round.bitsy.txt#L313-L322) | [p𝟪](round.p8.lua#L400-L412) | [py](Round.thumby.py#L369-L380) |
+| AnnuletXXXL | <img width="64" height="32" src="../docs/art/AnnuletXXXL.png" alt=""> | [png](png/AnnuletXXXL.png) | [cpp](Round.h#L325-L336) | [txt](Round.bitsy.txt#L269-L278) | [p𝟪](round.p8.lua#L344-L356) | [py](Round.thumby.py#L317-L328) |
+| AnnuletXXXLMedium | <img width="64" height="32" src="../docs/art/AnnuletXXXLMedium.png" alt=""> | [png](png/AnnuletXXXLMedium.png) | [cpp](Round.h#L338-L349) | [txt](Round.bitsy.txt#L280-L289) | [p𝟪](round.p8.lua#L358-L370) | [py](Round.thumby.py#L330-L341) |
+| AnnuletXXXLBold | <img width="64" height="32" src="../docs/art/AnnuletXXXLBold.png" alt=""> | [png](png/AnnuletXXXLBold.png) | [cpp](Round.h#L351-L362) | [txt](Round.bitsy.txt#L291-L300) | [p𝟪](round.p8.lua#L372-L384) | [py](Round.thumby.py#L343-L354) |
+| AnnuletXXXLExtraBold | <img width="64" height="32" src="../docs/art/AnnuletXXXLExtraBold.png" alt=""> | [png](png/AnnuletXXXLExtraBold.png) | [cpp](Round.h#L364-L375) | [txt](Round.bitsy.txt#L302-L311) | [p𝟪](round.p8.lua#L386-L398) | [py](Round.thumby.py#L356-L367) |
+| RoundelXXXL| <img width="64" height="32" src="../docs/art/RoundelXXXL.png" alt=""> | [png](png/RoundelXXXL.png) | [cpp](Round.h#L377-L388) | [txt](Round.bitsy.txt#L313-L322) | [p𝟪](round.p8.lua#L400-L412) | [py](Round.thumby.py#L369-L380) |
 
 
 [`⤴`](#gallery)

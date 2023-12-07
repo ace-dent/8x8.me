@@ -314,7 +314,7 @@ ballXXL = bytearray([
 ])
 # ballXXLSprite = thumby.Sprite(8, 8, ballXXL)
 
-annuletUltraLarge = bytearray([
+annuletXXXL = bytearray([
     # BITMAP: width: 8, height: 8, [60,66,129,129,129,129,66,60]
     0x3C, #  ▓▓░░░░▓▓
     0x42, #  ▓░▓▓▓▓░▓
@@ -325,9 +325,9 @@ annuletUltraLarge = bytearray([
     0x42, #  ▓░▓▓▓▓░▓
     0x3C, #  ▓▓░░░░▓▓
 ])
-# annuletUltraLargeSprite = thumby.Sprite(8, 8, annuletUltraLarge)
+# annuletXXXLSprite = thumby.Sprite(8, 8, annuletXXXL)
 
-annuletUltraLargeMedium = bytearray([
+annuletXXXLMedium = bytearray([
     # BITMAP: width: 8, height: 8, [60,102,195,129,129,195,102,60]
     0x3C, #  ▓▓░░░░▓▓
     0x66, #  ▓░░▓▓░░▓
@@ -338,9 +338,9 @@ annuletUltraLargeMedium = bytearray([
     0x66, #  ▓░░▓▓░░▓
     0x3C, #  ▓▓░░░░▓▓
 ])
-# annuletUltraLargeMediumSprite = thumby.Sprite(8, 8, annuletUltraLargeMedium)
+# annuletXXXLMediumSprite = thumby.Sprite(8, 8, annuletXXXLMedium)
 
-annuletUltraLargeBold = bytearray([
+annuletXXXLBold = bytearray([
     # BITMAP: width: 8, height: 8, [60,126,231,195,195,231,126,60]
     0x3C, #  ▓▓░░░░▓▓
     0x7E, #  ▓░░░░░░▓
@@ -351,9 +351,9 @@ annuletUltraLargeBold = bytearray([
     0x7E, #  ▓░░░░░░▓
     0x3C, #  ▓▓░░░░▓▓
 ])
-# annuletUltraLargeBoldSprite = thumby.Sprite(8, 8, annuletUltraLargeBold)
+# annuletXXXLBoldSprite = thumby.Sprite(8, 8, annuletXXXLBold)
 
-annuletUltraLargeExtraBold = bytearray([
+annuletXXXLExtraBold = bytearray([
     # BITMAP: width: 8, height: 8, [60,126,255,231,231,255,126,60]
     0x3C, #  ▓▓░░░░▓▓
     0x7E, #  ▓░░░░░░▓
@@ -364,9 +364,9 @@ annuletUltraLargeExtraBold = bytearray([
     0x7E, #  ▓░░░░░░▓
     0x3C, #  ▓▓░░░░▓▓
 ])
-# annuletUltraLargeExtraBoldSprite = thumby.Sprite(8, 8, annuletUltraLargeExtraBold)
+# annuletXXXLExtraBoldSprite = thumby.Sprite(8, 8, annuletXXXLExtraBold)
 
-roundelUltraLarge = bytearray([
+roundelXXXL = bytearray([
     # BITMAP: width: 8, height: 8, [60,126,255,255,255,255,126,60]
     0x3C, #  ▓▓░░░░▓▓
     0x7E, #  ▓░░░░░░▓
@@ -377,4 +377,4 @@ roundelUltraLarge = bytearray([
     0x7E, #  ▓░░░░░░▓
     0x3C, #  ▓▓░░░░▓▓
 ])
-# roundelUltraLargeSprite = thumby.Sprite(8, 8, roundelUltraLarge)
+# roundelXXXLSprite = thumby.Sprite(8, 8, roundelXXXL)
