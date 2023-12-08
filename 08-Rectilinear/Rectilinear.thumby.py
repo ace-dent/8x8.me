@@ -15,6 +15,110 @@ squareMicro = bytearray([
 ])
 # squareMicroSprite = thumby.Sprite(8, 8, squareMicro)
 
+squareMicroOffset = bytearray([
+    # BITMAP: width: 8, height: 8, [96,6,6,96,96,6,6,96]
+    0x60, #  ▓░░▓▓▓▓▓
+    0x06, #  ▓▓▓▓▓░░▓
+    0x06, #  ▓▓▓▓▓░░▓
+    0x60, #  ▓░░▓▓▓▓▓
+    0x60, #  ▓░░▓▓▓▓▓
+    0x06, #  ▓▓▓▓▓░░▓
+    0x06, #  ▓▓▓▓▓░░▓
+    0x60, #  ▓░░▓▓▓▓▓
+])
+# squareMicroOffsetSprite = thumby.Sprite(8, 8, squareMicroOffset)
+
+squareMiniHighlight = bytearray([
+    # BITMAP: width: 8, height: 8, [119,17,17,0,119,17,17,0]
+    0x77, #  ▓░░░▓░░░
+    0x11, #  ▓▓▓░▓▓▓░
+    0x11, #  ▓▓▓░▓▓▓░
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x77, #  ▓░░░▓░░░
+    0x11, #  ▓▓▓░▓▓▓░
+    0x11, #  ▓▓▓░▓▓▓░
+    0x00, #  ▓▓▓▓▓▓▓▓
+])
+# squareMiniHighlightSprite = thumby.Sprite(8, 8, squareMiniHighlight)
+
+squareMini = bytearray([
+    # BITMAP: width: 8, height: 8, [119,85,119,0,119,85,119,0]
+    0x77, #  ▓░░░▓░░░
+    0x55, #  ▓░▓░▓░▓░
+    0x77, #  ▓░░░▓░░░
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x77, #  ▓░░░▓░░░
+    0x55, #  ▓░▓░▓░▓░
+    0x77, #  ▓░░░▓░░░
+    0x00, #  ▓▓▓▓▓▓▓▓
+])
+# squareMiniSprite = thumby.Sprite(8, 8, squareMini)
+
+squareMiniOffset = bytearray([
+    # BITMAP: width: 8, height: 8, [119,5,119,80,119,5,119,80]
+    0x77, #  ▓░░░▓░░░
+    0x05, #  ▓▓▓▓▓░▓░
+    0x77, #  ▓░░░▓░░░
+    0x50, #  ▓░▓░▓▓▓▓
+    0x77, #  ▓░░░▓░░░
+    0x05, #  ▓▓▓▓▓░▓░
+    0x77, #  ▓░░░▓░░░
+    0x50, #  ▓░▓░▓▓▓▓
+])
+# squareMiniOffsetSprite = thumby.Sprite(8, 8, squareMiniOffset)
+
+squareMiniSolid = bytearray([
+    # BITMAP: width: 8, height: 8, [119,119,119,0,119,119,119,0]
+    0x77, #  ▓░░░▓░░░
+    0x77, #  ▓░░░▓░░░
+    0x77, #  ▓░░░▓░░░
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x77, #  ▓░░░▓░░░
+    0x77, #  ▓░░░▓░░░
+    0x77, #  ▓░░░▓░░░
+    0x00, #  ▓▓▓▓▓▓▓▓
+])
+# squareMiniSolidSprite = thumby.Sprite(8, 8, squareMiniSolid)
+
+squareMiniSolidOffset = bytearray([
+    # BITMAP: width: 8, height: 8, [119,7,119,112,119,7,119,112]
+    0x77, #  ▓░░░▓░░░
+    0x07, #  ▓▓▓▓▓░░░
+    0x77, #  ▓░░░▓░░░
+    0x70, #  ▓░░░▓▓▓▓
+    0x77, #  ▓░░░▓░░░
+    0x07, #  ▓▓▓▓▓░░░
+    0x77, #  ▓░░░▓░░░
+    0x70, #  ▓░░░▓▓▓▓
+])
+# squareMiniSolidOffsetSprite = thumby.Sprite(8, 8, squareMiniSolidOffset)
+
+billetMiniHighlight = bytearray([
+    # BITMAP: width: 8, height: 8, [102,34,34,0,102,34,34,0]
+    0x66, #  ▓░░▓▓░░▓
+    0x22, #  ▓▓░▓▓▓░▓
+    0x22, #  ▓▓░▓▓▓░▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x66, #  ▓░░▓▓░░▓
+    0x22, #  ▓▓░▓▓▓░▓
+    0x22, #  ▓▓░▓▓▓░▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+])
+# billetMiniHighlightSprite = thumby.Sprite(8, 8, billetMiniHighlight)
+
+billetMini = bytearray([
+    # BITMAP: width: 8, height: 8, [102,102,102,0,102,102,102,0]
+    0x66, #  ▓░░▓▓░░▓
+    0x66, #  ▓░░▓▓░░▓
+    0x66, #  ▓░░▓▓░░▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x66, #  ▓░░▓▓░░▓
+    0x66, #  ▓░░▓▓░░▓
+    0x66, #  ▓░░▓▓░░▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+])
+# billetMiniSprite = thumby.Sprite(8, 8, billetMini)
+
 billetVerticalMini = bytearray([
     # BITMAP: width: 8, height: 8, [0,119,119,0,0,119,119,0]
     0x00, #  ▓▓▓▓▓▓▓▓
@@ -41,6 +145,45 @@ square = bytearray([
 ])
 # squareSprite = thumby.Sprite(8, 8, square)
 
+squareSolid = bytearray([
+    # BITMAP: width: 8, height: 8, [0,0,60,60,60,60,0,0]
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x3C, #  ▓▓░░░░▓▓
+    0x3C, #  ▓▓░░░░▓▓
+    0x3C, #  ▓▓░░░░▓▓
+    0x3C, #  ▓▓░░░░▓▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+])
+# squareSolidSprite = thumby.Sprite(8, 8, squareSolid)
+
+squareShaded = bytearray([
+    # BITMAP: width: 8, height: 8, [0,0,20,40,20,40,0,0]
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x14, #  ▓▓▓░▓░▓▓
+    0x28, #  ▓▓░▓░▓▓▓
+    0x14, #  ▓▓▓░▓░▓▓
+    0x28, #  ▓▓░▓░▓▓▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+])
+# squareShadedSprite = thumby.Sprite(8, 8, squareShaded)
+
+squareLarge = bytearray([
+    # BITMAP: width: 8, height: 8, [0,126,66,66,66,66,126,0]
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x7E, #  ▓░░░░░░▓
+    0x42, #  ▓░▓▓▓▓░▓
+    0x42, #  ▓░▓▓▓▓░▓
+    0x42, #  ▓░▓▓▓▓░▓
+    0x42, #  ▓░▓▓▓▓░▓
+    0x7E, #  ▓░░░░░░▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+])
+# squareLargeSprite = thumby.Sprite(8, 8, squareLarge)
+
 squareLargeMedium = bytearray([
     # BITMAP: width: 8, height: 8, [0,126,126,102,102,126,126,0]
     0x00, #  ▓▓▓▓▓▓▓▓
@@ -53,6 +196,227 @@ squareLargeMedium = bytearray([
     0x00, #  ▓▓▓▓▓▓▓▓
 ])
 # squareLargeMediumSprite = thumby.Sprite(8, 8, squareLargeMedium)
+
+squareLargeSolid = bytearray([
+    # BITMAP: width: 8, height: 8, [0,126,126,126,126,126,126,0]
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x7E, #  ▓░░░░░░▓
+    0x7E, #  ▓░░░░░░▓
+    0x7E, #  ▓░░░░░░▓
+    0x7E, #  ▓░░░░░░▓
+    0x7E, #  ▓░░░░░░▓
+    0x7E, #  ▓░░░░░░▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+])
+# squareLargeSolidSprite = thumby.Sprite(8, 8, squareLargeSolid)
+
+squareLargeShaded = bytearray([
+    # BITMAP: width: 8, height: 8, [0,42,84,42,84,42,84,0]
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x2A, #  ▓▓░▓░▓░▓
+    0x54, #  ▓░▓░▓░▓▓
+    0x2A, #  ▓▓░▓░▓░▓
+    0x54, #  ▓░▓░▓░▓▓
+    0x2A, #  ▓▓░▓░▓░▓
+    0x54, #  ▓░▓░▓░▓▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+])
+# squareLargeShadedSprite = thumby.Sprite(8, 8, squareLargeShaded)
+
+squareXL = bytearray([
+    # BITMAP: width: 8, height: 8, [127,65,65,65,65,65,127,0]
+    0x7F, #  ▓░░░░░░░
+    0x41, #  ▓░▓▓▓▓▓░
+    0x41, #  ▓░▓▓▓▓▓░
+    0x41, #  ▓░▓▓▓▓▓░
+    0x41, #  ▓░▓▓▓▓▓░
+    0x41, #  ▓░▓▓▓▓▓░
+    0x7F, #  ▓░░░░░░░
+    0x00, #  ▓▓▓▓▓▓▓▓
+])
+# squareXLSprite = thumby.Sprite(8, 8, squareXL)
+
+squareXLMedium = bytearray([
+    # BITMAP: width: 8, height: 8, [127,127,99,99,99,127,127,0]
+    0x7F, #  ▓░░░░░░░
+    0x7F, #  ▓░░░░░░░
+    0x63, #  ▓░░▓▓▓░░
+    0x63, #  ▓░░▓▓▓░░
+    0x63, #  ▓░░▓▓▓░░
+    0x7F, #  ▓░░░░░░░
+    0x7F, #  ▓░░░░░░░
+    0x00, #  ▓▓▓▓▓▓▓▓
+])
+# squareXLMediumSprite = thumby.Sprite(8, 8, squareXLMedium)
+
+squareXLSolid = bytearray([
+    # BITMAP: width: 8, height: 8, [127,127,127,127,127,127,127,0]
+    0x7F, #  ▓░░░░░░░
+    0x7F, #  ▓░░░░░░░
+    0x7F, #  ▓░░░░░░░
+    0x7F, #  ▓░░░░░░░
+    0x7F, #  ▓░░░░░░░
+    0x7F, #  ▓░░░░░░░
+    0x7F, #  ▓░░░░░░░
+    0x00, #  ▓▓▓▓▓▓▓▓
+])
+# squareXLSolidSprite = thumby.Sprite(8, 8, squareXLSolid)
+
+squareXLShaded = bytearray([
+    # BITMAP: width: 8, height: 8, [85,42,85,42,85,42,85,0]
+    0x55, #  ▓░▓░▓░▓░
+    0x2A, #  ▓▓░▓░▓░▓
+    0x55, #  ▓░▓░▓░▓░
+    0x2A, #  ▓▓░▓░▓░▓
+    0x55, #  ▓░▓░▓░▓░
+    0x2A, #  ▓▓░▓░▓░▓
+    0x55, #  ▓░▓░▓░▓░
+    0x00, #  ▓▓▓▓▓▓▓▓
+])
+# squareXLShadedSprite = thumby.Sprite(8, 8, squareXLShaded)
+
+rectangle = bytearray([
+    # BITMAP: width: 8, height: 8, [0,60,36,36,36,60,0,0]
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x3C, #  ▓▓░░░░▓▓
+    0x24, #  ▓▓░▓▓░▓▓
+    0x24, #  ▓▓░▓▓░▓▓
+    0x24, #  ▓▓░▓▓░▓▓
+    0x3C, #  ▓▓░░░░▓▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+])
+# rectangleSprite = thumby.Sprite(8, 8, rectangle)
+
+rectangleSolid = bytearray([
+    # BITMAP: width: 8, height: 8, [0,60,60,60,60,60,0,0]
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x3C, #  ▓▓░░░░▓▓
+    0x3C, #  ▓▓░░░░▓▓
+    0x3C, #  ▓▓░░░░▓▓
+    0x3C, #  ▓▓░░░░▓▓
+    0x3C, #  ▓▓░░░░▓▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+])
+# rectangleSolidSprite = thumby.Sprite(8, 8, rectangleSolid)
+
+rectangleLarge = bytearray([
+    # BITMAP: width: 8, height: 8, [126,66,66,66,66,66,126,0]
+    0x7E, #  ▓░░░░░░▓
+    0x42, #  ▓░▓▓▓▓░▓
+    0x42, #  ▓░▓▓▓▓░▓
+    0x42, #  ▓░▓▓▓▓░▓
+    0x42, #  ▓░▓▓▓▓░▓
+    0x42, #  ▓░▓▓▓▓░▓
+    0x7E, #  ▓░░░░░░▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+])
+# rectangleLargeSprite = thumby.Sprite(8, 8, rectangleLarge)
+
+rectangleLargeMedium = bytearray([
+    # BITMAP: width: 8, height: 8, [126,126,102,102,102,126,126,0]
+    0x7E, #  ▓░░░░░░▓
+    0x7E, #  ▓░░░░░░▓
+    0x66, #  ▓░░▓▓░░▓
+    0x66, #  ▓░░▓▓░░▓
+    0x66, #  ▓░░▓▓░░▓
+    0x7E, #  ▓░░░░░░▓
+    0x7E, #  ▓░░░░░░▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+])
+# rectangleLargeMediumSprite = thumby.Sprite(8, 8, rectangleLargeMedium)
+
+rectangleLargeSolid = bytearray([
+    # BITMAP: width: 8, height: 8, [126,126,126,126,126,126,126,0]
+    0x7E, #  ▓░░░░░░▓
+    0x7E, #  ▓░░░░░░▓
+    0x7E, #  ▓░░░░░░▓
+    0x7E, #  ▓░░░░░░▓
+    0x7E, #  ▓░░░░░░▓
+    0x7E, #  ▓░░░░░░▓
+    0x7E, #  ▓░░░░░░▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+])
+# rectangleLargeSolidSprite = thumby.Sprite(8, 8, rectangleLargeSolid)
+
+billet = bytearray([
+    # BITMAP: width: 8, height: 8, [0,60,36,36,36,36,60,0]
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x3C, #  ▓▓░░░░▓▓
+    0x24, #  ▓▓░▓▓░▓▓
+    0x24, #  ▓▓░▓▓░▓▓
+    0x24, #  ▓▓░▓▓░▓▓
+    0x24, #  ▓▓░▓▓░▓▓
+    0x3C, #  ▓▓░░░░▓▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+])
+# billetSprite = thumby.Sprite(8, 8, billet)
+
+billetSolid = bytearray([
+    # BITMAP: width: 8, height: 8, [0,60,60,60,60,60,60,0]
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x3C, #  ▓▓░░░░▓▓
+    0x3C, #  ▓▓░░░░▓▓
+    0x3C, #  ▓▓░░░░▓▓
+    0x3C, #  ▓▓░░░░▓▓
+    0x3C, #  ▓▓░░░░▓▓
+    0x3C, #  ▓▓░░░░▓▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+])
+# billetSolidSprite = thumby.Sprite(8, 8, billetSolid)
+
+billetShaded = bytearray([
+    # BITMAP: width: 8, height: 8, [0,40,20,40,20,40,20,0]
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x28, #  ▓▓░▓░▓▓▓
+    0x14, #  ▓▓▓░▓░▓▓
+    0x28, #  ▓▓░▓░▓▓▓
+    0x14, #  ▓▓▓░▓░▓▓
+    0x28, #  ▓▓░▓░▓▓▓
+    0x14, #  ▓▓▓░▓░▓▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+])
+# billetShadedSprite = thumby.Sprite(8, 8, billetShaded)
+
+billetVertical = bytearray([
+    # BITMAP: width: 8, height: 8, [0,0,126,66,66,126,0,0]
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x7E, #  ▓░░░░░░▓
+    0x42, #  ▓░▓▓▓▓░▓
+    0x42, #  ▓░▓▓▓▓░▓
+    0x7E, #  ▓░░░░░░▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+])
+# billetVerticalSprite = thumby.Sprite(8, 8, billetVertical)
+
+billetVerticalSolid = bytearray([
+    # BITMAP: width: 8, height: 8, [0,0,126,126,126,126,0,0]
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x7E, #  ▓░░░░░░▓
+    0x7E, #  ▓░░░░░░▓
+    0x7E, #  ▓░░░░░░▓
+    0x7E, #  ▓░░░░░░▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+])
+# billetVerticalSolidSprite = thumby.Sprite(8, 8, billetVerticalSolid)
+
+billetVerticalShaded = bytearray([
+    # BITMAP: width: 8, height: 8, [0,0,84,42,84,42,0,0]
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x54, #  ▓░▓░▓░▓▓
+    0x2A, #  ▓▓░▓░▓░▓
+    0x54, #  ▓░▓░▓░▓▓
+    0x2A, #  ▓▓░▓░▓░▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+])
+# billetVerticalShadedSprite = thumby.Sprite(8, 8, billetVerticalShaded)
 
 waffle = bytearray([
     # BITMAP: width: 8, height: 8, [255,1,1,121,121,121,121,1]
