@@ -76,6 +76,11 @@ while (( "$#" )); do
     shift # Get the next parameter
     continue
   fi
+  # Remove any Collection marker '^abc' for the previous pattern
+  if [ ${1:0:1} == '^' ]; then
+    shift # Get the next parameter
+    continue
+  fi
 
   # TODO: Check ~
   #   File exists
@@ -98,6 +103,11 @@ while (( "$#" )); do
   name_camelcase="$( echo -n "${name_camelcase}" | tr -cs '[:alnum:]' '_')" # Replace non-alphanumeric characters with '_' for code compatibility
   group_lowercase="$( echo "${img_group}" | tr '[:upper:]' '[:lower:]' )" # e.g. "dither"
 
+  # Generate unique id for the pattern (8 VLSB bytes, 16 hexadecimal characters)
+  pattern_uid="$(magick "$1" -depth 1 +negate -rotate 90 PBM:- \
+    | tail -c 8 | xxd -p)"
+
+
 
   # Produce images
   # --------------
@@ -105,8 +115,6 @@ while (( "$#" )); do
   # Create the Portable Bit Map (PBM) file
   pbm_file="${img_root}/pbm/${img_name}.pbm"
   magick "$1" -depth 1 -compress None "${pbm_file}"
-  # Generate SHA256 hash for the pattern
-  pattern_hash="$(shasum --algorithm 256 --binary "${pbm_file}" | head -c 64)"
 
   # Create tweaked png image for Playdate Pulp
   pulp_file="${img_root}/${img_name}-table-8-8.png" # Required name format
@@ -128,17 +136,16 @@ while (( "$#" )); do
 
   # Create the preview 'art' image
   preview_file="${img_root%/*}/docs/art/${img_name}.png"
-  preview_hash=""
   # Check for an exisiting preview image and only replace if necessary,
   # as it may have been optimized with external tools
+  preview_uid='#'
   if [ -f "${preview_file}" ]; then
-    # Extract 8x8px pattern and generate SHA256
-    preview_hash="$(magick "${preview_file}" -sample 50% -crop 8x8+0+0 \
-      +repage -depth 1 -compress None PBM:- \
-      | shasum --algorithm 256 --binary \
-      | head -c 64)"
+    # Extract 8x8px pattern and generate unique id (8 VLSB bytes)
+    preview_uid="$(magick "${preview_file}" -sample 50% -crop 8x8+0+0 \
+      +repage -depth 1 +negate -rotate 90 PBM:- \
+      | tail -c 8 | xxd -p)"
   fi
-  if [ "${pattern_hash}" != "${preview_hash}" ]; then
+  if [ "${pattern_uid}" != "${preview_uid}" ]; then
     # Create the image by tiling the pattern 4x2 and then scale up 2x
     magick -size 32x16 tile:"$1" \
       -define png:include-chunk=none \
@@ -201,7 +208,7 @@ while (( "$#" )); do
   if [ "$(head -n 4 "${bin_h}")" = "$(tail -n 4 "${bin_h}")" ]; then
     pattern_height=4 # Pattern heights below 4 are treated the same
   fi
-  echo "$img_name - Pattern width ${pattern_width} px x height ${pattern_height} px."
+  echo "${img_name} - Pattern ${pattern_width} x ${pattern_height} px #${pattern_uid}."
 
 
 
@@ -212,7 +219,18 @@ while (( "$#" )); do
     md_extra_lines=1 # cpp and p8 code snippets will output an extra line
   fi
   {
+    # Produce a table header for each new section (after 'reset')
+    if [ ${bitsy_counter} -eq 1 ]; then
+      printf '\n\n<br>\n\n\n\n'
+      printf '| Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Playdate | Thumby | UDG |\n'
+      printf '| :------ | :-----: | :----: | :-----: | :---: | :----: | :------: | :----: | :-: |\n'
+    fi
     printf '| %s ' "${img_name}"
+    # Check if a Collection '^abc' is set in the next parameter
+    if [ "${2:0:1}" == '^' ]; then
+      # Add superscript reference to Collection(s)
+      printf '<sup>%s</sup>' "${2:1}"
+    fi
     printf '| <img width="64" height="32"'
     printf ' src="../docs/art/%s.png" alt=""> ' "${img_name}"
     printf '| [png](png/%s.png) ' "${img_name}"
@@ -232,7 +250,8 @@ while (( "$#" )); do
        "${group_lowercase}" "${md_p8_start}" "${md_p8_end}"
     ((md_p8_start=md_p8_end+2))
     # Add Picotron (p64.lua) link
-    # --
+    # printf '| ' # [p𝟨𝟦]()
+    # -TODO
     # Add Playdate (lua) link
     ((md_playdate_end=md_playdate_start+md_playdate_lines))
     printf '| [lua](%s.playdate.lua#L%u-L%u) ' \
@@ -240,13 +259,13 @@ while (( "$#" )); do
     ((md_playdate_start=md_playdate_end+2))
      # Add Thumby (py) link
     ((md_thumby_end=md_thumby_start+md_thumby_lines))
-    printf '| [py](%s.thumby.py#L%u-L%u) |\n' \
+    printf '| [py](%s.thumby.py#L%u-L%u) ' \
        "${img_group}" "${md_thumby_start}" "${md_thumby_end}"
     ((md_thumby_start=md_thumby_end+2))
     # Add User Defined Graphic (bas) link
-    # --
+    printf '|  |\n' # [bas]()
+    # -TODO
   } >> "${md_file}"
-  # TODO: add Picotron `p𝟨𝟦` and UDG `bas` links
 
 
 
