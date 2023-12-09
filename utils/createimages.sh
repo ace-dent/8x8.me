@@ -77,7 +77,7 @@ while (( "$#" )); do
     continue
   fi
   # Remove any Collection marker '^abc' for the previous pattern
-  if [ ${1:0:1} == '^' ]; then
+  if [ "${1:0:1}" == '^' ]; then
     shift # Get the next parameter
     continue
   fi
@@ -221,9 +221,9 @@ while (( "$#" )); do
   {
     # Produce a table header for each new section (after 'reset')
     if [ ${bitsy_counter} -eq 1 ]; then
-      printf '\n\n<br>\n\n\n\n'
-      printf '| Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Playdate | Thumby | UDG |\n'
-      printf '| :------ | :-----: | :----: | :-----: | :---: | :----: | :------: | :----: | :-: |\n'
+      printf '\n<br>\n\n\n'
+      printf '| Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Playdate | Thumby |\n'
+      printf '| :------ | :-----: | :----: | :-----: | :---: | :----: | :------: | :----: |\n'
     fi
     printf '| %s ' "${img_name}"
     # Check if a Collection '^abc' is set in the next parameter
@@ -263,7 +263,7 @@ while (( "$#" )); do
        "${img_group}" "${md_thumby_start}" "${md_thumby_end}"
     ((md_thumby_start=md_thumby_end+2))
     # Add User Defined Graphic (bas) link
-    printf '|  |\n' # [bas]()
+    printf '|\n' # [bas]()
     # -TODO
   } >> "${md_file}"
 
