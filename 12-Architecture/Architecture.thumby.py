@@ -237,41 +237,41 @@ brickSinisterMini = bytearray([
 # brickSinisterMiniSprite = thumby.Sprite(8, 8, brickSinisterMini)
 
 brickMini = bytearray([
-    # BITMAP: width: 8, height: 8, [85,68,85,17,85,68,85,17]
-    0x55, #  ▓░▓░▓░▓░
-    0x44, #  ▓░▓▓▓░▓▓
-    0x55, #  ▓░▓░▓░▓░
-    0x11, #  ▓▓▓░▓▓▓░
-    0x55, #  ▓░▓░▓░▓░
-    0x44, #  ▓░▓▓▓░▓▓
-    0x55, #  ▓░▓░▓░▓░
-    0x11, #  ▓▓▓░▓▓▓░
+    # BITMAP: width: 8, height: 8, [170,136,170,34,170,136,170,34]
+    0xAA, #  ░▓░▓░▓░▓
+    0x88, #  ░▓▓▓░▓▓▓
+    0xAA, #  ░▓░▓░▓░▓
+    0x22, #  ▓▓░▓▓▓░▓
+    0xAA, #  ░▓░▓░▓░▓
+    0x88, #  ░▓▓▓░▓▓▓
+    0xAA, #  ░▓░▓░▓░▓
+    0x22, #  ▓▓░▓▓▓░▓
 ])
 # brickMiniSprite = thumby.Sprite(8, 8, brickMini)
 
 brickMiniDamage = bytearray([
-    # BITMAP: width: 8, height: 8, [85,68,85,17,81,64,84,17]
-    0x55, #  ▓░▓░▓░▓░
-    0x44, #  ▓░▓▓▓░▓▓
-    0x55, #  ▓░▓░▓░▓░
-    0x11, #  ▓▓▓░▓▓▓░
-    0x51, #  ▓░▓░▓▓▓░
-    0x40, #  ▓░▓▓▓▓▓▓
-    0x54, #  ▓░▓░▓░▓▓
-    0x11, #  ▓▓▓░▓▓▓░
+    # BITMAP: width: 8, height: 8, [170,136,170,34,162,128,168,34]
+    0xAA, #  ░▓░▓░▓░▓
+    0x88, #  ░▓▓▓░▓▓▓
+    0xAA, #  ░▓░▓░▓░▓
+    0x22, #  ▓▓░▓▓▓░▓
+    0xA2, #  ░▓░▓▓▓░▓
+    0x80, #  ░▓▓▓▓▓▓▓
+    0xA8, #  ░▓░▓░▓▓▓
+    0x22, #  ▓▓░▓▓▓░▓
 ])
 # brickMiniDamageSprite = thumby.Sprite(8, 8, brickMiniDamage)
 
 brickMiniRuins = bytearray([
-    # BITMAP: width: 8, height: 8, [1,4,1,17,81,64,80,17]
-    0x01, #  ▓▓▓▓▓▓▓░
-    0x04, #  ▓▓▓▓▓░▓▓
-    0x01, #  ▓▓▓▓▓▓▓░
-    0x11, #  ▓▓▓░▓▓▓░
-    0x51, #  ▓░▓░▓▓▓░
-    0x40, #  ▓░▓▓▓▓▓▓
-    0x50, #  ▓░▓░▓▓▓▓
-    0x11, #  ▓▓▓░▓▓▓░
+    # BITMAP: width: 8, height: 8, [2,8,2,34,162,128,160,34]
+    0x02, #  ▓▓▓▓▓▓░▓
+    0x08, #  ▓▓▓▓░▓▓▓
+    0x02, #  ▓▓▓▓▓▓░▓
+    0x22, #  ▓▓░▓▓▓░▓
+    0xA2, #  ░▓░▓▓▓░▓
+    0x80, #  ░▓▓▓▓▓▓▓
+    0xA0, #  ░▓░▓▓▓▓▓
+    0x22, #  ▓▓░▓▓▓░▓
 ])
 # brickMiniRuinsSprite = thumby.Sprite(8, 8, brickMiniRuins)
 

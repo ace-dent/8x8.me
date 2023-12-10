@@ -246,43 +246,43 @@ namespace patterns {
 
     constexpr uint8_t brickMini[] PROGMEM {
         8, 8, //  8x8 px image
-        0x55, //  ▓░▓░▓░▓░
-        0x44, //  ▓░▓▓▓░▓▓
-        0x55, //  ▓░▓░▓░▓░
-        0x11, //  ▓▓▓░▓▓▓░
-        0x55, //  ▓░▓░▓░▓░
-        0x44, //  ▓░▓▓▓░▓▓
-        0x55, //  ▓░▓░▓░▓░
-        0x11, //  ▓▓▓░▓▓▓░
+        0xAA, //  ░▓░▓░▓░▓
+        0x88, //  ░▓▓▓░▓▓▓
+        0xAA, //  ░▓░▓░▓░▓
+        0x22, //  ▓▓░▓▓▓░▓
+        0xAA, //  ░▓░▓░▓░▓
+        0x88, //  ░▓▓▓░▓▓▓
+        0xAA, //  ░▓░▓░▓░▓
+        0x22, //  ▓▓░▓▓▓░▓
     };
-    // Magic: "UDU\21"[i%4]
-    // GAMBY: 0x5451
+    // Magic: ~"UwU\335"[i%4]
+    // GAMBY: 0xA8A2
 
     constexpr uint8_t brickMiniDamage[] PROGMEM {
         8, 8, //  8x8 px image
-        0x55, //  ▓░▓░▓░▓░
-        0x44, //  ▓░▓▓▓░▓▓
-        0x55, //  ▓░▓░▓░▓░
-        0x11, //  ▓▓▓░▓▓▓░
-        0x51, //  ▓░▓░▓▓▓░
-        0x40, //  ▓░▓▓▓▓▓▓
-        0x54, //  ▓░▓░▓░▓▓
-        0x11, //  ▓▓▓░▓▓▓░
+        0xAA, //  ░▓░▓░▓░▓
+        0x88, //  ░▓▓▓░▓▓▓
+        0xAA, //  ░▓░▓░▓░▓
+        0x22, //  ▓▓░▓▓▓░▓
+        0xA2, //  ░▓░▓▓▓░▓
+        0x80, //  ░▓▓▓▓▓▓▓
+        0xA8, //  ░▓░▓░▓▓▓
+        0x22, //  ▓▓░▓▓▓░▓
     };
-    // Magic: 33^"tet0pau0"[i%8]
+    // Magic: "UDU\21Q@T\21"[i%8]*2
 
     constexpr uint8_t brickMiniRuins[] PROGMEM {
         8, 8, //  8x8 px image
-        0x01, //  ▓▓▓▓▓▓▓░
-        0x04, //  ▓▓▓▓▓░▓▓
-        0x01, //  ▓▓▓▓▓▓▓░
-        0x11, //  ▓▓▓░▓▓▓░
-        0x51, //  ▓░▓░▓▓▓░
-        0x40, //  ▓░▓▓▓▓▓▓
-        0x50, //  ▓░▓░▓▓▓▓
-        0x11, //  ▓▓▓░▓▓▓░
+        0x02, //  ▓▓▓▓▓▓░▓
+        0x08, //  ▓▓▓▓░▓▓▓
+        0x02, //  ▓▓▓▓▓▓░▓
+        0x22, //  ▓▓░▓▓▓░▓
+        0xA2, //  ░▓░▓▓▓░▓
+        0x80, //  ░▓▓▓▓▓▓▓
+        0xA0, //  ░▓░▓▓▓▓▓
+        0x22, //  ▓▓░▓▓▓░▓
     };
-    // Magic: 33^" % 0paq0"[i%8]
+    // Magic: "\1\4\1\21Q@P\21"[i%8]*2
 
     constexpr uint8_t stoneWall[] PROGMEM {
         8, 8, //  8x8 px image
@@ -679,18 +679,19 @@ namespace patternsHorizontal {
 
     constexpr uint8_t brickMini[] PROGMEM {
         8, 8, //  8x8 px image
-        0xBB, //  ░▓░░░▓░░
-        0x00, //  ▓▓▓▓▓▓▓▓
-        0xEE, //  ░░░▓░░░▓
         0x00, //  ▓▓▓▓▓▓▓▓
         0xBB, //  ░▓░░░▓░░
         0x00, //  ▓▓▓▓▓▓▓▓
         0xEE, //  ░░░▓░░░▓
         0x00, //  ▓▓▓▓▓▓▓▓
+        0xBB, //  ░▓░░░▓░░
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0xEE, //  ░░░▓░░░▓
     };
 
     constexpr uint8_t brickMiniDamage[] PROGMEM {
         8, 8, //  8x8 px image
+        0x00, //  ▓▓▓▓▓▓▓▓
         0xB9, //  ░▓░░░▓▓░
         0x00, //  ▓▓▓▓▓▓▓▓
         0xE2, //  ░░░▓▓▓░▓
@@ -698,11 +699,11 @@ namespace patternsHorizontal {
         0xBB, //  ░▓░░░▓░░
         0x00, //  ▓▓▓▓▓▓▓▓
         0xEE, //  ░░░▓░░░▓
-        0x00, //  ▓▓▓▓▓▓▓▓
     };
 
     constexpr uint8_t brickMiniRuins[] PROGMEM {
         8, 8, //  8x8 px image
+        0x00, //  ▓▓▓▓▓▓▓▓
         0xB9, //  ░▓░░░▓▓░
         0x00, //  ▓▓▓▓▓▓▓▓
         0x40, //  ▓░▓▓▓▓▓▓
@@ -710,7 +711,6 @@ namespace patternsHorizontal {
         0x1B, //  ▓▓▓░░▓░░
         0x00, //  ▓▓▓▓▓▓▓▓
         0x0E, //  ▓▓▓▓░░░▓
-        0x00, //  ▓▓▓▓▓▓▓▓
     };
 
     constexpr uint8_t stoneWall[] PROGMEM {

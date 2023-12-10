@@ -255,20 +255,21 @@ local brickSinisterMini <const> = {
 -- playdate.graphics.setPattern(brickSinisterMini)
 
 local brickMini <const> = {
-    0xBB, --  ░▓░░░▓░░
-    0x00, --  ▓▓▓▓▓▓▓▓
-    0xEE, --  ░░░▓░░░▓
     0x00, --  ▓▓▓▓▓▓▓▓
     0xBB, --  ░▓░░░▓░░
     0x00, --  ▓▓▓▓▓▓▓▓
     0xEE, --  ░░░▓░░░▓
     0x00, --  ▓▓▓▓▓▓▓▓
-    -- 187,0,238,0,187,0,238,0 -- transparent background
-    -- 68,255,17,255,68,255,17,255 -- transparent foreground
+    0xBB, --  ░▓░░░▓░░
+    0x00, --  ▓▓▓▓▓▓▓▓
+    0xEE, --  ░░░▓░░░▓
+    -- 0,187,0,238,0,187,0,238 -- transparent background
+    -- 255,68,255,17,255,68,255,17 -- transparent foreground
 }
 -- playdate.graphics.setPattern(brickMini)
 
 local brickMiniDamage <const> = {
+    0x00, --  ▓▓▓▓▓▓▓▓
     0xB9, --  ░▓░░░▓▓░
     0x00, --  ▓▓▓▓▓▓▓▓
     0xE2, --  ░░░▓▓▓░▓
@@ -276,13 +277,13 @@ local brickMiniDamage <const> = {
     0xBB, --  ░▓░░░▓░░
     0x00, --  ▓▓▓▓▓▓▓▓
     0xEE, --  ░░░▓░░░▓
-    0x00, --  ▓▓▓▓▓▓▓▓
-    -- 185,0,226,0,187,0,238,0 -- transparent background
-    -- 70,255,29,255,68,255,17,255 -- transparent foreground
+    -- 0,185,0,226,0,187,0,238 -- transparent background
+    -- 255,70,255,29,255,68,255,17 -- transparent foreground
 }
 -- playdate.graphics.setPattern(brickMiniDamage)
 
 local brickMiniRuins <const> = {
+    0x00, --  ▓▓▓▓▓▓▓▓
     0xB9, --  ░▓░░░▓▓░
     0x00, --  ▓▓▓▓▓▓▓▓
     0x40, --  ▓░▓▓▓▓▓▓
@@ -290,9 +291,8 @@ local brickMiniRuins <const> = {
     0x1B, --  ▓▓▓░░▓░░
     0x00, --  ▓▓▓▓▓▓▓▓
     0x0E, --  ▓▓▓▓░░░▓
-    0x00, --  ▓▓▓▓▓▓▓▓
-    -- 185,0,64,0,27,0,14,0 -- transparent background
-    -- 70,255,191,255,228,255,241,255 -- transparent foreground
+    -- 0,185,0,64,0,27,0,14 -- transparent background
+    -- 255,70,255,191,255,228,255,241 -- transparent foreground
 }
 -- playdate.graphics.setPattern(brickMiniRuins)
 
