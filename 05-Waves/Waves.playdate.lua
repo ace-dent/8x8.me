@@ -51,12 +51,26 @@ local tidalLight <const> = {
     0x00, --  ▓▓▓▓▓▓▓▓
     0x10, --  ▓▓▓░▓▓▓▓
     0x44, --  ▓░▓▓▓░▓▓
-    0x83, --  ░▓▓▓▓▓░░
+    0x01, --  ▓▓▓▓▓▓▓░
     0x00, --  ▓▓▓▓▓▓▓▓
-    -- 0,0,0,0,16,68,131,0 -- transparent background
-    -- 255,255,255,255,239,187,124,255 -- transparent foreground
+    -- 0,0,0,0,16,68,1,0 -- transparent background
+    -- 255,255,255,255,239,187,254,255 -- transparent foreground
 }
 -- playdate.graphics.setPattern(tidalLight)
+
+local tidalSemiLight <const> = {
+    0x00, --  ▓▓▓▓▓▓▓▓
+    0x00, --  ▓▓▓▓▓▓▓▓
+    0x00, --  ▓▓▓▓▓▓▓▓
+    0x00, --  ▓▓▓▓▓▓▓▓
+    0x30, --  ▓▓░░▓▓▓▓
+    0x44, --  ▓░▓▓▓░▓▓
+    0x81, --  ░▓▓▓▓▓▓░
+    0x00, --  ▓▓▓▓▓▓▓▓
+    -- 0,0,0,0,48,68,129,0 -- transparent background
+    -- 255,255,255,255,207,187,126,255 -- transparent foreground
+}
+-- playdate.graphics.setPattern(tidalSemiLight)
 
 local tidal <const> = {
     0x00, --  ▓▓▓▓▓▓▓▓

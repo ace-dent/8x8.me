@@ -42,17 +42,30 @@ wave = bytearray([
 # waveSprite = thumby.Sprite(8, 8, wave)
 
 tidalLight = bytearray([
-    # BITMAP: width: 8, height: 8, [64,32,0,16,0,32,64,64]
-    0x40, #  ▓░▓▓▓▓▓▓
+    # BITMAP: width: 8, height: 8, [0,32,0,16,0,32,0,64]
+    0x00, #  ▓▓▓▓▓▓▓▓
     0x20, #  ▓▓░▓▓▓▓▓
     0x00, #  ▓▓▓▓▓▓▓▓
     0x10, #  ▓▓▓░▓▓▓▓
     0x00, #  ▓▓▓▓▓▓▓▓
     0x20, #  ▓▓░▓▓▓▓▓
-    0x40, #  ▓░▓▓▓▓▓▓
+    0x00, #  ▓▓▓▓▓▓▓▓
     0x40, #  ▓░▓▓▓▓▓▓
 ])
 # tidalLightSprite = thumby.Sprite(8, 8, tidalLight)
+
+tidalSemiLight = bytearray([
+    # BITMAP: width: 8, height: 8, [64,32,16,16,0,32,0,64]
+    0x40, #  ▓░▓▓▓▓▓▓
+    0x20, #  ▓▓░▓▓▓▓▓
+    0x10, #  ▓▓▓░▓▓▓▓
+    0x10, #  ▓▓▓░▓▓▓▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x20, #  ▓▓░▓▓▓▓▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x40, #  ▓░▓▓▓▓▓▓
+])
+# tidalSemiLightSprite = thumby.Sprite(8, 8, tidalSemiLight)
 
 tidal = bytearray([
     # BITMAP: width: 8, height: 8, [64,32,16,16,16,32,64,64]

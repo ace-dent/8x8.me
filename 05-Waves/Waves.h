@@ -50,16 +50,29 @@ namespace patterns {
 
     constexpr uint8_t tidalLight[] PROGMEM {
         8, 8, //  8x8 px image
-        0x40, //  ▓░▓▓▓▓▓▓
+        0x00, //  ▓▓▓▓▓▓▓▓
         0x20, //  ▓▓░▓▓▓▓▓
         0x00, //  ▓▓▓▓▓▓▓▓
         0x10, //  ▓▓▓░▓▓▓▓
         0x00, //  ▓▓▓▓▓▓▓▓
         0x20, //  ▓▓░▓▓▓▓▓
-        0x40, //  ▓░▓▓▓▓▓▓
+        0x00, //  ▓▓▓▓▓▓▓▓
         0x40, //  ▓░▓▓▓▓▓▓
     };
-    // Magic: "PH@D@HPP"[i%8]*4
+    // Magic: "@H@D@H@P"[i%8]*4
+
+    constexpr uint8_t tidalSemiLight[] PROGMEM {
+        8, 8, //  8x8 px image
+        0x40, //  ▓░▓▓▓▓▓▓
+        0x20, //  ▓▓░▓▓▓▓▓
+        0x10, //  ▓▓▓░▓▓▓▓
+        0x10, //  ▓▓▓░▓▓▓▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0x20, //  ▓▓░▓▓▓▓▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0x40, //  ▓░▓▓▓▓▓▓
+    };
+    // Magic: "PHDD@H@P"[i%8]*4
 
     constexpr uint8_t tidal[] PROGMEM {
         8, 8, //  8x8 px image
@@ -456,7 +469,19 @@ namespace patternsHorizontal {
         0x00, //  ▓▓▓▓▓▓▓▓
         0x10, //  ▓▓▓░▓▓▓▓
         0x44, //  ▓░▓▓▓░▓▓
-        0x83, //  ░▓▓▓▓▓░░
+        0x01, //  ▓▓▓▓▓▓▓░
+        0x00, //  ▓▓▓▓▓▓▓▓
+    };
+
+    constexpr uint8_t tidalSemiLight[] PROGMEM {
+        8, 8, //  8x8 px image
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0x30, //  ▓▓░░▓▓▓▓
+        0x44, //  ▓░▓▓▓░▓▓
+        0x81, //  ░▓▓▓▓▓▓░
         0x00, //  ▓▓▓▓▓▓▓▓
     };
 
