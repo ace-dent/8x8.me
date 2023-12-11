@@ -184,6 +184,19 @@ horizontalDenseLineDash = bytearray([
 ])
 # horizontalDenseLineDashSprite = thumby.Sprite(8, 8, horizontalDenseLineDash)
 
+horizontalLight = bytearray([
+    # BITMAP: width: 8, height: 8, [34,0,34,0,34,0,34,0]
+    0x22, #  ▓▓░▓▓▓░▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x22, #  ▓▓░▓▓▓░▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x22, #  ▓▓░▓▓▓░▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x22, #  ▓▓░▓▓▓░▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+])
+# horizontalLightSprite = thumby.Sprite(8, 8, horizontalLight)
+
 vertical = bytearray([
     # BITMAP: width: 8, height: 8, [0,0,255,0,0,0,255,0]
     0x00, #  ▓▓▓▓▓▓▓▓
@@ -365,6 +378,19 @@ verticalDenseLineDash = bytearray([
     0x00, #  ▓▓▓▓▓▓▓▓
 ])
 # verticalDenseLineDashSprite = thumby.Sprite(8, 8, verticalDenseLineDash)
+
+verticalLight = bytearray([
+    # BITMAP: width: 8, height: 8, [0,0,170,0,0,0,170,0]
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0xAA, #  ░▓░▓░▓░▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+    0xAA, #  ░▓░▓░▓░▓
+    0x00, #  ▓▓▓▓▓▓▓▓
+])
+# verticalLightSprite = thumby.Sprite(8, 8, verticalLight)
 
 dexter = bytearray([
     # BITMAP: width: 8, height: 8, [34,68,136,17,34,68,136,17]

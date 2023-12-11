@@ -197,6 +197,20 @@ namespace patterns {
     // Magic: i%4<2?85:17
     // GAMBY: 0x5511
 
+    constexpr uint8_t horizontalLight[] PROGMEM {
+        8, 8, //  8x8 px image
+        0x22, //  ▓▓░▓▓▓░▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0x22, //  ▓▓░▓▓▓░▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0x22, //  ▓▓░▓▓▓░▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0x22, //  ▓▓░▓▓▓░▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+    };
+    // Magic: i&1?0:34
+    // GAMBY: 0x2020
+
     constexpr uint8_t vertical[] PROGMEM {
         8, 8, //  8x8 px image
         0x00, //  ▓▓▓▓▓▓▓▓
@@ -384,6 +398,20 @@ namespace patterns {
     };
     // Magic: "\377\0003"[i%4]
     // GAMBY: 0xF030
+
+    constexpr uint8_t verticalLight[] PROGMEM {
+        8, 8, //  8x8 px image
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0xAA, //  ░▓░▓░▓░▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0xAA, //  ░▓░▓░▓░▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+    };
+    // Magic: i%4==2?170:0
+    // GAMBY: 0x00A0
 
     constexpr uint8_t dexter[] PROGMEM {
         8, 8, //  8x8 px image
@@ -956,6 +984,18 @@ namespace patternsHorizontal {
         0x00, //  ▓▓▓▓▓▓▓▓
     };
 
+    constexpr uint8_t horizontalLight[] PROGMEM {
+        8, 8, //  8x8 px image
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0xAA, //  ░▓░▓░▓░▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0xAA, //  ░▓░▓░▓░▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+    };
+
     constexpr uint8_t vertical[] PROGMEM {
         8, 8, //  8x8 px image
         0x22, //  ▓▓░▓▓▓░▓
@@ -1122,6 +1162,18 @@ namespace patternsHorizontal {
         0xAA, //  ░▓░▓░▓░▓
         0x88, //  ░▓▓▓░▓▓▓
         0x88, //  ░▓▓▓░▓▓▓
+    };
+
+    constexpr uint8_t verticalLight[] PROGMEM {
+        8, 8, //  8x8 px image
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0x22, //  ▓▓░▓▓▓░▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0x22, //  ▓▓░▓▓▓░▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0x22, //  ▓▓░▓▓▓░▓
+        0x00, //  ▓▓▓▓▓▓▓▓
+        0x22, //  ▓▓░▓▓▓░▓
     };
 
     constexpr uint8_t dexter[] PROGMEM {
