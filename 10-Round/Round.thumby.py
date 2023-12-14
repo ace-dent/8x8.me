@@ -378,3 +378,29 @@ roundelXXXL = bytearray([
     0x3C, #  ▓▓░░░░▓▓
 ])
 # roundelXXXLSprite = thumby.Sprite(8, 8, roundelXXXL)
+
+truchetDexter = bytearray([
+    # BITMAP: width: 8, height: 8, [24,24,48,227,199,12,24,24]
+    0x18, #  ▓▓▓░░▓▓▓
+    0x18, #  ▓▓▓░░▓▓▓
+    0x30, #  ▓▓░░▓▓▓▓
+    0xE3, #  ░░░▓▓▓░░
+    0xC7, #  ░░▓▓▓░░░
+    0x0C, #  ▓▓▓▓░░▓▓
+    0x18, #  ▓▓▓░░▓▓▓
+    0x18, #  ▓▓▓░░▓▓▓
+])
+# truchetDexterSprite = thumby.Sprite(8, 8, truchetDexter)
+
+truchetSinister = bytearray([
+    # BITMAP: width: 8, height: 8, [24,24,12,199,227,48,24,24]
+    0x18, #  ▓▓▓░░▓▓▓
+    0x18, #  ▓▓▓░░▓▓▓
+    0x0C, #  ▓▓▓▓░░▓▓
+    0xC7, #  ░░▓▓▓░░░
+    0xE3, #  ░░░▓▓▓░░
+    0x30, #  ▓▓░░▓▓▓▓
+    0x18, #  ▓▓▓░░▓▓▓
+    0x18, #  ▓▓▓░░▓▓▓
+])
+# truchetSinisterSprite = thumby.Sprite(8, 8, truchetSinister)
