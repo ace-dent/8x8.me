@@ -20,6 +20,8 @@ Nature patterns.
 | :------ | :-----: | :----: | :-----: | :---: | :----: | :------: | :----: |
 | Loam | <img width="64" height="32" src="../docs/art/Loam.png" alt=""> | [png](png/Loam.png) | [cpp](Nature.h#L90-L101) | [txt](Nature.bitsy.txt#L71-L80) | [p𝟪](nature.p8.lua#L91-L103) | [lua](Nature.playdate.lua#L89-L101) | [py](Nature.thumby.py#L83-L94) |
 | Sand | <img width="64" height="32" src="../docs/art/Sand.png" alt=""> | [png](png/Sand.png) | [cpp](Nature.h#L103-L114) | [txt](Nature.bitsy.txt#L82-L91) | [p𝟪](nature.p8.lua#L105-L117) | [lua](Nature.playdate.lua#L103-L115) | [py](Nature.thumby.py#L96-L107) |
+| Striated | <img width="64" height="32" src="../docs/art/Striated.png" alt=""> | [png](png/Striated.png) |
+| Trail | <img width="64" height="32" src="../docs/art/Trail.png" alt=""> | [png](png/Trail.png) |
 | Patch | <img width="64" height="32" src="../docs/art/Patch.png" alt=""> | [png](png/Patch.png) | [cpp](Nature.h#L116-L127) | [txt](Nature.bitsy.txt#L93-L102) | [p𝟪](nature.p8.lua#L119-L131) | [lua](Nature.playdate.lua#L117-L129) | [py](Nature.thumby.py#L109-L120) |
 | Divot <sup>o</sup>| <img width="64" height="32" src="../docs/art/Divot.png" alt=""> | [png](png/Divot.png) | [cpp](Nature.h#L129-L140) | [txt](Nature.bitsy.txt#L104-L113) | [p𝟪](nature.p8.lua#L133-L145) | [lua](Nature.playdate.lua#L131-L143) | [py](Nature.thumby.py#L122-L133) |
 | Grass | <img width="64" height="32" src="../docs/art/Grass.png" alt=""> | [png](png/Grass.png) | [cpp](Nature.h#L142-L153) | [txt](Nature.bitsy.txt#L115-L124) | [p𝟪](nature.p8.lua#L147-L159) | [lua](Nature.playdate.lua#L145-L157) | [py](Nature.thumby.py#L135-L146) |
@@ -49,6 +51,7 @@ Nature patterns.
 | :------ | :-----: | :----: | :-----: | :---: | :----: | :------: | :----: |
 | Thicket | <img width="64" height="32" src="../docs/art/Thicket.png" alt=""> | [png](png/Thicket.png) | [cpp](Nature.h#L312-L323) | [txt](Nature.bitsy.txt#L258-L267) | [p𝟪](nature.p8.lua#L330-L342) | [lua](Nature.playdate.lua#L327-L339) | [py](Nature.thumby.py#L304-L315) |
 | Tree | <img width="64" height="32" src="../docs/art/Tree.png" alt=""> | [png](png/Tree.png) | [cpp](Nature.h#L325-L336) | [txt](Nature.bitsy.txt#L269-L278) | [p𝟪](nature.p8.lua#L344-L356) | [lua](Nature.playdate.lua#L341-L353) | [py](Nature.thumby.py#L317-L328) |
+| Arboreal | <img width="64" height="32" src="../docs/art/Arboreal.png" alt=""> | [png](png/Arboreal.png)
 | Rocks | <img width="64" height="32" src="../docs/art/Rocks.png" alt=""> | [png](png/Rocks.png) | [cpp](Nature.h#L338-L349) | [txt](Nature.bitsy.txt#L280-L289) | [p𝟪](nature.p8.lua#L358-L370) | [lua](Nature.playdate.lua#L355-L367) | [py](Nature.thumby.py#L330-L341) |
 | Mounds | <img width="64" height="32" src="../docs/art/Mounds.png" alt=""> | [png](png/Mounds.png) | [cpp](Nature.h#L351-L362) | [txt](Nature.bitsy.txt#L291-L300) | [p𝟪](nature.p8.lua#L372-L384) | [lua](Nature.playdate.lua#L369-L381) | [py](Nature.thumby.py#L343-L354) |
 | Skull | <img width="64" height="32" src="../docs/art/Skull.png" alt=""> | [png](png/Skull.png) | [cpp](Nature.h#L364-L375) | [txt](Nature.bitsy.txt#L302-L311) | [p𝟪](nature.p8.lua#L386-L398) | [lua](Nature.playdate.lua#L383-L395) | [py](Nature.thumby.py#L356-L367) |
