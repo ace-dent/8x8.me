@@ -67,7 +67,7 @@ rotary = bytearray([
 ])
 # rotarySprite = thumby.Sprite(8, 8, rotary)
 
-starBurst = bytearray([
+nova = bytearray([
     # BITMAP: width: 8, height: 8, [4,12,244,68,34,47,48,32]
     0x04, #  ▓▓▓▓▓░▓▓
     0x0C, #  ▓▓▓▓░░▓▓
@@ -78,7 +78,7 @@ starBurst = bytearray([
     0x30, #  ▓▓░░▓▓▓▓
     0x20, #  ▓▓░▓▓▓▓▓
 ])
-# starBurstSprite = thumby.Sprite(8, 8, starBurst)
+# novaSprite = thumby.Sprite(8, 8, nova)
 
 swirl = bytearray([
     # BITMAP: width: 8, height: 8, [8,4,100,128,1,38,32,16]

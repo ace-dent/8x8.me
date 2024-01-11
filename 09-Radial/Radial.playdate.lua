@@ -72,7 +72,7 @@ local rotary <const> = {
 }
 -- playdate.graphics.setPattern(rotary)
 
-local starBurst <const> = {
+local nova <const> = {
     0x04, --  ▓▓▓▓▓░▓▓
     0x0C, --  ▓▓▓▓░░▓▓
     0xF4, --  ░░░░▓░▓▓
@@ -84,7 +84,7 @@ local starBurst <const> = {
     -- 4,12,244,68,34,47,48,32 -- transparent background
     -- 251,243,11,187,221,208,207,223 -- transparent foreground
 }
--- playdate.graphics.setPattern(starBurst)
+-- playdate.graphics.setPattern(nova)
 
 local swirl <const> = {
     0x08, --  ▓▓▓▓░▓▓▓

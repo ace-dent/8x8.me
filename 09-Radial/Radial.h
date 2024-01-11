@@ -74,7 +74,7 @@ namespace patterns {
     };
     // Magic: 64^"HHt\204clPP"[i%8]
 
-    constexpr uint8_t starBurst[] PROGMEM {
+    constexpr uint8_t nova[] PROGMEM {
         8, 8, //  8x8 px image
         0x04, //  ▓▓▓▓▓░▓▓
         0x0C, //  ▓▓▓▓░░▓▓
@@ -245,7 +245,7 @@ namespace patternsHorizontal {
         0x10, //  ▓▓▓░▓▓▓▓
     };
 
-    constexpr uint8_t starBurst[] PROGMEM {
+    constexpr uint8_t nova[] PROGMEM {
         8, 8, //  8x8 px image
         0x04, //  ▓▓▓▓▓░▓▓
         0x0C, //  ▓▓▓▓░░▓▓
