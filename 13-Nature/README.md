@@ -35,6 +35,7 @@ Nature patterns.
 
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Playdate | Thumby |
 | :------ | :-----: | :----: | :-----: | :---: | :----: | :------: | :----: |
+| Flowers | <img width="64" height="32" src="../docs/art/Flowers.png" alt=""> | [png](png/Flowers.png) | 
 | Daisies | <img width="64" height="32" src="../docs/art/Daisies.png" alt=""> | [png](png/Daisies.png) | [cpp](Nature.h#L208-L219) | [txt](Nature.bitsy.txt#L170-L179) | [p𝟪](nature.p8.lua#L218-L230) | [lua](Nature.playdate.lua#L215-L227) | [py](Nature.thumby.py#L200-L211) |
 | Tuffet | <img width="64" height="32" src="../docs/art/Tuffet.png" alt=""> | [png](png/Tuffet.png) | [cpp](Nature.h#L221-L232) | [txt](Nature.bitsy.txt#L181-L190) | [p𝟪](nature.p8.lua#L232-L244) | [lua](Nature.playdate.lua#L229-L241) | [py](Nature.thumby.py#L213-L224) |
 | Shrub | <img width="64" height="32" src="../docs/art/Shrub.png" alt=""> | [png](png/Shrub.png) | [cpp](Nature.h#L234-L245) | [txt](Nature.bitsy.txt#L192-L201) | [p𝟪](nature.p8.lua#L246-L258) | [lua](Nature.playdate.lua#L243-L255) | [py](Nature.thumby.py#L226-L237) |
