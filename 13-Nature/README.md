@@ -52,7 +52,6 @@ Nature patterns.
 | :------ | :-----: | :----: | :-----: | :---: | :----: | :------: | :----: |
 | Thicket | <img width="64" height="32" src="../docs/art/Thicket.png" alt=""> | [png](png/Thicket.png) | [cpp](Nature.h#L312-L323) | [txt](Nature.bitsy.txt#L258-L267) | [p𝟪](nature.p8.lua#L330-L342) | [lua](Nature.playdate.lua#L327-L339) | [py](Nature.thumby.py#L304-L315) |
 | Tree | <img width="64" height="32" src="../docs/art/Tree.png" alt=""> | [png](png/Tree.png) | [cpp](Nature.h#L325-L336) | [txt](Nature.bitsy.txt#L269-L278) | [p𝟪](nature.p8.lua#L344-L356) | [lua](Nature.playdate.lua#L341-L353) | [py](Nature.thumby.py#L317-L328) |
-| Arboreal | <img width="64" height="32" src="../docs/art/Arboreal.png" alt=""> | [png](png/Arboreal.png)
 | Rocks | <img width="64" height="32" src="../docs/art/Rocks.png" alt=""> | [png](png/Rocks.png) | [cpp](Nature.h#L338-L349) | [txt](Nature.bitsy.txt#L280-L289) | [p𝟪](nature.p8.lua#L358-L370) | [lua](Nature.playdate.lua#L355-L367) | [py](Nature.thumby.py#L330-L341) |
 | Mounds | <img width="64" height="32" src="../docs/art/Mounds.png" alt=""> | [png](png/Mounds.png) | [cpp](Nature.h#L351-L362) | [txt](Nature.bitsy.txt#L291-L300) | [p𝟪](nature.p8.lua#L372-L384) | [lua](Nature.playdate.lua#L369-L381) | [py](Nature.thumby.py#L343-L354) |
 | Skull | <img width="64" height="32" src="../docs/art/Skull.png" alt=""> | [png](png/Skull.png) | [cpp](Nature.h#L364-L375) | [txt](Nature.bitsy.txt#L302-L311) | [p𝟪](nature.p8.lua#L386-L398) | [lua](Nature.playdate.lua#L383-L395) | [py](Nature.thumby.py#L356-L367) |
