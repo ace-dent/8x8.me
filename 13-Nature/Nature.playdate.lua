@@ -422,7 +422,7 @@ local skullXL <const> = {
 }
 -- playdate.graphics.setPattern(skullXL)
 
-local crackedBoulder <const> = {
+local boulderCracked <const> = {
     0x00, --  ▓▓▓▓▓▓▓▓
     0x18, --  ▓▓▓░░▓▓▓
     0x5C, --  ▓░▓░░░▓▓
@@ -434,7 +434,7 @@ local crackedBoulder <const> = {
     -- 0,24,92,204,46,194,152,60 -- transparent background
     -- 255,231,163,51,209,61,103,195 -- transparent foreground
 }
--- playdate.graphics.setPattern(crackedBoulder)
+-- playdate.graphics.setPattern(boulderCracked)
 
 local bamboo <const> = {
     0x3A, --  ▓▓░░░▓░▓

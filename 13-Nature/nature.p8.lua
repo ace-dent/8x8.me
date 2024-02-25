@@ -425,7 +425,7 @@ poke(0x5600+(8* 51),
 -->spr0: print"⁶@56000003⁸x⁸⁶c0ᵉ3"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
 --magic: ?"⁶rw¹シ⁶.".."\0>○○Iw>*"
 
---52 '4' crackedboulder
+--52 '4' bouldercracked
 poke(0x5600+(8* 52),
    0, -- ▒▒▒▒▒▒▒▒
   24, -- ▒▒▒██▒▒▒

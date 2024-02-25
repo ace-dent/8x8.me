@@ -400,7 +400,7 @@ namespace patterns {
     };
     // Magic: "\36w7o7w\36"[i%8]*2
 
-    constexpr uint8_t crackedBoulder[] PROGMEM {
+    constexpr uint8_t boulderCracked[] PROGMEM {
         8, 8, //  8x8 px image
         0x68, //  ▓░░▓░▓▓▓
         0x2C, //  ▓▓░▓░░▓▓
@@ -793,7 +793,7 @@ namespace patternsHorizontal {
         0x54, //  ▓░▓░▓░▓▓
     };
 
-    constexpr uint8_t crackedBoulder[] PROGMEM {
+    constexpr uint8_t boulderCracked[] PROGMEM {
         8, 8, //  8x8 px image
         0x00, //  ▓▓▓▓▓▓▓▓
         0x18, //  ▓▓▓░░▓▓▓

@@ -392,7 +392,7 @@ skullXL = bytearray([
 ])
 # skullXLSprite = thumby.Sprite(8, 8, skullXL)
 
-crackedBoulder = bytearray([
+boulderCracked = bytearray([
     # BITMAP: width: 8, height: 8, [104,44,144,198,222,156,48,0]
     0x68, #  ▓░░▓░▓▓▓
     0x2C, #  ▓▓░▓░░▓▓
@@ -403,7 +403,7 @@ crackedBoulder = bytearray([
     0x30, #  ▓▓░░▓▓▓▓
     0x00, #  ▓▓▓▓▓▓▓▓
 ])
-# crackedBoulderSprite = thumby.Sprite(8, 8, crackedBoulder)
+# boulderCrackedSprite = thumby.Sprite(8, 8, boulderCracked)
 
 bamboo = bytearray([
     # BITMAP: width: 8, height: 8, [16,32,223,119,253,2,1,0]

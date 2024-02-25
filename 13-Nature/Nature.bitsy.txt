@@ -341,7 +341,7 @@ TIL 8
 11000010
 10011000
 00111100
-NAME crackedboulder
+NAME bouldercracked
 
 TIL 9
 00111010

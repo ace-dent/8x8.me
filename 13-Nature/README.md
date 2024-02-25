@@ -35,7 +35,7 @@ Nature patterns.
 
 | Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Playdate | Thumby |
 | :------ | :-----: | :----: | :-----: | :---: | :----: | :------: | :----: |
-| Flowers | <img width="64" height="32" src="../docs/art/Flowers.png" alt=""> | [png](png/Flowers.png) | 
+| Floral | <img width="64" height="32" src="../docs/art/Floral.png" alt=""> | [png](png/Floral.png) | 
 | Daisies | <img width="64" height="32" src="../docs/art/Daisies.png" alt=""> | [png](png/Daisies.png) | [cpp](Nature.h#L208-L219) | [txt](Nature.bitsy.txt#L170-L179) | [p𝟪](nature.p8.lua#L218-L230) | [lua](Nature.playdate.lua#L215-L227) | [py](Nature.thumby.py#L200-L211) |
 | Tuffet | <img width="64" height="32" src="../docs/art/Tuffet.png" alt=""> | [png](png/Tuffet.png) | [cpp](Nature.h#L221-L232) | [txt](Nature.bitsy.txt#L181-L190) | [p𝟪](nature.p8.lua#L232-L244) | [lua](Nature.playdate.lua#L229-L241) | [py](Nature.thumby.py#L213-L224) |
 | Shrub | <img width="64" height="32" src="../docs/art/Shrub.png" alt=""> | [png](png/Shrub.png) | [cpp](Nature.h#L234-L245) | [txt](Nature.bitsy.txt#L192-L201) | [p𝟪](nature.p8.lua#L246-L258) | [lua](Nature.playdate.lua#L243-L255) | [py](Nature.thumby.py#L226-L237) |
@@ -57,7 +57,7 @@ Nature patterns.
 | Skull | <img width="64" height="32" src="../docs/art/Skull.png" alt=""> | [png](png/Skull.png) | [cpp](Nature.h#L364-L375) | [txt](Nature.bitsy.txt#L302-L311) | [p𝟪](nature.p8.lua#L386-L398) | [lua](Nature.playdate.lua#L383-L395) | [py](Nature.thumby.py#L356-L367) |
 | SkullLarge | <img width="64" height="32" src="../docs/art/SkullLarge.png" alt=""> | [png](png/SkullLarge.png) | [cpp](Nature.h#L377-L388) | [txt](Nature.bitsy.txt#L313-L322) | [p𝟪](nature.p8.lua#L400-L412) | [lua](Nature.playdate.lua#L397-L409) | [py](Nature.thumby.py#L369-L380) |
 | SkullXL | <img width="64" height="32" src="../docs/art/SkullXL.png" alt=""> | [png](png/SkullXL.png) | [cpp](Nature.h#L390-L401) | [txt](Nature.bitsy.txt#L324-L333) | [p𝟪](nature.p8.lua#L414-L426) | [lua](Nature.playdate.lua#L411-L423) | [py](Nature.thumby.py#L382-L393) |
-| CrackedBoulder | <img width="64" height="32" src="../docs/art/CrackedBoulder.png" alt=""> | [png](png/CrackedBoulder.png) | [cpp](Nature.h#L403-L414) | [txt](Nature.bitsy.txt#L335-L344) | [p𝟪](nature.p8.lua#L428-L440) | [lua](Nature.playdate.lua#L425-L437) | [py](Nature.thumby.py#L395-L406) |
+| BoulderCracked | <img width="64" height="32" src="../docs/art/BoulderCracked.png" alt=""> | [png](png/BoulderCracked.png) | [cpp](Nature.h#L403-L414) | [txt](Nature.bitsy.txt#L335-L344) | [p𝟪](nature.p8.lua#L428-L440) | [lua](Nature.playdate.lua#L425-L437) | [py](Nature.thumby.py#L395-L406) |
 | Bamboo | <img width="64" height="32" src="../docs/art/Bamboo.png" alt=""> | [png](png/Bamboo.png) | [cpp](Nature.h#L416-L427) | [txt](Nature.bitsy.txt#L346-L355) | [p𝟪](nature.p8.lua#L442-L454) | [lua](Nature.playdate.lua#L439-L451) | [py](Nature.thumby.py#L408-L419) |
 
 
