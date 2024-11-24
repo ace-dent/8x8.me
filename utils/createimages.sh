@@ -3,8 +3,8 @@
 # WARNING: Not safe for public use! Created for the author's benefit.
 # Assumes:
 # - Filenames and directory structure follows the project standard.
-# - Correct png images are fed in, or the parameter 'reset' followed by another png image.
-# - Exiftool, ImageMagick and OptiPNG executables are available
+# - Correct png images are fed in, or parameters 'reset' or '^a,b' for collections.
+# - Exiftool, ImageMagick and OptiPNG executables are required.
 
 # - Optional: Enabling this function uses PICO-8 to produce a sprite sheet
 # pico8() {
@@ -14,7 +14,7 @@
 
 
 # Minimal check for input file(s)
-if [ -z "$1" ]; then
+if [[ -z "$1" ]]; then
   echo 'Missing filename. Provide at least one png image to process.'
   exit
 fi
@@ -70,14 +70,14 @@ echo 'Crunching images into patterns...'
 while (( "$#" )); do
 
   # Check for 'reset' parameter to restart bitsy tile assignment
-  if [ "$1" == 'reset' ]; then
+  if [[ "$1" == 'reset' ]]; then
     bitsy_counter=0
     echo '--- Bitsy TIL numbering reset ---'
     shift # Get the next parameter
     continue
   fi
   # Remove any Collection marker '^abc' for the previous pattern
-  if [ "${1:0:1}" == '^' ]; then
+  if [[ "${1:0:1}" == '^' ]]; then
     shift # Get the next parameter
     continue
   fi
@@ -139,13 +139,13 @@ while (( "$#" )); do
   # Check for an exisiting preview image and only replace if necessary,
   # as it may have been optimized with external tools
   preview_uid='#'
-  if [ -f "${preview_file}" ]; then
+  if [[ -f "${preview_file}" ]]; then
     # Extract 8x8px pattern and generate unique id (8 VLSB bytes)
     preview_uid="$(magick "${preview_file}" -sample 50% -crop 8x8+0+0 \
       +repage -depth 1 +negate -rotate 90 PBM:- \
       | tail -c 8 | xxd -p)"
   fi
-  if [ "${pattern_uid}" != "${preview_uid}" ]; then
+  if [[ "${pattern_uid}" != "${preview_uid}" ]]; then
     # Create the image by tiling the pattern 4x2 and then scale up 2x
     magick -size 32x16 tile:"$1" \
       -define png:include-chunk=none \
@@ -155,7 +155,7 @@ while (( "$#" )); do
 
   # Bundle the Pulp image into the group's zip archive
   pulp_zip="${img_root%}/${img_group}.playdate-pulp.zip"
-  if ! [ -f "${pulp_zip}" ]; then
+  if [[ ! -f "${pulp_zip}" ]]; then
     # Add 'readme' when first creating the archive.
     printf '%s - %s\n%s\n%s' \
       "${img_group}" "${project//pattern/patterns (Pulp)}" "${copyright}" "${license}" \
@@ -195,17 +195,17 @@ while (( "$#" )); do
 
   # Check the pattern's minimum repeat width and height
   pattern_width=8
-  if [ "$(head -n 4 "${bin_v}")" = "$(tail -n 4 "${bin_v}")" ]; then
+  if [[ "$(head -n 4 "${bin_v}")" == "$(tail -n 4 "${bin_v}")" ]]; then
     pattern_width=4
-    if [ "$(head -n 2 "${bin_v}")" = "$(tail -n 2 "${bin_v}")" ]; then
+    if [[ "$(head -n 2 "${bin_v}")" == "$(tail -n 2 "${bin_v}")" ]]; then
       pattern_width=2
-      if [ "$(head -n 1 "${bin_v}")" = "$(tail -n 1 "${bin_v}")" ]; then
+      if [[ "$(head -n 1 "${bin_v}")" == "$(tail -n 1 "${bin_v}")" ]]; then
         pattern_width=1
       fi
     fi
   fi
   pattern_height=8
-  if [ "$(head -n 4 "${bin_h}")" = "$(tail -n 4 "${bin_h}")" ]; then
+  if [[ "$(head -n 4 "${bin_h}")" == "$(tail -n 4 "${bin_h}")" ]]; then
     pattern_height=4 # Pattern heights below 4 are treated the same
   fi
   echo "${img_name} - Pattern ${pattern_width} x ${pattern_height} px #${pattern_uid}."
@@ -215,19 +215,19 @@ while (( "$#" )); do
   # Create markdown gallery entry for the pattern
   md_file="${img_root}/${img_group}.markdown.WIP.txt"
   md_extra_lines=0
-  if [ ${pattern_width} -le 4 ] && [ ${pattern_height} -le 4 ]; then
+  if [[ ${pattern_width} -le 4 && ${pattern_height} -le 4 ]]; then
     md_extra_lines=1 # cpp and p8 code snippets will output an extra line
   fi
   {
     # Produce a table header for each new section (after 'reset')
-    if [ ${bitsy_counter} -eq 1 ]; then
+    if [[ ${bitsy_counter} == 1 ]]; then
       printf '\n<br>\n\n\n'
       printf '| Pattern | Preview | Bitmap | Arduboy | Bitsy | PICO-8 | Playdate | Thumby |\n'
       printf '| :------ | :-----: | :----: | :-----: | :---: | :----: | :------: | :----: |\n'
     fi
     printf '| %s ' "${img_name}"
     # Check if a Collection '^abc' is set in the next parameter
-    if [ "${2:0:1}" == '^' ]; then
+    if [[ "${2:0:1}" == '^' ]]; then
       # Add superscript reference to Collection(s)
       printf '<sup>%s</sup>' "${2:1}"
     fi
@@ -514,7 +514,7 @@ while (( "$#" )); do
     # Find the decimal value for the current row (byte)
     binary_str="$( sed -n ${row}p "${bin_h}" | rev )"
     value_dec=$((2#${binary_str}))
-    if [ ${value_dec} -eq 0 ] && [ ${digit_present} -eq 1 ]; then
+    if [[ ${value_dec} == 0 && ${digit_present} == 1 ]]; then
       # Handle special case to make octal value unambiguous
       encoded_byte='\000'
       digit_present=0
