@@ -28,31 +28,29 @@
 # }
 
 # TODO
-# - Move to oxipng for png compression
 # - Update P8 fillp to use built-ins.
 
 
 #  Pretty messages, colored if NO_COLOR is unset and stdout is a valid terminal
-ERR='✖ Error:'; WARN='▲ Warning:'
-if [[ -z "${NO_COLOR-}" && -t 1 && "${TERM-}" != dumb ]]; then
-  ERR=$'\e[31m'"${ERR}"$'\e[0m'; WARN=$'\e[33m'"${WARN}"$'\e[0m';
-fi
+ERR='✖ Error:' WARN='▲ Warning:'
+[[ -z "${NO_COLOR-}" && -t 1 && "${TERM-}" != dumb ]] \
+  && ERR=$'\e[31m'$ERR$'\e[0m' WARN=$'\e[33m'$WARN$'\e[0m'
 
 # Check the required binaries are available
-for bin in 'magick' 'exiftool' 'optipng'; do
+for bin in 'magick' 'exiftool' 'oxipng'; do
   if ! command -v "${bin}" &> /dev/null; then
     echo "${ERR} '${bin}' is not installed or not in your PATH."
     exit
   fi
 done
 # Check Oxipng is v9.1.3 or greater (for Zopfli iterations `--zi`)
-# min_ver='9.1.3'
-# this_ver="$(oxipng --version | head -n1 | sed 's/^oxipng //')"
-# if [[ $(printf '%s\n' "${min_ver}" "${this_ver}" | sort -V | head -n1) \
-#   != "${min_ver}" ]]; then
-#   echo "${ERR} Oxipng v${this_ver}; upgrade to at least v${min_ver}."
-#   exit
-# fi
+min_ver='9.1.3'
+this_ver="$(oxipng --version | head -n1 | sed 's/^oxipng //')"
+if [[ $(printf '%s\n' "${min_ver}" "${this_ver}" | sort -V | head -n1) \
+  != "${min_ver}" ]]; then
+  echo "${ERR} Oxipng v${this_ver}; upgrade to at least v${min_ver}."
+  exit
+fi
 # Check for at least one input file
 if [[ -z "$1" ]]; then
   echo "${ERR} Missing filename. Provide at least one PNG image to process."
@@ -158,6 +156,28 @@ function get_byte {
   fi
 }
 
+# Lossless png optimization
+optimize_png() {
+  if [[ -f "$1" ]]; then
+    oxipng -q --nx --strip all "$1"
+    # First try to optimize with no reductions (8bpp depth preferred)
+    #   then allow reductions (lower bit depths and other color modes)
+    for reductions in '--nx -q' '-q'; do
+      for level in {0..12}; do
+        oxipng ${reductions} --zc ${level} --filters 0-9 "$1"
+      done
+      oxipng ${reductions} --zopfli --zi 255 --filters 0-9 "$1"
+      # Optionally compress with PNGOUT if available
+      if command -v 'pngout' &> /dev/null; then
+        for level in {0..3}; do
+          pngout -q -ks -kp -f6 -s${level} "$1"
+        done
+      fi
+    done
+  fi
+}
+
+
 
 # Process patterns
 # -----------------------------------------------------------------------------
@@ -188,6 +208,8 @@ while (( "$#" )); do
 
   # Ensure the artwork has the correct file permissions set
   chmod 644 "$1"
+  # Lossless PNG optimization
+  optimize_png "$1"
 
   ((img_counter=img_counter+1))
   ((bitsy_counter=bitsy_counter+1))
@@ -223,8 +245,7 @@ while (( "$#" )); do
     -define png:include-chunk=none \
     +level-colors '#BFBCB6','#001830' "${pulp_file}" # Swap colors to match LCD screen
   # TODO: When Pulp code is fixed, update black to '#091624' (less blue)
-  optipng -q -nx -o6 "${pulp_file}" # Try to optimize at fixed 8bpp, RGB png first.
-  optipng -q -o6 "${pulp_file}" # Also try reducing to 1bpp indexed png.
+  optimize_png "${pulp_file}"
 
   # Add metadata to png files first and then pbm file
   exiftool "$1" "${pulp_file}" \
@@ -253,7 +274,7 @@ while (( "$#" )); do
     magick -size 32x16 tile:"$1" \
       -define png:include-chunk=none \
       -sample 200% "${preview_file}"
-    optipng -q -o6 "${preview_file}"
+    optimize_png "${preview_file}"
   fi
 
   # Bundle the Pulp image into the group's zip archive
@@ -725,8 +746,7 @@ if type pico8 &> /dev/null; then
     magick "${p8_sprsht}" -gravity South -chop x"${p8_chop}" \
       -define png:color-type='2' -define png:bit-depth='8' \
       -define png:include-chunk=none "${p8_sprsht}"
-    optipng -q -nx -o6 "${p8_sprsht}" # Try to optimize 8bpp RGB png first.
-    optipng -q -o6 "${p8_sprsht}" # Also try reducing to 1bpp indexed png.
+    optimize_png "${p8_sprsht}"
     # Add metadata to the png sprite sheet
     exiftool "${p8_sprsht}" \
       -q -overwrite_original -fast1 \
