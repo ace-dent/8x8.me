@@ -1,25 +1,63 @@
 #!/bin/bash
-
-# WARNING: Not safe for public use! Created for the author's benefit.
-# Assumes:
-# - Filenames and directory structure follows the project standard.
-# - Correct png images are fed in, or parameters 'reset' or '^a,b' for collections.
-# - Exiftool, ImageMagick and OptiPNG executables are required.
+# SPDX-License-Identifier: CC0-1.0
+# SPDX-FileCopyrightText: 2022 Andrew C.E. Dent <hi@aced.cafe>
+#
+# -----------------------------------------------------------------------------
+# Usage:
+#   - Provide one or more 8x8 PNG images, to be processed.
+#   - Optional parameters 'reset' for numbering, or '^a,b' to mark collections.
+#   - Generates project images, code files and markdown gallery tables.
+#
+# Requirements:
+#   - ImageMagick https://imagemagick.org/
+#   - exiftool https://exiftool.org
+#   - Oxipng v9.1.3 or greater https://github.com/shssoichiro/oxipng
+#   - Optional: PNGOUT (for extra png compression)
+#
+# Assumptions:
+#   - Filenames and directory structures follow the project standard.
+#   - Correct images are fed in.
+#
+# WARNING:
+#   May not be safe for public use; created for the author's benefit!
+# -----------------------------------------------------------------------------
 
 # - Optional: Enabling this function uses PICO-8 to produce a sprite sheet
 # pico8() {
 #   '/Applications/PICO-8.app/Contents/MacOS/pico8' "$@"
 # }
 
+# TODO
+# - Move to oxipng for png compression
+# - Update P8 fillp to use built-ins.
 
 
-# Minimal check for input file(s)
-if [[ -z "$1" ]]; then
-  echo 'Missing filename. Provide at least one png image to process.'
-  exit
+#  Pretty messages, colored if NO_COLOR is unset and stdout is a valid terminal
+ERR='✖ Error:'; WARN='▲ Warning:'
+if [[ -z "${NO_COLOR-}" && -t 1 && "${TERM-}" != dumb ]]; then
+  ERR=$'\e[31m'"${ERR}"$'\e[0m'; WARN=$'\e[33m'"${WARN}"$'\e[0m';
 fi
 
-# TODO: Check for external binaries (Exiftool, ImageMagick and OptiPNG)
+# Check the required binaries are available
+for bin in 'magick' 'exiftool' 'optipng'; do
+  if ! command -v "${bin}" &> /dev/null; then
+    echo "${ERR} '${bin}' is not installed or not in your PATH."
+    exit
+  fi
+done
+# Check Oxipng is v9.1.3 or greater (for Zopfli iterations `--zi`)
+# min_ver='9.1.3'
+# this_ver="$(oxipng --version | head -n1 | sed 's/^oxipng //')"
+# if [[ $(printf '%s\n' "${min_ver}" "${this_ver}" | sort -V | head -n1) \
+#   != "${min_ver}" ]]; then
+#   echo "${ERR} Oxipng v${this_ver}; upgrade to at least v${min_ver}."
+#   exit
+# fi
+# Check for at least one input file
+if [[ -z "$1" ]]; then
+  echo "${ERR} Missing filename. Provide at least one PNG image to process."
+  exit
+fi
 
 
 # Directory for utilities
@@ -28,7 +66,8 @@ readonly util_dir
 
 # Standard metadata for images
 readonly project='8x8.me fill pattern.'
-readonly copyright='This work is dedicated to the Public Domain by ACED, licensed under CC0.'
+readonly copyright='Public Domain by ACED, licensed under CC0.'
+readonly copyright_long='This work is dedicated to the '"${copyright}"
 readonly license='https://creativecommons.org/publicdomain/zero/1.0/'
 
 # Markdown gallery parameters for linking to line numbers (offset and stride)
@@ -63,10 +102,71 @@ readonly p8_map
 readonly p8_map_length=${#p8_map}
 
 
+
+# Common helper functions
+# -----------------------------------------------------------------------------
+
+# Search a CSV file for a key and output the paired value
+function csv_read {
+  local csv_file="$1"
+  local csv_key="$2"
+  if [[ ! -f "${csv_file}" ]]; then
+    return 2 # Exit if file cannot be found
+  fi
+  # Loop through each line of the csv file
+  while IFS= read -r line; do
+    # Extract the comma seperated key and value fields from each line
+    key=$(echo "${line}" | cut -d ',' -f 1)
+    value=$(echo "${line}" | cut -d ',' -f 2-)
+    # Remove surrounding double quotes from the key field
+    key="${key#\"}"
+    key="${key%\"}"
+    # Check if the current line's key matches the search key
+    if [[ "${key}" == "${csv_key}" ]]; then
+      # Remove surrounding double quotes from the value field
+      value="${value#\"}"
+      value="${value%\"}"
+      # De-duplicate any doubled double quotes
+      value="${value//\"\"/\"}"
+      echo "${value}"
+      return 0  # Exit on first success
+    fi
+  done < "${csv_file}"
+  # Loop completed without finding the key
+  return 1
+}
+
+# Read 8 binary digits in plain text and return the numerical value
+function get_byte {
+  local src="$1" # Input source
+  local src_line="$2" # Line to read
+  local value_format="$3" # Return value base 'dec' / 'hex' / 'oct' / 'bin'
+  if [[ ! -f "${src}" ]]; then
+    return 2 # Exit if file cannot be found
+  fi
+  # Get input line
+  binary_str=$( sed -n "${src_line}p" "${src}" )
+  # Output formatted value
+  if [[ "${value_format}" == 'dec' ]]; then
+    echo "$((2#${binary_str}))"
+  elif [[ "${value_format}" == 'hex ' ]]; then
+    echo '0x' # TODO
+  elif [[ "${value_format}" == 'oct ' ]]; then
+    echo 'oct' # TODO
+  else
+    echo "${binary_str}"
+  fi
+}
+
+
+# Process patterns
+# -----------------------------------------------------------------------------
+
 img_counter=0
 bitsy_counter=0
 echo ''
 echo 'Crunching images into patterns...'
+
 while (( "$#" )); do
 
   # Check for 'reset' parameter to restart bitsy tile assignment
@@ -110,7 +210,7 @@ while (( "$#" )); do
 
 
   # Produce images
-  # --------------
+  # ---------------------------------------------------------------------------
 
   # Create the Portable Bit Map (PBM) file
   pbm_file="${img_root}/pbm/${img_name}.pbm"
@@ -127,12 +227,15 @@ while (( "$#" )); do
   optipng -q -o6 "${pulp_file}" # Also try reducing to 1bpp indexed png.
 
   # Add metadata to png files first and then pbm file
-  exiftool -q -overwrite_original -fast1 \
+  exiftool "$1" "${pulp_file}" \
+    -q -overwrite_original -fast1 \
     -Title="${img_name} - ${img_group} - ${project}" \
-    -Copyright="${copyright} ${license}" "$1" "${pulp_file}" \
-    -execute -q -overwrite_original -fast5 \
-    -Comment="${img_name} - ${img_group} - ${project}" "${pbm_file}" # Primary pbm metadata (single text line in header)
-  printf '\n# %s' "${copyright}" "${license}" >> "${pbm_file}" # Extra pbm metadata appended to the plain text file
+    -Copyright="${copyright} ${license}" \
+    -execute \
+    "${pbm_file}" -q -overwrite_original -fast5 \
+    -Comment="${img_name} - ${img_group} - ${project}"  # Primary metadata (single line in header)
+  # Extra pbm metadata appended to the end as plain text
+  printf '\n# %s' "${copyright_long}" "${license}" >> "${pbm_file}"
 
   # Create the preview 'art' image
   preview_file="${img_root%/*}/docs/art/${img_name}.png"
@@ -158,7 +261,7 @@ while (( "$#" )); do
   if [[ ! -f "${pulp_zip}" ]]; then
     # Add 'readme' when first creating the archive.
     printf '%s - %s\n%s\n%s' \
-      "${img_group}" "${project//pattern/patterns (Pulp)}" "${copyright}" "${license}" \
+      "${img_group}" "${project//pattern/patterns (Pulp)}" "${copyright_long}" "${license}" \
       > "${img_root}/readme.txt"
       zip -q -9 --no-dir-entries --junk-paths --no-wild --move "${pulp_zip}" "${img_root}/readme.txt"
   fi
@@ -166,7 +269,7 @@ while (( "$#" )); do
 
 
   # Produce code snippets
-  # ---------------------
+  # ---------------------------------------------------------------------------
 
   # Create Horizontal and Vertical temporary files, with plain text binary and hexadecimal
   bin_h="${img_root}/$img_name.bin-h.txt" # Horizontal (HMSB)
@@ -625,9 +728,10 @@ if type pico8 &> /dev/null; then
     optipng -q -nx -o6 "${p8_sprsht}" # Try to optimize 8bpp RGB png first.
     optipng -q -o6 "${p8_sprsht}" # Also try reducing to 1bpp indexed png.
     # Add metadata to the png sprite sheet
-    exiftool -q -overwrite_original -fast1 \
+    exiftool "${p8_sprsht}" \
+      -q -overwrite_original -fast1 \
       -Title="${img_group} - ${project//pattern/patterns}" \
-      -Copyright="${copyright} ${license}" "${p8_sprsht}" "${p8_sprsht}"
+      -Copyright="${copyright_long} ${license}"
     # Restore the working directory
     popd > /dev/null || exit
 fi
