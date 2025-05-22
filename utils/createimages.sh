@@ -19,7 +19,9 @@
 #   - Correct images are fed in.
 #
 # WARNING:
-#   May not be safe for public use; created for the author's benefit!
+#   May not be safe for public use; created for the author’s benefit.
+#   Provided “as is”, without warranty of any kind; see the
+#   accompanying LICENSE file for full terms. Use at your own risk!
 # -----------------------------------------------------------------------------
 
 # - Optional: Enabling this function uses PICO-8 to produce a sprite sheet
@@ -202,9 +204,20 @@ while (( "$#" )); do
     continue
   fi
 
-  # TODO: Check ~
-  #   File exists
-  #   Input PNG file validity (file size, file format)
+  # Minimal checks for the input file
+  if [[ ! -f "${1%.*}.png" || ! -r "$1" ]]; then
+    echo "${ERR} File is not accessible. PNG file required."
+    exit
+  fi
+  file_size=$(stat -f%z "$1")
+  if (( file_size < 67 || file_size > 1024 )); then
+    echo "${ERR} File size is outside the allowed range (67 B - 1 KiB)."
+    exit
+  fi
+  if ! oxipng -q --pretend --nx --nz "$1"; then
+    echo "${ERR} Not a valid PNG file. Check for image format issues."
+    exit
+  fi
 
   # Ensure the artwork has the correct file permissions set
   chmod 644 "$1"
