@@ -1,6 +1,6 @@
 #!/bin/bash
 # SPDX-License-Identifier: CC0-1.0
-# SPDX-FileCopyrightText: 2022 Andrew C.E. Dent <hi@aced.cafe>
+# SPDX-FileCopyrightText: 2025 Andrew C.E. Dent <hi@aced.cafe>
 #
 # -----------------------------------------------------------------------------
 # Usage:
@@ -72,7 +72,7 @@ readonly license='https://creativecommons.org/publicdomain/zero/1.0/'
 
 # Markdown gallery parameters for linking to line numbers (offset and stride)
 # Arduboy (cpp)
-md_cpp_start=12           # Default 12 line header offset
+md_cpp_start=14           # Default 14 line header offset
 readonly md_cpp_lines=11  # 4x4 patterns will have 1 extra line (GAMBY)
 # Bitsy (text)
 md_bitsy_start=5          # Default 5 line header offset
@@ -81,12 +81,13 @@ readonly md_bitsy_lines=9
 md_p8_start=7             # Default 7 line header offset
 readonly md_p8_lines=12   # 4x4 patterns will have 1 extra line (fillp)
 # Picotron (p64.lua)
+md_p64_start=6            # Default 6 line header offset
 # --
 # Playdate (lua)
-md_playdate_start=5       # Default 5 line header offset
+md_playdate_start=7       # Default 7 line header offset
 readonly md_playdate_lines=12
 # Thumby (thumby.py)
-md_thumby_start=5         # Default 5 line header offset
+md_thumby_start=7         # Default 7 line header offset
 readonly md_thumby_lines=11
 # User Defined Graphic (BASIC)
 # --
@@ -218,11 +219,8 @@ while (( "$#" )); do
     echo "${ERR} Not a valid PNG file. Check for image format issues."
     exit
   fi
-
   # Ensure the artwork has the correct file permissions set
   chmod 644 "$1"
-  # Lossless PNG optimization
-  optimize_png "$1"
 
   ((img_counter=img_counter+1))
   ((bitsy_counter=bitsy_counter+1))
@@ -430,155 +428,159 @@ while (( "$#" )); do
     printf '};\n// Magic: '
   } >> "${cpp_file}"
   # Alternative 'magic' representation (VLSB data)
-  if [ ${pattern_width} -eq 1 ]; then
-    # Pattern width 1 - byte value encoded as a single decimal
-    {
-      # Convert only the first byte (column 1) to decimal
-      binary_str="$( sed -n 1p "${bin_v}" )"
-      value_dec=$((2#${binary_str}))
-      if [ ${value_dec} -lt 246 ]; then
-        printf '%u\n' ${value_dec}
-      else # Invert bits for large values to save 1 char, e.g. '255' to '~0'
-        ((value_dec= 255 - value_dec))
-        printf '~%u\n' ${value_dec}
-      fi
-    } >> "${cpp_file}"
-  elif [ ${pattern_width} -eq 2 ]; then
-    # Pattern width 2 - two byte values encoded with a ternary operator
-    # TODO: Catch edge cases where string encoding is smaller "Az"[i%2]
-    # e.g. `"xy"[i%2]` vs `i&1?121:120`
-    {
-      # First value (odd columns, i&1=true) is byte 2 as a decimal
-      binary_str="$( sed -n 2p "${bin_v}" )"
-      value_dec=$((2#${binary_str}))
-      if [ ${value_dec} -lt 246 ]; then
-        printf 'i&1?%u' ${value_dec}
-      else # Invert bits for large values, e.g. '255' to '~0'
-        ((value_dec= 255 - value_dec))
-        printf 'i&1?~%u' ${value_dec}
-      fi
-      # Second value (even columns, i&1=false, inc. zero) is byte 1 as a decimal
-      binary_str="$( sed -n 1p "${bin_v}" )"
-      value_dec=$((2#${binary_str}))
-      if [ ${value_dec} -lt 246 ]; then
-        printf ':%u\n' ${value_dec}
-      else # Invert bits for large values, e.g. '255' to '~0'
-        ((value_dec= 255 - value_dec))
-        printf ':~%u\n' ${value_dec}
-      fi
-    } >> "${cpp_file}"
-  else # Pattern width 4 and 8
-    # Encode 'magic' as a string... hold tight...
-    # First pass: scan byte values to estimate if inverted form will be more compact
-    column=${pattern_width}
-    invert_bits_merit=0 # Figure of merit (number of characters) when inverting all bits
-    while [ ${column} -gt 0 ]; do
-      # Find the decimal value for the current column (byte)
-      binary_str="$( sed -n ${column}p "${bin_v}" )"
-      value_dec=$((2#${binary_str}))
-      if [ ${value_dec} -le 13 ]; then
-        if [ ${value_dec} -eq 0 ] && [ ${column} -eq ${pattern_width} ]; then
-          ((invert_bits_merit=invert_bits_merit+4)) # cpp strings are null terminated
-        else
-          ((invert_bits_merit=invert_bits_merit+2))
-        fi
-      elif [ ${value_dec} -le 31 ]; then
-        ((invert_bits_merit=invert_bits_merit+1))
-      elif [ ${value_dec} -le 127 ]; then
-        ((invert_bits_merit=invert_bits_merit+3))
-      elif [ ${value_dec} -le 223 ]; then
-        ((invert_bits_merit=invert_bits_merit-3))
-      elif [ ${value_dec} -le 241 ]; then
-        ((invert_bits_merit=invert_bits_merit-1))
-      else
-        if [ ${value_dec} -eq 255 ] && [ $column = $pattern_width ]; then
-          ((invert_bits_merit=invert_bits_merit-4)) # cpp strings are null terminated
-        else
-          ((invert_bits_merit=invert_bits_merit-2))
-        fi
-      fi
-      ((column=column-1))
-    done
-    # Second pass: Encode the string
-    # Process the columns (bytes) in reverse order
-    column=$pattern_width
-    # We store the end of the string first
-    encoded_string='"[i%'"${pattern_width}"']'
-    digit_present=0
-    while [ $column -gt 0 ]; do
-      # Find the octal value for the current column (byte)
-      binary_str=$( sed -n ${column}p "${bin_v}" )
-      value_oct=$(printf '%o' "$((2#${binary_str}))")
-      # Invert all bits in the pattern if we save 1 or more characters
-      if [ ${invert_bits_merit} -lt -1 ]; then
-        ((value_oct= 377 - value_oct))
-      fi
-      # Process the octal value, to handle special cases for encoding
-      case ${value_oct} in
-        [0-6])
-          if [ ${value_oct} -eq 0 ] && [ ${column} = ${pattern_width} ]; then
-            # cpp strings are always null terminated, so encoded for free
-            encoded_byte=''
-          elif [ ${digit_present} -eq 1 ]; then
-            # Add leading zeroes to make octal value unambiguous
-            encoded_byte='\00'"${value_oct}"
-          else
-            encoded_byte='\'"${value_oct}"
-          fi
-        ;;
-        # Escape codes for non-printing characters are more compact, when available
-        7|1[0-5])
-          index=$((8#${value_oct} - 6)) # Convert to decimal and offset
-          encoded_byte='\'"$(echo 'abtnvfr' | cut -c ${index})"
-        ;;
-        33)
-          encoded_byte='\e'
-        ;;
-        1[6-7]|2[0-7]|3[0-2]|3[4-7])
-          if [ ${digit_present} -eq 1 ]; then
-            # Add leading zero to make octal value unambiguous
-            encoded_byte='\0'"${value_oct}"
-          else
-            encoded_byte='\'"${value_oct}"
-          fi
-        ;;
-        # 040 Start of printable, 7-bit characters (32 or 0x20)
-        4[0-1]|4[3-7]|5[0-7]|6[0-7]|7[0-7]|10[0-7]|11[0-7]|12[0-7]|13[0-3])
-          encoded_byte=$(printf '%b' '\'"${value_oct}")
-        ;;
-        42)
-          encoded_byte='\"' # Double quote character must be escaped with `\`
-        ;;
-        134)
-          encoded_byte='\\' # Back slash character must be escaped with `\`
-        ;;
-        13[5-7]|14[0-7]|15[0-7]|16[0-7]|17[0-6])
-          encoded_byte=$(printf '%b' '\'"${value_oct}")
-        ;;
-        # 0176 End of printable, 7-bit characters (127 or 0x7E)
-        *)
-          # Remaining values are encoded as a 3 digit octal
-          encoded_byte='\'"${value_oct}"
-        ;;
-      esac
-      # Check if the character output is a valid octal digit (0-7)
-      # This may affect encoding of the next (preceding) octal value
-      case "${encoded_byte}" in
-        [0-7])
-          digit_present=1
-        ;;
-        *)
-          digit_present=0
-        ;;
-      esac
-      encoded_string="${encoded_byte}${encoded_string}" # Prepend byte to magic string
-      ((column=column-1))
-    done
-    encoded_string='"'"${encoded_string}"
-    if [ ${invert_bits_merit} -lt -1 ]; then
-      encoded_string='~'"${encoded_string}"
-    fi
+  #   First check LUT file for a predetermined value
+  encoded_string=$(csv_read "${util_dir}/lut-cpp-magic.csv" '#'"${pattern_uid}")
+  if [[ "${encoded_string}" != "" ]]; then
     printf '%s\n' "${encoded_string}" >> "${cpp_file}"
+  else # No match found in the LUT, so must be calculated
+    if [[ ${pattern_width} == 1 ]]; then
+      # Pattern width 1 - byte value encoded as a single decimal
+      {
+        value_dec=$(get_byte "${bin_v}" '1' 'dec')
+        if [ ${value_dec} -lt 246 ]; then
+          printf '%u\n' ${value_dec}
+        else # Invert bits for large values to save 1 char, e.g. '255' to '~0'
+          ((value_dec= 255 - value_dec))
+          printf '~%u\n' ${value_dec}
+        fi
+      } >> "${cpp_file}"
+    elif [[ ${pattern_width} == 2 ]]; then
+      # Pattern width 2 - two byte values encoded with a ternary operator
+      # TODO: Catch edge cases where string encoding is smaller
+      #   e.g. `"xy"[i%2]` (9) vs `i&1?121:120` (11)
+      #   to be ascii, 32 <= v <= 127 for both values
+      #   to save chars, v1 & v2 must be more than 1 digit (true for ascii condition)
+      #   pass through to Pattern width 4 and 8 encoding
+      {
+        # First value (odd columns, i&1=true) is byte 2 as a decimal
+        value_dec=$(get_byte "${bin_v}" '2' 'dec')
+        if [ ${value_dec} -lt 246 ]; then
+          printf 'i&1?%u' ${value_dec}
+        else # Invert bits for large values, e.g. '255' to '~0'
+          ((value_dec= 255 - value_dec))
+          printf 'i&1?~%u' ${value_dec}
+        fi
+        # Second value (even columns, i&1=false, inc. zero) is byte 1 as a decimal
+        value_dec=$(get_byte "${bin_v}" '1' 'dec')
+        if [ ${value_dec} -lt 246 ]; then
+          printf ':%u\n' ${value_dec}
+        else # Invert bits for large values, e.g. '255' to '~0'
+          ((value_dec= 255 - value_dec))
+          printf ':~%u\n' ${value_dec}
+        fi
+      } >> "${cpp_file}"
+    else # Pattern width 4 and 8
+      # Encode 'magic' as a string... hold tight...
+      # First pass: scan byte values to estimate if inverted form will be more compact
+      column=${pattern_width}
+      invert_bits_merit=0 # Figure of merit (number of characters) when inverting all bits
+      while [ ${column} -gt 0 ]; do
+        # Find the decimal value for the current column (byte)
+        value_dec=$(get_byte "${bin_v}" "${column}" 'dec')
+        if [ ${value_dec} -le 13 ]; then
+          if [[ ${value_dec} == 0 && ${column} == "${pattern_width}" ]]; then
+              ((invert_bits_merit=invert_bits_merit+4)) # cpp strings are null terminated
+            else
+              ((invert_bits_merit=invert_bits_merit+2))
+            fi
+          elif [ ${value_dec} -le 31 ]; then
+            ((invert_bits_merit=invert_bits_merit+1))
+          elif [ ${value_dec} -le 127 ]; then
+            ((invert_bits_merit=invert_bits_merit+3))
+          elif [ ${value_dec} -le 223 ]; then
+            ((invert_bits_merit=invert_bits_merit-3))
+          elif [ ${value_dec} -le 241 ]; then
+            ((invert_bits_merit=invert_bits_merit-1))
+          else
+            if [[ ${value_dec} == 255 && ${column} == "${pattern_width}" ]]; then
+              ((invert_bits_merit=invert_bits_merit-4)) # cpp strings are null terminated
+            else
+              ((invert_bits_merit=invert_bits_merit-2))
+          fi
+        fi
+        ((column=column-1))
+      done
+      # Second pass: Encode the string
+      # Process the columns (bytes) in reverse order
+      column=$pattern_width
+      # We store the end of the string first
+      encoded_string='"[i%'"${pattern_width}"']'
+      digit_present=0
+      while [ $column -gt 0 ]; do
+        # Find the octal value for the current column (byte)
+        binary_str=$( sed -n ${column}p "${bin_v}" )
+        value_oct=$(printf '%o' "$((2#${binary_str}))")
+        # Invert all bits in the pattern if we save 1 or more characters
+        if [ ${invert_bits_merit} -lt -1 ]; then
+          ((value_oct= 377 - value_oct))
+        fi
+        # Process the octal value, to handle special cases for encoding
+        case ${value_oct} in
+          [0-6])
+            if [[ ${value_oct} == 0 && ${column} == "${pattern_width}" ]]; then
+              # cpp strings are always null terminated, so encoded for free
+              encoded_byte=''
+            elif [[ ${digit_present} == 1 ]]; then
+              # Add leading zeroes to make octal value unambiguous
+              encoded_byte='\00'"${value_oct}"
+            else
+              encoded_byte='\'"${value_oct}"
+            fi
+          ;;
+          # Escape codes for non-printing characters are more compact, when available
+          7|1[0-5])
+            index=$((8#${value_oct} - 6)) # Convert to decimal and offset
+            encoded_byte='\'"$(echo 'abtnvfr' | cut -c ${index})"
+          ;;
+          33)
+            encoded_byte='\e'
+          ;;
+          1[6-7]|2[0-7]|3[0-2]|3[4-7])
+            if [[ ${digit_present} == 1 ]]; then
+              # Add leading zero to make octal value unambiguous
+              encoded_byte='\0'"${value_oct}"
+            else
+              encoded_byte='\'"${value_oct}"
+            fi
+          ;;
+          # 040 Start of printable, 7-bit characters (32 or 0x20)
+          4[0-1]|4[3-7]|5[0-7]|6[0-7]|7[0-7]|10[0-7]|11[0-7]|12[0-7]|13[0-3])
+            encoded_byte=$(printf '%b' '\'"${value_oct}")
+          ;;
+          42)
+            encoded_byte='\"' # Double quote character must be escaped with `\`
+          ;;
+          134)
+            encoded_byte='\\' # Back slash character must be escaped with `\`
+          ;;
+          13[5-7]|14[0-7]|15[0-7]|16[0-7]|17[0-6])
+            encoded_byte=$(printf '%b' '\'"${value_oct}")
+          ;;
+          # 0176 End of printable, 7-bit characters (127 or 0x7E)
+          *)
+            # Remaining values are encoded as a 3 digit octal
+            encoded_byte='\'"${value_oct}"
+          ;;
+        esac
+        # Check if the character output is a valid octal digit (0-7)
+        # This may affect encoding of the next (preceding) octal value
+        case "${encoded_byte}" in
+          [0-7])
+            digit_present=1
+          ;;
+          *)
+            digit_present=0
+          ;;
+        esac
+        encoded_string="${encoded_byte}${encoded_string}" # Prepend byte to magic string
+        ((column=column-1))
+      done
+      encoded_string='"'"${encoded_string}"
+      if [ ${invert_bits_merit} -lt -1 ]; then
+        encoded_string='~'"${encoded_string}"
+      fi
+      printf '%s\n' "${encoded_string}" >> "${cpp_file}"
+    fi
   fi
   # Bonus 4x4px GAMBY data (Vertical VLSB in 4 nybbles)
   if [ $pattern_width -le 4 ] && [ $pattern_height -le 4 ]; then
@@ -718,8 +720,7 @@ while (( "$#" )); do
     printf '    # BITMAP: width: 8, height: 8, ['
     # Produce array with decimal values (uses less characters)
     for column in {1..8}; do
-      binary_str=$( sed -n ${column}p "${bin_v}" )
-      value_dec=$((2#${binary_str}))
+      value_dec=$(get_byte "${bin_v}" "${column}" 'dec')
       printf '%u' "${value_dec}"
       if [ ${column} -le 7 ]; then
         printf ','
