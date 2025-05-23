@@ -1,10 +1,9 @@
 # 8x8.me
 
-1 bit per pixel (monotone)  
-8×8 pixels (8 bytes)  
-Repeating tile fill patterns  
+① — 1 bit per pixel (monotone)  
+⑧ — 8×8 pixels (8 bytes)  
+∞ — Repeating tile fill patterns  
 
----
 <br>
 
 
@@ -102,7 +101,7 @@ Repeating tile fill patterns
 
 Inspired by studying software from the mid 1980's, to video games of the early 1990's. Influenced by the wonderful pixel artists of today. All artwork is drawn *tabula rasa*. Please let me know if any designs resemble the work of others.
 
-Artwork and files created using [ABSpriteEditor](https://github.com/Pharap/ABSpriteEditor). Patterns tested and refined using [ASE](https://github.com/pmwasson/ASE), [bitsy](https://ledoux.itch.io/bitsy) and [Pulp](https://play.date/pulp/about/). Data tweaking in LibreOffice. Image wrangling with ImageMagick, compressed with OptiPNG and `pngslim`, and metadata added with ExifTool.
+Artwork and files created using [ABSpriteEditor](https://github.com/Pharap/ABSpriteEditor). Patterns tested and refined using [ASE](https://github.com/pmwasson/ASE), [bitsy](https://ledoux.itch.io/bitsy) and [Pulp](https://play.date/pulp/about/). Data tweaking in LibreOffice. Image wrangling with ImageMagick, compressed with Oxipng and metadata added with ExifTool.
 
 Special thanks to @castpixel, @dw817, @felipemanga, @gingerbeardman, @javl, @le-doux, @lexaloffle, @MrBlinky, @Pharap, @pmwasson, @scotthall92, @TPS.
 
