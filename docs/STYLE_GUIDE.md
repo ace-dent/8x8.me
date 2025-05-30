@@ -14,7 +14,7 @@ Would it reasonably be used for (old school purpose):
 - Not just a game background!
 - No exclusively FOREGROUND sprites. Items, collectibles, weapons (swords), sprites, etc.
 
-Offensive artwork will not be accepted.  
+Offensive artwork will not be accepted. This includes controversial images, depicting weapons, religious iconography, or offensive symbols. Similar rules are applied to the naming of images.  
 Strive for designs that work within a pattern group, and across all groups.
 
 ### Design
@@ -149,7 +149,7 @@ HMSB data format.
 
 ### PICO-8 (Lua)
 
-Indents 1 space.  
+Indents 1 space. `-tab_width n` : number of spaces in a tab in the code editor (default: 1)  
 ALL lowercase.  
 NO trailing comma in an array (not allowed). https://www.lexaloffle.com/bbs/?tid=49778#comments. 
 Comments don't have leading space `--comment`. 
@@ -160,6 +160,11 @@ Using decimal values instead of hexadecimal will save 1 character (32768 vs 0x80
 
 NOTE - P8 uses LSB first, so sequence of bits in a byte are reversed. However, the visualization is kept unflipped(!), unlike all other code. i.e. it's shown as will be drawn to screen.  
 
+Usage: 
+Copy from font pattern `a` to sprite `0`.
+```lua
+print"⁶@56000003⁸x⁸⁶c0ᵉa"for i=0,448,64do memcpy(i,24576+i,4)end cstore()
+```
 
 ### Picotron (Lua)
 ### Playdate (Lua & Pulp)

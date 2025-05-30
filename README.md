@@ -9,7 +9,10 @@
 
 ## Introduction
 
-*Work in progress* ~ a collection of 'retro' fill patterns. Lovingly crafted and translated to convenient code snippets. Please keep the pixel gnomes fed with a [star](https://github.com/ace-dent/8x8.me/stargazers)! ⭐️
+A collection of 'retro' fill patterns. Lovingly crafted and translated to convenient code snippets. 
+
+I welcome feedback and suggestions, to continue improving the project for everyone. It really motivates me that people enjoy my work. Please keep the pixel gnomes fed with a [star](https://github.com/ace-dent/8x8.me/stargazers)! ⭐️
+
 
 
 <br>
@@ -94,8 +97,8 @@
   </a>
 </p>
 
-
 <br>
+
 
 ## Acknowledgements
 
@@ -105,11 +108,14 @@ Artwork and files created using [ABSpriteEditor](https://github.com/Pharap/ABSpr
 
 Special thanks to @castpixel, @dw817, @felipemanga, @gingerbeardman, @javl, @le-doux, @lexaloffle, @MrBlinky, @Pharap, @pmwasson, @scotthall92, @TPS.
 
-
 <br>
 
+
 ## Legal
-Produced by Andrew C.E. Dent and dedicated to the Public Domain (CC0 – free to use). Giving attribution is not required but always appreciated! Please read the separate `LICENSE` file.
+
+Produced by Andrew C.E. Dent and dedicated to the Public Domain (CC0 – free to use). Giving attribution is not required but always appreciated!
+
+The contents of this project is provided "as is", without warranty of any kind regarding accuracy, completeness, or fitness for any specific purpose. Please see the LICENSE for full terms of use.
 
 All trademarks are the property of their respective owners.  
 &emsp; *Arduboy*® is a registered trademark of [Arduboy, Inc., USA](https://www.arduboy.com).  
