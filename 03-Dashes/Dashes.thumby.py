@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: CC0-1.0
+
 # Dashes - 8x8.me fill patterns
 # This work is dedicated to the Public Domain by ACED, licensed under CC0
 # https://creativecommons.org/publicdomain/zero/1.0/
@@ -14,19 +16,6 @@ horizontalDenseTrellis = bytearray([
     0x11, #  ▓▓▓░▓▓▓░
 ])
 # horizontalDenseTrellisSprite = thumby.Sprite(8, 8, horizontalDenseTrellis)
-
-horizontalDenseDotDash = bytearray([
-    # BITMAP: width: 8, height: 8, [85,68,85,0,85,68,85,0]
-    0x55, #  ▓░▓░▓░▓░
-    0x44, #  ▓░▓▓▓░▓▓
-    0x55, #  ▓░▓░▓░▓░
-    0x00, #  ▓▓▓▓▓▓▓▓
-    0x55, #  ▓░▓░▓░▓░
-    0x44, #  ▓░▓▓▓░▓▓
-    0x55, #  ▓░▓░▓░▓░
-    0x00, #  ▓▓▓▓▓▓▓▓
-])
-# horizontalDenseDotDashSprite = thumby.Sprite(8, 8, horizontalDenseDotDash)
 
 horizontalDash = bytearray([
     # BITMAP: width: 8, height: 8, [64,64,64,64,4,4,4,4]

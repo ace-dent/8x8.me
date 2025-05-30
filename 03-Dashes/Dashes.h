@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: CC0-1.0
+
 // Dashes - 8x8.me fill patterns
 // This work is dedicated to the Public Domain by ACED, licensed under CC0
 // https://creativecommons.org/publicdomain/zero/1.0/
@@ -22,20 +24,6 @@ namespace patterns {
     };
     // Magic: i%4<2?68:17
     // GAMBY: 0x4411
-
-    constexpr uint8_t horizontalDenseDotDash[] PROGMEM {
-        8, 8, //  8x8 px image
-        0x55, //  ▓░▓░▓░▓░
-        0x44, //  ▓░▓▓▓░▓▓
-        0x55, //  ▓░▓░▓░▓░
-        0x00, //  ▓▓▓▓▓▓▓▓
-        0x55, //  ▓░▓░▓░▓░
-        0x44, //  ▓░▓▓▓░▓▓
-        0x55, //  ▓░▓░▓░▓░
-        0x00, //  ▓▓▓▓▓▓▓▓
-    };
-    // Magic: "UDU"[i%4]
-    // GAMBY: 0x5450
 
     constexpr uint8_t horizontalDash[] PROGMEM {
         8, 8, //  8x8 px image
@@ -185,18 +173,6 @@ namespace patternsHorizontal {
         0x33, //  ▓▓░░▓▓░░
         0x00, //  ▓▓▓▓▓▓▓▓
         0xCC, //  ░░▓▓░░▓▓
-        0x00, //  ▓▓▓▓▓▓▓▓
-    };
-
-    constexpr uint8_t horizontalDenseDotDash[] PROGMEM {
-        8, 8, //  8x8 px image
-        0xAA, //  ░▓░▓░▓░▓
-        0x00, //  ▓▓▓▓▓▓▓▓
-        0xEE, //  ░░░▓░░░▓
-        0x00, //  ▓▓▓▓▓▓▓▓
-        0xAA, //  ░▓░▓░▓░▓
-        0x00, //  ▓▓▓▓▓▓▓▓
-        0xEE, //  ░░░▓░░░▓
         0x00, //  ▓▓▓▓▓▓▓▓
     };
 

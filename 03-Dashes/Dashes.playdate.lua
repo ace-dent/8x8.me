@@ -1,3 +1,5 @@
+-- SPDX-License-Identifier: CC0-1.0
+
 -- Dashes - 8x8.me fill patterns
 -- This work is dedicated to the Public Domain by ACED, licensed under CC0
 -- https://creativecommons.org/publicdomain/zero/1.0/
@@ -15,20 +17,6 @@ local horizontalDenseTrellis <const> = {
     -- 204,255,51,255,204,255,51,255 -- transparent foreground
 }
 -- playdate.graphics.setPattern(horizontalDenseTrellis)
-
-local horizontalDenseDotDash <const> = {
-    0xAA, --  ░▓░▓░▓░▓
-    0x00, --  ▓▓▓▓▓▓▓▓
-    0xEE, --  ░░░▓░░░▓
-    0x00, --  ▓▓▓▓▓▓▓▓
-    0xAA, --  ░▓░▓░▓░▓
-    0x00, --  ▓▓▓▓▓▓▓▓
-    0xEE, --  ░░░▓░░░▓
-    0x00, --  ▓▓▓▓▓▓▓▓
-    -- 170,0,238,0,170,0,238,0 -- transparent background
-    -- 85,255,17,255,85,255,17,255 -- transparent foreground
-}
--- playdate.graphics.setPattern(horizontalDenseDotDash)
 
 local horizontalDash <const> = {
     0x00, --  ▓▓▓▓▓▓▓▓
