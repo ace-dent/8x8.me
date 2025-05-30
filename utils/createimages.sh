@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # SPDX-License-Identifier: CC0-1.0
 # SPDX-FileCopyrightText: 2025 Andrew C.E. Dent <hi@aced.cafe>
 #
@@ -9,9 +9,10 @@
 #   - Generates project images, code files and markdown gallery tables.
 #
 # Requirements:
+#   - Bash v3.0+
 #   - ImageMagick https://imagemagick.org/
-#   - exiftool https://exiftool.org
-#   - Oxipng v9.1.3 or greater https://github.com/shssoichiro/oxipng
+#   - ExifTool https://exiftool.org
+#   - Oxipng v9.1.3+ https://github.com/shssoichiro/oxipng
 #   - Optional: PNGOUT (for extra png compression)
 #
 # Assumptions:
@@ -19,9 +20,9 @@
 #   - Correct images are fed in.
 #
 # WARNING:
-#   May not be safe for public use; created for the author’s benefit.
-#   Provided “as is”, without warranty of any kind; see the
-#   accompanying LICENSE file for full terms. Use at your own risk!
+#     May not be safe for public use; created for the author’s benefit.
+#     Provided “as is”, without warranty of any kind; see the
+#     accompanying LICENSE file for full terms. Use at your own risk!
 # -----------------------------------------------------------------------------
 
 # - Optional: Enabling this function uses PICO-8 to produce a sprite sheet
@@ -33,16 +34,16 @@
 # - Update P8 fillp to use built-ins.
 
 
-#  Pretty messages, colored if NO_COLOR is unset and stdout is a valid terminal
-ERR='✖ Error:' WARN='▲ Warning:'
+# Message decorations - colored for terminals with NO_COLOR unset
+ERR='✖ Error:' WARN='▲ Warning:' DONE='⚑'
 [[ -z "${NO_COLOR-}" && -t 1 && "${TERM-}" != dumb ]] \
-  && ERR=$'\e[31m'$ERR$'\e[0m' WARN=$'\e[33m'$WARN$'\e[0m'
+  && ERR=$'\e[1;31m'$ERR$'\e[m' WARN=$'\e[1;33m'$WARN$'\e[m'
 
 # Check the required binaries are available
 for bin in 'magick' 'exiftool' 'oxipng'; do
   if ! command -v "${bin}" &> /dev/null; then
     echo "${ERR} '${bin}' is not installed or not in your PATH."
-    exit
+    exit 1
   fi
 done
 # Check Oxipng is v9.1.3 or greater (for Zopfli iterations `--zi`)
@@ -51,12 +52,12 @@ this_ver="$(oxipng --version | head -n1 | sed 's/^oxipng //')"
 if [[ $(printf '%s\n' "${min_ver}" "${this_ver}" | sort -V | head -n1) \
   != "${min_ver}" ]]; then
   echo "${ERR} Oxipng v${this_ver}; upgrade to at least v${min_ver}."
-  exit
+  exit 1
 fi
 # Check for at least one input file
 if [[ -z "$1" ]]; then
   echo "${ERR} Missing filename. Provide at least one PNG image to process."
-  exit
+  exit 1
 fi
 
 
@@ -124,6 +125,8 @@ function csv_read {
     key="${key%\"}"
     # Check if the current line's key matches the search key
     if [[ "${key}" == "${csv_key}" ]]; then
+      # Remove any newline and carriage return characters
+      value=$(echo "${value}" | tr -d '\r\n')
       # Remove surrounding double quotes from the value field
       value="${value#\"}"
       value="${value%\"}"
@@ -208,16 +211,16 @@ while (( "$#" )); do
   # Minimal checks for the input file
   if [[ ! -f "${1%.*}.png" || ! -r "$1" ]]; then
     echo "${ERR} File is not accessible. PNG file required."
-    exit
+    exit 1
   fi
   file_size=$(stat -f%z "$1")
   if (( file_size < 67 || file_size > 1024 )); then
     echo "${ERR} File size is outside the allowed range (67 B - 1 KiB)."
-    exit
+    exit 1
   fi
   if ! oxipng -q --pretend --nx --nz "$1"; then
     echo "${ERR} Not a valid PNG file. Check for image format issues."
-    exit
+    exit 1
   fi
   # Ensure the artwork has the correct file permissions set
   chmod 644 "$1"
@@ -753,7 +756,7 @@ if type pico8 &> /dev/null; then
     # Using P8 `printh()` the script returns the number of 8px rows occupied
     p8_rows=$(pico8 -x "${p8_script}" | tail -n 1)
     # P8 can only export into the current directory
-    pushd "${img_root}" > /dev/null || exit
+    pushd "${img_root}" > /dev/null || exit 1
     pico8 "${p8_script}" -export "${p8_sprsht}" > /dev/null
     # Crop any unused 8px rows from the bottom of the 128px high image
     ((p8_chop=128-p8_rows*8))
@@ -767,11 +770,11 @@ if type pico8 &> /dev/null; then
       -Title="${img_group} - ${project//pattern/patterns}" \
       -Copyright="${copyright_long} ${license}"
     # Restore the working directory
-    popd > /dev/null || exit
+    popd > /dev/null || exit 1
 fi
 
 
 
-echo '...Finished :)'
+echo " ...Finished! ${DONE}"
 echo ''
-exit
+exit 0
