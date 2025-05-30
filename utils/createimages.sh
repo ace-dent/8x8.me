@@ -25,6 +25,9 @@
 #     accompanying LICENSE file for full terms. Use at your own risk!
 # -----------------------------------------------------------------------------
 
+# Force POSIX locale for consistent behaviour with text tools
+export LC_ALL=C
+
 # - Optional: Enabling this function uses PICO-8 to produce a sprite sheet
 # pico8() {
 #   '/Applications/PICO-8.app/Contents/MacOS/pico8' "$@"
@@ -213,7 +216,7 @@ while (( "$#" )); do
     echo "${ERR} File is not accessible. PNG file required."
     exit 1
   fi
-  file_size=$(stat -f%z "$1")
+  file_size=$(stat -f%z "$1" 2>/dev/null || wc -c <"$1")
   if (( file_size < 67 || file_size > 1024 )); then
     echo "${ERR} File size is outside the allowed range (67 B - 1 KiB)."
     exit 1
@@ -293,14 +296,15 @@ while (( "$#" )); do
 
   # Bundle the Pulp image into the group's zip archive
   pulp_zip="${img_root%}/${img_group}.playdate-pulp.zip"
+  zip_tweaks=(--no-dir-entries --junk-paths --no-wild) # Extra optimizations
   if [[ ! -f "${pulp_zip}" ]]; then
     # Add 'readme' when first creating the archive.
     printf '%s - %s\n%s\n%s' \
       "${img_group}" "${project//pattern/patterns (Pulp)}" "${copyright_long}" "${license}" \
       > "${img_root}/readme.txt"
-      zip -q -9 --no-dir-entries --junk-paths --no-wild --move "${pulp_zip}" "${img_root}/readme.txt"
+      zip -q -9 --move "${zip_tweaks[@]}" "${pulp_zip}" "${img_root}/readme.txt"
   fi
-  zip -q -9 --no-dir-entries --junk-paths --no-wild --move "${pulp_zip}" "${pulp_file}"
+  zip -q -9 --move "${zip_tweaks[@]}" "${pulp_zip}" "${pulp_file}"
 
 
   # Produce code snippets
