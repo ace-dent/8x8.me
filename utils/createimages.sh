@@ -25,8 +25,8 @@
 #     accompanying LICENSE file for full terms. Use at your own risk!
 # -----------------------------------------------------------------------------
 
-# Force POSIX locale for consistent behaviour with text tools
-export LC_ALL=C
+# Use POSIX locale for consistent byte-wise sorting and pattern matching
+export LC_COLLATE=C
 
 # - Optional: Enabling this function uses PICO-8 to produce a sprite sheet
 # pico8() {
@@ -42,6 +42,10 @@ ERR='✖ Error:' WARN='▲ Warning:' DONE='⚑'
 [[ -z "${NO_COLOR-}" && -t 1 && "${TERM-}" != dumb ]] \
   && ERR=$'\e[1;31m'$ERR$'\e[m' WARN=$'\e[1;33m'$WARN$'\e[m'
 
+# Check the system character map supports Unicode glyphs
+if [[ $(locale charmap) != *UTF-8* ]]; then
+  echo "${WARN} System locale may not support UTF-8 extended characters."
+fi
 # Check the required binaries are available
 for bin in 'magick' 'exiftool' 'oxipng'; do
   if ! command -v "${bin}" &> /dev/null; then
@@ -292,6 +296,9 @@ while (( "$#" )); do
       -define png:include-chunk=none \
       -sample 200% "${preview_file}"
     optimize_png "${preview_file}"
+  else
+    # Ensure the correct file permissions for a pre-optimized image
+    chmod 644 "${preview_file}"
   fi
 
   # Bundle the Pulp image into the group's zip archive
@@ -621,7 +628,7 @@ while (( "$#" )); do
     cat "$bin_h"
     printf 'NAME %s\n' "${name_lowercase}"
   } >> "${bitsy_file}"
-
+  # TODO: Skip the intermediate WIP file and directly write the file
 
 
   # Create PICO-8 code
