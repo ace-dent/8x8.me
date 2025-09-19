@@ -75,7 +75,7 @@ readonly util_dir
 # Standard metadata for images
 readonly project='8x8.me fill pattern.'
 readonly copyright='Public Domain by ACED, licensed under CC0.'
-readonly copyright_long='This work is dedicated to the '"${copyright}"
+readonly copyright_long='Dedicated to the '"${copyright}"
 readonly license='https://creativecommons.org/publicdomain/zero/1.0/'
 
 # Markdown gallery parameters for linking to line numbers (offset and stride)
@@ -257,7 +257,8 @@ while (( "$#" )); do
 
   # Create the Portable Bit Map (PBM) file
   pbm_file="${img_root}/pbm/${img_name}.pbm"
-  magick "$1" -depth 1 -compress None "${pbm_file}"
+  magick "$1" -depth 1 -compress None pbm:- \
+  | sed 's/[[:space:]]*$//' > "${pbm_file}" # Strip trailing whitespace
 
   # Create tweaked png image for Playdate Pulp
   pulp_file="${img_root}/${img_name}-table-8-8.png" # Required name format
@@ -276,8 +277,10 @@ while (( "$#" )); do
     -execute \
     "${pbm_file}" -q -overwrite_original -fast5 \
     -Comment="${img_name} - ${img_group} - ${project}"  # Primary metadata (single line in header)
-  # Extra pbm metadata appended to the end as plain text
-  printf '\n# %s' "${copyright_long}" "${license}" >> "${pbm_file}"
+  # Extra pbm metadata appended to the end of the file as plain text
+  printf '\n# %s' "${copyright_long}" "${license}" \
+    >> "${pbm_file}" \
+    || { echo "${ERR} Failed writing to file: '${pbm_file}'." >&2; exit 1; }
 
   # Create the preview 'art' image
   preview_file="${img_root%/*}/docs/art/${img_name}.png"
